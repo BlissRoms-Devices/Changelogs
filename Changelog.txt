@@ -1,4 +1,18 @@
 ====================
+     10-13-2019
+====================
+
+
+   * build/make/
+3c766f1e9 Fix odm output directory for devices w/o vendor partition
+
+   * packages/apps/BlissUpdater/
+1bec616 Changelog: Switch over to Github Changelog URL
+
+   * packages/apps/Messaging/
+b42d2ed Add .gitreview
+
+====================
      10-12-2019
 ====================
 
@@ -8,6 +22,7 @@
 5ea4139 manifest: Move qcom fm and power to vendor/qcom/opensource
 7cc0c72 manifest: Track legacy nxp from LOS
 9ad493f manifest: Track development from LOS
+6cf0882 manifest: Add LOS Remote to track hals
 
    * packages/services/Telephony/
 f168dae93 Add gitreview
@@ -36,15 +51,6 @@ a2d6296b353 Fix memory leak in aapt2
 478326cf892 Fix FD leak in ConnectivityManager.getConnectionOwnerUid
 d3fd7996725 Apply JNI optimizations to HwParcel
 
-   * manifest/
-6cf0882 manifest: Add LOS Remote to track hals
-12beebd manifest: re-enable msm8960 hals
-
-====================
-     10-10-2019
-====================
-
-
    * hardware/qcom-caf/msm8996/audio/
 7b3e32b61 audio: Use direct    * pathmap
 
@@ -55,11 +61,11 @@ eadb4951a media: Add extrapolated gpustats header for PQ
 abdaa6ba4 venc: Fix VQZip issue
 26f4dc5a3 media: Use    * pathmap
 
-   * packages/apps/Blissify/
-7cd2520 Merge "Buttons: Move Advanced Restart switch to Blissify [2/2]" into q
+   * manifest/
+12beebd manifest: re-enable msm8960 hals
 
 ====================
-     10-09-2019
+     10-10-2019
 ====================
 
 
@@ -72,21 +78,12 @@ aa13cce7539 SystemUI: Improvements for bluetooth battery levels
 
    * manifest/
 55014ba manifest: Track Deskclock from blissroms
-2bc38d5 [TEMP] Track 8150 Hals
-33e4257 Merge "manifest: Track bootctrl from LOS" into q
 
    * packages/apps/BlissUpdater/
 d2a2758 BlissUpdater: Use Common Changelog URL
 
    * packages/apps/Blissify/
-bb69645 Buttons: Move Advanced Restart switch to Blissify [2/2]
-
-   * packages/apps/LineageParts/
-e6c9e14 Trust: Disable lineagestats
-
-   * packages/apps/Settings/
-d6db78399b Settings: One does not simply become a Developer
-2d7f5475c6 Settings: Move Advanced Restart switch to Blissify [1/2]
+7cd2520 Merge "Buttons: Move Advanced Restart switch to Blissify [2/2]" into q
 
    * vendor/bliss/
 dd5eb699 build deskclock
@@ -96,10 +93,9 @@ f430a5c5 vendor: Update Pixel Launcher
 02bdb1fb vendor: Add overlay for Pixel Launcher
 93a5bb69 update overlay for 10
 e924b958 vendor: Add Pixel Launcher and Settings Intelligence
-2949fc5b Merge changes from topic "aboutbliss" into q10
 
 ====================
-     10-08-2019
+     10-09-2019
 ====================
 
 
@@ -112,6 +108,37 @@ a3b2e25b4 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/plat
    * frameworks/base/
 bf800c26b9b Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//frameworks/base into HEAD
 
+   * manifest/
+2bc38d5 [TEMP] Track 8150 Hals
+33e4257 Merge "manifest: Track bootctrl from LOS" into q
+dd34b24 manifest: Track bootctrl from LOS
+a4b73b3 Merge branch 'android-10.0.0_r4' of https://android.googlesource.com/platform//manifest into HEAD
+
+   * packages/apps/Blissify/
+bb69645 Buttons: Move Advanced Restart switch to Blissify [2/2]
+
+   * packages/apps/LineageParts/
+e6c9e14 Trust: Disable lineagestats
+
+   * packages/apps/Nfc/
+5ed538e6 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD
+
+   * packages/apps/Settings/
+d6db78399b Settings: One does not simply become a Developer
+2d7f5475c6 Settings: Move Advanced Restart switch to Blissify [1/2]
+
+   * vendor/bliss/
+2949fc5b Merge changes from topic "aboutbliss" into q10
+f6dca746 kernel: Move our dtb.img logic here
+
+====================
+     10-08-2019
+====================
+
+
+   * build/make/
+60435b51a envsetup: Automatically set CCACHE_EXEC to the system's ccache
+
    * hardware/qcom-caf/msm8960/audio/
 1a6b25c Fix build errors
 
@@ -122,10 +149,15 @@ dadb58d libexternal: fix switch fall through
    * hardware/qcom-caf/msm8960/media/
 6b4fad8 media: drop byte typedef
 
+   * hardware/qcom/display/
+a000b85f Merge changes from topic "qcom_display" into q
+
+   * hardware/qcom/media/
+61724a2 Merge "msm8974: adjust for clang on Q" into q
+
    * manifest/
-dd34b24 manifest: Track bootctrl from LOS
-a4b73b3 Merge branch 'android-10.0.0_r4' of https://android.googlesource.com/platform//manifest into HEAD
 7d88aca Manifest for Android 10.0.0 Release 4 (QP1A.191005.007)
+b59d318 manifest: Track opt/net/wifi from LOS
 
    * packages/apps/Blissify/
 18fa2e2 Blissify: Add Icons to Blissify Categories
@@ -133,19 +165,16 @@ a90b66b Blissify: Add header for Buttons Category
 08731a3 Blissify: Add header for Animation Category
 b6da2e0 Blissify: Add header for Statusbar Category
 
-   * packages/apps/Nfc/
-5ed538e6 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD
-
    * vendor/bliss/
-f6dca746 kernel: Move our dtb.img logic here
+772c3bf7 config: Build AboutBliss
+803c8747 prebuilt: Add AboutBliss App
+a9127d2d kernel: Build dtb.img from compiled dtbs
+8e90a5f6 kernel: Don't re-define dtbo.img names
 
 ====================
      10-07-2019
 ====================
 
-
-   * build/make/
-60435b51a envsetup: Automatically set CCACHE_EXEC to the system's ccache
 
    * frameworks/base/
 c4c8794aa2e SoundPool: Do not sleep on stop for USAGE_GAME or on BUFFER_END
@@ -159,14 +188,22 @@ f77e01581 Fix derp in 119f4e61cd2164a56ebc4caba8ec735e36f70422
 65ca7e0f2 gralloc: Add option for YCrCb venus camera preview
 293c9822c gralloc: Allow devices to opt-in for YCrCb camera preview
 
-   * hardware/qcom/display/
-a000b85f Merge changes from topic "qcom_display" into q
-
-   * hardware/qcom/media/
-61724a2 Merge "msm8974: adjust for clang on Q" into q
-
-   * manifest/
-b59d318 manifest: Track opt/net/wifi from LOS
+   * packages/apps/BlissUpdater/
+69b90bc BlissUpdater: Remove unwanted imports nd casts
+9de6cad BlissUpdater: Add Changelog button
+e722e12 BlissUpdater: Theme improvements
+ddf392a Updater: Mark as persistent
+edcc03f Updater: Correct cleanup notification action
+d9fef89 Updater: Add little delay before sending broadcast
+cdbe097 BlissUpdater: Always show preferences
+895f92c BlissUpdater: Remove all Translation Strings
+23b1c85 BlissUpdater: UI Redesign
+5653ecb BlissUpdater: Remove unwanted Stuff
+3b8b640 Updater: Theme actionbar text too
+2e25c8e Updater: Use accent for actionbar items
+576056b Updater: Expose the lower background color
+3f06d02 Updater: Allow to suspend A/B updates
+6cf3f3d BlissUpdater: Assume older Android version to be incompatible
 
    * packages/apps/DeskClock/
 54055592b DeskClock: Use POWER_OFF_ALARM permission
@@ -177,11 +214,14 @@ aaa7bd18a Deskclock: define app category
 e3e13df14 AOSP/DeskClock - Fix improperly formatted resource strings in DeskClock.
 dd19a4d0a DeskClock - Moved the android:targetSdkVersion to 25 to fix "Clock has stopped" message displayed when Alarm trigger.
 
-   * vendor/bliss/
-772c3bf7 config: Build AboutBliss
-803c8747 prebuilt: Add AboutBliss App
-a9127d2d kernel: Build dtb.img from compiled dtbs
-8e90a5f6 kernel: Don't re-define dtbo.img names
+   * system/bt/
+e2868dfba Prevent abort in case of command timeout
+5b5a78770 Add support to force disable enhanced sco commands
+5847446ed Bluetooth: Read BLE vendor capability to proceed on Secure conn
+
+   * system/core/
+96c2564d0 mkbootimg: Make unpack_bootimg py3 compatible
+f7c2e0362 bsdgrep: for -r, use the working directory if none specified
 
 ====================
      10-06-2019
@@ -229,23 +269,6 @@ d74eb9e0bd1 SystemUI: Enable and fix QS detail view, adapt layout to Pie
    * frameworks/opt/net/wifi/
 119f4e61c resurrect mWifiLinkLayerStatsSupported counter
 
-   * packages/apps/BlissUpdater/
-69b90bc BlissUpdater: Remove unwanted imports nd casts
-9de6cad BlissUpdater: Add Changelog button
-e722e12 BlissUpdater: Theme improvements
-ddf392a Updater: Mark as persistent
-edcc03f Updater: Correct cleanup notification action
-d9fef89 Updater: Add little delay before sending broadcast
-cdbe097 BlissUpdater: Always show preferences
-895f92c BlissUpdater: Remove all Translation Strings
-23b1c85 BlissUpdater: UI Redesign
-5653ecb BlissUpdater: Remove unwanted Stuff
-3b8b640 Updater: Theme actionbar text too
-2e25c8e Updater: Use accent for actionbar items
-576056b Updater: Expose the lower background color
-3f06d02 Updater: Allow to suspend A/B updates
-6cf3f3d BlissUpdater: Assume older Android version to be incompatible
-
    * packages/apps/Settings/
 9fae1206ad Settings: disable FLAG_WINDOW_IS_OBSCURED check in accessibility
 9884932a01 Settings: show battery times in summary
@@ -269,15 +292,6 @@ a380b43172 Keyguard: Forward port lockscreen quick unlock (2/2)
 0bb1032592 Allow sorting Applications by size
 7036f59ee0 Settings: Add lockscreen visualizer toggle
 
-   * system/bt/
-e2868dfba Prevent abort in case of command timeout
-5b5a78770 Add support to force disable enhanced sco commands
-5847446ed Bluetooth: Read BLE vendor capability to proceed on Secure conn
-
-   * system/core/
-96c2564d0 mkbootimg: Make unpack_bootimg py3 compatible
-f7c2e0362 bsdgrep: for -r, use the working directory if none specified
-
 ====================
      10-05-2019
 ====================
@@ -285,44 +299,6 @@ f7c2e0362 bsdgrep: for -r, use the working directory if none specified
 
 ====================
      10-04-2019
-====================
-
-
-   * hardware/qcom-caf/sdm845/display/
-e6301111c gralloc: Add option for YCrCb venus camera preview
-
-   * packages/apps/Blissify/
-ced613d Blissify: Add 'Invert layout' to navigation bar settings
-c2f8c40 Blissify: Fix and reenable commented out ButtonSettings code
-3db3b16 Fingerprint authentication vibration [2/2]
-
-   * packages/services/Telecomm/
-2236380f Telecomm: Phone ringtone setting for Multi SIM device [3/3]
-
-   * vendor/bliss/
-8529f473 Merge "Revert "soong_config: Add flag for devices use metadata as FDE key"" into q10
-
-   * vendor/qcom/opensource/libfmjni/
-8cd3026 libfmjni: Fix build guard
-c0b00a1 libfmjni: Fix typo in ctl.stop
-0e4871e libfmjni: Rename the QC introduced props to have vendor tag added
-b221d13 libfmjni: Fix wrong BT SOC property name
-6a801de libfmjni: Drop unnecessary dependencies
-c571579 libfmjni: use proper nativehelper headers
-e94bc70 libfmjni: Ignore unused parameters from APIs
-1c877cc libfmjni: Resolve FM_DEVICE_PATH R/O open flag
-da8eeb2 libfmjni: Resolve fread assignment to condition cast
-38e4935 libfmjni: Remove unused variables
-a87c3a6 libfmjni: Add jni core headers dependency
-b3259b0 libfmjni: Fix strchr implicit char* typecast in ConfFileParser
-589a1dd libfmjni: Improve and fix FM jni logs
-172afb4 libfmjni: Add support for internal antenna hardware
-300dfd5 libfmjni: Skip loading FM firmware if requested
-735e13a iFM: Removing Memory leaks from the HAL Test Code
-4ba1b7d Changes to enable FM using old hal method
-
-====================
-     10-03-2019
 ====================
 
 
@@ -380,6 +356,9 @@ e644412ad Forward port 'Swap volume buttons' (2/3)
 7e1a40507 display: inform compilers of deliberate switch fallthrough
 70f855728 hwcomposer: Work around overzealous fortify checks
 
+   * hardware/qcom-caf/sdm845/display/
+e6301111c gralloc: Add option for YCrCb venus camera preview
+
    * manifest/
 03886f6 Remove duplicate
 3681850 lineage: RIP prebuilt OpenSSL
@@ -389,12 +368,11 @@ e37ca8f lineage: Enable most qcom hardware repositories
 e5bdf7a lineage: Enable sdm845 CAF HALs
 730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
 10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
-e08e152 manifest: Sync Recorder
-4f03aa1 manifest: Sync ANT+ repositories
-65c581c Sync Eleven
-d134290 lineage: Sync AudioFX
 
    * packages/apps/Blissify/
+ced613d Blissify: Add 'Invert layout' to navigation bar settings
+c2f8c40 Blissify: Fix and reenable commented out ButtonSettings code
+3db3b16 Fingerprint authentication vibration [2/2]
 54414cf Blissify: Move Buttons Settings to Blissify [2/2]
 6acefed utils: Remove network mode option
 486bbb2 utils: Add deviceSupportsFlashLight util
@@ -444,11 +422,15 @@ d67e0ad29e SoundSettings: Add charging vibration settings
 a02074a884 Settings: Add package name to installed app details
 459d3d1c82 AmbientDisplay: Add custom pref for devices with custom doze packages
 
+   * packages/services/Telecomm/
+2236380f Telecomm: Phone ringtone setting for Multi SIM device [3/3]
+
    * prebuilts/tools-bliss/
 50ae18c prebuilts: Import vdexExtractor v0.5.2 with compact_dex_converter
 6491448 prebuilts: Import baksmali/smali v2.3.3
 
    * vendor/bliss/
+8529f473 Merge "Revert "soong_config: Add flag for devices use metadata as FDE key"" into q10
 15460b83 lineage: allow Has_legacy_camera_hal1 to configure Shared_libs and Overrides
 52ebeab0 kernel: Switch back to host openssl entirely
 98599b66 extract_utils: Source the prebuilts from the new repo
@@ -467,20 +449,40 @@ abd643b0 build: Move hardware/qcom/audio back to its original path
 a45fac4c build: Remove ability to set WLAN/BT_VENDOR variant
 e2877df7 bliss: Disable vendor restrictions
 
+   * vendor/qcom/opensource/libfmjni/
+8cd3026 libfmjni: Fix build guard
+c0b00a1 libfmjni: Fix typo in ctl.stop
+0e4871e libfmjni: Rename the QC introduced props to have vendor tag added
+b221d13 libfmjni: Fix wrong BT SOC property name
+6a801de libfmjni: Drop unnecessary dependencies
+c571579 libfmjni: use proper nativehelper headers
+e94bc70 libfmjni: Ignore unused parameters from APIs
+1c877cc libfmjni: Resolve FM_DEVICE_PATH R/O open flag
+da8eeb2 libfmjni: Resolve fread assignment to condition cast
+38e4935 libfmjni: Remove unused variables
+a87c3a6 libfmjni: Add jni core headers dependency
+b3259b0 libfmjni: Fix strchr implicit char* typecast in ConfFileParser
+589a1dd libfmjni: Improve and fix FM jni logs
+172afb4 libfmjni: Add support for internal antenna hardware
+300dfd5 libfmjni: Skip loading FM firmware if requested
+735e13a iFM: Removing Memory leaks from the HAL Test Code
+4ba1b7d Changes to enable FM using old hal method
+
+====================
+     10-03-2019
+====================
+
+
+   * manifest/
+e08e152 manifest: Sync Recorder
+4f03aa1 manifest: Sync ANT+ repositories
+65c581c Sync Eleven
+d134290 lineage: Sync AudioFX
+
 ====================
      10-02-2019
 ====================
 
-
-====================
-     10-01-2019
-====================
-
-
-   * frameworks/base/
-0f727dc33c4 Change default fod icon
-7228bf52192 FODCircleView: defer removal to next re-layout
-55c01eb1fd1 Initial support for in-display fingerprint sensors
 
    * hardware/qcom-caf/msm8998/audio/
 a68afd590 hal: Add open source HAL for Elliptic Ultrasound
@@ -494,6 +496,16 @@ c9bb68613 Don't build lights module if vendor supplies it
 849995bf8 media: Add extrapolated gpustats header for PQ
 01cc83974 venc: Fix VQZip issue
 3cff27d67 media: Use    * pathmap
+
+====================
+     10-01-2019
+====================
+
+
+   * frameworks/base/
+0f727dc33c4 Change default fod icon
+7228bf52192 FODCircleView: defer removal to next re-layout
+55c01eb1fd1 Initial support for in-display fingerprint sensors
 
    * manifest/
 bac12df lineage: Enable NFC NXP repos
@@ -519,25 +531,6 @@ f379af470 audio: Use direct    * pathmap
      09-29-2019
 ====================
 
-
-   * packages/apps/Recorder/
-2338a0c Recorder: Switch to Android.bp
-5e13025 Recorder: set minSdk to api 29 and cleanup
-a7fa15c Recorder: friendship with storage ended, MediaProvider is my new best friend
-
-====================
-     09-28-2019
-====================
-
-
-   * device/qcom/sepolicy/
-0740394e Revert "sepolicy: Fix target selection"
-
-   * device/qcom/sepolicy-legacy-um/
-a173119e Use set_prop() macro for property sets
-5f06abfa qcom: Label vendor files with (vendor|system/vendor) instead of vendor
-441f1138 sepolicy: Remove rules for non legacy platforms
-dcf45c09 sepolicy: Remove rules for no longer supported platforms
 
    * hardware/qcom-caf/msm8960/audio/
 5afa193 audio_hw: match destruction of mutexes
@@ -712,17 +705,10 @@ cc0a10d alsa_sound: Fix separated audio input support
 c8cde6f audio: Enhance ALSA for USB Dock Audio support
 4f4607a audio: Use    * pathmap
 
-   * hardware/qcom-caf/msm8996/display/
-a1ca3a975 Don't build lights module if vendor supplies it
-ced789792 display: Use    * pathmap
-
-   * hardware/qcom-caf/sdm845/display/
-820ab202d Revert "display: Define soong namespace"
-
-   * hardware/qcom-caf/sm8150/media/
-a093569c mm-core: fix pathmap for test builds
-
    * packages/apps/Recorder/
+2338a0c Recorder: Switch to Android.bp
+5e13025 Recorder: set minSdk to api 29 and cleanup
+a7fa15c Recorder: friendship with storage ended, MediaProvider is my new best friend
 7f8a097 Recorder: Make this a standard app
 b609143 Recorder: Use Media    *ion APIs
 
