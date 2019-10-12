@@ -1,0 +1,732 @@
+====================
+     10-12-2019
+====================
+
+
+   * manifest/
+254d77e manifest: Enable AOSP FM app and add QCOM libfmjni
+5ea4139 manifest: Move qcom fm and power to vendor/qcom/opensource
+7cc0c72 manifest: Track legacy nxp from LOS
+9ad493f manifest: Track development from LOS
+6cf0882 manifest: Add LOS Remote to track hals
+
+   * packages/services/Telephony/
+f168dae93 Add gitreview
+
+====================
+     10-11-2019
+====================
+
+
+   * frameworks/base/
+7e8f66b96f1 audioservice: re send BT_SCO parameter to HAL when audioserver restarts
+6b8047ae53d audioservice: fix hasMediaDynamicPolicy() for loopback and render policies
+e7b6985bb63 Fix for, BT Carkit position issue when music app is killed
+eb867da9154 SystemUI: Update the media notification only when needed
+92fd1cb6f2e base: add Trust usb restrictor
+54af2297cae Remove a user/userdebug difference.
+0a75ed894c3 Check GL extension is supported before using it in glwallpaper
+01c5d064f66 Reduce unnecessary NotificationListener binder transaction.
+a326f605767 Don't clear the output array if it failed to open the proc status file
+49f585843ab Fix QuotaController constants.
+a2d6296b353 Fix memory leak in aapt2
+89414aed1a6 aapt2: disable leak detection
+478326cf892 Fix FD leak in ConnectivityManager.getConnectionOwnerUid
+d3fd7996725 Apply JNI optimizations to HwParcel
+
+   * hardware/qcom-caf/msm8996/audio/
+7b3e32b61 audio: Use direct    * pathmap
+
+   * hardware/qcom-caf/msm8996/media/
+6573821c8 media: Don't link libgpustats
+eadb4951a media: Add extrapolated gpustats header for PQ
+37ca21429 media: libOmxSw encoders require prop headers :(
+abdaa6ba4 venc: Fix VQZip issue
+26f4dc5a3 media: Use    * pathmap
+
+   * manifest/
+12beebd manifest: re-enable msm8960 hals
+
+====================
+     10-10-2019
+====================
+
+
+   * frameworks/base/
+a35c37358ec Merge changes from topics "bt-battery", "base-bringup" into q
+42d13aa475a Audio: Do not disconnect profiles till Bluetooth Off
+3d7e8795baf SystemUI: Add more bluetooth device filters
+aa13cce7539 SystemUI: Improvements for bluetooth battery levels
+9c75951b2cd SystemUI: Show bluetooth battery level when available
+
+   * manifest/
+55014ba manifest: Track Deskclock from blissroms
+2bc38d5 [TEMP] Track 8150 Hals
+
+   * packages/apps/BlissUpdater/
+d2a2758 BlissUpdater: Use Common Changelog URL
+
+   * packages/apps/Blissify/
+7cd2520 Merge "Buttons: Move Advanced Restart switch to Blissify [2/2]" into q
+
+   * vendor/bliss/
+dd5eb699 build deskclock
+1161a76a accents: Add new accent colors for Q
+f430a5c5 vendor: Update Pixel Launcher
+5024a156 vendor: Add Gallery Go
+02bdb1fb vendor: Add overlay for Pixel Launcher
+93a5bb69 update overlay for 10
+e924b958 vendor: Add Pixel Launcher and Settings Intelligence
+
+====================
+     10-09-2019
+====================
+
+
+   * build/make/
+3d666e688 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//build into HEAD
+
+   * frameworks/av/
+a3b2e25b4 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//frameworks/av into HEAD
+
+   * frameworks/base/
+bf800c26b9b Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//frameworks/base into HEAD
+
+   * manifest/
+33e4257 Merge "manifest: Track bootctrl from LOS" into q
+dd34b24 manifest: Track bootctrl from LOS
+a4b73b3 Merge branch 'android-10.0.0_r4' of https://android.googlesource.com/platform//manifest into HEAD
+
+   * packages/apps/Blissify/
+bb69645 Buttons: Move Advanced Restart switch to Blissify [2/2]
+
+   * packages/apps/LineageParts/
+e6c9e14 Trust: Disable lineagestats
+
+   * packages/apps/Nfc/
+5ed538e6 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD
+
+   * packages/apps/Settings/
+d6db78399b Settings: One does not simply become a Developer
+2d7f5475c6 Settings: Move Advanced Restart switch to Blissify [1/2]
+
+   * vendor/bliss/
+2949fc5b Merge changes from topic "aboutbliss" into q10
+f6dca746 kernel: Move our dtb.img logic here
+
+====================
+     10-08-2019
+====================
+
+
+   * build/make/
+60435b51a envsetup: Automatically set CCACHE_EXEC to the system's ccache
+
+   * hardware/qcom-caf/msm8960/audio/
+1a6b25c Fix build errors
+
+   * hardware/qcom-caf/msm8960/display/
+dadb58d libexternal: fix switch fall through
+87ef5de display: inform compilers of deliberate switch fallthrough
+
+   * hardware/qcom-caf/msm8960/media/
+6b4fad8 media: drop byte typedef
+
+   * hardware/qcom/display/
+a000b85f Merge changes from topic "qcom_display" into q
+
+   * hardware/qcom/media/
+61724a2 Merge "msm8974: adjust for clang on Q" into q
+
+   * manifest/
+7d88aca Manifest for Android 10.0.0 Release 4 (QP1A.191005.007)
+b59d318 manifest: Track opt/net/wifi from LOS
+
+   * packages/apps/Blissify/
+18fa2e2 Blissify: Add Icons to Blissify Categories
+a90b66b Blissify: Add header for Buttons Category
+08731a3 Blissify: Add header for Animation Category
+b6da2e0 Blissify: Add header for Statusbar Category
+
+   * vendor/bliss/
+772c3bf7 config: Build AboutBliss
+803c8747 prebuilt: Add AboutBliss App
+a9127d2d kernel: Build dtb.img from compiled dtbs
+8e90a5f6 kernel: Don't re-define dtbo.img names
+
+====================
+     10-07-2019
+====================
+
+
+   * frameworks/base/
+c4c8794aa2e SoundPool: Do not sleep on stop for USAGE_GAME or on BUFFER_END
+ab5641e7ced Add missing INTERACT_ACROSS_USERS_FULL permission
+b221e9cb5a3 TypeClockController: Make it compile with new plugin API
+
+   * frameworks/opt/net/wifi/
+f77e01581 Fix derp in 119f4e61cd2164a56ebc4caba8ec735e36f70422
+
+   * hardware/qcom-caf/msm8998/display/
+65ca7e0f2 gralloc: Add option for YCrCb venus camera preview
+293c9822c gralloc: Allow devices to opt-in for YCrCb camera preview
+
+   * packages/apps/BlissUpdater/
+69b90bc BlissUpdater: Remove unwanted imports nd casts
+9de6cad BlissUpdater: Add Changelog button
+e722e12 BlissUpdater: Theme improvements
+ddf392a Updater: Mark as persistent
+edcc03f Updater: Correct cleanup notification action
+d9fef89 Updater: Add little delay before sending broadcast
+cdbe097 BlissUpdater: Always show preferences
+895f92c BlissUpdater: Remove all Translation Strings
+23b1c85 BlissUpdater: UI Redesign
+5653ecb BlissUpdater: Remove unwanted Stuff
+3b8b640 Updater: Theme actionbar text too
+2e25c8e Updater: Use accent for actionbar items
+576056b Updater: Expose the lower background color
+3f06d02 Updater: Allow to suspend A/B updates
+6cf3f3d BlissUpdater: Assume older Android version to be incompatible
+
+   * packages/apps/DeskClock/
+54055592b DeskClock: Use POWER_OFF_ALARM permission
+f168ce929 DeskClock: Add support of power off alarm feature
+4e3a37a04 DeskClock: Add back flip and shake actions
+b85f7bf11 DeskClock: adaptive icon
+aaa7bd18a Deskclock: define app category
+e3e13df14 AOSP/DeskClock - Fix improperly formatted resource strings in DeskClock.
+dd19a4d0a DeskClock - Moved the android:targetSdkVersion to 25 to fix "Clock has stopped" message displayed when Alarm trigger.
+
+   * system/bt/
+e2868dfba Prevent abort in case of command timeout
+5b5a78770 Add support to force disable enhanced sco commands
+5847446ed Bluetooth: Read BLE vendor capability to proceed on Secure conn
+
+   * system/core/
+96c2564d0 mkbootimg: Make unpack_bootimg py3 compatible
+f7c2e0362 bsdgrep: for -r, use the working directory if none specified
+
+====================
+     10-06-2019
+====================
+
+
+   * frameworks/base/
+22468ee4ed9 telephony: Conditionally ignore RSSNR signal level
+bc943e80243 base: SystemUI: add back QS hide label
+5ef07c3fa98 frameworks: Reset battery stats [1/2]
+7a1422cb945 Keyguard: Forward port lockscreen quick unlock (1/2)
+9f04570cced Fingerprint authentication vibration [1/2]
+6f20b207b41 SystemUI: runtime configurable audio panel location
+b8a8728a05f Revert "SystemUI: allow devices override audio panel location"
+be66544d3f4 base: SystemUI: make QS columns count configurable
+ee453aa8515 base: SystemUI: enable qs DUAL_TARGET_ALLOWED = true
+5c41e56adbf SystemUI: Add statusbar NFC icon
+8636f16140e SystemUI: Hide back icon when screen pinned and gestural mode enabled
+43f02043973 SystemUI: Fix escape text when screen pinned and gestural mode enabled
+8c90eb27a33 SystemUI: Show estimates on QS only if battery percentage is unavailable or disabled
+c062bad489e ScreenPinningRequest: Fix recents button not appearing
+b45d8f34625 base: Phone ringtone setting for Multi SIM device [1/3]
+bd9f2ac38fd overlays: add a few accents
+aafb1230b81 Add new font overlays
+d16908f91f9 SystemUI: Implement Smart space
+b67fdf49aff SystemUI: Port code to improve pixel live wallpapers
+ac6ded17d7c Initial import of SystemUIGoogleFactory
+2d3182458cb Revert "Disable ClockOptionsProvider so clocks don't appear in picker app"
+3e614994118 Revert "Disable custom clock faces in SystemUI"
+b9d34a9eda3 SystemUI: Avoid adding useless empty quick settings page
+89b2de9d88b SystemUI: Don't dismiss keyguard if user key isn't unlocked
+af21e4af9ad SystemUI: Dismiss keyguard on boot if disabled by current profile
+185d6e1d985 SystemUI: Add visualizer feature
+7322fa60c63 fw/b: Prevent trying to enable hw offload for tethering via VPN upstreams
+dac04f9b898 fw/b: Add capability to allow tethering to use VPN upstreams
+1973219f3d5 Camera button support
+01a112da604 Camera: allow camera to use power key as shutter
+8c720ba107d Forward port CM Screen Security settings (1/2)
+900cf56aa35 KernelCpuUidTimeReader: Decrease log level on non-eng builds
+2277c7f24f7 SystemUI: Advanced location tile
+d74eb9e0bd1 SystemUI: Enable and fix QS detail view, adapt layout to Pie
+7f23be019fb SystemUI: Apply system_icons_keyguard_padding_end to parent view
+7fd70e1c7c4 Support enforcing a minimum delay between notification sounds of an app.
+
+   * frameworks/opt/net/wifi/
+119f4e61c resurrect mWifiLinkLayerStatsSupported counter
+
+   * packages/apps/Settings/
+9fae1206ad Settings: disable FLAG_WINDOW_IS_OBSCURED check in accessibility
+9884932a01 Settings: show battery times in summary
+486b0f712e Settings: display fstype for mounted volumes
+d1b854e91e Settings: enable SIM card ringtone only if slot not empty
+26b53379b9 Settings: Phone ringtone setting for Multi SIM device [2/3]
+971575d668 Settings: Fix portuguese translation for "back sensitivity"
+a019265de6 FeatureFactoryImpl: Implement ApplicationFeatureProviderGoogleImpl
+768b04bfd0 FeatureFactoryImpl: Implement SuggestionFeatureProvider
+2d9df80e23 FeatureFactoryImpl: Implement SearchFeatureProviderGoogleImpl
+ee4fda3e4e FeatureFactoryImpl: Implement AccountFeatureProviderGoogleImpl
+8785ed57b8 Settings: Initial implementation of FeatureFactoryImpl from Pixel
+63731289ba Settings: Add hotspot setting to allow VPN upstreams
+22f2481c1c Settings: Reset battery stats [2/2]
+a276291492 PowerUsageSummary: Remove advanced battery menu item
+269c60462a Settings: PowerUsageSummary: open advanced usage on header click
+dae1477662 QS dev tiles: Don't set them to active area
+a380b43172 Keyguard: Forward port lockscreen quick unlock (2/2)
+779d0ff16e Settings: Fix the failing strings
+71b13bb5b5 Settings: fix apn_editor carrier_enabled summaryOff string
+0bb1032592 Allow sorting Applications by size
+7036f59ee0 Settings: Add lockscreen visualizer toggle
+
+====================
+     10-05-2019
+====================
+
+
+====================
+     10-04-2019
+====================
+
+
+   * frameworks/av/
+953538306 audiopolicy: make audio policy extensible
+7824a9405 Revert "camera: Allow devices to load custom CameraParameter code"
+1071bab68 camera: Allow devices to load custom CameraParameter code
+4ba7d3537 camera: include: Don't override possible overlayed header
+7979004d5 Camera: check metadata type before releasing frame
+57bc204ed camera/media: Support legacy HALv1 camera in mediaserver
+2b56f47da libstagefright: use 64-bit usage for native_window_set_usage
+4e2993ae3 libstagefright: Free buffers on observer died
+8e9a8fcfc stagefright: ACodec: Resolve empty vendor parameters usage
+68df3e152 stagefright: omx: Don't signal dataspace change on legacy QCOM
+d42aa96b0 libstagefright: Support YVU420SemiPlanar camera format
+e1797a0c8 cameraservice: Resolve message vs start/stop preview races
+9047013e3 camera: Don't segfault if we get a NULL parameter
+4aeab40b6 nuplayer: Avoid crash when codec fails to load
+
+   * frameworks/base/
+13edc8afb86 LockSettingsService: Support for separate clear key api
+694a22d3ac4 Fix Build Credentials refactored to use byte[]
+21aa7280cad frameworks: base: Port password retention feature
+0871e43617a PowerManagerService: Wake on plug (1/2)
+e5cd3e76ad4 SystemUI: Add navbar layout inversion tuning
+ea7cab11826 Add support for runtime toggle of navbar
+c114797d80c PowerManager: Allow to distinguish different keypresses
+f22ce0a068f PowerManagerService: Allow to light up buttons only when pressed
+7e75e0e71da PowerManager: Add proximity check on wake
+2eeda57ece5 fw/b: Button backlight brightness
+a2ee315f379 Enter quick doze with non-wakeup alarm.
+705d5176a08 Correction in logic of roundend size calculation of SD card
+6b8b586d9a5 Forward port 'Swap volume buttons' (1/3)
+2db427ee210 PhoneWindowManager: Allow torch and track skip during ambient display
+0dc89fd515d fw/b: Allow customisation of navbar app switch long press action
+9a842c1e968 PhoneWindowManager: Implement press home to answer call
+cd3a8bfea29 PhoneWindowManager: Tap volume buttons to answer call
+65961619970 Reimplement device hardware wake keys support
+7a057e9b393 Reimplement hardware keys custom rebinding
+0880a27a0ce Long-press power while display is off for torch
+b73371ce4fe PhoneWindowManager: add LineageButtons volumekey hook
+62532d6bf2b Framework: Volume key cursor control
+a24db247a62 AppOpsService: Fix up 013a611
+4b6df960fc5 Support for device specific key handlers
+2e2833535ae perf: Add support for HIDL Lineage power HAL
+14e09fd80a5 base: [Squash] Revert pre-sdk commits
+e88e10db401 AppOpsService: Watch op mode changes when an AppOp restriction dies
+1bd6751b937 fw/b: Fix systemui tests with in-display fingerprint
+c154aadd483 CameraServiceProxy: Loosen UID check conditionally
+
+   * frameworks/native/
+e644412ad Forward port 'Swap volume buttons' (2/3)
+
+   * hardware/qcom-caf/msm8974/display/
+7e1a40507 display: inform compilers of deliberate switch fallthrough
+70f855728 hwcomposer: Work around overzealous fortify checks
+
+   * hardware/qcom-caf/sdm845/display/
+e6301111c gralloc: Add option for YCrCb venus camera preview
+
+   * manifest/
+03886f6 Remove duplicate
+3681850 lineage: RIP prebuilt OpenSSL
+2927ad2 lineage: Enable msm8998 CAF HALs
+aafab65 lineage: Enable msm8916, msm8974, msm8994 and msm8996 CAF HALs
+e37ca8f lineage: Enable most qcom hardware repositories
+e5bdf7a lineage: Enable sdm845 CAF HALs
+730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
+10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
+e08e152 manifest: Sync Recorder
+4f03aa1 manifest: Sync ANT+ repositories
+65c581c Sync Eleven
+d134290 lineage: Sync AudioFX
+
+   * packages/apps/Blissify/
+ced613d Blissify: Add 'Invert layout' to navigation bar settings
+c2f8c40 Blissify: Fix and reenable commented out ButtonSettings code
+3db3b16 Fingerprint authentication vibration [2/2]
+54414cf Blissify: Move Buttons Settings to Blissify [2/2]
+6acefed utils: Remove network mode option
+486bbb2 utils: Add deviceSupportsFlashLight util
+de44940 Add Utilities required for Buttons
+edd9391 Add DeviceUtils and TelephonyUtils
+1039978 Blissify: Add Buttons Category
+069fc6e Blissify: Move Statusbar Settings to Blissify [2/2]
+
+   * packages/apps/Settings/
+155069fca3 Settings: Forward port pattern visibility settings (2/2)
+82bd7a82fa Settings: Forward port lock pattern grid size (2/2)
+7d17d02170 Settings: Add back increasing ring feature (2/2).
+b8f75cecd9 Settings: Add switch for linked ring and media notification volumes
+0e768d12c7 Settings: Add setup UI for minimum delay between an app's notification sounds
+dd6793d58d Settings: display: Add wake on plug switch
+8f99bd614e Revert "Settings: Add back increasing ring feature (2/3)"
+96dc8b872e Revert "Settings: Add switch for linked ring and media notification volumes"
+034ca74171 Settings: move force dark preference to display settings
+873329177c Settings: Move theming to display settings
+59a86281fa Settings: Add animations on some preferences
+bfc7a25557 Settings: battery: Add LineageParts perf profiles
+f0b0eed530 fingerprint: Allow devices to configure sensor location
+7b5e24ec2e Settings: Add proximity check on wake preference
+125f6052a2 Settings: adaptive icon
+578538caf0 Settings: Allow devices to provide remote gesture preferences
+b36785e12b Settings: gesture: Add LineageParts touchscreen gesture settings
+1c2668ab68 Settings: Make sure to define /lineage/ XML namespace
+1198fe4689 Settings: Add back battery and notification lights settings
+4ee8e70022 Settings: Add double tap to sleep preference
+267f3fa79a Settings: Forward port option to pass swipe-up-to-unlock
+69759aea94 Settings: Add option to scramble pin layout when unlocking (1/2).
+470fe68003 Settings: Add toggle for Lockscreen Media Art [2/3]
+a9f1a24761 Settings: Add an option to force pre-O apps to use full screen aspect ratio
+e258fb4e82 Settings: Implement ADB notification and ADB over network
+d3d93c7f2a Settings: Add advanced restart switch
+9d18f02507 Settings: Expose option to change the device hostname.
+b9270ccaf1 Settings: Depend on lineage platform library
+072dcfb572 Settings: Add kill app back button toggle
+6a03f2c984 Settings: Disable dashboards conditions and suggestions (2/2)
+55340a908f Settings: Use dashboard drawable from Blissify
+387137c4b9 Include support repo
+874a716c62 Settings: Use correct icon for ring volume
+c23e5c0006 Settings: Add switch for linked ring and media notification volumes
+18fc883a81 Settings: Add back increasing ring feature (2/3)
+2b38566fd0 SoundSettings: Add screenshot sounds settings
+d67e0ad29e SoundSettings: Add charging vibration settings
+a02074a884 Settings: Add package name to installed app details
+459d3d1c82 AmbientDisplay: Add custom pref for devices with custom doze packages
+
+   * packages/services/Telecomm/
+2236380f Telecomm: Phone ringtone setting for Multi SIM device [3/3]
+
+   * prebuilts/tools-bliss/
+50ae18c prebuilts: Import vdexExtractor v0.5.2 with compact_dex_converter
+6491448 prebuilts: Import baksmali/smali v2.3.3
+
+   * vendor/bliss/
+8529f473 Merge "Revert "soong_config: Add flag for devices use metadata as FDE key"" into q10
+15460b83 lineage: allow Has_legacy_camera_hal1 to configure Shared_libs and Overrides
+52ebeab0 kernel: Switch back to host openssl entirely
+98599b66 extract_utils: Source the prebuilts from the new repo
+5b937b2b kernel: Make kernel depend on depmod
+bd4fe155 build/tools: Move prebuilts to the new repository
+8f059c2c Revert "kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage"
+0750fecc kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage
+582cc927 lineage: env: fixup recovery fstab path
+f78c4515 common: Copy APN list to $(TARGET_COPY_OUT_PRODUCT)/etc
+8c3c95fe extract_files: Add ODM partition blob support
+1d3cabfb build: Remove TARGET_CRYPTFS_HW_PATH
+e1f520cd build: Don't set pathmap for repositories that do not exist
+074ead22 build: Don't set pathmap for AOSP qcom hardware repositories
+f601156f build: Move to new qcom HAL directory layout
+abd643b0 build: Move hardware/qcom/audio back to its original path
+a45fac4c build: Remove ability to set WLAN/BT_VENDOR variant
+e2877df7 bliss: Disable vendor restrictions
+
+   * vendor/qcom/opensource/libfmjni/
+8cd3026 libfmjni: Fix build guard
+c0b00a1 libfmjni: Fix typo in ctl.stop
+0e4871e libfmjni: Rename the QC introduced props to have vendor tag added
+b221d13 libfmjni: Fix wrong BT SOC property name
+6a801de libfmjni: Drop unnecessary dependencies
+c571579 libfmjni: use proper nativehelper headers
+e94bc70 libfmjni: Ignore unused parameters from APIs
+1c877cc libfmjni: Resolve FM_DEVICE_PATH R/O open flag
+da8eeb2 libfmjni: Resolve fread assignment to condition cast
+38e4935 libfmjni: Remove unused variables
+a87c3a6 libfmjni: Add jni core headers dependency
+b3259b0 libfmjni: Fix strchr implicit char* typecast in ConfFileParser
+589a1dd libfmjni: Improve and fix FM jni logs
+172afb4 libfmjni: Add support for internal antenna hardware
+300dfd5 libfmjni: Skip loading FM firmware if requested
+735e13a iFM: Removing Memory leaks from the HAL Test Code
+4ba1b7d Changes to enable FM using old hal method
+
+====================
+     10-03-2019
+====================
+
+
+====================
+     10-02-2019
+====================
+
+
+   * hardware/qcom-caf/msm8998/audio/
+a68afd590 hal: Add open source HAL for Elliptic Ultrasound
+
+   * hardware/qcom-caf/msm8998/display/
+c9bb68613 Don't build lights module if vendor supplies it
+185b731a2 display: Use    * pathmap
+
+   * hardware/qcom-caf/msm8998/media/
+9c32d0478 media: Don't link libgpustats
+849995bf8 media: Add extrapolated gpustats header for PQ
+01cc83974 venc: Fix VQZip issue
+3cff27d67 media: Use    * pathmap
+
+====================
+     10-01-2019
+====================
+
+
+   * frameworks/base/
+0f727dc33c4 Change default fod icon
+7228bf52192 FODCircleView: defer removal to next re-layout
+55c01eb1fd1 Initial support for in-display fingerprint sensors
+
+   * manifest/
+bac12df lineage: Enable NFC NXP repos
+2923485 Track qcom/keymaster from los
+
+   * vendor/bliss/
+9f385feb Revert "soong_config: Add flag for devices use metadata as FDE key"
+
+====================
+     09-30-2019
+====================
+
+   * art/
+8d4e9e0451 Add an option to disable sse4.2 features
+
+   * hardware/qcom-caf/msm8998/audio/
+6f456a420 audio_extn/gef.c: Include pthread.h
+3ce722b7d ssr: Fix building with OSS materials
+29535c328 audio: Skip libhdmipassthru on OSS builds
+f379af470 audio: Use direct    * pathmap
+
+====================
+     09-29-2019
+====================
+
+
+   * hardware/qcom-caf/msm8960/audio/
+5afa193 audio_hw: match destruction of mutexes
+1409cb8 hal: close audio calibration fd
+1102d5f hal: Add support for voice calls on Fusion3 platforms
+5ccd4d9 audio-hw: Restrict voice_start_usecase only for 1 call at a time
+5bd98d3 hal: Fix no audio during voice call with voip in background
+2a7ce75 hal: fix no sound issue in voice call
+9dd8d52 hal: Ensure mic mute state updated before starting voice call
+286c339 hal: fix Rx path mute issue during incall recording
+6dde973 audio: Use generated kernel headers
+b1692dc msm8960: fix unused-parameter errors when no extensions are defined
+2b9cc7f hal: Require feature flags to be explicitly enabled
+3ba81f8 hal: Update prefixes for audio system properties
+4ab9705 mm-audio: Add -Wno-error to compile with global -Werror.
+90e42fe audio: Fix deprecated log warning
+f56ae12 Use -Werror in hardware/qcom/audio
+a32bccb post_proc: do not use GNU old-style field designators
+1d26abc visualizer: do not use GNU old-style field designators
+8c13aa1 voice_processing: do not use GNU old-style field designators
+980efe5 Enable strict error for warnings
+9720ebf audio: Fix complilation warnings under Clang
+54cac82 audio: Remove policy hal directory
+49faa97 Use header lib instead of using global include path
+a3269cf hal: Use LOCAL_VENDOR_MODULE
+8e5442d policy_hal: Partial revert "audio: remove 5.1 channel mask if SSR is not supported"
+d047788 msm8960: treblize configuration
+c31b916 hal: audio-test: Move omx tests mm-audio-internal
+a188e8b mm-audio: Remove omx decoder components from mm-audio folder
+79c1b77 policy_hal: fix for MR1 function prototype.
+0a21127 policy_hal: update custom audio policy against OPR1.170521.001_AOSP
+e309bb0 hal: return EINVAL by default for presentation_position
+fe4d832 policy_hal: update custom audio policy APIs against AOSP
+30dca06 policy_hal: update custom audio policy implementation APIs against O-AOSP
+b75b990 Equalizer: Check value size for get preset name
+027d302 aenc-aac: bounds checking
+9d78a15 Fix parameters passed to pcm_open to include PCM_MONOTONIC
+15fdc27 HAL: Align error code with HIDL wrapper
+c699c20 Move device dependent modules to /vendor
+71578d8 policy_hal: fix build with concurrent audio capture
+92041d2 Add missing liblog dependency
+1ee5f87 policy_hal: Add libbase static library dependency
+78d8f6e Fix security vulnerability: Equalizer setParameter memory overflow
+97ced66 audiopolicy: do not set FM volume during device connection/disconnection
+be38362 audiopolicy: update correct device for primary output when FM resumed
+9c3c24d Fix security vulnerability: Equalizer command might allow negative indexes
+64804e2 Fix security vulnerability: Effect command might allow negative indexes
+3eddbdb hal: Additional checks for dedicated VOIP input
+a752851 hal: Remove volume boost feature for msm8960
+638e404 audio policy: fix media volume after ringtone
+2a51bd4 audio: set voice call volume step by property
+8d93feb hal: Port the dock support to non-legacy 8960 hal
+c4b7b46 audiopolicy: Avoid spurious routing in APM::stopSource
+af1613a hal: Remove compress voip formats and voip_rx flag
+b9d0f77 hal: Fix device selection at start of the voice call
+86c1e6c hal: Fix routing issue for voip use case
+a1ee938 hal: Stop log spam when COMPRESS_VOIP_ENABLED is not defined
+d99536d Add AudioRecord timestamps
+248ef64 policy_hal: Update policy hal for N
+cbfff7d hal: Increase deep buffer buffering
+86fc720 hal: Add legacy EDID channel retrieval
+a570082 hal: Remove listen calibration from 8960 hal
+b9641fb hal: Don't make missing CSD init/deinit functions fatal
+c5cbd7c hal: Detect additional baseband properties
+fb8984e hal: Add support for HTC CSD client
+f72f52d hal: Support old CSD API and add support for Samsung CSD client
+ee399ac hal: only open the amplifier once
+f244ec4 hal: enable amplifier earlier
+5f7bde4 hal: Notify amplifier of device enable/disable
+c041d62 hal: Convert libaudioamp to audio_amplifier HAL
+5054966 hal: Support the audio amplifier hook
+3dd304d hal: Clean up from merge
+f4080e6 hal: Remove obsolete FM_ENABLED flag
+6d7c0e3 voice_extn: remove redundant check of mode when stop voice use case
+22fbe47 audiopolicy: enable deep buffer output by default for music streams
+85a496d audiopolicy: use deep buffer output by default for music streams
+4a01503 mm-audio: omx: Fix OMX encoders timestamp
+6ab6482 hal: fix resource leak issues in platform.c
+6fddf05 audio HAL: do not stop capture on overrun
+f371dbd audio HAL: fix thread starvation
+b6fb408 hal: Validate active input before accessing source
+041282b hal: fm: add parameter to set mute options
+21c3705 policy_hal: fix for FM playback without active music stream
+2edf449 policy_hal: fix for volume burst during FM device switch
+b3eeb06 policy: Delay FM volume update to start of FM playback
+6518473 policy: Avoid unnecessary set_parameter calls
+6ef8952 hal: audio_extn: fix pop noise when FM is interrupted by voice call
+2a421fa audio: update flags for selection of VoIP direct output
+6b28334 hal: add support to use low latency as primary output
+8220cb3 hal: Sync name_to_index table with pcm_device_table
+9a5d071 hal: Fix voice call recording on msm8960
+7e43b83 hal: Adjust DEEP_BUFFER_OUTPUT_PERIOD_COUNT to match legacy kernel
+cdc3673 hal: Reduce some logspam
+f7faa89 hal: Update and cleanup makefiles
+2c25004 hal: Use old mixer for setting voice volume
+bd8d3fe hal: Rename from 8974/8084 to msm8960
+4ea756f hal: Copy msm8974 platform to msm8960
+28d22cc hal: Squashed set of updates and fixes from 8974 branch
+ba2e9bf hal: header file fix for audio_hw
+982f085 audio: Fix compilation errors
+c0e79bc audio: fix member initialization
+589ad93 hal: fix the input device selection for headphones
+e2f071e hal: fix miscellaneous errors
+f1ae5ef hal: fix unused param warnings
+25f2c46 hal: fix incompatible APIs
+c40da96 hal: avoid usage of extern functions and tables
+d3098df hal: miscellaneous fixes
+2cab1be hal: Remove unnecessary check in make file
+28e7e2a policy_hal: Always call local implementation of updateCallRouting
+d459b10 policy_hal: Add custom audio policy
+29eb741 alsa_sound: Remove deprecated DEVICE_OUT_FM_TX
+dfeacab alsa_sound: Remove deprecated audio policy sources
+0a2356d alsa_sound: Enable QCOM_PROXY_DEVICE_ENABLED by default
+a9333c3 alsa_sound: Fix handling of zero size write request
+ad86259 libalsa-intf: Fix clang compiler errors
+ff40a6b alsa_sound: Fix clang compiler errors
+d2d3efe libalsa-intf: Don't log as error on successful EC change
+4967a84 alsa_sound: Make changes for FM_TUNER support
+8b82aab alsa_sound: Invert proxy/usbaudio check
+e458cce alsa_sound: Add MSM string parameters.
+2469463 Use standard initializers
+f9d1d85 Remove checks for TARGET_SIMULATOR
+18a48c1 Remove obsolete LOCAL_PRELINK_MODULE
+e4756a5 alsa_sound: Disable tunnel/LPA
+f246eff audio: Notify amplifier of device enable/disable
+d582199 audio: Refactor amplifier_set_device logic
+b908301 audio: Convert libaudioamp to audio_amplifier HAL
+be1b31a audio: Make audio device accessible to HAL functions
+41b8727 alsa_sound: Fix compilation for 5.1
+54f3fc0 alsa_sound: Remove orphaned QCOM_COMPRESSED_AUDIO flag
+3c657e3 hal: Make use of hwdep calibration optional
+a32ea8d alsa_sound: Fix CSD client check
+9c3a1d9 Invert ANC Headset.
+a315b78 audio: Use Fluence constant internal to HAL
+703e6bb alsa_sound: Add support for "Voice Earpiece Extra Gain" mode
+ec487c7 alsa_sound: Add support for seperated FM devices
+08ccd2d alsa_sound: Raise priority of separate VOIP input
+8dd930a alsa_sound: fix doRouting parameters
+2b40491 alsa_sound: fix build when QCOM_USBAUDIO_ENABLED = false
+3c65d3b alsa_sound: prevent mSSRComplete from being uninitialized
+7211a28 alsa_sound: Clean up makefiles
+8098114 alsa_sound: Squash of commits dealing with CSD client
+21824a5 alsa_sound: Add support for Moto X sound card
+53897b7 alsa_sound: Fix camcorder input selection
+03d1b43 alsa_sound: Add support for separated speaker mic devices
+d7a8767 alsa_sound: Initialize variable
+75e588d Add Motorola EMU audio dock support
+81ff910 libalsa-intf: snd_use_case_apply_voice_acdb: initialise current_mod[]
+7eb65a8 alsa_sound: ensure mInputSource is initialised
+5320139 alsa_sound: Fix compiler warnings
+bea0ac6 alsa_sound: Add support for sound card in Galaxy S4 Mini
+91bf036 alsa_sound: Don't use USB devices for calls
+8a626fe alsa_sound: Improve USB device detection
+b0ee71a alsa_sound: Allow dual-mic device to be used for VOIP calls
+54aecbd alsa_sound: Untangle VOIP/voice speaker handling
+5235467 alsa_sound: Trigger immediate doRouting() on setMode() change to normal
+5e632ad audio: provide a hook for audio amplifier implementations
+2b48d4f alsa_sound: Add support for VR-on-wired-headset device
+5fe109c alsa_sound: Add support for seperated headset mic devices
+3e51042 alsa_sound: Add support for seperated VOIP devices
+af65aef alsa_sound: modify the SPEAKER_RX_ACDB to support both MONO and STEREO speaker
+60be2be alsa_sound: add HTC CSD CLIENT board flag for special cases (BT)
+1144a24 alsa_sound: Support ES325 2Mic and Samsung CSD client
+e282635 alsa_sound: fix debug message derp
+21f89d9 alsa_sound: Disable verbose logging
+afb3305 alsa_sound: Add option to use seperated speakerphone device
+92df922 alsa_sound: Allow SPEAKER_DUAL_MIC_* UCMs with USES_FLUENCE_INCALL
+40363f1 alsa: fix platform detection for m7 devices
+1d0c34f audio: Dynamic library loading, compilation fixes.
+cc0a10d alsa_sound: Fix separated audio input support
+2de780a alsa_sound: Add support for Audience A2220
+c8cde6f audio: Enhance ALSA for USB Dock Audio support
+4f4607a audio: Use    * pathmap
+
+   * packages/apps/Recorder/
+2338a0c Recorder: Switch to Android.bp
+5e13025 Recorder: set minSdk to api 29 and cleanup
+a7fa15c Recorder: friendship with storage ended, MediaProvider is my new best friend
+7f8a097 Recorder: Make this a standard app
+b609143 Recorder: Use Media    *ion APIs
+
+====================
+     09-28-2019
+====================
+
+
+   * device/qcom/sepolicy/
+0740394e Revert "sepolicy: Fix target selection"
+
+   * device/qcom/sepolicy-legacy-um/
+a173119e Use set_prop() macro for property sets
+5f06abfa qcom: Label vendor files with (vendor|system/vendor) instead of vendor
+441f1138 sepolicy: Remove rules for non legacy platforms
+dcf45c09 sepolicy: Remove rules for no longer supported platforms
+
+   * hardware/qcom-caf/msm8996/display/
+a1ca3a975 Don't build lights module if vendor supplies it
+ced789792 display: Use    * pathmap
+
+   * hardware/qcom-caf/sdm845/display/
+820ab202d Revert "display: Define soong namespace"
+
+   * hardware/qcom-caf/sm8150/display/
+feb57d1d display-hals: Allow building libdisplayconfig
+25e50cc2 display-hals: Expose c2d2.h even if TARGET_DISABLE_DISPLAY is set
+32033bcf Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
+f6e39b6d Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+33122b4c Don't build lights module if vendor supplies it
+ad496126 display: Use    * pathmap
+6e9a025c Add 'commonsys-intf/' from commit 'd122a21601b3ab3ac8622ef46f44a01fcdac727f'
+
+   * hardware/qcom-caf/sm8150/media/
+a093569c mm-core: fix pathmap for test builds
+392e9420 libplatformconfig: allow devices to provide prebuilt libplatformconfig
+f10baa82 media: Use    * pathmap
+23665c7f media: Depend on display_headers not display_intf_headers
+5235c8b8 media: libOmxSw encoders require prop headers :(
+
