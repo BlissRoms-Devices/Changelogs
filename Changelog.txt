@@ -1,4 +1,12 @@
 ====================
+     10-15-2019
+====================
+
+
+   * external/ant-wireless/ant_native/
+df797ba ant_native: Fix    * pathmap
+
+====================
      10-14-2019
 ====================
 
@@ -498,7 +506,6 @@ aafab65 lineage: Enable msm8916, msm8974, msm8994 and msm8996 CAF HALs
 e37ca8f lineage: Enable most qcom hardware repositories
 e5bdf7a lineage: Enable sdm845 CAF HALs
 730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
-10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
 
    * packages/apps/Blissify/
 ced613d Blissify: Add 'Invert layout' to navigation bar settings
@@ -605,6 +612,7 @@ b3259b0 libfmjni: Fix strchr implicit char* typecast in ConfFileParser
 
 
    * manifest/
+10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
 e08e152 manifest: Sync Recorder
 4f03aa1 manifest: Sync ANT+ repositories
 65c581c Sync Eleven
@@ -644,17 +652,4 @@ bac12df lineage: Enable NFC NXP repos
 
    * vendor/bliss/
 9f385feb Revert "soong_config: Add flag for devices use metadata as FDE key"
-
-====================
-     09-30-2019
-====================
-
-   * art/
-8d4e9e0451 Add an option to disable sse4.2 features
-
-   * hardware/qcom-caf/msm8998/audio/
-6f456a420 audio_extn/gef.c: Include pthread.h
-3ce722b7d ssr: Fix building with OSS materials
-29535c328 audio: Skip libhdmipassthru on OSS builds
-f379af470 audio: Use direct    * pathmap
 
