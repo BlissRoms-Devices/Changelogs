@@ -1,10 +1,29 @@
 ====================
+     10-16-2019
+====================
+
+
+   * packages/apps/ThemePicker/
+befbba6 ThemePicker: Don't trash whole theme when missing icon preview
+
+   * vendor/bliss/
+461e3b62 vendor: Add Pixel Themes app
+d670a3da vendor: overlay: Add few config items from pixel device
+
+====================
      10-15-2019
 ====================
 
 
    * external/ant-wireless/ant_native/
 df797ba ant_native: Fix    * pathmap
+
+   * hardware/qcom-caf/msm8974/display/
+0760f53b2 Make hwc_vsync thread realtime
+
+   * vendor/support/
+1949700 CustomSeekBarPreference: migrate to androidx
+052a771 ColorPicker: Migrate to androidx
 
 ====================
      10-14-2019
@@ -74,6 +93,9 @@ b27c2df307e base: fix num cpu check for CPU overlay
    * hardware/libhardware/
 a9a6291f Add in gitreview file
 45b7deab hardware/libhw: Add display_defs.h to declare custom enums/flags
+
+   * hardware/qcom-caf/msm8974/display/
+b2fc11e87 Modify gralloc0 implementation
 
    * manifest/
 16a2ed3 Track our blueprint repo
@@ -199,6 +221,37 @@ abdaa6ba4 venc: Fix VQZip issue
 
    * packages/apps/Settings/
 33f72aa7e1 wifi: Remove Qr Code scanner during Modify Network option.
+
+   * vendor/support/
+90aa721 Add missing methods in CustomSeekBarPreference
+fd20a7d Color Picker: Remove OnClick listener to fix disabling
+aa6efe8 Custom Seekbar improvements
+6811989 CustomSeekbar: Fix auto reset in few cases
+90daee9 Adapt new custom seekbar preference for existing prefs
+f0a0b7c Import new custom seekbar preference
+b44ce7d CustomSeekBarPreference: Align with other preferences
+99e1e61 Color picker: show hex input box on top
+5f596d3 Replace colorpicker action set png with vector
+dee858e Color Picker: use oval preview
+5d8742e Improve color picker layout / cleaned up some of the code
+b2a9097 margaritov color picker: add a proper landscape layout
+16d9be0 Colorpicker: Fix possible NPE
+82834b2 Colorpicker: add method to set default values
+b75af77 Change color picker reset icon
+bdaa6cf Color picker reset button: refresh color preview on click
+402dc96 Color Picker: don't show picker on click if preference is disabled
+0a8f583 Color picker: don't show keyboard on start
+30fa3ee Color picker pref: allow tap also on the text to show the picker
+be17326 Introduce set default button when attribute is set
+277e9ce Added modded marginov color picker
+0a20db2 Custom seekbar pref: allow to refresh values
+c0fa44e Customseekbar: add method to set default values
+50d6b5b New CustomSeekBar: allow to translate "Default" value string
+c568d49 New custom seekbar: more improvements
+4d29457 New fresh look for CustomSeekbar
+cdee88d CustomSeekBar: fix progressbar glitch with custom min-max values
+41da4db Fix seekbar attribute grabbing
+e27f18c Add CustomSeekBarPreference
 
 ====================
      10-10-2019
@@ -504,8 +557,6 @@ e6301111c gralloc: Add option for YCrCb venus camera preview
 2927ad2 lineage: Enable msm8998 CAF HALs
 aafab65 lineage: Enable msm8916, msm8974, msm8994 and msm8996 CAF HALs
 e37ca8f lineage: Enable most qcom hardware repositories
-e5bdf7a lineage: Enable sdm845 CAF HALs
-730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
 
    * packages/apps/Blissify/
 ced613d Blissify: Add 'Invert layout' to navigation bar settings
@@ -612,6 +663,8 @@ b3259b0 libfmjni: Fix strchr implicit char* typecast in ConfFileParser
 
 
    * manifest/
+e5bdf7a lineage: Enable sdm845 CAF HALs
+730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
 10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
 e08e152 manifest: Sync Recorder
 4f03aa1 manifest: Sync ANT+ repositories
@@ -635,21 +688,4 @@ c9bb68613 Don't build lights module if vendor supplies it
 849995bf8 media: Add extrapolated gpustats header for PQ
 01cc83974 venc: Fix VQZip issue
 3cff27d67 media: Use    * pathmap
-
-====================
-     10-01-2019
-====================
-
-
-   * frameworks/base/
-0f727dc33c4 Change default fod icon
-7228bf52192 FODCircleView: defer removal to next re-layout
-55c01eb1fd1 Initial support for in-display fingerprint sensors
-
-   * manifest/
-bac12df lineage: Enable NFC NXP repos
-2923485 Track qcom/keymaster from los
-
-   * vendor/bliss/
-9f385feb Revert "soong_config: Add flag for devices use metadata as FDE key"
 
