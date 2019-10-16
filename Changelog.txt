@@ -1,7 +1,177 @@
 ====================
+     10-17-2019
+====================
+
+
+   * frameworks/base/
+f60cf7c0384 SystemUI: thread protect keyguard callbacks
+73ec8f55abe Fix status bar for network traffic icon holder
+cc98cbd0682 base: Add Samsung font overlay
+c70354ca1e2 base: Add SlatePro Sans font overlay
+6430b0e3688 base: Add Anaheim font overlay
+4b7701ef650 ChooserActivity: remove ugly separator
+b35083c9ce7 base: Q seekbar: Set opacity for the seekbar when it's not interactive
+48517f1c86d base: Q seekbar: Tweak it's size
+18ced961033 base: Nice looking black theme
+4f35be0c4f4 Add make_unique function for jni
+32cc1bbabd4 Increase Zenmode max hour limit from 12 to 24
+420b59b0aa1 SystemUI: Prevent NPE in Dependency.get() in BrightnessController
+f0634c52114 Fix dequence buffer timeout issue
+db26b1d150d SmoothSpinners: Makes the loading "spinner" animation smoother
+073927625d5 Disable More Debugging
+54324c4c20a AppOps: Do not prune apps that are not present
+fc77856e0b4 Camera: Don't throw exceptions when value pairs have spaces in them
+9e93ccf5cea BluetoothAdapter: disable logspew
+ce184e6c279 Delete media tests
+39a91b4671b SystemUI: Allow snoozing SD card notification unconditionally
+551d6406018 SystemUI: onLongClick Settings button for Blissify Settings
+356f53c500f permissions: Remove Pixel Launcher permissions check
+1d7f696a528 Allow Python Versions Higher than 2.6
+5edf9a33360 Keyguard: Actually kill the Fancy Colon
+75a41e4a278 BackupAgent: add backup shared mode
+4a82d4cd0c2 SettingLib: Add deep sleep info to uptime preference
+d74fae35c69 InputMethodService: Disable fullscreen keyboard
+749933c136a TypeClock: Add 24h format support
+28d27d2da64 Add toast when screenshot is deleted
+92cc9dc3799 Wallpaper is half black after rotating quickly
+db7a218d832 Statusbar: Fix Tunerservice usage
+afb3e8d4aba NetworkStatsHistory: Prevent IllegalArgumentException
+980f6ef9945 Prevent crash in TTS engine due to improper configuration
+e7787c0a572 Framelayout: Fix NPE when view is missing
+305cf2a8cb1 SystemUI: Keyguard: Check for a null errString
+5f210cb21aa Disable PIN entry after successful quick unlock
+46cba1ee4dc Network traffic mode for status bar [2/3]
+39c6ca4a60e FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
+bfc0c58fe78 KernelWakelockReader: stop the panic
+a38896d7eb2 ParcelFileDescriptor: can we stop the panic here?
+3f6a353be63 Enable NSRM (Network Socket Request Manager).
+a60dbb098b2 Rename the backup file to base file when backup exists
+adaa7012e71 SQLite: Do integrity_check only once
+944610433c8 SQLiteDatabase: Catch corrupt exception during transaction
+43ab60d23ed base: limit direct share targets to reduce lag
+7f5917247b7 aapt: Fix compiler warning (clobbered by longjmp)
+16de9608fe6 aapt: add check for untranslatable "string-array"s
+e152df73045 aapt: Use a std::map instead of a SortedVector
+bcd4ddab5a8 aapt: Speed up the style pruning
+7a375b18e02 Fix to avoid UI freeze issue
+8ca5437d1ce display: Don't animate screen brightness when turning the screen on
+3f45205bee6 connectivity: Configure additional TCP parameters
+f61d0ceae63 MountService: ensure VolumeRecord with UUID exists before modifying
+6cea7c75c8a Settings:Bugfix for NPE, Only valid screen power consumption need to smear
+162191300c6 SystemUI: Fix SystemUI Crash
+71af533b5a2 Suppress FingerprintManager logspam
+45de7807f45 QS: SoundSearchTile: Update intent flags for the apps
+0ee8b5aa013 QS: SoundSearchTile: Extend the use
+afe4a1ca0ca QS: SoundSearchTile: Make default state inactive
+8ac6ca16cea QS: Add Google Sound Search tile
+6a5d0b4f3f4 Kill off provider info logspam
+0b539d735f4 ViewGroup: Remove child parent when a new view is added
+d6b6d9b7bb5 Fix formatting for Dash charging overlay
+088de8e932f Do not apply date customization to QS clock [1/2]
+d7067686dd4 Add option to auto hide status-bar clock [1/2]
+935bcba4e77 Statusbar clock customizations [1/2]
+89613818e55 Add separate tunable for clock seconds
+ff2af1d36da CollapsedStatusbar: Fix phantom spaces in status bar
+47038ac25cd Allow using position tunable to hide clock
+4d31aa370eb Use alphaoptimized layout for icons on left
+a6e03bce473 base: SettingsProvider: cleanup leftover logspill
+21d29ebeb15 Telephony: NPE observed in Settings when click on Search settings
+7664dd261de Allow overriding default volume dialog position
+a18dfd99e64 VolumeDialogImpl: Use TunerService properly
+77de7272c50 VolumeDialogControllerImpl: Check for internal audio recording support
+70f75e5b40b SystemUI: Whitelist our recorder on CastController
+a2f3814fb24 fwb: Add support for internal audio recording
+0630ce0902d Add Bliss utils
+
+   * frameworks/opt/net/wifi/
+e4bec41b7 Merge tag 'android-10.0.0_r4' into HEAD
+
+   * hardware/qcom/audio/
+08ed6bf Revert "msm8x74: remove from top level makefile"
+7b89c97 audio: Make CVD version retrieval nonfatal with ACDB v1
+3aa787a audio: Use generated kernel headers
+d66a4d6 Add .gitreview
+
+   * hardware/qcom/bt/
+2598f2a Add .gitreview
+
+   * hardware/qcom/display/
+ac799631 Make memtrack build with the VNDK.
+2461688c Add missing includes.
+bd55a555 libmemtrack: Add open method for msm8084.memtrack
+d3fc9fc0 hwc: msm8084: Remove _vendor from libbfqio
+01abd70f msm8084: Include string.h where it is necessary
+cdce6ca6 msm8084: Use generated kernel headers
+c89b4034 msm8084: display: Don't use gnu-oldstyle field designators
+45ad2705 msm8084: Add additional build flags to avoid errors
+8473c4bf msm8084: Use libhwui.so instead of libskia.so
+5ff6f838 msm8084: Include what we use.
+91df4a47 hwc: msm8084: Set ioprio for vsync thread
+4f1368dc msm8996: gralloc1: Allow sign conversion errors for kernel headers
+
+   * hardware/qcom/gps/
+6a206c2 gps: Add libprocessgroup dependency to set_sched_policy users
+e5e8b13 msm8084: Handle race condition in HAL post SSR
+b757186 msm8084: Memory management fixes
+494610c msm8084: Add new event mask for timezone
+7925c02 msm8084: Remove reporting gps status from loc eng layer
+8a6f188 msm8084: Remove Redundant Log
+4b28a53 msm8084: LocTimer repeated expiration
+6f415d1 msm8084: MsgTask thread must call associator function always
+5865c29 msm8084: Adding a number of utilities
+6714356 msm8084: gps.conf parameters are in sap.conf table
+db122d6 msm8084: Adding Mutex for Creating Context
+5c756aa msm8084: Removed unused code and unnecessary notice files
+b50efe7 msm8084: Avoiding race conditions during the pallellized builds in Android system
+416037e msm8974: Add -Wno-error to compile with global -Werror.
+6276da8 msm8974: Return the correct length of nmea sentence
+8d29872 msm8974: Don't rely on transitively included headers
+2b0fe29 msm8974: Fix logging level and remove nmea log
+c05dfef msm8974: Fix duplicate gps.conf for hammerhead
+54a111d msm8974: Move device dependent modules to /vendor
+1c05348 msm8974: Cleanup obsolete LOCAL_PRELINK_MODULE
+4362a15 msm8974: Default apn ip type to ipv4
+d8ae219 msm8974: Add missing liblog dependency
+7b9362c Revert "msm8974: remove from top level makefile"
+f13d09e Revert "msm8974: deprecate msm8974"
+3c3d98d Add .gitreview
+
+   * hardware/qcom/media/
+502bf54 media: drop byte typedef
+f951ed7 media: vdec: Include nativebase headers
+adcd99b mm-video: venc: Correct a typo in variable name
+5d39f75 Revert "msm8974: remove from top level makefile"
+888acdf media: Use generated kernel headers
+47a3bda Revert "msm8974: adjust for clang on Q"
+
+   * packages/apps/Blissify/
+ca41348 Blissify: move dashboard conditions from settings
+743650a Lockscreen: move media art and visualiser from settings [1/2]
+cbae5e5 Blissify: add Quick settings category
+ceb615c Network traffic mode for status bar [2/3]
+c15d740 Add network traffic customizations for status bar [2/2]
+f41450e Statusbar clock customizations (2/2)
+
+   * packages/apps/Settings/
+67ac03c017 Settings: move media art and visualiser to blissify [2/2]
+
+   * vendor/support/
+4ab9de2 Add custom preferences for lineage settings
+
+====================
      10-16-2019
 ====================
 
+
+   * packages/apps/Blissify/
+07cc6c4 Allow using 4G icon instead LTE [2/2]
+a969be1 Make roaming indicator optional [2/2]
+a6d956b Add customizable action for back long press button [3/3]
+33c75ef Add device key action to kill app [3/3]
+c77357d Option to Display Data Disabled Indicator Icon [2/2]
+da551ad Ability to toggle VoLTE icon in statusbar [2/2]
+5ab973e Statusbar: Add Advanced system icons Category
+7d1c50e Batterybar: fix derp
 
    * packages/apps/ThemePicker/
 befbba6 ThemePicker: Don't trash whole theme when missing icon preview
@@ -15,11 +185,40 @@ d670a3da vendor: overlay: Add few config items from pixel device
 ====================
 
 
+   * build/soong/
+26a0a235 cleanbuild: Remove kernel paths and a few other files
+2b1ad6f0 soong: Default kati jobs to NumCPU()
+2206a8ae ui: Move deviceclean print to match other functions
+c3b18589 Add deviceclean for minimal cleaning
+c82f6ca3 ui: Disable path restrictions logging
+c6771b1c Delete previously generated changelog during installclean
+50d25c04 Delete kernel files during installclean
+
    * external/ant-wireless/ant_native/
 df797ba ant_native: Fix    * pathmap
 
+   * frameworks/base/
+c7a135f84c6 BatteryService: add dash charging support
+f10cdfacb01 Option to Display Data Disabled Indicator Icon [1/2]
+7506412d2b7 Allow using 4G icon instead LTE [1/2]
+e36d820d0ab Make roaming indicator optional [1/2]
+5a533de65df TunerService: Add parseInteger failsafe method
+882dcb21155 SystemUI: Allow using tuner API for Global settings
+e6f73e291c8 TunerService: Prevent NPE with tunable
+c4a6e8ff01f Ability to toggle VoLTE icon in statusbar [1/2]
+d9ade291b96 Add customizable action for back long press button [2/3]
+d793161cf5e Add device key action to kill app [2/3]
+
    * hardware/qcom-caf/msm8974/display/
 0760f53b2 Make hwc_vsync thread realtime
+
+   * lineage-sdk/
+7a95daea Network traffic mode for status bar [1/3]
+1e43eeea Allow value to hide the clock
+718cff74 Add customizable action for back long press button [1/3]
+59d3a707 Reduce default kill timeout
+4d7d54a9 Add device key action to kill app [1/3]
+11407d6f sdk: Disable selinux warning alert for now
 
    * vendor/support/
 1949700 CustomSeekBarPreference: migrate to androidx
@@ -201,15 +400,10 @@ a2d6296b353 Fix memory leak in aapt2
 478326cf892 Fix FD leak in ConnectivityManager.getConnectionOwnerUid
 d3fd7996725 Apply JNI optimizations to HwParcel
 
-   * hardware/qcom-caf/msm8996/audio/
-7b3e32b61 audio: Use direct    * pathmap
-
    * hardware/qcom-caf/msm8996/media/
 6573821c8 media: Don't link libgpustats
 eadb4951a media: Add extrapolated gpustats header for PQ
 37ca21429 media: libOmxSw encoders require prop headers :(
-abdaa6ba4 venc: Fix VQZip issue
-26f4dc5a3 media: Use    * pathmap
 
    * manifest/
 12beebd manifest: re-enable msm8960 hals
@@ -264,6 +458,18 @@ a35c37358ec Merge changes from topics "bt-battery", "base-bringup" into q
 3d7e8795baf SystemUI: Add more bluetooth device filters
 aa13cce7539 SystemUI: Improvements for bluetooth battery levels
 9c75951b2cd SystemUI: Show bluetooth battery level when available
+
+   * hardware/qcom-caf/msm8996/audio/
+7b3e32b61 audio: Use direct    * pathmap
+
+   * hardware/qcom-caf/msm8996/media/
+abdaa6ba4 venc: Fix VQZip issue
+26f4dc5a3 media: Use    * pathmap
+
+   * hardware/qcom-caf/msm8998/audio/
+c16d8dd1a hal: Support the audio amplifier hook
+8d37e0ba9 hal: Add missing compress voip PCM device ID
+97564d4ac audio: Extend platform parser to allow device name aliasing
 
    * manifest/
 55014ba manifest: Track Deskclock from blissroms
@@ -551,13 +757,6 @@ e644412ad Forward port 'Swap volume buttons' (2/3)
    * hardware/qcom-caf/sdm845/display/
 e6301111c gralloc: Add option for YCrCb venus camera preview
 
-   * manifest/
-03886f6 Remove duplicate
-3681850 lineage: RIP prebuilt OpenSSL
-2927ad2 lineage: Enable msm8998 CAF HALs
-aafab65 lineage: Enable msm8916, msm8974, msm8994 and msm8996 CAF HALs
-e37ca8f lineage: Enable most qcom hardware repositories
-
    * packages/apps/Blissify/
 ced613d Blissify: Add 'Invert layout' to navigation bar settings
 c2f8c40 Blissify: Fix and reenable commented out ButtonSettings code
@@ -625,18 +824,6 @@ a02074a884 Settings: Add package name to installed app details
 98599b66 extract_utils: Source the prebuilts from the new repo
 5b937b2b kernel: Make kernel depend on depmod
 bd4fe155 build/tools: Move prebuilts to the new repository
-8f059c2c Revert "kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage"
-0750fecc kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage
-582cc927 lineage: env: fixup recovery fstab path
-f78c4515 common: Copy APN list to $(TARGET_COPY_OUT_PRODUCT)/etc
-8c3c95fe extract_files: Add ODM partition blob support
-1d3cabfb build: Remove TARGET_CRYPTFS_HW_PATH
-e1f520cd build: Don't set pathmap for repositories that do not exist
-074ead22 build: Don't set pathmap for AOSP qcom hardware repositories
-f601156f build: Move to new qcom HAL directory layout
-abd643b0 build: Move hardware/qcom/audio back to its original path
-a45fac4c build: Remove ability to set WLAN/BT_VENDOR variant
-e2877df7 bliss: Disable vendor restrictions
 
    * vendor/qcom/opensource/libfmjni/
 8cd3026 libfmjni: Fix build guard
@@ -663,6 +850,11 @@ b3259b0 libfmjni: Fix strchr implicit char* typecast in ConfFileParser
 
 
    * manifest/
+03886f6 Remove duplicate
+3681850 lineage: RIP prebuilt OpenSSL
+2927ad2 lineage: Enable msm8998 CAF HALs
+aafab65 lineage: Enable msm8916, msm8974, msm8994 and msm8996 CAF HALs
+e37ca8f lineage: Enable most qcom hardware repositories
 e5bdf7a lineage: Enable sdm845 CAF HALs
 730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
 10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
@@ -671,21 +863,17 @@ e08e152 manifest: Sync Recorder
 65c581c Sync Eleven
 d134290 lineage: Sync AudioFX
 
-====================
-     10-02-2019
-====================
-
-
-   * hardware/qcom-caf/msm8998/audio/
-a68afd590 hal: Add open source HAL for Elliptic Ultrasound
-
-   * hardware/qcom-caf/msm8998/display/
-c9bb68613 Don't build lights module if vendor supplies it
-185b731a2 display: Use    * pathmap
-
-   * hardware/qcom-caf/msm8998/media/
-9c32d0478 media: Don't link libgpustats
-849995bf8 media: Add extrapolated gpustats header for PQ
-01cc83974 venc: Fix VQZip issue
-3cff27d67 media: Use    * pathmap
+   * vendor/bliss/
+8f059c2c Revert "kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage"
+0750fecc kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage
+582cc927 lineage: env: fixup recovery fstab path
+f78c4515 common: Copy APN list to $(TARGET_COPY_OUT_PRODUCT)/etc
+8c3c95fe extract_files: Add ODM partition blob support
+1d3cabfb build: Remove TARGET_CRYPTFS_HW_PATH
+e1f520cd build: Don't set pathmap for repositories that do not exist
+074ead22 build: Don't set pathmap for AOSP qcom hardware repositories
+f601156f build: Move to new qcom HAL directory layout
+abd643b0 build: Move hardware/qcom/audio back to its original path
+a45fac4c build: Remove ability to set WLAN/BT_VENDOR variant
+e2877df7 bliss: Disable vendor restrictions
 
