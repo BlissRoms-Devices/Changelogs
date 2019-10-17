@@ -1,4 +1,24 @@
 ====================
+     10-18-2019
+====================
+
+
+   * frameworks/av/
+663495633 stagefright: Move QCOM_BSP_LEGACY flag to correct blueprint file
+97692bc0c Merge "CameraService: Support hooks for motorized camera" into q
+
+   * prebuilts/tools-bliss/
+1a90ffc Update repo bin
+
+   * vendor/bliss/
+89741494 Merge changes from topic "vendor" into q10
+9f0e919d Merge "bliss: Move fonts to separate makefile" into q10
+b77429f4 build: Remove qcom power HAL pathmap
+3954f621 Revert "config: Use tether automatic upstream selection"
+2c3e8c92 common: Clean up debug packages
+d30d5acd kernel: Define DTBS_OUT path for dtb.img building
+
+====================
      10-17-2019
 ====================
 
@@ -318,6 +338,7 @@ b4fbdb2 blissify: add CPU info overlay [2/2]
 721db492 roomservice: Track device repos from p9.0
 85a41b39 roomservice: Switch to o8.1
 76312040 tools: Add roomservice and Bliss'fy
+8c79e053 bliss: Move fonts to separate makefile
 
 ====================
      10-13-2019
@@ -400,10 +421,15 @@ a2d6296b353 Fix memory leak in aapt2
 478326cf892 Fix FD leak in ConnectivityManager.getConnectionOwnerUid
 d3fd7996725 Apply JNI optimizations to HwParcel
 
+   * hardware/qcom-caf/msm8996/audio/
+7b3e32b61 audio: Use direct    * pathmap
+
    * hardware/qcom-caf/msm8996/media/
 6573821c8 media: Don't link libgpustats
 eadb4951a media: Add extrapolated gpustats header for PQ
 37ca21429 media: libOmxSw encoders require prop headers :(
+abdaa6ba4 venc: Fix VQZip issue
+26f4dc5a3 media: Use    * pathmap
 
    * manifest/
 12beebd manifest: re-enable msm8960 hals
@@ -458,13 +484,6 @@ a35c37358ec Merge changes from topics "bt-battery", "base-bringup" into q
 3d7e8795baf SystemUI: Add more bluetooth device filters
 aa13cce7539 SystemUI: Improvements for bluetooth battery levels
 9c75951b2cd SystemUI: Show bluetooth battery level when available
-
-   * hardware/qcom-caf/msm8996/audio/
-7b3e32b61 audio: Use direct    * pathmap
-
-   * hardware/qcom-caf/msm8996/media/
-abdaa6ba4 venc: Fix VQZip issue
-26f4dc5a3 media: Use    * pathmap
 
    * hardware/qcom-caf/msm8998/audio/
 c16d8dd1a hal: Support the audio amplifier hook
@@ -703,6 +722,7 @@ a380b43172 Keyguard: Forward port lockscreen quick unlock (2/2)
    * frameworks/av/
 953538306 audiopolicy: make audio policy extensible
 7824a9405 Revert "camera: Allow devices to load custom CameraParameter code"
+8d94767a5 CameraService: Support hooks for motorized camera
 1071bab68 camera: Allow devices to load custom CameraParameter code
 4ba7d3537 camera: include: Don't override possible overlayed header
 7979004d5 Camera: check metadata type before releasing frame
@@ -756,6 +776,16 @@ e644412ad Forward port 'Swap volume buttons' (2/3)
 
    * hardware/qcom-caf/sdm845/display/
 e6301111c gralloc: Add option for YCrCb venus camera preview
+
+   * manifest/
+03886f6 Remove duplicate
+3681850 lineage: RIP prebuilt OpenSSL
+2927ad2 lineage: Enable msm8998 CAF HALs
+aafab65 lineage: Enable msm8916, msm8974, msm8994 and msm8996 CAF HALs
+e37ca8f lineage: Enable most qcom hardware repositories
+e5bdf7a lineage: Enable sdm845 CAF HALs
+730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
+10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
 
    * packages/apps/Blissify/
 ced613d Blissify: Add 'Invert layout' to navigation bar settings
@@ -824,6 +854,18 @@ a02074a884 Settings: Add package name to installed app details
 98599b66 extract_utils: Source the prebuilts from the new repo
 5b937b2b kernel: Make kernel depend on depmod
 bd4fe155 build/tools: Move prebuilts to the new repository
+8f059c2c Revert "kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage"
+0750fecc kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage
+582cc927 lineage: env: fixup recovery fstab path
+f78c4515 common: Copy APN list to $(TARGET_COPY_OUT_PRODUCT)/etc
+8c3c95fe extract_files: Add ODM partition blob support
+1d3cabfb build: Remove TARGET_CRYPTFS_HW_PATH
+e1f520cd build: Don't set pathmap for repositories that do not exist
+074ead22 build: Don't set pathmap for AOSP qcom hardware repositories
+f601156f build: Move to new qcom HAL directory layout
+abd643b0 build: Move hardware/qcom/audio back to its original path
+a45fac4c build: Remove ability to set WLAN/BT_VENDOR variant
+e2877df7 bliss: Disable vendor restrictions
 
    * vendor/qcom/opensource/libfmjni/
 8cd3026 libfmjni: Fix build guard
@@ -843,37 +885,4 @@ b3259b0 libfmjni: Fix strchr implicit char* typecast in ConfFileParser
 300dfd5 libfmjni: Skip loading FM firmware if requested
 735e13a iFM: Removing Memory leaks from the HAL Test Code
 4ba1b7d Changes to enable FM using old hal method
-
-====================
-     10-03-2019
-====================
-
-
-   * manifest/
-03886f6 Remove duplicate
-3681850 lineage: RIP prebuilt OpenSSL
-2927ad2 lineage: Enable msm8998 CAF HALs
-aafab65 lineage: Enable msm8916, msm8974, msm8994 and msm8996 CAF HALs
-e37ca8f lineage: Enable most qcom hardware repositories
-e5bdf7a lineage: Enable sdm845 CAF HALs
-730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
-10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
-e08e152 manifest: Sync Recorder
-4f03aa1 manifest: Sync ANT+ repositories
-65c581c Sync Eleven
-d134290 lineage: Sync AudioFX
-
-   * vendor/bliss/
-8f059c2c Revert "kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage"
-0750fecc kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage
-582cc927 lineage: env: fixup recovery fstab path
-f78c4515 common: Copy APN list to $(TARGET_COPY_OUT_PRODUCT)/etc
-8c3c95fe extract_files: Add ODM partition blob support
-1d3cabfb build: Remove TARGET_CRYPTFS_HW_PATH
-e1f520cd build: Don't set pathmap for repositories that do not exist
-074ead22 build: Don't set pathmap for AOSP qcom hardware repositories
-f601156f build: Move to new qcom HAL directory layout
-abd643b0 build: Move hardware/qcom/audio back to its original path
-a45fac4c build: Remove ability to set WLAN/BT_VENDOR variant
-e2877df7 bliss: Disable vendor restrictions
 
