@@ -1,4 +1,12 @@
 ====================
+     10-19-2019
+====================
+
+
+   * vendor/bliss/
+f97d5628 Merge "prebuilt: Add BlissStatistics App" into q10
+
+====================
      10-18-2019
 ====================
 
@@ -11,7 +19,10 @@
 1a90ffc Update repo bin
 
    * vendor/bliss/
+74a9be5f bliss: Add Bliss Q Bootanimation
+847609ce bliss: Remove Pixel fonts completely
 89741494 Merge changes from topic "vendor" into q10
+cfd7f6e4 prebuilt: Add BlissStatistics App
 9f0e919d Merge "bliss: Move fonts to separate makefile" into q10
 b77429f4 build: Remove qcom power HAL pathmap
 3954f621 Revert "config: Use tether automatic upstream selection"
@@ -713,176 +724,4 @@ a380b43172 Keyguard: Forward port lockscreen quick unlock (2/2)
      10-05-2019
 ====================
 
-
-====================
-     10-04-2019
-====================
-
-
-   * frameworks/av/
-953538306 audiopolicy: make audio policy extensible
-7824a9405 Revert "camera: Allow devices to load custom CameraParameter code"
-8d94767a5 CameraService: Support hooks for motorized camera
-1071bab68 camera: Allow devices to load custom CameraParameter code
-4ba7d3537 camera: include: Don't override possible overlayed header
-7979004d5 Camera: check metadata type before releasing frame
-57bc204ed camera/media: Support legacy HALv1 camera in mediaserver
-2b56f47da libstagefright: use 64-bit usage for native_window_set_usage
-4e2993ae3 libstagefright: Free buffers on observer died
-8e9a8fcfc stagefright: ACodec: Resolve empty vendor parameters usage
-68df3e152 stagefright: omx: Don't signal dataspace change on legacy QCOM
-d42aa96b0 libstagefright: Support YVU420SemiPlanar camera format
-e1797a0c8 cameraservice: Resolve message vs start/stop preview races
-9047013e3 camera: Don't segfault if we get a NULL parameter
-4aeab40b6 nuplayer: Avoid crash when codec fails to load
-
-   * frameworks/base/
-13edc8afb86 LockSettingsService: Support for separate clear key api
-694a22d3ac4 Fix Build Credentials refactored to use byte[]
-21aa7280cad frameworks: base: Port password retention feature
-0871e43617a PowerManagerService: Wake on plug (1/2)
-e5cd3e76ad4 SystemUI: Add navbar layout inversion tuning
-ea7cab11826 Add support for runtime toggle of navbar
-c114797d80c PowerManager: Allow to distinguish different keypresses
-f22ce0a068f PowerManagerService: Allow to light up buttons only when pressed
-7e75e0e71da PowerManager: Add proximity check on wake
-2eeda57ece5 fw/b: Button backlight brightness
-a2ee315f379 Enter quick doze with non-wakeup alarm.
-705d5176a08 Correction in logic of roundend size calculation of SD card
-6b8b586d9a5 Forward port 'Swap volume buttons' (1/3)
-2db427ee210 PhoneWindowManager: Allow torch and track skip during ambient display
-0dc89fd515d fw/b: Allow customisation of navbar app switch long press action
-9a842c1e968 PhoneWindowManager: Implement press home to answer call
-cd3a8bfea29 PhoneWindowManager: Tap volume buttons to answer call
-65961619970 Reimplement device hardware wake keys support
-7a057e9b393 Reimplement hardware keys custom rebinding
-0880a27a0ce Long-press power while display is off for torch
-b73371ce4fe PhoneWindowManager: add LineageButtons volumekey hook
-62532d6bf2b Framework: Volume key cursor control
-a24db247a62 AppOpsService: Fix up 013a611
-4b6df960fc5 Support for device specific key handlers
-2e2833535ae perf: Add support for HIDL Lineage power HAL
-14e09fd80a5 base: [Squash] Revert pre-sdk commits
-e88e10db401 AppOpsService: Watch op mode changes when an AppOp restriction dies
-1bd6751b937 fw/b: Fix systemui tests with in-display fingerprint
-c154aadd483 CameraServiceProxy: Loosen UID check conditionally
-
-   * frameworks/native/
-e644412ad Forward port 'Swap volume buttons' (2/3)
-
-   * hardware/qcom-caf/msm8974/display/
-7e1a40507 display: inform compilers of deliberate switch fallthrough
-70f855728 hwcomposer: Work around overzealous fortify checks
-
-   * hardware/qcom-caf/sdm845/display/
-e6301111c gralloc: Add option for YCrCb venus camera preview
-
-   * manifest/
-03886f6 Remove duplicate
-3681850 lineage: RIP prebuilt OpenSSL
-2927ad2 lineage: Enable msm8998 CAF HALs
-aafab65 lineage: Enable msm8916, msm8974, msm8994 and msm8996 CAF HALs
-e37ca8f lineage: Enable most qcom hardware repositories
-e5bdf7a lineage: Enable sdm845 CAF HALs
-730c1dd lineage: Add qcom platform super   * blueprints and makefiles.
-10366c1 lineage: Enable qcom sepolicy and add legacy-um sepolicy
-
-   * packages/apps/Blissify/
-ced613d Blissify: Add 'Invert layout' to navigation bar settings
-c2f8c40 Blissify: Fix and reenable commented out ButtonSettings code
-3db3b16 Fingerprint authentication vibration [2/2]
-54414cf Blissify: Move Buttons Settings to Blissify [2/2]
-6acefed utils: Remove network mode option
-486bbb2 utils: Add deviceSupportsFlashLight util
-de44940 Add Utilities required for Buttons
-edd9391 Add DeviceUtils and TelephonyUtils
-1039978 Blissify: Add Buttons Category
-069fc6e Blissify: Move Statusbar Settings to Blissify [2/2]
-
-   * packages/apps/Settings/
-155069fca3 Settings: Forward port pattern visibility settings (2/2)
-82bd7a82fa Settings: Forward port lock pattern grid size (2/2)
-7d17d02170 Settings: Add back increasing ring feature (2/2).
-b8f75cecd9 Settings: Add switch for linked ring and media notification volumes
-0e768d12c7 Settings: Add setup UI for minimum delay between an app's notification sounds
-dd6793d58d Settings: display: Add wake on plug switch
-8f99bd614e Revert "Settings: Add back increasing ring feature (2/3)"
-96dc8b872e Revert "Settings: Add switch for linked ring and media notification volumes"
-034ca74171 Settings: move force dark preference to display settings
-873329177c Settings: Move theming to display settings
-59a86281fa Settings: Add animations on some preferences
-bfc7a25557 Settings: battery: Add LineageParts perf profiles
-f0b0eed530 fingerprint: Allow devices to configure sensor location
-7b5e24ec2e Settings: Add proximity check on wake preference
-125f6052a2 Settings: adaptive icon
-578538caf0 Settings: Allow devices to provide remote gesture preferences
-b36785e12b Settings: gesture: Add LineageParts touchscreen gesture settings
-1c2668ab68 Settings: Make sure to define /lineage/ XML namespace
-1198fe4689 Settings: Add back battery and notification lights settings
-4ee8e70022 Settings: Add double tap to sleep preference
-267f3fa79a Settings: Forward port option to pass swipe-up-to-unlock
-69759aea94 Settings: Add option to scramble pin layout when unlocking (1/2).
-470fe68003 Settings: Add toggle for Lockscreen Media Art [2/3]
-a9f1a24761 Settings: Add an option to force pre-O apps to use full screen aspect ratio
-e258fb4e82 Settings: Implement ADB notification and ADB over network
-d3d93c7f2a Settings: Add advanced restart switch
-9d18f02507 Settings: Expose option to change the device hostname.
-b9270ccaf1 Settings: Depend on lineage platform library
-072dcfb572 Settings: Add kill app back button toggle
-6a03f2c984 Settings: Disable dashboards conditions and suggestions (2/2)
-55340a908f Settings: Use dashboard drawable from Blissify
-387137c4b9 Include support repo
-874a716c62 Settings: Use correct icon for ring volume
-c23e5c0006 Settings: Add switch for linked ring and media notification volumes
-18fc883a81 Settings: Add back increasing ring feature (2/3)
-2b38566fd0 SoundSettings: Add screenshot sounds settings
-d67e0ad29e SoundSettings: Add charging vibration settings
-a02074a884 Settings: Add package name to installed app details
-459d3d1c82 AmbientDisplay: Add custom pref for devices with custom doze packages
-
-   * packages/services/Telecomm/
-2236380f Telecomm: Phone ringtone setting for Multi SIM device [3/3]
-
-   * prebuilts/tools-bliss/
-50ae18c prebuilts: Import vdexExtractor v0.5.2 with compact_dex_converter
-6491448 prebuilts: Import baksmali/smali v2.3.3
-
-   * vendor/bliss/
-8529f473 Merge "Revert "soong_config: Add flag for devices use metadata as FDE key"" into q10
-15460b83 lineage: allow Has_legacy_camera_hal1 to configure Shared_libs and Overrides
-52ebeab0 kernel: Switch back to host openssl entirely
-98599b66 extract_utils: Source the prebuilts from the new repo
-5b937b2b kernel: Make kernel depend on depmod
-bd4fe155 build/tools: Move prebuilts to the new repository
-8f059c2c Revert "kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage"
-0750fecc kernel: fix KERNEL_TOOLCHAIN_PATH_gcc and usage
-582cc927 lineage: env: fixup recovery fstab path
-f78c4515 common: Copy APN list to $(TARGET_COPY_OUT_PRODUCT)/etc
-8c3c95fe extract_files: Add ODM partition blob support
-1d3cabfb build: Remove TARGET_CRYPTFS_HW_PATH
-e1f520cd build: Don't set pathmap for repositories that do not exist
-074ead22 build: Don't set pathmap for AOSP qcom hardware repositories
-f601156f build: Move to new qcom HAL directory layout
-abd643b0 build: Move hardware/qcom/audio back to its original path
-a45fac4c build: Remove ability to set WLAN/BT_VENDOR variant
-e2877df7 bliss: Disable vendor restrictions
-
-   * vendor/qcom/opensource/libfmjni/
-8cd3026 libfmjni: Fix build guard
-c0b00a1 libfmjni: Fix typo in ctl.stop
-0e4871e libfmjni: Rename the QC introduced props to have vendor tag added
-b221d13 libfmjni: Fix wrong BT SOC property name
-6a801de libfmjni: Drop unnecessary dependencies
-c571579 libfmjni: use proper nativehelper headers
-e94bc70 libfmjni: Ignore unused parameters from APIs
-1c877cc libfmjni: Resolve FM_DEVICE_PATH R/O open flag
-da8eeb2 libfmjni: Resolve fread assignment to condition cast
-38e4935 libfmjni: Remove unused variables
-a87c3a6 libfmjni: Add jni core headers dependency
-b3259b0 libfmjni: Fix strchr implicit char* typecast in ConfFileParser
-589a1dd libfmjni: Improve and fix FM jni logs
-172afb4 libfmjni: Add support for internal antenna hardware
-300dfd5 libfmjni: Skip loading FM firmware if requested
-735e13a iFM: Removing Memory leaks from the HAL Test Code
-4ba1b7d Changes to enable FM using old hal method
 
