@@ -1,7 +1,32 @@
 ====================
+     10-20-2019
+====================
+
+
+   * frameworks/base/
+31ed9e45689 ambient display: Fix volume key music control
+
+   * manifest/
+3eeab19 Merge "Track our blueprint repo" into q
+446ba64 Track our blueprint repo
+
+   * packages/apps/Settings/
+7fbf5795c7 settings: Black theme is getting nicer
+0ad22a4ab3 fuelgauge: add back battery level animation
+
+====================
      10-19-2019
 ====================
 
+
+   * build/make/
+b3148b12c core: Copy Changelog to destination
+
+   * hardware/qcom-caf/common/
+ce26f7c Remove check for bootctrl from hardware/qcom guard
+
+   * packages/apps/Blissify/
+f56f12d Blissify: Add settings for rounded corners
 
    * vendor/bliss/
 f97d5628 Merge "prebuilt: Add BlissStatistics App" into q10
@@ -14,6 +39,31 @@ f97d5628 Merge "prebuilt: Add BlissStatistics App" into q10
    * frameworks/av/
 663495633 stagefright: Move QCOM_BSP_LEGACY flag to correct blueprint file
 97692bc0c Merge "CameraService: Support hooks for motorized camera" into q
+
+   * frameworks/base/
+243a5ebe6cf Add option to select brightness slider positon [2/3]
+6719cf63da9 SystemUI: Allow overlaying max system icons
+86cf8f9394d Allow WRITE_DEVICE_CONFIG for priviledged apps
+c37319fd7c8 Update rounded corner radius path for Android 10
+a80fb7d1520 ScreenDecorations: Clean up tuner API
+4a03f17d5cb Allow tuning extra padding for status bar
+6338af95e81 Rounded Corner: Code improvement and clean up
+a1e2be78edc Custom Rounded Corner and Padding preferences [1/2]
+1ecd87976f5 base: Remove round corner padding from statusbar
+fe78aa6fbb5 SystemUI: QS: Add VPN tile
+e8746b57888 SystemUI: QS: Add SleepScreen Tile (Power menu on longpress)
+22778409600 SystemUI: QS: SoundTile: Stop crashing qs tiles during boot
+ca7720dca1c SystemUI: QS: SoundTile: Update state
+5d24b722889 SystemUI: QS: SoundTile: Don't toggle DND
+b691cb10de4 SystemUI: QS: Add Sound tile to Quick Settings
+
+   * lineage-sdk/
+7703346f NetworkTraffic: Do not consider doze as screen on
+412b3ed4 Add option to select brightness slider positon [1/3]
+
+   * packages/apps/Blissify/
+3aacae4 Do not apply date customization to QS clock [2/2]
+44f1084 Add option to select brightness slider positon [3/3]
 
    * prebuilts/tools-bliss/
 1a90ffc Update repo bin
@@ -719,9 +769,4 @@ a380b43172 Keyguard: Forward port lockscreen quick unlock (2/2)
 71b13bb5b5 Settings: fix apn_editor carrier_enabled summaryOff string
 0bb1032592 Allow sorting Applications by size
 7036f59ee0 Settings: Add lockscreen visualizer toggle
-
-====================
-     10-05-2019
-====================
-
 
