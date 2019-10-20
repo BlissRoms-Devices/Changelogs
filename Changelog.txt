@@ -1,4 +1,9 @@
 ====================
+     10-21-2019
+====================
+
+
+====================
      10-20-2019
 ====================
 
@@ -300,6 +305,9 @@ d793161cf5e Add device key action to kill app [2/3]
 59d3a707 Reduce default kill timeout
 4d7d54a9 Add device key action to kill app [1/3]
 11407d6f sdk: Disable selinux warning alert for now
+
+   * packages/apps/AudioFX/
+fb330c9 AudioFX: Add support for usb headset devices
 
    * vendor/support/
 1949700 CustomSeekBarPreference: migrate to androidx
@@ -700,73 +708,4 @@ e2868dfba Prevent abort in case of command timeout
    * system/core/
 96c2564d0 mkbootimg: Make unpack_bootimg py3 compatible
 f7c2e0362 bsdgrep: for -r, use the working directory if none specified
-
-====================
-     10-06-2019
-====================
-
-
-   * frameworks/base/
-22468ee4ed9 telephony: Conditionally ignore RSSNR signal level
-bc943e80243 base: SystemUI: add back QS hide label
-5ef07c3fa98 frameworks: Reset battery stats [1/2]
-7a1422cb945 Keyguard: Forward port lockscreen quick unlock (1/2)
-9f04570cced Fingerprint authentication vibration [1/2]
-6f20b207b41 SystemUI: runtime configurable audio panel location
-b8a8728a05f Revert "SystemUI: allow devices override audio panel location"
-be66544d3f4 base: SystemUI: make QS columns count configurable
-ee453aa8515 base: SystemUI: enable qs DUAL_TARGET_ALLOWED = true
-5c41e56adbf SystemUI: Add statusbar NFC icon
-8636f16140e SystemUI: Hide back icon when screen pinned and gestural mode enabled
-43f02043973 SystemUI: Fix escape text when screen pinned and gestural mode enabled
-8c90eb27a33 SystemUI: Show estimates on QS only if battery percentage is unavailable or disabled
-c062bad489e ScreenPinningRequest: Fix recents button not appearing
-b45d8f34625 base: Phone ringtone setting for Multi SIM device [1/3]
-bd9f2ac38fd overlays: add a few accents
-aafb1230b81 Add new font overlays
-d16908f91f9 SystemUI: Implement Smart space
-b67fdf49aff SystemUI: Port code to improve pixel live wallpapers
-ac6ded17d7c Initial import of SystemUIGoogleFactory
-2d3182458cb Revert "Disable ClockOptionsProvider so clocks don't appear in picker app"
-3e614994118 Revert "Disable custom clock faces in SystemUI"
-b9d34a9eda3 SystemUI: Avoid adding useless empty quick settings page
-89b2de9d88b SystemUI: Don't dismiss keyguard if user key isn't unlocked
-af21e4af9ad SystemUI: Dismiss keyguard on boot if disabled by current profile
-185d6e1d985 SystemUI: Add visualizer feature
-7322fa60c63 fw/b: Prevent trying to enable hw offload for tethering via VPN upstreams
-dac04f9b898 fw/b: Add capability to allow tethering to use VPN upstreams
-1973219f3d5 Camera button support
-01a112da604 Camera: allow camera to use power key as shutter
-8c720ba107d Forward port CM Screen Security settings (1/2)
-900cf56aa35 KernelCpuUidTimeReader: Decrease log level on non-eng builds
-2277c7f24f7 SystemUI: Advanced location tile
-d74eb9e0bd1 SystemUI: Enable and fix QS detail view, adapt layout to Pie
-7f23be019fb SystemUI: Apply system_icons_keyguard_padding_end to parent view
-7fd70e1c7c4 Support enforcing a minimum delay between notification sounds of an app.
-
-   * frameworks/opt/net/wifi/
-119f4e61c resurrect mWifiLinkLayerStatsSupported counter
-
-   * packages/apps/Settings/
-9fae1206ad Settings: disable FLAG_WINDOW_IS_OBSCURED check in accessibility
-9884932a01 Settings: show battery times in summary
-486b0f712e Settings: display fstype for mounted volumes
-d1b854e91e Settings: enable SIM card ringtone only if slot not empty
-26b53379b9 Settings: Phone ringtone setting for Multi SIM device [2/3]
-971575d668 Settings: Fix portuguese translation for "back sensitivity"
-a019265de6 FeatureFactoryImpl: Implement ApplicationFeatureProviderGoogleImpl
-768b04bfd0 FeatureFactoryImpl: Implement SuggestionFeatureProvider
-2d9df80e23 FeatureFactoryImpl: Implement SearchFeatureProviderGoogleImpl
-ee4fda3e4e FeatureFactoryImpl: Implement AccountFeatureProviderGoogleImpl
-8785ed57b8 Settings: Initial implementation of FeatureFactoryImpl from Pixel
-63731289ba Settings: Add hotspot setting to allow VPN upstreams
-22f2481c1c Settings: Reset battery stats [2/2]
-a276291492 PowerUsageSummary: Remove advanced battery menu item
-269c60462a Settings: PowerUsageSummary: open advanced usage on header click
-dae1477662 QS dev tiles: Don't set them to active area
-a380b43172 Keyguard: Forward port lockscreen quick unlock (2/2)
-779d0ff16e Settings: Fix the failing strings
-71b13bb5b5 Settings: fix apn_editor carrier_enabled summaryOff string
-0bb1032592 Allow sorting Applications by size
-7036f59ee0 Settings: Add lockscreen visualizer toggle
 
