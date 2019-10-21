@@ -1,4 +1,27 @@
 ====================
+     10-22-2019
+====================
+
+
+   * hardware/qcom-caf/sm8150/display/
+161548d7 display-hals: Allow building libdisplayconfig
+60fe2003 display-hals: Expose c2d2.h even if TARGET_DISABLE_DISPLAY is set
+f6796f8a Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
+63264d93 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+3eab35d5 Don't build lights module if vendor supplies it
+9ff751a2 display: Use    * pathmap
+292a72d8 Add 'display-commonsys-intf/' from https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf/tag/?h=LA.UM.8.1.r1-09500-sm8150.0
+
+   * hardware/qcom-caf/sm8150/media/
+b0662011 media: Exclude libplatformconfig from OSS builds
+475b375c media: Depend on display_headers not display_intf_headers
+c7ff03c2 media: libOmxSw encoders require prop headers :(
+0fb5e7f9 media: Use    * pathmap
+
+   * packages/apps/Blissify/
+e113db5 Merge changes from topic "qs" into q
+
+====================
      10-21-2019
 ====================
 
@@ -10,6 +33,14 @@
 
    * frameworks/base/
 31ed9e45689 ambient display: Fix volume key music control
+
+   * hardware/qcom-caf/msm8916/audio/
+369d0427e audio_extn: Mark unused variable as void
+eb1688849 hal: Add libprocessgroup dependency to set_sched_policy users
+
+   * hardware/qcom-caf/msm8916/media/
+f9cd945b0 media: Fix compilation error for switch case
+15b410ef0 mm-video-v4l2: Use "base" enum type
 
    * manifest/
 3eeab19 Merge "Track our blueprint repo" into q
@@ -32,6 +63,8 @@ ce26f7c Remove check for bootctrl from hardware/qcom guard
 
    * packages/apps/Blissify/
 f56f12d Blissify: Add settings for rounded corners
+d1c0e56 QS: Add Header for QS Settings
+48bb380 QS: Add Icon for QS Settings
 
    * vendor/bliss/
 f97d5628 Merge "prebuilt: Add BlissStatistics App" into q10
@@ -656,56 +689,4 @@ b6da2e0 Blissify: Add header for Statusbar Category
 803c8747 prebuilt: Add AboutBliss App
 a9127d2d kernel: Build dtb.img from compiled dtbs
 8e90a5f6 kernel: Don't re-define dtbo.img names
-
-====================
-     10-07-2019
-====================
-
-
-   * frameworks/base/
-c4c8794aa2e SoundPool: Do not sleep on stop for USAGE_GAME or on BUFFER_END
-ab5641e7ced Add missing INTERACT_ACROSS_USERS_FULL permission
-b221e9cb5a3 TypeClockController: Make it compile with new plugin API
-
-   * frameworks/opt/net/wifi/
-f77e01581 Fix derp in 119f4e61cd2164a56ebc4caba8ec735e36f70422
-
-   * hardware/qcom-caf/msm8998/display/
-65ca7e0f2 gralloc: Add option for YCrCb venus camera preview
-293c9822c gralloc: Allow devices to opt-in for YCrCb camera preview
-
-   * packages/apps/BlissUpdater/
-69b90bc BlissUpdater: Remove unwanted imports nd casts
-9de6cad BlissUpdater: Add Changelog button
-e722e12 BlissUpdater: Theme improvements
-ddf392a Updater: Mark as persistent
-edcc03f Updater: Correct cleanup notification action
-d9fef89 Updater: Add little delay before sending broadcast
-cdbe097 BlissUpdater: Always show preferences
-895f92c BlissUpdater: Remove all Translation Strings
-23b1c85 BlissUpdater: UI Redesign
-5653ecb BlissUpdater: Remove unwanted Stuff
-3b8b640 Updater: Theme actionbar text too
-2e25c8e Updater: Use accent for actionbar items
-576056b Updater: Expose the lower background color
-3f06d02 Updater: Allow to suspend A/B updates
-6cf3f3d BlissUpdater: Assume older Android version to be incompatible
-
-   * packages/apps/DeskClock/
-54055592b DeskClock: Use POWER_OFF_ALARM permission
-f168ce929 DeskClock: Add support of power off alarm feature
-4e3a37a04 DeskClock: Add back flip and shake actions
-b85f7bf11 DeskClock: adaptive icon
-aaa7bd18a Deskclock: define app category
-e3e13df14 AOSP/DeskClock - Fix improperly formatted resource strings in DeskClock.
-dd19a4d0a DeskClock - Moved the android:targetSdkVersion to 25 to fix "Clock has stopped" message displayed when Alarm trigger.
-
-   * system/bt/
-e2868dfba Prevent abort in case of command timeout
-5b5a78770 Add support to force disable enhanced sco commands
-5847446ed Bluetooth: Read BLE vendor capability to proceed on Secure conn
-
-   * system/core/
-96c2564d0 mkbootimg: Make unpack_bootimg py3 compatible
-f7c2e0362 bsdgrep: for -r, use the working directory if none specified
 
