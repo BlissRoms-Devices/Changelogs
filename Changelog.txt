@@ -1,4 +1,11 @@
 ====================
+     10-23-2019
+====================
+
+   * art/
+dc32b857d5 Revert "ART: Add version check for memfd_create()"
+
+====================
      10-22-2019
 ====================
 
@@ -204,6 +211,9 @@ a2f3814fb24 fwb: Add support for internal audio recording
 
    * frameworks/opt/net/wifi/
 e4bec41b7 Merge tag 'android-10.0.0_r4' into HEAD
+
+   * hardware/qcom-caf/sdm845/display/
+3a0160c54 gralloc: Add option for unaligned NV21_ZSL pixel format
 
    * hardware/qcom/audio/
 08ed6bf Revert "msm8x74: remove from top level makefile"
@@ -649,44 +659,4 @@ d6db78399b Settings: One does not simply become a Developer
    * vendor/bliss/
 2949fc5b Merge changes from topic "aboutbliss" into q10
 f6dca746 kernel: Move our dtb.img logic here
-
-====================
-     10-08-2019
-====================
-
-
-   * build/make/
-60435b51a envsetup: Automatically set CCACHE_EXEC to the system's ccache
-
-   * hardware/qcom-caf/msm8960/audio/
-1a6b25c Fix build errors
-
-   * hardware/qcom-caf/msm8960/display/
-dadb58d libexternal: fix switch fall through
-87ef5de display: inform compilers of deliberate switch fallthrough
-
-   * hardware/qcom-caf/msm8960/media/
-6b4fad8 media: drop byte typedef
-
-   * hardware/qcom/display/
-a000b85f Merge changes from topic "qcom_display" into q
-
-   * hardware/qcom/media/
-61724a2 Merge "msm8974: adjust for clang on Q" into q
-
-   * manifest/
-7d88aca Manifest for Android 10.0.0 Release 4 (QP1A.191005.007)
-b59d318 manifest: Track opt/net/wifi from LOS
-
-   * packages/apps/Blissify/
-18fa2e2 Blissify: Add Icons to Blissify Categories
-a90b66b Blissify: Add header for Buttons Category
-08731a3 Blissify: Add header for Animation Category
-b6da2e0 Blissify: Add header for Statusbar Category
-
-   * vendor/bliss/
-772c3bf7 config: Build AboutBliss
-803c8747 prebuilt: Add AboutBliss App
-a9127d2d kernel: Build dtb.img from compiled dtbs
-8e90a5f6 kernel: Don't re-define dtbo.img names
 
