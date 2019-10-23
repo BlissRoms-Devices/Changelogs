@@ -1,4 +1,34 @@
 ====================
+     10-24-2019
+====================
+
+
+   * device/qcom/sepolicy-legacy-um/
+d5b38e09 common: Fix sysfs_socinfo Label for sensors
+8c40e0ba common: Correctly Label /sys/class/kgsl
+ab924c75 common: Label persist.vendor.camera.debug.logfile
+2f36c228 sepolicy: setting secontext to rtc node
+2605506d msm8998: Label LED sysfs
+0ec73181 msm8998: Label usbpd sysfs
+94c2344b sepolicy: allow vold to read persist dirs
+8120880a sepolicy: Label persist partition for all SoCs
+2325b381 msm8996: Consider additional ssr nodes
+4e783e66 common: Fix labelling of lcd-backlight
+aaafdebc sepolicy: Allow mm-qcamerad to access v4L "name" node
+60c3fdd4 sepolicy: Fix video4linux "name" node labeling
+be1e842e sepolicy: Update timeservice key path
+
+   * frameworks/opt/net/wifi/
+b12f67b3e WiFi: Ignore connectivity scans during WFD session
+
+   * hardware/qcom-caf/msm8998/audio/
+3ddd20f29 hal: Add missing pthread.h include
+
+   * hardware/qcom-caf/sm8150/media/
+f6487d8b media: Exclude libplatformconfig from OSS builds
+23aac8ef media: Depend on display_headers not display_intf_headers
+
+====================
      10-23-2019
 ====================
 
@@ -20,8 +50,6 @@ f6796f8a Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
 292a72d8 Add 'display-commonsys-intf/' from https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf/tag/?h=LA.UM.8.1.r1-09500-sm8150.0
 
    * hardware/qcom-caf/sm8150/media/
-b0662011 media: Exclude libplatformconfig from OSS builds
-475b375c media: Depend on display_headers not display_intf_headers
 c7ff03c2 media: libOmxSw encoders require prop headers :(
 0fb5e7f9 media: Use    * pathmap
 
@@ -65,8 +93,26 @@ f9cd945b0 media: Fix compilation error for switch case
    * build/make/
 b3148b12c core: Copy Changelog to destination
 
+   * device/qcom/sepolicy/
+4c39c3c5 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.0
+
+   * device/qcom/sepolicy-legacy-um/
+ee522ecc Merge tag 'LA.UM.8.4.r1-04500-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.0-legacy-um
+
    * hardware/qcom-caf/common/
 ce26f7c Remove check for bootctrl from hardware/qcom guard
+
+   * hardware/qcom-caf/msm8998/audio/
+c0563f883 Merge tag 'LA.UM.8.4.r1-04500-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.0-caf-msm8998
+
+   * hardware/qcom-caf/sdm845/audio/
+27f45ae3e Merge tag 'LA.UM.8.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.0-caf-sdm845
+
+   * hardware/qcom-caf/sdm845/media/
+f107dc9b4 Merge tag 'LA.UM.8.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into lineage-17.0-caf-sdm845
+
+   * hardware/qcom-caf/wlan/
+1b63dff Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into lineage-17.0-caf
 
    * packages/apps/Blissify/
 f56f12d Blissify: Add settings for rounded corners
@@ -75,6 +121,30 @@ d1c0e56 QS: Add Header for QS Settings
 
    * vendor/bliss/
 f97d5628 Merge "prebuilt: Add BlissStatistics App" into q10
+
+   * vendor/codeaurora/telephony/
+e488385 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into lineage-17.0
+
+   * vendor/nxp/opensource/commonsys/external/libnfc-nci/
+b1cef13 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/external/libnfc-nci into lineage-17.0
+
+   * vendor/nxp/opensource/commonsys/frameworks/
+6ca7543 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/frameworks into lineage-17.0
+
+   * vendor/nxp/opensource/pn5xx/halimpl/
+4b29cd37 Merge tag 'LA.UM.8.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/halimpl into lineage-17.0-pn5xx
+
+   * vendor/nxp/opensource/sn100x/halimpl/
+1726f9d2 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/halimpl into lineage-17.0-sn100x
+
+   * vendor/qcom/opensource/dataservices/
+e1f2611 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/dataservices into lineage-17.0
+
+   * vendor/qcom/opensource/fm-commonsys/
+70f1190 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/fm-commonsys into lineage-17.0
+
+   * vendor/qcom/opensource/interfaces/
+d102156 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces into lineage-17.0
 
 ====================
      10-18-2019
@@ -291,6 +361,9 @@ f41450e Statusbar clock customizations (2/2)
      10-16-2019
 ====================
 
+
+   * hardware/qcom-caf/msm8998/audio/
+d00af06d0 configs: enable compress voip prop
 
    * packages/apps/Blissify/
 07cc6c4 Allow using 4G icon instead LTE [2/2]
@@ -601,6 +674,7 @@ aa13cce7539 SystemUI: Improvements for bluetooth battery levels
 c16d8dd1a hal: Support the audio amplifier hook
 8d37e0ba9 hal: Add missing compress voip PCM device ID
 97564d4ac audio: Extend platform parser to allow device name aliasing
+26ff9587a hal: msm8998 define max channel count to 8
 
    * manifest/
 55014ba manifest: Track Deskclock from blissroms
@@ -619,44 +693,4 @@ f430a5c5 vendor: Update Pixel Launcher
 02bdb1fb vendor: Add overlay for Pixel Launcher
 93a5bb69 update overlay for 10
 e924b958 vendor: Add Pixel Launcher and Settings Intelligence
-
-====================
-     10-09-2019
-====================
-
-
-   * build/make/
-3d666e688 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//build into HEAD
-
-   * frameworks/av/
-a3b2e25b4 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//frameworks/av into HEAD
-
-   * frameworks/base/
-bf800c26b9b Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//frameworks/base into HEAD
-
-   * hardware/qcom-caf/msm8960/display/
-9d14278 Modify gralloc0 implementation
-
-   * manifest/
-2bc38d5 [TEMP] Track 8150 Hals
-33e4257 Merge "manifest: Track bootctrl from LOS" into q
-dd34b24 manifest: Track bootctrl from LOS
-a4b73b3 Merge branch 'android-10.0.0_r4' of https://android.googlesource.com/platform//manifest into HEAD
-
-   * packages/apps/Blissify/
-bb69645 Buttons: Move Advanced Restart switch to Blissify [2/2]
-
-   * packages/apps/LineageParts/
-e6c9e14 Trust: Disable lineagestats
-
-   * packages/apps/Nfc/
-5ed538e6 Merge tag 'android-10.0.0_r4' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD
-
-   * packages/apps/Settings/
-d6db78399b Settings: One does not simply become a Developer
-2d7f5475c6 Settings: Move Advanced Restart switch to Blissify [1/2]
-
-   * vendor/bliss/
-2949fc5b Merge changes from topic "aboutbliss" into q10
-f6dca746 kernel: Move our dtb.img logic here
 
