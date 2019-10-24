@@ -1,4 +1,90 @@
 ====================
+     10-25-2019
+====================
+
+
+   * frameworks/base/
+8745ddf476d Fix: Recent Apps not closing
+a529184f586 SmartCharging: add reset battery stats option [1/2]
+c11b3b62544 SmartCharging: allow user set resume level [1/2]
+231d0b8cc32 Smart Charging: allow using device overlays
+1e10d3c7b8d Smart Charging: rework for using more common sysfs node [1/2]
+53db5277f54 base: Smart Charging (1/4)
+379912d4ac5 Screen off animations [1/2]
+88d820445fa Smart Pixels: Update default grid pattern
+94d988fa5dc Smart Pixels: Bypass check for obscured window
+d10634bd3a4 Smart Pixels: Switch to registered receiver
+20ad2f25bb6 Smart Pixels: Move out of SystemUI
+4916b325640 SystemUI: Smart Pixels [1/2]
+5818cfef93d SystemUI: screen-dimmer-pixel-filter
+074836c014e Unlock keystore with fingerprint after reboot (1/2)
+c5c51406442 base: Live Volume Steps [1/2]
+0d92f3ccb56 Allow disabling of FC dialogs [1/2]
+697f357960b SystemUI: BatteryPercentage: Detect when overlay changes
+15b774724e4 Recents: Fix NPE while changing themes
+8be7956c51c Telephony: Don't crash for too long baseband version
+179a66b6d4f Dynamically tell the user which vendor image is needed
+eb178f88dd1 Show a more descriptive message when vendor.img is out of date
+2b3580a730c Speed up Orientation Listener
+ca576e96f70 base: Use MD2 icon for missed call notification
+a5fd4e0fc9e Fix bootanimation stack overflow
+df319653112 Add "android.permission.READ_PHONE_STATE" to manifest
+ae7dbb16d89 base: Ambient Display battery toggle [1/2]
+89c71584da7 Move BT state to OFF when BLE app count is zero
+6edd254d441 SystemUI: add more notification snooze times
+4a444cc5c1e Fix Photosphere/Camera FCs
+9f22b13cfb1 Optimize IncallUI delay for voice calls
+48f1f0c6dc3 base: SystemUI: qs quickbar columns config
+27192106580 FingerprintService: Increase MAX_FAILED_ATTEMPTS
+190794aafb3 ScreenshotSound: Fix path for the file
+e071ad2e7f9 Partially Revert "Don't update dark boot setting onStart"
+a697ef065e7 aapt: Default to 0 compression ratio
+25945e2cac7 base: Remove unnecessary videos
+91688b4e49f base: Update some icons to MD2
+06f127a721f SystemUI: Decrease battery icon size
+6848e3d972f base: SystemUI: reduce padding between clock and notification area
+d660e9f4f54 SystemUI: Improve QS detail view layout
+9107a9c712b base: Update ic_doc_folder drawable to MD2
+d420e964dfe base: Update few drawables
+ff27ca751d1 SystemUI: Add Cellular tile icon from OOS
+48a9a6705ea SystemUI: Add OOS style QS tile layout
+3cd240b0240 base: Add OOS style switches
+a9101f60fff toasts: Use Animation_Toast_Material
+e4a21f935cb base: Add Pixel UI
+65e113353f0 base: configure lock screen media artwork blur level [1/2]
+4d041dbe282 Base: AM: create config to set Max Cached Processes
+a140fdab92e Quick statusbar tiles header: expand panel on longpress for details view
+3c7505f82f4 base: SystemUI: rounded_ripple must use corner_size
+a125778712f base: Expose system icon area weight
+c0bb9877de2 SwipeToScreenshot: Import MIUI implementation
+d0df694b5a5 Improvements for swipe to screenshot
+a2c31c3344e base: Add three-fingers-swipe to screenshot [1/2]
+ae1be285007 Keyguard: reduce bottom text size
+ba1c3602c2a base: change default list_divider_color_dark
+bce88c517aa WiFiDisplayController: Defer the P2P Initialization from its constructor.
+1296f04a6c3 WifiDisplayController: handle preexisting p2p connection status
+3eccba7c563 Merge changes for launching wifidisplay from system settings
+7726b20d530 [1/2] base: navigation mode settings
+
+   * packages/apps/Blissify/
+0c26b50 Blissify: Smart Pixels [2/2]
+24d656f Blissify: Screen Off Animation [2/2]
+ac16aac Merge changes from topics "fc-dialog", "live-vol", "force-fp", "swipe-to-ss" into q
+dc7fb87 Blissify: Allow disabling of FC dialogs [2/2]
+f99c49a Blissify: Live Volume Steps [2/2]
+cdf0ea8 Blissify: Unlock keystore with fingerprint after reboot (2/2)
+
+   * packages/apps/Settings/
+cf27d69c13 SmartCharging: add reset battery stats option [2/2]
+221f7f3d01 SmartCharging: allow user set resume level [2/2]
+29719cc138 Settings: Smart Charging (2/4)
+
+   * vendor/bliss/
+89ba8710 Smart Charging: chown all known charge suspend nodes
+618b2591 Smart Charging: rework for using more common sysfs node [2/2]
+bc88f85d vendor: Smart Charging (4/4)
+
+====================
      10-24-2019
 ====================
 
@@ -28,6 +114,23 @@ b12f67b3e WiFi: Ignore connectivity scans during WFD session
 f6487d8b media: Exclude libplatformconfig from OSS builds
 23aac8ef media: Depend on display_headers not display_intf_headers
 
+   * packages/apps/Blissify/
+08b9560 Blissify: fix volte icon key
+12b4306 Blissify: configure lock screen media artwork blur level [2/2]
+b525dc8 Add three-fingers-swipe to screenshot [2/2]
+
+   * packages/apps/Settings/
+518cd963ce Settings: Enable FeatureFlags on "user" builds too
+9e0b8529c3 Settings: IS_DEBUGGABLE -> IS_ENG
+1f298e60dc Settings: Update some icons to MD2
+dcc0804608 Settings: Fix QrCamera crash on devices without flash
+c0d24fbe21 Settings: Add Pixel UI
+68ecd91cf1 WiFi: Remove country code checking.
+821d432754 DisplaySettings: font size in 5% steps from 80% to 130%
+1ca4ee41ff move dark ui mode to theming category
+6bc563aa9b Battery: show battery temp on power summary
+d259554dbc [2/2] Settings: navigation mode settings
+
 ====================
      10-23-2019
 ====================
@@ -55,6 +158,11 @@ c7ff03c2 media: libOmxSw encoders require prop headers :(
 
    * packages/apps/Blissify/
 e113db5 Merge changes from topic "qs" into q
+
+   * vendor/support/
+4312c4a support: MasterSwitchPreference: Fix settings not applying
+75148ae support: MasterSwitchPreference: isChecked doesn't rely on existence of switch
+08af5e8 support: Add SystemSettingsMasterSwitchPreference
 
 ====================
      10-21-2019
@@ -657,40 +765,4 @@ c568d49 New custom seekbar: more improvements
 cdee88d CustomSeekBar: fix progressbar glitch with custom min-max values
 41da4db Fix seekbar attribute grabbing
 e27f18c Add CustomSeekBarPreference
-
-====================
-     10-10-2019
-====================
-
-
-   * frameworks/base/
-a35c37358ec Merge changes from topics "bt-battery", "base-bringup" into q
-42d13aa475a Audio: Do not disconnect profiles till Bluetooth Off
-3d7e8795baf SystemUI: Add more bluetooth device filters
-aa13cce7539 SystemUI: Improvements for bluetooth battery levels
-9c75951b2cd SystemUI: Show bluetooth battery level when available
-
-   * hardware/qcom-caf/msm8998/audio/
-c16d8dd1a hal: Support the audio amplifier hook
-8d37e0ba9 hal: Add missing compress voip PCM device ID
-97564d4ac audio: Extend platform parser to allow device name aliasing
-26ff9587a hal: msm8998 define max channel count to 8
-
-   * manifest/
-55014ba manifest: Track Deskclock from blissroms
-
-   * packages/apps/BlissUpdater/
-d2a2758 BlissUpdater: Use Common Changelog URL
-
-   * packages/apps/Blissify/
-7cd2520 Merge "Buttons: Move Advanced Restart switch to Blissify [2/2]" into q
-
-   * vendor/bliss/
-dd5eb699 build deskclock
-1161a76a accents: Add new accent colors for Q
-f430a5c5 vendor: Update Pixel Launcher
-5024a156 vendor: Add Gallery Go
-02bdb1fb vendor: Add overlay for Pixel Launcher
-93a5bb69 update overlay for 10
-e924b958 vendor: Add Pixel Launcher and Settings Intelligence
 
