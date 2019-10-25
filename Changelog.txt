@@ -1,4 +1,28 @@
 ====================
+     10-26-2019
+====================
+
+
+   * device/qcom/sepolicy/
+0f966bf0 Use bliss device repo
+
+   * device/qcom/sepolicy-legacy-um/
+76a3b8f Use bliss device repo
+
+   * hardware/qcom-caf/msm8996/audio/
+f9a065a28 audio: Use normal tinycompress
+4d112ab6d audio: Use libprocessgroup unconditionally
+
+   * manifest/
+e9237a6 manifest: Track sepolicy repos from Blissroms
+2e7a090 manifest: Track commonsys/packages/apps/Nfc from LOS
+e3398cd manifest: Track libhardware and ril from LOS
+558ec57 manifest: Track qcom hals from LOS
+
+   * vendor/bliss/
+f61a3d43 Kill sysinit
+
+====================
      10-25-2019
 ====================
 
@@ -90,19 +114,19 @@ bc88f85d vendor: Smart Charging (4/4)
 
 
    * device/qcom/sepolicy-legacy-um/
-d5b38e09 common: Fix sysfs_socinfo Label for sensors
-8c40e0ba common: Correctly Label /sys/class/kgsl
-ab924c75 common: Label persist.vendor.camera.debug.logfile
-2f36c228 sepolicy: setting secontext to rtc node
-2605506d msm8998: Label LED sysfs
-0ec73181 msm8998: Label usbpd sysfs
-94c2344b sepolicy: allow vold to read persist dirs
-8120880a sepolicy: Label persist partition for all SoCs
-2325b381 msm8996: Consider additional ssr nodes
-4e783e66 common: Fix labelling of lcd-backlight
-aaafdebc sepolicy: Allow mm-qcamerad to access v4L "name" node
-60c3fdd4 sepolicy: Fix video4linux "name" node labeling
-be1e842e sepolicy: Update timeservice key path
+d5b38e0 common: Fix sysfs_socinfo Label for sensors
+8c40e0b common: Correctly Label /sys/class/kgsl
+ab924c7 common: Label persist.vendor.camera.debug.logfile
+2f36c22 sepolicy: setting secontext to rtc node
+2605506 msm8998: Label LED sysfs
+0ec7318 msm8998: Label usbpd sysfs
+94c2344 sepolicy: allow vold to read persist dirs
+8120880 sepolicy: Label persist partition for all SoCs
+2325b38 msm8996: Consider additional ssr nodes
+4e783e6 common: Fix labelling of lcd-backlight
+aaafdeb sepolicy: Allow mm-qcamerad to access v4L "name" node
+60c3fdd sepolicy: Fix video4linux "name" node labeling
+be1e842 sepolicy: Update timeservice key path
 
    * frameworks/opt/net/wifi/
 b12f67b3e WiFi: Ignore connectivity scans during WFD session
@@ -113,6 +137,9 @@ b12f67b3e WiFi: Ignore connectivity scans during WFD session
    * hardware/qcom-caf/sm8150/media/
 f6487d8b media: Exclude libplatformconfig from OSS builds
 23aac8ef media: Depend on display_headers not display_intf_headers
+
+   * manifest/
+c63f4b0 manifest: Reenable cmdline tools
 
    * packages/apps/Blissify/
 08b9560 Blissify: fix volte icon key
@@ -137,6 +164,9 @@ d259554dbc [2/2] Settings: navigation mode settings
 
    * art/
 dc32b857d5 Revert "ART: Add version check for memfd_create()"
+
+   * manifest/
+3a8789d manifest: Track libbt and NFC from LOS
 
 ====================
      10-22-2019
@@ -174,6 +204,9 @@ e113db5 Merge changes from topic "qs" into q
 ====================
 
 
+   * external/openssh/
+9a2824af Fix compilation with Q boringssl
+
    * frameworks/base/
 31ed9e45689 ambient display: Fix volume key music control
 
@@ -205,10 +238,21 @@ b3148b12c core: Copy Changelog to destination
 4c39c3c5 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.0
 
    * device/qcom/sepolicy-legacy-um/
-ee522ecc Merge tag 'LA.UM.8.4.r1-04500-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.0-legacy-um
+ee522ec Merge tag 'LA.UM.8.4.r1-04500-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.0-legacy-um
+
+   * external/openssh/
+34845718 Fix build breakage
+10d5b42f Remove assumption that _PATH_BSHELL is a compile-time constant.
+6732e15f Use -Werror and -Wno-error in external/openssh
+123923fc Revert "openssh: don't spam warnings as errors"
+a4760f05 Revert "openssh: Silence build warnings"
+aaab86a1 Move away from GLOBAL_CFLAGS for ssh configuration
 
    * hardware/qcom-caf/common/
 ce26f7c Remove check for bootctrl from hardware/qcom guard
+
+   * hardware/qcom-caf/msm8996/audio/
+7221418de audio: Fix complilation errors under Clang
 
    * hardware/qcom-caf/msm8998/audio/
 c0563f883 Merge tag 'LA.UM.8.4.r1-04500-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.0-caf-msm8998
@@ -221,6 +265,9 @@ f107dc9b4 Merge tag 'LA.UM.8.3.r1-06100-sdm845.0' of https://source.codeaurora.o
 
    * hardware/qcom-caf/wlan/
 1b63dff Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into lineage-17.0-caf
+
+   * hardware/qcom/bt/
+05c4596 Revert "msm8974: remove from top level makefile"
 
    * packages/apps/Blissify/
 f56f12d Blissify: Add settings for rounded corners
@@ -238,6 +285,9 @@ b1cef13 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org
 
    * vendor/nxp/opensource/commonsys/frameworks/
 6ca7543 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/frameworks into lineage-17.0
+
+   * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
+30a6ac18 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/packages/apps/Nfc into lineage-17.0
 
    * vendor/nxp/opensource/pn5xx/halimpl/
 4b29cd37 Merge tag 'LA.UM.8.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/halimpl into lineage-17.0-pn5xx
@@ -393,64 +443,6 @@ e4bec41b7 Merge tag 'android-10.0.0_r4' into HEAD
    * hardware/qcom-caf/sdm845/display/
 3a0160c54 gralloc: Add option for unaligned NV21_ZSL pixel format
 
-   * hardware/qcom/audio/
-08ed6bf Revert "msm8x74: remove from top level makefile"
-7b89c97 audio: Make CVD version retrieval nonfatal with ACDB v1
-3aa787a audio: Use generated kernel headers
-d66a4d6 Add .gitreview
-
-   * hardware/qcom/bt/
-2598f2a Add .gitreview
-
-   * hardware/qcom/display/
-ac799631 Make memtrack build with the VNDK.
-2461688c Add missing includes.
-bd55a555 libmemtrack: Add open method for msm8084.memtrack
-d3fc9fc0 hwc: msm8084: Remove _vendor from libbfqio
-01abd70f msm8084: Include string.h where it is necessary
-cdce6ca6 msm8084: Use generated kernel headers
-c89b4034 msm8084: display: Don't use gnu-oldstyle field designators
-45ad2705 msm8084: Add additional build flags to avoid errors
-8473c4bf msm8084: Use libhwui.so instead of libskia.so
-5ff6f838 msm8084: Include what we use.
-91df4a47 hwc: msm8084: Set ioprio for vsync thread
-4f1368dc msm8996: gralloc1: Allow sign conversion errors for kernel headers
-
-   * hardware/qcom/gps/
-6a206c2 gps: Add libprocessgroup dependency to set_sched_policy users
-e5e8b13 msm8084: Handle race condition in HAL post SSR
-b757186 msm8084: Memory management fixes
-494610c msm8084: Add new event mask for timezone
-7925c02 msm8084: Remove reporting gps status from loc eng layer
-8a6f188 msm8084: Remove Redundant Log
-4b28a53 msm8084: LocTimer repeated expiration
-6f415d1 msm8084: MsgTask thread must call associator function always
-5865c29 msm8084: Adding a number of utilities
-6714356 msm8084: gps.conf parameters are in sap.conf table
-db122d6 msm8084: Adding Mutex for Creating Context
-5c756aa msm8084: Removed unused code and unnecessary notice files
-b50efe7 msm8084: Avoiding race conditions during the pallellized builds in Android system
-416037e msm8974: Add -Wno-error to compile with global -Werror.
-6276da8 msm8974: Return the correct length of nmea sentence
-8d29872 msm8974: Don't rely on transitively included headers
-2b0fe29 msm8974: Fix logging level and remove nmea log
-c05dfef msm8974: Fix duplicate gps.conf for hammerhead
-54a111d msm8974: Move device dependent modules to /vendor
-1c05348 msm8974: Cleanup obsolete LOCAL_PRELINK_MODULE
-4362a15 msm8974: Default apn ip type to ipv4
-d8ae219 msm8974: Add missing liblog dependency
-7b9362c Revert "msm8974: remove from top level makefile"
-f13d09e Revert "msm8974: deprecate msm8974"
-3c3d98d Add .gitreview
-
-   * hardware/qcom/media/
-502bf54 media: drop byte typedef
-f951ed7 media: vdec: Include nativebase headers
-adcd99b mm-video: venc: Correct a typo in variable name
-5d39f75 Revert "msm8974: remove from top level makefile"
-888acdf media: Use generated kernel headers
-47a3bda Revert "msm8974: adjust for clang on Q"
-
    * packages/apps/Blissify/
 ca41348 Blissify: move dashboard conditions from settings
 743650a Lockscreen: move media art and visualiser from settings [1/2]
@@ -472,6 +464,24 @@ f41450e Statusbar clock customizations (2/2)
 
    * hardware/qcom-caf/msm8998/audio/
 d00af06d0 configs: enable compress voip prop
+
+   * hardware/qcom/audio/
+4cea47b Revert "msm8x74: remove from top level makefile"
+318ab24 audio: Make CVD version retrieval nonfatal with ACDB v1
+
+   * hardware/qcom/display/
+f1ba3b92 Make memtrack build with the VNDK.
+9d90739f Add missing includes.
+5d17a536 libmemtrack: Add open method for msm8084.memtrack
+f2fc873a hwc: msm8084: Remove _vendor from libbfqio
+31ff530b hwcomposer: Work around overzealous fortify checks
+11e92489 msm8084: Include string.h where it is necessary
+8fb66912 msm8084: Use generated kernel headers
+4504f268 msm8084: display: Don't use gnu-oldstyle field designators
+a7b170f4 msm8084: Add additional build flags to avoid errors
+b92b8223 msm8084: Use libhwui.so instead of libskia.so
+b9398716 msm8084: Include what we use.
+9c84d8ee hwc: msm8084: Set ioprio for vsync thread
 
    * packages/apps/Blissify/
 07cc6c4 Allow using 4G icon instead LTE [2/2]
@@ -602,12 +612,12 @@ e1d27f3dce5 base: Bring back CPU temperature to CPU info overlay
 b27c2df307e base: fix num cpu check for CPU overlay
 909f3faf226 [1/2] base: add CPU info overlay
 
-   * hardware/libhardware/
-a9a6291f Add in gitreview file
-45b7deab hardware/libhw: Add display_defs.h to declare custom enums/flags
-
    * hardware/qcom-caf/msm8974/display/
 b2fc11e87 Modify gralloc0 implementation
+
+   * hardware/qcom/gps/
+58f5e4f gps: Add libprocessgroup dependency to set_sched_policy users
+a230106 msm8084: Handle race condition in HAL post SSR
 
    * manifest/
 16a2ed3 Track our blueprint repo
@@ -640,6 +650,9 @@ b4fbdb2 blissify: add CPU info overlay [2/2]
 
    * build/make/
 3c766f1e9 Fix odm output directory for devices w/o vendor partition
+
+   * external/bash/
+89f4fe8 Disable getdtablesize for everyone
 
    * packages/apps/BlissUpdater/
 1bec616 Changelog: Switch over to Github Changelog URL
@@ -692,77 +705,4 @@ f168dae93 Add gitreview
 
    * vendor/bliss/
 0c1d6b5c overlay: Show Battery percentage option by default
-
-====================
-     10-11-2019
-====================
-
-
-   * frameworks/base/
-7e8f66b96f1 audioservice: re send BT_SCO parameter to HAL when audioserver restarts
-6b8047ae53d audioservice: fix hasMediaDynamicPolicy() for loopback and render policies
-e7b6985bb63 Fix for, BT Carkit position issue when music app is killed
-eb867da9154 SystemUI: Update the media notification only when needed
-92fd1cb6f2e base: add Trust usb restrictor
-54af2297cae Remove a user/userdebug difference.
-0a75ed894c3 Check GL extension is supported before using it in glwallpaper
-01c5d064f66 Reduce unnecessary NotificationListener binder transaction.
-a326f605767 Don't clear the output array if it failed to open the proc status file
-49f585843ab Fix QuotaController constants.
-a2d6296b353 Fix memory leak in aapt2
-89414aed1a6 aapt2: disable leak detection
-478326cf892 Fix FD leak in ConnectivityManager.getConnectionOwnerUid
-d3fd7996725 Apply JNI optimizations to HwParcel
-
-   * hardware/qcom-caf/msm8996/audio/
-7b3e32b61 audio: Use direct    * pathmap
-
-   * hardware/qcom-caf/msm8996/media/
-6573821c8 media: Don't link libgpustats
-eadb4951a media: Add extrapolated gpustats header for PQ
-37ca21429 media: libOmxSw encoders require prop headers :(
-abdaa6ba4 venc: Fix VQZip issue
-26f4dc5a3 media: Use    * pathmap
-
-   * manifest/
-12beebd manifest: re-enable msm8960 hals
-
-   * packages/apps/LineageParts/
-62aa8dd LineageParts: Make trust interface less boring
-8f6cb28 LineageParts: Silently kill anonymous stats collections
-2940a7a LineageParts: Disable Expanded Desktop
-
-   * packages/apps/Settings/
-33f72aa7e1 wifi: Remove Qr Code scanner during Modify Network option.
-
-   * vendor/support/
-90aa721 Add missing methods in CustomSeekBarPreference
-fd20a7d Color Picker: Remove OnClick listener to fix disabling
-aa6efe8 Custom Seekbar improvements
-6811989 CustomSeekbar: Fix auto reset in few cases
-90daee9 Adapt new custom seekbar preference for existing prefs
-f0a0b7c Import new custom seekbar preference
-b44ce7d CustomSeekBarPreference: Align with other preferences
-99e1e61 Color picker: show hex input box on top
-5f596d3 Replace colorpicker action set png with vector
-dee858e Color Picker: use oval preview
-5d8742e Improve color picker layout / cleaned up some of the code
-b2a9097 margaritov color picker: add a proper landscape layout
-16d9be0 Colorpicker: Fix possible NPE
-82834b2 Colorpicker: add method to set default values
-b75af77 Change color picker reset icon
-bdaa6cf Color picker reset button: refresh color preview on click
-402dc96 Color Picker: don't show picker on click if preference is disabled
-0a8f583 Color picker: don't show keyboard on start
-30fa3ee Color picker pref: allow tap also on the text to show the picker
-be17326 Introduce set default button when attribute is set
-277e9ce Added modded marginov color picker
-0a20db2 Custom seekbar pref: allow to refresh values
-c0fa44e Customseekbar: add method to set default values
-50d6b5b New CustomSeekBar: allow to translate "Default" value string
-c568d49 New custom seekbar: more improvements
-4d29457 New fresh look for CustomSeekbar
-cdee88d CustomSeekBar: fix progressbar glitch with custom min-max values
-41da4db Fix seekbar attribute grabbing
-e27f18c Add CustomSeekBarPreference
 
