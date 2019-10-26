@@ -1,4 +1,9 @@
 ====================
+     10-27-2019
+====================
+
+
+====================
      10-26-2019
 ====================
 
@@ -465,24 +470,6 @@ f41450e Statusbar clock customizations (2/2)
    * hardware/qcom-caf/msm8998/audio/
 d00af06d0 configs: enable compress voip prop
 
-   * hardware/qcom/audio/
-4cea47b Revert "msm8x74: remove from top level makefile"
-318ab24 audio: Make CVD version retrieval nonfatal with ACDB v1
-
-   * hardware/qcom/display/
-f1ba3b92 Make memtrack build with the VNDK.
-9d90739f Add missing includes.
-5d17a536 libmemtrack: Add open method for msm8084.memtrack
-f2fc873a hwc: msm8084: Remove _vendor from libbfqio
-31ff530b hwcomposer: Work around overzealous fortify checks
-11e92489 msm8084: Include string.h where it is necessary
-8fb66912 msm8084: Use generated kernel headers
-4504f268 msm8084: display: Don't use gnu-oldstyle field designators
-a7b170f4 msm8084: Add additional build flags to avoid errors
-b92b8223 msm8084: Use libhwui.so instead of libskia.so
-b9398716 msm8084: Include what we use.
-9c84d8ee hwc: msm8084: Set ioprio for vsync thread
-
    * packages/apps/Blissify/
 07cc6c4 Allow using 4G icon instead LTE [2/2]
 a969be1 Make roaming indicator optional [2/2]
@@ -531,6 +518,24 @@ d793161cf5e Add device key action to kill app [2/3]
 
    * hardware/qcom-caf/msm8974/display/
 0760f53b2 Make hwc_vsync thread realtime
+
+   * hardware/qcom/audio/
+4cea47b Revert "msm8x74: remove from top level makefile"
+318ab24 audio: Make CVD version retrieval nonfatal with ACDB v1
+
+   * hardware/qcom/display/
+f1ba3b92 Make memtrack build with the VNDK.
+9d90739f Add missing includes.
+5d17a536 libmemtrack: Add open method for msm8084.memtrack
+f2fc873a hwc: msm8084: Remove _vendor from libbfqio
+31ff530b hwcomposer: Work around overzealous fortify checks
+11e92489 msm8084: Include string.h where it is necessary
+8fb66912 msm8084: Use generated kernel headers
+4504f268 msm8084: display: Don't use gnu-oldstyle field designators
+a7b170f4 msm8084: Add additional build flags to avoid errors
+b92b8223 msm8084: Use libhwui.so instead of libskia.so
+b9398716 msm8084: Include what we use.
+9c84d8ee hwc: msm8084: Set ioprio for vsync thread
 
    * lineage-sdk/
 7a95daea Network traffic mode for status bar [1/3]
@@ -672,37 +677,4 @@ fd5b91032d Settings: disable all bugreport settings
 d171ad4cee In sim1 APN settings interface and hot plug out/in sim2, APN information change to sim2's
 421eac245c Settings: Show me more than 4 items in the menus!
 57fa45385d Make sure close button has proper color
-
-====================
-     10-12-2019
-====================
-
-
-   * manifest/
-254d77e manifest: Enable AOSP FM app and add QCOM libfmjni
-5ea4139 manifest: Move qcom fm and power to vendor/qcom/opensource
-7cc0c72 manifest: Track legacy nxp from LOS
-9ad493f manifest: Track development from LOS
-6cf0882 manifest: Add LOS Remote to track hals
-
-   * packages/apps/Blissify/
-ef65bdd Misc: Move Dashboard suggestions to Blissify [2/2]
-8354ca5 Blissify: Move Double Tap to Sleep Gesture to Blissify [2/2]
-2655edd Blissify: Add header for Gestures Category
-7170b58 Blissify: Add Gestures category
-4ebbdf5 Blissify: Add LockscreenCharging (3/3)
-5a05409 Blissify: Add header for Lockscreen Category
-7a2bca2 Blissify: Add Lockscreen category
-
-   * packages/apps/Settings/
-5b96ae52d1 Display: Move to Blissify [1/2]
-
-   * packages/services/Telephony/
-f168dae93 Add gitreview
-
-   * system/core/
-3221a094c LockscreenCharging: squashed (2/3)
-
-   * vendor/bliss/
-0c1d6b5c overlay: Show Battery percentage option by default
 
