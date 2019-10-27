@@ -1,4 +1,12 @@
 ====================
+     10-28-2019
+====================
+
+
+   * manifest/
+4f113b9 lineage: Enable QCOM power HAL
+
+====================
      10-27-2019
 ====================
 
@@ -163,6 +171,48 @@ c0d24fbe21 Settings: Add Pixel UI
 6bc563aa9b Battery: show battery temp on power summary
 d259554dbc [2/2] Settings: navigation mode settings
 
+   * vendor/qcom/opensource/power/
+11a94e3 power: msm8952: Remove HBTP support
+b1d08ab power: Rename power-8952.c to power-8937.c
+9a3da74 Reduce hwbinder buffer size for power HAL
+c0c5b02 power: Remove unused camera_hint_ref_count
+c394265 power: Compile with -Wall -Wextra -Werror
+9cdea7b power: msm8916: Code clean up
+71c7488 power: fix sysfs_read/sysfs_write usage
+7dbfef3 power: msm8996: Remove dead code
+a250b90 power: add back check for ro.vendor.extension_library
+ee9bd61 power: Use ARRAY_SIZE macro where possible
+f906ae2 power: Drop default POWER_HINT_INTERACTION routine
+9bb7f33 power: Cache SOC ID checks for future queries
+c836c73 power: Add back display_boost checks
+85e00bf power: Simplify display_hint_sent
+71131ea power: Simplify soc_id checks
+b989cae power: Remove unused list utils
+c9ed433 power: Avoid interaction build errors
+689414d power: Use is_interactive_governor/is_schedutil_governor
+bd869d2 power: Introduce is_schedutil_governor
+4c96994 power: Remove leftover support for ondemand governor
+64ac5a0 power: Remove leftover support for msm-dcvs governor
+420f265 power: clang-format
+434acc2 power: Add -qti suffix to module name
+4e16643 power: Remove mutex to hints
+42cc467 power: Remove unused arg from power_hint_override/set_interactive_override
+a14bb27 power: Enable 4+0 core config for display off cases
+951c6ba power: introduce 8992-specific handling
+5d42274 power: modify return value for display off hint in 8994
+886567a power: Fix to handle min freq changes when CPU cores hotplugged.
+783a188 power: Changed the minfreq to 400Mhz for display off scenario.
+4f5e237 power: Change the Hi-Speed freq to 800Mhz for camcorder case
+d856943 power: override encode hint for 8909
+3857ee7 power: Allow devices to write their own platform specific bits
+c332b13 power: Allow device specific hooks for set_interactive
+e9c7fcc power: Refactor TARGET_TAP_TO_WAKE_NODE
+e0a0903 power: Add support for tap-to-wake feature control
+d1cd53f power: Use log/log.h instead of utils/Log.h
+23dc599 power: Fix a few compiler warnings
+45df97b power: Fix power hal compiler warnings
+92ae28d power: Remove powerhintparser
+
 ====================
      10-23-2019
 ====================
@@ -308,6 +358,9 @@ e1f2611 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org
 
    * vendor/qcom/opensource/interfaces/
 d102156 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces into lineage-17.0
+
+   * vendor/qcom/opensource/power/
+441b098 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/power into lineage-17.0
 
 ====================
      10-18-2019
@@ -470,6 +523,24 @@ f41450e Statusbar clock customizations (2/2)
    * hardware/qcom-caf/msm8998/audio/
 d00af06d0 configs: enable compress voip prop
 
+   * hardware/qcom/audio/
+4cea47b Revert "msm8x74: remove from top level makefile"
+318ab24 audio: Make CVD version retrieval nonfatal with ACDB v1
+
+   * hardware/qcom/display/
+f1ba3b92 Make memtrack build with the VNDK.
+9d90739f Add missing includes.
+5d17a536 libmemtrack: Add open method for msm8084.memtrack
+f2fc873a hwc: msm8084: Remove _vendor from libbfqio
+31ff530b hwcomposer: Work around overzealous fortify checks
+11e92489 msm8084: Include string.h where it is necessary
+8fb66912 msm8084: Use generated kernel headers
+4504f268 msm8084: display: Don't use gnu-oldstyle field designators
+a7b170f4 msm8084: Add additional build flags to avoid errors
+b92b8223 msm8084: Use libhwui.so instead of libskia.so
+b9398716 msm8084: Include what we use.
+9c84d8ee hwc: msm8084: Set ioprio for vsync thread
+
    * packages/apps/Blissify/
 07cc6c4 Allow using 4G icon instead LTE [2/2]
 a969be1 Make roaming indicator optional [2/2]
@@ -518,24 +589,6 @@ d793161cf5e Add device key action to kill app [2/3]
 
    * hardware/qcom-caf/msm8974/display/
 0760f53b2 Make hwc_vsync thread realtime
-
-   * hardware/qcom/audio/
-4cea47b Revert "msm8x74: remove from top level makefile"
-318ab24 audio: Make CVD version retrieval nonfatal with ACDB v1
-
-   * hardware/qcom/display/
-f1ba3b92 Make memtrack build with the VNDK.
-9d90739f Add missing includes.
-5d17a536 libmemtrack: Add open method for msm8084.memtrack
-f2fc873a hwc: msm8084: Remove _vendor from libbfqio
-31ff530b hwcomposer: Work around overzealous fortify checks
-11e92489 msm8084: Include string.h where it is necessary
-8fb66912 msm8084: Use generated kernel headers
-4504f268 msm8084: display: Don't use gnu-oldstyle field designators
-a7b170f4 msm8084: Add additional build flags to avoid errors
-b92b8223 msm8084: Use libhwui.so instead of libskia.so
-b9398716 msm8084: Include what we use.
-9c84d8ee hwc: msm8084: Set ioprio for vsync thread
 
    * lineage-sdk/
 7a95daea Network traffic mode for status bar [1/3]
@@ -647,34 +700,4 @@ b4fbdb2 blissify: add CPU info overlay [2/2]
 85a41b39 roomservice: Switch to o8.1
 76312040 tools: Add roomservice and Bliss'fy
 8c79e053 bliss: Move fonts to separate makefile
-
-====================
-     10-13-2019
-====================
-
-
-   * build/make/
-3c766f1e9 Fix odm output directory for devices w/o vendor partition
-
-   * external/bash/
-89f4fe8 Disable getdtablesize for everyone
-
-   * packages/apps/BlissUpdater/
-1bec616 Changelog: Switch over to Github Changelog URL
-
-   * packages/apps/Blissify/
-314b531 Lockscreen: Move Proximity on wake to Blissify
-3122596 Lockscreen: Move Wake when plugged to Blissify
-
-   * packages/apps/Messaging/
-b42d2ed Add .gitreview
-
-   * packages/apps/Settings/
-d4227e7aaa Developer opts: set default notification channel warnings
-fd5b91032d Settings: disable all bugreport settings
-74c348a86f Settings: Respect preference's visibility in VideoPreferenceController
-8d92391b1b Enable dismissal feature on legacy suggestions.
-d171ad4cee In sim1 APN settings interface and hot plug out/in sim2, APN information change to sim2's
-421eac245c Settings: Show me more than 4 items in the menus!
-57fa45385d Make sure close button has proper color
 
