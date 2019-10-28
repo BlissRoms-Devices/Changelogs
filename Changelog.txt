@@ -1,10 +1,48 @@
 ====================
+     10-29-2019
+====================
+
+
+   * device/bliss/sepolicy/
+48cbfd0 Kill sysinit
+1a846c1 sepolicy: vendor: Migrate to power 1.2
+
+   * device/qcom/sepolicy/
+e5e66c99 sepolicy: qva: Remove duplicate specification for qti.ims.ext
+f7e08cc4 Add in gitreview file
+
+   * device/qcom/sepolicy-legacy-um/
+15aaab8 Add in gitreview file
+
+   * manifest/
+504eff6 Track our sepolicy repo
+
+   * vendor/bliss/
+66bd8d20 build: dt_image: use prebuilt lz4 binary for compressing
+
+====================
      10-28-2019
 ====================
 
 
+   * build/make/
+4f23010a2 core: Fix default tones in settings [1/2]
+
+   * hardware/interfaces/
+4b1c12f3d camera: Only link and use vendor.qti.hardware.camera.device if specified
+62c5a7f78 Camed HAL extension: Added support in HIDL for Extended FD.
+d5779e0a3 Add in gitreview file
+
+   * hardware/lineage/interfaces/
+1896fd4 wifi: error out when asked for factory mac address
+ff34c21 wifi: Name the service as legacy
+ef78a85 lineage: import wifi service
+
    * manifest/
 4f113b9 lineage: Enable QCOM power HAL
+
+   * vendor/bliss/
+e2e8354c vendor/bliss: Fix default tones in settings [2/2]
 
 ====================
      10-27-2019
@@ -227,6 +265,15 @@ dc32b857d5 Revert "ART: Add version check for memfd_create()"
      10-22-2019
 ====================
 
+
+   * device/bliss/sepolicy/
+5fa2c56 Add .gitreview
+fd9b103 sepolicy: qcom: RIP legacy
+dcb1d29 Fix build error
+8c2eb35 sepolicy: Make recovery permissive
+962f222 [DND] Kill su
+fede38c Make it Bliss
+9db4984 sepolicy: Allow uncrypt to open OTA package as rw
 
    * hardware/qcom-caf/sm8150/display/
 161548d7 display-hals: Allow building libdisplayconfig
@@ -604,100 +651,4 @@ fb330c9 AudioFX: Add support for usb headset devices
    * vendor/support/
 1949700 CustomSeekBarPreference: migrate to androidx
 052a771 ColorPicker: Migrate to androidx
-
-====================
-     10-14-2019
-====================
-
-
-   * build/blueprint/
-bf0fffa Make off-the-shelf order funcs public.
-38e46dc Add .gitreview
-
-   * build/soong/
-adbfc49e Stop using build/target -> build/make/target symlink
-73cf7503 soong: Give priority to modules in exported namespaces for bootjars
-d1e2bc48 soong: Allow setting namespace import to "all" to import every namespace
-8fdfe7dc Comment out broken android_app_imports tests
-0b09bdbc Fix split apk paths.
-1ffd7936 Fix android_test install path.
-283a9ee0 AndroidMkEntries minor refactoring.
-270a5eba Add overrides property to prebuilt_apex
-ba173936 Add sh_test_host.
-31e33457 Add data property to sh_test.
-87a94c02 New AndroidMk authoring system based on entry map.
-a7d90022 Add default_dev_cert to android_app_import
-9e0fbd54 Add arch variant support to android_app_import.
-9b008e47 Add filename property to android_app_import
-05d5b54b Improve android_app_import.dpi_variants handling.
-6f392063 androidmk conversion logic for android_app_import
-9c6f314f Implement DPI variants in android_app_import.
-7fffdc40 Uncompress dex file in imported apk when needed.
-160456b2 uncompressedDex option for android_app_import.
-33695b9e Add android_app_import.
-
-   * frameworks/base/
-8518eac2215 [SQUASH] Revert "frameworks: base: Port password retention feature"
-bcdd87c405f LockscreenCharging: squashed (1/3)
-ad6707f8fd6 Add preference for automatic face unlocking [1/2]
-25cea57ec70 Dismiss keyguard automatically when face is recognized
-2fbabcd5b8f BatteryBar: Gradient color [1/2]
-19d9c26e30b Battery bar enhancements [1/2]
-c6cb2df9ad3 base: Add back battery bar [1/2]
-ccb3d374ad6 Material toast icon switch [1/2]
-bda99bf6741 core: Materialize Toast notifications
-a9176de9e8a Toast icon switch [1/2]
-e1d33e8f2c0 ToastIcon: Update padding properly
-d301599be83 Show icon of package associated with Toast
-ae5f74b25c8 Camera: Don't crash when trying to disable shutter sound
-364fe42ec91 core: Add support for MicroG
-a9ea05c0be3 base: rescuce party: check isDisabled on all public API
-5cbec5dcbc7 Address NPE when removing preferences out of developer options
-025e4d1b9d8 MountService: Prevent NPE with DropBoxManager
-b3733ac0ac9 Allow chromium to sign in
-907a4e550de Add DeskClock in powersave whitelist
-f7d9c1911d0 base: SystemUI: Update string for add tiles with one click
-332447c7a4f core: Add camera intents for camera state
-3e50c8e1c46 Add button to AppErrorDialog to upload crash information to dogbin
-2cad36b87a5 Camera: Force HAL1 for predefined package list.
-b6001cef1ac SystemUI: fix MediaProjection cast crash
-71f73687951 Add Compass tile
-55a8fce87df QS: Add CPUInfo toggle tile
-507973da0b4 base: Check early if CPU temp is available
-58167802d26 base: Fix CPU info overlay text layout
-e1d27f3dce5 base: Bring back CPU temperature to CPU info overlay
-6732d0b9435 base: SystemUI: adjust CPU overlay style
-b27c2df307e base: fix num cpu check for CPU overlay
-909f3faf226 [1/2] base: add CPU info overlay
-
-   * hardware/qcom-caf/msm8974/display/
-b2fc11e87 Modify gralloc0 implementation
-
-   * hardware/qcom/gps/
-58f5e4f gps: Add libprocessgroup dependency to set_sched_policy users
-a230106 msm8084: Handle race condition in HAL post SSR
-
-   * manifest/
-16a2ed3 Track our blueprint repo
-
-   * packages/apps/Blissify/
-0b5c9b3 Material toast icon switch [2/2]
-40c7487 BatteryBar: Gradient color [2/2]
-7f88040 Battery bar enhancements [2/2]
-4ad2384 Add back battery bar [2/2]
-b4fbdb2 blissify: add CPU info overlay [2/2]
-
-   * packages/apps/Recorder/
-5c17bfe Recorder: Use getRealMetrics
-
-   * packages/apps/Settings/
-8fbe170831 Merge "wifi: Remove Qr Code scanner during Modify Network option." into q
-1608504506 Merge "Display: Move to Blissify [1/2]" into q
-
-   * vendor/bliss/
-7f4e6f47 roomservice: Track device repos from q
-721db492 roomservice: Track device repos from p9.0
-85a41b39 roomservice: Switch to o8.1
-76312040 tools: Add roomservice and Bliss'fy
-8c79e053 bliss: Move fonts to separate makefile
 
