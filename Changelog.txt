@@ -1,4 +1,37 @@
 ====================
+     10-31-2019
+====================
+
+
+   * frameworks/base/
+5d7e4d50cc9 Add Lockscreen album art filter [1/2]
+a83a8635e90 Create lockscreen fragment properly
+4f10f3fcc33 SystemUI: Bring back lockscreen tuner (1/2)
+e6a9ac032c9 Merge changes from topic "rebase" into q
+645a13f4d85 Build Google audio files from Android 10 [2/2]
+
+   * manifest/
+4812e9b Track sm8150 HALS from LOS
+
+   * packages/apps/Blissify/
+03f6e91 Add ability to toggle bluetooth battery level [2/2]
+ee3d3c3 Add Lockscreen album art filter [2/2]
+a539b6a Enable Lockscreen shortcuts
+349465c Blissify: Refactor Battery bar
+bfb5247 Blissify: HeadsUp blacklists (2/2)
+cac9616 Blissify : add notifications category
+45e4a53 Blissify: Implement Aggressive Battery [2/2]
+08f91dd Blissify: Refactor Animations
+
+   * vendor/bliss/
+aead3727 Merge "vendor/bliss: Include Google Material sounds [2/2]" into q10
+9b0e5bc9 Merge "vendor: Update prebuilt apps" into q10
+146cd8a1 vendor/bliss: Include Google Material sounds [2/2]
+
+   * vendor/support/
+d8cf8ec support: Add SecureSettingListPreference
+
+====================
      10-30-2019
 ====================
 
@@ -9,6 +42,10 @@ a26ca3a4c Merge changes from topic "catchup" into q
 edf860e62 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform/build into q9
 
    * frameworks/base/
+0385c8818e3 SystemUI: Tiny expanding improvement
+fea6297c400 Fingerprint authentication vibration [1/2]
+d303a17660e QuickSettings: Add Haptic Feedback to tiles [1/2]
+726d02bb656 Lockscreen Visualizer: Add pulse magic
 bcc94228fc7 SystemUI: QS: Add VPN tile
 227b93b6e10 SystemUI: QS: Add SleepScreen Tile (Power menu on longpress)
 56614628769 SystemUI: QS: Add Compass tile
@@ -338,16 +375,18 @@ a40bfcb463b proto: Add Blissify Matric Constant
 071320828cf Add .gitreview
 07ffe20924c sensors: Create bool to select what timestamp to use
 
+   * hardware/qcom-caf/sm8150/media/
+97face7e media: Exclude libplatformconfig from OSS builds
+c72b63b2 media: Include display_headers instead of display_intf_headers
+e7db7d7d media: libOmxSw encoders require prop headers :(
+fd8b1ec5 media: Use    * pathmap
+
    * manifest/
 10eb4b8 Merge branch 'android-10.0.0_r9' of https://android.googlesource.com/platform/manifest into q
 
    * packages/apps/Blissify/
-414f2a5 Blissify: Add some more drawables
-8c7f52a Blissify: HeadsUp blacklists (2/2)
-0131d41 Blissify: Implement Aggressive Battery [2/2]
-d793549 Blissify : add drawables and categorize
-52c7708 Blissify: Enable lockscreen visualizer pulse
-945b9c6 animations and qs tile visibility
+778ae46 Blissify: QS tile titles visibility [2/2]
+75aaefc Blissify: partially revert animations and battery bar
 
    * packages/apps/Settings/
 3a4f84f823 SoundSettings: Add screenshot sounds settings
@@ -423,8 +462,10 @@ d5d1a329 Revert "Telecomm: Phone ringtone setting for Multi SIM device [3/3]"
 
    * vendor/bliss/
 735495c9 kernel: Fix ccache not being used when building
+64f0c285 vendor: Update prebuilt apps
 
    * vendor/support/
+35d8c15 support: Extend custom seekbar preferences
 943333b support: Add SecureSettingsStore
 afa2511 support: Add preference that holds global settings
 bd17bfd support: Extend MasterSwitchPreference
@@ -842,10 +883,6 @@ b12f67b3e WiFi: Ignore connectivity scans during WFD session
    * hardware/qcom-caf/msm8998/audio/
 3ddd20f29 hal: Add missing pthread.h include
 
-   * hardware/qcom-caf/sm8150/media/
-f6487d8b media: Exclude libplatformconfig from OSS builds
-23aac8ef media: Depend on display_headers not display_intf_headers
-
    * manifest/
 c63f4b0 manifest: Reenable cmdline tools
 
@@ -921,6 +958,10 @@ d1cd53f power: Use log/log.h instead of utils/Log.h
    * art/
 dc32b857d5 Revert "ART: Add version check for memfd_create()"
 
+   * hardware/qcom-caf/sm8150/audio/
+18cd8a582 audio: Skip libhdmipassthru on OSS builds
+e3a9a042c audio: Use direct    * pathmap
+
    * manifest/
 3a8789d manifest: Track libbt and NFC from LOS
 
@@ -939,17 +980,11 @@ fede38c Make it Bliss
 9db4984 sepolicy: Allow uncrypt to open OTA package as rw
 
    * hardware/qcom-caf/sm8150/display/
-161548d7 display-hals: Allow building libdisplayconfig
-60fe2003 display-hals: Expose c2d2.h even if TARGET_DISABLE_DISPLAY is set
 f6796f8a Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
 63264d93 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
 3eab35d5 Don't build lights module if vendor supplies it
 9ff751a2 display: Use    * pathmap
 292a72d8 Add 'display-commonsys-intf/' from https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf/tag/?h=LA.UM.8.1.r1-09500-sm8150.0
-
-   * hardware/qcom-caf/sm8150/media/
-c7ff03c2 media: libOmxSw encoders require prop headers :(
-0fb5e7f9 media: Use    * pathmap
 
    * packages/apps/Blissify/
 e113db5 Merge changes from topic "qs" into q
@@ -1121,47 +1156,4 @@ f41450e Statusbar clock customizations (2/2)
 
    * vendor/support/
 4ab9de2 Add custom preferences for lineage settings
-
-====================
-     10-16-2019
-====================
-
-
-   * hardware/qcom-caf/msm8998/audio/
-d00af06d0 configs: enable compress voip prop
-
-   * hardware/qcom/audio/
-4cea47b Revert "msm8x74: remove from top level makefile"
-318ab24 audio: Make CVD version retrieval nonfatal with ACDB v1
-
-   * hardware/qcom/display/
-f1ba3b92 Make memtrack build with the VNDK.
-9d90739f Add missing includes.
-5d17a536 libmemtrack: Add open method for msm8084.memtrack
-f2fc873a hwc: msm8084: Remove _vendor from libbfqio
-31ff530b hwcomposer: Work around overzealous fortify checks
-11e92489 msm8084: Include string.h where it is necessary
-8fb66912 msm8084: Use generated kernel headers
-4504f268 msm8084: display: Don't use gnu-oldstyle field designators
-a7b170f4 msm8084: Add additional build flags to avoid errors
-b92b8223 msm8084: Use libhwui.so instead of libskia.so
-b9398716 msm8084: Include what we use.
-9c84d8ee hwc: msm8084: Set ioprio for vsync thread
-
-   * packages/apps/Blissify/
-07cc6c4 Allow using 4G icon instead LTE [2/2]
-a969be1 Make roaming indicator optional [2/2]
-a6d956b Add customizable action for back long press button [3/3]
-33c75ef Add device key action to kill app [3/3]
-c77357d Option to Display Data Disabled Indicator Icon [2/2]
-da551ad Ability to toggle VoLTE icon in statusbar [2/2]
-5ab973e Statusbar: Add Advanced system icons Category
-7d1c50e Batterybar: fix derp
-
-   * packages/apps/ThemePicker/
-befbba6 ThemePicker: Don't trash whole theme when missing icon preview
-
-   * vendor/bliss/
-461e3b62 vendor: Add Pixel Themes app
-d670a3da vendor: overlay: Add few config items from pixel device
 
