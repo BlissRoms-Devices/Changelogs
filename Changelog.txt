@@ -1,4 +1,32 @@
 ====================
+     11-01-2019
+====================
+
+
+   * frameworks/base/
+09cce225af5 ScreenRec: show MediaProjection permission warning only once
+46ceef9a10b Screenrec: allow to show a blinking red stop dot
+f1a1b90bf01 Unlink screenrecord toggle from featureflags and enable it
+5a13175e5a4 Screenrecord: Change save location and make sure dirs exist
+bfb24fc0f11 SystemUI: Add case to quick pull down status bar anywhere
+f0b44028abd Separate double tap to sleep on lockscreen [1/2]
+37b4f13045d SystemUI: Launch PowerUsageSummery when battery icon is pressed
+f5abb225a0a base: SystemUI: enhance calendar link
+835b07aee6f Fix Google dialer FC due to missing permissions
+5e1c3dfa4bb Fix Google Calendar FC
+74272ddc8e4 Fix permissons for ContactsProvider2
+d536b53e97b Fix Fi permissions
+3bd0e672660 Fix Android 7.0 GApps permisions which were causing F/C
+
+   * manifest/
+ae2b497 manifest: Track tinyalsa from LOS
+ec005bb manifest: Track apq8084 Hals from LOS
+48f5c6d manifest: Track external/mksh from LOS
+4317827 manifest: Cleanup disabled repos
+3f5def5 manifest: Track MSM8952 Hals from LOS
+c882362 manifest: Track CarrierConfig from LOS
+
+====================
      10-31-2019
 ====================
 
@@ -374,6 +402,9 @@ b6036df4454 BT: Adding aptX-Adaptive codec entry to Framework
 a40bfcb463b proto: Add Blissify Matric Constant
 071320828cf Add .gitreview
 07ffe20924c sensors: Create bool to select what timestamp to use
+
+   * hardware/qcom-caf/apq8084/audio/
+7feb4b079 apq8084: audio: fix msm8974 symlinks
 
    * hardware/qcom-caf/sm8150/media/
 97face7e media: Exclude libplatformconfig from OSS builds
@@ -880,6 +911,16 @@ be1e842 sepolicy: Update timeservice key path
    * frameworks/opt/net/wifi/
 b12f67b3e WiFi: Ignore connectivity scans during WFD session
 
+   * hardware/qcom-caf/apq8084/display/
+26a54aa24 apq8084: Add additional build flags to avoid errors
+b8a12514c display: inform compilers of deliberate switch fallthrough
+766e9e539 hwcomposer: Work around overzealous fortify checks
+c46cd4884 Modify gralloc0 implementation
+8d720ee92 Make hwc_vsync thread realtime
+
+   * hardware/qcom-caf/apq8084/media/
+09bc40392 media: drop byte typedef
+
    * hardware/qcom-caf/msm8998/audio/
 3ddd20f29 hal: Add missing pthread.h include
 
@@ -1130,30 +1171,4 @@ b77429f4 build: Remove qcom power HAL pathmap
 3954f621 Revert "config: Use tether automatic upstream selection"
 2c3e8c92 common: Clean up debug packages
 d30d5acd kernel: Define DTBS_OUT path for dtb.img building
-
-====================
-     10-17-2019
-====================
-
-
-   * frameworks/opt/net/wifi/
-e4bec41b7 Merge tag 'android-10.0.0_r4' into HEAD
-
-   * hardware/qcom-caf/sdm845/display/
-3a0160c54 gralloc: Add option for unaligned NV21_ZSL pixel format
-
-   * manifest/
-1c222b0 Set default revision to android10-release
-b02bc06 Manifest for Android 10.0.0 release 5
-
-   * packages/apps/Blissify/
-ca41348 Blissify: move dashboard conditions from settings
-743650a Lockscreen: move media art and visualiser from settings [1/2]
-cbae5e5 Blissify: add Quick settings category
-ceb615c Network traffic mode for status bar [2/3]
-c15d740 Add network traffic customizations for status bar [2/2]
-f41450e Statusbar clock customizations (2/2)
-
-   * vendor/support/
-4ab9de2 Add custom preferences for lineage settings
 
