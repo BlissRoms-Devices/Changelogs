@@ -1,9 +1,31 @@
 ====================
+     11-02-2019
+====================
+
+
+   * frameworks/base/
+8e9d259499c Merge "Fw_base - Breathing missedcall/sms/voicemail [1/5]" into q
+f8687d44f8b Fw_base - Breathing missedcall/sms/voicemail [1/5]
+a11c3093364 Add battery styles and customizations for Android 10 [1/2]
+
+   * packages/apps/Blissify/
+028c758 Blissify: Add Notification Icon
+7477c1c Blissify: Breathing missedcall/sms/voicemail [5/5]
+
+   * packages/apps/Settings/
+af0d02613c Settings: Cleanup
+
+   * packages/services/Telephony/
+5d21d533b Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
+ff21b4a75 Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
+
+====================
      11-01-2019
 ====================
 
 
    * frameworks/base/
+c85078572d0 Revert "base: SystemUI: add tuner to hide qs drag handle"
 09cce225af5 ScreenRec: show MediaProjection permission warning only once
 46ceef9a10b Screenrec: allow to show a blinking red stop dot
 f1a1b90bf01 Unlink screenrecord toggle from featureflags and enable it
@@ -17,14 +39,32 @@ f5abb225a0a base: SystemUI: enhance calendar link
 74272ddc8e4 Fix permissons for ContactsProvider2
 d536b53e97b Fix Fi permissions
 3bd0e672660 Fix Android 7.0 GApps permisions which were causing F/C
+f32201ce6bd Fw_base - Breathing missedcall/sms/voicemail [1/5]
 
    * manifest/
+3d06e71 manifest: Track Dialer from BlissRoms
 ae2b497 manifest: Track tinyalsa from LOS
 ec005bb manifest: Track apq8084 Hals from LOS
 48f5c6d manifest: Track external/mksh from LOS
 4317827 manifest: Cleanup disabled repos
 3f5def5 manifest: Track MSM8952 Hals from LOS
 c882362 manifest: Track CarrierConfig from LOS
+
+   * packages/apps/Blissify/
+32832f4 Blissify: Enable lockscreen visualizer pulse
+2e40f0a Separate double tap to sleep on lockscreen [2/2]
+672fb24 Add battery styles and customizations for Android 10 [2/2]
+ec850a4 Blissify : Add icons and categorize
+
+   * packages/apps/Dialer/
+f0966d927 Dialer - Breathing missedcall/sms/voicemail [2/5]
+e914ea5f7 Add .gitreview
+
+   * packages/apps/Messaging/
+1e52607 Messaging - Breathing missedcall/sms/voicemail [4/5]
+
+   * packages/services/Telephony/
+4fd2fc37f services/Telephony - Breathing missedcall/sms/voicemail [3/5]
 
 ====================
      10-31-2019
@@ -1088,8 +1128,14 @@ ce26f7c Remove check for bootctrl from hardware/qcom guard
    * hardware/qcom-caf/msm8996/audio/
 7221418de audio: Fix complilation errors under Clang
 
+   * hardware/qcom-caf/msm8996/display/
+68d453ef7 hwc: Set ioprio for vsync thread
+
    * hardware/qcom-caf/msm8998/audio/
 c0563f883 Merge tag 'LA.UM.8.4.r1-04500-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.0-caf-msm8998
+
+   * hardware/qcom-caf/msm8998/display/
+33c187901 hwc: Set ioprio for vsync thread
 
    * hardware/qcom-caf/sdm845/audio/
 27f45ae3e Merge tag 'LA.UM.8.3.r1-06100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.0-caf-sdm845
@@ -1140,35 +1186,4 @@ d102156 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org
 
    * vendor/qcom/opensource/power/
 441b098 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/power into lineage-17.0
-
-====================
-     10-18-2019
-====================
-
-
-   * frameworks/av/
-663495633 stagefright: Move QCOM_BSP_LEGACY flag to correct blueprint file
-97692bc0c Merge "CameraService: Support hooks for motorized camera" into q
-
-   * lineage-sdk/
-7703346f NetworkTraffic: Do not consider doze as screen on
-412b3ed4 Add option to select brightness slider positon [1/3]
-
-   * packages/apps/Blissify/
-3aacae4 Do not apply date customization to QS clock [2/2]
-44f1084 Add option to select brightness slider positon [3/3]
-
-   * prebuilts/tools-bliss/
-1a90ffc Update repo bin
-
-   * vendor/bliss/
-74a9be5f bliss: Add Bliss Q Bootanimation
-847609ce bliss: Remove Pixel fonts completely
-89741494 Merge changes from topic "vendor" into q10
-cfd7f6e4 prebuilt: Add BlissStatistics App
-9f0e919d Merge "bliss: Move fonts to separate makefile" into q10
-b77429f4 build: Remove qcom power HAL pathmap
-3954f621 Revert "config: Use tether automatic upstream selection"
-2c3e8c92 common: Clean up debug packages
-d30d5acd kernel: Define DTBS_OUT path for dtb.img building
 
