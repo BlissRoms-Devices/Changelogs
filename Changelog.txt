@@ -1,7 +1,82 @@
 ====================
+     11-04-2019
+====================
+
+
+   * hardware/lineage/interfaces/
+f530a01 Merge "Initial dummy cryptfshw implementation" into q
+
+   * packages/apps/Dialer/
+ef08afc5d Dialer: AudioModeProvider: use wired route for usb headsets
+329f82599 Control dialer's incoming call proximity sensor check via an overlay
+41c5ef20f Re-add call statistics.
+1dff9238b Allow per-call account selection.
+e2bb3448d Re-add call recording.
+21429d697 Add setting to enable Do Not Disturb during calls
+c023728f0 Generalize the in-call vibration settings category
+fdb79d33b Re-add dialer lookup.
+04adced9e Allow using private framework API.
+8891d3427 Add back in-call vibration features
+c8ff0bbc7 Revert "Remove dialer sounds and vibrations settings fragments and redirect to the system sound settings fragment instead."
+b44d3b306 Dialer: disable anti-falsing for call answer screen
+cb5223a32 Dialer: handle database upgrade from cm-14.1
+0c14e04a8 Dialer: adaptive icon
+88786c4b0 Dialer: define app category
+
+   * vendor/bliss/
+6ef20492 Merge changes from topic "misc" into q10
+
+   * vendor/qcom/opensource/cryptfs_hw/
+a6c0265 cryptfs_hw: Remove dependency on generated kernel headers
+cd31b64 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/cryptfs_hw into lineage-17.0
+b33f784 Revert "cryptfs_hw: Mark unused parameter"
+
+====================
      11-03-2019
 ====================
 
+
+   * frameworks/av/
+408c7f382 audiopolicy: support extended feature in audiopolicymanager
+c407a0de3 camera: Only link and use vendor.qti.hardware.camera.device if specified
+ef4e075bb Camera: Miscellaneous fixes in QDataCallback and binder death scenarios.
+779e29033 Camera: CameraHardwareInterface changes to support Extended FD
+21a7e18a1 stagefright: add changes related to high-framerates in CameraSource
+d8c59be83 Camera: Add support for preview frame fd
+
+   * frameworks/base/
+a1a738cda1f Fix Build Credentials refactored to use byte[]
+ee1e3e937ab frameworks: base: Port password retention feature
+
+   * manifest/
+a7aad56 manifest: Track tinycompress from LOS
+
+   * packages/apps/Settings/
+2e00a68690 Fix duplicated entries in sound settings.
+
+   * system/vold/
+79c365e Add "changepw" command to vdc.
+91fcafc vold: Move QCOM HW FDE inclusion under Bliss namespace
+63e0205 [automerger] vold: resolve crypto device creation failure with dm-crypt skipped: 4b5c1b2db2
+5d83865 system: vold: pass proper extra params to load crypto device
+1c6ffe9 system: vold: Close crypto block device if it was created
+e2e247d Updates for migrated code upstream
+59d2932 system: vold: fix block disk encryption to work with metadata encryption
+e62e6f4 vold: fix build error
+5ee1178 Fix for CTS test CtsAppSecurityHostTestCases
+925802a system: vold: Remove crypto block device creation
+b346d95 vold: Add Hardware FDE feature
+
+   * vendor/bliss/
+a9614944 soong_config: Reverse wait for qsee flag
+6467b680 Revert "soong_config: Add flag for legacy HW FDE"
+2a090f25 Fix backup
+ed5bd7b7 overlay: Remove Trebuchet config
+f7dc03fa overlay: Remove Keyguard config
+945d7431 vendor: Add messaging app to power whitelist
+bb7cb1d1 overlay: Remove config_show4GForLTE
+ff74c6ad repopick: Support    * paths detection on different branches
+7f30f4b1 common: Bring back Android Beam
 
 ====================
      11-02-2019
@@ -1084,24 +1159,4 @@ e113db5 Merge changes from topic "qs" into q
      10-21-2019
 ====================
 
-
-====================
-     10-20-2019
-====================
-
-
-   * external/openssh/
-9a2824af Fix compilation with Q boringssl
-
-   * hardware/qcom-caf/msm8916/audio/
-369d0427e audio_extn: Mark unused variable as void
-eb1688849 hal: Add libprocessgroup dependency to set_sched_policy users
-
-   * hardware/qcom-caf/msm8916/media/
-f9cd945b0 media: Fix compilation error for switch case
-15b410ef0 mm-video-v4l2: Use "base" enum type
-
-   * manifest/
-3eeab19 Merge "Track our blueprint repo" into q
-446ba64 Track our blueprint repo
 
