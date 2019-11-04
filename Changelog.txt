@@ -1,4 +1,24 @@
 ====================
+     11-05-2019
+====================
+
+
+   * bootable/recovery/
+f52b19e1 recovery: symlink /sbin for script compatibility
+dca34c7a recovery: sdcard is data/media/0
+6b253792 recovery: Provide caching for sideload files
+2924bb33 recovery: Puke out an /etc/fstab so stuff like busybox/toybox is happy
+d0114c86 recovery: Get a proper shell environment in recovery
+5c687eef Make adb use a custom prop for adb root
+1871d829 Merge remote-tracking branch 'los/lineage-17.0' into update
+bf5dcaa4 Add gitreview file
+
+   * packages/apps/Settings/
+d7a6294dc5 Settings: move force dark preference to display settings
+d2467feb89 Settings: Move theming to display settings
+c5bdd84521 Revert "Remove theming developer settings."
+
+====================
      11-04-2019
 ====================
 
@@ -150,6 +170,27 @@ e914ea5f7 Add .gitreview
      10-31-2019
 ====================
 
+
+   * bootable/recovery/
+b9d31b95 recovery: Blank screen on init
+bb72ce1c recovery: Add runtime checks for A/B vs traditional updates
+fffa6b08 recovery: Allow bypassing signature verification on non-release builds
+3dd1d313 recovery: Also hide rescue mode from non eng builds
+4cd3afa8 recovery: Only show tests in eng builds
+a2f6c65e recovery: Expose reboot to recovery option
+8ae392c4 recovery: init: mount pstore fs
+48eb9e34 recovery: Enable the menu for User builds
+a143813c recovery: Remove "Supported API" message
+ac86ac4b recovery: Add wipe system partition option
+6eb9f4a0 otautil: add support for unmounting entire volumes
+35f47ca8 recovery: Provide sideload cancellation
+7d606892 recovery: Blank screen during shutdown and reboot
+53a32df7 recovery: Allow device-specific recovery modules
+d628c729 recovery: Include vendor init trigger
+fbccaab2 recovery: ui: Support hardware virtual keys
+79775b3a recovery: ui: Minor cleanup for touch code
+e7efe2cb recovery: ui: Default to touch enabled
+39ffc2e1 recovery: Remove HOST_OS guard for f2fs tools
 
    * frameworks/base/
 5d7e4d50cc9 Add Lockscreen album art filter [1/2]
@@ -1154,9 +1195,4 @@ e113db5 Merge changes from topic "qs" into q
 4312c4a support: MasterSwitchPreference: Fix settings not applying
 75148ae support: MasterSwitchPreference: isChecked doesn't rely on existence of switch
 08af5e8 support: Add SystemSettingsMasterSwitchPreference
-
-====================
-     10-21-2019
-====================
-
 
