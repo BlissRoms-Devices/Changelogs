@@ -1,7 +1,23 @@
 ====================
+     11-07-2019
+====================
+
+
+   * hardware/qcom/display/
+c4ff6c31 msm8994: adjust for clang on Q
+435566eb Add .gitreview
+
+   * manifest/
+c343e33 manifest: Track display hal from BlissRoms
+314a595 manifest: Track art from BlissRoms
+c3b7dec manifest: Track bt hal from BlissRoms
+
+====================
      11-06-2019
 ====================
 
+   * art/
+708efda644 Don't fail dual map if memfd isn't supported
 
    * bionic/
 36f57d3cf Implement per-process target SDK version override.
@@ -9,8 +25,18 @@
    * hardware/qcom-caf/common/
 27e52b3 fwk-detect: Relocate from vendor/qcom-opensource/core-utils
 
+   * hardware/qcom/bt/
+154f37f Merge changes from topic "legacy" into q
+a252de7 libbt: Fix Compilation Errors
+
    * vendor/codeaurora/telephony/
 cf07a22 Revert "IMS-VT: Low battery handling for Video calls"
+
+   * vendor/support/
+d23c3b3 support: Extend default switches from LOS
+87d0de4 support: Always persist values for switch preferences
+308c10a support: Fix multiuser usage
+5ec8336 support: Fix persistence for helper prefs
 
 ====================
      11-05-2019
@@ -27,7 +53,25 @@ d0114c86 recovery: Get a proper shell environment in recovery
 1871d829 Merge remote-tracking branch 'los/lineage-17.0' into update
 bf5dcaa4 Add gitreview file
 
+   * frameworks/base/
+efd1e385204 base: SystemUI: hide ringer button if alert slider is present.
+64aee71e572 SystemUI: Introduce user interface for Alert Sliders
+9bab5fde10a policy: Add support for device alert sliders
+b4492857be6 SystemUI: Update keyguard indication margin when fod is in use
+33deea9087b Allow to dismiss notifications with back FP left/right swipe [1/2]
+d5e1c8b8867 Add a custom Settings observer
+0344819a6d7 SystemUI: OOS style brightness slider design
+e974b809f16 ScreenRec: Use MD2 icon for notification
+9f8a0ebece0 ScreenRec: Update statusbar icon
+96f25b81fda SystemUI: Add ScreenRecord Tile
+61177d271c3 Screenrec: use HEVC H.265 codec, add low quality option, fixes
+
+   * hardware/qcom/bt/
+b708fed 8992: libbt: bt_vendor_qcom remove ssr_cleanup
+ef405bd 8992: libbt: Add -Wno-pointer-sign flag to fix compilation error
+
    * packages/apps/Settings/
+96b9ff11fd Allow to dismiss notifications with back FP left/right swipe [2/2]
 d7a6294dc5 Settings: move force dark preference to display settings
 d2467feb89 Settings: Move theming to display settings
 c5bdd84521 Revert "Remove theming developer settings."
@@ -1166,18 +1210,4 @@ d1cd53f power: Use log/log.h instead of utils/Log.h
 23dc599 power: Fix a few compiler warnings
 45df97b power: Fix power hal compiler warnings
 92ae28d power: Remove powerhintparser
-
-====================
-     10-23-2019
-====================
-
-   * art/
-dc32b857d5 Revert "ART: Add version check for memfd_create()"
-
-   * hardware/qcom-caf/sm8150/audio/
-18cd8a582 audio: Skip libhdmipassthru on OSS builds
-e3a9a042c audio: Use direct    * pathmap
-
-   * manifest/
-3a8789d manifest: Track libbt and NFC from LOS
 
