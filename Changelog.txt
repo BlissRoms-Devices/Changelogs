@@ -1,7 +1,44 @@
 ====================
+     11-08-2019
+====================
+
+
+   * frameworks/base/
+2252ec3cb47 Aggressive Battery: fix auto enable on battery saver
+894be98a762 core: Implement Aggressive Battery [1/2]
+82221b44bb5 Add ability to toggle bluetooth battery level in QS [1/2]
+0b8c1bbfffe Smart Pixels: Dynamically register receiver
+950f270a2b0 Custom logo customizations [1/2]
+
+   * manifest/
+a94707b manifest: Track broadcom/libbt from LOS
+
+   * packages/apps/Blissify/
+897a442 Custom logo customizations [2/2]
+ee8c995 Fingerprint error vibration [2/2]
+a1f6324 AlarmsBlocker [2/2]
+8ce1bb4 WakelockBlocker [2/2]
+8259e7d Blissify: Hide power menu on secure lockscreen [2/2]
+c8c0697 Add ability to toggle bluetooth battery level in QS [2/2]
+
+====================
      11-07-2019
 ====================
 
+
+   * frameworks/base/
+42f13c9d556 Add AlarmsBlocker [1/2]
+9da9bc2611b Add WakelockBlocker [1/2]
+f3a8a936baa Base: Hide power menu on secure lockscreen [1/2]
+bd87123b36a Fingerprint error vibration [1/2]
+020ea7601c3 Keyguard: add binary custom clock face
+2daf92e8e73 media: Define MPEG-H Encoder Format
+fabc00a26d3 audio: add support for extended formats
+0c41adfafbe Camera: Ignore torch status update for aux or compsite camera
+1057f9a2aa9 Camera: Skip stream size check for whitelisted apps..
+c8fc643a4dd Camera: Clearing exception for Extended Face
+387d6e1f7b5 Camera: Extend face detection
+c5df35b1b4a Camera: Expose Aux camera to apps present in the whitelist
 
    * hardware/qcom/display/
 c4ff6c31 msm8994: adjust for clang on Q
@@ -1106,108 +1143,4 @@ cdf0ea8 Blissify: Unlock keystore with fingerprint after reboot (2/2)
 89ba8710 Smart Charging: chown all known charge suspend nodes
 618b2591 Smart Charging: rework for using more common sysfs node [2/2]
 bc88f85d vendor: Smart Charging (4/4)
-
-====================
-     10-24-2019
-====================
-
-
-   * device/qcom/sepolicy-legacy-um/
-d5b38e0 common: Fix sysfs_socinfo Label for sensors
-8c40e0b common: Correctly Label /sys/class/kgsl
-ab924c7 common: Label persist.vendor.camera.debug.logfile
-2f36c22 sepolicy: setting secontext to rtc node
-2605506 msm8998: Label LED sysfs
-0ec7318 msm8998: Label usbpd sysfs
-94c2344 sepolicy: allow vold to read persist dirs
-8120880 sepolicy: Label persist partition for all SoCs
-2325b38 msm8996: Consider additional ssr nodes
-4e783e6 common: Fix labelling of lcd-backlight
-aaafdeb sepolicy: Allow mm-qcamerad to access v4L "name" node
-60c3fdd sepolicy: Fix video4linux "name" node labeling
-be1e842 sepolicy: Update timeservice key path
-
-   * frameworks/opt/net/wifi/
-b12f67b3e WiFi: Ignore connectivity scans during WFD session
-
-   * hardware/qcom-caf/apq8084/display/
-26a54aa24 apq8084: Add additional build flags to avoid errors
-b8a12514c display: inform compilers of deliberate switch fallthrough
-766e9e539 hwcomposer: Work around overzealous fortify checks
-c46cd4884 Modify gralloc0 implementation
-8d720ee92 Make hwc_vsync thread realtime
-
-   * hardware/qcom-caf/apq8084/media/
-09bc40392 media: drop byte typedef
-
-   * hardware/qcom-caf/msm8998/audio/
-3ddd20f29 hal: Add missing pthread.h include
-
-   * manifest/
-c63f4b0 manifest: Reenable cmdline tools
-
-   * packages/apps/Blissify/
-08b9560 Blissify: fix volte icon key
-12b4306 Blissify: configure lock screen media artwork blur level [2/2]
-b525dc8 Add three-fingers-swipe to screenshot [2/2]
-
-   * vendor/qcom/opensource/power/
-6e8e091 power: Support power profiles on legacy platforms
-070a8e1 power: msm8937: Support power profiles
-584395e power: msm8953: Support power profiles
-d1dd8b9 power: msm8996: Support power profiles
-edf9bd8 power: sdm660: Support power profiles
-16da163 power: msm8998: Support power profiles
-19a43cc power: Prepare for power profile support
-60d5a54 power: msm8916: Drop MIN_FREQ tweak for 8939
-919a6ad power: Handle launch and interaction hints for legacy platforms
-ef7a7ed power: Handle launch and interaction hints for perf HAL platforms
-2c5b2b8 power: Use monotonic time for interaction boost
-6102e68 power: perform_hint_action: return an error code
-662bc2c power: Use declared enums where possible
-e0b5c19 power: Add known perf hint IDs
-1c98cc3 power: msm8996: Support VR + Sustained performance mode
-43b9e35 power: Clean up and fix set_interactive_override
-7af0fea power: Clean up and fix video encode/decode hint handling
-7075241 power: Find online CPU core and get scaling governor
-11a94e3 power: msm8952: Remove HBTP support
-b1d08ab power: Rename power-8952.c to power-8937.c
-9a3da74 Reduce hwbinder buffer size for power HAL
-c0c5b02 power: Remove unused camera_hint_ref_count
-c394265 power: Compile with -Wall -Wextra -Werror
-9cdea7b power: msm8916: Code clean up
-71c7488 power: fix sysfs_read/sysfs_write usage
-7dbfef3 power: msm8996: Remove dead code
-a250b90 power: add back check for ro.vendor.extension_library
-ee9bd61 power: Use ARRAY_SIZE macro where possible
-f906ae2 power: Drop default POWER_HINT_INTERACTION routine
-9bb7f33 power: Cache SOC ID checks for future queries
-c836c73 power: Add back display_boost checks
-85e00bf power: Simplify display_hint_sent
-71131ea power: Simplify soc_id checks
-b989cae power: Remove unused list utils
-c9ed433 power: Avoid interaction build errors
-689414d power: Use is_interactive_governor/is_schedutil_governor
-bd869d2 power: Introduce is_schedutil_governor
-4c96994 power: Remove leftover support for ondemand governor
-64ac5a0 power: Remove leftover support for msm-dcvs governor
-420f265 power: clang-format
-434acc2 power: Add -qti suffix to module name
-4e16643 power: Remove mutex to hints
-42cc467 power: Remove unused arg from power_hint_override/set_interactive_override
-a14bb27 power: Enable 4+0 core config for display off cases
-951c6ba power: introduce 8992-specific handling
-5d42274 power: modify return value for display off hint in 8994
-886567a power: Fix to handle min freq changes when CPU cores hotplugged.
-783a188 power: Changed the minfreq to 400Mhz for display off scenario.
-4f5e237 power: Change the Hi-Speed freq to 800Mhz for camcorder case
-d856943 power: override encode hint for 8909
-3857ee7 power: Allow devices to write their own platform specific bits
-c332b13 power: Allow device specific hooks for set_interactive
-e9c7fcc power: Refactor TARGET_TAP_TO_WAKE_NODE
-e0a0903 power: Add support for tap-to-wake feature control
-d1cd53f power: Use log/log.h instead of utils/Log.h
-23dc599 power: Fix a few compiler warnings
-45df97b power: Fix power hal compiler warnings
-92ae28d power: Remove powerhintparser
 
