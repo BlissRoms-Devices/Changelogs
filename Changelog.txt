@@ -1,4 +1,25 @@
 ====================
+     11-09-2019
+====================
+
+
+   * bionic/
+efeea9c62 Merge "bionic: Squash of pre-P mutex behavior restoration" into q
+
+   * hardware/interfaces/
+6b93cf0cd Merge changes from topic "update" into q
+
+   * manifest/
+ab0d953 manifest: Add vendor/themes repo
+
+   * vendor/bliss/
+0d69fd2a Merge "vendor/bliss: Include vendor/themes" into q10
+a2a61dc2 vendor/bliss: Include vendor/themes
+
+   * vendor/themes/
+5a27611 vendor/themes: Disable Fonts building
+
+====================
      11-08-2019
 ====================
 
@@ -21,6 +42,18 @@ a1f6324 AlarmsBlocker [2/2]
 8259e7d Blissify: Hide power menu on secure lockscreen [2/2]
 c8c0697 Add ability to toggle bluetooth battery level in QS [2/2]
 
+   * vendor/bliss/
+c2ddfde9 config: Mark more gralloc bits as valid
+
+   * vendor/themes/
+26019d5 Accent: Cleanup
+d84b215 AccentOverlays: Update all overlays packages
+b4c959c AccentOverlays: Add ThemePicker Category
+4a60cd7 Update .gitreview
+0d00525 Disable Package themes
+f9e7643 Disable Primary Themes
+53eb275 themes: Disable QS Styles
+
 ====================
      11-07-2019
 ====================
@@ -40,6 +73,10 @@ c8fc643a4dd Camera: Clearing exception for Extended Face
 387d6e1f7b5 Camera: Extend face detection
 c5df35b1b4a Camera: Expose Aux camera to apps present in the whitelist
 
+   * hardware/lineage/interfaces/
+ba9550e Initial audio amplifier HAL
+1314fc9 cryptfshw: Introduce QTI backend implementation
+
    * hardware/qcom/display/
 c4ff6c31 msm8994: adjust for clang on Q
 435566eb Add .gitreview
@@ -48,6 +85,22 @@ c4ff6c31 msm8994: adjust for clang on Q
 c343e33 manifest: Track display hal from BlissRoms
 314a595 manifest: Track art from BlissRoms
 c3b7dec manifest: Track bt hal from BlissRoms
+
+   * system/core/
+6e4a1cc76 healthd: Reinitialize mChargerNames for every battery update
+c32807c5e healthd: Add support for HVDCP_3 chargers
+51de8ace6 Revert "Format formattable partitions if mount fails"
+1be29bb39 fs_mgr: mount: don't set the block device as ro for recovery
+daff664c8 reboot: mark as recovery_available
+8edb6cc16 fs_mgr: Fix EnsurePathMounted with a given mount_point.
+aa52483c4 adb: Add wait-for-online command
+4d0b867d9 init: Don't run update_sys_usb_config if /data isn't mounted
+ca3092bcb healthd: Add DASH charger type
+8518662bc Add wrapped key support
+f85a1b77b logcat: Map '-C' to 'logcat -v color'
+
+   * vendor/bliss/
+92ca968c Revert "vendor: Add qcom platform type to soongs vars"
 
 ====================
      11-06-2019
@@ -118,6 +171,20 @@ c5bdd84521 Revert "Remove theming developer settings."
 ====================
 
 
+   * bionic/
+61715064c bionic: Squash of pre-P mutex behavior restoration
+
+   * build/soong/
+1b0303fa soong: Add function to return camera parameters library name
+
+   * frameworks/av/
+b5c5a6975 camera: Allow devices to load custom CameraParameter code
+
+   * frameworks/native/
+697be8b1a sensorservice: Register orientation sensor if HAL doesn't provide it
+0ad44476b sensorservice: customize sensor fusion mag filter via prop
+3d3fe5c5a libui: Allow invalid bits from callers conditionally
+
    * hardware/lineage/interfaces/
 f530a01 Merge "Initial dummy cryptfshw implementation" into q
 
@@ -137,6 +204,31 @@ b44d3b306 Dialer: disable anti-falsing for call answer screen
 cb5223a32 Dialer: handle database upgrade from cm-14.1
 0c14e04a8 Dialer: adaptive icon
 88786c4b0 Dialer: define app category
+
+   * packages/apps/Nfc/
+5b00d9dd Add in gitreview file
+ed832c8d NFCService: Add sysprop to prevent FW download during boot  with NFC off.
+
+   * system/vold/
+4646d9c vold: Accept Linux GPT partitions on external SD cards
+88c620f vold: Allow reset after shutdown
+78f6860 vold: skip first disk change when converting MBR to GPT
+2429786 Fix the group permissions of the sdcard root.
+71ff933 vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
+4bc6d8a vold: Mount ext4/f2fs portable storage with sdcard_posix
+15278b4 vold: Honor mount options for ext4/f2fs partitions
+4a6596a vold: Support internal storage partitions
+c2a4486 vold: Fix fsck on public volumes
+01d6998 vold: add support for more filesystems for public storage
+5e7a074 system: vold: Fix for ICE UFS card support
+5a3a0f9 system: vold: Use ICE for UFS card
+9d683d9 Updates for migrated code upstream
+41a3994 system: vold: Use wrapped key for metadata encryption
+ddadb85 vold: change to upgrade key if export fails
+d054fea vold: add support for clear key
+5ea26c0 Remove no longer relevant header file
+dac92ff vold: Use separate flag for wrappedkey
+4fc0359 vold: Wrapped key support for FBE
 
    * vendor/bliss/
 6ef20492 Merge changes from topic "misc" into q10
@@ -1119,28 +1211,4 @@ ffcb015254 Settings: Depend on lineage platform library
 
    * vendor/bliss/
 f61a3d43 Kill sysinit
-
-====================
-     10-25-2019
-====================
-
-
-   * manifest/
-c721ef1 Manifest for Android 10.0.0 Release 9 (QD1A.190821.011.C4)
-8b8d24c Manifest for Android 10.0.0 Release 8 (QD1A.190821.011)
-4825b17 Manifest for Android 10.0.0 Release 7 (QP1A.191005.007)
-0bf6724 Manifest for android10-c2f2-release.
-
-   * packages/apps/Blissify/
-0c26b50 Blissify: Smart Pixels [2/2]
-24d656f Blissify: Screen Off Animation [2/2]
-ac16aac Merge changes from topics "fc-dialog", "live-vol", "force-fp", "swipe-to-ss" into q
-dc7fb87 Blissify: Allow disabling of FC dialogs [2/2]
-f99c49a Blissify: Live Volume Steps [2/2]
-cdf0ea8 Blissify: Unlock keystore with fingerprint after reboot (2/2)
-
-   * vendor/bliss/
-89ba8710 Smart Charging: chown all known charge suspend nodes
-618b2591 Smart Charging: rework for using more common sysfs node [2/2]
-bc88f85d vendor: Smart Charging (4/4)
 
