@@ -1,14 +1,98 @@
 ====================
+     11-12-2019
+====================
+
+
+   * frameworks/base/
+f1b52dec059 Merge "Color/tint the wifi/mobile status bar icons correctly" into q
+8f0fb2ec93b Allow overriding default volume dialog position
+d284ad59609 VolumeDialogImpl: Apply settings properly
+2e147d8738d VolumeDialogImpl: Fix exception
+
+   * frameworks/native/
+f3ce68e44 libui: Allow invalid bits from callers conditionally
+
+   * system/core/
+5c94738bc healthd: Reinitialize mChargerNames for every battery update
+7d6b49b63 healthd: Add support for HVDCP_3 chargers
+2573fbe48 Revert "Format formattable partitions if mount fails"
+3a3093aae fs_mgr: mount: don't set the block device as ro for recovery
+aad83d0e0 reboot: mark as recovery_available
+1f0536926 fs_mgr: Fix EnsurePathMounted with a given mount_point.
+df6573c73 adb: Add wait-for-online command
+782e63bbf init: Don't run update_sys_usb_config if /data isn't mounted
+262f08300 healthd: Add DASH charger type
+58342bce5 Add wrapped key support
+a3c779360 logcat: Map '-C' to 'logcat -v color'
+01f2317fa LockscreenCharging: squashed (2/3)
+3508867b9 mkbootimg: Make unpack_bootimg py3 compatible
+c87d8fb5a bsdgrep: for -r, use the working directory if none specified
+369a7c728 init: update recovery when enabled in settings
+60050cd1e init: Add vendor-specific initialization hooks.
+9124ce032 mkbootimg: add support for --dt
+a16d20772 Camera: Add feature extensions
+3ead14fbe init: don't skip starting a service with no domain if permissive
+d9e753720 ueventd: parallelize restorecon /sys
+2e7235765 Add .gitreview
+
+   * vendor/bliss/
+b1b60134 Merge "bliss: Cleanup vendor" into q10
+a4075603 versions: Bliss v12.1 Stable Release
+
+   * vendor/themes/
+b25724c Accents: Add Mint accent color
+
+====================
      11-11-2019
 ====================
 
+
+   * build/make/
+ec688509a Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//build into HEAD
+
+   * frameworks/av/
+766a83901 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/av into HEAD
+
+   * frameworks/base/
+2bda78e045f tiles: Switch to UnlockMethodCache instead of mKeyguardMonitor
+c820fe8b4c1 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/base into HEAD
+
+   * frameworks/native/
+4058db6cf Add .gitreview
+13fff14ce sensorservice: Register orientation sensor if HAL doesn't provide it
+5a0b09723 sensorservice: customize sensor fusion mag filter via prop
+c44539474 Forward port 'Swap volume buttons' (2/3)
+0fd9aed6d surfaceflinger: Pass proper transform orientation to setProjection()
+8b0598b6c InputDispatcher: On keypress, deliver keycode to pokeUserActivity
+81f661308 PowerManager.h: Define USER_ACTIVITY_FLAG values
+be2d319f3 libui: Allow extension of valid gralloc 1.0 buffer usage bits
+eb2977378 Add vendor version for libgui
+
+   * hardware/interfaces/
+cf7a94677 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//hardware/interfaces into HEAD
+
+   * manifest/
+1d6088f Merge branch 'android-10.0.0_r14' of https://android.googlesource.com/platform//manifest into HEAD
 
    * packages/apps/Blissify/
 278a1d9 Merge changes from topics "kill-notif", "hide-statusbar", "heads-up", "qs-logo", "vol-timeout", "audio-panel" into q
 1ffd287 Blissify: Add kill button to notification guts [2/2]
 
    * packages/apps/Settings/
+31fb78ff55 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD
 9dd79b653d Merge changes from topic "mute-media" into q
+
+   * packages/providers/DownloadProvider/
+232ef1ff Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD
+
+   * packages/providers/MediaProvider/
+3c03dd5 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/MediaProvider into HEAD
+
+   * packages/services/Telephony/
+6c949f4cb Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/services/Telephony into HEAD
+
+   * system/bt/
+c87971738 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//system/bt into HEAD
 
 ====================
      11-10-2019
@@ -16,6 +100,7 @@
 
 
    * frameworks/base/
+48a87517f3b Color/tint the wifi/mobile status bar icons correctly
 f244a0e630c Camera: Simplify code for Aux/Mono white and black lists
 c6b92c69ea5 camera: Check if aux camera whitelist is set before restricting cameras
 348e2b5f6c9 SystemUI: config to hide status bar on lock screen [1/2]
@@ -175,19 +260,6 @@ c343e33 manifest: Track display hal from BlissRoms
 314a595 manifest: Track art from BlissRoms
 c3b7dec manifest: Track bt hal from BlissRoms
 
-   * system/core/
-6e4a1cc76 healthd: Reinitialize mChargerNames for every battery update
-c32807c5e healthd: Add support for HVDCP_3 chargers
-51de8ace6 Revert "Format formattable partitions if mount fails"
-1be29bb39 fs_mgr: mount: don't set the block device as ro for recovery
-daff664c8 reboot: mark as recovery_available
-8edb6cc16 fs_mgr: Fix EnsurePathMounted with a given mount_point.
-aa52483c4 adb: Add wait-for-online command
-4d0b867d9 init: Don't run update_sys_usb_config if /data isn't mounted
-ca3092bcb healthd: Add DASH charger type
-8518662bc Add wrapped key support
-f85a1b77b logcat: Map '-C' to 'logcat -v color'
-
    * vendor/bliss/
 92ca968c Revert "vendor: Add qcom platform type to soongs vars"
 
@@ -249,6 +321,11 @@ e974b809f16 ScreenRec: Use MD2 icon for notification
 b708fed 8992: libbt: bt_vendor_qcom remove ssr_cleanup
 ef405bd 8992: libbt: Add -Wno-pointer-sign flag to fix compilation error
 
+   * manifest/
+84db708 Manifest for Android 10.0.0 Release 14
+0ad853a Manifest for Android 10.0.0 Release 13
+425389b Manifest for Android 10.0.0 Release 12
+
    * packages/apps/Settings/
 96b9ff11fd Allow to dismiss notifications with back FP left/right swipe [2/2]
 d7a6294dc5 Settings: move force dark preference to display settings
@@ -268,11 +345,6 @@ c5bdd84521 Revert "Remove theming developer settings."
 
    * frameworks/av/
 b5c5a6975 camera: Allow devices to load custom CameraParameter code
-
-   * frameworks/native/
-697be8b1a sensorservice: Register orientation sensor if HAL doesn't provide it
-0ad44476b sensorservice: customize sensor fusion mag filter via prop
-3d3fe5c5a libui: Allow invalid bits from callers conditionally
 
    * hardware/lineage/interfaces/
 f530a01 Merge "Initial dummy cryptfshw implementation" into q
@@ -394,6 +466,9 @@ af0d02613c Settings: Cleanup
    * packages/services/Telephony/
 5d21d533b Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
 ff21b4a75 Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
+
+   * vendor/bliss/
+c100177f bliss: Cleanup vendor
 
 ====================
      11-01-2019
@@ -1057,88 +1132,4 @@ f8ebf6d15c7 SystemUI: Port statusbar brightness control
 
    * vendor/bliss/
 66bd8d20 build: dt_image: use prebuilt lz4 binary for compressing
-
-====================
-     10-28-2019
-====================
-
-
-   * bionic/
-8c82d2f1e Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//bionic into HEAD
-
-   * bootable/recovery/
-59bb4295 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//bootable/recovery into HEAD
-
-   * build/make/
-4f23010a2 core: Fix default tones in settings [1/2]
-
-   * build/soong/
-881a0f78 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//build/soong into HEAD
-
-   * frameworks/av/
-ce6a15e69 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//frameworks/av into HEAD
-
-   * frameworks/native/
-a8a750cf6 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//frameworks/native into HEAD
-
-   * frameworks/opt/telephony/
-82fc0ce77 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//frameworks/opt/telephony into HEAD
-
-   * hardware/interfaces/
-4b1c12f3d camera: Only link and use vendor.qti.hardware.camera.device if specified
-62c5a7f78 Camed HAL extension: Added support in HIDL for Extended FD.
-d5779e0a3 Add in gitreview file
-
-   * hardware/lineage/interfaces/
-1896fd4 wifi: error out when asked for factory mac address
-ff34c21 wifi: Name the service as legacy
-ef78a85 lineage: import wifi service
-
-   * lineage-sdk/
-7cabd6a6 lineage-sdk: Update path to ChargingStarted.ogg
-
-   * manifest/
-4f113b9 lineage: Enable QCOM power HAL
-
-   * packages/apps/DeskClock/
-afb77f5b9 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//packages/apps/DeskClock into HEAD
-
-   * packages/apps/DocumentsUI/
-171dec636 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//packages/apps/DocumentsUI into HEAD
-
-   * packages/apps/LineageParts/
-443e748 LineageParts: Reenable DisplayRotation
-
-   * packages/apps/Nfc/
-e4bf524c Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD
-
-   * packages/apps/ThemePicker/
-a77eae8 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//packages/apps/ThemePicker into HEAD
-
-   * packages/inputmethods/LatinIME/
-688be3fcb Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//packages/inputmethods/LatinIME into HEAD
-
-   * packages/providers/DownloadProvider/
-5b2de03e Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD
-
-   * packages/providers/MediaProvider/
-4b64e61 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//packages/providers/MediaProvider into HEAD
-
-   * packages/services/Telephony/
-d75b5e869 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//packages/services/Telephony into HEAD
-
-   * system/bt/
-0ba0a4747 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//system/bt into HEAD
-
-   * system/sepolicy/
-959e5051 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//system/sepolicy into HEAD
-
-   * system/vold/
-e12adfd Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform//system/vold into HEAD
-
-   * vendor/bliss/
-e2e8354c vendor/bliss: Fix default tones in settings [2/2]
-
-   * vendor/qcom/opensource/dataservices/
-8c5e7f5 librmnetctl: Add flag for netmgrd without uplink features support
 
