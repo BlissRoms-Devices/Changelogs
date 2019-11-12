@@ -7,10 +7,31 @@
 f1b52dec059 Merge "Color/tint the wifi/mobile status bar icons correctly" into q
 8f0fb2ec93b Allow overriding default volume dialog position
 d284ad59609 VolumeDialogImpl: Apply settings properly
+
+   * frameworks/native/
+9a9d35594 Revert "libui: Allow invalid bits from callers conditionally"
+
+   * vendor/bliss/
+b1b60134 Merge "bliss: Cleanup vendor" into q10
+a4075603 versions: Bliss v12.1 Stable Release
+
+   * vendor/themes/
+b25724c Accents: Add Mint accent color
+
+====================
+     11-11-2019
+====================
+
+
+   * frameworks/base/
 2e147d8738d VolumeDialogImpl: Fix exception
+2bda78e045f tiles: Switch to UnlockMethodCache instead of mKeyguardMonitor
 
    * frameworks/native/
 f3ce68e44 libui: Allow invalid bits from callers conditionally
+
+   * hardware/qcom-caf/msm8998/display/
+ce08c33d2 sdm: add board flag for panel shift
 
    * system/core/
 5c94738bc healthd: Reinitialize mChargerNames for every battery update
@@ -35,15 +56,8 @@ a16d20772 Camera: Add feature extensions
 d9e753720 ueventd: parallelize restorecon /sys
 2e7235765 Add .gitreview
 
-   * vendor/bliss/
-b1b60134 Merge "bliss: Cleanup vendor" into q10
-a4075603 versions: Bliss v12.1 Stable Release
-
-   * vendor/themes/
-b25724c Accents: Add Mint accent color
-
 ====================
-     11-11-2019
+     11-10-2019
 ====================
 
 
@@ -54,52 +68,7 @@ ec688509a Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/pla
 766a83901 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/av into HEAD
 
    * frameworks/base/
-2bda78e045f tiles: Switch to UnlockMethodCache instead of mKeyguardMonitor
 c820fe8b4c1 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/base into HEAD
-
-   * frameworks/native/
-4058db6cf Add .gitreview
-13fff14ce sensorservice: Register orientation sensor if HAL doesn't provide it
-5a0b09723 sensorservice: customize sensor fusion mag filter via prop
-c44539474 Forward port 'Swap volume buttons' (2/3)
-0fd9aed6d surfaceflinger: Pass proper transform orientation to setProjection()
-8b0598b6c InputDispatcher: On keypress, deliver keycode to pokeUserActivity
-81f661308 PowerManager.h: Define USER_ACTIVITY_FLAG values
-be2d319f3 libui: Allow extension of valid gralloc 1.0 buffer usage bits
-eb2977378 Add vendor version for libgui
-
-   * hardware/interfaces/
-cf7a94677 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//hardware/interfaces into HEAD
-
-   * manifest/
-1d6088f Merge branch 'android-10.0.0_r14' of https://android.googlesource.com/platform//manifest into HEAD
-
-   * packages/apps/Blissify/
-278a1d9 Merge changes from topics "kill-notif", "hide-statusbar", "heads-up", "qs-logo", "vol-timeout", "audio-panel" into q
-1ffd287 Blissify: Add kill button to notification guts [2/2]
-
-   * packages/apps/Settings/
-31fb78ff55 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD
-9dd79b653d Merge changes from topic "mute-media" into q
-
-   * packages/providers/DownloadProvider/
-232ef1ff Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD
-
-   * packages/providers/MediaProvider/
-3c03dd5 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/MediaProvider into HEAD
-
-   * packages/services/Telephony/
-6c949f4cb Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/services/Telephony into HEAD
-
-   * system/bt/
-c87971738 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//system/bt into HEAD
-
-====================
-     11-10-2019
-====================
-
-
-   * frameworks/base/
 48a87517f3b Color/tint the wifi/mobile status bar icons correctly
 f244a0e630c Camera: Simplify code for Aux/Mono white and black lists
 c6b92c69ea5 camera: Check if aux camera whitelist is set before restricting cameras
@@ -118,26 +87,38 @@ d1198b46712 Volume dialog timeout (1/2)
 0fc288d2cfc Extended audio panel - fixes for unlinked notifications
 13a49427e83 Extended audio panel [1/2]
 9664c5d3012 Fix race in TelephonyScanManager
-752a4db2869 Quick Fix
-bfb38f56ede [1/2] Ambient Visualizer
-de92e95e619 fw_base: make default value false for charging animation [2/2]
+
+   * frameworks/native/
+4058db6cf Add .gitreview
+13fff14ce sensorservice: Register orientation sensor if HAL doesn't provide it
+5a0b09723 sensorservice: customize sensor fusion mag filter via prop
+c44539474 Forward port 'Swap volume buttons' (2/3)
+0fd9aed6d surfaceflinger: Pass proper transform orientation to setProjection()
+8b0598b6c InputDispatcher: On keypress, deliver keycode to pokeUserActivity
+81f661308 PowerManager.h: Define USER_ACTIVITY_FLAG values
+be2d319f3 libui: Allow extension of valid gralloc 1.0 buffer usage bits
+eb2977378 Add vendor version for libgui
+
+   * hardware/interfaces/
+cf7a94677 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//hardware/interfaces into HEAD
 
    * lineage-sdk/
 d3600b31 sdk: Mark PG settings as deprecated and remove related resources
-53414231 SensitivePhoneNumbers: Load numbers only at first actual call to method
-d13f6121 SensitivePhoneNumbers: Convert to singleton class
-d9b1504c SensitivePn: Also hide international numbers
-118cc259 SensitivePn: Take into account multiple SIMs for sensitive numbers
-d0be5328 sdk: Import SensitivePhoneNumbers
+
+   * manifest/
+1d6088f Merge branch 'android-10.0.0_r14' of https://android.googlesource.com/platform//manifest into HEAD
 
    * packages/apps/Blissify/
+278a1d9 Merge changes from topics "kill-notif", "hide-statusbar", "heads-up", "qs-logo", "vol-timeout", "audio-panel" into q
+1ffd287 Blissify: Add kill button to notification guts [2/2]
 e094f19 Blissify: config to hide status bar on lock screen [2/2]
 0fc461d Blissify: Less boring heads up option [2/2]
 2ef294e Blissify: HeadsUp snooze function [2/2]
 42863c8 Blissify: HeadsUp: add timeout option (2/2)
-0cac101 [2/2] Ambient Visualizer
 
    * packages/apps/Settings/
+31fb78ff55 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD
+9dd79b653d Merge changes from topic "mute-media" into q
 60ed0e38d4 fuelgauge: Fix possible memory leaks
 6c95dcf4d6 fuelgauge: Implement Early Warnings
 c45396e902 fuelgauge: Use Enhanced Battery Prediction from Turbo
@@ -147,16 +128,55 @@ aa5973d4cc Settings: Use landscape qrcode scanner layout for sw600dp
 ff16e47fc5 Open app when clicking on icon in App Info
 4eaf8c49ad Settings: Option to mute media with gesture [2/2]
 
-   * packages/services/Telecomm/
-182b34ba Add back increasing ring feature (1/2).
-52f3e230 Telecom: Convert to using singleton class
-203f84aa Telecom: Add sensitive phone numbers hooks
+   * packages/providers/DownloadProvider/
+232ef1ff Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD
+
+   * packages/providers/MediaProvider/
+3c03dd5 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/MediaProvider into HEAD
+
+   * packages/services/Telephony/
+6c949f4cb Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/services/Telephony into HEAD
+
+   * system/bt/
+c87971738 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//system/bt into HEAD
 
    * vendor/themes/
 ab3e099 vendor/themes: Remove Fonts
 
 ====================
      11-09-2019
+====================
+
+
+   * frameworks/base/
+752a4db2869 Quick Fix
+bfb38f56ede [1/2] Ambient Visualizer
+de92e95e619 fw_base: make default value false for charging animation [2/2]
+
+   * lineage-sdk/
+53414231 SensitivePhoneNumbers: Load numbers only at first actual call to method
+d13f6121 SensitivePhoneNumbers: Convert to singleton class
+d9b1504c SensitivePn: Also hide international numbers
+118cc259 SensitivePn: Take into account multiple SIMs for sensitive numbers
+d0be5328 sdk: Import SensitivePhoneNumbers
+
+   * packages/apps/Blissify/
+0cac101 [2/2] Ambient Visualizer
+
+   * packages/apps/LineageParts/
+4b1f0b8 Kill privacy guard
+
+   * packages/apps/Settings/
+21c0c5aa4f Settings: Enable permission hub by default
+430d0781b1 Revert "Remove Permissions Hub."
+
+   * packages/services/Telecomm/
+182b34ba Add back increasing ring feature (1/2).
+52f3e230 Telecom: Convert to using singleton class
+203f84aa Telecom: Add sensitive phone numbers hooks
+
+====================
+     11-08-2019
 ====================
 
 
@@ -175,13 +195,9 @@ ab0d953 manifest: Add vendor/themes repo
 
    * packages/apps/Blissify/
 613c021 Blissify: Add toggle to disable charging animation [2/2]
-
-   * packages/apps/LineageParts/
-4b1f0b8 Kill privacy guard
-
-   * packages/apps/Settings/
-21c0c5aa4f Settings: Enable permission hub by default
-430d0781b1 Revert "Remove Permissions Hub."
+61eeb55 Blissify: add option to display Logo in QS Panel too [2/2]
+defc5f3 Volume dialog timeout (2/2)
+d8c0de0 Extended audio panel [2/2]
 
    * vendor/bliss/
 0d69fd2a Merge "vendor/bliss: Include vendor/themes" into q10
@@ -189,37 +205,6 @@ a2a61dc2 vendor/bliss: Include vendor/themes
 
    * vendor/themes/
 5a27611 vendor/themes: Disable Fonts building
-
-====================
-     11-08-2019
-====================
-
-
-   * frameworks/base/
-2252ec3cb47 Aggressive Battery: fix auto enable on battery saver
-894be98a762 core: Implement Aggressive Battery [1/2]
-82221b44bb5 Add ability to toggle bluetooth battery level in QS [1/2]
-0b8c1bbfffe Smart Pixels: Dynamically register receiver
-950f270a2b0 Custom logo customizations [1/2]
-
-   * manifest/
-a94707b manifest: Track broadcom/libbt from LOS
-
-   * packages/apps/Blissify/
-61eeb55 Blissify: add option to display Logo in QS Panel too [2/2]
-defc5f3 Volume dialog timeout (2/2)
-d8c0de0 Extended audio panel [2/2]
-897a442 Custom logo customizations [2/2]
-ee8c995 Fingerprint error vibration [2/2]
-a1f6324 AlarmsBlocker [2/2]
-8ce1bb4 WakelockBlocker [2/2]
-8259e7d Blissify: Hide power menu on secure lockscreen [2/2]
-c8c0697 Add ability to toggle bluetooth battery level in QS [2/2]
-
-   * vendor/bliss/
-c2ddfde9 config: Mark more gralloc bits as valid
-
-   * vendor/themes/
 26019d5 Accent: Cleanup
 d84b215 AccentOverlays: Update all overlays packages
 b4c959c AccentOverlays: Add ThemePicker Category
@@ -232,6 +217,38 @@ f9e7643 Disable Primary Themes
      11-07-2019
 ====================
 
+
+   * frameworks/base/
+2252ec3cb47 Aggressive Battery: fix auto enable on battery saver
+894be98a762 core: Implement Aggressive Battery [1/2]
+82221b44bb5 Add ability to toggle bluetooth battery level in QS [1/2]
+0b8c1bbfffe Smart Pixels: Dynamically register receiver
+950f270a2b0 Custom logo customizations [1/2]
+
+   * hardware/lineage/interfaces/
+ba9550e Initial audio amplifier HAL
+1314fc9 cryptfshw: Introduce QTI backend implementation
+
+   * manifest/
+a94707b manifest: Track broadcom/libbt from LOS
+
+   * packages/apps/Blissify/
+897a442 Custom logo customizations [2/2]
+ee8c995 Fingerprint error vibration [2/2]
+a1f6324 AlarmsBlocker [2/2]
+8ce1bb4 WakelockBlocker [2/2]
+8259e7d Blissify: Hide power menu on secure lockscreen [2/2]
+c8c0697 Add ability to toggle bluetooth battery level in QS [2/2]
+
+   * vendor/bliss/
+c2ddfde9 config: Mark more gralloc bits as valid
+
+====================
+     11-06-2019
+====================
+
+   * art/
+708efda644 Don't fail dual map if memfd isn't supported
 
    * frameworks/base/
 42f13c9d556 Add AlarmsBlocker [1/2]
@@ -247,9 +264,9 @@ c8fc643a4dd Camera: Clearing exception for Extended Face
 387d6e1f7b5 Camera: Extend face detection
 c5df35b1b4a Camera: Expose Aux camera to apps present in the whitelist
 
-   * hardware/lineage/interfaces/
-ba9550e Initial audio amplifier HAL
-1314fc9 cryptfshw: Introduce QTI backend implementation
+   * hardware/qcom/bt/
+154f37f Merge changes from topic "legacy" into q
+a252de7 libbt: Fix Compilation Errors
 
    * hardware/qcom/display/
 c4ff6c31 msm8994: adjust for clang on Q
@@ -263,46 +280,16 @@ c3b7dec manifest: Track bt hal from BlissRoms
    * vendor/bliss/
 92ca968c Revert "vendor: Add qcom platform type to soongs vars"
 
-====================
-     11-06-2019
-====================
-
-   * art/
-708efda644 Don't fail dual map if memfd isn't supported
-
-   * bionic/
-36f57d3cf Implement per-process target SDK version override.
-
-   * hardware/qcom-caf/common/
-27e52b3 fwk-detect: Relocate from vendor/qcom-opensource/core-utils
-
-   * hardware/qcom/bt/
-154f37f Merge changes from topic "legacy" into q
-a252de7 libbt: Fix Compilation Errors
-
-   * vendor/codeaurora/telephony/
-cf07a22 Revert "IMS-VT: Low battery handling for Video calls"
-
    * vendor/support/
 d23c3b3 support: Extend default switches from LOS
-87d0de4 support: Always persist values for switch preferences
-308c10a support: Fix multiuser usage
-5ec8336 support: Fix persistence for helper prefs
 
 ====================
      11-05-2019
 ====================
 
 
-   * bootable/recovery/
-f52b19e1 recovery: symlink /sbin for script compatibility
-dca34c7a recovery: sdcard is data/media/0
-6b253792 recovery: Provide caching for sideload files
-2924bb33 recovery: Puke out an /etc/fstab so stuff like busybox/toybox is happy
-d0114c86 recovery: Get a proper shell environment in recovery
-5c687eef Make adb use a custom prop for adb root
-1871d829 Merge remote-tracking branch 'los/lineage-17.0' into update
-bf5dcaa4 Add gitreview file
+   * bionic/
+36f57d3cf Implement per-process target SDK version override.
 
    * frameworks/base/
 efd1e385204 base: SystemUI: hide ringer button if alert slider is present.
@@ -317,9 +304,8 @@ e974b809f16 ScreenRec: Use MD2 icon for notification
 96f25b81fda SystemUI: Add ScreenRecord Tile
 61177d271c3 Screenrec: use HEVC H.265 codec, add low quality option, fixes
 
-   * hardware/qcom/bt/
-b708fed 8992: libbt: bt_vendor_qcom remove ssr_cleanup
-ef405bd 8992: libbt: Add -Wno-pointer-sign flag to fix compilation error
+   * hardware/qcom-caf/common/
+27e52b3 fwk-detect: Relocate from vendor/qcom-opensource/core-utils
 
    * manifest/
 84db708 Manifest for Android 10.0.0 Release 14
@@ -332,6 +318,14 @@ d7a6294dc5 Settings: move force dark preference to display settings
 d2467feb89 Settings: Move theming to display settings
 c5bdd84521 Revert "Remove theming developer settings."
 
+   * vendor/codeaurora/telephony/
+cf07a22 Revert "IMS-VT: Low battery handling for Video calls"
+
+   * vendor/support/
+87d0de4 support: Always persist values for switch preferences
+308c10a support: Fix multiuser usage
+5ec8336 support: Fix persistence for helper prefs
+
 ====================
      11-04-2019
 ====================
@@ -340,31 +334,25 @@ c5bdd84521 Revert "Remove theming developer settings."
    * bionic/
 61715064c bionic: Squash of pre-P mutex behavior restoration
 
+   * bootable/recovery/
+f52b19e1 recovery: symlink /sbin for script compatibility
+dca34c7a recovery: sdcard is data/media/0
+6b253792 recovery: Provide caching for sideload files
+2924bb33 recovery: Puke out an /etc/fstab so stuff like busybox/toybox is happy
+d0114c86 recovery: Get a proper shell environment in recovery
+5c687eef Make adb use a custom prop for adb root
+1871d829 Merge remote-tracking branch 'los/lineage-17.0' into update
+bf5dcaa4 Add gitreview file
+
    * build/soong/
 1b0303fa soong: Add function to return camera parameters library name
 
    * frameworks/av/
 b5c5a6975 camera: Allow devices to load custom CameraParameter code
 
-   * hardware/lineage/interfaces/
-f530a01 Merge "Initial dummy cryptfshw implementation" into q
-
-   * packages/apps/Dialer/
-ef08afc5d Dialer: AudioModeProvider: use wired route for usb headsets
-329f82599 Control dialer's incoming call proximity sensor check via an overlay
-41c5ef20f Re-add call statistics.
-1dff9238b Allow per-call account selection.
-e2bb3448d Re-add call recording.
-21429d697 Add setting to enable Do Not Disturb during calls
-c023728f0 Generalize the in-call vibration settings category
-fdb79d33b Re-add dialer lookup.
-04adced9e Allow using private framework API.
-8891d3427 Add back in-call vibration features
-c8ff0bbc7 Revert "Remove dialer sounds and vibrations settings fragments and redirect to the system sound settings fragment instead."
-b44d3b306 Dialer: disable anti-falsing for call answer screen
-cb5223a32 Dialer: handle database upgrade from cm-14.1
-0c14e04a8 Dialer: adaptive icon
-88786c4b0 Dialer: define app category
+   * hardware/qcom/bt/
+b708fed 8992: libbt: bt_vendor_qcom remove ssr_cleanup
+ef405bd 8992: libbt: Add -Wno-pointer-sign flag to fix compilation error
 
    * packages/apps/Nfc/
 5b00d9dd Add in gitreview file
@@ -391,14 +379,6 @@ d054fea vold: add support for clear key
 dac92ff vold: Use separate flag for wrappedkey
 4fc0359 vold: Wrapped key support for FBE
 
-   * vendor/bliss/
-6ef20492 Merge changes from topic "misc" into q10
-
-   * vendor/qcom/opensource/cryptfs_hw/
-a6c0265 cryptfs_hw: Remove dependency on generated kernel headers
-cd31b64 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/cryptfs_hw into lineage-17.0
-b33f784 Revert "cryptfs_hw: Mark unused parameter"
-
 ====================
      11-03-2019
 ====================
@@ -416,8 +396,28 @@ d8c59be83 Camera: Add support for preview frame fd
 a1a738cda1f Fix Build Credentials refactored to use byte[]
 ee1e3e937ab frameworks: base: Port password retention feature
 
+   * hardware/lineage/interfaces/
+f530a01 Merge "Initial dummy cryptfshw implementation" into q
+
    * manifest/
 a7aad56 manifest: Track tinycompress from LOS
+
+   * packages/apps/Dialer/
+ef08afc5d Dialer: AudioModeProvider: use wired route for usb headsets
+329f82599 Control dialer's incoming call proximity sensor check via an overlay
+41c5ef20f Re-add call statistics.
+1dff9238b Allow per-call account selection.
+e2bb3448d Re-add call recording.
+21429d697 Add setting to enable Do Not Disturb during calls
+c023728f0 Generalize the in-call vibration settings category
+fdb79d33b Re-add dialer lookup.
+04adced9e Allow using private framework API.
+8891d3427 Add back in-call vibration features
+c8ff0bbc7 Revert "Remove dialer sounds and vibrations settings fragments and redirect to the system sound settings fragment instead."
+b44d3b306 Dialer: disable anti-falsing for call answer screen
+cb5223a32 Dialer: handle database upgrade from cm-14.1
+0c14e04a8 Dialer: adaptive icon
+88786c4b0 Dialer: define app category
 
    * packages/apps/Settings/
 2e00a68690 Fix duplicated entries in sound settings.
@@ -436,6 +436,7 @@ e62e6f4 vold: fix build error
 b346d95 vold: Add Hardware FDE feature
 
    * vendor/bliss/
+6ef20492 Merge changes from topic "misc" into q10
 a9614944 soong_config: Reverse wait for qsee flag
 6467b680 Revert "soong_config: Add flag for legacy HW FDE"
 2a090f25 Fix backup
@@ -446,29 +447,15 @@ bb7cb1d1 overlay: Remove config_show4GForLTE
 ff74c6ad repopick: Support    * paths detection on different branches
 7f30f4b1 common: Bring back Android Beam
 
+   * vendor/qcom/opensource/cryptfs_hw/
+a6c0265 cryptfs_hw: Remove dependency on generated kernel headers
+cd31b64 Merge tag 'LA.UM.8.1.r1-09500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/cryptfs_hw into lineage-17.0
+b33f784 Revert "cryptfs_hw: Mark unused parameter"
+
 ====================
      11-02-2019
 ====================
 
-
-   * frameworks/base/
-8e9d259499c Merge "Fw_base - Breathing missedcall/sms/voicemail [1/5]" into q
-f8687d44f8b Fw_base - Breathing missedcall/sms/voicemail [1/5]
-a11c3093364 Add battery styles and customizations for Android 10 [1/2]
-
-   * packages/apps/Blissify/
-028c758 Blissify: Add Notification Icon
-7477c1c Blissify: Breathing missedcall/sms/voicemail [5/5]
-
-   * packages/apps/Settings/
-af0d02613c Settings: Cleanup
-
-   * packages/services/Telephony/
-5d21d533b Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
-ff21b4a75 Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
-
-   * vendor/bliss/
-c100177f bliss: Cleanup vendor
 
 ====================
      11-01-2019
@@ -476,6 +463,9 @@ c100177f bliss: Cleanup vendor
 
 
    * frameworks/base/
+8e9d259499c Merge "Fw_base - Breathing missedcall/sms/voicemail [1/5]" into q
+f8687d44f8b Fw_base - Breathing missedcall/sms/voicemail [1/5]
+a11c3093364 Add battery styles and customizations for Android 10 [1/2]
 c85078572d0 Revert "base: SystemUI: add tuner to hide qs drag handle"
 09cce225af5 ScreenRec: show MediaProjection permission warning only once
 46ceef9a10b Screenrec: allow to show a blinking red stop dot
@@ -490,32 +480,24 @@ f5abb225a0a base: SystemUI: enhance calendar link
 74272ddc8e4 Fix permissons for ContactsProvider2
 d536b53e97b Fix Fi permissions
 3bd0e672660 Fix Android 7.0 GApps permisions which were causing F/C
-f32201ce6bd Fw_base - Breathing missedcall/sms/voicemail [1/5]
-
-   * manifest/
-3d06e71 manifest: Track Dialer from BlissRoms
-ae2b497 manifest: Track tinyalsa from LOS
-ec005bb manifest: Track apq8084 Hals from LOS
-48f5c6d manifest: Track external/mksh from LOS
-4317827 manifest: Cleanup disabled repos
-3f5def5 manifest: Track MSM8952 Hals from LOS
-c882362 manifest: Track CarrierConfig from LOS
 
    * packages/apps/Blissify/
+028c758 Blissify: Add Notification Icon
+7477c1c Blissify: Breathing missedcall/sms/voicemail [5/5]
 32832f4 Blissify: Enable lockscreen visualizer pulse
 2e40f0a Separate double tap to sleep on lockscreen [2/2]
 672fb24 Add battery styles and customizations for Android 10 [2/2]
 ec850a4 Blissify : Add icons and categorize
 
-   * packages/apps/Dialer/
-f0966d927 Dialer - Breathing missedcall/sms/voicemail [2/5]
-e914ea5f7 Add .gitreview
-
-   * packages/apps/Messaging/
-1e52607 Messaging - Breathing missedcall/sms/voicemail [4/5]
+   * packages/apps/Settings/
+af0d02613c Settings: Cleanup
 
    * packages/services/Telephony/
-4fd2fc37f services/Telephony - Breathing missedcall/sms/voicemail [3/5]
+5d21d533b Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
+ff21b4a75 Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
+
+   * vendor/bliss/
+c100177f bliss: Cleanup vendor
 
 ====================
      10-31-2019
@@ -544,32 +526,26 @@ e7efe2cb recovery: ui: Default to touch enabled
 39ffc2e1 recovery: Remove HOST_OS guard for f2fs tools
 
    * frameworks/base/
-5d7e4d50cc9 Add Lockscreen album art filter [1/2]
-a83a8635e90 Create lockscreen fragment properly
-4f10f3fcc33 SystemUI: Bring back lockscreen tuner (1/2)
-e6a9ac032c9 Merge changes from topic "rebase" into q
-645a13f4d85 Build Google audio files from Android 10 [2/2]
+f32201ce6bd Fw_base - Breathing missedcall/sms/voicemail [1/5]
 
    * manifest/
-4812e9b Track sm8150 HALS from LOS
+3d06e71 manifest: Track Dialer from BlissRoms
+ae2b497 manifest: Track tinyalsa from LOS
+ec005bb manifest: Track apq8084 Hals from LOS
+48f5c6d manifest: Track external/mksh from LOS
+4317827 manifest: Cleanup disabled repos
+3f5def5 manifest: Track MSM8952 Hals from LOS
+c882362 manifest: Track CarrierConfig from LOS
 
-   * packages/apps/Blissify/
-03f6e91 Add ability to toggle bluetooth battery level [2/2]
-ee3d3c3 Add Lockscreen album art filter [2/2]
-a539b6a Enable Lockscreen shortcuts
-349465c Blissify: Refactor Battery bar
-bfb5247 Blissify: HeadsUp blacklists (2/2)
-cac9616 Blissify : add notifications category
-45e4a53 Blissify: Implement Aggressive Battery [2/2]
-08f91dd Blissify: Refactor Animations
+   * packages/apps/Dialer/
+f0966d927 Dialer - Breathing missedcall/sms/voicemail [2/5]
+e914ea5f7 Add .gitreview
 
-   * vendor/bliss/
-aead3727 Merge "vendor/bliss: Include Google Material sounds [2/2]" into q10
-9b0e5bc9 Merge "vendor: Update prebuilt apps" into q10
-146cd8a1 vendor/bliss: Include Google Material sounds [2/2]
+   * packages/apps/Messaging/
+1e52607 Messaging - Breathing missedcall/sms/voicemail [4/5]
 
-   * vendor/support/
-d8cf8ec support: Add SecureSettingListPreference
+   * packages/services/Telephony/
+4fd2fc37f services/Telephony - Breathing missedcall/sms/voicemail [3/5]
 
 ====================
      10-30-2019
@@ -582,6 +558,11 @@ a26ca3a4c Merge changes from topic "catchup" into q
 edf860e62 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform/build into q9
 
    * frameworks/base/
+5d7e4d50cc9 Add Lockscreen album art filter [1/2]
+a83a8635e90 Create lockscreen fragment properly
+4f10f3fcc33 SystemUI: Bring back lockscreen tuner (1/2)
+e6a9ac032c9 Merge changes from topic "rebase" into q
+645a13f4d85 Build Google audio files from Android 10 [2/2]
 0385c8818e3 SystemUI: Tiny expanding improvement
 fea6297c400 Fingerprint authentication vibration [1/2]
 d303a17660e QuickSettings: Add Haptic Feedback to tiles [1/2]
@@ -767,6 +748,64 @@ ca023c32dfa SystemUI: Keyguard: Check for a null errString
 5ae63c06091 Keyguard: Hide check button when using PIN quick unlock
 74822a77766 Disable PIN entry after successful quick unlock
 87b71e3b1b5 Keyguard: Forward port lockscreen quick unlock (1/2)
+
+   * manifest/
+4812e9b Track sm8150 HALS from LOS
+10eb4b8 Merge branch 'android-10.0.0_r9' of https://android.googlesource.com/platform/manifest into q
+
+   * packages/apps/Blissify/
+03f6e91 Add ability to toggle bluetooth battery level [2/2]
+ee3d3c3 Add Lockscreen album art filter [2/2]
+a539b6a Enable Lockscreen shortcuts
+349465c Blissify: Refactor Battery bar
+bfb5247 Blissify: HeadsUp blacklists (2/2)
+cac9616 Blissify : add notifications category
+45e4a53 Blissify: Implement Aggressive Battery [2/2]
+08f91dd Blissify: Refactor Animations
+778ae46 Blissify: QS tile titles visibility [2/2]
+75aaefc Blissify: partially revert animations and battery bar
+
+   * packages/services/Telecomm/
+dc0d4343 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform/packages/services/Telecomm into q
+9463b9f8 Revert "Add back increasing ring feature (3/3)."
+d5d1a329 Revert "Telecomm: Phone ringtone setting for Multi SIM device [3/3]"
+
+   * vendor/bliss/
+aead3727 Merge "vendor/bliss: Include Google Material sounds [2/2]" into q10
+9b0e5bc9 Merge "vendor: Update prebuilt apps" into q10
+146cd8a1 vendor/bliss: Include Google Material sounds [2/2]
+735495c9 kernel: Fix ccache not being used when building
+64f0c285 vendor: Update prebuilt apps
+
+   * vendor/support/
+d8cf8ec support: Add SecureSettingListPreference
+35d8c15 support: Extend custom seekbar preferences
+943333b support: Add SecureSettingsStore
+
+====================
+     10-29-2019
+====================
+
+
+   * build/make/
+c0e75ba63 releasetools: ota_from_target_files: add FullOTA_PostValidate
+65c48b6a5 build: ota: Support for install tools in /tmp/install
+fe2c21780 Switch to aapt2 for getting minSdkVersion
+07cd23b54 build: Add support for device tree in boot.img
+3b7e58b19 Add BOARD_CUSTOM_BOOTIMG_MK support
+
+   * device/bliss/sepolicy/
+48cbfd0 Kill sysinit
+1a846c1 sepolicy: vendor: Migrate to power 1.2
+
+   * device/qcom/sepolicy/
+e5e66c99 sepolicy: qva: Remove duplicate specification for qti.ims.ext
+f7e08cc4 Add in gitreview file
+
+   * device/qcom/sepolicy-legacy-um/
+15aaab8 Add in gitreview file
+
+   * frameworks/base/
 8eb1a60cb4f Network traffic mode for status bar [2/3]
 831988eae98 FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
 4efa2972c5d KernelWakelockReader: stop the panic
@@ -914,131 +953,6 @@ b6036df4454 BT: Adding aptX-Adaptive codec entry to Framework
 a40bfcb463b proto: Add Blissify Matric Constant
 071320828cf Add .gitreview
 07ffe20924c sensors: Create bool to select what timestamp to use
-
-   * hardware/qcom-caf/apq8084/audio/
-7feb4b079 apq8084: audio: fix msm8974 symlinks
-
-   * hardware/qcom-caf/sm8150/media/
-97face7e media: Exclude libplatformconfig from OSS builds
-c72b63b2 media: Include display_headers instead of display_intf_headers
-e7db7d7d media: libOmxSw encoders require prop headers :(
-fd8b1ec5 media: Use    * pathmap
-
-   * manifest/
-10eb4b8 Merge branch 'android-10.0.0_r9' of https://android.googlesource.com/platform/manifest into q
-
-   * packages/apps/Blissify/
-778ae46 Blissify: QS tile titles visibility [2/2]
-75aaefc Blissify: partially revert animations and battery bar
-
-   * packages/apps/Settings/
-3a4f84f823 SoundSettings: Add screenshot sounds settings
-7eb84208a6 InstalledApp: show link to Google Play
-e5137086e3 Settings: remove unneeded collapse limits
-2c6c028a5b SmartCharging: add reset battery stats option [2/2]
-184b4b8b83 SmartCharging: allow user set resume level [2/2]
-cf16a29533 Settings: Smart Charging (2/4)
-349da819e6 Settings: Enable FeatureFlags on "user" builds too
-a04883beba Settings: Update some icons to MD2
-664745ee5c Settings: Fix QrCamera crash on devices without flash
-b5bcdb9fc9 Settings: Add Pixel UI
-90fdbacf2e DisplaySettings: font size in 5% steps from 80% to 130%
-e92c7360b7 Battery: show battery temp on power summary
-f1f0802381 [2/2] Settings: navigation mode settings
-0dba607a1b settings: Black theme is getting nicer
-c47cee0f2f fuelgauge: add back battery level animation
-381a409c62 Settings: move lockscreen media art & visualizer to blissify [2/2]
-01ec79794e Display: Move to Blissify [1/2]
-9671531d79 Settings: Add lockscreen visualizer toggle
-ac8466e5ae Settings: Disable dashboards conditions and suggestions (2/2)
-413546fc44 Developer opts: set default notification channel warnings
-b87a4ffdd2 Settings: Show me more than 4 items in the menus!
-040b60fb9c Enable dismissal feature on legacy suggestions.
-5791b7725c Settings: disable all bugreport settings
-8f1731ceb9 wifi: Remove Qr Code scanner during Modify Network option.
-2c26bc0ef9 Settings: Move Advanced Restart switch to Blissify [1/2]
-9247a46ecc Settings: disable FLAG_WINDOW_IS_OBSCURED check in accessibility
-ce2751ea75 Settings: show battery times in summary
-fd271c9947 Settings: display fstype for mounted volumes
-98828ffaff Settings: enable SIM card ringtone only if slot not empty
-7535d91db1 Settings: Phone ringtone setting for Multi SIM device [2/3]
-cc2be1af21 Settings: Reset battery stats [2/2]
-3d17208c90 PowerUsageSummary: Remove advanced battery menu item
-87b9a45b6b Settings: PowerUsageSummary: open advanced usage on header click
-5b230c1f21 Keyguard: Forward port lockscreen quick unlock (2/2)
-f7124b06db Settings: Use dashboard drawable from Blissify
-07dd912343 Include support repo
-9de8591489 AmbientDisplay: Add custom pref for devices with custom doze packages
-e828249e64 Settings: IS_DEBUGGABLE -> IS_ENG
-d8b956410f QS dev tiles: Don't set them to active area
-c749640823 BasebandVersionDialogController: Trim duplicated baseband if needed
-980f1f19a5 WiFi: Remove country code checking.
-cdc4212a78 DevelopmentSettings: Disable automatic updates
-64aa696b97 Remove feedback and bug report stuff
-2ecc63909e Remove the Automatic ota check option but be sure it's disabled
-68a71eb3bc Add back arrow to Desktop backup password
-3e56b00647 Settings: Add animations on some preferences
-eaf4f2b959 Settings: Import Adaptive Battery translations from crosshatch
-6c1aad3ad8 FeatureFactoryImpl: Import PowerUsageFeatureProviderGoogleImpl
-d4f7054624 FeatureFactoryImpl: Implement ApplicationFeatureProviderGoogleImpl
-691e5ea3dd FeatureFactoryImpl: Implement SuggestionFeatureProvider
-a8fd2f32e0 FeatureFactoryImpl: Implement SearchFeatureProviderGoogleImpl
-c5c4449f09 FeatureFactoryImpl: Implement AccountFeatureProviderGoogleImpl
-17095bb321 Settings: Initial implementation of FeatureFactoryImpl from Pixel
-5cd253bbba Settings: Don't translate configs
-9ba1db9159 Settings: Integrate Blissify into Settings
-a97cc1ce53 Settings: Add BlissUpdater to System dashboard
-1128796586 values: Disable System Updater
-5f0037e4a3 BlissInfo: Add Bliss logo header
-47ad45085d BlissInfo: Add Changelog
-631c008c8e Add Bliss Logo to System Dashboard
-da13002274 AboutPhone: Add Bliss device
-ff8a87b041 AboutPhone: Add Bliss build status
-a293c1e9da AboutPhone: Add Bliss build date
-4f9eefdf7a AboutPhone: Add Bliss version
-2d1df587f5 Add .gitreview
-
-   * packages/services/Telecomm/
-dc0d4343 Merge tag 'android-10.0.0_r9' of https://android.googlesource.com/platform/packages/services/Telecomm into q
-9463b9f8 Revert "Add back increasing ring feature (3/3)."
-d5d1a329 Revert "Telecomm: Phone ringtone setting for Multi SIM device [3/3]"
-
-   * vendor/bliss/
-735495c9 kernel: Fix ccache not being used when building
-64f0c285 vendor: Update prebuilt apps
-
-   * vendor/support/
-35d8c15 support: Extend custom seekbar preferences
-943333b support: Add SecureSettingsStore
-afa2511 support: Add preference that holds global settings
-bd17bfd support: Extend MasterSwitchPreference
-1bc86e8 support: PackageListAdapter: really sync mInstalledPackages
-2676480 support: Add Slim Recents PackageListAdapter
-
-====================
-     10-29-2019
-====================
-
-
-   * build/make/
-c0e75ba63 releasetools: ota_from_target_files: add FullOTA_PostValidate
-65c48b6a5 build: ota: Support for install tools in /tmp/install
-fe2c21780 Switch to aapt2 for getting minSdkVersion
-07cd23b54 build: Add support for device tree in boot.img
-3b7e58b19 Add BOARD_CUSTOM_BOOTIMG_MK support
-
-   * device/bliss/sepolicy/
-48cbfd0 Kill sysinit
-1a846c1 sepolicy: vendor: Migrate to power 1.2
-
-   * device/qcom/sepolicy/
-e5e66c99 sepolicy: qva: Remove duplicate specification for qti.ims.ext
-f7e08cc4 Add in gitreview file
-
-   * device/qcom/sepolicy-legacy-um/
-15aaab8 Add in gitreview file
-
-   * frameworks/base/
 60291d2c69f PowerProfile: allow overriding default power profile
 d0525e83a5f SystemUI: Fix toggling lockscreen rotation [1/3]
 534df6f84c1 Configurable 0, 90, 180 and 270 degree rotation
@@ -1127,9 +1041,91 @@ e9e175b8e39 Support for device specific key handlers
 9f317020517 TunerServiceImpl: Blacklist notification panel tuners
 f8ebf6d15c7 SystemUI: Port statusbar brightness control
 
+   * hardware/qcom-caf/apq8084/audio/
+7feb4b079 apq8084: audio: fix msm8974 symlinks
+
+   * hardware/qcom-caf/sm8150/media/
+97face7e media: Exclude libplatformconfig from OSS builds
+c72b63b2 media: Include display_headers instead of display_intf_headers
+e7db7d7d media: libOmxSw encoders require prop headers :(
+fd8b1ec5 media: Use    * pathmap
+
    * manifest/
 504eff6 Track our sepolicy repo
 
+   * packages/apps/Settings/
+3a4f84f823 SoundSettings: Add screenshot sounds settings
+7eb84208a6 InstalledApp: show link to Google Play
+e5137086e3 Settings: remove unneeded collapse limits
+2c6c028a5b SmartCharging: add reset battery stats option [2/2]
+184b4b8b83 SmartCharging: allow user set resume level [2/2]
+cf16a29533 Settings: Smart Charging (2/4)
+349da819e6 Settings: Enable FeatureFlags on "user" builds too
+a04883beba Settings: Update some icons to MD2
+664745ee5c Settings: Fix QrCamera crash on devices without flash
+b5bcdb9fc9 Settings: Add Pixel UI
+90fdbacf2e DisplaySettings: font size in 5% steps from 80% to 130%
+e92c7360b7 Battery: show battery temp on power summary
+f1f0802381 [2/2] Settings: navigation mode settings
+0dba607a1b settings: Black theme is getting nicer
+c47cee0f2f fuelgauge: add back battery level animation
+381a409c62 Settings: move lockscreen media art & visualizer to blissify [2/2]
+01ec79794e Display: Move to Blissify [1/2]
+9671531d79 Settings: Add lockscreen visualizer toggle
+ac8466e5ae Settings: Disable dashboards conditions and suggestions (2/2)
+413546fc44 Developer opts: set default notification channel warnings
+b87a4ffdd2 Settings: Show me more than 4 items in the menus!
+040b60fb9c Enable dismissal feature on legacy suggestions.
+5791b7725c Settings: disable all bugreport settings
+8f1731ceb9 wifi: Remove Qr Code scanner during Modify Network option.
+2c26bc0ef9 Settings: Move Advanced Restart switch to Blissify [1/2]
+9247a46ecc Settings: disable FLAG_WINDOW_IS_OBSCURED check in accessibility
+ce2751ea75 Settings: show battery times in summary
+fd271c9947 Settings: display fstype for mounted volumes
+98828ffaff Settings: enable SIM card ringtone only if slot not empty
+7535d91db1 Settings: Phone ringtone setting for Multi SIM device [2/3]
+cc2be1af21 Settings: Reset battery stats [2/2]
+3d17208c90 PowerUsageSummary: Remove advanced battery menu item
+87b9a45b6b Settings: PowerUsageSummary: open advanced usage on header click
+5b230c1f21 Keyguard: Forward port lockscreen quick unlock (2/2)
+f7124b06db Settings: Use dashboard drawable from Blissify
+07dd912343 Include support repo
+9de8591489 AmbientDisplay: Add custom pref for devices with custom doze packages
+e828249e64 Settings: IS_DEBUGGABLE -> IS_ENG
+d8b956410f QS dev tiles: Don't set them to active area
+c749640823 BasebandVersionDialogController: Trim duplicated baseband if needed
+980f1f19a5 WiFi: Remove country code checking.
+cdc4212a78 DevelopmentSettings: Disable automatic updates
+64aa696b97 Remove feedback and bug report stuff
+2ecc63909e Remove the Automatic ota check option but be sure it's disabled
+68a71eb3bc Add back arrow to Desktop backup password
+3e56b00647 Settings: Add animations on some preferences
+eaf4f2b959 Settings: Import Adaptive Battery translations from crosshatch
+6c1aad3ad8 FeatureFactoryImpl: Import PowerUsageFeatureProviderGoogleImpl
+d4f7054624 FeatureFactoryImpl: Implement ApplicationFeatureProviderGoogleImpl
+691e5ea3dd FeatureFactoryImpl: Implement SuggestionFeatureProvider
+a8fd2f32e0 FeatureFactoryImpl: Implement SearchFeatureProviderGoogleImpl
+c5c4449f09 FeatureFactoryImpl: Implement AccountFeatureProviderGoogleImpl
+17095bb321 Settings: Initial implementation of FeatureFactoryImpl from Pixel
+5cd253bbba Settings: Don't translate configs
+9ba1db9159 Settings: Integrate Blissify into Settings
+a97cc1ce53 Settings: Add BlissUpdater to System dashboard
+1128796586 values: Disable System Updater
+5f0037e4a3 BlissInfo: Add Bliss logo header
+47ad45085d BlissInfo: Add Changelog
+631c008c8e Add Bliss Logo to System Dashboard
+da13002274 AboutPhone: Add Bliss device
+ff8a87b041 AboutPhone: Add Bliss build status
+a293c1e9da AboutPhone: Add Bliss build date
+4f9eefdf7a AboutPhone: Add Bliss version
+2d1df587f5 Add .gitreview
+
    * vendor/bliss/
 66bd8d20 build: dt_image: use prebuilt lz4 binary for compressing
+
+   * vendor/support/
+afa2511 support: Add preference that holds global settings
+bd17bfd support: Extend MasterSwitchPreference
+1bc86e8 support: PackageListAdapter: really sync mInstalledPackages
+2676480 support: Add Slim Recents PackageListAdapter
 
