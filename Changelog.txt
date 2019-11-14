@@ -1,7 +1,17 @@
 ====================
+     11-15-2019
+====================
+
+
+====================
      11-14-2019
 ====================
 
+
+   * vendor/bliss/
+dc0e272d Define themepicker_overlayable_package
+5fd922bb vendor: Add some configs from Pixel
+a6a0cacc Update pixel themes
 
 ====================
      11-13-2019
@@ -557,58 +567,4 @@ e914ea5f7 Add .gitreview
 
    * packages/services/Telephony/
 4fd2fc37f services/Telephony - Breathing missedcall/sms/voicemail [3/5]
-
-====================
-     10-31-2019
-====================
-
-
-   * bootable/recovery/
-b9d31b95 recovery: Blank screen on init
-bb72ce1c recovery: Add runtime checks for A/B vs traditional updates
-fffa6b08 recovery: Allow bypassing signature verification on non-release builds
-3dd1d313 recovery: Also hide rescue mode from non eng builds
-4cd3afa8 recovery: Only show tests in eng builds
-a2f6c65e recovery: Expose reboot to recovery option
-8ae392c4 recovery: init: mount pstore fs
-48eb9e34 recovery: Enable the menu for User builds
-a143813c recovery: Remove "Supported API" message
-ac86ac4b recovery: Add wipe system partition option
-6eb9f4a0 otautil: add support for unmounting entire volumes
-35f47ca8 recovery: Provide sideload cancellation
-7d606892 recovery: Blank screen during shutdown and reboot
-53a32df7 recovery: Allow device-specific recovery modules
-d628c729 recovery: Include vendor init trigger
-fbccaab2 recovery: ui: Support hardware virtual keys
-79775b3a recovery: ui: Minor cleanup for touch code
-e7efe2cb recovery: ui: Default to touch enabled
-39ffc2e1 recovery: Remove HOST_OS guard for f2fs tools
-
-   * frameworks/base/
-5d7e4d50cc9 Add Lockscreen album art filter [1/2]
-a83a8635e90 Create lockscreen fragment properly
-4f10f3fcc33 SystemUI: Bring back lockscreen tuner (1/2)
-e6a9ac032c9 Merge changes from topic "rebase" into q
-645a13f4d85 Build Google audio files from Android 10 [2/2]
-
-   * manifest/
-4812e9b Track sm8150 HALS from LOS
-
-   * packages/apps/Blissify/
-03f6e91 Add ability to toggle bluetooth battery level [2/2]
-ee3d3c3 Add Lockscreen album art filter [2/2]
-a539b6a Enable Lockscreen shortcuts
-349465c Blissify: Refactor Battery bar
-bfb5247 Blissify: HeadsUp blacklists (2/2)
-cac9616 Blissify : add notifications category
-45e4a53 Blissify: Implement Aggressive Battery [2/2]
-08f91dd Blissify: Refactor Animations
-
-   * vendor/bliss/
-aead3727 Merge "vendor/bliss: Include Google Material sounds [2/2]" into q10
-9b0e5bc9 Merge "vendor: Update prebuilt apps" into q10
-146cd8a1 vendor/bliss: Include Google Material sounds [2/2]
-
-   * vendor/support/
-d8cf8ec support: Add SecureSettingListPreference
 
