@@ -1,4 +1,9 @@
 ====================
+     11-16-2019
+====================
+
+
+====================
      11-15-2019
 ====================
 
@@ -7,6 +12,9 @@
      11-14-2019
 ====================
 
+
+   * packages/apps/FMRadio/
+162046a jni: Add broadcom FM to the guard
 
    * vendor/bliss/
 dc0e272d Define themepicker_overlayable_package
@@ -398,6 +406,7 @@ b5c5a6975 camera: Allow devices to load custom CameraParameter code
 f530a01 Merge "Initial dummy cryptfshw implementation" into q
 
    * hardware/qcom/gps/
+1c6419a msm8084: Return the correct length of nmea sentence
 96e822f msm8084: gps: Fix for buffer overrun crash at copying nmea string
 
    * packages/apps/Dialer/
@@ -520,51 +529,4 @@ ff21b4a75 Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" 
 
    * vendor/bliss/
 c100177f bliss: Cleanup vendor
-
-====================
-     11-01-2019
-====================
-
-
-   * frameworks/base/
-c85078572d0 Revert "base: SystemUI: add tuner to hide qs drag handle"
-09cce225af5 ScreenRec: show MediaProjection permission warning only once
-46ceef9a10b Screenrec: allow to show a blinking red stop dot
-f1a1b90bf01 Unlink screenrecord toggle from featureflags and enable it
-5a13175e5a4 Screenrecord: Change save location and make sure dirs exist
-bfb24fc0f11 SystemUI: Add case to quick pull down status bar anywhere
-f0b44028abd Separate double tap to sleep on lockscreen [1/2]
-37b4f13045d SystemUI: Launch PowerUsageSummery when battery icon is pressed
-f5abb225a0a base: SystemUI: enhance calendar link
-835b07aee6f Fix Google dialer FC due to missing permissions
-5e1c3dfa4bb Fix Google Calendar FC
-74272ddc8e4 Fix permissons for ContactsProvider2
-d536b53e97b Fix Fi permissions
-3bd0e672660 Fix Android 7.0 GApps permisions which were causing F/C
-f32201ce6bd Fw_base - Breathing missedcall/sms/voicemail [1/5]
-
-   * manifest/
-3d06e71 manifest: Track Dialer from BlissRoms
-ae2b497 manifest: Track tinyalsa from LOS
-ec005bb manifest: Track apq8084 Hals from LOS
-48f5c6d manifest: Track external/mksh from LOS
-4317827 manifest: Cleanup disabled repos
-3f5def5 manifest: Track MSM8952 Hals from LOS
-c882362 manifest: Track CarrierConfig from LOS
-
-   * packages/apps/Blissify/
-32832f4 Blissify: Enable lockscreen visualizer pulse
-2e40f0a Separate double tap to sleep on lockscreen [2/2]
-672fb24 Add battery styles and customizations for Android 10 [2/2]
-ec850a4 Blissify : Add icons and categorize
-
-   * packages/apps/Dialer/
-f0966d927 Dialer - Breathing missedcall/sms/voicemail [2/5]
-e914ea5f7 Add .gitreview
-
-   * packages/apps/Messaging/
-1e52607 Messaging - Breathing missedcall/sms/voicemail [4/5]
-
-   * packages/services/Telephony/
-4fd2fc37f services/Telephony - Breathing missedcall/sms/voicemail [3/5]
 
