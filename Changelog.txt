@@ -1,4 +1,13 @@
 ====================
+     11-17-2019
+====================
+
+
+   * vendor/bliss/
+aa3ccfbb packages: remove Recorder
+9c283e9b Import and build SafetyHub
+
+====================
      11-16-2019
 ====================
 
@@ -505,28 +514,4 @@ f7dc03fa overlay: Remove Keyguard config
 bb7cb1d1 overlay: Remove config_show4GForLTE
 ff74c6ad repopick: Support    * paths detection on different branches
 7f30f4b1 common: Bring back Android Beam
-
-====================
-     11-02-2019
-====================
-
-
-   * frameworks/base/
-8e9d259499c Merge "Fw_base - Breathing missedcall/sms/voicemail [1/5]" into q
-f8687d44f8b Fw_base - Breathing missedcall/sms/voicemail [1/5]
-a11c3093364 Add battery styles and customizations for Android 10 [1/2]
-
-   * packages/apps/Blissify/
-028c758 Blissify: Add Notification Icon
-7477c1c Blissify: Breathing missedcall/sms/voicemail [5/5]
-
-   * packages/apps/Settings/
-af0d02613c Settings: Cleanup
-
-   * packages/services/Telephony/
-5d21d533b Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
-ff21b4a75 Merge "services/Telephony - Breathing missedcall/sms/voicemail [3/5]" into q
-
-   * vendor/bliss/
-c100177f bliss: Cleanup vendor
 
