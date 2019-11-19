@@ -1,7 +1,19 @@
 ====================
+     11-20-2019
+====================
+
+
+====================
      11-19-2019
 ====================
 
+
+   * device/bliss/sepolicy/
+4535ec1 sepolicy: Allow CPUInfo access to thermal sysfs
+c0e797b sepolicy: Move hal_lineage_livedisplay_sysfs rule to proper location
+95c5eb1 sepolicy: allow sysfs livedisplay hal read privs to sysfs_graphics dirs
+35c16ef sepolicy: Allow Snap to execute bcc
+aa9ac40 Add adb_root rules
 
    * frameworks/base/
 b80d4cff02a SystemUI: Add tuner switches for privacy icons
@@ -21,9 +33,6 @@ d7e00433166 SystemUI: Improve alert slider dialog
 60f1c0d41b1 Crash occured due to null pointer exception.
 55d06bd4e08 base: media_seekbar: make it sexy
 2bbcdb78097 Restore cache clean up code in PackageManagerService
-a31383680d2 Merge changes from topic "pa_batt" into q
-d9f9dbd054f QS tiles customizer: respect user tiles columns value
-6a2145fd95a Allow to set QS panel columns and rows [1/2]
 
    * frameworks/opt/telephony/
 b839a8674 Telephony: Fix out of boundary for non telephony device.
@@ -65,8 +74,6 @@ dfbd301 Track Chromium-webview from LOS
    * packages/apps/Blissify/
 8261ed8 Bring back Gaming mode [3/3]
 252c5b2 Enable artwork Blur level only when art filter is set to blur
-bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
-4c97729 Allow to set QS panel columns and rows [2/2]
 
    * packages/apps/Settings/
 c05e7e76cb Aosp Ambient music: allow to pulse on new tracks [2/2]
@@ -89,6 +96,9 @@ fb1e89fb0a Bring back Gaming mode [2/3]
 
 
    * frameworks/base/
+a31383680d2 Merge changes from topic "pa_batt" into q
+d9f9dbd054f QS tiles customizer: respect user tiles columns value
+6a2145fd95a Allow to set QS panel columns and rows [1/2]
 c30b6343bae base: Add Circle battery style from PA [1/2]
 f007ed11682 Screenrecord: fix FC when using custom dpi values
 1f7274f24c3 SystemUI: Update the screenrecord notification and qs tile icon
@@ -98,6 +108,8 @@ d189f28f168 Screenrecord: fix possible SystemUI FC when stopping
 f1135aa6594 base: refine partial screenshot handling
 
    * packages/apps/Blissify/
+bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
+4c97729 Allow to set QS panel columns and rows [2/2]
 3094428 Blissify: Add circle battery style for PA [2/2]
 
    * packages/apps/Jelly/
@@ -298,8 +310,6 @@ d1198b46712 Volume dialog timeout (1/2)
 13a49427e83 Extended audio panel [1/2]
 9664c5d3012 Fix race in TelephonyScanManager
 752a4db2869 Quick Fix
-bfb38f56ede [1/2] Ambient Visualizer
-de92e95e619 fw_base: make default value false for charging animation [2/2]
 
    * lineage-sdk/
 d3600b31 sdk: Mark PG settings as deprecated and remove related resources
@@ -346,6 +356,8 @@ efeea9c62 Merge "bionic: Squash of pre-P mutex behavior restoration" into q
 a476591 Update Chromium Webview to 78.0.3904.96
 
    * frameworks/base/
+bfb38f56ede [1/2] Ambient Visualizer
+de92e95e619 fw_base: make default value false for charging animation [2/2]
 1317dbceff2 base: Add toggle to disable charging animation [1/2]
 0aa57226e0c base: Use wireless charging animation for wired charging too
 
@@ -470,47 +482,4 @@ d23c3b3 support: Extend default switches from LOS
 87d0de4 support: Always persist values for switch preferences
 308c10a support: Fix multiuser usage
 5ec8336 support: Fix persistence for helper prefs
-
-====================
-     11-05-2019
-====================
-
-
-   * bootable/recovery/
-f52b19e1 recovery: symlink /sbin for script compatibility
-dca34c7a recovery: sdcard is data/media/0
-6b253792 recovery: Provide caching for sideload files
-2924bb33 recovery: Puke out an /etc/fstab so stuff like busybox/toybox is happy
-d0114c86 recovery: Get a proper shell environment in recovery
-5c687eef Make adb use a custom prop for adb root
-1871d829 Merge remote-tracking branch 'los/lineage-17.0' into update
-bf5dcaa4 Add gitreview file
-
-   * frameworks/base/
-efd1e385204 base: SystemUI: hide ringer button if alert slider is present.
-64aee71e572 SystemUI: Introduce user interface for Alert Sliders
-9bab5fde10a policy: Add support for device alert sliders
-b4492857be6 SystemUI: Update keyguard indication margin when fod is in use
-33deea9087b Allow to dismiss notifications with back FP left/right swipe [1/2]
-d5e1c8b8867 Add a custom Settings observer
-0344819a6d7 SystemUI: OOS style brightness slider design
-e974b809f16 ScreenRec: Use MD2 icon for notification
-9f8a0ebece0 ScreenRec: Update statusbar icon
-96f25b81fda SystemUI: Add ScreenRecord Tile
-61177d271c3 Screenrec: use HEVC H.265 codec, add low quality option, fixes
-
-   * hardware/qcom/bt/
-b708fed 8992: libbt: bt_vendor_qcom remove ssr_cleanup
-ef405bd 8992: libbt: Add -Wno-pointer-sign flag to fix compilation error
-
-   * manifest/
-84db708 Manifest for Android 10.0.0 Release 14
-0ad853a Manifest for Android 10.0.0 Release 13
-425389b Manifest for Android 10.0.0 Release 12
-
-   * packages/apps/Settings/
-96b9ff11fd Allow to dismiss notifications with back FP left/right swipe [2/2]
-d7a6294dc5 Settings: move force dark preference to display settings
-d2467feb89 Settings: Move theming to display settings
-c5bdd84521 Revert "Remove theming developer settings."
 
