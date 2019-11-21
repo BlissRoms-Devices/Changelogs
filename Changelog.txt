@@ -1,10 +1,44 @@
 ====================
+     11-22-2019
+====================
+
+
+   * frameworks/base/
+5029e018e37 Allow to suppress notifications sound/vibration if screen is On [1/2]
+e4807ce31ca Hide custom affordance icons on ambient display
+1f57480d576 Fix requireSecureKeyguard javadoc
+0f738b9221d Fix VOLUME_LINK_NOTIFICATION javadoc
+6dffc0007a7 Telephony: Direct return false for unsupport sms platform.
+652dbae955c Add an observer and adapt to our current weather style
+
+   * manifest/
+d50cf3b Merge "Track OmniJaws & OmniStyle" into q
+
+   * packages/apps/Blissify/
+cad1cd3 Allow to suppress notifications sound/vibration if screen is On [2/2]
+9c21ac3 Fix navbar inverse layout switch
+
+   * packages/apps/OmniStyle/
+3053927 OmniStyle: Q update rodeo
+
+   * packages/services/OmniJaws/
+08b6dcb OmniJaws: fix first time service start derp
+
+   * vendor/bliss/
+96c56fbf Merge "Build OmniJaws and OmniStyle" into q10
+9bdeb62a Build OmniJaws and OmniStyle
+
+====================
      11-21-2019
 ====================
 
 
    * manifest/
 a9aa8c7 Revert "Track Chromium-webview from LOS"
+
+   * packages/apps/Blissify/
+c7c36fd Blissify:  add keyguard weather style (2/2)
+e56c43e Blissify: Add OmniJaws config [2/2]
 
    * vendor/bliss/
 1978fc81 Merge "Revert "overlay: Update webview providers"" into q10
@@ -14,6 +48,36 @@ a9aa8c7 Revert "Track Chromium-webview from LOS"
      11-20-2019
 ====================
 
+
+   * external/exfat/
+bd0f601 Ignore unused parameter warnings
+
+   * external/json-c/
+76ff6c3 Ignore unused parameter warnings
+
+   * external/ntfs-3g/
+1baaa4bf Ignore Waddress-of-packed-member warnings
+
+   * frameworks/base/
+5f15ce53d55 SystemUI: keyguardslice code cleanup
+06b97f80b99 base: SystemUI: add keyguard weather style (1/2)
+d137be45ea1 base: add weather to keyguardSlice
+0851f80894f base: SystemUI: keyguard weather view - fix initial kick off after boot
+9b6c7af27f3 base: SystemUI: keyguard weather view [1/3]
+4e4ef879d96 base: add back weather parts [1/3]
+
+   * hardware/nxp/nfc/
+c2b5df7 Ignore implicit fall-through warnings
+
+   * hardware/qcom-caf/msm8998/audio/
+734e94cfc audio_amplifier: Use log/log.h instead of cutils/log.h
+17d6d6bc8 ultrasound: Use log/log.h instead of cutils/log.h
+
+   * manifest/
+0b5813b Track OmniJaws & OmniStyle
+
+   * packages/apps/Blissify/
+a2e9e61 Clean up some duplicates and do a little re-arranging
 
 ====================
      11-19-2019
@@ -45,6 +109,9 @@ d7e00433166 SystemUI: Improve alert slider dialog
 60f1c0d41b1 Crash occured due to null pointer exception.
 55d06bd4e08 base: media_seekbar: make it sexy
 2bbcdb78097 Restore cache clean up code in PackageManagerService
+a31383680d2 Merge changes from topic "pa_batt" into q
+d9f9dbd054f QS tiles customizer: respect user tiles columns value
+6a2145fd95a Allow to set QS panel columns and rows [1/2]
 
    * frameworks/opt/telephony/
 b839a8674 Telephony: Fix out of boundary for non telephony device.
@@ -86,6 +153,8 @@ dfbd301 Track Chromium-webview from LOS
    * packages/apps/Blissify/
 8261ed8 Bring back Gaming mode [3/3]
 252c5b2 Enable artwork Blur level only when art filter is set to blur
+bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
+4c97729 Allow to set QS panel columns and rows [2/2]
 
    * packages/apps/Settings/
 c05e7e76cb Aosp Ambient music: allow to pulse on new tracks [2/2]
@@ -108,9 +177,6 @@ fb1e89fb0a Bring back Gaming mode [2/3]
 
 
    * frameworks/base/
-a31383680d2 Merge changes from topic "pa_batt" into q
-d9f9dbd054f QS tiles customizer: respect user tiles columns value
-6a2145fd95a Allow to set QS panel columns and rows [1/2]
 c30b6343bae base: Add Circle battery style from PA [1/2]
 f007ed11682 Screenrecord: fix FC when using custom dpi values
 1f7274f24c3 SystemUI: Update the screenrecord notification and qs tile icon
@@ -120,8 +186,6 @@ d189f28f168 Screenrecord: fix possible SystemUI FC when stopping
 f1135aa6594 base: refine partial screenshot handling
 
    * packages/apps/Blissify/
-bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
-4c97729 Allow to set QS panel columns and rows [2/2]
 3094428 Blissify: Add circle battery style for PA [2/2]
 
    * packages/apps/Jelly/
@@ -322,6 +386,8 @@ d1198b46712 Volume dialog timeout (1/2)
 13a49427e83 Extended audio panel [1/2]
 9664c5d3012 Fix race in TelephonyScanManager
 752a4db2869 Quick Fix
+bfb38f56ede [1/2] Ambient Visualizer
+de92e95e619 fw_base: make default value false for charging animation [2/2]
 
    * lineage-sdk/
 d3600b31 sdk: Mark PG settings as deprecated and remove related resources
@@ -365,8 +431,6 @@ ab3e099 vendor/themes: Remove Fonts
 efeea9c62 Merge "bionic: Squash of pre-P mutex behavior restoration" into q
 
    * frameworks/base/
-bfb38f56ede [1/2] Ambient Visualizer
-de92e95e619 fw_base: make default value false for charging animation [2/2]
 1317dbceff2 base: Add toggle to disable charging animation [1/2]
 0aa57226e0c base: Use wireless charging animation for wired charging too
 
@@ -430,39 +494,4 @@ b4c959c AccentOverlays: Add ThemePicker Category
 0d00525 Disable Package themes
 f9e7643 Disable Primary Themes
 53eb275 themes: Disable QS Styles
-
-====================
-     11-07-2019
-====================
-
-
-   * frameworks/base/
-42f13c9d556 Add AlarmsBlocker [1/2]
-9da9bc2611b Add WakelockBlocker [1/2]
-f3a8a936baa Base: Hide power menu on secure lockscreen [1/2]
-bd87123b36a Fingerprint error vibration [1/2]
-020ea7601c3 Keyguard: add binary custom clock face
-2daf92e8e73 media: Define MPEG-H Encoder Format
-fabc00a26d3 audio: add support for extended formats
-0c41adfafbe Camera: Ignore torch status update for aux or compsite camera
-1057f9a2aa9 Camera: Skip stream size check for whitelisted apps..
-c8fc643a4dd Camera: Clearing exception for Extended Face
-387d6e1f7b5 Camera: Extend face detection
-c5df35b1b4a Camera: Expose Aux camera to apps present in the whitelist
-
-   * hardware/lineage/interfaces/
-ba9550e Initial audio amplifier HAL
-1314fc9 cryptfshw: Introduce QTI backend implementation
-
-   * hardware/qcom/display/
-c4ff6c31 msm8994: adjust for clang on Q
-435566eb Add .gitreview
-
-   * manifest/
-c343e33 manifest: Track display hal from BlissRoms
-314a595 manifest: Track art from BlissRoms
-c3b7dec manifest: Track bt hal from BlissRoms
-
-   * vendor/bliss/
-92ca968c Revert "vendor: Add qcom platform type to soongs vars"
 
