@@ -1,9 +1,34 @@
 ====================
+     11-23-2019
+====================
+
+
+   * frameworks/opt/net/wifi/
+41bb6bf83 wifi: Not reset country code for Dual SIM if any slot is active
+
+====================
      11-22-2019
 ====================
 
 
    * frameworks/base/
+a66d366f876 Allow devices to configure the blanking delay on displays
+a6e8935fa07 BrightnessDialog: dismiss on focus lost
+cc0ba9c0933 Catch IllegalArgumentException in stopScreenshot()
+7b65cc6912f NavigationBarView: Avoid NPE before mPanelView is created
+66d33d5c8b7 services/job: Fix a Jobscheduler bugs
+93a73bc45be bgdexopt: Let PM handler run between optimizations
+696eb2ff13d Fix incorrect context classloader initialization in system_server
+6541914a753 StorageManagerService: Fix for system_server crash while booting
+510a28295aa Fix MtpDatabase multithreading NullPointerException
+7f1497ee31f ViewRootImpl: Fixed memory leak caussed by viewrootImpl objects
+cc74caef252 Delay blanking of displays to improve performance
+d5b3c1314e6 SystemUI: Name Cellular Tile based on carrier
+d5506821c03 SystemUI: Remove data tile dialog
+be688aae2c8 webview_packages: fix incorrect signatures
+06f7a0da6c1 webview_packages: correct signature definition for Chrome Stable
+ade2a9ad585 webview_packages: prefer the more powerful webview packages
+22e1bec5c30 SystemSensorManager: sensor block per-package
 5029e018e37 Allow to suppress notifications sound/vibration if screen is On [1/2]
 e4807ce31ca Hide custom affordance icons on ambient display
 1f57480d576 Fix requireSecureKeyguard javadoc
@@ -39,6 +64,14 @@ a9aa8c7 Revert "Track Chromium-webview from LOS"
    * packages/apps/Blissify/
 c7c36fd Blissify:  add keyguard weather style (2/2)
 e56c43e Blissify: Add OmniJaws config [2/2]
+
+   * packages/apps/Dialer/
+b5e200f09 Base 'call recording allowed' decision on current country.
+67cc16232 Fix crash in call stats.
+
+   * system/core/
+a1ba684f7 adb: host: Provide better sideload status
+f0bd332fe healthd: allow custom charger images
 
    * vendor/bliss/
 1978fc81 Merge "Revert "overlay: Update webview providers"" into q10
@@ -456,42 +489,4 @@ a2a61dc2 vendor/bliss: Include vendor/themes
 
    * vendor/themes/
 5a27611 vendor/themes: Disable Fonts building
-
-====================
-     11-08-2019
-====================
-
-
-   * frameworks/base/
-2252ec3cb47 Aggressive Battery: fix auto enable on battery saver
-894be98a762 core: Implement Aggressive Battery [1/2]
-82221b44bb5 Add ability to toggle bluetooth battery level in QS [1/2]
-0b8c1bbfffe Smart Pixels: Dynamically register receiver
-950f270a2b0 Custom logo customizations [1/2]
-
-   * manifest/
-a94707b manifest: Track broadcom/libbt from LOS
-
-   * packages/apps/Blissify/
-61eeb55 Blissify: add option to display Logo in QS Panel too [2/2]
-defc5f3 Volume dialog timeout (2/2)
-d8c0de0 Extended audio panel [2/2]
-897a442 Custom logo customizations [2/2]
-ee8c995 Fingerprint error vibration [2/2]
-a1f6324 AlarmsBlocker [2/2]
-8ce1bb4 WakelockBlocker [2/2]
-8259e7d Blissify: Hide power menu on secure lockscreen [2/2]
-c8c0697 Add ability to toggle bluetooth battery level in QS [2/2]
-
-   * vendor/bliss/
-c2ddfde9 config: Mark more gralloc bits as valid
-
-   * vendor/themes/
-26019d5 Accent: Cleanup
-d84b215 AccentOverlays: Update all overlays packages
-b4c959c AccentOverlays: Add ThemePicker Category
-4a60cd7 Update .gitreview
-0d00525 Disable Package themes
-f9e7643 Disable Primary Themes
-53eb275 themes: Disable QS Styles
 
