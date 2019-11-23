@@ -1,4 +1,9 @@
 ====================
+     11-24-2019
+====================
+
+
+====================
      11-23-2019
 ====================
 
@@ -454,39 +459,4 @@ ff16e47fc5 Open app when clicking on icon in App Info
 
    * vendor/themes/
 ab3e099 vendor/themes: Remove Fonts
-
-====================
-     11-09-2019
-====================
-
-
-   * bionic/
-efeea9c62 Merge "bionic: Squash of pre-P mutex behavior restoration" into q
-
-   * frameworks/base/
-1317dbceff2 base: Add toggle to disable charging animation [1/2]
-0aa57226e0c base: Use wireless charging animation for wired charging too
-
-   * hardware/interfaces/
-6b93cf0cd Merge changes from topic "update" into q
-
-   * manifest/
-ab0d953 manifest: Add vendor/themes repo
-
-   * packages/apps/Blissify/
-613c021 Blissify: Add toggle to disable charging animation [2/2]
-
-   * packages/apps/LineageParts/
-4b1f0b8 Kill privacy guard
-
-   * packages/apps/Settings/
-21c0c5aa4f Settings: Enable permission hub by default
-430d0781b1 Revert "Remove Permissions Hub."
-
-   * vendor/bliss/
-0d69fd2a Merge "vendor/bliss: Include vendor/themes" into q10
-a2a61dc2 vendor/bliss: Include vendor/themes
-
-   * vendor/themes/
-5a27611 vendor/themes: Disable Fonts building
 
