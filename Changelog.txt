@@ -1,4 +1,24 @@
 ====================
+     11-25-2019
+====================
+
+
+   * frameworks/base/
+2aec439d600 battery: Allow setting custom symbol near text on charging [1/2]
+7a0de74a871 Reset permission when network becomes default again.
+5121253bbd2 Fix: "Clear All" recent app screen loop bug
+2375da15fbd core/Build: ro.system when comparing fingerprint
+696f18b3892 MediaCodec: Release lock before calling onFrameRendered()
+b6de41ff8df SystemUI: Use different drawables for notification volume
+3d85cceaa32 AMS: Fix the null pointer exception in IntentResolver
+e1ea6626c8a ConnectivityService: null check before accessing getCurrentScore()
+24aa66fac7e AlarmManagerService: Add null check to QCNsrmAlarmExtension call
+704afe0ef7f DEBUG: Turn off some debugging we don't need.
+
+   * packages/apps/Blissify/
+4fb03fa battery: Allow setting custom symbol near text on charging [2/2]
+
+====================
      11-24-2019
 ====================
 
@@ -10,6 +30,13 @@
 
    * frameworks/opt/net/wifi/
 41bb6bf83 wifi: Not reset country code for Dual SIM if any slot is active
+
+   * packages/apps/Settings/
+1949524228 Remove empty space in tether preference
+8cb204b5b2 Revert "Make fingerprint illustrations single color"
+52551163ec Settings: Add platform and RAM to Model & Hardware
+c1fac6b135 Settings: Disable stock battery percent toggle
+cf9bde2004 Fix crash when going back from battery
 
 ====================
      11-22-2019
@@ -150,6 +177,7 @@ d7e00433166 SystemUI: Improve alert slider dialog
 a31383680d2 Merge changes from topic "pa_batt" into q
 d9f9dbd054f QS tiles customizer: respect user tiles columns value
 6a2145fd95a Allow to set QS panel columns and rows [1/2]
+c30b6343bae base: Add Circle battery style from PA [1/2]
 
    * frameworks/opt/telephony/
 b839a8674 Telephony: Fix out of boundary for non telephony device.
@@ -215,7 +243,6 @@ fb1e89fb0a Bring back Gaming mode [2/3]
 
 
    * frameworks/base/
-c30b6343bae base: Add Circle battery style from PA [1/2]
 f007ed11682 Screenrecord: fix FC when using custom dpi values
 1f7274f24c3 SystemUI: Update the screenrecord notification and qs tile icon
 6004dae9001 ScreenRec: Fix dialog layout on high DPI
@@ -237,12 +264,25 @@ b38c25ef21 Merge "settings: Protect sensitive info on About device" into q
 ====================
 
 
+   * hardware/qcom-caf/sdm845/audio/
+bbd29f2e4 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
+
+   * hardware/qcom-caf/sdm845/display/
+56bc52069 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into HEAD
+a202fc964 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
+
+   * hardware/qcom-caf/sdm845/media/
+9a250e0a2 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
+
    * packages/apps/Jelly/
 a0245c8 Jelly: Automatic re-format of the code
 
    * vendor/bliss/
 aa3ccfbb packages: remove Recorder
 9c283e9b Import and build SafetyHub
+
+   * vendor/nxp/opensource/pn5xx/halimpl/
+bea4aa05 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/halimpl into HEAD
 
 ====================
      11-16-2019
@@ -310,6 +350,10 @@ d284ad59609 VolumeDialogImpl: Apply settings properly
    * frameworks/native/
 9a9d35594 Revert "libui: Allow invalid bits from callers conditionally"
 f3ce68e44 libui: Allow invalid bits from callers conditionally
+
+   * hardware/qcom-caf/sdm845/media/
+8ac474e18 Merge ""mm-video-v4l2: venc: Disable Grid enable for HEIC".."
+3b49c11b3 "mm-video-v4l2: venc: Disable Grid enable for HEIC"..
 
    * packages/apps/Settings/
 20ac4f544f settings: Protect sensitive info on About device
@@ -398,65 +442,4 @@ ce08c33d2 sdm: add board flag for panel shift
 
    * system/bt/
 c87971738 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//system/bt into HEAD
-
-====================
-     11-10-2019
-====================
-
-
-   * frameworks/base/
-48a87517f3b Color/tint the wifi/mobile status bar icons correctly
-f244a0e630c Camera: Simplify code for Aux/Mono white and black lists
-c6b92c69ea5 camera: Check if aux camera whitelist is set before restricting cameras
-348e2b5f6c9 SystemUI: config to hide status bar on lock screen [1/2]
-9fbe2367162 SystemUI: Fix kill button layout in notification
-99ed06e8ae2 Add kill button to notification guts [1/2]
-989a55910b2 SystemUI: Allow for notch view to be ignored
-912f602a21a Option to mute media with gesture [1/2]
-4f599562f4a Add an option to change the device hostname (1/2)
-90078dd142a Less boring heads up option: always show alarm clock headsup
-bc4d8fb173e Less boring heads up option [1/2]
-cda7edeadde [1/2] base: HeadsUp add timeout option
-f034dab6b45 [1/2] base: HeadsUp snooze function
-b3b26a61d71 fwb: add option to display Logo in QS Panel too [1/2]
-d1198b46712 Volume dialog timeout (1/2)
-0fc288d2cfc Extended audio panel - fixes for unlinked notifications
-13a49427e83 Extended audio panel [1/2]
-9664c5d3012 Fix race in TelephonyScanManager
-752a4db2869 Quick Fix
-bfb38f56ede [1/2] Ambient Visualizer
-de92e95e619 fw_base: make default value false for charging animation [2/2]
-
-   * lineage-sdk/
-d3600b31 sdk: Mark PG settings as deprecated and remove related resources
-53414231 SensitivePhoneNumbers: Load numbers only at first actual call to method
-d13f6121 SensitivePhoneNumbers: Convert to singleton class
-d9b1504c SensitivePn: Also hide international numbers
-118cc259 SensitivePn: Take into account multiple SIMs for sensitive numbers
-d0be5328 sdk: Import SensitivePhoneNumbers
-
-   * packages/apps/Blissify/
-e094f19 Blissify: config to hide status bar on lock screen [2/2]
-0fc461d Blissify: Less boring heads up option [2/2]
-2ef294e Blissify: HeadsUp snooze function [2/2]
-42863c8 Blissify: HeadsUp: add timeout option (2/2)
-0cac101 [2/2] Ambient Visualizer
-
-   * packages/apps/Settings/
-60ed0e38d4 fuelgauge: Fix possible memory leaks
-6c95dcf4d6 fuelgauge: Implement Early Warnings
-c45396e902 fuelgauge: Use Enhanced Battery Prediction from Turbo
-695f8e75a5 Port "Battery Usage Alerts" feature from factory images
-aa5973d4cc Settings: Use landscape qrcode scanner layout for sw600dp
-9d8cb5f1c3 Skip loading contextual cards if legacy cards are used
-ff16e47fc5 Open app when clicking on icon in App Info
-4eaf8c49ad Settings: Option to mute media with gesture [2/2]
-
-   * packages/services/Telecomm/
-182b34ba Add back increasing ring feature (1/2).
-52f3e230 Telecom: Convert to using singleton class
-203f84aa Telecom: Add sensitive phone numbers hooks
-
-   * vendor/themes/
-ab3e099 vendor/themes: Remove Fonts
 
