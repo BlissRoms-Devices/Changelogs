@@ -1,7 +1,23 @@
 ====================
+     11-26-2019
+====================
+
+
+   * external/json-c/
+8a7549d Avoid conflicts while building with some CAF devices
+
+   * manifest/
+f93642b manifest: Track external/json-c from BlissRoms
+
+====================
      11-25-2019
 ====================
 
+
+   * device/bliss/sepolicy/
+45c100f Remove Style API related rules
+9051101 sepolicy: Label and address Trust's system variant denials
+4a1d4e1 sepolicy: Label and address denials of livedisplay's system variant
 
    * frameworks/base/
 2aec439d600 battery: Allow setting custom symbol near text on charging [1/2]
@@ -95,7 +111,6 @@ a9aa8c7 Revert "Track Chromium-webview from LOS"
 
    * packages/apps/Blissify/
 c7c36fd Blissify:  add keyguard weather style (2/2)
-e56c43e Blissify: Add OmniJaws config [2/2]
 
    * packages/apps/Dialer/
 b5e200f09 Base 'call recording allowed' decision on current country.
@@ -142,6 +157,7 @@ c2b5df7 Ignore implicit fall-through warnings
 0b5813b Track OmniJaws & OmniStyle
 
    * packages/apps/Blissify/
+e56c43e Blissify: Add OmniJaws config [2/2]
 a2e9e61 Clean up some duplicates and do a little re-arranging
 
 ====================
@@ -174,10 +190,6 @@ d7e00433166 SystemUI: Improve alert slider dialog
 60f1c0d41b1 Crash occured due to null pointer exception.
 55d06bd4e08 base: media_seekbar: make it sexy
 2bbcdb78097 Restore cache clean up code in PackageManagerService
-a31383680d2 Merge changes from topic "pa_batt" into q
-d9f9dbd054f QS tiles customizer: respect user tiles columns value
-6a2145fd95a Allow to set QS panel columns and rows [1/2]
-c30b6343bae base: Add Circle battery style from PA [1/2]
 
    * frameworks/opt/telephony/
 b839a8674 Telephony: Fix out of boundary for non telephony device.
@@ -219,8 +231,6 @@ dfbd301 Track Chromium-webview from LOS
    * packages/apps/Blissify/
 8261ed8 Bring back Gaming mode [3/3]
 252c5b2 Enable artwork Blur level only when art filter is set to blur
-bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
-4c97729 Allow to set QS panel columns and rows [2/2]
 
    * packages/apps/Settings/
 c05e7e76cb Aosp Ambient music: allow to pulse on new tracks [2/2]
@@ -243,6 +253,10 @@ fb1e89fb0a Bring back Gaming mode [2/3]
 
 
    * frameworks/base/
+a31383680d2 Merge changes from topic "pa_batt" into q
+d9f9dbd054f QS tiles customizer: respect user tiles columns value
+6a2145fd95a Allow to set QS panel columns and rows [1/2]
+c30b6343bae base: Add Circle battery style from PA [1/2]
 f007ed11682 Screenrecord: fix FC when using custom dpi values
 1f7274f24c3 SystemUI: Update the screenrecord notification and qs tile icon
 6004dae9001 ScreenRec: Fix dialog layout on high DPI
@@ -251,6 +265,8 @@ d189f28f168 Screenrecord: fix possible SystemUI FC when stopping
 f1135aa6594 base: refine partial screenshot handling
 
    * packages/apps/Blissify/
+bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
+4c97729 Allow to set QS panel columns and rows [2/2]
 3094428 Blissify: Add circle battery style for PA [2/2]
 
    * packages/apps/Jelly/
@@ -387,59 +403,4 @@ a4075603 versions: Bliss v12.1 Stable Release
 
    * vendor/themes/
 b25724c Accents: Add Mint accent color
-
-====================
-     11-11-2019
-====================
-
-
-   * build/make/
-ec688509a Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//build into HEAD
-
-   * frameworks/av/
-766a83901 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/av into HEAD
-
-   * frameworks/base/
-2bda78e045f tiles: Switch to UnlockMethodCache instead of mKeyguardMonitor
-c820fe8b4c1 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//frameworks/base into HEAD
-
-   * frameworks/native/
-4058db6cf Add .gitreview
-13fff14ce sensorservice: Register orientation sensor if HAL doesn't provide it
-5a0b09723 sensorservice: customize sensor fusion mag filter via prop
-c44539474 Forward port 'Swap volume buttons' (2/3)
-0fd9aed6d surfaceflinger: Pass proper transform orientation to setProjection()
-8b0598b6c InputDispatcher: On keypress, deliver keycode to pokeUserActivity
-81f661308 PowerManager.h: Define USER_ACTIVITY_FLAG values
-be2d319f3 libui: Allow extension of valid gralloc 1.0 buffer usage bits
-eb2977378 Add vendor version for libgui
-
-   * hardware/interfaces/
-cf7a94677 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//hardware/interfaces into HEAD
-
-   * hardware/qcom-caf/msm8998/display/
-ce08c33d2 sdm: add board flag for panel shift
-
-   * manifest/
-1d6088f Merge branch 'android-10.0.0_r14' of https://android.googlesource.com/platform//manifest into HEAD
-
-   * packages/apps/Blissify/
-278a1d9 Merge changes from topics "kill-notif", "hide-statusbar", "heads-up", "qs-logo", "vol-timeout", "audio-panel" into q
-1ffd287 Blissify: Add kill button to notification guts [2/2]
-
-   * packages/apps/Settings/
-31fb78ff55 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD
-9dd79b653d Merge changes from topic "mute-media" into q
-
-   * packages/providers/DownloadProvider/
-232ef1ff Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD
-
-   * packages/providers/MediaProvider/
-3c03dd5 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/providers/MediaProvider into HEAD
-
-   * packages/services/Telephony/
-6c949f4cb Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//packages/services/Telephony into HEAD
-
-   * system/bt/
-c87971738 Merge tag 'android-10.0.0_r14' of https://android.googlesource.com/platform//system/bt into HEAD
 
