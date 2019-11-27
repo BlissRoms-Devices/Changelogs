@@ -1,7 +1,25 @@
 ====================
+     11-28-2019
+====================
+
+
+   * frameworks/base/
+3f6886de4df SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod
+
+====================
      11-27-2019
 ====================
 
+
+   * external/bash/
+998f8d3 bash: BASH_CMD is writable in restricted bash shells
+a823e4b bash: Popd controlled free
+ddb19f4 Bash-4.3 patch 48
+6a51dba Bash-4.3 patch 47
+5102153 Bash-4.3 patch 46
+20fcf2b Bash-4.3 patch 45
+2ea9588 Bash-4.3 patch 44
+7c65dd4 Bash-4.3 patch 43
 
    * external/json-c/
 af9d603 Add .gitreview
@@ -252,6 +270,9 @@ d7e00433166 SystemUI: Improve alert slider dialog
 60f1c0d41b1 Crash occured due to null pointer exception.
 55d06bd4e08 base: media_seekbar: make it sexy
 2bbcdb78097 Restore cache clean up code in PackageManagerService
+a31383680d2 Merge changes from topic "pa_batt" into q
+d9f9dbd054f QS tiles customizer: respect user tiles columns value
+6a2145fd95a Allow to set QS panel columns and rows [1/2]
 
    * frameworks/opt/telephony/
 b839a8674 Telephony: Fix out of boundary for non telephony device.
@@ -293,6 +314,8 @@ dfbd301 Track Chromium-webview from LOS
    * packages/apps/Blissify/
 8261ed8 Bring back Gaming mode [3/3]
 252c5b2 Enable artwork Blur level only when art filter is set to blur
+bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
+4c97729 Allow to set QS panel columns and rows [2/2]
 
    * packages/apps/Settings/
 c05e7e76cb Aosp Ambient music: allow to pulse on new tracks [2/2]
@@ -315,9 +338,6 @@ fb1e89fb0a Bring back Gaming mode [2/3]
 
 
    * frameworks/base/
-a31383680d2 Merge changes from topic "pa_batt" into q
-d9f9dbd054f QS tiles customizer: respect user tiles columns value
-6a2145fd95a Allow to set QS panel columns and rows [1/2]
 c30b6343bae base: Add Circle battery style from PA [1/2]
 f007ed11682 Screenrecord: fix FC when using custom dpi values
 1f7274f24c3 SystemUI: Update the screenrecord notification and qs tile icon
@@ -327,8 +347,6 @@ d189f28f168 Screenrecord: fix possible SystemUI FC when stopping
 f1135aa6594 base: refine partial screenshot handling
 
    * packages/apps/Blissify/
-bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
-4c97729 Allow to set QS panel columns and rows [2/2]
 3094428 Blissify: Add circle battery style for PA [2/2]
 
    * packages/apps/Jelly/
@@ -388,24 +406,4 @@ fb2b6cbf v.3.2.0
 dc0e272d Define themepicker_overlayable_package
 5fd922bb vendor: Add some configs from Pixel
 a6a0cacc Update pixel themes
-
-====================
-     11-13-2019
-====================
-
-
-   * frameworks/base/
-a253debe11f AirplaneModeTile: Use UnlockMethodCache#canSkipBouncer
-5fb7af5931d base: Add GoogleSans font overlay
-90331d6002f overlay: Fix derp in package name
-02cf9f2bbd1 Add mechanism to improve consistancy of notification
-1f69cf25b6b Consolidate ActivityStack#finishCurrentActivityLocked checking
-c05f359aef7 Improve comparison of fractions
-b9553e851b0 Improve integer aligned coordinate detection
-008c22c4db1 Improve logic when to use filtering in readback and TextureView
-c75e4682688 Fix to handle duplicate call id for conference call
-8774412a60e CarrierConfigManager: enable LTE+ icon by default
-4c74127efdd Extend reboot tile to add power off
-950501caa96 RebootTile: Fix gradient message display for reboot to recovery
-c1b7148b984 Add Reboot/Recovery QS Tile
 
