@@ -1,4 +1,9 @@
 ====================
+     11-29-2019
+====================
+
+
+====================
      11-28-2019
 ====================
 
@@ -389,21 +394,4 @@ bea4aa05 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.or
      11-15-2019
 ====================
 
-
-====================
-     11-14-2019
-====================
-
-
-   * external/airbnb-lottie/
-63ad54bb Prepare for 3.2.1-SNAPSHOT
-fb2b6cbf v.3.2.0
-
-   * packages/apps/FMRadio/
-162046a jni: Add broadcom FM to the guard
-
-   * vendor/bliss/
-dc0e272d Define themepicker_overlayable_package
-5fd922bb vendor: Add some configs from Pixel
-a6a0cacc Update pixel themes
 
