@@ -1,7 +1,48 @@
 ====================
+     12-02-2019
+====================
+
+
+   * frameworks/base/
+a34b18280bd base: add missing handling of DISMISS_KEYGUARD_EXTRA_INTENT
+736d544cf9b Merge "SystemUI: handle camera launch gesture from keyhandler" into q
+
+   * hardware/qcom-caf/common/
+7becaa9 Simplify and fix AOSP guard
+
+   * system/core/
+7991b7c14 Merge "Make GetDeviceLockStatus() favor unlocked devices" into q
+428ddfbc7 Make GetDeviceLockStatus() favor unlocked devices
+
+====================
      12-01-2019
 ====================
 
+
+   * frameworks/opt/telephony/
+39757acd8 2G wants proper signal strength too
+
+   * packages/apps/Dialer/
+4d999358d Enable call recording for China
+
+   * packages/apps/Jelly/
+12ca6af Jelly: Use try-with-resource
+
+   * packages/apps/Nfc/
+fc3b53f3 NfcNci: make T3T/Nfc-F HCE optional
+93d90de8 nxp: Q api updates
+fc881b49 nxp: jni: Implement AOSP P abstract methods
+49adb674 nxp: jni: Remove unused variables and functions
+4d460563 nxp: jni: use proper nativehelper headers
+c2ada440 nxp: NativeNfcManager: Implement missing inherited abstract methods
+fc17ebe2 nxp: jni: Forward-port the stack sources
+6441ee49 NFC: Restore legacy NXP stack
+
+   * packages/apps/Settings/
+65eec0c2fe Add accessibility timeout video and illustration
+
+   * system/core/
+f5fd6cc5a utils: Threads: Handle empty thread names
 
    * vendor/bliss/
 2592e0a7 Merge "vendor: Add missing call to Bliss System Permissions" into q10
@@ -223,6 +264,7 @@ a9aa8c7 Revert "Track Chromium-webview from LOS"
 
    * packages/apps/Blissify/
 c7c36fd Blissify:  add keyguard weather style (2/2)
+e56c43e Blissify: Add OmniJaws config [2/2]
 
    * packages/apps/Dialer/
 b5e200f09 Base 'call recording allowed' decision on current country.
@@ -269,7 +311,6 @@ c2b5df7 Ignore implicit fall-through warnings
 0b5813b Track OmniJaws & OmniStyle
 
    * packages/apps/Blissify/
-e56c43e Blissify: Add OmniJaws config [2/2]
 a2e9e61 Clean up some duplicates and do a little re-arranging
 
 ====================
@@ -307,8 +348,12 @@ d7e00433166 SystemUI: Improve alert slider dialog
 59fde060394 ScreenRecordTile: Make default state inactive
 79fc5068e52 Avoid NPE in system_server in bringDownServiceLocked()
 60f1c0d41b1 Crash occured due to null pointer exception.
+c42297273b4 SystemUI: handle camera launch gesture from keyhandler
 55d06bd4e08 base: media_seekbar: make it sexy
 2bbcdb78097 Restore cache clean up code in PackageManagerService
+a31383680d2 Merge changes from topic "pa_batt" into q
+d9f9dbd054f QS tiles customizer: respect user tiles columns value
+6a2145fd95a Allow to set QS panel columns and rows [1/2]
 
    * frameworks/opt/telephony/
 b839a8674 Telephony: Fix out of boundary for non telephony device.
@@ -350,6 +395,8 @@ dfbd301 Track Chromium-webview from LOS
    * packages/apps/Blissify/
 8261ed8 Bring back Gaming mode [3/3]
 252c5b2 Enable artwork Blur level only when art filter is set to blur
+bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
+4c97729 Allow to set QS panel columns and rows [2/2]
 
    * packages/apps/Settings/
 c05e7e76cb Aosp Ambient music: allow to pulse on new tracks [2/2]
@@ -372,9 +419,6 @@ fb1e89fb0a Bring back Gaming mode [2/3]
 
 
    * frameworks/base/
-a31383680d2 Merge changes from topic "pa_batt" into q
-d9f9dbd054f QS tiles customizer: respect user tiles columns value
-6a2145fd95a Allow to set QS panel columns and rows [1/2]
 c30b6343bae base: Add Circle battery style from PA [1/2]
 f007ed11682 Screenrecord: fix FC when using custom dpi values
 1f7274f24c3 SystemUI: Update the screenrecord notification and qs tile icon
@@ -384,8 +428,6 @@ d189f28f168 Screenrecord: fix possible SystemUI FC when stopping
 f1135aa6594 base: refine partial screenshot handling
 
    * packages/apps/Blissify/
-bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
-4c97729 Allow to set QS panel columns and rows [2/2]
 3094428 Blissify: Add circle battery style for PA [2/2]
 
    * packages/apps/Jelly/
@@ -393,29 +435,4 @@ e3fc596 Jelly: Add setting to print page
 
    * packages/apps/Settings/
 b38c25ef21 Merge "settings: Protect sensitive info on About device" into q
-
-====================
-     11-17-2019
-====================
-
-
-   * hardware/qcom-caf/sdm845/audio/
-bbd29f2e4 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
-
-   * hardware/qcom-caf/sdm845/display/
-56bc52069 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into HEAD
-a202fc964 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
-
-   * hardware/qcom-caf/sdm845/media/
-9a250e0a2 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
-
-   * packages/apps/Jelly/
-a0245c8 Jelly: Automatic re-format of the code
-
-   * vendor/bliss/
-aa3ccfbb packages: remove Recorder
-9c283e9b Import and build SafetyHub
-
-   * vendor/nxp/opensource/pn5xx/halimpl/
-bea4aa05 Merge tag 'LA.UM.8.3.r1-06600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/nxp/opensource/halimpl into HEAD
 
