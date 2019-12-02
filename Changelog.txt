@@ -1,14 +1,72 @@
 ====================
+     12-03-2019
+====================
+
+
+   * frameworks/base/
+aaaf45f34ca Prevent NFE in SystemUI when parsing invalid int
+5cde73441d0 SystemUI: Fix default mShowCursorKeys value (again)
+efa4138f6ad SystemUI: add left and right virtual buttons while typing
+af5f8c6c278 NtpTrustedTime: Refresh NTP server from resources before requesting time
+31f182f1106 SystemUI: Use matching data usage size formatting between QS and Settings
+604966698bb Fix SystemUI crash
+3680d4bd42d Update NotificationRecord of snooze even after it is cancelled
+b8949718a11 Limit the retry attemps on restarting Bluetooth
+511ae6c5596 Services exit fg when bg-restricted app leaves top
+d29d4081a16 base: Double tap for ambient display improvements
+6e50d8655f2 base: Double tap to trigger doze [1/2]
+8545850d6bd Battery light: 100% charged level (1/3)
+cf3bfac00ae Add toggle for emergency affordance in power menu [1/2]
+a1cba7eceb1 Screenrecord: exclude dialog from Recents
+bda3795cf0a Screenrecord: remember last recording options
+bb946f91286 Screenrecord: start delayed
+
+   * lineage-sdk/
+f83db1dc sdk: Make phone a new compile target
+ff51eec3 Disable by livedisplay by default
+
+   * manifest/
+23d704c manifest: track CustomDoze
+
+   * packages/apps/CustomDoze/
+023df18 CustomDoze: Disable music ticker pref if aod is enabled
+862aa2d CustomDoze: Simplify double tap switch
+f7c8929 CustomDoze: Ambient music: allow to pulse on new tracks [2/2]
+2b31520 CustomDoze: Ambient Display battery toggle [2/2]
+76c1b17 CustomDoze: Double tap to trigger doze [2/2]
+d23a3dc update .gitreview
+
+   * packages/services/Telecomm/
+140c677c Telecom: Adapt to the new location of SensitivePhoneNumbers
+
+====================
      12-02-2019
 ====================
 
 
    * frameworks/base/
+21103d83276 Ambient brightness values: use a custom system setting [1/2]
+3db2209ee1c base: add option to enable AOD on charging only [1/2]
+cb9a8dcf8b5 CustomDoze: Fix custom gestures not working if default pulsing is disabled [1/2]
 a34b18280bd base: add missing handling of DISMISS_KEYGUARD_EXTRA_INTENT
 736d544cf9b Merge "SystemUI: handle camera launch gesture from keyhandler" into q
 
    * hardware/qcom-caf/common/
 7becaa9 Simplify and fix AOSP guard
+
+   * packages/apps/CustomDoze/
+c5b970b Fix build for Q commits
+e5fe7df CustomDoze: Remove TiltSensor latency
+d29d55c CustomDoze: Update styles for Android 10
+2b513d0 Remove edittext option
+ac260b4 CustomDoze: Adapt to AndroidX
+99479d5 CustomDoze: Update AmbientDisplayConfiguration class path
+
+   * packages/apps/Settings/
+e35d5c6c65 AnimationSeekbar: Change default max and digits
+ffc3a1315b Settings: Convert AnimationScalePreference to CustomDialogPreferenceCompat
+9c4b6c3339 Settings: AnimationScale: Fix force close when not using english
+25a8dfee4f Settings: Use seekbar to allow setting arbitrary animation values
 
    * system/core/
 7991b7c14 Merge "Make GetDeviceLockStatus() favor unlocked devices" into q
@@ -45,6 +103,11 @@ fc17ebe2 nxp: jni: Forward-port the stack sources
 f5fd6cc5a utils: Threads: Handle empty thread names
 
    * vendor/bliss/
+d33b2fe0 extract_utils: Added Suffix uses COMMON_SUFFIX
+103c2acf extract_files: Implement blueprint file generation
+05784b4a extract_files: Add initial blueprint creation
+b2f042df extract_files: Match non-treble path prefixes
+1370f191 extract_files: Support system/ prefixes
 2592e0a7 Merge "vendor: Add missing call to Bliss System Permissions" into q10
 
 ====================
@@ -351,9 +414,6 @@ d7e00433166 SystemUI: Improve alert slider dialog
 c42297273b4 SystemUI: handle camera launch gesture from keyhandler
 55d06bd4e08 base: media_seekbar: make it sexy
 2bbcdb78097 Restore cache clean up code in PackageManagerService
-a31383680d2 Merge changes from topic "pa_batt" into q
-d9f9dbd054f QS tiles customizer: respect user tiles columns value
-6a2145fd95a Allow to set QS panel columns and rows [1/2]
 
    * frameworks/opt/telephony/
 b839a8674 Telephony: Fix out of boundary for non telephony device.
@@ -395,8 +455,6 @@ dfbd301 Track Chromium-webview from LOS
    * packages/apps/Blissify/
 8261ed8 Bring back Gaming mode [3/3]
 252c5b2 Enable artwork Blur level only when art filter is set to blur
-bc9113b Merge "Allow to set QS panel columns and rows [2/2]" into q
-4c97729 Allow to set QS panel columns and rows [2/2]
 
    * packages/apps/Settings/
 c05e7e76cb Aosp Ambient music: allow to pulse on new tracks [2/2]
@@ -412,27 +470,4 @@ fb1e89fb0a Bring back Gaming mode [2/3]
 
    * vendor/support/
 344ee08 support: CustomSeekbarPreference: Fix displaying units
-
-====================
-     11-18-2019
-====================
-
-
-   * frameworks/base/
-c30b6343bae base: Add Circle battery style from PA [1/2]
-f007ed11682 Screenrecord: fix FC when using custom dpi values
-1f7274f24c3 SystemUI: Update the screenrecord notification and qs tile icon
-6004dae9001 ScreenRec: Fix dialog layout on high DPI
-d189f28f168 Screenrecord: fix possible SystemUI FC when stopping
-1db131514f0 SystemUI: ScreenRec: Redesign the dialog
-f1135aa6594 base: refine partial screenshot handling
-
-   * packages/apps/Blissify/
-3094428 Blissify: Add circle battery style for PA [2/2]
-
-   * packages/apps/Jelly/
-e3fc596 Jelly: Add setting to print page
-
-   * packages/apps/Settings/
-b38c25ef21 Merge "settings: Protect sensitive info on About device" into q
 
