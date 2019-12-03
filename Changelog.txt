@@ -1,4 +1,12 @@
 ====================
+     12-04-2019
+====================
+
+
+   * packages/apps/CustomDoze/
+ef4ee07 Merge "Add a readme file to inform how to add CustomDoze to build" into q
+
+====================
      12-03-2019
 ====================
 
@@ -34,6 +42,7 @@ ff51eec3 Disable by livedisplay by default
 f7c8929 CustomDoze: Ambient music: allow to pulse on new tracks [2/2]
 2b31520 CustomDoze: Ambient Display battery toggle [2/2]
 76c1b17 CustomDoze: Double tap to trigger doze [2/2]
+c35a73e Add a readme file to inform how to add CustomDoze to build
 d23a3dc update .gitreview
 
    * packages/services/Telecomm/
@@ -375,99 +384,4 @@ c2b5df7 Ignore implicit fall-through warnings
 
    * packages/apps/Blissify/
 a2e9e61 Clean up some duplicates and do a little re-arranging
-
-====================
-     11-19-2019
-====================
-
-
-   * device/bliss/sepolicy/
-4535ec1 sepolicy: Allow CPUInfo access to thermal sysfs
-c0e797b sepolicy: Move hal_lineage_livedisplay_sysfs rule to proper location
-95c5eb1 sepolicy: allow sysfs livedisplay hal read privs to sysfs_graphics dirs
-35c16ef sepolicy: Allow Snap to execute bcc
-aa9ac40 Add adb_root rules
-
-   * external/airbnb-lottie/
-9b375440 v.3.2.2
-69b9b53b Prepare for 3.2.2
-1ca49d3c v3.2.1
-c0f723b4 Fix NPE when set ScaleType in xml. (#1433)
-da96f5c8 Prevent a NPE when creating LottieAnimationView (#1434)
-
-   * frameworks/base/
-b80d4cff02a SystemUI: Add tuner switches for privacy icons
-aa3cd8f7a88 Merge "Restore cache clean up code in PackageManagerService" into q
-f775f39719f Merge "base: media_seekbar: make it sexy" into q
-2e39fb48a4a Bring back Gaming mode [1/3]
-b2a53122940 Add SystemSetting class analogous to SecureSetting
-0865bda783e Ambient music: pulse on new tracks even if all Ambient options are off
-5ccd844313d Ambient music: add Pixel Now Playing support
-8998ae74a2a Ambient music ticker AoD: make it compatibile with double tap sensor
-a51869493d2 Aosp Ambient music: allow to pulse on new tracks [1/2]
-3f136fb1486 base: blur level: Fix radius out of range
-b2038e5ef6d Fix some crashes with lockscreen album art filter
-d7e00433166 SystemUI: Improve alert slider dialog
-59fde060394 ScreenRecordTile: Make default state inactive
-79fc5068e52 Avoid NPE in system_server in bringDownServiceLocked()
-60f1c0d41b1 Crash occured due to null pointer exception.
-c42297273b4 SystemUI: handle camera launch gesture from keyhandler
-55d06bd4e08 base: media_seekbar: make it sexy
-2bbcdb78097 Restore cache clean up code in PackageManagerService
-
-   * frameworks/opt/telephony/
-b839a8674 Telephony: Fix out of boundary for non telephony device.
-c7e3917ea Add SMS support in 5G SA
-dced44cd6 Support for NR radio technology
-45065eeb5 Fix Icc not update after changed to RUIM
-92a985e9d Define EF MSPL/MLPL/PRL values and paths
-3de9555e6 Fix imsi info error when insert some china operator card.
-da91c473e Fix copying SMS into RUIM with failure
-d430e061b Add missing CAF edits
-b03e07efb FR57912: Fix to block data calls while retry pattern is enabled
-4422413a8 Fix unwanted data call issue on voice call end in GSM
-c601a1785 Make method setDataProfilesAsNeeded as protected
-17bf6c9e6 FR57912: Add support for pdp data reject with cause code 29,33,55
-ccfe2fcfa Inject support for MultiSimSettingController
-e6ce7e71a FR55934: Optimize dds switch for calls on non dds
-a5c917b9d Fix PhoneSwitcher null instance issue
-e20571ec6 Fix to block sim selection popup for data
-d20e78b00 Add support for data call continuity during calls
-bf0dd0077 Fix mobile data setting issue for multi-sim
-39e89cca0 Add support for retry with new DDS API and update QtiPhoneSwitcher
-a9a47f280 Fix to inject vendor specific files
-731d18b3a Start using inject framework support
-070f7d70f Resolve merge conflicts
-c2dbfdcee Fix data call issue caused due to upgrade
-03d3b556b Truly fix Classloader crash in com.android.phone
-c44c4d49e CDMA MO SMS follow on DC feature
-23c81c4bc Fix ClassLoader crash in com.android.phone
-062542da0 MSIM: Perform code clean-up
-435defb8d broadcastDefaultDataSubIdChanged method type changed to protected
-c29ccb5f2 Enable vendor Telephony plugin
-fa2e0c3ef Enable vendor Telephony plugin: MSIM Changes
-b8d31ab2d Telephony: Enable data call on CSIM.
-e7f7cf9ac Telephony: Send INITIAL_ATTACH only when it is applicable.
-
-   * manifest/
-dfbd301 Track Chromium-webview from LOS
-
-   * packages/apps/Blissify/
-8261ed8 Bring back Gaming mode [3/3]
-252c5b2 Enable artwork Blur level only when art filter is set to blur
-
-   * packages/apps/Settings/
-c05e7e76cb Aosp Ambient music: allow to pulse on new tracks [2/2]
-fb1e89fb0a Bring back Gaming mode [2/3]
-
-   * packages/services/Telephony/
-6bcc38f95 MSIM: Fix non-protected broadcasts sent from phone process.
-
-   * vendor/bliss/
-776ce127 Merge "overlay: Set google assist as default assistant package" into q10
-61d3441c overlay: Set google assist as default assistant package
-15a50a1d overlay: Update webview providers
-
-   * vendor/support/
-344ee08 support: CustomSeekbarPreference: Fix displaying units
 
