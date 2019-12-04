@@ -1,4 +1,22 @@
 ====================
+     12-05-2019
+====================
+
+
+   * frameworks/base/
+270dd6e2966 Merge changes from topic "ups" into q
+df2a1616e8b base: SystemUI: add tuner to hide qs drag handle
+d491ba2f25a base: add vibrate util methods
+61894ce74ff SystemUI: bring back old style mobile data indicators
+68e0573b617 SystemUI: Add optional notch friendly VoLTE icon
+73c237ca304 FingerprintDialogView: Improve on fod devices
+39a6753bec5 SystemUI: FingerprintDialogView: Use accent color instead of teal
+452f0b40193 base: SystemUI: make the battery saver tile useful
+4d417be3424 Revert "Remove BatteryDetail from BatterySaverTile"
+8af065697e7 etc: Add privapp whitelist permissions for ThemePicker
+b150a7ba34b SystemUI: CPUInfoService: Don't show during doze
+
+====================
      12-04-2019
 ====================
 
@@ -12,6 +30,8 @@ ef4ee07 Merge "Add a readme file to inform how to add CustomDoze to build" into 
 
 
    * frameworks/base/
+3579c802c94 SystemUI: Allow disabling BrightlineFalsingManager with config flag
+8672a837118 fwb: Refactor SetupWizard overlays
 aaaf45f34ca Prevent NFE in SystemUI when parsing invalid int
 5cde73441d0 SystemUI: Fix default mShowCursorKeys value (again)
 efa4138f6ad SystemUI: add left and right virtual buttons while typing
@@ -35,6 +55,9 @@ ff51eec3 Disable by livedisplay by default
 
    * manifest/
 23d704c manifest: track CustomDoze
+
+   * packages/apps/Blissify/
+43ad81c Blissify: bring back old style mobile data indicators
 
    * packages/apps/CustomDoze/
 023df18 CustomDoze: Disable music ticker pref if aod is enabled
@@ -336,7 +359,6 @@ a9aa8c7 Revert "Track Chromium-webview from LOS"
 
    * packages/apps/Blissify/
 c7c36fd Blissify:  add keyguard weather style (2/2)
-e56c43e Blissify: Add OmniJaws config [2/2]
 
    * packages/apps/Dialer/
 b5e200f09 Base 'call recording allowed' decision on current country.
@@ -349,39 +371,4 @@ f0bd332fe healthd: allow custom charger images
    * vendor/bliss/
 1978fc81 Merge "Revert "overlay: Update webview providers"" into q10
 2c61d899 Revert "overlay: Update webview providers"
-
-====================
-     11-20-2019
-====================
-
-
-   * external/exfat/
-bd0f601 Ignore unused parameter warnings
-
-   * external/json-c/
-76ff6c3 Ignore unused parameter warnings
-
-   * external/ntfs-3g/
-1baaa4bf Ignore Waddress-of-packed-member warnings
-
-   * frameworks/base/
-5f15ce53d55 SystemUI: keyguardslice code cleanup
-06b97f80b99 base: SystemUI: add keyguard weather style (1/2)
-d137be45ea1 base: add weather to keyguardSlice
-0851f80894f base: SystemUI: keyguard weather view - fix initial kick off after boot
-9b6c7af27f3 base: SystemUI: keyguard weather view [1/3]
-4e4ef879d96 base: add back weather parts [1/3]
-
-   * hardware/nxp/nfc/
-c2b5df7 Ignore implicit fall-through warnings
-
-   * hardware/qcom-caf/msm8998/audio/
-734e94cfc audio_amplifier: Use log/log.h instead of cutils/log.h
-17d6d6bc8 ultrasound: Use log/log.h instead of cutils/log.h
-
-   * manifest/
-0b5813b Track OmniJaws & OmniStyle
-
-   * packages/apps/Blissify/
-a2e9e61 Clean up some duplicates and do a little re-arranging
 
