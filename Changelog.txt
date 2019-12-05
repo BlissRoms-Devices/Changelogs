@@ -1,10 +1,43 @@
 ====================
+     12-06-2019
+====================
+
+
+   * frameworks/base/
+bdc21fc2dbf fwb: Add ability to permanently hide apps from recents [1/3]
+0da6e3ec27f Merge changes from topic "noti_pulse" into q
+fca80c294a5 TextClock: Spanish translation improvements
+ec5525810ec TextClock: bring the translations back
+826e1176a63 SystemUI: Fix ambient pulse notification layout
+0c3227767aa base: Add ambient pulse notification [1/2]
+1dca6b0e403 SystemUI: Remove annoying log caused by aosp bug
+6a2b43e040a SystemUI: DataSwitchTile: Use MD2 drawables
+9d956a7a2ec base: Introduce DataSwitchTile
+
+   * packages/apps/Blissify/
+66ef205 Merge changes from topic "hafr" into q
+ab1d1bc HAFR: Update Search TextView
+c51d51d HAFR: replace Search Icon with Google Drawable
+dedf762 HAFR: Only show User accessible apps
+25f3d63 HAFRDialog: Add ability to only show Launcher Apps
+dd22d13 Blissify: Implement HideAppFromRecents (HAFR) Settings
+d2c9f1a Fix hide status bar switch
+cf91aad Blissify: Add ambient pulse notification [2/2]
+
+   * packages/apps/Settings/
+cc344e82ec Settings: Define HAFR Activity [2/3]
+
+====================
      12-05-2019
 ====================
 
 
    * frameworks/base/
 270dd6e2966 Merge changes from topic "ups" into q
+95ed2b6c137 fwb: Conditionally set scaled brightness
+45dcfca7959 SystemUI: Add inset to bluetooth battery level drawables
+1afe1759bb3 SystemUI: Fix shouldSkipHeadsUp logic for Gaming Mode
+7267061e9bd Statusbar bluetooth battery level: Improvements
 df2a1616e8b base: SystemUI: add tuner to hide qs drag handle
 d491ba2f25a base: add vibrate util methods
 61894ce74ff SystemUI: bring back old style mobile data indicators
@@ -15,6 +48,10 @@ d491ba2f25a base: add vibrate util methods
 4d417be3424 Revert "Remove BatteryDetail from BatterySaverTile"
 8af065697e7 etc: Add privapp whitelist permissions for ThemePicker
 b150a7ba34b SystemUI: CPUInfoService: Don't show during doze
+
+   * packages/apps/Settings/
+1e4001f1b1 Settings: Use same icons for sliders as fw_base
+470a0a5603 Settings: Move custom DP settings under display submenu
 
 ====================
      12-04-2019
@@ -348,27 +385,4 @@ cad1cd3 Allow to suppress notifications sound/vibration if screen is On [2/2]
    * vendor/bliss/
 96c56fbf Merge "Build OmniJaws and OmniStyle" into q10
 9bdeb62a Build OmniJaws and OmniStyle
-
-====================
-     11-21-2019
-====================
-
-
-   * manifest/
-a9aa8c7 Revert "Track Chromium-webview from LOS"
-
-   * packages/apps/Blissify/
-c7c36fd Blissify:  add keyguard weather style (2/2)
-
-   * packages/apps/Dialer/
-b5e200f09 Base 'call recording allowed' decision on current country.
-67cc16232 Fix crash in call stats.
-
-   * system/core/
-a1ba684f7 adb: host: Provide better sideload status
-f0bd332fe healthd: allow custom charger images
-
-   * vendor/bliss/
-1978fc81 Merge "Revert "overlay: Update webview providers"" into q10
-2c61d899 Revert "overlay: Update webview providers"
 
