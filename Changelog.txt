@@ -1,4 +1,9 @@
 ====================
+     12-07-2019
+====================
+
+
+====================
      12-06-2019
 ====================
 
@@ -335,54 +340,4 @@ e1ea6626c8a ConnectivityService: null check before accessing getCurrentScore()
 52551163ec Settings: Add platform and RAM to Model & Hardware
 c1fac6b135 Settings: Disable stock battery percent toggle
 cf9bde2004 Fix crash when going back from battery
-
-====================
-     11-22-2019
-====================
-
-
-   * external/airbnb-lottie/
-4d8d7fb6 Merge tag 'v3.2.2' into mkq
-
-   * frameworks/base/
-a66d366f876 Allow devices to configure the blanking delay on displays
-a6e8935fa07 BrightnessDialog: dismiss on focus lost
-cc0ba9c0933 Catch IllegalArgumentException in stopScreenshot()
-7b65cc6912f NavigationBarView: Avoid NPE before mPanelView is created
-66d33d5c8b7 services/job: Fix a Jobscheduler bugs
-93a73bc45be bgdexopt: Let PM handler run between optimizations
-696eb2ff13d Fix incorrect context classloader initialization in system_server
-6541914a753 StorageManagerService: Fix for system_server crash while booting
-510a28295aa Fix MtpDatabase multithreading NullPointerException
-7f1497ee31f ViewRootImpl: Fixed memory leak caussed by viewrootImpl objects
-cc74caef252 Delay blanking of displays to improve performance
-d5b3c1314e6 SystemUI: Name Cellular Tile based on carrier
-d5506821c03 SystemUI: Remove data tile dialog
-be688aae2c8 webview_packages: fix incorrect signatures
-06f7a0da6c1 webview_packages: correct signature definition for Chrome Stable
-ade2a9ad585 webview_packages: prefer the more powerful webview packages
-22e1bec5c30 SystemSensorManager: sensor block per-package
-5029e018e37 Allow to suppress notifications sound/vibration if screen is On [1/2]
-e4807ce31ca Hide custom affordance icons on ambient display
-1f57480d576 Fix requireSecureKeyguard javadoc
-0f738b9221d Fix VOLUME_LINK_NOTIFICATION javadoc
-6dffc0007a7 Telephony: Direct return false for unsupport sms platform.
-652dbae955c Add an observer and adapt to our current weather style
-
-   * manifest/
-d50cf3b Merge "Track OmniJaws & OmniStyle" into q
-
-   * packages/apps/Blissify/
-cad1cd3 Allow to suppress notifications sound/vibration if screen is On [2/2]
-9c21ac3 Fix navbar inverse layout switch
-
-   * packages/apps/OmniStyle/
-3053927 OmniStyle: Q update rodeo
-
-   * packages/services/OmniJaws/
-08b6dcb OmniJaws: fix first time service start derp
-
-   * vendor/bliss/
-96c56fbf Merge "Build OmniJaws and OmniStyle" into q10
-9bdeb62a Build OmniJaws and OmniStyle
 
