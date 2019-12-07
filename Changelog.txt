@@ -1,7 +1,25 @@
 ====================
+     12-08-2019
+====================
+
+
+   * frameworks/base/
+c705a77f9da base: Allow switching to drawable for qs icons
+
+====================
      12-07-2019
 ====================
 
+
+   * frameworks/base/
+96f75d80a63 base: QS header improvements
+
+   * packages/apps/Blissify/
+9bf78d3 Add toggle for emergency affordance in power menu [2/2]
+
+   * vendor/bliss/
+44151a89 overlay: Enable help links in settings
+b88f77fb Ship Device Personalization Services
 
 ====================
      12-06-2019
@@ -325,19 +343,4 @@ e1ea6626c8a ConnectivityService: null check before accessing getCurrentScore()
      11-24-2019
 ====================
 
-
-====================
-     11-23-2019
-====================
-
-
-   * frameworks/opt/net/wifi/
-41bb6bf83 wifi: Not reset country code for Dual SIM if any slot is active
-
-   * packages/apps/Settings/
-1949524228 Remove empty space in tether preference
-8cb204b5b2 Revert "Make fingerprint illustrations single color"
-52551163ec Settings: Add platform and RAM to Model & Hardware
-c1fac6b135 Settings: Disable stock battery percent toggle
-cf9bde2004 Fix crash when going back from battery
 
