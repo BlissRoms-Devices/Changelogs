@@ -1,4 +1,12 @@
 ====================
+     12-09-2019
+====================
+
+
+   * vendor/qcom/opensource/power/
+0db671a power: Follow symlinks when writing to dt2w toggle path
+
+====================
      12-08-2019
 ====================
 
@@ -338,9 +346,4 @@ e1ea6626c8a ConnectivityService: null check before accessing getCurrentScore()
 
    * packages/apps/Blissify/
 4fb03fa battery: Allow setting custom symbol near text on charging [2/2]
-
-====================
-     11-24-2019
-====================
-
 
