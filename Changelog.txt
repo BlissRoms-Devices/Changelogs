@@ -1,7 +1,40 @@
 ====================
+     12-10-2019
+====================
+
+
+   * hardware/qcom-caf/msm8996/audio/
+f21f0db5c ultrasound: Use log/log.h instead of cutils/log.h
+6e10133c1 hal: Add open source HAL for Elliptic Ultrasound
+
+   * manifest/
+cedb7f4 Track out Contacts repo
+
+   * packages/apps/Contacts/
+e3a7b8445 Add in gitreview file
+
+   * packages/apps/Recorder/
+a88190c Recorder: Move to /product
+67c21fd ScreenService: start recording on a background Thread
+
+====================
      12-09-2019
 ====================
 
+
+   * packages/apps/Contacts/
+378e4f133 Contacts: style fast scroll thumb like in Dialer
+eaa888c33 Contacts: add dark mode support
+
+   * packages/apps/Dialer/
+de95cc30e Dialer: theme fixes
+14439c7af Dialer: welcome to night mode
+50cd811d8 Add autorecord feature
+885804645 Dialer: Enable call recording for all
+
+   * packages/apps/Messaging/
+99dbc6a Dark theme: Clean up
+87afea3 Messaging: add night mode
 
    * vendor/qcom/opensource/power/
 0db671a power: Follow symlinks when writing to dt2w toggle path
@@ -321,29 +354,4 @@ d8999fb Update gitreview file
 
    * vendor/bliss/
 563940f3 update our priv-app permissions
-
-====================
-     11-25-2019
-====================
-
-
-   * device/bliss/sepolicy/
-45c100f Remove Style API related rules
-9051101 sepolicy: Label and address Trust's system variant denials
-4a1d4e1 sepolicy: Label and address denials of livedisplay's system variant
-
-   * frameworks/base/
-2aec439d600 battery: Allow setting custom symbol near text on charging [1/2]
-7a0de74a871 Reset permission when network becomes default again.
-5121253bbd2 Fix: "Clear All" recent app screen loop bug
-2375da15fbd core/Build: ro.system when comparing fingerprint
-696f18b3892 MediaCodec: Release lock before calling onFrameRendered()
-b6de41ff8df SystemUI: Use different drawables for notification volume
-3d85cceaa32 AMS: Fix the null pointer exception in IntentResolver
-e1ea6626c8a ConnectivityService: null check before accessing getCurrentScore()
-24aa66fac7e AlarmManagerService: Add null check to QCNsrmAlarmExtension call
-704afe0ef7f DEBUG: Turn off some debugging we don't need.
-
-   * packages/apps/Blissify/
-4fb03fa battery: Allow setting custom symbol near text on charging [2/2]
 
