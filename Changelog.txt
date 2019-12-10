@@ -1,4 +1,34 @@
 ====================
+     12-11-2019
+====================
+
+
+   * external/tinycompress/
+5eebb5e tinycompress: Conditionally enable extended compress format
+
+   * frameworks/base/
+2c0f0017ed7 Context-aware Bluetooth airplane mode
+98426e4e1d3 Graphics: Fix NPE in Gdrive
+6cb9b3715a9 GamingMode: Fix gaming mode from turning off instantly on some apps & games
+26799765e9d ThemedMeterDrawable: Fix system crash on theme change
+ea732775008 Fix Settings & endless SystemUI crash
+9506c1638ab Open Sound settings on long click at the panel button
+d7296d08624 base: option to show battery percent & estimate together [1/2]
+ef1db994c24 Utils: Update notch check logic
+
+   * hardware/qcom-caf/msm8996/audio/
+01727bc0d hal: fix media param not sent during gapless transition
+
+   * manifest/
+76fec4f manifest: Track tinycompress from BlissRoms
+
+   * packages/apps/Blissify/
+5df4b87 Blissify: option to show battery percent & estimate together [2/2]
+
+   * vendor/bliss/
+50263b72 soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT
+
+====================
      12-10-2019
 ====================
 
@@ -9,6 +39,9 @@ f21f0db5c ultrasound: Use log/log.h instead of cutils/log.h
 
    * manifest/
 cedb7f4 Track out Contacts repo
+
+   * packages/apps/Blissify/
+18df3eb Fix hiding lock screen statusbar
 
    * packages/apps/Contacts/
 e3a7b8445 Add in gitreview file
@@ -46,6 +79,18 @@ de95cc30e Dialer: theme fixes
 
    * frameworks/base/
 c705a77f9da base: Allow switching to drawable for qs icons
+
+   * hardware/qcom-caf/msm8916/audio/
+3e3cfe0e8 hal: fix media param not sent during gapless transition
+
+   * hardware/qcom-caf/msm8952/audio/
+1c17a8f7d hal: fix media param not sent during gapless transition
+
+   * hardware/qcom-caf/msm8974/audio/
+034e4c660 hal: fix media param not sent during gapless transition
+
+   * hardware/qcom-caf/msm8994/audio/
+2869d8e76 hal: fix media param not sent during gapless transition
 
 ====================
      12-07-2019
@@ -149,6 +194,9 @@ cf3bfac00ae Add toggle for emergency affordance in power menu [1/2]
 a1cba7eceb1 Screenrecord: exclude dialog from Recents
 bda3795cf0a Screenrecord: remember last recording options
 bb946f91286 Screenrecord: start delayed
+
+   * hardware/qcom-caf/sdm845/audio/
+9542adee0 hal: fix media param not sent during gapless transition
 
    * lineage-sdk/
 f83db1dc sdk: Make phone a new compile target
@@ -272,6 +320,12 @@ be604476 Merge changes from topic "themepicker" into q10
    * frameworks/base/
 3f6886de4df SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod
 
+   * hardware/qcom-caf/msm8998/audio/
+c725d6bb7 Merge tag 'LA.UM.8.4.r1-04600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.0-caf-msm8998
+
+   * hardware/qcom-caf/msm8998/display/
+2c4982968 Merge tag 'LA.UM.8.4.r1-04600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-17.0-caf-msm8998
+
 ====================
      11-27-2019
 ====================
@@ -325,33 +379,4 @@ a7766b5 Blissify: Set a text length on the carrier label
 a5d5d306 Revert "lineage: add BUILD_RRO_SYSTEM_PACKAGE target"
 754bea7c Revert "vendor: add style api"
 69b01d3e Revert "privapp-permissions: Whitelist CHANGE_OVERLAY_PACKAGES permission"
-
-====================
-     11-26-2019
-====================
-
-
-   * external/json-c/
-8a7549d Avoid conflicts while building with some CAF devices
-
-   * frameworks/base/
-b75f3d10b94 SystemUI: keep width on qs expand move
-6f52e0a2102 SystemUI: fix layout of qs header info
-7d3a8980c3a [1/2] base: SystemUI: header image tweaks aka the big marginator
-eb1d674c9ac [1/4] base: qs status bar header image
-449f91bcc3b [2/2] base: QS panel opacity
-
-   * manifest/
-f93642b manifest: Track external/json-c from BlissRoms
-
-   * packages/apps/Blissify/
-3c82c68 Blissify: QS panel opacity [1/2]
-fb41933 [2/4] Blissify: qs status bar header image
-
-   * packages/apps/OmniStyle/
-241106a Clean house
-d8999fb Update gitreview file
-
-   * vendor/bliss/
-563940f3 update our priv-app permissions
 
