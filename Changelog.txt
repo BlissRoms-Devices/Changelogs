@@ -1,4 +1,17 @@
 ====================
+     12-12-2019
+====================
+
+
+   * frameworks/base/
+7a755232711 Merge changes from topic "doze_stuff" into q
+b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
+
+   * packages/apps/OmniStyle/
+ac89dee OmniStyle: Add itsaalex poison headers
+c108d72 Update Space Headers
+
+====================
      12-11-2019
 ====================
 
@@ -15,6 +28,9 @@ ea732775008 Fix Settings & endless SystemUI crash
 9506c1638ab Open Sound settings on long click at the panel button
 d7296d08624 base: option to show battery percent & estimate together [1/2]
 ef1db994c24 Utils: Update notch check logic
+7daa59e0377 SystemUI: fix black screen after AOD_PAUSED
+927089a4e00 [1/2] base: SystemUI: add separate config for pulse brightness
+f0fa91d0a83 Revert "Ambient brightness values: use a custom system setting [1/2]"
 
    * hardware/qcom-caf/msm8996/audio/
 01727bc0d hal: fix media param not sent during gapless transition
@@ -25,6 +41,11 @@ ef1db994c24 Utils: Update notch check logic
    * packages/apps/Blissify/
 5df4b87 Blissify: option to show battery percent & estimate together [2/2]
 
+   * packages/apps/CustomDoze/
+1ef3073 CustomDoze: Add separate config for pulse brightness [2/2]
+a47ee10 Revert "Allow to change default Ambient brightness values"
+50f8dbb Revert "Ambient brightness values: use a custom system setting [2/2]"
+
    * vendor/bliss/
 50263b72 soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT
 
@@ -33,9 +54,15 @@ ef1db994c24 Utils: Update notch check logic
 ====================
 
 
+   * frameworks/base/
+dc0a1028c02 SystemUI: Add reboot fastboot to power menu
+
    * hardware/qcom-caf/msm8996/audio/
 f21f0db5c ultrasound: Use log/log.h instead of cutils/log.h
 6e10133c1 hal: Add open source HAL for Elliptic Ultrasound
+
+   * lineage-sdk/
+2f6a701b sdk: Add GLOBAL_ACTION_KEY_RESTART_FASTBOOT
 
    * manifest/
 cedb7f4 Track out Contacts repo
@@ -325,58 +352,4 @@ c725d6bb7 Merge tag 'LA.UM.8.4.r1-04600-8x98.0' of https://source.codeaurora.org
 
    * hardware/qcom-caf/msm8998/display/
 2c4982968 Merge tag 'LA.UM.8.4.r1-04600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-17.0-caf-msm8998
-
-====================
-     11-27-2019
-====================
-
-
-   * external/bash/
-998f8d3 bash: BASH_CMD is writable in restricted bash shells
-a823e4b bash: Popd controlled free
-ddb19f4 Bash-4.3 patch 48
-6a51dba Bash-4.3 patch 47
-5102153 Bash-4.3 patch 46
-20fcf2b Bash-4.3 patch 45
-2ea9588 Bash-4.3 patch 44
-7c65dd4 Bash-4.3 patch 43
-
-   * frameworks/base/
-df5ffc7e91f Carrier Label: Bring back the scroll (marquee) effect
-95d413ccafa Notch friendly carrier label [1/2]
-589ca113770 Custom Carrier Label & Carrier Label Placement [1/2]
-6e3185ff004 SystemUI: Don't show charging animation if In-display fingerprint is active
-71391ded8f9 Add toggle for charging animation [1/2]
-85c0304b32d SystemUI: Animate the keyguard when charging
-004bf578129 core: ViewRootImpl: Stop the 'requestLayout() improperly called' logspam
-896e9ecd611 Make percentage text inside battery readable
-57c3cba2bb1 base: Add refresh rate setting [1/2]
-2aed010945d fwb: Add hide notch support [1/2]
-
-   * lineage-sdk/
-492b64b3 sdk: Nuke Berry Styles
-
-   * manifest/
-f6f6e4e Merge "manifest: track airbnb-lottie" into q
-f29b3f3 manifest: Remove taimen and wahoo device sources
-3583169 manifest: track airbnb-lottie
-
-   * packages/apps/Blissify/
-eba9346 Add toggle for charging animation [2/2]
-d3f4e0e Blissify: Notch friendly carrier label [2/2]
-b8290f7 Blissify: Carrier label: Ensure the dialog matches other dialogs
-a7766b5 Blissify: Set a text length on the carrier label
-30d8ce7 Blissify: Custom Carrier Label & Carrier Label Placement [2/2]
-
-   * packages/apps/LineageParts/
-07018ff Parts: Ditch Styles in favour of ThemePicker
-
-   * packages/apps/Settings/
-11ae8c0ac8 Settings: Add refresh rate setting [2/2]
-7ba0467a28 Settings: Add hide notch support [2/2]
-
-   * vendor/bliss/
-a5d5d306 Revert "lineage: add BUILD_RRO_SYSTEM_PACKAGE target"
-754bea7c Revert "vendor: add style api"
-69b01d3e Revert "privapp-permissions: Whitelist CHANGE_OVERLAY_PACKAGES permission"
 
