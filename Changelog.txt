@@ -1,4 +1,20 @@
 ====================
+     12-13-2019
+====================
+
+
+   * frameworks/base/
+b1eb3da8289 SystemUI: Show wifi indicator for ON but not connected
+052a98ee23d SystemUI: Enable some notification related configs
+
+   * hardware/qcom-caf/msm8998/audio/
+c5c1655ce audio: Make platform_check_backends_match handle input devices as well
+
+   * packages/apps/Settings/
+795f7fe23e Settings: Enable App Info Memory Settings
+1c948ed7a6 Settings: config: Enable support and help links
+
+====================
      12-12-2019
 ====================
 
@@ -338,18 +354,4 @@ be604476 Merge changes from topic "themepicker" into q10
      11-29-2019
 ====================
 
-
-====================
-     11-28-2019
-====================
-
-
-   * frameworks/base/
-3f6886de4df SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod
-
-   * hardware/qcom-caf/msm8998/audio/
-c725d6bb7 Merge tag 'LA.UM.8.4.r1-04600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.0-caf-msm8998
-
-   * hardware/qcom-caf/msm8998/display/
-2c4982968 Merge tag 'LA.UM.8.4.r1-04600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-17.0-caf-msm8998
 
