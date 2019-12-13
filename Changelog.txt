@@ -1,4 +1,9 @@
 ====================
+     12-14-2019
+====================
+
+
+====================
      12-13-2019
 ====================
 
@@ -19,10 +24,6 @@ c5c1655ce audio: Make platform_check_backends_match handle input devices as well
 ====================
 
 
-   * frameworks/base/
-7a755232711 Merge changes from topic "doze_stuff" into q
-b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
-
    * packages/apps/OmniStyle/
 ac89dee OmniStyle: Add itsaalex poison headers
 c108d72 Update Space Headers
@@ -36,6 +37,8 @@ c108d72 Update Space Headers
 5eebb5e tinycompress: Conditionally enable extended compress format
 
    * frameworks/base/
+7a755232711 Merge changes from topic "doze_stuff" into q
+b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
 2c0f0017ed7 Context-aware Bluetooth airplane mode
 98426e4e1d3 Graphics: Fix NPE in Gdrive
 6cb9b3715a9 GamingMode: Fix gaming mode from turning off instantly on some apps & games
@@ -349,9 +352,4 @@ d12cf96 Blissify: Revamp UI Completely
    * vendor/bliss/
 be604476 Merge changes from topic "themepicker" into q10
 8ffd915b vendor: Add missing call to Bliss System Permissions
-
-====================
-     11-29-2019
-====================
-
 
