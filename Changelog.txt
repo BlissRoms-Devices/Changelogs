@@ -1,7 +1,85 @@
 ====================
+     12-15-2019
+====================
+
+
+   * frameworks/av/
+d62e355c6 CamcorderProfiles: Add 8KUHD camcorder profile
+
+   * frameworks/base/
+ebbbe791773 Revert "Apply front scrim to doze pulsing"
+cbeae75c508 Fix protected broadcast error for doze intents
+ba0d8249659 Fix share and delete actions
+00f838c5533 Update file saving to work with Q changes
+851ee116b8a SystemUI: remove unnecessary recent apps transition
+bd237af8aba Use mContext directly
+3fbcd3d0372 Prevent NPE due to unchecked r.uid
+75ed9f7fd4d CameraServiceProxy: Improve code for camera state intent
+a15d69c7193 SystemUI: Reduce padding between battery & signal
+1db8c37b9c8 MediaRecorder: add more quality checks for time-lapse recording
+31adeffded6 CamcorderProfiles: Add 8KUHD camcorder profile
+1d5e6aedc3f Enable fingerprint swipe gestures by default [1/2]
+f9e11c1d71c biometrics: Allow posting reset runnable for all clients
+463191eab7b Revert "Revert "Fix enumerate corner case""
+
+   * manifest/
+e6b6d37 Merge tag 'android-10.0.0_r20' into q
+
+   * packages/apps/PermissionController/
+1ff7e895 Merge tag 'android-10.0.0_r20' into q
+
+   * packages/apps/Settings/
+ff41a2dd26 Enable fingerprint swipe gestures by default [2/2]
+
+====================
      12-14-2019
 ====================
 
+
+   * frameworks/av/
+c8d781e61 Merge tag 'android-10.0.0_r20' into q
+
+   * frameworks/base/
+ee82c254ce8 LiveWallpaperScrimController: Fix after r20 merge
+d9e31ff5f74 SystemUI: Fix SystemUIGoogle after r20 merge
+f00c7545e80 Merge tag 'android-10.0.0_r20' into q
+
+   * frameworks/native/
+489fe66b0 Merge tag 'android-10.0.0_r20' into q
+
+   * frameworks/opt/telephony/
+b96a4c14e Merge tag 'android-10.0.0_r20' into q
+
+   * hardware/interfaces/
+641cc643d Merge tag 'android-10.0.0_r20' into q
+
+   * packages/apps/Contacts/
+9ba7680dc Merge tag 'android-10.0.0_r20' into q
+
+   * packages/apps/DocumentsUI/
+ea50a49d3 Merge tag 'android-10.0.0_r20' into q
+
+   * packages/apps/Nfc/
+985e3455 Merge tag 'android-10.0.0_r20' into q
+
+   * packages/apps/Settings/
+069f150ec8 Merge tag 'android-10.0.0_r20' into q
+b003d01009 Revert "Settings: Don't translate configs"
+
+   * packages/apps/ThemePicker/
+6db74e4 Merge tag 'android-10.0.0_r20' into q
+
+   * packages/providers/MediaProvider/
+a27be8a Merge tag 'android-10.0.0_r20' into q
+
+   * system/bt/
+267299699 Merge tag 'android-10.0.0_r20' into q
+
+   * system/extras/
+ecda7d31 Merge tag 'android-10.0.0_r20' into q
+
+   * system/vold/
+c60f96b Merge tag 'android-10.0.0_r20' into q
 
 ====================
      12-13-2019
@@ -24,6 +102,15 @@ c5c1655ce audio: Make platform_check_backends_match handle input devices as well
 ====================
 
 
+   * frameworks/base/
+7a755232711 Merge changes from topic "doze_stuff" into q
+b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
+
+   * manifest/
+6e14d65 Manifest for Android 10.0.0 Release 20 (QQ1C.191205.016.A1)
+78bc3f2 Manifest for Android 10.0.0 Release 19 (QQ1B.191205.012.A1)
+75d21f0 Manifest for Android 10.0.0 Release 18 (QQ1B.191205.011)
+
    * packages/apps/OmniStyle/
 ac89dee OmniStyle: Add itsaalex poison headers
 c108d72 Update Space Headers
@@ -37,8 +124,6 @@ c108d72 Update Space Headers
 5eebb5e tinycompress: Conditionally enable extended compress format
 
    * frameworks/base/
-7a755232711 Merge changes from topic "doze_stuff" into q
-b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
 2c0f0017ed7 Context-aware Bluetooth airplane mode
 98426e4e1d3 Graphics: Fix NPE in Gdrive
 6cb9b3715a9 GamingMode: Fix gaming mode from turning off instantly on some apps & games
@@ -213,6 +298,10 @@ b150a7ba34b SystemUI: CPUInfoService: Don't show during doze
 ====================
 
 
+   * manifest/
+115d198 Manifest for Android 10.0.0 Release 16 (QQ1A.191205.011)
+a8f7b98 Manifest for Android 10.0.0 Release 15 (QQ1A.191205.008)
+
    * packages/apps/CustomDoze/
 ef4ee07 Merge "Add a readme file to inform how to add CustomDoze to build" into q
 
@@ -249,6 +338,7 @@ f83db1dc sdk: Make phone a new compile target
 ff51eec3 Disable by livedisplay by default
 
    * manifest/
+84ba64b Manifest for android10-qpr1-release.
 23d704c manifest: track CustomDoze
 
    * packages/apps/Blissify/
@@ -336,20 +426,4 @@ d33b2fe0 extract_utils: Added Suffix uses COMMON_SUFFIX
 b2f042df extract_files: Match non-treble path prefixes
 1370f191 extract_files: Support system/ prefixes
 2592e0a7 Merge "vendor: Add missing call to Bliss System Permissions" into q10
-
-====================
-     11-30-2019
-====================
-
-
-   * external/json-c/
-4d470b8 json-c: Add Guard for AOSP Devices
-88f95d4 Add .gitreview
-
-   * packages/apps/Blissify/
-d12cf96 Blissify: Revamp UI Completely
-
-   * vendor/bliss/
-be604476 Merge changes from topic "themepicker" into q10
-8ffd915b vendor: Add missing call to Bliss System Permissions
 
