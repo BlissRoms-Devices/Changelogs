@@ -1,4 +1,12 @@
 ====================
+     12-16-2019
+====================
+
+
+   * build/make/
+74e68c4bb Merge tag 'android-10.0.0_r20' into r20
+
+====================
      12-15-2019
 ====================
 
@@ -301,6 +309,7 @@ b150a7ba34b SystemUI: CPUInfoService: Don't show during doze
    * manifest/
 115d198 Manifest for Android 10.0.0 Release 16 (QQ1A.191205.011)
 a8f7b98 Manifest for Android 10.0.0 Release 15 (QQ1A.191205.008)
+84ba64b Manifest for android10-qpr1-release.
 
    * packages/apps/CustomDoze/
 ef4ee07 Merge "Add a readme file to inform how to add CustomDoze to build" into q
@@ -338,7 +347,6 @@ f83db1dc sdk: Make phone a new compile target
 ff51eec3 Disable by livedisplay by default
 
    * manifest/
-84ba64b Manifest for android10-qpr1-release.
 23d704c manifest: track CustomDoze
 
    * packages/apps/Blissify/
@@ -388,42 +396,4 @@ ffc3a1315b Settings: Convert AnimationScalePreference to CustomDialogPreferenceC
    * system/core/
 7991b7c14 Merge "Make GetDeviceLockStatus() favor unlocked devices" into q
 428ddfbc7 Make GetDeviceLockStatus() favor unlocked devices
-
-====================
-     12-01-2019
-====================
-
-
-   * frameworks/opt/telephony/
-39757acd8 2G wants proper signal strength too
-
-   * packages/apps/Dialer/
-4d999358d Enable call recording for China
-
-   * packages/apps/Jelly/
-12ca6af Jelly: Use try-with-resource
-
-   * packages/apps/Nfc/
-fc3b53f3 NfcNci: make T3T/Nfc-F HCE optional
-93d90de8 nxp: Q api updates
-fc881b49 nxp: jni: Implement AOSP P abstract methods
-49adb674 nxp: jni: Remove unused variables and functions
-4d460563 nxp: jni: use proper nativehelper headers
-c2ada440 nxp: NativeNfcManager: Implement missing inherited abstract methods
-fc17ebe2 nxp: jni: Forward-port the stack sources
-6441ee49 NFC: Restore legacy NXP stack
-
-   * packages/apps/Settings/
-65eec0c2fe Add accessibility timeout video and illustration
-
-   * system/core/
-f5fd6cc5a utils: Threads: Handle empty thread names
-
-   * vendor/bliss/
-d33b2fe0 extract_utils: Added Suffix uses COMMON_SUFFIX
-103c2acf extract_files: Implement blueprint file generation
-05784b4a extract_files: Add initial blueprint creation
-b2f042df extract_files: Match non-treble path prefixes
-1370f191 extract_files: Support system/ prefixes
-2592e0a7 Merge "vendor: Add missing call to Bliss System Permissions" into q10
 
