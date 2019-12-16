@@ -1,10 +1,90 @@
 ====================
+     12-17-2019
+====================
+
+
+   * frameworks/base/
+019cf4559b1 Merge changes from topics "call-vib", "flash" into q
+84ce9006328 incall vibration options [1/3]
+8f8fcb2b408 FWD_PORT: Add Flashlight blink on incoming calls [1/3]
+3ca58a42330 Merge changes from topic "brightness" into q
+81ee9bf690e Fix bluetooth icon has wrong color
+6b649f19053 Brightness slider: Visual improvements
+4bc17022e39 Brightness QS: Make +- buttons optional
+363271e65f9 Brightness slider + - buttons: use more granular values
+6e29d8d60d1 Refresh QS brightness icon and improve its touch area and padding
+289ca70e6b4 Multi-User fixes for brightness slider mod
+40a48acf773 Adapt custom brightness actions to BrightnessDialog
+a330ff5d8e1 Brightness slider: fixes and improvements
+2d437f886fa Brightness slider: Vibrate after a long press
+24a8173fdbd Brightness Buttons: Improve touch area
+3d82ad8f830 Brightness slider: improve hide/show animation
+f017b6312e0 Brightness buttons: make touch area more reliable
+63e91034a44 Brightness slider buttons: make them dynamic (auto and manual)
+a213bc28ac6 Brightness slider: fix FC and code cleanup
+85eb8b61b10 Make use of the brightness slider buttons
+af82888b38d Rework auto brightness implementation
+60ede27f2ba Fix brightness icon not showing
+152590e7763 Fix automatic brightness QS toggle icon
+e8c04e18558 SystemUI: auto brightness toggle improvements
+93e5d9e5c98 Revert "SystemUI: OOS style brightness slider design"
+
+   * packages/apps/Blissify/
+8256d79 incall vibration options [3/3]
+8d02a02 FWD_PORT: Add Flashlight blink on incoming calls [2/3]
+8dd8e9b Blissify: Brightness QS: Make +- buttons optional
+
+   * packages/apps/Contacts/
+98f65a4c4 Allow calling contacts via specific phone accounts.
+5b6f56108 Place EmergencyInfo shortcut on drawer
+3787221c1 Place MyInfo shortcut on drawer
+d40be6240 Contacts: Enable support for device contact.
+
+   * packages/apps/Dialer/
+f7a76ac88 Revert "Add back in-call vibration features"
+f5e08bb16 Revert "Generalize the in-call vibration settings category"
+
+   * packages/services/Telecomm/
+b78b0f4c incall vibration options [2/3]
+25663d13 Telecomm: FWD_PORT: Add Flashlight blink on incoming calls [3/3]
+
+   * system/core/
+930dd5e41 Merge tag 'android-10.0.0_r20' into q
+
+====================
      12-16-2019
 ====================
 
 
    * build/make/
 74e68c4bb Merge tag 'android-10.0.0_r20' into r20
+
+   * packages/apps/Contacts/
+baa417e03 Contacts: Remove unused boolean resource
+4ff579304 Contacts: Up minimum SDK to 26
+beb1846be Contacts: update splash screen to match the new icon
+a439ada8f Contacts: adaptive icon
+
+   * packages/apps/Dialer/
+0872343cb Add toggle for post call snackbar
+d9b2f026b Dialer: use system round corner values for searchbox
+
+   * system/core/
+4f1b46d2c Shut up camera and wcnss debug output
+a6237956d Filter GalleryDatab*
+d348152fc Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
+a997fa069 init: ro.build.selinux should be 0
+e814a4fc4 init: add several more keys to spoof
+870c45b2a fs_mgr: run fsck.f2fs with -f option when full mount fails
+8f6c7786c init: workaround SafetyNet check
+079af183e init: Weaken property override security for the init extension
+
+   * system/extras/
+a028afe5 ext4_utils: disable secure discard globally
+8c41b113 Add in gitreview file
+
+   * system/vold/
+615a0e2 Utils: Add missing exfat
 
 ====================
      12-15-2019
@@ -363,37 +443,4 @@ d23a3dc update .gitreview
 
    * packages/services/Telecomm/
 140c677c Telecom: Adapt to the new location of SensitivePhoneNumbers
-
-====================
-     12-02-2019
-====================
-
-
-   * frameworks/base/
-21103d83276 Ambient brightness values: use a custom system setting [1/2]
-3db2209ee1c base: add option to enable AOD on charging only [1/2]
-cb9a8dcf8b5 CustomDoze: Fix custom gestures not working if default pulsing is disabled [1/2]
-a34b18280bd base: add missing handling of DISMISS_KEYGUARD_EXTRA_INTENT
-736d544cf9b Merge "SystemUI: handle camera launch gesture from keyhandler" into q
-
-   * hardware/qcom-caf/common/
-7becaa9 Simplify and fix AOSP guard
-
-   * packages/apps/CustomDoze/
-c5b970b Fix build for Q commits
-e5fe7df CustomDoze: Remove TiltSensor latency
-d29d55c CustomDoze: Update styles for Android 10
-2b513d0 Remove edittext option
-ac260b4 CustomDoze: Adapt to AndroidX
-99479d5 CustomDoze: Update AmbientDisplayConfiguration class path
-
-   * packages/apps/Settings/
-e35d5c6c65 AnimationSeekbar: Change default max and digits
-ffc3a1315b Settings: Convert AnimationScalePreference to CustomDialogPreferenceCompat
-9c4b6c3339 Settings: AnimationScale: Fix force close when not using english
-25a8dfee4f Settings: Use seekbar to allow setting arbitrary animation values
-
-   * system/core/
-7991b7c14 Merge "Make GetDeviceLockStatus() favor unlocked devices" into q
-428ddfbc7 Make GetDeviceLockStatus() favor unlocked devices
 
