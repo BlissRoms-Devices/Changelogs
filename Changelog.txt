@@ -1,4 +1,9 @@
 ====================
+     12-22-2019
+====================
+
+
+====================
      12-21-2019
 ====================
 
@@ -28,9 +33,6 @@ de348336bbd SystemUI: keyguard show charging watt
 ====================
 
 
-   * frameworks/base/
-78743742649 BatteryService: Add Warp charging support
-
    * lineage-sdk/
 6457d211 Battery light: 100% charged level (3/3)
 
@@ -40,12 +42,16 @@ d6b9cef Force Expanded Notifications [2/2]
    * system/core/
 734429aba healthd: Add WARP charger type
 
+   * vendor/qcom/opensource/fm-commonsys/
+6025831 FM: Add backward compatiblity support for oreo FM configs
+
 ====================
      12-19-2019
 ====================
 
 
    * frameworks/base/
+78743742649 BatteryService: Add Warp charging support
 c0f68947376 TypeClockController: Set shouldShowStatusArea to true
 53f51c9e66e Revert "SystemUI: Enable some notification related configs"
 30978902425 call log limit 500=>5000
@@ -341,18 +347,9 @@ c5c1655ce audio: Make platform_check_backends_match handle input devices as well
 ====================
 
 
-   * frameworks/base/
-7a755232711 Merge changes from topic "doze_stuff" into q
-b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
-
    * hardware/qcom/gps/
 b5d527d gps: Fix for buffer overrun crash at copying nmea string
 8704ff1 gps: msm8960: Fix compiler warnings
-
-   * manifest/
-6e14d65 Manifest for Android 10.0.0 Release 20 (QQ1C.191205.016.A1)
-78bc3f2 Manifest for Android 10.0.0 Release 19 (QQ1B.191205.012.A1)
-75d21f0 Manifest for Android 10.0.0 Release 18 (QQ1B.191205.011)
 
    * packages/apps/OmniStyle/
 ac89dee OmniStyle: Add itsaalex poison headers
@@ -367,6 +364,8 @@ c108d72 Update Space Headers
 5eebb5e tinycompress: Conditionally enable extended compress format
 
    * frameworks/base/
+7a755232711 Merge changes from topic "doze_stuff" into q
+b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
 2c0f0017ed7 Context-aware Bluetooth airplane mode
 98426e4e1d3 Graphics: Fix NPE in Gdrive
 6cb9b3715a9 GamingMode: Fix gaming mode from turning off instantly on some apps & games
@@ -393,6 +392,9 @@ c382d19 visualizer: Fix compiler warnings
 e89b24c msm8960: Add support for IPV6 in AGPS Interface
 
    * manifest/
+6e14d65 Manifest for Android 10.0.0 Release 20 (QQ1C.191205.016.A1)
+78bc3f2 Manifest for Android 10.0.0 Release 19 (QQ1B.191205.012.A1)
+75d21f0 Manifest for Android 10.0.0 Release 18 (QQ1B.191205.011)
 76fec4f manifest: Track tinycompress from BlissRoms
 
    * packages/apps/Blissify/
@@ -475,19 +477,4 @@ c705a77f9da base: Allow switching to drawable for qs icons
 
    * hardware/qcom-caf/msm8994/audio/
 2869d8e76 hal: fix media param not sent during gapless transition
-
-====================
-     12-07-2019
-====================
-
-
-   * frameworks/base/
-96f75d80a63 base: QS header improvements
-
-   * packages/apps/Blissify/
-9bf78d3 Add toggle for emergency affordance in power menu [2/2]
-
-   * vendor/bliss/
-44151a89 overlay: Enable help links in settings
-b88f77fb Ship Device Personalization Services
 
