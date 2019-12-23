@@ -1,10 +1,50 @@
 ====================
+     12-24-2019
+====================
+
+
+   * frameworks/base/
+56d60be02fc core: modify intent action for camera state [1/2]
+02b5d1f7a94 Set the Network Specifier on Emergency SUPL
+06f7b1e97ae LockSettingsService : Restrict access to getpassword API
+08b08b4497b Treat default value that wasn't found as empty value
+e7a3cd997f7 DataSwitchTile: collapse notification panel onClick
+66f2086ce1b fw/base: Hide lineage-sdk packages from checkapi
+9e83337f503 PackageManagerService: Avoid NPE in matchComponentForVerifier
+
+   * lineage-sdk/
+5988f86d lineage-sdk: Add camera intents for camera state [2/2]
+
+   * vendor/bliss/
+83a8b069 prebuilt: Remove bliss-governor.rc
+
+====================
      12-23-2019
 ====================
 
 
    * frameworks/base/
+e8d704ac0f2 Allow tuning of heaptargetutilization
+9552445bd2d Added features flash-call-on-waiting [1/3]
+d13e8a1192f  base: Optional screenshot type [1/2]
+b829ffa0bfd Display 'Warp charging' for warp charge in battery settings [1/2]
+41d410c0649 Display 'Dash charging' for dash charge in battery settings [1/2]
+ba789116dfc FODCircleView: Patch partial wakelock issues
+f65778ed5d3 FODCircleView: Fix position if cutout is hidden
+7a5c4e2c945 FODCircleView: Add partial wakelock on aod
+a7cece1d333 SystemUI: hide lock icon while dozing
 7da2f0a2861 Merge changes from topic "ambient-light" into q
+
+   * packages/apps/Blissify/
+e09325b Blissify: Added features flash-call-on-waiting [3/3]
+edf0daa Blissify: Optional screenshot type [2/2]
+
+   * packages/apps/Settings/
+9105fabc2a Settings: Display 'Warp charging' for warp charge in battery settings [2/2]
+d0ddc9f540 Settings: Display 'Dash charging' for dash charge in battery settings [2/2]
+
+   * packages/services/Telecomm/
+21aec4d7 Telecomm: Added features flash-call-on-waiting [2/3]
 
 ====================
      12-22-2019
@@ -401,6 +441,7 @@ c108d72 Update Space Headers
 5eebb5e tinycompress: Conditionally enable extended compress format
 
    * frameworks/base/
+b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
 2c0f0017ed7 Context-aware Bluetooth airplane mode
 98426e4e1d3 Graphics: Fix NPE in Gdrive
 6cb9b3715a9 GamingMode: Fix gaming mode from turning off instantly on some apps & games
@@ -467,26 +508,4 @@ e3a7b8445 Add in gitreview file
    * packages/apps/Recorder/
 a88190c Recorder: Move to /product
 67c21fd ScreenService: start recording on a background Thread
-
-====================
-     12-09-2019
-====================
-
-
-   * packages/apps/Contacts/
-378e4f133 Contacts: style fast scroll thumb like in Dialer
-eaa888c33 Contacts: add dark mode support
-
-   * packages/apps/Dialer/
-de95cc30e Dialer: theme fixes
-14439c7af Dialer: welcome to night mode
-50cd811d8 Add autorecord feature
-885804645 Dialer: Enable call recording for all
-
-   * packages/apps/Messaging/
-99dbc6a Dark theme: Clean up
-87afea3 Messaging: add night mode
-
-   * vendor/qcom/opensource/power/
-0db671a power: Follow symlinks when writing to dt2w toggle path
 
