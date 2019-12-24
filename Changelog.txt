@@ -1,4 +1,9 @@
 ====================
+     12-25-2019
+====================
+
+
+====================
      12-24-2019
 ====================
 
@@ -415,10 +420,6 @@ c5c1655ce audio: Make platform_check_backends_match handle input devices as well
 ====================
 
 
-   * frameworks/base/
-7a755232711 Merge changes from topic "doze_stuff" into q
-b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
-
    * hardware/qcom/gps/
 b5d527d gps: Fix for buffer overrun crash at copying nmea string
 8704ff1 gps: msm8960: Fix compiler warnings
@@ -426,7 +427,6 @@ b5d527d gps: Fix for buffer overrun crash at copying nmea string
    * manifest/
 6e14d65 Manifest for Android 10.0.0 Release 20 (QQ1C.191205.016.A1)
 78bc3f2 Manifest for Android 10.0.0 Release 19 (QQ1B.191205.012.A1)
-75d21f0 Manifest for Android 10.0.0 Release 18 (QQ1B.191205.011)
 
    * packages/apps/OmniStyle/
 ac89dee OmniStyle: Add itsaalex poison headers
@@ -441,6 +441,7 @@ c108d72 Update Space Headers
 5eebb5e tinycompress: Conditionally enable extended compress format
 
    * frameworks/base/
+7a755232711 Merge changes from topic "doze_stuff" into q
 b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
 2c0f0017ed7 Context-aware Bluetooth airplane mode
 98426e4e1d3 Graphics: Fix NPE in Gdrive
@@ -468,6 +469,7 @@ c382d19 visualizer: Fix compiler warnings
 e89b24c msm8960: Add support for IPV6 in AGPS Interface
 
    * manifest/
+75d21f0 Manifest for Android 10.0.0 Release 18 (QQ1B.191205.011)
 76fec4f manifest: Track tinycompress from BlissRoms
 
    * packages/apps/Blissify/
@@ -480,32 +482,4 @@ a47ee10 Revert "Allow to change default Ambient brightness values"
 
    * vendor/bliss/
 50263b72 soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT
-
-====================
-     12-10-2019
-====================
-
-
-   * frameworks/base/
-dc0a1028c02 SystemUI: Add reboot fastboot to power menu
-
-   * hardware/qcom-caf/msm8996/audio/
-f21f0db5c ultrasound: Use log/log.h instead of cutils/log.h
-6e10133c1 hal: Add open source HAL for Elliptic Ultrasound
-
-   * lineage-sdk/
-2f6a701b sdk: Add GLOBAL_ACTION_KEY_RESTART_FASTBOOT
-
-   * manifest/
-cedb7f4 Track out Contacts repo
-
-   * packages/apps/Blissify/
-18df3eb Fix hiding lock screen statusbar
-
-   * packages/apps/Contacts/
-e3a7b8445 Add in gitreview file
-
-   * packages/apps/Recorder/
-a88190c Recorder: Move to /product
-67c21fd ScreenService: start recording on a background Thread
 
