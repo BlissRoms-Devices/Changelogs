@@ -1,7 +1,38 @@
 ====================
+     12-27-2019
+====================
+
+
+   * frameworks/base/
+8ec1c8e0e47 SystsmUI: gesture mode navbar nitpick
+b37c2ba7e0d FWB: Sensor block per-package switch (1/2)
+eb7fd3c1171 ActivityManagerService: dont be so hectic on cpu battery stats
+e94eb7958d3 Update date on keyguard when ticking past midnight
+d6529940fba SystemUI: Improve QS header info layout
+ce106b04bd5 base: Persistent settings icon on qs panel for 10.x
+76173fc2f12 FrameworkBase: Fix NullPointerException of AMS
+40d71913394 TypeClock: Fix wrong translations of Fifteen in english specifications
+0156c5a9ae9 overlay: Rename the icon pack overlays to pixel names
+
+   * packages/apps/Blissify/
+302e703 Blissify: Sensor block per-package switch [2/2]
+
+   * packages/apps/Settings/
+fa32dc609c FeatureFactoryImpl: Implement RoutinesActionBroadcastReceiver
+384d79f625 Merge changes Icd72b0be,Ic0058bc1,I2394bfd2,I21cbf992,Ib6449b4f into q
+
+====================
      12-26-2019
 ====================
 
+
+   * frameworks/base/
+3c3fb2ed99f SystemUI: Implement EnhancedEstimatesGoogleImpl
+8aa312ca0a4 SystemUI: Fod: Aod content should move only in Y
+77103259436 SystemUI: Update NotificationEntryManagerGoogle
+
+   * frameworks/native/
+088f212ca Add dalvik-heap device-configs for 4/6GB devices
 
 ====================
      12-25-2019
@@ -24,6 +55,13 @@ e7a3cd997f7 DataSwitchTile: collapse notification panel onClick
 
    * lineage-sdk/
 5988f86d lineage-sdk: Add camera intents for camera state [2/2]
+
+   * packages/apps/Settings/
+ec9a35e9b4 Settings: Address a memory leak
+1c424801bb RadioInfo: update preferred networks list with global RIL values
+d0beefddc9  FeatureFactoryImpl: Initial import of ContextualCardProvider
+3098374ae8 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
+18b06686d6 FeatureFactoryImpl: ApplicationFeatureProviderGoogleImpl: Remove com.android.packageinstaller from keepEnabledPackages
 
    * vendor/bliss/
 83a8b069 prebuilt: Remove bliss-governor.rc
@@ -419,26 +457,4 @@ c5c1655ce audio: Make platform_check_backends_match handle input devices as well
    * packages/apps/Settings/
 795f7fe23e Settings: Enable App Info Memory Settings
 1c948ed7a6 Settings: config: Enable support and help links
-
-====================
-     12-12-2019
-====================
-
-
-   * frameworks/base/
-7a755232711 Merge changes from topic "doze_stuff" into q
-b1efbf1e2c8 Merge "SystemUI: Add reboot fastboot to power menu" into q
-
-   * hardware/qcom/gps/
-b5d527d gps: Fix for buffer overrun crash at copying nmea string
-8704ff1 gps: msm8960: Fix compiler warnings
-
-   * manifest/
-6e14d65 Manifest for Android 10.0.0 Release 20 (QQ1C.191205.016.A1)
-78bc3f2 Manifest for Android 10.0.0 Release 19 (QQ1B.191205.012.A1)
-75d21f0 Manifest for Android 10.0.0 Release 18 (QQ1B.191205.011)
-
-   * packages/apps/OmniStyle/
-ac89dee OmniStyle: Add itsaalex poison headers
-c108d72 Update Space Headers
 
