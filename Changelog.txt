@@ -1,9 +1,31 @@
 ====================
+     12-28-2019
+====================
+
+
+   * build/make/
+f0459a37f build: fix Lzma prebuilt tools path
+
+   * frameworks/base/
+731f2bb424f Package installer: show current and new version on apk installation
+cd18e87201a PM: Signature spoofing [1/2]
+
+   * manifest/
+94b7b85 manifest: track WallpaperPicker2
+3743245 manifest: Switch to our system/keymaster fork
+
+   * packages/apps/WallpaperPicker2/
+6a90d04 Add .gitreview
+
+====================
      12-27-2019
 ====================
 
 
    * frameworks/base/
+e895b37ed97 audioservice:fix voice_call default volume
+4cd259b81cf NotificationService causes watchdog issues and improves performance
+24730175e26 TunerServiceImpl: Add another key to blacklist
 8ec1c8e0e47 SystsmUI: gesture mode navbar nitpick
 b37c2ba7e0d FWB: Sensor block per-package switch (1/2)
 eb7fd3c1171 ActivityManagerService: dont be so hectic on cpu battery stats
@@ -15,11 +37,15 @@ ce106b04bd5 base: Persistent settings icon on qs panel for 10.x
 0156c5a9ae9 overlay: Rename the icon pack overlays to pixel names
 
    * packages/apps/Blissify/
+8e50a29 Blissify: Signature spoofing [2/2]
 302e703 Blissify: Sensor block per-package switch [2/2]
 
    * packages/apps/Settings/
 fa32dc609c FeatureFactoryImpl: Implement RoutinesActionBroadcastReceiver
 384d79f625 Merge changes Icd72b0be,Ic0058bc1,I2394bfd2,I21cbf992,Ib6449b4f into q
+
+   * vendor/bliss/
+fd84a6e0 Enable gestural navigation by default
 
 ====================
      12-26-2019
@@ -441,20 +467,4 @@ ecda7d31 Merge tag 'android-10.0.0_r20' into q
 
    * system/vold/
 c60f96b Merge tag 'android-10.0.0_r20' into q
-
-====================
-     12-13-2019
-====================
-
-
-   * frameworks/base/
-b1eb3da8289 SystemUI: Show wifi indicator for ON but not connected
-052a98ee23d SystemUI: Enable some notification related configs
-
-   * hardware/qcom-caf/msm8998/audio/
-c5c1655ce audio: Make platform_check_backends_match handle input devices as well
-
-   * packages/apps/Settings/
-795f7fe23e Settings: Enable App Info Memory Settings
-1c948ed7a6 Settings: config: Enable support and help links
 
