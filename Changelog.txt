@@ -1,4 +1,12 @@
 ====================
+     12-29-2019
+====================
+
+
+   * manifest/
+69811e9 Merge "manifest: Cleanup" into q
+
+====================
      12-28-2019
 ====================
 
@@ -7,6 +15,7 @@
 f0459a37f build: fix Lzma prebuilt tools path
 
    * frameworks/base/
+a41183e6014 Support NR when creating cell info.
 731f2bb424f Package installer: show current and new version on apk installation
 cd18e87201a PM: Signature spoofing [1/2]
 
@@ -14,7 +23,21 @@ cd18e87201a PM: Signature spoofing [1/2]
 94b7b85 manifest: track WallpaperPicker2
 3743245 manifest: Switch to our system/keymaster fork
 
+   * packages/apps/Settings/
+20872ab7be Settings: fix hardcoded black text in storage summary
+
+   * packages/apps/ThemePicker/
+7574e38 ThemePicker: Fix font sample margin/padding
+70642fa ThemePicker: Enable vertical scrollbar for options container
+3f140fe ThemePicker: limit number of icon previews shown
+a2f3dfa Require wallpaper privapp whitelist package
+04ca428 ThemeFragment: handle case where no custom wallpaper is available
+cd7439f ThemePicker:  bugfixes and make this thing more robust
+
    * packages/apps/WallpaperPicker2/
+4be34e1 WallpaperPicker2: Improve wallpaper category title style
+fe40b59 WallpaperPicker2: Don't export TopLevelPickerActivity
+0cd4c0d WallpaperPicker2: Remove launcher activity
 6a90d04 Add .gitreview
 
 ====================
@@ -417,54 +440,4 @@ e6b6d37 Merge tag 'android-10.0.0_r20' into q
 
    * packages/apps/Settings/
 ff41a2dd26 Enable fingerprint swipe gestures by default [2/2]
-
-====================
-     12-14-2019
-====================
-
-
-   * frameworks/av/
-c8d781e61 Merge tag 'android-10.0.0_r20' into q
-
-   * frameworks/base/
-ee82c254ce8 LiveWallpaperScrimController: Fix after r20 merge
-d9e31ff5f74 SystemUI: Fix SystemUIGoogle after r20 merge
-f00c7545e80 Merge tag 'android-10.0.0_r20' into q
-
-   * frameworks/native/
-489fe66b0 Merge tag 'android-10.0.0_r20' into q
-
-   * frameworks/opt/telephony/
-b96a4c14e Merge tag 'android-10.0.0_r20' into q
-
-   * hardware/interfaces/
-641cc643d Merge tag 'android-10.0.0_r20' into q
-
-   * packages/apps/Contacts/
-9ba7680dc Merge tag 'android-10.0.0_r20' into q
-
-   * packages/apps/DocumentsUI/
-ea50a49d3 Merge tag 'android-10.0.0_r20' into q
-
-   * packages/apps/Nfc/
-985e3455 Merge tag 'android-10.0.0_r20' into q
-
-   * packages/apps/Settings/
-069f150ec8 Merge tag 'android-10.0.0_r20' into q
-b003d01009 Revert "Settings: Don't translate configs"
-
-   * packages/apps/ThemePicker/
-6db74e4 Merge tag 'android-10.0.0_r20' into q
-
-   * packages/providers/MediaProvider/
-a27be8a Merge tag 'android-10.0.0_r20' into q
-
-   * system/bt/
-267299699 Merge tag 'android-10.0.0_r20' into q
-
-   * system/extras/
-ecda7d31 Merge tag 'android-10.0.0_r20' into q
-
-   * system/vold/
-c60f96b Merge tag 'android-10.0.0_r20' into q
 
