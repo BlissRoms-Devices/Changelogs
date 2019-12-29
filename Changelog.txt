@@ -1,10 +1,31 @@
 ====================
+     12-30-2019
+====================
+
+
+   * frameworks/base/
+ec49b4109ce FWB: Statusbar weather [1/2]
+
+   * hardware/qcom-caf/msm8994/display/
+91b8d2d1e Make hwc_vsync thread realtime
+
+   * hardware/qcom-caf/msm8998/audio/
+118d40885 ultrasound: Update for new persist path
+
+   * packages/apps/Blissify/
+cda8379 Merge "Statusbar weather [2/2]" into q
+
+====================
      12-29-2019
 ====================
 
 
    * manifest/
 69811e9 Merge "manifest: Cleanup" into q
+
+   * packages/apps/Blissify/
+d2fdf74 Blissify: flashlight blink: fix disable option not working
+256b73a Statusbar weather [2/2]
 
 ====================
      12-28-2019
@@ -407,37 +428,4 @@ a028afe5 ext4_utils: disable secure discard globally
 
    * system/vold/
 615a0e2 Utils: Add missing exfat
-
-====================
-     12-15-2019
-====================
-
-
-   * frameworks/av/
-d62e355c6 CamcorderProfiles: Add 8KUHD camcorder profile
-
-   * frameworks/base/
-ebbbe791773 Revert "Apply front scrim to doze pulsing"
-cbeae75c508 Fix protected broadcast error for doze intents
-ba0d8249659 Fix share and delete actions
-00f838c5533 Update file saving to work with Q changes
-851ee116b8a SystemUI: remove unnecessary recent apps transition
-bd237af8aba Use mContext directly
-3fbcd3d0372 Prevent NPE due to unchecked r.uid
-75ed9f7fd4d CameraServiceProxy: Improve code for camera state intent
-a15d69c7193 SystemUI: Reduce padding between battery & signal
-1db8c37b9c8 MediaRecorder: add more quality checks for time-lapse recording
-31adeffded6 CamcorderProfiles: Add 8KUHD camcorder profile
-1d5e6aedc3f Enable fingerprint swipe gestures by default [1/2]
-f9e11c1d71c biometrics: Allow posting reset runnable for all clients
-463191eab7b Revert "Revert "Fix enumerate corner case""
-
-   * manifest/
-e6b6d37 Merge tag 'android-10.0.0_r20' into q
-
-   * packages/apps/PermissionController/
-1ff7e895 Merge tag 'android-10.0.0_r20' into q
-
-   * packages/apps/Settings/
-ff41a2dd26 Enable fingerprint swipe gestures by default [2/2]
 
