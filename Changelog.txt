@@ -1,4 +1,9 @@
 ====================
+     12-31-2019
+====================
+
+
+====================
      12-30-2019
 ====================
 
@@ -44,6 +49,9 @@ cd18e87201a PM: Signature spoofing [1/2]
 94b7b85 manifest: track WallpaperPicker2
 3743245 manifest: Switch to our system/keymaster fork
 
+   * packages/apps/Blissify/
+256b73a Statusbar weather [2/2]
+
    * packages/apps/Settings/
 20872ab7be Settings: fix hardcoded black text in storage summary
 
@@ -60,6 +68,9 @@ cd7439f ThemePicker:  bugfixes and make this thing more robust
 fe40b59 WallpaperPicker2: Don't export TopLevelPickerActivity
 0cd4c0d WallpaperPicker2: Remove launcher activity
 6a90d04 Add .gitreview
+
+   * vendor/bliss/
+321705d5 vendor: Update gapps from Pixel 4 XL
 
 ====================
      12-27-2019
@@ -393,39 +404,4 @@ b78b0f4c incall vibration options [2/3]
 
    * system/core/
 930dd5e41 Merge tag 'android-10.0.0_r20' into q
-
-====================
-     12-16-2019
-====================
-
-
-   * build/make/
-74e68c4bb Merge tag 'android-10.0.0_r20' into r20
-
-   * packages/apps/Contacts/
-baa417e03 Contacts: Remove unused boolean resource
-4ff579304 Contacts: Up minimum SDK to 26
-beb1846be Contacts: update splash screen to match the new icon
-a439ada8f Contacts: adaptive icon
-
-   * packages/apps/Dialer/
-0872343cb Add toggle for post call snackbar
-d9b2f026b Dialer: use system round corner values for searchbox
-
-   * system/core/
-4f1b46d2c Shut up camera and wcnss debug output
-a6237956d Filter GalleryDatab*
-d348152fc Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
-a997fa069 init: ro.build.selinux should be 0
-e814a4fc4 init: add several more keys to spoof
-870c45b2a fs_mgr: run fsck.f2fs with -f option when full mount fails
-8f6c7786c init: workaround SafetyNet check
-079af183e init: Weaken property override security for the init extension
-
-   * system/extras/
-a028afe5 ext4_utils: disable secure discard globally
-8c41b113 Add in gitreview file
-
-   * system/vold/
-615a0e2 Utils: Add missing exfat
 
