@@ -1,7 +1,40 @@
 ====================
+     01-01-2020
+====================
+
+
+   * frameworks/base/
+e114522a32d Disable Notifications vibration [1/2]
+5578cacd082 GamingMode: Option to disable notification feedback [1/2]
+bf509940471 GamingMode: option to disabe all headsup notifications [1/2]
+54d8e35e0b6 base: SystemUI: QS footer visibilities [1/2]
+139674ed5cf SystemUI: Use MD2 icon for running services in QS
+845f6ab73df Allow to quickly open Running Services from QS panel [1/2]
+
+   * packages/apps/Blissify/
+9ed48cb Disable Notifications vibration [2/2]
+dbe4afe GamingMode: Option to disable notification feedback [2/2]
+3cb5a0b GamingMode: option to disabe all headsup notifications [2/2]
+6a2e977 Blissify: QS footer visibilities [2/2]
+6e3713a Weather: Add switches to show city/temp on lockscreen [2/2]
+0d68a4d Blissify: categorize advanced statusbar icons
+
+====================
      12-31-2019
 ====================
 
+
+   * frameworks/base/
+1c87ba4764c Make volume dialog settings icon background play nicely with dark themes
+2ad5ea051d6 webview: Allow choosing the AOSP webview
+317659c7337 Weather: Add switches to show city/temp on lockscreen [1/2]
+120857a7046 base: SystemUI: make keyguard weather icon smaller
+8f7f93fdeff base: SystemUI: fix debug drawing lines for icon containers
+d966a2dc377 Weather tile longclick: alternative weather apps when google weather not installed
+b820dc380ce WeatherTile: Start Google Weather on LongClick
+
+   * packages/apps/Settings/
+7ecee8c61d Settings: Allow to quickly open Running Services from QS [2/2]
 
 ====================
      12-30-2019
@@ -48,9 +81,6 @@ cd18e87201a PM: Signature spoofing [1/2]
    * manifest/
 94b7b85 manifest: track WallpaperPicker2
 3743245 manifest: Switch to our system/keymaster fork
-
-   * packages/apps/Blissify/
-256b73a Statusbar weather [2/2]
 
    * packages/apps/Settings/
 20872ab7be Settings: fix hardcoded black text in storage summary
@@ -345,63 +375,4 @@ ca31c825 kernel: Only build dtb.img if prebuilt DTB directory is not set
 37af18aa bliss: GMS updater components disable list bringup
 2cf735e1 vendor: Rename config_disabledComponents
 c0725f8b privapp-permissions: Grant START_ACTIVITIES_FROM_BACKGROUND perm to Snap
-
-====================
-     12-17-2019
-====================
-
-
-   * frameworks/base/
-e28fff7c5f5 Typeface Clock: update thumbnail
-afcf42393a2 [BugFix]Fix enter deep doze when moving
-4e30ae5c9aa Remove DUN requirement for tethering
-1c868f0e3e0 QS columns/rows: fix rows not refreshing on setting change
-ebad3cb098b Grant Wellbeing the SUSPEND_APPS perm if already declared
-7155aa45454 Permissions: allow to grant permissions to more apps on dirty flash
-019cf4559b1 Merge changes from topics "call-vib", "flash" into q
-84ce9006328 incall vibration options [1/3]
-8f8fcb2b408 FWD_PORT: Add Flashlight blink on incoming calls [1/3]
-3ca58a42330 Merge changes from topic "brightness" into q
-81ee9bf690e Fix bluetooth icon has wrong color
-6b649f19053 Brightness slider: Visual improvements
-4bc17022e39 Brightness QS: Make +- buttons optional
-363271e65f9 Brightness slider + - buttons: use more granular values
-6e29d8d60d1 Refresh QS brightness icon and improve its touch area and padding
-289ca70e6b4 Multi-User fixes for brightness slider mod
-40a48acf773 Adapt custom brightness actions to BrightnessDialog
-a330ff5d8e1 Brightness slider: fixes and improvements
-2d437f886fa Brightness slider: Vibrate after a long press
-24a8173fdbd Brightness Buttons: Improve touch area
-3d82ad8f830 Brightness slider: improve hide/show animation
-f017b6312e0 Brightness buttons: make touch area more reliable
-63e91034a44 Brightness slider buttons: make them dynamic (auto and manual)
-a213bc28ac6 Brightness slider: fix FC and code cleanup
-85eb8b61b10 Make use of the brightness slider buttons
-af82888b38d Rework auto brightness implementation
-60ede27f2ba Fix brightness icon not showing
-152590e7763 Fix automatic brightness QS toggle icon
-e8c04e18558 SystemUI: auto brightness toggle improvements
-93e5d9e5c98 Revert "SystemUI: OOS style brightness slider design"
-
-   * packages/apps/Blissify/
-8256d79 incall vibration options [3/3]
-8d02a02 FWD_PORT: Add Flashlight blink on incoming calls [2/3]
-8dd8e9b Blissify: Brightness QS: Make +- buttons optional
-
-   * packages/apps/Contacts/
-98f65a4c4 Allow calling contacts via specific phone accounts.
-5b6f56108 Place EmergencyInfo shortcut on drawer
-3787221c1 Place MyInfo shortcut on drawer
-d40be6240 Contacts: Enable support for device contact.
-
-   * packages/apps/Dialer/
-f7a76ac88 Revert "Add back in-call vibration features"
-f5e08bb16 Revert "Generalize the in-call vibration settings category"
-
-   * packages/services/Telecomm/
-b78b0f4c incall vibration options [2/3]
-25663d13 Telecomm: FWD_PORT: Add Flashlight blink on incoming calls [3/3]
-
-   * system/core/
-930dd5e41 Merge tag 'android-10.0.0_r20' into q
 
