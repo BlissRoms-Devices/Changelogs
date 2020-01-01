@@ -1,4 +1,12 @@
 ====================
+     01-02-2020
+====================
+
+
+   * packages/apps/Blissify/
+7255a96 Blissify: fix fc for non fp devices
+
+====================
      01-01-2020
 ====================
 
@@ -63,7 +71,6 @@ cda8379 Merge "Statusbar weather [2/2]" into q
 
    * packages/apps/Blissify/
 d2fdf74 Blissify: flashlight blink: fix disable option not working
-256b73a Statusbar weather [2/2]
 
 ====================
      12-28-2019
@@ -81,6 +88,9 @@ cd18e87201a PM: Signature spoofing [1/2]
    * manifest/
 94b7b85 manifest: track WallpaperPicker2
 3743245 manifest: Switch to our system/keymaster fork
+
+   * packages/apps/Blissify/
+256b73a Statusbar weather [2/2]
 
    * packages/apps/Settings/
 20872ab7be Settings: fix hardcoded black text in storage summary
@@ -289,90 +299,4 @@ b0592591d41 Revert "SystemUI: Show wifi indicator for ON but not connected"
 
    * packages/apps/Blissify/
 43ac102 Blissify: Max Lockscreen Notification count [2/2]
-
-====================
-     12-18-2019
-====================
-
-
-   * bionic/
-d9fd1d478 Optimize tolower(3)/toupper(3) from <ctype.h>.
-df9d45636 ASCII fastpath for towupper and towlower.
-
-   * build/make/
-1ebf240f6 build: Allow overriding platform SPL
-9bdf895df build: Allow supplying a prebuilt recovery ramdisk cpio
-a6e663b16 build: make: allow modules to be installed to vendor_overlay
-f3d8aba5d releasetools: Implement system-mount script to support any recovery system mount
-a7a0145a5 build: Force system-as-root layout for backuptool
-faf4727ab releasetools: squash backuptool support
-d306ff1c3 check_boot_jars: Add CAF IMS to whitelist
-0ee1c25f5 build: Remove comment for abilist in build.prop
-ffa6cf829 build: Don't fail when trying to run 'export' cmd
-7a8112d5b build: Only set the default verity key as a fallback
-7336f038b Use 'release-keys' for build tag
-afe042cef build: Disable adding compatibility archive on treble builds
-bbe795200 libart: Turn off jit profiles and just use speed
-22d1a44e3 Make PRODUCT_BUILD_PROP_OVERRIDES bit more powerful
-9c157f5e5 core: allow specifying building ramdisk(s) with lzma
-a15a6c28f build: Remove su inclusion
-769ed0002 Edify: Add abort message for bootloader asserts
-c2f9ac7ac Allow setting the recovery density separately from the aapt config
-aad2ad127 Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES
-02da433cc build: Separate commands in recovery foreach loops
-514f5f8b1 build: recovery: Support adding device-specific items
-113b456ca Remove ro.bionic.ld.warning.
-
-   * build/soong/
-e8bb87c9 Don't add +2 to NumCPU() for number of jobs
-005c4791 Revert "Default to the status table output"
-babd9e0d soong: Add 'repo' to allowed commands
-f819b082 soong: Whitelist cpio for prebuilt ramdisk extraction
-
-   * frameworks/av/
-8d04c25da media utils: fix UAF in TimeCheckThread
-1864fe4cc av: camera: Allow disabling shutter sound for specific packages
-74cf62c14 cameraservice: move client_package_name to data/misc
-8cfafc2d6 libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO
-
-   * frameworks/base/
-1f2937b1853 DeviceInfoUtils: Prefer bliss platform SPL
-91b4ca1c3c6 Lockscreen charging info: show decimal in battery temperature
-
-   * lineage-sdk/
-28d403cc lineage-sdk: Drop root status of Trust
-
-   * manifest/
-9e5d366 manifest: track system/netd from blissroms
-
-   * packages/apps/LineageParts/
-42bcc08 LineageParts: Drop root status of Trust
-
-   * system/bt/
-b57e1ef55 Add support force disable sco enhanced sync commands
-0b733387f Revert "Add support to force disable enhanced sco commands"
-
-   * system/netd/
-59c1b63b netd: Allow devices to force-add directly-connected routes
-
-   * vendor/bliss/
-59ae9105 Revert "Ship Device Personalization Services"
-c10b2d27 overlay: Add GooglePermissionControllerOverlay
-24197446 PixelDocumentsUIGoogleOverlay: Don't let it be overwritten by DocumentsUIOverlay
-5ad58468 overlay: Add PixelDocumentsUIGoogleOverlay
-8e489c06 vendor: Add NexusWallpaperPrebuilt
-5da35005 overlay: Add microG unifiednlp location provider
-c5fa7a35 vendor: Update some props from Pixel
-0818a5f2 overlay: Clean up Settings overlay
-3b39d3e1 overlay: Update webview providers
-79343a82 prebuilt: Add a script to simplify A-only recovery system mount
-ea57ed6a vendor: soong: add target_needs_client_info
-4b76c628 vendor: Fix Miracast on all our devices
-97687ae5 config: Remove unnecessary persist.sys.dun.override
-0a2ed9a2 soong_config: add TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE
-1d9dd792 overlay: Use ntp.ntsc.ac.cn NTP server for Chinese users
-ca31c825 kernel: Only build dtb.img if prebuilt DTB directory is not set
-37af18aa bliss: GMS updater components disable list bringup
-2cf735e1 vendor: Rename config_disabledComponents
-c0725f8b privapp-permissions: Grant START_ACTIVITIES_FROM_BACKGROUND perm to Snap
 
