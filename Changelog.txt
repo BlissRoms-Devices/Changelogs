@@ -1,4 +1,9 @@
 ====================
+     01-03-2020
+====================
+
+
+====================
      01-02-2020
 ====================
 
@@ -278,25 +283,4 @@ d6b9cef Force Expanded Notifications [2/2]
 
    * vendor/qcom/opensource/fm-commonsys/
 6025831 FM: Add backward compatiblity support for oreo FM configs
-
-====================
-     12-19-2019
-====================
-
-
-   * frameworks/base/
-c0f68947376 TypeClockController: Set shouldShowStatusArea to true
-53f51c9e66e Revert "SystemUI: Enable some notification related configs"
-30978902425 call log limit 500=>5000
-e9c5432afcd ServiceRegistry: Don't throw an exception if OEM_LOCK is missing
-2bd2237825d Max Lockscreen Notification count [1/2]
-9840b8cf468 wm: Use a different execution context to register WFD rotation receiver
-f779014be11 wm::DisplayRotation: Changes for WFD and UIBC.
-450d7cbab6c TWS-A2DP: Add TWS+ codec to DevUI support
-ca592c0264a SystemUI: old style mobile data type indicator layout update
-74a4f5095b0 Merge "Revert "SystemUI: Show wifi indicator for ON but not connected"" into q
-b0592591d41 Revert "SystemUI: Show wifi indicator for ON but not connected"
-
-   * packages/apps/Blissify/
-43ac102 Blissify: Max Lockscreen Notification count [2/2]
 
