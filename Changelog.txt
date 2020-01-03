@@ -1,12 +1,60 @@
 ====================
+     01-04-2020
+====================
+
+
+   * frameworks/base/
+562f99b4fc0 QSFooter: fix drag handle
+023d713ea6a base: Add battery percentage and charging animation to solid battery style
+0f35e31d461 Merge changes from topic "ambi-vis-fix" into q
+300f36925a2 Merge "overlay: Intruduce Bliss Primary" into q
+
+   * packages/apps/Blissify/
+ec91cfc Blissify: Notch friendly Battery bar
+7f2443c Blissify: Clock: Enable center clock if using hide notch
+
+   * vendor/support/
+0eda407 support: Add seekbar and list settings preferences
+
+====================
      01-03-2020
 ====================
 
+
+   * frameworks/base/
+03d2691c235 BatteryMeterView: fix derp in custom charging symbol
+6d504763c74 SystemUI: Allow customizing footer text [1/2]
+b8e429fb872 overlay: Intruduce Bliss Primary
+
+   * packages/apps/Blissify/
+9fe8499 Blissify: Allow customizing footer text [1/2]
+8be86d1 Blissify: Add a toggle for QS footer text [2/2]
+7300225 Blissify: AmbientLight: update summary to show RGB value instead of ARGB
+
+   * packages/apps/Settings/
+9e5a0922ac Settings: Hide long press kill
+
+   * packages/apps/ThemePicker/
+f06dd1b ThemePicker: fix apply of empty primary overlay choices
+1a1116d ThemePicker: add support for primary overlays
+7a35833 ThemePicker: fix showing icon_pack options in compose style
+661052f Add in gitreview file
+
+   * vendor/support/
+5b4c48e support: ColorPicker: make it more user friendly
 
 ====================
      01-02-2020
 ====================
 
+
+   * frameworks/base/
+5b0f6935d77 base: Add a toggle for QS footer text [1/2]
+7f3c1ae5b62 SystemUI: Show something usefull in the QS footer
+1a379ca2550 Revert "SystemUI: Remove build version from qs footer"
+38e15104947 make Pulsing bright again
+9b8105d8ced Revert "LiveWallpaperScrimController: Fix after r20 merge"
+513d4e23c6b DO NOT MERGE Revert all scrim related changes in qpr
 
    * packages/apps/Blissify/
 7255a96 Blissify: fix fc for non fp devices
@@ -263,24 +311,4 @@ de348336bbd SystemUI: keyguard show charging watt
 
    * packages/apps/Settings/
 7bbb5cba64 Battery charge warning [2/2]
-
-====================
-     12-20-2019
-====================
-
-
-   * frameworks/base/
-78743742649 BatteryService: Add Warp charging support
-
-   * lineage-sdk/
-6457d211 Battery light: 100% charged level (3/3)
-
-   * packages/apps/Blissify/
-d6b9cef Force Expanded Notifications [2/2]
-
-   * system/core/
-734429aba healthd: Add WARP charger type
-
-   * vendor/qcom/opensource/fm-commonsys/
-6025831 FM: Add backward compatiblity support for oreo FM configs
 
