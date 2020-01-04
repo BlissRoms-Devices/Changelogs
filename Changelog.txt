@@ -1,4 +1,38 @@
 ====================
+     01-05-2020
+====================
+
+
+   * frameworks/base/
+2c9388b8b0f Add option to select VoLTE icon [1/2]
+ed4120bbd59 Revert "SystemUI: Add optional notch friendly VoLTE icon"
+382359bb08b overlays: Add back IconShapeSquareOverlay
+37efb59b087 Add hexagon and cylinder icon shape overlays
+783dae101df Update default config for headline fonts
+727af8c3b1e Update Google Sans font style [1/2]
+b8a3e9fc65e Add Google Sans and Comic Sans font styles [1/2]
+4e9b1c17127 Add semi bold font alias for custom fonts
+8774b6263e3 Wire up default fonts with font engine
+0e92901be10 Add OnePlus Slate and SamsungOne font styles [1/2]
+fbae1452313 Add our favourite fonts in AOSP FontEngine [2/2]
+4af4c65494e Bring some of the primary colors from Bliss Pie
+
+   * packages/apps/Blissify/
+c0e2f5d Add option to select VoLTE icon [2/2]
+
+   * packages/apps/ThemePicker/
+6d5bf08 ThemePicker: Showcase the Font name
+
+   * vendor/bliss/
+da18493e Initial night overlays
+
+   * vendor/themes/
+34d32a9 Update Google Sans font style [2/2]
+28248b3 Add Google Sans and Comic Sans font styles [2/2]
+69000b6 Add OnePlus Slate and SamsungOne font styles [2/2]
+5a42faf Add our favourite fonts in AOSP FontEngine [1/2]
+
+====================
      01-04-2020
 ====================
 
@@ -286,29 +320,4 @@ ed02735a770 Add Restart SystemUI button on Advanced Restart Menu (1/2)
    * packages/apps/Blissify/
 cda97f8 Blissify: Allow changing duration of ambient edge light [2/2]
 dcdebcc Blissify: Add auto color option for edge lightning [2/2]
-
-====================
-     12-21-2019
-====================
-
-
-   * frameworks/base/
-c5d22ddaef1 Battery charge warning [1/2]
-0f58cd63cc2 Revert "base: themes: dont use colorPrimary for active qs"
-5cd19eff891 Cache pin algorithms in PinSet
-da35a0471f1 Cache the global proxy to avoid fetching it for every request
-c0e9312332b Cache KeyStoreService
-f2dfb0c0532 (Point) Only calculate sin and cos once
-367aad4e409 SystemUI: fix black screen now also for pulse
-8212b6a9705 SystemUI: fix qs footer side margin
-2819bbb4513 SystemUI: make security footer height same as general footer
-880d01d873e Force Expanded Notifications [1/2]
-2a3afcbdd4a SystemUI: Show keyguard charging animation on AOD
-de348336bbd SystemUI: keyguard show charging watt
-
-   * packages/apps/LineageParts/
-48d05a1 Battery light: 100% charged level (2/3)
-
-   * packages/apps/Settings/
-7bbb5cba64 Battery charge warning [2/2]
 
