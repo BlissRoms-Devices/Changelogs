@@ -1,4 +1,23 @@
 ====================
+     01-08-2020
+====================
+
+
+   * frameworks/base/
+577708572e5 base: Add back bliss fod icon
+c1be9d0f0ca SystemUI: Add more FOD icons [1/2]
+d543f513374 add wallpaper color option for FOD icon [1/2]
+9a3254f64a3 SystemUI: FOD icon picker [1/2]
+ca9bddb022a Revert "Change default fod icon"
+
+   * packages/apps/Blissify/
+a2c6eab Blissify: Add our bliss fod icon
+d4ceec9 add wallpaper color option for FOD icon [2/2]
+73bb131 Blissify: FOD icon picker: adjust items spacing
+c0b2628 Blissify: Add more FOD icons [2/2]
+5e61920 FOD icon picker [2/2]
+
+====================
      01-07-2020
 ====================
 
@@ -101,6 +120,8 @@ ea1d3ed Blissify: update old style mobile data indicators [2/2]
 44357ac Add toggle to hide lock icon on lockscreen [2/2]
 
    * vendor/support/
+2ac0c54 CustomSeekBar: Fix loading defaultValueText from strings
+d909d50 CustomSeekBar: Dont format string for defaultValueText
 4fb1990 CustomSeekBar: Add defaultValueText attribute
 ce4de09 support: Update global settings switch
 
@@ -355,31 +376,4 @@ fd84a6e0 Enable gestural navigation by default
      12-25-2019
 ====================
 
-
-====================
-     12-24-2019
-====================
-
-
-   * frameworks/base/
-56d60be02fc core: modify intent action for camera state [1/2]
-02b5d1f7a94 Set the Network Specifier on Emergency SUPL
-06f7b1e97ae LockSettingsService : Restrict access to getpassword API
-08b08b4497b Treat default value that wasn't found as empty value
-e7a3cd997f7 DataSwitchTile: collapse notification panel onClick
-66f2086ce1b fw/base: Hide lineage-sdk packages from checkapi
-9e83337f503 PackageManagerService: Avoid NPE in matchComponentForVerifier
-
-   * lineage-sdk/
-5988f86d lineage-sdk: Add camera intents for camera state [2/2]
-
-   * packages/apps/Settings/
-ec9a35e9b4 Settings: Address a memory leak
-1c424801bb RadioInfo: update preferred networks list with global RIL values
-d0beefddc9  FeatureFactoryImpl: Initial import of ContextualCardProvider
-3098374ae8 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
-18b06686d6 FeatureFactoryImpl: ApplicationFeatureProviderGoogleImpl: Remove com.android.packageinstaller from keepEnabledPackages
-
-   * vendor/bliss/
-83a8b069 prebuilt: Remove bliss-governor.rc
 
