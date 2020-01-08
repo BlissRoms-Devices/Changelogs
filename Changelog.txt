@@ -1,9 +1,24 @@
 ====================
+     01-09-2020
+====================
+
+
+   * frameworks/base/
+e0196edcf2a base: add accent clocks from pie
+9e5e9d51f8b [1/2] Add sammy accent clock and a variant
+dce40c542cd lockscreen : Add small size style [1/2]
+c25f2d51520 Introduce lockscreen clock/date styles [1/2]
+
+   * packages/apps/Blissify/
+58357a1 Introduce lockscreen clock/date styles [2/2]
+
+====================
      01-08-2020
 ====================
 
 
    * frameworks/base/
+5dd6563b3b6 Gesture nav Assistant handles: don't show them in lockscreen
 577708572e5 base: Add back bliss fod icon
 c1be9d0f0ca SystemUI: Add more FOD icons [1/2]
 d543f513374 add wallpaper color option for FOD icon [1/2]
@@ -371,9 +386,4 @@ fd84a6e0 Enable gestural navigation by default
 
    * frameworks/native/
 088f212ca Add dalvik-heap device-configs for 4/6GB devices
-
-====================
-     12-25-2019
-====================
-
 
