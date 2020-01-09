@@ -1,15 +1,27 @@
 ====================
+     01-10-2020
+====================
+
+
+   * frameworks/base/
+c573455e1d9 TypeClock: Apply Lockscreen clock font to Type clock
+
+====================
      01-09-2020
 ====================
 
 
    * frameworks/base/
+7f1437afd01 Lockscreen Date Font Style [1/2]
+c455f3afccf Lockscreen Clock Widget Font Style [1/2]
 e0196edcf2a base: add accent clocks from pie
 9e5e9d51f8b [1/2] Add sammy accent clock and a variant
 dce40c542cd lockscreen : Add small size style [1/2]
 c25f2d51520 Introduce lockscreen clock/date styles [1/2]
 
    * packages/apps/Blissify/
+38422cf Lockscreen Date Font Style [2/2]
+2180d00 Lockscreen Clock Widget Font Style [2/2]
 58357a1 Introduce lockscreen clock/date styles [2/2]
 
 ====================
@@ -373,17 +385,4 @@ fa32dc609c FeatureFactoryImpl: Implement RoutinesActionBroadcastReceiver
 
    * vendor/bliss/
 fd84a6e0 Enable gestural navigation by default
-
-====================
-     12-26-2019
-====================
-
-
-   * frameworks/base/
-3c3fb2ed99f SystemUI: Implement EnhancedEstimatesGoogleImpl
-8aa312ca0a4 SystemUI: Fod: Aod content should move only in Y
-77103259436 SystemUI: Update NotificationEntryManagerGoogle
-
-   * frameworks/native/
-088f212ca Add dalvik-heap device-configs for 4/6GB devices
 
