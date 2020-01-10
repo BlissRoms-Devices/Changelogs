@@ -1,10 +1,27 @@
 ====================
+     01-11-2020
+====================
+
+
+   * frameworks/base/
+06d0b797ec1 base: Lockscreen Clock: Use Tuner Api
+b109cdf686a KeyguardStatusView: Update TunerApi usage
+98d38cc0283 Merge changes from topic "font" into q
+
+   * packages/apps/Blissify/
+cd72f1a Blissify: Move the clock and font options together
+9fd8b2c Blissify: refactor Lockscreen clock/date styles
+
+====================
      01-10-2020
 ====================
 
 
    * frameworks/base/
 c573455e1d9 TypeClock: Apply Lockscreen clock font to Type clock
+ab9ef0d2fc3 Restore light font styling of AOSP
+68382fdab5d Add new font config to font overlays
+364fe9a7e34 Add regular / light font config
 
 ====================
      01-09-2020
@@ -355,34 +372,4 @@ fe40b59 WallpaperPicker2: Don't export TopLevelPickerActivity
 
    * vendor/bliss/
 321705d5 vendor: Update gapps from Pixel 4 XL
-
-====================
-     12-27-2019
-====================
-
-
-   * frameworks/base/
-e895b37ed97 audioservice:fix voice_call default volume
-4cd259b81cf NotificationService causes watchdog issues and improves performance
-24730175e26 TunerServiceImpl: Add another key to blacklist
-8ec1c8e0e47 SystsmUI: gesture mode navbar nitpick
-b37c2ba7e0d FWB: Sensor block per-package switch (1/2)
-eb7fd3c1171 ActivityManagerService: dont be so hectic on cpu battery stats
-e94eb7958d3 Update date on keyguard when ticking past midnight
-d6529940fba SystemUI: Improve QS header info layout
-ce106b04bd5 base: Persistent settings icon on qs panel for 10.x
-76173fc2f12 FrameworkBase: Fix NullPointerException of AMS
-40d71913394 TypeClock: Fix wrong translations of Fifteen in english specifications
-0156c5a9ae9 overlay: Rename the icon pack overlays to pixel names
-
-   * packages/apps/Blissify/
-8e50a29 Blissify: Signature spoofing [2/2]
-302e703 Blissify: Sensor block per-package switch [2/2]
-
-   * packages/apps/Settings/
-fa32dc609c FeatureFactoryImpl: Implement RoutinesActionBroadcastReceiver
-384d79f625 Merge changes Icd72b0be,Ic0058bc1,I2394bfd2,I21cbf992,Ib6449b4f into q
-
-   * vendor/bliss/
-fd84a6e0 Enable gestural navigation by default
 
