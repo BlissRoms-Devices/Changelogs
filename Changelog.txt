@@ -1,9 +1,36 @@
 ====================
+     01-12-2020
+====================
+
+
+   * frameworks/base/
+5fa7beee853 DozeUi: do not prepare for gentle wakeup
+900000de3f8 SystemUI: KeyguardBottomAreaView: fix Fod check
+c31c37e99a9 TypeClock: Update Ambient Clock layout
+390bba41b9b base: QS themes [1/2]
+88159303e03 SystemUI: add vibration tick when opening notification panel
+d211d22f8c3 FODCircleView: place above other UI elements
+9b5b82c1af6 FODCircleView: rewrite and simplify implementation
+
+   * packages/apps/Blissify/
+b11871e Blissify: QS themes [2/2]
+7cf1885 Blissify: clock/date: Add more Font Styles [2/2]
+
+   * packages/apps/CustomDoze/
+b432651 Revert "CustomDoze: Simplify double tap switch"
+
+====================
      01-11-2020
 ====================
 
 
    * frameworks/base/
+81bbaa486f1 base: clock/date: Add more Font Styles [1/2]
+596cd5a790a base: Hide pill in full gestural nav mode [1/2]
+6c445d3091b aapt2: silence positional arguments warnings
+5825cf496e3 SystemUI: allow setting custom cutout shapes
+288f2d39d91 Revert "NotificationService causes watchdog issues and improves performance"
+b28b73b14d6 Default Clock preview: Add a static widget
 06d0b797ec1 base: Lockscreen Clock: Use Tuner Api
 b109cdf686a KeyguardStatusView: Update TunerApi usage
 98d38cc0283 Merge changes from topic "font" into q
@@ -11,6 +38,12 @@ b109cdf686a KeyguardStatusView: Update TunerApi usage
    * packages/apps/Blissify/
 cd72f1a Blissify: Move the clock and font options together
 9fd8b2c Blissify: refactor Lockscreen clock/date styles
+
+   * packages/apps/Settings/
+cd8bcffe51 Settings: Fixes sound panel create multiple SoundSettings activity
+3e5a01705a Settings: Move the hide pill toggle to gesture settings dialog
+cdad91332b Settings: Hide pill in full gestural nav mode [2/2]
+76f89f146f Settings: Use global fonts in styles
 
 ====================
      01-10-2020
@@ -332,44 +365,4 @@ cda8379 Merge "Statusbar weather [2/2]" into q
 
    * packages/apps/Blissify/
 d2fdf74 Blissify: flashlight blink: fix disable option not working
-
-====================
-     12-28-2019
-====================
-
-
-   * build/make/
-f0459a37f build: fix Lzma prebuilt tools path
-
-   * frameworks/base/
-a41183e6014 Support NR when creating cell info.
-731f2bb424f Package installer: show current and new version on apk installation
-cd18e87201a PM: Signature spoofing [1/2]
-
-   * manifest/
-94b7b85 manifest: track WallpaperPicker2
-3743245 manifest: Switch to our system/keymaster fork
-
-   * packages/apps/Blissify/
-256b73a Statusbar weather [2/2]
-
-   * packages/apps/Settings/
-20872ab7be Settings: fix hardcoded black text in storage summary
-
-   * packages/apps/ThemePicker/
-7574e38 ThemePicker: Fix font sample margin/padding
-70642fa ThemePicker: Enable vertical scrollbar for options container
-3f140fe ThemePicker: limit number of icon previews shown
-a2f3dfa Require wallpaper privapp whitelist package
-04ca428 ThemeFragment: handle case where no custom wallpaper is available
-cd7439f ThemePicker:  bugfixes and make this thing more robust
-
-   * packages/apps/WallpaperPicker2/
-4be34e1 WallpaperPicker2: Improve wallpaper category title style
-fe40b59 WallpaperPicker2: Don't export TopLevelPickerActivity
-0cd4c0d WallpaperPicker2: Remove launcher activity
-6a90d04 Add .gitreview
-
-   * vendor/bliss/
-321705d5 vendor: Update gapps from Pixel 4 XL
 
