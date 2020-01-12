@@ -1,4 +1,43 @@
 ====================
+     01-13-2020
+====================
+
+
+   * build/make/
+dc6de07d1 Merge tag 'android-10.0.0_r23' into q
+
+   * frameworks/base/
+7b27b8a3470 KeyguardSliceView: adjust placement when Type clock is in use
+c718c59d4fe Merge tag 'android-10.0.0_r23' into q
+
+   * frameworks/native/
+ebfd3cd51 Merge tag 'android-10.0.0_r23' into q
+
+   * manifest/
+f906796 Merge tag 'android-10.0.0_r23' into q
+
+   * packages/apps/Settings/
+e62ec5147e Merge tag 'android-10.0.0_r23' into q
+
+   * packages/providers/DownloadProvider/
+e195399a Merge tag 'android-10.0.0_r23' into q
+
+   * packages/services/Telecomm/
+8774ba6c Merge tag 'android-10.0.0_r23' into q
+
+   * packages/services/Telephony/
+1ca27f26e Merge tag 'android-10.0.0_r23' into q
+
+   * system/sepolicy/
+945c91fe Merge tag 'android-10.0.0_r23' into q
+
+   * system/update_engine/
+585442ab Merge tag 'android-10.0.0_r23' into q
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr/
+1f70a86 Merge branch 'lineage-17.1' into q
+
+====================
      01-12-2020
 ====================
 
@@ -69,6 +108,12 @@ e0196edcf2a base: add accent clocks from pie
 dce40c542cd lockscreen : Add small size style [1/2]
 c25f2d51520 Introduce lockscreen clock/date styles [1/2]
 
+   * hardware/libhardware/
+54f06b80 libhardware: Add new display types.
+
+   * hardware/qcom/audio/
+17c0c34 Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23
+
    * packages/apps/Blissify/
 38422cf Lockscreen Date Font Style [2/2]
 2180d00 Lockscreen Clock Widget Font Style [2/2]
@@ -124,6 +169,11 @@ eded852c6dd OxygenOS styled dismiss all button [1/2]
 9bc3383f7 Restore getSubIdFromNetworkRequest method
 d9f2d62f3 Restore isEmergency method
 485ac3ab6 Add support for overriding methods from PhoneSwitcher
+
+   * manifest/
+23abf89 Manifest for Android 10.0.0 Release 23
+f0dce1a Manifest for Android 10.0.0 Release 22
+ea39c2b Manifest for Android 10.0.0 Release 21
 
    * packages/apps/Blissify/
 c6ab4de add toggle for notifications smart reply [2/2]
@@ -354,15 +404,4 @@ ec49b4109ce FWB: Statusbar weather [1/2]
 
    * packages/apps/Blissify/
 cda8379 Merge "Statusbar weather [2/2]" into q
-
-====================
-     12-29-2019
-====================
-
-
-   * manifest/
-69811e9 Merge "manifest: Cleanup" into q
-
-   * packages/apps/Blissify/
-d2fdf74 Blissify: flashlight blink: fix disable option not working
 
