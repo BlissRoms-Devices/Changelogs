@@ -1,4 +1,36 @@
 ====================
+     01-14-2020
+====================
+
+
+   * frameworks/base/
+0901cc5326c Merge "Add Comfortaa font [1/2]" into q
+e961492f130 Merge changes from topic "pri-color" into q
+6fa62d3c960 BatteryMeterView: More robust for showing estimate
+0945c3185f8 Add toggle to display battery in quick status bar [1/2]
+53011916fa8 Separate battery estimate from percent for QS [1/2]
+6241871ee7b Revert "base: option to show battery percent & estimate together [1/2]"
+a431c87dbdb Add Comfortaa font [1/2]
+75ba57ddf9e Update Dark blue primary color
+791a2f14048 Overlay: Add Nature primary
+66e484fe26c Overlay: Add Ocean primary
+
+   * packages/apps/Blissify/
+3f23a92 Blissify: Remove ScreenRecord preference if not supported
+99b9cb7 Add toggle to display battery in quick status bar [2/2]
+1e53f6f Separate battery estimate from percent for QS [2/2]
+140ad76 Revert "Blissify: option to show battery percent & estimate together [2/2]"
+
+   * packages/apps/Settings/
+0c8731e6ef Merge "Settings: Fix NPE with customdialogpref for backlight settings" into q
+
+   * vendor/support/
+3fb6689 support: add customdialogpref
+
+   * vendor/themes/
+2deb64f Add Comfortaa font [2/2]
+
+====================
      01-13-2020
 ====================
 
@@ -15,6 +47,9 @@ ebfd3cd51 Merge tag 'android-10.0.0_r23' into q
 
    * manifest/
 f906796 Merge tag 'android-10.0.0_r23' into q
+
+   * packages/apps/Blissify/
+da02e59 Blissify: changes to CustomDialogPref
 
    * packages/apps/Settings/
 e62ec5147e Merge tag 'android-10.0.0_r23' into q
@@ -33,6 +68,9 @@ e195399a Merge tag 'android-10.0.0_r23' into q
 
    * system/update_engine/
 585442ab Merge tag 'android-10.0.0_r23' into q
+
+   * vendor/bliss/
+633dd845 Bump to 12.2
 
    * vendor/qcom/opensource/data-ipa-cfg-mgr/
 1f70a86 Merge branch 'lineage-17.1' into q
@@ -57,6 +95,9 @@ b11871e Blissify: QS themes [2/2]
 
    * packages/apps/CustomDoze/
 b432651 Revert "CustomDoze: Simplify double tap switch"
+
+   * packages/apps/Settings/
+57dd949390 Settings: Fix NPE with customdialogpref for backlight settings
 
 ====================
      01-11-2020
@@ -387,21 +428,4 @@ b820dc380ce WeatherTile: Start Google Weather on LongClick
 
    * packages/apps/Settings/
 7ecee8c61d Settings: Allow to quickly open Running Services from QS [2/2]
-
-====================
-     12-30-2019
-====================
-
-
-   * frameworks/base/
-ec49b4109ce FWB: Statusbar weather [1/2]
-
-   * hardware/qcom-caf/msm8994/display/
-91b8d2d1e Make hwc_vsync thread realtime
-
-   * hardware/qcom-caf/msm8998/audio/
-118d40885 ultrasound: Update for new persist path
-
-   * packages/apps/Blissify/
-cda8379 Merge "Statusbar weather [2/2]" into q
 
