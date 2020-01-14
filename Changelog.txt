@@ -1,4 +1,15 @@
 ====================
+     01-15-2020
+====================
+
+
+   * packages/apps/AudioFX/
+6146b03 Import translations. DO NOT MERGE
+
+   * packages/services/Telephony/
+c64634669 Revert "Grant START_ACTIVITIES_FROM_BACKGROUND"
+
+====================
      01-14-2020
 ====================
 
@@ -91,7 +102,6 @@ d211d22f8c3 FODCircleView: place above other UI elements
 
    * packages/apps/Blissify/
 b11871e Blissify: QS themes [2/2]
-7cf1885 Blissify: clock/date: Add more Font Styles [2/2]
 
    * packages/apps/CustomDoze/
 b432651 Revert "CustomDoze: Simplify double tap switch"
@@ -116,6 +126,7 @@ b109cdf686a KeyguardStatusView: Update TunerApi usage
 98d38cc0283 Merge changes from topic "font" into q
 
    * packages/apps/Blissify/
+7cf1885 Blissify: clock/date: Add more Font Styles [2/2]
 cd72f1a Blissify: Move the clock and font options together
 9fd8b2c Blissify: refactor Lockscreen clock/date styles
 
@@ -411,21 +422,4 @@ dbe4afe GamingMode: Option to disable notification feedback [2/2]
 6a2e977 Blissify: QS footer visibilities [2/2]
 6e3713a Weather: Add switches to show city/temp on lockscreen [2/2]
 0d68a4d Blissify: categorize advanced statusbar icons
-
-====================
-     12-31-2019
-====================
-
-
-   * frameworks/base/
-1c87ba4764c Make volume dialog settings icon background play nicely with dark themes
-2ad5ea051d6 webview: Allow choosing the AOSP webview
-317659c7337 Weather: Add switches to show city/temp on lockscreen [1/2]
-120857a7046 base: SystemUI: make keyguard weather icon smaller
-8f7f93fdeff base: SystemUI: fix debug drawing lines for icon containers
-d966a2dc377 Weather tile longclick: alternative weather apps when google weather not installed
-b820dc380ce WeatherTile: Start Google Weather on LongClick
-
-   * packages/apps/Settings/
-7ecee8c61d Settings: Allow to quickly open Running Services from QS [2/2]
 
