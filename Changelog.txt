@@ -1,4 +1,21 @@
 ====================
+     01-16-2020
+====================
+
+
+   * frameworks/base/
+8c7f7059f56 Status bar notification ticker [1/2]
+74ed94b7acd base: Add Status Bar Custom Header to Tuner
+cf4b049ea0d Base: AM: create config to set Max Cached Processes
+
+   * packages/apps/Blissify/
+07d2216 Status bar notification ticker [2/2]
+2226ee3 Blissify: Add reset routine for custom headers
+
+   * packages/apps/OmniStyle/
+b0ed2da Revert "OmniStyle: Q update rodeo"
+
+====================
      01-15-2020
 ====================
 
@@ -15,6 +32,11 @@ c64634669 Revert "Grant START_ACTIVITIES_FROM_BACKGROUND"
 
 
    * frameworks/base/
+2c63690448b PhoneWindowManager: Bring back vibrator DOUBLE_CLICK effect
+3bbc01b616c VibratorService: Fix double click effect with OnePlus vibrator format
+0bbc0fa024b VibratorService: update constant values for OnePlus HAL
+232be3e42df Improve haptics and use VibrationEffect
+0a438f482f1 VibratorService: implement OnePlus proprietary vibrator format
 0901cc5326c Merge "Add Comfortaa font [1/2]" into q
 e961492f130 Merge changes from topic "pri-color" into q
 6fa62d3c960 BatteryMeterView: More robust for showing estimate
@@ -401,25 +423,4 @@ f06dd1b ThemePicker: fix apply of empty primary overlay choices
 
    * packages/apps/Blissify/
 7255a96 Blissify: fix fc for non fp devices
-
-====================
-     01-01-2020
-====================
-
-
-   * frameworks/base/
-e114522a32d Disable Notifications vibration [1/2]
-5578cacd082 GamingMode: Option to disable notification feedback [1/2]
-bf509940471 GamingMode: option to disabe all headsup notifications [1/2]
-54d8e35e0b6 base: SystemUI: QS footer visibilities [1/2]
-139674ed5cf SystemUI: Use MD2 icon for running services in QS
-845f6ab73df Allow to quickly open Running Services from QS panel [1/2]
-
-   * packages/apps/Blissify/
-9ed48cb Disable Notifications vibration [2/2]
-dbe4afe GamingMode: Option to disable notification feedback [2/2]
-3cb5a0b GamingMode: option to disabe all headsup notifications [2/2]
-6a2e977 Blissify: QS footer visibilities [2/2]
-6e3713a Weather: Add switches to show city/temp on lockscreen [2/2]
-0d68a4d Blissify: categorize advanced statusbar icons
 
