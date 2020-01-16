@@ -1,4 +1,30 @@
 ====================
+     01-17-2020
+====================
+
+
+   * frameworks/base/
+8be41ac7cdc Bring back ticker for music ticker and Android 10 fixes
+
+   * packages/apps/Blissify/
+80f5763 Blissify: music ticker
+
+   * packages/apps/OmniStyle/
+a517a9d OmniStyle: change header local/remote switch also to a spinner
+dd015f3 OmniStyle: fix switchbar bg color
+1c36ae3 Partially revert "OmniStyle: Remove unneeded parts"
+8ea86c5 OmniStyle: HACK set requestLegacyExternalStorage for the moment
+4290ef1 Revert "OmniStyle: Remove wallpaper settings"
+77830cb OmniStyle: Use settings icon
+50fe511 headers: Fix GoT #4
+4a06495 OmniStyle: Add JLA, Xmen and Avengers headers
+cdc514c headers: Add missing headers brigrade
+2bf0637 OmniStyle: Improve GoT header pack
+bc85955 OmniStyle: Add GoT header pack
+34cc65e OmniStyle: Shorten the names
+a224f2f OmniStyle: Kang header packs from Bootleggers
+
+====================
      01-16-2020
 ====================
 
@@ -407,20 +433,4 @@ f06dd1b ThemePicker: fix apply of empty primary overlay choices
 
    * vendor/support/
 5b4c48e support: ColorPicker: make it more user friendly
-
-====================
-     01-02-2020
-====================
-
-
-   * frameworks/base/
-5b0f6935d77 base: Add a toggle for QS footer text [1/2]
-7f3c1ae5b62 SystemUI: Show something usefull in the QS footer
-1a379ca2550 Revert "SystemUI: Remove build version from qs footer"
-38e15104947 make Pulsing bright again
-9b8105d8ced Revert "LiveWallpaperScrimController: Fix after r20 merge"
-513d4e23c6b DO NOT MERGE Revert all scrim related changes in qpr
-
-   * packages/apps/Blissify/
-7255a96 Blissify: fix fc for non fp devices
 
