@@ -1,4 +1,57 @@
 ====================
+     01-18-2020
+====================
+
+
+   * build/make/
+1a3289ea6 Merge "core: fix sepolicy inclusion" into q
+
+   * external/sqlite/
+71ec04a sqlite: upgrade to SQLite 3.30.1
+aa02633 sqlite: upgrade to SQLite 3.30.0
+c3f53bd sqlite: upgrade to SQLite 3.29.0
+a7acbb8 libsqlite: remove unused deps
+7cb458f Turn off the new pass manager due to miscompile
+b1b21ce Reduce sync safety levels from 3 to 1
+
+   * frameworks/base/
+54e567b3ab0 Allow to hide arrow for back gesture [1/2]
+7aa0a1dbd49 SystemUI: [HACK] set requestLegacyExternalStorage for the moment
+
+   * frameworks/native/
+9e6bbef6b fix -Wdangling-gsl in test
+d10ac2b01 libbinder: remove INT32_MAX definition
+dd3339e39 Remove "required:"
+c3ea3ceae fix -Wreorder-init-list
+c7d2bb379 fix -Wreorder-init-list
+d1524e365 EGL: Fix repeated extension lookups
+d3d939dba {math|ui} fix -Wimplicit-int-float-conversion
+161027dee Remove unnecessary link library
+378ce863c Link libvndksupport dynamically instead of statically.
+659b882e0 surfaceflinger: Exclude qcom RefreshRateType changes
+50e34ae37 surfaceflinger: Exclude qcom code on unsupported platforms
+457eb4e17 SurfaceFlinger: Exclude CAF extensions from non-QC devices
+e54c940e2 surfaceflinger: Merge caf changes
+1bc9325ac input: Adjust priority
+
+   * lineage-sdk/
+7b9ee358 sdk: Remove berry style leftovers
+
+   * manifest/
+5e9367d manifest: Track our external/sqlite
+57d675a Merge "manifest: update bliss sepolicy path" into q
+
+   * packages/apps/Settings/
+e9012bea9d Settings: Allow to hide arrow for back gesture [2/2]
+
+   * system/core/
+83ed4e99e Change search order for system processes in vndk_lite.
+
+   * vendor/bliss/
+1e79052e extract_utils: Drop string after semicolon when parsing destination
+b5feb052 vendor: Add qcom platform type to soongs vars
+
+====================
      01-17-2020
 ====================
 
@@ -406,31 +459,4 @@ ec91cfc Blissify: Notch friendly Battery bar
 
    * vendor/support/
 0eda407 support: Add seekbar and list settings preferences
-
-====================
-     01-03-2020
-====================
-
-
-   * frameworks/base/
-03d2691c235 BatteryMeterView: fix derp in custom charging symbol
-6d504763c74 SystemUI: Allow customizing footer text [1/2]
-b8e429fb872 overlay: Intruduce Bliss Primary
-
-   * packages/apps/Blissify/
-9fe8499 Blissify: Allow customizing footer text [1/2]
-8be86d1 Blissify: Add a toggle for QS footer text [2/2]
-7300225 Blissify: AmbientLight: update summary to show RGB value instead of ARGB
-
-   * packages/apps/Settings/
-9e5a0922ac Settings: Hide long press kill
-
-   * packages/apps/ThemePicker/
-f06dd1b ThemePicker: fix apply of empty primary overlay choices
-1a1116d ThemePicker: add support for primary overlays
-7a35833 ThemePicker: fix showing icon_pack options in compose style
-661052f Add in gitreview file
-
-   * vendor/support/
-5b4c48e support: ColorPicker: make it more user friendly
 
