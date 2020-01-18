@@ -1,10 +1,22 @@
 ====================
+     01-19-2020
+====================
+
+
+   * build/make/
+a1f70f217 Merge "build: remove $(PRODUCT_OUT)/recovery/root on build" into q
+
+   * frameworks/base/
+1ba87a4fba4 base: Reduce Drag Handle Height
+
+====================
      01-18-2020
 ====================
 
 
    * build/make/
 1a3289ea6 Merge "core: fix sepolicy inclusion" into q
+319f5e5da build: remove $(PRODUCT_OUT)/recovery/root on build
 
    * external/sqlite/
 71ec04a sqlite: upgrade to SQLite 3.30.1
@@ -126,6 +138,12 @@ a431c87dbdb Add Comfortaa font [1/2]
 75ba57ddf9e Update Dark blue primary color
 791a2f14048 Overlay: Add Nature primary
 66e484fe26c Overlay: Add Ocean primary
+
+   * hardware/qcom/audio/
+0b78261 msm8960: Add two stub microphone functions
+e1cdfc7 msm8960: Add SND_DEVICE_OUT_VOICE_MUSIC_TX
+6cb733e msm8960: Add some missing out/in types
+6890961 msm8960: treblize configuration
 
    * packages/apps/Blissify/
 3f23a92 Blissify: Remove ScreenRecord preference if not supported
@@ -441,22 +459,4 @@ da18493e Initial night overlays
 28248b3 Add Google Sans and Comic Sans font styles [2/2]
 69000b6 Add OnePlus Slate and SamsungOne font styles [2/2]
 5a42faf Add our favourite fonts in AOSP FontEngine [1/2]
-
-====================
-     01-04-2020
-====================
-
-
-   * frameworks/base/
-562f99b4fc0 QSFooter: fix drag handle
-023d713ea6a base: Add battery percentage and charging animation to solid battery style
-0f35e31d461 Merge changes from topic "ambi-vis-fix" into q
-300f36925a2 Merge "overlay: Intruduce Bliss Primary" into q
-
-   * packages/apps/Blissify/
-ec91cfc Blissify: Notch friendly Battery bar
-7f2443c Blissify: Clock: Enable center clock if using hide notch
-
-   * vendor/support/
-0eda407 support: Add seekbar and list settings preferences
 
