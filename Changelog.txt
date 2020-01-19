@@ -1,4 +1,15 @@
 ====================
+     01-20-2020
+====================
+
+
+   * manifest/
+42b00d6 Merge "Track latest GCC for kernels" into q
+
+   * vendor/bliss/
+f798a468 Merge changes from topic "kernel" into q10
+
+====================
      01-19-2020
 ====================
 
@@ -7,7 +18,18 @@
 a1f70f217 Merge "build: remove $(PRODUCT_OUT)/recovery/root on build" into q
 
    * frameworks/base/
+20d0fbbe0b6 OOS dismiss button: Use accent color for background
+4713b94f6b2 Themes: ensure some elements are fine and dandy after overlay changes and various inits
+6fa34893638 Convert VPN Server endpoint to numeric
+c5fcbc14acb hwui: Relax the desiredPresent time in RenderAhead feature
+1045495c7c2 base: set alert dialog message to use system font
+8835067a067 base: fix list style alert dialog to use system font
+4f8c5b1c48c SystemUI: set user detail item to use system font
+ae2881f1d75 SystemUI: make qs weather page follow system font setting
 1ba87a4fba4 base: Reduce Drag Handle Height
+
+   * packages/apps/Settings/
+42d295b65b Setting: Add vibration intensities
 
 ====================
      01-18-2020
@@ -52,9 +74,13 @@ e54c940e2 surfaceflinger: Merge caf changes
    * manifest/
 5e9367d manifest: Track our external/sqlite
 57d675a Merge "manifest: update bliss sepolicy path" into q
+088e367 Track latest GCC for kernels
 
    * packages/apps/Settings/
 e9012bea9d Settings: Allow to hide arrow for back gesture [2/2]
+
+   * prebuilts/tools-bliss/
+fd8e6b8 Add dtc binary
 
    * system/core/
 83ed4e99e Change search order for system processes in vndk_lite.
@@ -62,6 +88,8 @@ e9012bea9d Settings: Allow to hide arrow for back gesture [2/2]
    * vendor/bliss/
 1e79052e extract_utils: Drop string after semicolon when parsing destination
 b5feb052 vendor: Add qcom platform type to soongs vars
+f330b722 kernel: allow devices to use newer GCC
+83df7948 kernel: use dtc from prebuilt
 
 ====================
      01-17-2020
@@ -154,6 +182,15 @@ e1cdfc7 msm8960: Add SND_DEVICE_OUT_VOICE_MUSIC_TX
    * packages/apps/Settings/
 0c8731e6ef Merge "Settings: Fix NPE with customdialogpref for backlight settings" into q
 
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-elf/
+1ccbef6 Rebuild to statically link GMP/MPFR/MPC/ISL
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi/
+512c928 Rebuild to statically link GMP/MPFR/MPC/ISL
+
+   * vendor/bliss/
+633dd845 Bump to 12.2
+
    * vendor/support/
 3fb6689 support: add customdialogpref
 
@@ -199,9 +236,6 @@ e195399a Merge tag 'android-10.0.0_r23' into q
    * system/update_engine/
 585442ab Merge tag 'android-10.0.0_r23' into q
 
-   * vendor/bliss/
-633dd845 Bump to 12.2
-
    * vendor/qcom/opensource/data-ipa-cfg-mgr/
 1f70a86 Merge branch 'lineage-17.1' into q
 
@@ -221,12 +255,16 @@ d211d22f8c3 FODCircleView: place above other UI elements
 
    * packages/apps/Blissify/
 b11871e Blissify: QS themes [2/2]
+7cf1885 Blissify: clock/date: Add more Font Styles [2/2]
 
    * packages/apps/CustomDoze/
 b432651 Revert "CustomDoze: Simplify double tap switch"
 
    * packages/apps/Settings/
 57dd949390 Settings: Fix NPE with customdialogpref for backlight settings
+cd8bcffe51 Settings: Fixes sound panel create multiple SoundSettings activity
+3e5a01705a Settings: Move the hide pill toggle to gesture settings dialog
+cdad91332b Settings: Hide pill in full gestural nav mode [2/2]
 
 ====================
      01-11-2020
@@ -245,14 +283,10 @@ b109cdf686a KeyguardStatusView: Update TunerApi usage
 98d38cc0283 Merge changes from topic "font" into q
 
    * packages/apps/Blissify/
-7cf1885 Blissify: clock/date: Add more Font Styles [2/2]
 cd72f1a Blissify: Move the clock and font options together
 9fd8b2c Blissify: refactor Lockscreen clock/date styles
 
    * packages/apps/Settings/
-cd8bcffe51 Settings: Fixes sound panel create multiple SoundSettings activity
-3e5a01705a Settings: Move the hide pill toggle to gesture settings dialog
-cdad91332b Settings: Hide pill in full gestural nav mode [2/2]
 76f89f146f Settings: Use global fonts in styles
 
 ====================
@@ -278,6 +312,7 @@ e0196edcf2a base: add accent clocks from pie
 9e5e9d51f8b [1/2] Add sammy accent clock and a variant
 dce40c542cd lockscreen : Add small size style [1/2]
 c25f2d51520 Introduce lockscreen clock/date styles [1/2]
+5dd6563b3b6 Gesture nav Assistant handles: don't show them in lockscreen
 
    * hardware/libhardware/
 54f06b80 libhardware: Add new display types.
@@ -296,12 +331,16 @@ c25f2d51520 Introduce lockscreen clock/date styles [1/2]
 
 
    * frameworks/base/
-5dd6563b3b6 Gesture nav Assistant handles: don't show them in lockscreen
 577708572e5 base: Add back bliss fod icon
 c1be9d0f0ca SystemUI: Add more FOD icons [1/2]
 d543f513374 add wallpaper color option for FOD icon [1/2]
 9a3254f64a3 SystemUI: FOD icon picker [1/2]
 ca9bddb022a Revert "Change default fod icon"
+
+   * manifest/
+23abf89 Manifest for Android 10.0.0 Release 23
+f0dce1a Manifest for Android 10.0.0 Release 22
+ea39c2b Manifest for Android 10.0.0 Release 21
 
    * packages/apps/Blissify/
 a2c6eab Blissify: Add our bliss fod icon
@@ -340,11 +379,6 @@ eded852c6dd OxygenOS styled dismiss all button [1/2]
 9bc3383f7 Restore getSubIdFromNetworkRequest method
 d9f2d62f3 Restore isEmergency method
 485ac3ab6 Add support for overriding methods from PhoneSwitcher
-
-   * manifest/
-23abf89 Manifest for Android 10.0.0 Release 23
-f0dce1a Manifest for Android 10.0.0 Release 22
-ea39c2b Manifest for Android 10.0.0 Release 21
 
    * packages/apps/Blissify/
 c6ab4de add toggle for notifications smart reply [2/2]
@@ -425,38 +459,4 @@ ce4de09 support: Update global settings switch
 
    * vendor/themes/
 c44337f Add in some new accent colors
-
-====================
-     01-05-2020
-====================
-
-
-   * frameworks/base/
-2c9388b8b0f Add option to select VoLTE icon [1/2]
-ed4120bbd59 Revert "SystemUI: Add optional notch friendly VoLTE icon"
-382359bb08b overlays: Add back IconShapeSquareOverlay
-37efb59b087 Add hexagon and cylinder icon shape overlays
-783dae101df Update default config for headline fonts
-727af8c3b1e Update Google Sans font style [1/2]
-b8a3e9fc65e Add Google Sans and Comic Sans font styles [1/2]
-4e9b1c17127 Add semi bold font alias for custom fonts
-8774b6263e3 Wire up default fonts with font engine
-0e92901be10 Add OnePlus Slate and SamsungOne font styles [1/2]
-fbae1452313 Add our favourite fonts in AOSP FontEngine [2/2]
-4af4c65494e Bring some of the primary colors from Bliss Pie
-
-   * packages/apps/Blissify/
-c0e2f5d Add option to select VoLTE icon [2/2]
-
-   * packages/apps/ThemePicker/
-6d5bf08 ThemePicker: Showcase the Font name
-
-   * vendor/bliss/
-da18493e Initial night overlays
-
-   * vendor/themes/
-34d32a9 Update Google Sans font style [2/2]
-28248b3 Add Google Sans and Comic Sans font styles [2/2]
-69000b6 Add OnePlus Slate and SamsungOne font styles [2/2]
-5a42faf Add our favourite fonts in AOSP FontEngine [1/2]
 
