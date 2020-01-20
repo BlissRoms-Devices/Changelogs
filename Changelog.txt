@@ -1,13 +1,34 @@
 ====================
+     01-21-2020
+====================
+
+
+   * frameworks/base/
+17d6b56d06d OxygenOS dismiss all: animate it todo: cleanup of all this mess
+e3943090349 PrivacyChip: Do not change view on expand
+f45c31c1253 Fix Another SystemUI crash
+c2300583980 SystemUI: QS: Fix mobile data usage qs details view content
+87935c89e4b QuickStatusBar: Check for permissions hub before setting ignore list
+
+   * vendor/bliss/
+a8731dab Merge "Update default accent color" into q10
+
+====================
      01-20-2020
 ====================
 
+
+   * frameworks/base/
+510becc9841 Fix LockdownVpnTracker deadlock when resetting legacy Always-On VPN
+fd774883bd0 Make NtpTrustedTime safer / expand docs
+7dab1f559a9 Revert "NtpTrustedTime: Refresh NTP server from resources before requesting time"
 
    * manifest/
 42b00d6 Merge "Track latest GCC for kernels" into q
 
    * vendor/bliss/
 f798a468 Merge changes from topic "kernel" into q10
+0bc29050 Update default accent color
 
 ====================
      01-19-2020
@@ -127,6 +148,10 @@ a224f2f OmniStyle: Kang header packs from Bootleggers
 74ed94b7acd base: Add Status Bar Custom Header to Tuner
 cf4b049ea0d Base: AM: create config to set Max Cached Processes
 
+   * hardware/qcom/display/
+d4f59a62 hwc: Move mdpHw declaration under DYNAMIC_FPS flag
+e4e87b51 hwc: Trigger dynamic refresh-rate change for more usecases
+
    * packages/apps/Blissify/
 07d2216 Status bar notification ticker [2/2]
 2226ee3 Blissify: Add reset routine for custom headers
@@ -188,9 +213,6 @@ e1cdfc7 msm8960: Add SND_DEVICE_OUT_VOICE_MUSIC_TX
    * prebuilts/gcc/linux-x86/arm/arm-eabi/
 512c928 Rebuild to statically link GMP/MPFR/MPC/ISL
 
-   * vendor/bliss/
-633dd845 Bump to 12.2
-
    * vendor/support/
 3fb6689 support: add customdialogpref
 
@@ -236,6 +258,9 @@ e195399a Merge tag 'android-10.0.0_r23' into q
    * system/update_engine/
 585442ab Merge tag 'android-10.0.0_r23' into q
 
+   * vendor/bliss/
+633dd845 Bump to 12.2
+
    * vendor/qcom/opensource/data-ipa-cfg-mgr/
 1f70a86 Merge branch 'lineage-17.1' into q
 
@@ -255,16 +280,12 @@ d211d22f8c3 FODCircleView: place above other UI elements
 
    * packages/apps/Blissify/
 b11871e Blissify: QS themes [2/2]
-7cf1885 Blissify: clock/date: Add more Font Styles [2/2]
 
    * packages/apps/CustomDoze/
 b432651 Revert "CustomDoze: Simplify double tap switch"
 
    * packages/apps/Settings/
 57dd949390 Settings: Fix NPE with customdialogpref for backlight settings
-cd8bcffe51 Settings: Fixes sound panel create multiple SoundSettings activity
-3e5a01705a Settings: Move the hide pill toggle to gesture settings dialog
-cdad91332b Settings: Hide pill in full gestural nav mode [2/2]
 
 ====================
      01-11-2020
@@ -283,10 +304,14 @@ b109cdf686a KeyguardStatusView: Update TunerApi usage
 98d38cc0283 Merge changes from topic "font" into q
 
    * packages/apps/Blissify/
+7cf1885 Blissify: clock/date: Add more Font Styles [2/2]
 cd72f1a Blissify: Move the clock and font options together
 9fd8b2c Blissify: refactor Lockscreen clock/date styles
 
    * packages/apps/Settings/
+cd8bcffe51 Settings: Fixes sound panel create multiple SoundSettings activity
+3e5a01705a Settings: Move the hide pill toggle to gesture settings dialog
+cdad91332b Settings: Hide pill in full gestural nav mode [2/2]
 76f89f146f Settings: Use global fonts in styles
 
 ====================
@@ -311,8 +336,6 @@ c455f3afccf Lockscreen Clock Widget Font Style [1/2]
 e0196edcf2a base: add accent clocks from pie
 9e5e9d51f8b [1/2] Add sammy accent clock and a variant
 dce40c542cd lockscreen : Add small size style [1/2]
-c25f2d51520 Introduce lockscreen clock/date styles [1/2]
-5dd6563b3b6 Gesture nav Assistant handles: don't show them in lockscreen
 
    * hardware/libhardware/
 54f06b80 libhardware: Add new display types.
@@ -331,16 +354,13 @@ c25f2d51520 Introduce lockscreen clock/date styles [1/2]
 
 
    * frameworks/base/
+c25f2d51520 Introduce lockscreen clock/date styles [1/2]
+5dd6563b3b6 Gesture nav Assistant handles: don't show them in lockscreen
 577708572e5 base: Add back bliss fod icon
 c1be9d0f0ca SystemUI: Add more FOD icons [1/2]
 d543f513374 add wallpaper color option for FOD icon [1/2]
 9a3254f64a3 SystemUI: FOD icon picker [1/2]
 ca9bddb022a Revert "Change default fod icon"
-
-   * manifest/
-23abf89 Manifest for Android 10.0.0 Release 23
-f0dce1a Manifest for Android 10.0.0 Release 22
-ea39c2b Manifest for Android 10.0.0 Release 21
 
    * packages/apps/Blissify/
 a2c6eab Blissify: Add our bliss fod icon
@@ -380,6 +400,11 @@ eded852c6dd OxygenOS styled dismiss all button [1/2]
 d9f2d62f3 Restore isEmergency method
 485ac3ab6 Add support for overriding methods from PhoneSwitcher
 
+   * manifest/
+23abf89 Manifest for Android 10.0.0 Release 23
+f0dce1a Manifest for Android 10.0.0 Release 22
+ea39c2b Manifest for Android 10.0.0 Release 21
+
    * packages/apps/Blissify/
 c6ab4de add toggle for notifications smart reply [2/2]
 70a77de AmbientLight: add visual preview
@@ -405,58 +430,4 @@ ab0f0bb1c Telephony: Add ERI configuration for U.S. Cellular
    * system/sepolicy/
 88a16d24 sepolicy: allow system app to access sysfs_leds
 3de646f2 Add in gitreview file
-
-====================
-     01-06-2020
-====================
-
-
-   * frameworks/base/
-7aec004d0ca Merge changes from topics "lock-icon", "screen-ani" into q
-c2a456d80c5 SystemUI: Add Asus VoLTE Icon [1/2]
-93f8f771f0c SystemUI: Add VoLIT icon [1/2]
-3dec02420a5 Update wifi interface ip state upon receiving ap disable event
-b8c893230bf base: Handle NPE for ContentObserver
-42af511c1f3 FingerprintManager: return "Try again" by default
-0b99f50487c hwui: Avoid fake high input latency while vsync drifting
-55e00e06b9d Always use a positive value for timestamp
-4661e67c2c6 aapt2: do not use compression
-3c9e1cc4ae5 ScreenRecord: Add config to enable it
-4d3436c2f75 PowerMenu: Only tint items once
-17977a612b7 Notify ClockChangedListeners on main thread
-278d7bb5cac Get clock title on demand
-25b0b1602fd RecordingService: Use IMPORTANCE_LOW notification channel
-629bbc6b968 ScreenshotTile: Make default state inactive
-bdabe538764 Add delay for partial screenshot on long press
-a125e144d7c Add power menu option for screen record [1/3]
-dc4c1414854 SystemUI: Prevent dummy expansion of status bar
-933aa39786c Hide power menu on secure lockscreen - improvements
-5058b80644c base: Allow to use old style icons as default [1/2]
-b1588e18446 Notify listeners when toggling old mobile type settings
-e62015da486 StatusBarMobileView: Clean up
-a133230927e Add toggle to hide lock icon on lockscreen [1/2]
-94378032483 Update ElectronBeam screen off animation
-
-   * lineage-sdk/
-ed344692 Add toggle to allow advanced restart on secured lockscreen [1/2]
-5a439624 Add power menu option for screen record [2/3]
-15e24f89 lineage-sdk: Try loading default setting value for switch
-
-   * packages/apps/Blissify/
-70cf44a Blissify: Add Asus VoLTE Icon [2/2]
-739113e Blissify: Add VoLIT icon [2/2]
-432e744 Add toggle to allow advanced restart on secured lockscreen [2/2]
-6596ba3 Blissify: Allow to use old style icons as default [2/2]
-ea1d3ed Blissify: update old style mobile data indicators [2/2]
-5843127 Add power menu option for screen record [3/3]
-44357ac Add toggle to hide lock icon on lockscreen [2/2]
-
-   * vendor/support/
-2ac0c54 CustomSeekBar: Fix loading defaultValueText from strings
-d909d50 CustomSeekBar: Dont format string for defaultValueText
-4fb1990 CustomSeekBar: Add defaultValueText attribute
-ce4de09 support: Update global settings switch
-
-   * vendor/themes/
-c44337f Add in some new accent colors
 
