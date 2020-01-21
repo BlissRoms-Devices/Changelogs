@@ -1,4 +1,15 @@
 ====================
+     01-22-2020
+====================
+
+
+   * frameworks/base/
+f6e19807778 Add Custom Sneeky Analog Clock
+5c93b0f81f1 Add Custom dotOS Analog Clock
+c056e82c51a Add Custom Spectrum Analog Clock
+c55f799a086 Add Custom Spidey Analog Clock
+
+====================
      01-21-2020
 ====================
 
@@ -336,6 +347,7 @@ c455f3afccf Lockscreen Clock Widget Font Style [1/2]
 e0196edcf2a base: add accent clocks from pie
 9e5e9d51f8b [1/2] Add sammy accent clock and a variant
 dce40c542cd lockscreen : Add small size style [1/2]
+c25f2d51520 Introduce lockscreen clock/date styles [1/2]
 
    * hardware/libhardware/
 54f06b80 libhardware: Add new display types.
@@ -354,7 +366,6 @@ dce40c542cd lockscreen : Add small size style [1/2]
 
 
    * frameworks/base/
-c25f2d51520 Introduce lockscreen clock/date styles [1/2]
 5dd6563b3b6 Gesture nav Assistant handles: don't show them in lockscreen
 577708572e5 base: Add back bliss fod icon
 c1be9d0f0ca SystemUI: Add more FOD icons [1/2]
@@ -368,66 +379,4 @@ d4ceec9 add wallpaper color option for FOD icon [2/2]
 73bb131 Blissify: FOD icon picker: adjust items spacing
 c0b2628 Blissify: Add more FOD icons [2/2]
 5e61920 FOD icon picker [2/2]
-
-====================
-     01-07-2020
-====================
-
-
-   * frameworks/av/
-ae9377534 ld.config: add libashmemd_client.so to platform shared libs
-17a4e2af5 Restore stream [dis]connect parameters in deprecated state
-1d5a8f0d8 Fix the name of the constant for device [dis]connect parameter
-139860bce Cast enum to uint32_t before comparing with AUDIO_MODE_CNT
-860c6ecc9 audiopolicy: Match DIRECT and MMAP_NOIRQ flags exactly in IOProfile
-164d6f486 Require HW AV sync flag match for compatible output IOProfile
-ab6ab3324 av: Add AUDIO_OUTPUT_FLAG_MMAP_NOIRQ flag.
-fdb2a9aa1 AudioPolicyManager: Handle error from setInputDevice in startInput
-949bc2d31 Remove usages of USE_XML_AUDIO_POLICY_CONF
-2ea2a1673 Explicitly initialise base class in copy constructor
-eeec2244e soundtrigger: fill in default extras from dsp
-2e8aa1f97 camera: Workaround for GCC-compiled HAL3 drivers
-4142130a0 MTP: Fix crash when no storages are available
-
-   * frameworks/base/
-4d872f76f29 add toggle for notifications smart reply [1/2]
-9e174aebadb OxygenOS dismiss all: disable animations and disable it by default
-eded852c6dd OxygenOS styled dismiss all button [1/2]
-
-   * frameworks/opt/telephony/
-28f7266ea IccPhoneBookInterfaceManager: Move class Request from private to public
-9bc3383f7 Restore getSubIdFromNetworkRequest method
-d9f2d62f3 Restore isEmergency method
-485ac3ab6 Add support for overriding methods from PhoneSwitcher
-
-   * manifest/
-23abf89 Manifest for Android 10.0.0 Release 23
-f0dce1a Manifest for Android 10.0.0 Release 22
-ea39c2b Manifest for Android 10.0.0 Release 21
-
-   * packages/apps/Blissify/
-c6ab4de add toggle for notifications smart reply [2/2]
-70a77de AmbientLight: add visual preview
-a89379a OxygenOS styled dismiss all button [2/2]
-
-   * packages/providers/MediaProvider/
-2618bb1 MediaProvider: Make sure to check the type when searching for sounds
-72ede8a MediaProvider: adaptive icon
-21e9b0f Add gitreview file
-
-   * packages/services/Telephony/
-8d7a3ba82 Use bliss fingerprint to check for system update
-4734cccbe USSD: Fix alert dialog theme
-f23d5f869 Telephony: Use system fonts at more places
-b7e28df8a Font improvements
-89df5d3b0 Grant START_ACTIVITIES_FROM_BACKGROUND
-00d057941 Telephony: Support muting by RIL command
-ab0f0bb1c Telephony: Add ERI configuration for U.S. Cellular
-
-   * system/core/
-9188efa38 ueventd: make parallel restorecon functionality optional
-
-   * system/sepolicy/
-88a16d24 sepolicy: allow system app to access sysfs_leds
-3de646f2 Add in gitreview file
 
