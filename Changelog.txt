@@ -1,4 +1,15 @@
 ====================
+     01-23-2020
+====================
+
+
+   * frameworks/base/
+6107b41ae57 Add Custom Bliss Analog Clock
+
+   * packages/apps/Blissify/
+de9cd40 Blissify: Status bar header enable by default
+
+====================
      01-22-2020
 ====================
 
@@ -359,24 +370,4 @@ c25f2d51520 Introduce lockscreen clock/date styles [1/2]
 38422cf Lockscreen Date Font Style [2/2]
 2180d00 Lockscreen Clock Widget Font Style [2/2]
 58357a1 Introduce lockscreen clock/date styles [2/2]
-
-====================
-     01-08-2020
-====================
-
-
-   * frameworks/base/
-5dd6563b3b6 Gesture nav Assistant handles: don't show them in lockscreen
-577708572e5 base: Add back bliss fod icon
-c1be9d0f0ca SystemUI: Add more FOD icons [1/2]
-d543f513374 add wallpaper color option for FOD icon [1/2]
-9a3254f64a3 SystemUI: FOD icon picker [1/2]
-ca9bddb022a Revert "Change default fod icon"
-
-   * packages/apps/Blissify/
-a2c6eab Blissify: Add our bliss fod icon
-d4ceec9 add wallpaper color option for FOD icon [2/2]
-73bb131 Blissify: FOD icon picker: adjust items spacing
-c0b2628 Blissify: Add more FOD icons [2/2]
-5e61920 FOD icon picker [2/2]
 
