@@ -1,4 +1,30 @@
 ====================
+     01-24-2020
+====================
+
+
+   * device/lineage/sepolicy/
+d811dd2 sepolicy: Label ro.telephony.use_old_mnc_mcc_format
+bfc7686 Move lineage framework service declarations to private
+62eba81 sepolicy: vendor: Label CryptfsHW HIDL HAL
+
+   * frameworks/base/
+66ed78e9c33 Add Analog Clock with Numbers
+caf631feaa7 Use non-wakeup alarm for delay constraint.
+34c7530ce50 Fix StorageManagerService linkToDeath more than one time when vold/storaged died.
+2b89f52d3d6 Camera: Avoid removing valid repeating requests
+
+   * frameworks/native/
+e126e1c3b Change the position of addAndGetFrameTimestamps when queueBuffer
+90a3231c0 Fix testVerifyStatsExternalConsistent case
+1d26bb844 Vulkan: Improve error translation in CreateSwapChainKHR
+ff3d65ce4 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
+83f9cf419 Vulkan: correctly expose Vulkan entry points
+
+   * vendor/bliss/
+739e9ab4 envsetup: Add blissify function
+
+====================
      01-23-2020
 ====================
 
@@ -346,28 +372,4 @@ c573455e1d9 TypeClock: Apply Lockscreen clock font to Type clock
 ab9ef0d2fc3 Restore light font styling of AOSP
 68382fdab5d Add new font config to font overlays
 364fe9a7e34 Add regular / light font config
-
-====================
-     01-09-2020
-====================
-
-
-   * frameworks/base/
-7f1437afd01 Lockscreen Date Font Style [1/2]
-c455f3afccf Lockscreen Clock Widget Font Style [1/2]
-e0196edcf2a base: add accent clocks from pie
-9e5e9d51f8b [1/2] Add sammy accent clock and a variant
-dce40c542cd lockscreen : Add small size style [1/2]
-c25f2d51520 Introduce lockscreen clock/date styles [1/2]
-
-   * hardware/libhardware/
-54f06b80 libhardware: Add new display types.
-
-   * hardware/qcom/audio/
-17c0c34 Merge tag 'android-10.0.0_r23' into staging/lineage-17.1_merge-android-10.0.0_r23
-
-   * packages/apps/Blissify/
-38422cf Lockscreen Date Font Style [2/2]
-2180d00 Lockscreen Clock Widget Font Style [2/2]
-58357a1 Introduce lockscreen clock/date styles [2/2]
 
