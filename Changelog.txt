@@ -1,4 +1,41 @@
 ====================
+     01-25-2020
+====================
+
+
+   * frameworks/base/
+fa5bce437e6 Merge "FODCircleView: Patch screen flickering" into q
+7fddfb6062f fonts: Road Rage and 20Seven
+682fe3e490f fonts: Nokia Pure and Fifa2018 [1/2]
+d8a25cf707b Add Exotwo, Storopia and Ubuntu fonts [1/2]
+ed9b8c4e05c FODCircleView: fix incorrect position on keyguard
+31873692f5e FODCircleView: Patch screen flickering
+
+   * frameworks/native/
+d33a5b370 Add dalvik-heap device configs for 8/12/16 GiB devices
+
+   * manifest/
+dcde2a1 manifest: cleanup README
+
+   * packages/apps/Contacts/
+ccae167cc Contacts: PoorManThemes: fix editor popup items
+e20a95fb8 PoorManThemes: fix selector bg color
+381084ef5 [1/2] Contacts: fix action mode theme coloring
+e904712f9 Contacts: dann halt mit Gewalt
+d86596e7a Contacts: use commnon menu style for themed apps
+23dace513 Contacts: add missing primary color to launcher theme
+9ce079926 Contacts: allow some Poor Man Theming
+509a802ff Contacts: add missing bottom margin for fab
+
+   * vendor/bliss/
+c7f6541d prebuilt: Update AboutBliss App
+
+   * vendor/themes/
+3464f82 font: add in Road Rage and 20seven font
+95ea6d7 fonts: Nokia Pure and Fifa2018 [2/2]
+86d14da Add Exotwo, Storopia and Ubuntu fonts [2/2]
+
+====================
      01-24-2020
 ====================
 
@@ -20,6 +57,10 @@ e126e1c3b Change the position of addAndGetFrameTimestamps when queueBuffer
 1d26bb844 Vulkan: Improve error translation in CreateSwapChainKHR
 ff3d65ce4 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
 83f9cf419 Vulkan: correctly expose Vulkan entry points
+
+   * packages/apps/Settings/
+fec494e7d4 Add primary color picker from Styles & Wallpapers
+150994a05e Add Statusbar Icon Picker from Styles & Wallpapers
 
    * vendor/bliss/
 739e9ab4 envsetup: Add blissify function
@@ -361,15 +402,4 @@ cd8bcffe51 Settings: Fixes sound panel create multiple SoundSettings activity
 3e5a01705a Settings: Move the hide pill toggle to gesture settings dialog
 cdad91332b Settings: Hide pill in full gestural nav mode [2/2]
 76f89f146f Settings: Use global fonts in styles
-
-====================
-     01-10-2020
-====================
-
-
-   * frameworks/base/
-c573455e1d9 TypeClock: Apply Lockscreen clock font to Type clock
-ab9ef0d2fc3 Restore light font styling of AOSP
-68382fdab5d Add new font config to font overlays
-364fe9a7e34 Add regular / light font config
 
