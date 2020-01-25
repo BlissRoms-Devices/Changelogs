@@ -1,4 +1,9 @@
 ====================
+     01-26-2020
+====================
+
+
+====================
      01-25-2020
 ====================
 
@@ -75,6 +80,12 @@ fec494e7d4 Add primary color picker from Styles & Wallpapers
 
    * packages/apps/Blissify/
 de9cd40 Blissify: Status bar header enable by default
+
+   * packages/apps/ThemePicker/
+832f70e ThemePicker: Fix missing Textview for landscape
+
+   * system/core/
+f7e8f9461 init: Add vendor_load_persist_properties hook
 
 ====================
      01-22-2020
@@ -375,31 +386,4 @@ b432651 Revert "CustomDoze: Simplify double tap switch"
 
    * packages/apps/Settings/
 57dd949390 Settings: Fix NPE with customdialogpref for backlight settings
-
-====================
-     01-11-2020
-====================
-
-
-   * frameworks/base/
-81bbaa486f1 base: clock/date: Add more Font Styles [1/2]
-596cd5a790a base: Hide pill in full gestural nav mode [1/2]
-6c445d3091b aapt2: silence positional arguments warnings
-5825cf496e3 SystemUI: allow setting custom cutout shapes
-288f2d39d91 Revert "NotificationService causes watchdog issues and improves performance"
-b28b73b14d6 Default Clock preview: Add a static widget
-06d0b797ec1 base: Lockscreen Clock: Use Tuner Api
-b109cdf686a KeyguardStatusView: Update TunerApi usage
-98d38cc0283 Merge changes from topic "font" into q
-
-   * packages/apps/Blissify/
-7cf1885 Blissify: clock/date: Add more Font Styles [2/2]
-cd72f1a Blissify: Move the clock and font options together
-9fd8b2c Blissify: refactor Lockscreen clock/date styles
-
-   * packages/apps/Settings/
-cd8bcffe51 Settings: Fixes sound panel create multiple SoundSettings activity
-3e5a01705a Settings: Move the hide pill toggle to gesture settings dialog
-cdad91332b Settings: Hide pill in full gestural nav mode [2/2]
-76f89f146f Settings: Use global fonts in styles
 
