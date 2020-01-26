@@ -1,7 +1,35 @@
 ====================
+     01-27-2020
+====================
+
+
+   * device/lineage/sepolicy/
+5861c22 Remove qcom/vendor/file.te
+
+   * frameworks/base/
+d0adde8a914 Revert "GamingMode: option to disabe all headsup notifications [1/2]"
+19c927fc8a7 TypeClock: adapt to changes in keyguard
+1c1ac819761 Custom Clocks: Switch to new layout for all Clocks
+5689764cf5e SystemUI: fixup analog clock for aod support
+913c695dd27 SystemUI: custom keyguard clock kick off
+afffa91ebe8 Properly set fonts and  icons on keyguard when changing styles
+
+   * packages/apps/Blissify/
+099087a Revert "GamingMode: option to disabe all headsup notifications [2/2]"
+89aef3b Blissify: Search index: Ensure our features show up under Settings
+aecfa01 Blissify: Reorganise some more
+
+====================
      01-26-2020
 ====================
 
+
+   * frameworks/base/
+f26268ad26b Custom Carrier Label & Carrier Label Placement [1/2]
+ecc519aea7b [SQUASH] Revert Custom Carrier label
+
+   * packages/apps/Blissify/
+da48d07 Blissify: Carrier label improvements
 
 ====================
      01-25-2020
@@ -363,27 +391,4 @@ e195399a Merge tag 'android-10.0.0_r23' into q
 
    * vendor/qcom/opensource/data-ipa-cfg-mgr/
 1f70a86 Merge branch 'lineage-17.1' into q
-
-====================
-     01-12-2020
-====================
-
-
-   * frameworks/base/
-5fa7beee853 DozeUi: do not prepare for gentle wakeup
-900000de3f8 SystemUI: KeyguardBottomAreaView: fix Fod check
-c31c37e99a9 TypeClock: Update Ambient Clock layout
-390bba41b9b base: QS themes [1/2]
-88159303e03 SystemUI: add vibration tick when opening notification panel
-d211d22f8c3 FODCircleView: place above other UI elements
-9b5b82c1af6 FODCircleView: rewrite and simplify implementation
-
-   * packages/apps/Blissify/
-b11871e Blissify: QS themes [2/2]
-
-   * packages/apps/CustomDoze/
-b432651 Revert "CustomDoze: Simplify double tap switch"
-
-   * packages/apps/Settings/
-57dd949390 Settings: Fix NPE with customdialogpref for backlight settings
 
