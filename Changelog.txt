@@ -1,4 +1,17 @@
 ====================
+     01-28-2020
+====================
+
+
+   * frameworks/base/
+4e5458fa73a base: SystemUI: qs quickbar columns config
+
+   * packages/apps/Blissify/
+a39a0b8 Merge "blissify: SystemUI: qs quickbar columns config" into q
+7674c63 drawable: Update Nav buttons icon
+56a62a4 blissify: SystemUI: qs quickbar columns config
+
+====================
      01-27-2020
 ====================
 
@@ -18,6 +31,12 @@ afffa91ebe8 Properly set fonts and  icons on keyguard when changing styles
 099087a Revert "GamingMode: option to disabe all headsup notifications [2/2]"
 89aef3b Blissify: Search index: Ensure our features show up under Settings
 aecfa01 Blissify: Reorganise some more
+
+   * vendor/bliss/
+5b33081f permissions: Whitelist safetyhub
+3ebd2aa7 permissions: Whitelist settings intelligence permissions
+7ad219c4 permissions: Whitelist systemui permisisons
+7b26c6b5 permissions: Whitelist wallpaper app permissions
 
 ====================
      01-26-2020
@@ -346,49 +365,4 @@ e1cdfc7 msm8960: Add SND_DEVICE_OUT_VOICE_MUSIC_TX
 
    * vendor/themes/
 2deb64f Add Comfortaa font [2/2]
-
-====================
-     01-13-2020
-====================
-
-
-   * build/make/
-dc6de07d1 Merge tag 'android-10.0.0_r23' into q
-
-   * frameworks/base/
-7b27b8a3470 KeyguardSliceView: adjust placement when Type clock is in use
-c718c59d4fe Merge tag 'android-10.0.0_r23' into q
-
-   * frameworks/native/
-ebfd3cd51 Merge tag 'android-10.0.0_r23' into q
-
-   * manifest/
-f906796 Merge tag 'android-10.0.0_r23' into q
-
-   * packages/apps/Blissify/
-da02e59 Blissify: changes to CustomDialogPref
-
-   * packages/apps/Settings/
-e62ec5147e Merge tag 'android-10.0.0_r23' into q
-
-   * packages/providers/DownloadProvider/
-e195399a Merge tag 'android-10.0.0_r23' into q
-
-   * packages/services/Telecomm/
-8774ba6c Merge tag 'android-10.0.0_r23' into q
-
-   * packages/services/Telephony/
-1ca27f26e Merge tag 'android-10.0.0_r23' into q
-
-   * system/sepolicy/
-945c91fe Merge tag 'android-10.0.0_r23' into q
-
-   * system/update_engine/
-585442ab Merge tag 'android-10.0.0_r23' into q
-
-   * vendor/bliss/
-633dd845 Bump to 12.2
-
-   * vendor/qcom/opensource/data-ipa-cfg-mgr/
-1f70a86 Merge branch 'lineage-17.1' into q
 
