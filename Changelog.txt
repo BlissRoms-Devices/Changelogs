@@ -1,15 +1,54 @@
 ====================
+     01-29-2020
+====================
+
+
+   * packages/apps/Blissify/
+662f131 Merge "Fix screean off animations." into q
+965d371 Fix screean off animations.
+
+   * vendor/bliss/
+0b3e675d Merge "vendor: Switch to Lawnchair again" into q10
+9ed76929 Merge changes I02e7b914,I3d30bdc5,Ia07b3029 into q10
+
+====================
      01-28-2020
 ====================
 
 
    * frameworks/base/
+2ad18ecca7f Update power menu screenshot string
+a66e7215db6 ScreenshotHelper: ignore timeout when taking partial screenshots
+4caf45ffee9 SystemUI: implement better partial screenshot
+596db818f89 Revert "base: refine partial screenshot handling"
+64d76b19804 base: Allow controlling QS blur alpha [1/2]
+7e3fec089da update qs blur keyguard check
+8575ca729b0 Make QS blur togglable [1/2]
+a418afc4dee Blur behind quick settings thanks to @Dil3mm4 utility which allows to take screenshots and blur them
+8b863879608 ImageUtilities: A utility that's able to take screenshots via screenshotSurface and to blur images via blurImage
 4e5458fa73a base: SystemUI: qs quickbar columns config
 
+   * manifest/
+4ab2068 Track BlurView repo
+
    * packages/apps/Blissify/
+e89e49d Allow controlling QS blur alpha [2/2]
+f368023 Make QS blur togglable [2/2]
 a39a0b8 Merge "blissify: SystemUI: qs quickbar columns config" into q
 7674c63 drawable: Update Nav buttons icon
 56a62a4 blissify: SystemUI: qs quickbar columns config
+
+   * packages/apps/Settings/
+5fba8b003e MobileNetworkActivity: fix blur derp
+fff3d43463 SettingsBaseActivity: use androidX CardView
+30c342aadd MobileNetworkActivity: blur the action bar
+0f105c3a76 MobileNetworkActivity: draw behind the action bar
+2523e56c09 Settings: Blur the action bar
+0724b71e15 SettingsBaseActivity: draw behind the toolbar
+06558fc59e Settings: blur the search bar
+
+   * vendor/bliss/
+6f7140d7 vendor: Switch to Lawnchair again
 
 ====================
      01-27-2020
@@ -49,6 +88,11 @@ ecc519aea7b [SQUASH] Revert Custom Carrier label
 
    * packages/apps/Blissify/
 da48d07 Blissify: Carrier label improvements
+
+   * vendor/bliss/
+a919de0b backuptool: Run check_{black, white}list with proper system path
+24d13280 backuptool: Execute check_blacklist from the current directory
+29a1e435 backuptool: Fix addon.d version check for A-only
 
 ====================
      01-25-2020
@@ -110,10 +154,6 @@ e126e1c3b Change the position of addAndGetFrameTimestamps when queueBuffer
 ff3d65ce4 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
 83f9cf419 Vulkan: correctly expose Vulkan entry points
 
-   * packages/apps/Settings/
-fec494e7d4 Add primary color picker from Styles & Wallpapers
-150994a05e Add Statusbar Icon Picker from Styles & Wallpapers
-
    * vendor/bliss/
 739e9ab4 envsetup: Add blissify function
 
@@ -127,6 +167,10 @@ fec494e7d4 Add primary color picker from Styles & Wallpapers
 
    * packages/apps/Blissify/
 de9cd40 Blissify: Status bar header enable by default
+
+   * packages/apps/Settings/
+fec494e7d4 Add primary color picker from Styles & Wallpapers
+150994a05e Add Statusbar Icon Picker from Styles & Wallpapers
 
    * packages/apps/ThemePicker/
 832f70e ThemePicker: Fix missing Textview for landscape
@@ -316,53 +360,4 @@ b0ed2da Revert "OmniStyle: Q update rodeo"
 
    * packages/services/Telephony/
 c64634669 Revert "Grant START_ACTIVITIES_FROM_BACKGROUND"
-
-====================
-     01-14-2020
-====================
-
-
-   * frameworks/base/
-2c63690448b PhoneWindowManager: Bring back vibrator DOUBLE_CLICK effect
-3bbc01b616c VibratorService: Fix double click effect with OnePlus vibrator format
-0bbc0fa024b VibratorService: update constant values for OnePlus HAL
-232be3e42df Improve haptics and use VibrationEffect
-0a438f482f1 VibratorService: implement OnePlus proprietary vibrator format
-0901cc5326c Merge "Add Comfortaa font [1/2]" into q
-e961492f130 Merge changes from topic "pri-color" into q
-6fa62d3c960 BatteryMeterView: More robust for showing estimate
-0945c3185f8 Add toggle to display battery in quick status bar [1/2]
-53011916fa8 Separate battery estimate from percent for QS [1/2]
-6241871ee7b Revert "base: option to show battery percent & estimate together [1/2]"
-a431c87dbdb Add Comfortaa font [1/2]
-75ba57ddf9e Update Dark blue primary color
-791a2f14048 Overlay: Add Nature primary
-66e484fe26c Overlay: Add Ocean primary
-
-   * hardware/qcom/audio/
-0b78261 msm8960: Add two stub microphone functions
-e1cdfc7 msm8960: Add SND_DEVICE_OUT_VOICE_MUSIC_TX
-6cb733e msm8960: Add some missing out/in types
-6890961 msm8960: treblize configuration
-
-   * packages/apps/Blissify/
-3f23a92 Blissify: Remove ScreenRecord preference if not supported
-99b9cb7 Add toggle to display battery in quick status bar [2/2]
-1e53f6f Separate battery estimate from percent for QS [2/2]
-140ad76 Revert "Blissify: option to show battery percent & estimate together [2/2]"
-
-   * packages/apps/Settings/
-0c8731e6ef Merge "Settings: Fix NPE with customdialogpref for backlight settings" into q
-
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-elf/
-1ccbef6 Rebuild to statically link GMP/MPFR/MPC/ISL
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi/
-512c928 Rebuild to statically link GMP/MPFR/MPC/ISL
-
-   * vendor/support/
-3fb6689 support: add customdialogpref
-
-   * vendor/themes/
-2deb64f Add Comfortaa font [2/2]
 
