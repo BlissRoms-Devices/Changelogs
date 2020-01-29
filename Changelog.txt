@@ -1,4 +1,15 @@
 ====================
+     01-30-2020
+====================
+
+
+   * frameworks/base/
+e6b8fd4608e fwb: Restore clickable icon for settings in qs footer when unexpanded
+
+   * vendor/bliss/
+0645ea26 permissions: Whitelist CustomDoze permissions to INTERACT_ACROSS_USERS
+
+====================
      01-29-2020
 ====================
 
@@ -226,9 +237,6 @@ f798a468 Merge changes from topic "kernel" into q10
 ====================
 
 
-   * build/make/
-a1f70f217 Merge "build: remove $(PRODUCT_OUT)/recovery/root on build" into q
-
    * frameworks/base/
 20d0fbbe0b6 OOS dismiss button: Use accent color for background
 4713b94f6b2 Themes: ensure some elements are fine and dandy after overlay changes and various inits
@@ -249,6 +257,7 @@ ae2881f1d75 SystemUI: make qs weather page follow system font setting
 
 
    * build/make/
+a1f70f217 Merge "build: remove $(PRODUCT_OUT)/recovery/root on build" into q
 1a3289ea6 Merge "core: fix sepolicy inclusion" into q
 319f5e5da build: remove $(PRODUCT_OUT)/recovery/root on build
 
@@ -337,7 +346,6 @@ a224f2f OmniStyle: Kang header packs from Bootleggers
    * frameworks/base/
 8c7f7059f56 Status bar notification ticker [1/2]
 74ed94b7acd base: Add Status Bar Custom Header to Tuner
-cf4b049ea0d Base: AM: create config to set Max Cached Processes
 
    * hardware/qcom/display/
 d4f59a62 hwc: Move mdpHw declaration under DYNAMIC_FPS flag
@@ -349,15 +357,4 @@ e4e87b51 hwc: Trigger dynamic refresh-rate change for more usecases
 
    * packages/apps/OmniStyle/
 b0ed2da Revert "OmniStyle: Q update rodeo"
-
-====================
-     01-15-2020
-====================
-
-
-   * packages/apps/AudioFX/
-6146b03 Import translations. DO NOT MERGE
-
-   * packages/services/Telephony/
-c64634669 Revert "Grant START_ACTIVITIES_FROM_BACKGROUND"
 
