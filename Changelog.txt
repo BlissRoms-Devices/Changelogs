@@ -1,4 +1,12 @@
 ====================
+     01-31-2020
+====================
+
+
+   * device/lineage/sepolicy/
+0002021 sepolicy: Add sepolicy for Bliss OTA Updater
+
+====================
      01-30-2020
 ====================
 
@@ -116,7 +124,6 @@ fa5bce437e6 Merge "FODCircleView: Patch screen flickering" into q
 682fe3e490f fonts: Nokia Pure and Fifa2018 [1/2]
 d8a25cf707b Add Exotwo, Storopia and Ubuntu fonts [1/2]
 ed9b8c4e05c FODCircleView: fix incorrect position on keyguard
-31873692f5e FODCircleView: Patch screen flickering
 
    * frameworks/native/
 d33a5b370 Add dalvik-heap device configs for 8/12/16 GiB devices
@@ -153,6 +160,7 @@ bfc7686 Move lineage framework service declarations to private
 62eba81 sepolicy: vendor: Label CryptfsHW HIDL HAL
 
    * frameworks/base/
+31873692f5e FODCircleView: Patch screen flickering
 66ed78e9c33 Add Analog Clock with Numbers
 caf631feaa7 Use non-wakeup alarm for delay constraint.
 34c7530ce50 Fix StorageManagerService linkToDeath more than one time when vold/storaged died.
@@ -248,9 +256,6 @@ c5fcbc14acb hwui: Relax the desiredPresent time in RenderAhead feature
 ae2881f1d75 SystemUI: make qs weather page follow system font setting
 1ba87a4fba4 base: Reduce Drag Handle Height
 
-   * packages/apps/Settings/
-42d295b65b Setting: Add vibration intensities
-
 ====================
      01-18-2020
 ====================
@@ -298,6 +303,7 @@ e54c940e2 surfaceflinger: Merge caf changes
 088e367 Track latest GCC for kernels
 
    * packages/apps/Settings/
+42d295b65b Setting: Add vibration intensities
 e9012bea9d Settings: Allow to hide arrow for back gesture [2/2]
 
    * prebuilts/tools-bliss/
@@ -337,24 +343,4 @@ cdc514c headers: Add missing headers brigrade
 bc85955 OmniStyle: Add GoT header pack
 34cc65e OmniStyle: Shorten the names
 a224f2f OmniStyle: Kang header packs from Bootleggers
-
-====================
-     01-16-2020
-====================
-
-
-   * frameworks/base/
-8c7f7059f56 Status bar notification ticker [1/2]
-74ed94b7acd base: Add Status Bar Custom Header to Tuner
-
-   * hardware/qcom/display/
-d4f59a62 hwc: Move mdpHw declaration under DYNAMIC_FPS flag
-e4e87b51 hwc: Trigger dynamic refresh-rate change for more usecases
-
-   * packages/apps/Blissify/
-07d2216 Status bar notification ticker [2/2]
-2226ee3 Blissify: Add reset routine for custom headers
-
-   * packages/apps/OmniStyle/
-b0ed2da Revert "OmniStyle: Q update rodeo"
 
