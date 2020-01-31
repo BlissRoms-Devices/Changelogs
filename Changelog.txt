@@ -1,4 +1,9 @@
 ====================
+     02-01-2020
+====================
+
+
+====================
      01-31-2020
 ====================
 
@@ -124,6 +129,7 @@ fa5bce437e6 Merge "FODCircleView: Patch screen flickering" into q
 682fe3e490f fonts: Nokia Pure and Fifa2018 [1/2]
 d8a25cf707b Add Exotwo, Storopia and Ubuntu fonts [1/2]
 ed9b8c4e05c FODCircleView: fix incorrect position on keyguard
+31873692f5e FODCircleView: Patch screen flickering
 
    * frameworks/native/
 d33a5b370 Add dalvik-heap device configs for 8/12/16 GiB devices
@@ -160,7 +166,6 @@ bfc7686 Move lineage framework service declarations to private
 62eba81 sepolicy: vendor: Label CryptfsHW HIDL HAL
 
    * frameworks/base/
-31873692f5e FODCircleView: Patch screen flickering
 66ed78e9c33 Add Analog Clock with Numbers
 caf631feaa7 Use non-wakeup alarm for delay constraint.
 34c7530ce50 Fix StorageManagerService linkToDeath more than one time when vold/storaged died.
@@ -245,6 +250,9 @@ f798a468 Merge changes from topic "kernel" into q10
 ====================
 
 
+   * build/make/
+a1f70f217 Merge "build: remove $(PRODUCT_OUT)/recovery/root on build" into q
+
    * frameworks/base/
 20d0fbbe0b6 OOS dismiss button: Use accent color for background
 4713b94f6b2 Themes: ensure some elements are fine and dandy after overlay changes and various inits
@@ -256,13 +264,15 @@ c5fcbc14acb hwui: Relax the desiredPresent time in RenderAhead feature
 ae2881f1d75 SystemUI: make qs weather page follow system font setting
 1ba87a4fba4 base: Reduce Drag Handle Height
 
+   * packages/apps/Settings/
+42d295b65b Setting: Add vibration intensities
+
 ====================
      01-18-2020
 ====================
 
 
    * build/make/
-a1f70f217 Merge "build: remove $(PRODUCT_OUT)/recovery/root on build" into q
 1a3289ea6 Merge "core: fix sepolicy inclusion" into q
 319f5e5da build: remove $(PRODUCT_OUT)/recovery/root on build
 
@@ -303,7 +313,6 @@ e54c940e2 surfaceflinger: Merge caf changes
 088e367 Track latest GCC for kernels
 
    * packages/apps/Settings/
-42d295b65b Setting: Add vibration intensities
 e9012bea9d Settings: Allow to hide arrow for back gesture [2/2]
 
    * prebuilts/tools-bliss/
@@ -317,30 +326,4 @@ fd8e6b8 Add dtc binary
 b5feb052 vendor: Add qcom platform type to soongs vars
 f330b722 kernel: allow devices to use newer GCC
 83df7948 kernel: use dtc from prebuilt
-
-====================
-     01-17-2020
-====================
-
-
-   * frameworks/base/
-8be41ac7cdc Bring back ticker for music ticker and Android 10 fixes
-
-   * packages/apps/Blissify/
-80f5763 Blissify: music ticker
-
-   * packages/apps/OmniStyle/
-a517a9d OmniStyle: change header local/remote switch also to a spinner
-dd015f3 OmniStyle: fix switchbar bg color
-1c36ae3 Partially revert "OmniStyle: Remove unneeded parts"
-8ea86c5 OmniStyle: HACK set requestLegacyExternalStorage for the moment
-4290ef1 Revert "OmniStyle: Remove wallpaper settings"
-77830cb OmniStyle: Use settings icon
-50fe511 headers: Fix GoT #4
-4a06495 OmniStyle: Add JLA, Xmen and Avengers headers
-cdc514c headers: Add missing headers brigrade
-2bf0637 OmniStyle: Improve GoT header pack
-bc85955 OmniStyle: Add GoT header pack
-34cc65e OmniStyle: Shorten the names
-a224f2f OmniStyle: Kang header packs from Bootleggers
 
