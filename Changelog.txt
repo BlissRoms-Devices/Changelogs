@@ -1,4 +1,9 @@
 ====================
+     02-02-2020
+====================
+
+
+====================
      02-01-2020
 ====================
 
@@ -250,9 +255,6 @@ f798a468 Merge changes from topic "kernel" into q10
 ====================
 
 
-   * build/make/
-a1f70f217 Merge "build: remove $(PRODUCT_OUT)/recovery/root on build" into q
-
    * frameworks/base/
 20d0fbbe0b6 OOS dismiss button: Use accent color for background
 4713b94f6b2 Themes: ensure some elements are fine and dandy after overlay changes and various inits
@@ -266,64 +268,4 @@ ae2881f1d75 SystemUI: make qs weather page follow system font setting
 
    * packages/apps/Settings/
 42d295b65b Setting: Add vibration intensities
-
-====================
-     01-18-2020
-====================
-
-
-   * build/make/
-1a3289ea6 Merge "core: fix sepolicy inclusion" into q
-319f5e5da build: remove $(PRODUCT_OUT)/recovery/root on build
-
-   * external/sqlite/
-71ec04a sqlite: upgrade to SQLite 3.30.1
-aa02633 sqlite: upgrade to SQLite 3.30.0
-c3f53bd sqlite: upgrade to SQLite 3.29.0
-a7acbb8 libsqlite: remove unused deps
-7cb458f Turn off the new pass manager due to miscompile
-b1b21ce Reduce sync safety levels from 3 to 1
-
-   * frameworks/base/
-54e567b3ab0 Allow to hide arrow for back gesture [1/2]
-7aa0a1dbd49 SystemUI: [HACK] set requestLegacyExternalStorage for the moment
-
-   * frameworks/native/
-9e6bbef6b fix -Wdangling-gsl in test
-d10ac2b01 libbinder: remove INT32_MAX definition
-dd3339e39 Remove "required:"
-c3ea3ceae fix -Wreorder-init-list
-c7d2bb379 fix -Wreorder-init-list
-d1524e365 EGL: Fix repeated extension lookups
-d3d939dba {math|ui} fix -Wimplicit-int-float-conversion
-161027dee Remove unnecessary link library
-378ce863c Link libvndksupport dynamically instead of statically.
-659b882e0 surfaceflinger: Exclude qcom RefreshRateType changes
-50e34ae37 surfaceflinger: Exclude qcom code on unsupported platforms
-457eb4e17 SurfaceFlinger: Exclude CAF extensions from non-QC devices
-e54c940e2 surfaceflinger: Merge caf changes
-1bc9325ac input: Adjust priority
-
-   * lineage-sdk/
-7b9ee358 sdk: Remove berry style leftovers
-
-   * manifest/
-5e9367d manifest: Track our external/sqlite
-57d675a Merge "manifest: update bliss sepolicy path" into q
-088e367 Track latest GCC for kernels
-
-   * packages/apps/Settings/
-e9012bea9d Settings: Allow to hide arrow for back gesture [2/2]
-
-   * prebuilts/tools-bliss/
-fd8e6b8 Add dtc binary
-
-   * system/core/
-83ed4e99e Change search order for system processes in vndk_lite.
-
-   * vendor/bliss/
-1e79052e extract_utils: Drop string after semicolon when parsing destination
-b5feb052 vendor: Add qcom platform type to soongs vars
-f330b722 kernel: allow devices to use newer GCC
-83df7948 kernel: use dtc from prebuilt
 
