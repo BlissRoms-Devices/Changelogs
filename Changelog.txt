@@ -1,7 +1,15 @@
 ====================
+     02-03-2020
+====================
+
+
+====================
      02-02-2020
 ====================
 
+
+   * packages/apps/Blissify/
+e03eeea Blissify: FOD pressed state [2/2]
 
 ====================
      02-01-2020
@@ -32,6 +40,9 @@ e6b8fd4608e fwb: Restore clickable icon for settings in qs footer when unexpande
 ====================
 
 
+   * frameworks/base/
+2ad18ecca7f Update power menu screenshot string
+
    * packages/apps/Blissify/
 662f131 Merge "Fix screean off animations." into q
 965d371 Fix screean off animations.
@@ -46,7 +57,6 @@ e6b8fd4608e fwb: Restore clickable icon for settings in qs footer when unexpande
 
 
    * frameworks/base/
-2ad18ecca7f Update power menu screenshot string
 a66e7215db6 ScreenshotHelper: ignore timeout when taking partial screenshots
 4caf45ffee9 SystemUI: implement better partial screenshot
 596db818f89 Revert "base: refine partial screenshot handling"
@@ -60,12 +70,30 @@ a418afc4dee Blur behind quick settings thanks to @Dil3mm4 utility which allows t
    * manifest/
 4ab2068 Track BlurView repo
 
+   * packages/apps/AudioFX/
+4e0957f Automatic translation import
+
    * packages/apps/Blissify/
 e89e49d Allow controlling QS blur alpha [2/2]
 f368023 Make QS blur togglable [2/2]
 a39a0b8 Merge "blissify: SystemUI: qs quickbar columns config" into q
 7674c63 drawable: Update Nav buttons icon
 56a62a4 blissify: SystemUI: qs quickbar columns config
+
+   * packages/apps/CertInstaller/
+65006e4 Automatic translation import
+
+   * packages/apps/Eleven/
+a60839b Automatic translation import
+
+   * packages/apps/FMRadio/
+c9a4cf4 Automatic translation import
+
+   * packages/apps/Jelly/
+3e84ecb Automatic translation import
+
+   * packages/apps/Recorder/
+a413186 Automatic translation import
 
    * packages/apps/Settings/
 5fba8b003e MobileNetworkActivity: fix blur derp
@@ -76,8 +104,14 @@ fff3d43463 SettingsBaseActivity: use androidX CardView
 0724b71e15 SettingsBaseActivity: draw behind the toolbar
 06558fc59e Settings: blur the search bar
 
+   * packages/resources/devicesettings/
+be06a91 Automatic translation import
+
    * vendor/bliss/
 6f7140d7 vendor: Switch to Lawnchair again
+
+   * vendor/qcom/opensource/fm-commonsys/
+2d47ecf Automatic translation import
 
 ====================
      01-27-2020
@@ -183,6 +217,10 @@ e126e1c3b Change the position of addAndGetFrameTimestamps when queueBuffer
 ff3d65ce4 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
 83f9cf419 Vulkan: correctly expose Vulkan entry points
 
+   * packages/apps/Settings/
+fec494e7d4 Add primary color picker from Styles & Wallpapers
+150994a05e Add Statusbar Icon Picker from Styles & Wallpapers
+
    * vendor/bliss/
 739e9ab4 envsetup: Add blissify function
 
@@ -196,10 +234,6 @@ ff3d65ce4 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
 
    * packages/apps/Blissify/
 de9cd40 Blissify: Status bar header enable by default
-
-   * packages/apps/Settings/
-fec494e7d4 Add primary color picker from Styles & Wallpapers
-150994a05e Add Statusbar Icon Picker from Styles & Wallpapers
 
    * packages/apps/ThemePicker/
 832f70e ThemePicker: Fix missing Textview for landscape
@@ -249,23 +283,4 @@ fd774883bd0 Make NtpTrustedTime safer / expand docs
    * vendor/bliss/
 f798a468 Merge changes from topic "kernel" into q10
 0bc29050 Update default accent color
-
-====================
-     01-19-2020
-====================
-
-
-   * frameworks/base/
-20d0fbbe0b6 OOS dismiss button: Use accent color for background
-4713b94f6b2 Themes: ensure some elements are fine and dandy after overlay changes and various inits
-6fa34893638 Convert VPN Server endpoint to numeric
-c5fcbc14acb hwui: Relax the desiredPresent time in RenderAhead feature
-1045495c7c2 base: set alert dialog message to use system font
-8835067a067 base: fix list style alert dialog to use system font
-4f8c5b1c48c SystemUI: set user detail item to use system font
-ae2881f1d75 SystemUI: make qs weather page follow system font setting
-1ba87a4fba4 base: Reduce Drag Handle Height
-
-   * packages/apps/Settings/
-42d295b65b Setting: Add vibration intensities
 
