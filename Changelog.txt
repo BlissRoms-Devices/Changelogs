@@ -1,4 +1,9 @@
 ====================
+     02-04-2020
+====================
+
+
+====================
      02-03-2020
 ====================
 
@@ -7,6 +12,12 @@
      02-02-2020
 ====================
 
+
+   * frameworks/base/
+18aad9d7a43 FODCircleView: FOD pressed state [1/2]
+e36b662e086 FODCircleView: Add MIUI FP icon
+513630ce529 FODCircleView: Dont change alpha of fod on AOD
+4eb57436e9f Revert "SystemUI: Fod: Aod content should move only in Y"
 
    * packages/apps/Blissify/
 e03eeea Blissify: FOD pressed state [2/2]
@@ -266,21 +277,4 @@ c2300583980 SystemUI: QS: Fix mobile data usage qs details view content
 
    * vendor/bliss/
 a8731dab Merge "Update default accent color" into q10
-
-====================
-     01-20-2020
-====================
-
-
-   * frameworks/base/
-510becc9841 Fix LockdownVpnTracker deadlock when resetting legacy Always-On VPN
-fd774883bd0 Make NtpTrustedTime safer / expand docs
-7dab1f559a9 Revert "NtpTrustedTime: Refresh NTP server from resources before requesting time"
-
-   * manifest/
-42b00d6 Merge "Track latest GCC for kernels" into q
-
-   * vendor/bliss/
-f798a468 Merge changes from topic "kernel" into q10
-0bc29050 Update default accent color
 
