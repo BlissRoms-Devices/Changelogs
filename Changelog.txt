@@ -1,4 +1,9 @@
 ====================
+     02-05-2020
+====================
+
+
+====================
      02-04-2020
 ====================
 
@@ -262,19 +267,4 @@ f6e19807778 Add Custom Sneeky Analog Clock
 5c93b0f81f1 Add Custom dotOS Analog Clock
 c056e82c51a Add Custom Spectrum Analog Clock
 c55f799a086 Add Custom Spidey Analog Clock
-
-====================
-     01-21-2020
-====================
-
-
-   * frameworks/base/
-17d6b56d06d OxygenOS dismiss all: animate it todo: cleanup of all this mess
-e3943090349 PrivacyChip: Do not change view on expand
-f45c31c1253 Fix Another SystemUI crash
-c2300583980 SystemUI: QS: Fix mobile data usage qs details view content
-87935c89e4b QuickStatusBar: Check for permissions hub before setting ignore list
-
-   * vendor/bliss/
-a8731dab Merge "Update default accent color" into q10
 
