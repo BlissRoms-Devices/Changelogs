@@ -1,7 +1,21 @@
 ====================
+     02-06-2020
+====================
+
+
+   * manifest/
+0e8fdb8 update caf hals to los-17.1
+
+====================
      02-05-2020
 ====================
 
+
+   * hardware/qcom-caf/msm8996/audio/
+3e32f8e78 Merge tag 'LA.UM.8.6.r1-02900-89xx.0' of https://source.codeaurora.cn/quic/la/platform/hardware/qcom/audio into HEAD
+
+   * hardware/qcom-caf/sm8150/audio/
+4c1d8e089 audio_extn: Allow skipping compilation of audio HAL extensions
 
 ====================
      02-04-2020
@@ -12,6 +26,9 @@
      02-03-2020
 ====================
 
+
+   * hardware/qcom-caf/sdm845/audio/
+0880192d8 audio_extn: Allow skipping compilation of audio HAL extensions
 
 ====================
      02-02-2020
@@ -233,10 +250,6 @@ e126e1c3b Change the position of addAndGetFrameTimestamps when queueBuffer
 ff3d65ce4 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
 83f9cf419 Vulkan: correctly expose Vulkan entry points
 
-   * packages/apps/Settings/
-fec494e7d4 Add primary color picker from Styles & Wallpapers
-150994a05e Add Statusbar Icon Picker from Styles & Wallpapers
-
    * vendor/bliss/
 739e9ab4 envsetup: Add blissify function
 
@@ -251,20 +264,13 @@ fec494e7d4 Add primary color picker from Styles & Wallpapers
    * packages/apps/Blissify/
 de9cd40 Blissify: Status bar header enable by default
 
+   * packages/apps/Settings/
+fec494e7d4 Add primary color picker from Styles & Wallpapers
+150994a05e Add Statusbar Icon Picker from Styles & Wallpapers
+
    * packages/apps/ThemePicker/
 832f70e ThemePicker: Fix missing Textview for landscape
 
    * system/core/
 f7e8f9461 init: Add vendor_load_persist_properties hook
-
-====================
-     01-22-2020
-====================
-
-
-   * frameworks/base/
-f6e19807778 Add Custom Sneeky Analog Clock
-5c93b0f81f1 Add Custom dotOS Analog Clock
-c056e82c51a Add Custom Spectrum Analog Clock
-c55f799a086 Add Custom Spidey Analog Clock
 
