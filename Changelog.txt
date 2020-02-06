@@ -1,4 +1,9 @@
 ====================
+     02-07-2020
+====================
+
+
+====================
      02-06-2020
 ====================
 
@@ -252,25 +257,4 @@ ff3d65ce4 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
 
    * vendor/bliss/
 739e9ab4 envsetup: Add blissify function
-
-====================
-     01-23-2020
-====================
-
-
-   * frameworks/base/
-6107b41ae57 Add Custom Bliss Analog Clock
-
-   * packages/apps/Blissify/
-de9cd40 Blissify: Status bar header enable by default
-
-   * packages/apps/Settings/
-fec494e7d4 Add primary color picker from Styles & Wallpapers
-150994a05e Add Statusbar Icon Picker from Styles & Wallpapers
-
-   * packages/apps/ThemePicker/
-832f70e ThemePicker: Fix missing Textview for landscape
-
-   * system/core/
-f7e8f9461 init: Add vendor_load_persist_properties hook
 
