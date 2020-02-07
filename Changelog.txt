@@ -1,4 +1,61 @@
 ====================
+     02-08-2020
+====================
+
+
+   * bionic/
+1e5b5ca04 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//bionic into HEAD
+
+   * bootable/recovery/
+3c7b2a69 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//bootable/recovery into HEAD
+
+   * build/blueprint/
+51cc4df Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build/blueprint into HEAD
+
+   * build/make/
+39d6b8f8a Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build into HEAD
+
+   * build/soong/
+f6f702f4 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build/soong into HEAD
+
+   * external/selinux/
+3be1f938 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//external/selinux into HEAD
+
+   * frameworks/av/
+2cff09c89 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/av into HEAD
+
+   * frameworks/base/
+83900abc6a6 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/base into HEAD
+
+   * frameworks/native/
+a11a42d77 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/native into HEAD
+
+   * hardware/qcom/display/
+e7d190a5 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//hardware/qcom/display into HEAD
+
+   * manifest/
+9c30cac Merge branch 'android-10.0.0_r29' of https://android.googlesource.com/platform//manifest into HEAD
+
+   * packages/apps/DeskClock/
+f53c29d2d Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/apps/DeskClock into HEAD
+
+   * packages/apps/Settings/
+c1b5d202da Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD
+
+   * packages/inputmethods/LatinIME/
+06d9a607c Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/inputmethods/LatinIME into HEAD
+
+   * packages/services/Telecomm/
+d515ddd2 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/services/Telecomm into HEAD
+
+   * system/bt/
+f07c60c48 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//system/bt into HEAD
+
+   * vendor/bliss/
+cc349922 Merge "config: Bump to v12.3" into q10
+13b9570a config: Bump to v12.3
+
+====================
      02-07-2020
 ====================
 
@@ -10,6 +67,9 @@
 
    * manifest/
 0e8fdb8 update caf hals to los-17.1
+
+   * vendor/bliss/
+29dd9398 prebuilt: Update Lawnchair to 2 2.1-2613
 
 ====================
      02-05-2020
@@ -26,6 +86,12 @@
      02-04-2020
 ====================
 
+
+   * manifest/
+7887224 Manifest for Android 10.0.0 Release 29 (QQ1D.200205.002)
+b1d0a65 Manifest for Android 10.0.0 Release 28 (QQ1C.200205.002)
+a7193f2 Manifest for Android 10.0.0 Release 27 (QQ1B.200205.002)
+7696dbc Manifest for Android 10.0.0 Release 26 (QQ1A.200205.002)
 
 ====================
      02-03-2020
@@ -231,30 +297,4 @@ c7f6541d prebuilt: Update AboutBliss App
 3464f82 font: add in Road Rage and 20seven font
 95ea6d7 fonts: Nokia Pure and Fifa2018 [2/2]
 86d14da Add Exotwo, Storopia and Ubuntu fonts [2/2]
-
-====================
-     01-24-2020
-====================
-
-
-   * device/lineage/sepolicy/
-d811dd2 sepolicy: Label ro.telephony.use_old_mnc_mcc_format
-bfc7686 Move lineage framework service declarations to private
-62eba81 sepolicy: vendor: Label CryptfsHW HIDL HAL
-
-   * frameworks/base/
-66ed78e9c33 Add Analog Clock with Numbers
-caf631feaa7 Use non-wakeup alarm for delay constraint.
-34c7530ce50 Fix StorageManagerService linkToDeath more than one time when vold/storaged died.
-2b89f52d3d6 Camera: Avoid removing valid repeating requests
-
-   * frameworks/native/
-e126e1c3b Change the position of addAndGetFrameTimestamps when queueBuffer
-90a3231c0 Fix testVerifyStatsExternalConsistent case
-1d26bb844 Vulkan: Improve error translation in CreateSwapChainKHR
-ff3d65ce4 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
-83f9cf419 Vulkan: correctly expose Vulkan entry points
-
-   * vendor/bliss/
-739e9ab4 envsetup: Add blissify function
 
