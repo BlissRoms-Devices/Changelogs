@@ -1,4 +1,70 @@
 ====================
+     02-09-2020
+====================
+
+
+   * build/make/
+23bb79679 releasetools: Use the first entry of a mount point when reading fstab
+d46dd1b85 releasetools: Add script to sign zips
+e0a4ee004 releasetools: support reading release keys out of some sort of command
+64520d879 Fix zsh compatibility issue in build/envsetup.sh
+552bba995 Fix lunch choices w/zsh
+f16158527 Gather lunch choices before printing prompt
+0da1d0eda Make allmod() and pathmod() py3 compatible
+
+   * frameworks/av/
+566f4b949 Revert "cameraservice: Resolve message vs start/stop preview races"
+66a113e98 Camera: Skip stream size check for whitelisted apps.
+25b6c2488 Enable legacy adaptive playback for QCOM_BSP_LEGACY
+5d9c0da4a cameraserver: filter out non-HAL3 devices from HIDL addListener.
+17616b7b6 cameraserver: Avoiding deadlocks while calling isPublicallyHiddenSecureCamera().
+35c60118a Camera: Set input timestamp before returning depth jpegs
+60be0508d add the AV1 in the VideoCodingMapEntry
+4c4f0d98e C2SoftMpeg4Enc: Handle yStride not equal to aligned width
+4a296f5b1 Use stride in ycbcr for YUV->YUV convert
+b3de992c3 Change lock to lockYCbCr for to get the actual y,cb,cr.
+
+   * frameworks/base/
+cc0c7688bfe Avoid system reboot while invalidate LegacyGlobalAction
+80f0dde8a54 ScreenshotSelector: mark externally unused functions as private
+a5cfca7265c SystemUI: Tint QSTile icon with accent color
+3090ab6a0a1 SettingsLib: Add strings for Battery settings dashboard summary
+d162adc4677 Updates to various icons
+a871031ed57 SystemUI: Make tri-state SystemUI dialog dimensions conditional
+8a2178afd14 Updates to "Context-aware Bluetooth airplane mode"
+92adad18fdc SystemUI: Bring back ic_qs_bluetooth_connected.xml
+2880c801500 Volume panel: Adjust the left padding
+a67ae0587cc SystemUI: Pass correct NetworkTemplate to CellularTile detail view
+6f05cc2bc8c [DO NOT MERGE] Check CellInfoCallback Detail for Null
+
+   * frameworks/native/
+17ea5724d sf: Do not switch to protected GPU context for secure camera usecases.
+27c7e9498 sf: Reset last synced time upon resync.
+9ca544ec8 sf: Enable UBWC on virtual display scratch buffer
+5032b517c sf: remove event listener when it was fired.
+0b1435a26 sf: Don't apply color matrix for external display
+be3040e69 sf: Check memory allocations at interval of 300 frames
+b93073cfa SurfaceFlinger: Use default initializer for layer stats
+4cc078f15 sf: handle FrameBuffer scaling path for 90/270 orientation cases
+6c8389f35 sf: Restart model sync on fps change.
+f495c1eda Update SurfaceFlingerProperties scope
+9987fcdec sf: PhaseOffsets: Add missing low refresh rates
+
+   * manifest/
+dcd1705 manifest: Track hardware repos from BlissRoms
+e65548b manifest: Track camera and wlan hardware repos from AOSP
+c309a5b manifest: Track los repos from lineage-17.1
+
+   * vendor/bliss/
+103450f7 vendor: Fix TARGET_USE_AOSP_SURFACEFLINGER logic
+9c109217 vendor: Allow disabling CAF surfaceflinger
+58209c86 vendor: Add back soong and build configuration for qcom platform
+072e2c7a Revert "vendor: Add qcom platform type to soongs vars"
+660afa93 vendor: qcom: Allow a device to manually override which HALs it wants to use
+efe109d0 default-permissions: Don't grant custom permission by default
+0442e3b1 default-permissions: Grant default permissions to com.android.exchange
+
+====================
      02-08-2020
 ====================
 
@@ -92,6 +158,16 @@ cc349922 Merge "config: Bump to v12.3" into q10
 b1d0a65 Manifest for Android 10.0.0 Release 28 (QQ1C.200205.002)
 a7193f2 Manifest for Android 10.0.0 Release 27 (QQ1B.200205.002)
 7696dbc Manifest for Android 10.0.0 Release 26 (QQ1A.200205.002)
+
+   * system/core/
+885762058 Set /sys/power/wake_lock permissions on init.
+2b4ce4c13 init: only provide control message results for devices launching > Q
+bc4f9de3d Ignore class_{reset|start}_post_data on non-updatable APEX.
+a062b3c1d Reland^2: "init: run property service in a thread"
+992042e5f init: add error handling in control message
+c71b724e6 init: simplify async restorecon
+11c2bb5af init: handle getpeercon() errors
+965c059d9 init: set up SelinuxAuditCallback() earlier
 
 ====================
      02-03-2020
@@ -260,41 +336,4 @@ da48d07 Blissify: Carrier label improvements
 a919de0b backuptool: Run check_{black, white}list with proper system path
 24d13280 backuptool: Execute check_blacklist from the current directory
 29a1e435 backuptool: Fix addon.d version check for A-only
-
-====================
-     01-25-2020
-====================
-
-
-   * frameworks/base/
-fa5bce437e6 Merge "FODCircleView: Patch screen flickering" into q
-7fddfb6062f fonts: Road Rage and 20Seven
-682fe3e490f fonts: Nokia Pure and Fifa2018 [1/2]
-d8a25cf707b Add Exotwo, Storopia and Ubuntu fonts [1/2]
-ed9b8c4e05c FODCircleView: fix incorrect position on keyguard
-31873692f5e FODCircleView: Patch screen flickering
-
-   * frameworks/native/
-d33a5b370 Add dalvik-heap device configs for 8/12/16 GiB devices
-
-   * manifest/
-dcde2a1 manifest: cleanup README
-
-   * packages/apps/Contacts/
-ccae167cc Contacts: PoorManThemes: fix editor popup items
-e20a95fb8 PoorManThemes: fix selector bg color
-381084ef5 [1/2] Contacts: fix action mode theme coloring
-e904712f9 Contacts: dann halt mit Gewalt
-d86596e7a Contacts: use commnon menu style for themed apps
-23dace513 Contacts: add missing primary color to launcher theme
-9ce079926 Contacts: allow some Poor Man Theming
-509a802ff Contacts: add missing bottom margin for fab
-
-   * vendor/bliss/
-c7f6541d prebuilt: Update AboutBliss App
-
-   * vendor/themes/
-3464f82 font: add in Road Rage and 20seven font
-95ea6d7 fonts: Nokia Pure and Fifa2018 [2/2]
-86d14da Add Exotwo, Storopia and Ubuntu fonts [2/2]
 
