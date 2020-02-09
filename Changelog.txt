@@ -1,4 +1,23 @@
 ====================
+     02-10-2020
+====================
+
+
+   * frameworks/base/
+a86e280fb8f Prevent battery tunables crashing on first boot
+2ae84ae1c06 Fix AoD front scrim being opaque at DOZE_PULSING.
+dd7f5bc466b Reland "Apply front scrim to doze pulsing"
+abe90ec0379 AoD: Always force brightness updates on pause
+a901107b53f Revert "DozeUi: do not prepare for gentle wakeup"
+08c42402b5a Camera: Use default prop for Privileged App List
+
+   * frameworks/opt/net/wifi/
+fb7bd6cb8 Merge tag 'android-10.0.0_r27' into lineage-17.1-android-10.0.0_r27
+
+   * packages/apps/CertInstaller/
+ccd51e1 Merge tag 'android-10.0.0_r27' into lineage-17.1-android-10.0.0_r27
+
+====================
      02-09-2020
 ====================
 
@@ -319,21 +338,4 @@ aecfa01 Blissify: Reorganise some more
 3ebd2aa7 permissions: Whitelist settings intelligence permissions
 7ad219c4 permissions: Whitelist systemui permisisons
 7b26c6b5 permissions: Whitelist wallpaper app permissions
-
-====================
-     01-26-2020
-====================
-
-
-   * frameworks/base/
-f26268ad26b Custom Carrier Label & Carrier Label Placement [1/2]
-ecc519aea7b [SQUASH] Revert Custom Carrier label
-
-   * packages/apps/Blissify/
-da48d07 Blissify: Carrier label improvements
-
-   * vendor/bliss/
-a919de0b backuptool: Run check_{black, white}list with proper system path
-24d13280 backuptool: Execute check_blacklist from the current directory
-29a1e435 backuptool: Fix addon.d version check for A-only
 
