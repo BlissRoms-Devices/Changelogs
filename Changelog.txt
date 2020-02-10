@@ -1,4 +1,9 @@
 ====================
+     02-11-2020
+====================
+
+
+====================
      02-10-2020
 ====================
 
@@ -311,31 +316,4 @@ be06a91 Automatic translation import
 
    * vendor/qcom/opensource/fm-commonsys/
 2d47ecf Automatic translation import
-
-====================
-     01-27-2020
-====================
-
-
-   * device/lineage/sepolicy/
-5861c22 Remove qcom/vendor/file.te
-
-   * frameworks/base/
-d0adde8a914 Revert "GamingMode: option to disabe all headsup notifications [1/2]"
-19c927fc8a7 TypeClock: adapt to changes in keyguard
-1c1ac819761 Custom Clocks: Switch to new layout for all Clocks
-5689764cf5e SystemUI: fixup analog clock for aod support
-913c695dd27 SystemUI: custom keyguard clock kick off
-afffa91ebe8 Properly set fonts and  icons on keyguard when changing styles
-
-   * packages/apps/Blissify/
-099087a Revert "GamingMode: option to disabe all headsup notifications [2/2]"
-89aef3b Blissify: Search index: Ensure our features show up under Settings
-aecfa01 Blissify: Reorganise some more
-
-   * vendor/bliss/
-5b33081f permissions: Whitelist safetyhub
-3ebd2aa7 permissions: Whitelist settings intelligence permissions
-7ad219c4 permissions: Whitelist systemui permisisons
-7b26c6b5 permissions: Whitelist wallpaper app permissions
 
