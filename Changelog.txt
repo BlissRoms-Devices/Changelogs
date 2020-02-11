@@ -1,7 +1,34 @@
 ====================
+     02-12-2020
+====================
+
+
+   * frameworks/base/
+27fad1d82fa SystemUI: Introduce Adjustable Blur Intensity [1/2]
+e6cb0d58194 StatusBarMobileView: Fix gap when toggling airplane mode
+7dd37850ece AudioDeviceInventory: launch default music player on headset connect [1/2]
+26151e56151 SystemUI: block gestural navigation when using partial screenshot
+
+   * packages/apps/Blissify/
+ffac324 Introduce Adjustable Blur Intensity [2/2]
+697beb8 Blissify: launch default music player on headset connect [2/2]
+
+====================
      02-11-2020
 ====================
 
+
+   * frameworks/base/
+729ea348654 Fix NPE with void android.view.VelocityTracker.clear()
+793a13d1651 base: omnistyle: Stinky workaround for header shadow and tinted images
+fcadcaa041f SystemUI: Lockscreen weather code fixes
+7d761bf59a9 SystemUI: Nope. This shouldn't be here
+f4e0eefb3a2 QS brightness slider: Update brightness thumb vector
+d81e3869261 Add Mono audio tile (aka headphone in one ear only)
+a6126db9f93 Add dynamic Immersive Mode tile
+adb55e0d649 Screenrecord dialog: Make it less ugly
+0c558075271 Partial screenshot: Layout improvements
+18da8d95b11 GlobalScreenshot: do not capture multiple screenshots simultaneously
 
 ====================
      02-10-2020
@@ -9,6 +36,8 @@
 
 
    * frameworks/base/
+0e8f2615157 OmniJaws weather tile: rework forecast layout logic now its easier to theme it
+6cb973c10b6 Fix oxygenos dismiss all appearing when there arent any notifications to dimiss
 a86e280fb8f Prevent battery tunables crashing on first boot
 2ae84ae1c06 Fix AoD front scrim being opaque at DOZE_PULSING.
 dd7f5bc466b Reland "Apply front scrim to doze pulsing"
@@ -254,66 +283,4 @@ e6b8fd4608e fwb: Restore clickable icon for settings in qs footer when unexpande
    * vendor/bliss/
 0b3e675d Merge "vendor: Switch to Lawnchair again" into q10
 9ed76929 Merge changes I02e7b914,I3d30bdc5,Ia07b3029 into q10
-
-====================
-     01-28-2020
-====================
-
-
-   * frameworks/base/
-a66e7215db6 ScreenshotHelper: ignore timeout when taking partial screenshots
-4caf45ffee9 SystemUI: implement better partial screenshot
-596db818f89 Revert "base: refine partial screenshot handling"
-64d76b19804 base: Allow controlling QS blur alpha [1/2]
-7e3fec089da update qs blur keyguard check
-8575ca729b0 Make QS blur togglable [1/2]
-a418afc4dee Blur behind quick settings thanks to @Dil3mm4 utility which allows to take screenshots and blur them
-8b863879608 ImageUtilities: A utility that's able to take screenshots via screenshotSurface and to blur images via blurImage
-4e5458fa73a base: SystemUI: qs quickbar columns config
-
-   * manifest/
-4ab2068 Track BlurView repo
-
-   * packages/apps/AudioFX/
-4e0957f Automatic translation import
-
-   * packages/apps/Blissify/
-e89e49d Allow controlling QS blur alpha [2/2]
-f368023 Make QS blur togglable [2/2]
-a39a0b8 Merge "blissify: SystemUI: qs quickbar columns config" into q
-7674c63 drawable: Update Nav buttons icon
-56a62a4 blissify: SystemUI: qs quickbar columns config
-
-   * packages/apps/CertInstaller/
-65006e4 Automatic translation import
-
-   * packages/apps/Eleven/
-a60839b Automatic translation import
-
-   * packages/apps/FMRadio/
-c9a4cf4 Automatic translation import
-
-   * packages/apps/Jelly/
-3e84ecb Automatic translation import
-
-   * packages/apps/Recorder/
-a413186 Automatic translation import
-
-   * packages/apps/Settings/
-5fba8b003e MobileNetworkActivity: fix blur derp
-fff3d43463 SettingsBaseActivity: use androidX CardView
-30c342aadd MobileNetworkActivity: blur the action bar
-0f105c3a76 MobileNetworkActivity: draw behind the action bar
-2523e56c09 Settings: Blur the action bar
-0724b71e15 SettingsBaseActivity: draw behind the toolbar
-06558fc59e Settings: blur the search bar
-
-   * packages/resources/devicesettings/
-be06a91 Automatic translation import
-
-   * vendor/bliss/
-6f7140d7 vendor: Switch to Lawnchair again
-
-   * vendor/qcom/opensource/fm-commonsys/
-2d47ecf Automatic translation import
 
