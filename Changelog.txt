@@ -1,4 +1,9 @@
 ====================
+     02-13-2020
+====================
+
+
+====================
      02-12-2020
 ====================
 
@@ -267,20 +272,4 @@ e6b8fd4608e fwb: Restore clickable icon for settings in qs footer when unexpande
 
    * vendor/bliss/
 0645ea26 permissions: Whitelist CustomDoze permissions to INTERACT_ACROSS_USERS
-
-====================
-     01-29-2020
-====================
-
-
-   * frameworks/base/
-2ad18ecca7f Update power menu screenshot string
-
-   * packages/apps/Blissify/
-662f131 Merge "Fix screean off animations." into q
-965d371 Fix screean off animations.
-
-   * vendor/bliss/
-0b3e675d Merge "vendor: Switch to Lawnchair again" into q10
-9ed76929 Merge changes I02e7b914,I3d30bdc5,Ia07b3029 into q10
 
