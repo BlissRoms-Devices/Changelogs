@@ -1,9 +1,32 @@
 ====================
+     02-22-2020
+====================
+
+
+====================
      02-21-2020
 ====================
 
 
    * frameworks/base/
+5135271b6b6 systemui: use headline font for vpn
+5b30e408f61 packages: SystemUI: improve the VPN footer layout
+e84ce0707fa SystemUI: Update clock & date font styles
+e3cbc28b91b Add Network Preference Bitmaps (1/2)
+f4792968f2a base: lightservice: strengthen useScaleBrightness checking
+fbf24bf73fa base: SystemUI: add tuner to hide qs security footer
+d387c0dc9ba Merge changes I8e922fcb,I3c6928d8 into q
+
+   * frameworks/native/
+a247b4425 libui: Extend adb95ae to Gralloc3
+f37d479ea libui: Allow invalid bits from callers conditionally
+
+   * packages/apps/Blissify/
+7b36c4d Blissify: Update clock & date font styles
+e380592 Blissify: Add new Pixel Gesture Icons
+
+   * prebuilts/tools-bliss/
+c384dfe Revert "tools-bliss: update repo to v2.0"
 
 ====================
      02-20-2020
@@ -11,6 +34,8 @@
 
 
    * packages/apps/Settings/
+4544293413 FeatureFactoryImpl: PowerUsageFeatureProviderGoogleImpl: Catch NameNotFoundException
+8d4e4a5a11 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
 
 ====================
      02-19-2020
@@ -18,6 +43,67 @@
 
 
    * external/google/
+0bcb9de Merge "SystemUIGoogle: Fix concurrent modification crash" into q
+00cf5f4 SystemUIGoogle: Fix concurrent modification crash
+
+   * frameworks/base/
+9616a196530 SystemUI: Improve EnhancedEstimatesGoogleImpl
+e8befcd98a7 SystemUI: EnhancedEstimatesGoogleImp: Catch NameNotFoundException
+2cc27fb37df SystemUI: SystemUIGoogleModule: Switch to EnhancedEstimatesGoogleImpl
+3cf481736a7 base: Add San Francisco Display Pro font [1/2]
+acaabf771e6 Add GrandHotel and Redressed fonts [1/2]
+d69d5d5cd54 Add Cocon and Quando fonts [1/2]
+ef7094dea53 Fix AnimatedImageDrawables using ByteBuffers
+8307d538d8b Fix black image wallpaper issue
+b2e63d84797 Refine battery saver footer string
+f0b9e4e6cd8 Ignore null package names on AppIdleHistory writes
+bb78c2fa2db Re-add settings to relax device ID access restrictions [1/2]
+a9defc04e80 Process: Use audio-app cpuset if available
+71c52265230 Merge "KeyguardIndicationController: Protect updateChargingIndication() from NPE." into q
+15815a94e5e Merge changes from topic "pixel" into q
+86bc7e4d16c Merge changes from topic "pixel" into q
+20bf25dadd6 SystemUI: handle camera launch gesture from keyhandler
+4b95a766113 Revert "SystemUI: handle camera launch gesture from keyhandler"
+1661d971b1a Merge changes from topic "good-stuff" into q
+
+   * manifest/
+96f787f manifest: Track external/google from BlissRoms
+
+   * packages/apps/Blissify/
+66d8818 Blissify: Fix hiding smart pixels preference
+57168aa Blissify: Add settings to relax device ID access restrictions [2/2]
+b6f8180 Merge changes from topic "pixel" into q
+6bf3fc9 Blissify: Disable keyguard charging animation by default
+8642355 Motion & Squeeze: Let's use Google's controller method for preferences
+59ca504 Active Edge [2/2]
+b0d2a4c Blissify: Motion Sense [2/2]
+71077f1 Blissify: Display Pixel Gestures only for Pixel Devices
+041436e Blissify: Add Pixel Gestures Sub Category
+
+   * packages/apps/LineageParts/
+4dbcd56 LineageParts: Fix KeyHandler for opening messaging app
+7c6f1a7 LineageParts: Fix dark theme issues
+cf513da LineageParts: RIP profiles app groups
+0a87ea2 LineageParts: Slightly improve package list dialog style
+70840b9 LineageParts: Convert profile trigger list fragment to RecyclerView
+1f44622 LineageParts: Switch to (ctx).getSystemService(x.class) everywhere
+c9add10 LineageParts: Use 'OK' instead of 'Cancel' in requestRemoveProfileDialog()
+c934a7d LineageParts: Improve profiles list style
+3ee6de6 LineageParts: Improve the way profile triggers UI looks
+3628f7b LineageParts: Fix profile action bar icon colors
+95d3d1a LineageParts: Convert profile settings list to RecyclerView
+4556b28 LineageParts: Make profiles UI look slightly better
+902ac00 LineageParts: Reenable system profiles
+
+   * packages/apps/Settings/
+ee0c04f294 Merge changes from topic "pixel" into q
+dfe442b749 Merge "Use IEC units in app info data usage." into q
+
+   * vendor/themes/
+790cc6b themes: Add San Francisco Display Pro font [2/2]
+507adcc themes: Update Cocon font
+1a62b78 Add GrandHotel and Redressed fonts [2/2]
+239af9e Add Cocon and Quando fonts [2/2]
 
 ====================
      02-18-2020
@@ -25,6 +111,32 @@
 
 
    * external/google/
+f59d6f5 Remove duplicated FeatureFactoryImpl
+4fab8b1 SettingsGoogle: Use BLISSIFY Metric
+f35cc72 SystemUIGoogle: Use BlissUtils
+
+   * frameworks/base/
+bf2d27f1708 BlissUtils: Add toggleVolumePanel action
+5cb68a3a3d9 Introduce long squeeze action
+0aa8ea578df Active Edge [1/2]
+4cadb2dba46 Flashlight toggle api improvements
+e67bdf5680c base: add camera flash toggle api
+346a335ea24 Add some static custom utilities
+dd974ecfb43 BlissUtils: Cleanup screen on action code
+f872c3d7099 BlissUtils: Add screen on action
+c45610d3ce8 KeyguardIndicationController: Protect updateChargingIndication() from NPE.
+3c16cc819fb SystemUI: Disable keyguard charging animation by default
+f7552b86ac2 SystemUI: Fix keyguard charging NPE
+2da131a8552 SystemUI: fix qs footer divider width
+
+   * packages/apps/Blissify/
+abcd0dc Blissify: update icons
+
+   * packages/apps/Settings/
+907124bb22 Update raw animations and drawables from Pixel 4 XL
+2bb855d586 Settings: Initial import for Pixel-specific feature Settings
+fe9ca2409b Settings: add fod option in FP location overlay
+79f2ace2a9 Settings: Add vibration patterns from OOS and
 
 ====================
      02-17-2020
@@ -32,6 +144,31 @@
 
 
    * build/make/
+9b953115f build: generate recovery ramdisk image from TARGET_PREBUILT_RECOVERY_RAMDISK
+269bec92d build: support using a prebuilt recovery ramdisk
+
+   * frameworks/base/
+897f8bbf737 Revert "lowered animations duration"
+e56cfaa923c base: Add vibration patterns from OOS
+f6986eda9d3 Add Dialer's public strings
+
+   * hardware/qcom-caf/sm8150/display/
+8d7a56ce gralloc: Add option for unaligned YCrCb pixel format
+000ff662 gralloc: Add option for unaligned NV21_ZSL pixel format
+1d40487f gralloc: Add option for YCrCb venus camera preview
+931cc83f gralloc: Allow devices to opt-in for YCrCb camera preview
+
+   * packages/services/OmniJaws/
+e553d80 OmniJaws: METNorwayProvider: adjust icon mapping
+1ee7445 OmniJaws: update METNorwayProvider to latest API changes
+9731a95 OmniJaws: dont hardcode string for unknown city
+3e52617 OmniJaws: when widget receives error try to show last data
+717137f Add provider: MET Norway
+d9c20f3 Update gitreview file
+
+   * packages/services/Telecomm/
+177ec46c Fix default value for flashlight blink on incoming calls
+23b53fb3 Telecomm: Add vibration patterns from OOS
 
 ====================
      02-16-2020
@@ -39,6 +176,16 @@
 
 
    * external/google/
+d72f250 Add .gitreview
+
+   * packages/apps/Settings/
+38067587ae Settings: Icons: add DNS icon
+011d60ebe4 Settings: Add drawable for Private DNS
+
+   * vendor/bliss/
+0f83daab priv-app: Whitelist more Google permissions
+2a545b82 priv-app: Whitelist more vending permissions
+5e6348a5 vendor/bliss: Add Google privapp permissions
 
 ====================
      02-15-2020
@@ -46,6 +193,50 @@
 
 
    * frameworks/base/
+fe97234c437 Keyguard: ReInflate views when density or font scale change
+c3249962b92 SystemUI: Lock Date font size [1/2]
+aea6837aa1b SystemUI: Lockscreen Clock Font Size [1/2]
+2a5517a9ecb SystemUI: TypeClock: fix 19c927fc8a73c8b688405b11bdf468dcdc22af78
+ecb999adfc7 add MIUI 11 VoLTE icon [1/2]
+34a19a9ba6b Add upgrade step to fix system sounds issue
+9199b3af918 RingtoneManager: Don't crash if the ringtone doesn't have a numerical ID
+e97d495f72e FODCircleView: Don't show circle if already Authenticated
+49cee3c262c EdgeBackGestureHandler: Change back gesture height intervals
+8c1c969e8b4 ProgressBar: Media volume bar indicates a wrong value
+
+   * lineage-sdk/
+4d44cd6f Automatic translation import
+e2cf866c PerformanceManager: Fix applying power profile in low power mode
+
+   * packages/apps/Blissify/
+186345d Lockscreen Clock Font Size [2/2]
+4d55b74 Blissify: Lock date font size [2/2]
+9c1872d Blissify: Add MIUI 11 VoLTE icon [2/2]
+
+   * packages/apps/Settings/
+c336a69eae Settings: Adaptive brightness: Fix summary fuckery
+6f42737e75 Settings: Fix settings dashboard summary while warp charging
+cb8eb6591d Settings: Fix settings dashboard summary while dash charging
+4aba1d7eea Settings: Themes: make sure settings shortcut icons follow system accent
+a38f9d4630 Settings: Desktop backup password: Tint buttons to match system theme
+8fab2383f4 Settings: Power detail pages: Finish off the rest of the icon tinting
+24691ea56e Settings: Fix icon tinting in power detail pages
+90ef29006d Settings: Fix textApperance of our modified gesture dialog
+
+   * packages/apps/ThemePicker/
+01e317b Revert "Use CenterCropBitmapTask for theme wallpapers"
+67dbacf ThemePicker: Show items name under the title
+59a85c3 ThemePicker: Clean that color chip naming mess
+ef4278d ThemePicker: Change color chip selector style to single border
+1fda206 ThemePicker: Fix wrong background color on side of buttons
+3185aaf ThemePicker: Fix drawing theme option border
+18975c0 ThemePicker: Remove bottom navbar tip code
+8d232d8 ThemePicker: Fix padding for the applied styles
+64c080a Revert "ThemePicker: Showcase the Font name"
+e8c7595 ThemePicker: fix marking current selected clock face on start
+
+   * vendor/bliss/
+b4846643 Merge changes from topic "misc" into q10
 
 ====================
      02-14-2020
@@ -53,6 +244,37 @@
 
 
    * bionic/
+d71b1d50e bionic: Support wildcards in cached hosts file
+
+   * device/lineage/sepolicy/
+e9919fa Allow Snap cam access for gpu service
+24ce61b snap_app: Allow binder call with gpuservice
+cea2cf5 sepolicy: Allow system_server to read and write to sysfs_battery_supply
+9e13df9 sepolicy: Smart Charging (3/4)
+
+   * frameworks/base/
+5538d83b30b BlissUtils: Add a method to enable/disable package components
+2f0727751ad Merge "fwb: Increase Longshot timeout to 2 seconds" into q
+daa5931aa03 Merge "fwb: Port extended screenshot function from OOS" into q
+e723793bb2b SysUI: System Info: simplify
+
+   * hardware/lineage/interfaces/
+c73bdf3 aw2013: Fix typo in condition line
+
+   * packages/apps/Blissify/
+ab2eb0f Add QS System Info [2/2]
+5f08248 Blissify: Add option to hide lockscreen date [2/2]
+
+   * packages/apps/Settings/
+52ca2f0a14 Settings: Fix QRCamera crash
+54e04ebe19 Bug:PreferredNetworkModePreferenceController.java not being refreshed
+
+   * prebuilts/tools-bliss/
+78646b1 tools-bliss: update repo to v2.0
+
+   * vendor/bliss/
+9e7b735a vendor: Update Longshot
+aa420977 vendor: Import modded Longshot app
 
 ====================
      02-13-2020
@@ -60,6 +282,19 @@
 
 
    * frameworks/base/
+00b8944b0c6 SysUI: System Info: make resources overlayable
+7b3bd1659a7 SysUI: System Info: add path checks & cleanup
+934a0e346c7 SystemUI: Add QS System Info [1/2]
+3162c692298 base: add Bootleg's Date Styles [1/2]
+d68fc53f16b base: add Q beta pill background [1/2]
+90722f20b0c Introduce lockscreen date styles [1/2]
+88af6306e26 SystemUI: Add option to hide lockscreen date [1/2]
+f0bf9ebaa1f SystemUI: Keyguard: Hide Clock frame instead of the whole container
+
+   * packages/apps/Blissify/
+8d38259 add Bootleg's Date styles [2/2]
+3e61404 Date styles: add Q beta pill [2/2]
+776c34d Lockscreen date styles [2/2]
 
 ====================
      02-12-2020
@@ -67,6 +302,24 @@
 
 
    * frameworks/base/
+9b782e1aa19 Add whitelist permissions needed for SystemUIGoogle
+27fad1d82fa SystemUI: Introduce Adjustable Blur Intensity [1/2]
+7599d11ea3c fwb: Increase Longshot timeout to 2 seconds
+9b4b6182453 fwb: Port extended screenshot function from OOS
+e6cb0d58194 StatusBarMobileView: Fix gap when toggling airplane mode
+7dd37850ece AudioDeviceInventory: launch default music player on headset connect [1/2]
+26151e56151 SystemUI: block gestural navigation when using partial screenshot
+
+   * packages/apps/Blissify/
+ffac324 Introduce Adjustable Blur Intensity [2/2]
+697beb8 Blissify: launch default music player on headset connect [2/2]
+
+   * packages/apps/Settings/
+c07c56c9af Use IEC units in app info data usage.
+
+   * vendor/bliss/
+86814707 bliss: Fix dopush
+85b4fc99 bliss: Deprecate AddonSU
 
 ====================
      02-11-2020
@@ -74,6 +327,16 @@
 
 
    * frameworks/base/
+729ea348654 Fix NPE with void android.view.VelocityTracker.clear()
+793a13d1651 base: omnistyle: Stinky workaround for header shadow and tinted images
+fcadcaa041f SystemUI: Lockscreen weather code fixes
+7d761bf59a9 SystemUI: Nope. This shouldn't be here
+f4e0eefb3a2 QS brightness slider: Update brightness thumb vector
+d81e3869261 Add Mono audio tile (aka headphone in one ear only)
+a6126db9f93 Add dynamic Immersive Mode tile
+adb55e0d649 Screenrecord dialog: Make it less ugly
+0c558075271 Partial screenshot: Layout improvements
+18da8d95b11 GlobalScreenshot: do not capture multiple screenshots simultaneously
 
 ====================
      02-10-2020
@@ -81,6 +344,23 @@
 
 
    * device/lineage/sepolicy/
+0870096 sepolicy: Add rules for Long screenshot service
+
+   * frameworks/base/
+0e8f2615157 OmniJaws weather tile: rework forecast layout logic now its easier to theme it
+6cb973c10b6 Fix oxygenos dismiss all appearing when there arent any notifications to dimiss
+a86e280fb8f Prevent battery tunables crashing on first boot
+2ae84ae1c06 Fix AoD front scrim being opaque at DOZE_PULSING.
+dd7f5bc466b Reland "Apply front scrim to doze pulsing"
+abe90ec0379 AoD: Always force brightness updates on pause
+a901107b53f Revert "DozeUi: do not prepare for gentle wakeup"
+08c42402b5a Camera: Use default prop for Privileged App List
+
+   * frameworks/opt/net/wifi/
+fb7bd6cb8 Merge tag 'android-10.0.0_r27' into lineage-17.1-android-10.0.0_r27
+
+   * packages/apps/CertInstaller/
+ccd51e1 Merge tag 'android-10.0.0_r27' into lineage-17.1-android-10.0.0_r27
 
 ====================
      02-09-2020
@@ -88,6 +368,67 @@
 
 
    * build/make/
+23bb79679 releasetools: Use the first entry of a mount point when reading fstab
+d46dd1b85 releasetools: Add script to sign zips
+e0a4ee004 releasetools: support reading release keys out of some sort of command
+64520d879 Fix zsh compatibility issue in build/envsetup.sh
+552bba995 Fix lunch choices w/zsh
+f16158527 Gather lunch choices before printing prompt
+0da1d0eda Make allmod() and pathmod() py3 compatible
+
+   * frameworks/av/
+566f4b949 Revert "cameraservice: Resolve message vs start/stop preview races"
+66a113e98 Camera: Skip stream size check for whitelisted apps.
+25b6c2488 Enable legacy adaptive playback for QCOM_BSP_LEGACY
+5d9c0da4a cameraserver: filter out non-HAL3 devices from HIDL addListener.
+17616b7b6 cameraserver: Avoiding deadlocks while calling isPublicallyHiddenSecureCamera().
+35c60118a Camera: Set input timestamp before returning depth jpegs
+60be0508d add the AV1 in the VideoCodingMapEntry
+4c4f0d98e C2SoftMpeg4Enc: Handle yStride not equal to aligned width
+4a296f5b1 Use stride in ycbcr for YUV->YUV convert
+b3de992c3 Change lock to lockYCbCr for to get the actual y,cb,cr.
+
+   * frameworks/base/
+cc0c7688bfe Avoid system reboot while invalidate LegacyGlobalAction
+80f0dde8a54 ScreenshotSelector: mark externally unused functions as private
+a5cfca7265c SystemUI: Tint QSTile icon with accent color
+3090ab6a0a1 SettingsLib: Add strings for Battery settings dashboard summary
+d162adc4677 Updates to various icons
+a871031ed57 SystemUI: Make tri-state SystemUI dialog dimensions conditional
+8a2178afd14 Updates to "Context-aware Bluetooth airplane mode"
+92adad18fdc SystemUI: Bring back ic_qs_bluetooth_connected.xml
+2880c801500 Volume panel: Adjust the left padding
+a67ae0587cc SystemUI: Pass correct NetworkTemplate to CellularTile detail view
+6f05cc2bc8c [DO NOT MERGE] Check CellInfoCallback Detail for Null
+
+   * frameworks/native/
+17ea5724d sf: Do not switch to protected GPU context for secure camera usecases.
+27c7e9498 sf: Reset last synced time upon resync.
+9ca544ec8 sf: Enable UBWC on virtual display scratch buffer
+5032b517c sf: remove event listener when it was fired.
+0b1435a26 sf: Don't apply color matrix for external display
+be3040e69 sf: Check memory allocations at interval of 300 frames
+b93073cfa SurfaceFlinger: Use default initializer for layer stats
+4cc078f15 sf: handle FrameBuffer scaling path for 90/270 orientation cases
+6c8389f35 sf: Restart model sync on fps change.
+f495c1eda Update SurfaceFlingerProperties scope
+9987fcdec sf: PhaseOffsets: Add missing low refresh rates
+
+   * manifest/
+862a55d manifest: Switch to lineage system/hardware/interfaces fork
+b4bec4b manifest: Enable Profiles
+dcd1705 manifest: Track hardware repos from BlissRoms
+e65548b manifest: Track camera and wlan hardware repos from AOSP
+c309a5b manifest: Track los repos from lineage-17.1
+
+   * vendor/bliss/
+103450f7 vendor: Fix TARGET_USE_AOSP_SURFACEFLINGER logic
+9c109217 vendor: Allow disabling CAF surfaceflinger
+58209c86 vendor: Add back soong and build configuration for qcom platform
+072e2c7a Revert "vendor: Add qcom platform type to soongs vars"
+660afa93 vendor: qcom: Allow a device to manually override which HALs it wants to use
+efe109d0 default-permissions: Don't grant custom permission by default
+0442e3b1 default-permissions: Grant default permissions to com.android.exchange
 
 ====================
      02-08-2020
@@ -95,9 +436,54 @@
 
 
    * bionic/
+1e5b5ca04 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//bionic into HEAD
 
-====================
-     02-07-2020
-====================
+   * bootable/recovery/
+3c7b2a69 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//bootable/recovery into HEAD
 
+   * build/blueprint/
+51cc4df Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build/blueprint into HEAD
+
+   * build/make/
+39d6b8f8a Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build into HEAD
+
+   * build/soong/
+f6f702f4 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build/soong into HEAD
+
+   * external/selinux/
+3be1f938 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//external/selinux into HEAD
+
+   * frameworks/av/
+2cff09c89 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/av into HEAD
+
+   * frameworks/base/
+83900abc6a6 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/base into HEAD
+
+   * frameworks/native/
+a11a42d77 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/native into HEAD
+
+   * hardware/qcom/display/
+e7d190a5 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//hardware/qcom/display into HEAD
+
+   * manifest/
+9c30cac Merge branch 'android-10.0.0_r29' of https://android.googlesource.com/platform//manifest into HEAD
+
+   * packages/apps/DeskClock/
+f53c29d2d Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/apps/DeskClock into HEAD
+
+   * packages/apps/Settings/
+c1b5d202da Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD
+
+   * packages/inputmethods/LatinIME/
+06d9a607c Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/inputmethods/LatinIME into HEAD
+
+   * packages/services/Telecomm/
+d515ddd2 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/services/Telecomm into HEAD
+
+   * system/bt/
+f07c60c48 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//system/bt into HEAD
+
+   * vendor/bliss/
+cc349922 Merge "config: Bump to v12.3" into q10
+13b9570a config: Bump to v12.3
 
