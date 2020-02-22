@@ -1,7 +1,74 @@
 ====================
+     02-23-2020
+====================
+
+
+   * frameworks/base/
+d74dc95c031 SystemUI: Improve edge pulse
+36d55605fe4 SystemUI: Add a toggle for the new QS tint [1/2]
+677854484e3 Make smart actions icon to respect dark theme setting
+e08dcfcd2e1 Keyguard: Fix failed unlock attempt dialog button
+8be4044f98e Fix: dummy deviceKey is not correct if real device with dummy addr exist
+bd374eaa868 (Minor) fix on ActivityManagerService.LocalService.getCurrentUserId()
+2c7fbacce6f Fix Jank when factory resetting
+f3867a54cb7 Clamp brightness thresholds to the maximum brightness.
+293b8a38b5e Fix for Surface#lockHardwareCanvas lockups
+d8592492578 Issue a warning when the user switching dialog times out.
+4bef8030999 Make emergency notification dismissable
+1995a84f55e Fix crash after destroyed
+70c70a52515 Keyguard should be dismissed if there is no trusted device.
+aed44846d51 Force a garbage collection after lockscreen verification
+f21afbb9c39 Try to rebind disconnected wallpaper service for 10 seconds.
+c8039efcc8c Don't disable GPS in Doze until the device is stationary.
+54ee00e201c Fix Settings creating too many threads unexpectedly
+a1c5b7cf146 AndroidManifest: add a permission group for signature spoofing
+1416be460bb SystemUI: Hide QS divider
+9d88ef518aa base: Lower the internal audio capture restriction
+c05867300f8 SystemUI/AndroidManifest.xml: Override authorities for providers
+a3b2f6363fc Change layout of ToggleAction for GlobalActionsDialog
+4174ae30a3a Fix nav bar leak in SystemUI
+63848069305 Merge changes from topic "edge-light" into q
+
+   * manifest/
+d514e1b manifest: Track SDM845 Display HAL from LOS
+
+   * packages/apps/Blissify/
+0d18452 Blissify: Add a toggle for the new QS tint [2/2]
+5450cfd Edge light: properly disable pulse light
+
+   * packages/apps/Settings/
+de84520403 Settings: Remove duplicate preferences
+
+====================
      02-22-2020
 ====================
 
+
+   * frameworks/base/
+45e108b6b08 SystemUI: Fix persistent Settings icon mess
+47e05bcc95e SettingsLib: mutate drawable before tinting for buildBtRainbowDrawable
+270d70ef62f base: fix TwilightService start and initial location update
+2a687abd65f base: Add an option to pulse edge light for all doze triggers [1/2]
+2fe10735724 base: Allow limiting edge lighting repeats [1/2]
+9b943d4e9a9 SystemUI: Pulse light accent color option
+b095417a2ab SystemUI: Allow changing duration of ambient edge light [1/2]
+f0abf092734 SystemUI: Add edge light color [1/2]
+43833f93b62 SystemUI: only call  showAodContent(true) if we are still on the keyguard
+3b8f9a2a511 SystemUI: replace pulse light drawable with our own vector
+a232f4b142d SystemUI: use ROWS_HIGH_PRIORITY for active notification pulse check
+704c4204f44 SystemUI: kill any leftover notification pulse on new pulse start
+04efbebf169 SystemUI: add Ambient Lights always on hide aod content option
+c516041a92a SystemUI: trigger pulse light only for notifications
+9abba948747 [1/2] SystemUI: add Pulse and Ambient notification bars
+262957ca039 [SQUASH] revert ambient pulse notification
+
+   * packages/apps/Blissify/
+27ffd91 Revert "Blissify: Add auto color option for edge lightning [2/2]"
+9963d2c Add an option to pulse edge light for all doze triggers [2/2]
+259bf5f Allow limiting edge lighting repeats [2/2]
+bacca51 Edge light: Allow to set either an accent color or a custom color.
+ad02cd5 Ambient light settings
+70f7d2e Pulse and Ambient notification bars [2/2]
 
 ====================
      02-21-2020
@@ -429,61 +496,4 @@ c309a5b manifest: Track los repos from lineage-17.1
 660afa93 vendor: qcom: Allow a device to manually override which HALs it wants to use
 efe109d0 default-permissions: Don't grant custom permission by default
 0442e3b1 default-permissions: Grant default permissions to com.android.exchange
-
-====================
-     02-08-2020
-====================
-
-
-   * bionic/
-1e5b5ca04 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//bionic into HEAD
-
-   * bootable/recovery/
-3c7b2a69 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//bootable/recovery into HEAD
-
-   * build/blueprint/
-51cc4df Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build/blueprint into HEAD
-
-   * build/make/
-39d6b8f8a Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build into HEAD
-
-   * build/soong/
-f6f702f4 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//build/soong into HEAD
-
-   * external/selinux/
-3be1f938 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//external/selinux into HEAD
-
-   * frameworks/av/
-2cff09c89 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/av into HEAD
-
-   * frameworks/base/
-83900abc6a6 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/base into HEAD
-
-   * frameworks/native/
-a11a42d77 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//frameworks/native into HEAD
-
-   * hardware/qcom/display/
-e7d190a5 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//hardware/qcom/display into HEAD
-
-   * manifest/
-9c30cac Merge branch 'android-10.0.0_r29' of https://android.googlesource.com/platform//manifest into HEAD
-
-   * packages/apps/DeskClock/
-f53c29d2d Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/apps/DeskClock into HEAD
-
-   * packages/apps/Settings/
-c1b5d202da Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD
-
-   * packages/inputmethods/LatinIME/
-06d9a607c Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/inputmethods/LatinIME into HEAD
-
-   * packages/services/Telecomm/
-d515ddd2 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//packages/services/Telecomm into HEAD
-
-   * system/bt/
-f07c60c48 Merge tag 'android-10.0.0_r29' of https://android.googlesource.com/platform//system/bt into HEAD
-
-   * vendor/bliss/
-cc349922 Merge "config: Bump to v12.3" into q10
-13b9570a config: Bump to v12.3
 
