@@ -1,4 +1,27 @@
 ====================
+     02-24-2020
+====================
+
+
+   * frameworks/base/
+dc84eafa0fc Add ripple effect to oos dismiss all
+d6f83a7ffb1 Revert "OOS dismiss button: Use accent color for background"
+e2566639bea [1/2] SystemUI: Lockscreen blur level: Code fixes and allow no blur
+f239c653a62 SystemUI: Partially Revert "Fix some crashes with lockscreen album art filter"
+
+   * packages/apps/Blissify/
+53afe43 Merge "Blissify: Buttons: fix key mismatch" into q
+e87d6e1 Blissify: Buttons: fix key mismatch
+2d6b4bd [2/2] lock screen media artwork blur rework
+1b23855 Revert "Enable artwork Blur level only when art filter is set to blur"
+a03e971 Blissify: integrate ThemePicker
+c11d0b1 Blissify: Move Aosp themeing to Blissfy
+8def51d Blissify: Add Themes Section
+
+   * vendor/bliss/
+1140ac1d config: Bump up to Bliss v12.4
+
+====================
      02-23-2020
 ====================
 
@@ -37,7 +60,18 @@ d514e1b manifest: Track SDM845 Display HAL from LOS
 5450cfd Edge light: properly disable pulse light
 
    * packages/apps/Settings/
+44d2414aae Revert "Show Styles & Wallpaper in Settings"
+33e55fe183 Settings: Move aosp themeing to Blissify
 de84520403 Settings: Remove duplicate preferences
+
+   * packages/apps/ThemePicker/
+155d480 ThemeFragment: Don't hide preview on white Accents or primarys
+e57af26 ThemePicker: Prevent random crash
+f1c82fd ThemePicker: Fix showing primary color titles
+d618718 ThemePicker: Extend the max theme limit
+ebc52e5 ThemePicker: Fix READ_EXTERNAL_STORAGE permission and ask on start
+0823980 ThemePicker: integrate into Blissify
+ff95701 ThemePicker: make it a standalone app
 
 ====================
      02-22-2020
@@ -428,72 +462,4 @@ fb7bd6cb8 Merge tag 'android-10.0.0_r27' into lineage-17.1-android-10.0.0_r27
 
    * packages/apps/CertInstaller/
 ccd51e1 Merge tag 'android-10.0.0_r27' into lineage-17.1-android-10.0.0_r27
-
-====================
-     02-09-2020
-====================
-
-
-   * build/make/
-23bb79679 releasetools: Use the first entry of a mount point when reading fstab
-d46dd1b85 releasetools: Add script to sign zips
-e0a4ee004 releasetools: support reading release keys out of some sort of command
-64520d879 Fix zsh compatibility issue in build/envsetup.sh
-552bba995 Fix lunch choices w/zsh
-f16158527 Gather lunch choices before printing prompt
-0da1d0eda Make allmod() and pathmod() py3 compatible
-
-   * frameworks/av/
-566f4b949 Revert "cameraservice: Resolve message vs start/stop preview races"
-66a113e98 Camera: Skip stream size check for whitelisted apps.
-25b6c2488 Enable legacy adaptive playback for QCOM_BSP_LEGACY
-5d9c0da4a cameraserver: filter out non-HAL3 devices from HIDL addListener.
-17616b7b6 cameraserver: Avoiding deadlocks while calling isPublicallyHiddenSecureCamera().
-35c60118a Camera: Set input timestamp before returning depth jpegs
-60be0508d add the AV1 in the VideoCodingMapEntry
-4c4f0d98e C2SoftMpeg4Enc: Handle yStride not equal to aligned width
-4a296f5b1 Use stride in ycbcr for YUV->YUV convert
-b3de992c3 Change lock to lockYCbCr for to get the actual y,cb,cr.
-
-   * frameworks/base/
-cc0c7688bfe Avoid system reboot while invalidate LegacyGlobalAction
-80f0dde8a54 ScreenshotSelector: mark externally unused functions as private
-a5cfca7265c SystemUI: Tint QSTile icon with accent color
-3090ab6a0a1 SettingsLib: Add strings for Battery settings dashboard summary
-d162adc4677 Updates to various icons
-a871031ed57 SystemUI: Make tri-state SystemUI dialog dimensions conditional
-8a2178afd14 Updates to "Context-aware Bluetooth airplane mode"
-92adad18fdc SystemUI: Bring back ic_qs_bluetooth_connected.xml
-2880c801500 Volume panel: Adjust the left padding
-a67ae0587cc SystemUI: Pass correct NetworkTemplate to CellularTile detail view
-6f05cc2bc8c [DO NOT MERGE] Check CellInfoCallback Detail for Null
-
-   * frameworks/native/
-17ea5724d sf: Do not switch to protected GPU context for secure camera usecases.
-27c7e9498 sf: Reset last synced time upon resync.
-9ca544ec8 sf: Enable UBWC on virtual display scratch buffer
-5032b517c sf: remove event listener when it was fired.
-0b1435a26 sf: Don't apply color matrix for external display
-be3040e69 sf: Check memory allocations at interval of 300 frames
-b93073cfa SurfaceFlinger: Use default initializer for layer stats
-4cc078f15 sf: handle FrameBuffer scaling path for 90/270 orientation cases
-6c8389f35 sf: Restart model sync on fps change.
-f495c1eda Update SurfaceFlingerProperties scope
-9987fcdec sf: PhaseOffsets: Add missing low refresh rates
-
-   * manifest/
-862a55d manifest: Switch to lineage system/hardware/interfaces fork
-b4bec4b manifest: Enable Profiles
-dcd1705 manifest: Track hardware repos from BlissRoms
-e65548b manifest: Track camera and wlan hardware repos from AOSP
-c309a5b manifest: Track los repos from lineage-17.1
-
-   * vendor/bliss/
-103450f7 vendor: Fix TARGET_USE_AOSP_SURFACEFLINGER logic
-9c109217 vendor: Allow disabling CAF surfaceflinger
-58209c86 vendor: Add back soong and build configuration for qcom platform
-072e2c7a Revert "vendor: Add qcom platform type to soongs vars"
-660afa93 vendor: qcom: Allow a device to manually override which HALs it wants to use
-efe109d0 default-permissions: Don't grant custom permission by default
-0442e3b1 default-permissions: Grant default permissions to com.android.exchange
 
