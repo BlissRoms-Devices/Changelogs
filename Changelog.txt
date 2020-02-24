@@ -1,9 +1,28 @@
 ====================
+     02-25-2020
+====================
+
+
+   * packages/apps/Blissify/
+85295f4 Blissify: Move Misc to bottom end
+
+   * packages/apps/LineageParts/
+83f500a Show "No apps" if no apps can be forced to full screen aspect ratio
+e006161 LineageParts: gestures: Add ambient as a gesture action
+
+   * vendor/bliss/
+27889db2 permissions: Whitelist ThemePicker permissions
+
+====================
      02-24-2020
 ====================
 
 
    * frameworks/base/
+e7e93125923 Use Cloudflare DNS servers as hints
+3a7556b5bdf Use Cloudflare DNS as the default fallback
+317703c0dde NetworkDiagnostics: switch to Cloudflare DNS
+cf8eb4715a4 Use Cloudflare DNS servers as defaults for tethering
 dc84eafa0fc Add ripple effect to oos dismiss all
 d6f83a7ffb1 Revert "OOS dismiss button: Use accent color for background"
 e2566639bea [1/2] SystemUI: Lockscreen blur level: Code fixes and allow no blur
@@ -438,28 +457,4 @@ a6126db9f93 Add dynamic Immersive Mode tile
 adb55e0d649 Screenrecord dialog: Make it less ugly
 0c558075271 Partial screenshot: Layout improvements
 18da8d95b11 GlobalScreenshot: do not capture multiple screenshots simultaneously
-
-====================
-     02-10-2020
-====================
-
-
-   * device/lineage/sepolicy/
-0870096 sepolicy: Add rules for Long screenshot service
-
-   * frameworks/base/
-0e8f2615157 OmniJaws weather tile: rework forecast layout logic now its easier to theme it
-6cb973c10b6 Fix oxygenos dismiss all appearing when there arent any notifications to dimiss
-a86e280fb8f Prevent battery tunables crashing on first boot
-2ae84ae1c06 Fix AoD front scrim being opaque at DOZE_PULSING.
-dd7f5bc466b Reland "Apply front scrim to doze pulsing"
-abe90ec0379 AoD: Always force brightness updates on pause
-a901107b53f Revert "DozeUi: do not prepare for gentle wakeup"
-08c42402b5a Camera: Use default prop for Privileged App List
-
-   * frameworks/opt/net/wifi/
-fb7bd6cb8 Merge tag 'android-10.0.0_r27' into lineage-17.1-android-10.0.0_r27
-
-   * packages/apps/CertInstaller/
-ccd51e1 Merge tag 'android-10.0.0_r27' into lineage-17.1-android-10.0.0_r27
 
