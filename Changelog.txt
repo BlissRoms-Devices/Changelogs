@@ -1,7 +1,22 @@
 ====================
+     02-26-2020
+====================
+
+
+   * frameworks/base/
+5aab72d6746 Resolver: Modernize layout
+29ab1e120d9 Alert slider: Do not hardcode slider position based on ringer mode
+f08e15777e4 Alert slider: Work better with Key Handlers
+
+====================
      02-25-2020
 ====================
 
+
+   * frameworks/base/
+2c71ac51998 Apply Dark theme changes when screen off only
+685b77cc41a Updated UiModeManagerService to always trigger configuration change for setNightMode if it is AAE.
+2c188eba3c5 Dark theme twilight mode backend and tile
 
    * packages/apps/Blissify/
 85295f4 Blissify: Move Misc to bottom end
@@ -9,6 +24,25 @@
    * packages/apps/LineageParts/
 83f500a Show "No apps" if no apps can be forced to full screen aspect ratio
 e006161 LineageParts: gestures: Add ambient as a gesture action
+
+   * packages/apps/Settings/
+da93b1a60f Add feature provider for face unlock
+f6e60ee11e Fix Settings crash when clicks Notifications
+f0c56f89ef Always use local timezone for parsing date
+6d682ac91f Fix "Skip lock screen" not working for secondary user
+962eeb93c5 Sync dimen from SystemUI
+a7f83b88f7 Battery icon is too large
+67a501b7a9 Fix the MMS messages toggle preference not working
+a37755d37e Fix Settings creating too many threads unexpectedly
+38733fbe12 Revert "Remove attention controller"
+55cd143298 Revert "Update attention string"
+794e4c8eb5 Settings: create and set the DarkUI pref controller in DisplaySettings too
+74dee807ef Dark theme settings activity
+c7ab35c0fb Dark theme drop down does not show selected option
+d0cb3be903 Battery saver mode should disable dark mode modification
+1ac18b37f9 Add a dark theme slice
+cc4a01450d DarkUIPreferenceController null exception
+1a4cb413df Revert "Revert "Add settings for scheduling dark theme""
 
    * vendor/bliss/
 27889db2 permissions: Whitelist ThemePicker permissions
@@ -440,21 +474,4 @@ c07c56c9af Use IEC units in app info data usage.
    * vendor/bliss/
 86814707 bliss: Fix dopush
 85b4fc99 bliss: Deprecate AddonSU
-
-====================
-     02-11-2020
-====================
-
-
-   * frameworks/base/
-729ea348654 Fix NPE with void android.view.VelocityTracker.clear()
-793a13d1651 base: omnistyle: Stinky workaround for header shadow and tinted images
-fcadcaa041f SystemUI: Lockscreen weather code fixes
-7d761bf59a9 SystemUI: Nope. This shouldn't be here
-f4e0eefb3a2 QS brightness slider: Update brightness thumb vector
-d81e3869261 Add Mono audio tile (aka headphone in one ear only)
-a6126db9f93 Add dynamic Immersive Mode tile
-adb55e0d649 Screenrecord dialog: Make it less ugly
-0c558075271 Partial screenshot: Layout improvements
-18da8d95b11 GlobalScreenshot: do not capture multiple screenshots simultaneously
 
