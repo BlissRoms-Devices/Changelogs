@@ -1,4 +1,29 @@
 ====================
+     02-27-2020
+====================
+
+
+   * frameworks/base/
+86cfe06ac67 SystemUI: Always keep clock widget visible while dozing
+014310dd949 SystemUI: Always keep slice view while dozing
+ba185a1001c SystemUI: Keyguard: Hide Clock frame instead of the whole container
+8f135aa0e64 Revert "SystemUI: Keyguard: Hide Clock frame instead of the whole container"
+62f30f98082 Allow zero stride
+589f13e57eb Enlarge EPSILON to 0.01 for android.display.cts.DisplayTest#testModeSwitch pass
+3a15c171e31 Move high touch sensitivity and hovering to InputService
+
+   * packages/apps/Blissify/
+f8509f1 Settings: Fix default value for proximity on wake pref
+7bc1bab Blissify: Add search indexable for notifications fragment
+58a958b Blissify: Update lockscreen date hide string
+bbfa735 Blissify: Buttons: Add navbar fragment
+4e9e0fe Add ANBI and HW Keys disable toggles
+696aa8e Blissify: refactor buttons fragment
+
+   * packages/apps/Settings/
+c2720384ec Settings: Add high touch sensitivity and touchscreen hovering toggles
+
+====================
      02-26-2020
 ====================
 
@@ -7,6 +32,9 @@
 5aab72d6746 Resolver: Modernize layout
 29ab1e120d9 Alert slider: Do not hardcode slider position based on ringer mode
 f08e15777e4 Alert slider: Work better with Key Handlers
+
+   * hardware/qcom-caf/wlan/
+a3ec580 wcnss-service: Remove setup_wlan_driver_ath_prop()
 
 ====================
      02-25-2020
@@ -449,29 +477,4 @@ f0bf9ebaa1f SystemUI: Keyguard: Hide Clock frame instead of the whole container
 8d38259 add Bootleg's Date styles [2/2]
 3e61404 Date styles: add Q beta pill [2/2]
 776c34d Lockscreen date styles [2/2]
-
-====================
-     02-12-2020
-====================
-
-
-   * frameworks/base/
-9b782e1aa19 Add whitelist permissions needed for SystemUIGoogle
-27fad1d82fa SystemUI: Introduce Adjustable Blur Intensity [1/2]
-7599d11ea3c fwb: Increase Longshot timeout to 2 seconds
-9b4b6182453 fwb: Port extended screenshot function from OOS
-e6cb0d58194 StatusBarMobileView: Fix gap when toggling airplane mode
-7dd37850ece AudioDeviceInventory: launch default music player on headset connect [1/2]
-26151e56151 SystemUI: block gestural navigation when using partial screenshot
-
-   * packages/apps/Blissify/
-ffac324 Introduce Adjustable Blur Intensity [2/2]
-697beb8 Blissify: launch default music player on headset connect [2/2]
-
-   * packages/apps/Settings/
-c07c56c9af Use IEC units in app info data usage.
-
-   * vendor/bliss/
-86814707 bliss: Fix dopush
-85b4fc99 bliss: Deprecate AddonSU
 
