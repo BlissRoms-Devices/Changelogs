@@ -1,4 +1,9 @@
 ====================
+     02-28-2020
+====================
+
+
+====================
      02-27-2020
 ====================
 
@@ -457,24 +462,4 @@ ab2eb0f Add QS System Info [2/2]
    * vendor/bliss/
 9e7b735a vendor: Update Longshot
 aa420977 vendor: Import modded Longshot app
-
-====================
-     02-13-2020
-====================
-
-
-   * frameworks/base/
-00b8944b0c6 SysUI: System Info: make resources overlayable
-7b3bd1659a7 SysUI: System Info: add path checks & cleanup
-934a0e346c7 SystemUI: Add QS System Info [1/2]
-3162c692298 base: add Bootleg's Date Styles [1/2]
-d68fc53f16b base: add Q beta pill background [1/2]
-90722f20b0c Introduce lockscreen date styles [1/2]
-88af6306e26 SystemUI: Add option to hide lockscreen date [1/2]
-f0bf9ebaa1f SystemUI: Keyguard: Hide Clock frame instead of the whole container
-
-   * packages/apps/Blissify/
-8d38259 add Bootleg's Date styles [2/2]
-3e61404 Date styles: add Q beta pill [2/2]
-776c34d Lockscreen date styles [2/2]
 
