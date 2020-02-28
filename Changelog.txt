@@ -1,4 +1,9 @@
 ====================
+     02-29-2020
+====================
+
+
+====================
      02-28-2020
 ====================
 
@@ -424,42 +429,4 @@ e8c7595 ThemePicker: fix marking current selected clock face on start
 
    * vendor/bliss/
 b4846643 Merge changes from topic "misc" into q10
-
-====================
-     02-14-2020
-====================
-
-
-   * bionic/
-d71b1d50e bionic: Support wildcards in cached hosts file
-
-   * device/lineage/sepolicy/
-e9919fa Allow Snap cam access for gpu service
-24ce61b snap_app: Allow binder call with gpuservice
-cea2cf5 sepolicy: Allow system_server to read and write to sysfs_battery_supply
-9e13df9 sepolicy: Smart Charging (3/4)
-
-   * frameworks/base/
-5538d83b30b BlissUtils: Add a method to enable/disable package components
-2f0727751ad Merge "fwb: Increase Longshot timeout to 2 seconds" into q
-daa5931aa03 Merge "fwb: Port extended screenshot function from OOS" into q
-e723793bb2b SysUI: System Info: simplify
-
-   * hardware/lineage/interfaces/
-c73bdf3 aw2013: Fix typo in condition line
-
-   * packages/apps/Blissify/
-ab2eb0f Add QS System Info [2/2]
-5f08248 Blissify: Add option to hide lockscreen date [2/2]
-
-   * packages/apps/Settings/
-52ca2f0a14 Settings: Fix QRCamera crash
-54e04ebe19 Bug:PreferredNetworkModePreferenceController.java not being refreshed
-
-   * prebuilts/tools-bliss/
-78646b1 tools-bliss: update repo to v2.0
-
-   * vendor/bliss/
-9e7b735a vendor: Update Longshot
-aa420977 vendor: Import modded Longshot app
 
