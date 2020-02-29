@@ -1,4 +1,9 @@
 ====================
+     03-01-2020
+====================
+
+
+====================
      02-29-2020
 ====================
 
@@ -370,6 +375,9 @@ d9c20f3 Update gitreview file
    * external/google/
 d72f250 Add .gitreview
 
+   * hardware/qcom-caf/sdm845/audio/
+b415d7030 hal: Include POSIX thread header
+
    * packages/apps/Settings/
 38067587ae Settings: Icons: add DNS icon
 011d60ebe4 Settings: Add drawable for Private DNS
@@ -378,55 +386,4 @@ d72f250 Add .gitreview
 0f83daab priv-app: Whitelist more Google permissions
 2a545b82 priv-app: Whitelist more vending permissions
 5e6348a5 vendor/bliss: Add Google privapp permissions
-
-====================
-     02-15-2020
-====================
-
-
-   * frameworks/base/
-fe97234c437 Keyguard: ReInflate views when density or font scale change
-c3249962b92 SystemUI: Lock Date font size [1/2]
-aea6837aa1b SystemUI: Lockscreen Clock Font Size [1/2]
-2a5517a9ecb SystemUI: TypeClock: fix 19c927fc8a73c8b688405b11bdf468dcdc22af78
-ecb999adfc7 add MIUI 11 VoLTE icon [1/2]
-34a19a9ba6b Add upgrade step to fix system sounds issue
-9199b3af918 RingtoneManager: Don't crash if the ringtone doesn't have a numerical ID
-e97d495f72e FODCircleView: Don't show circle if already Authenticated
-49cee3c262c EdgeBackGestureHandler: Change back gesture height intervals
-8c1c969e8b4 ProgressBar: Media volume bar indicates a wrong value
-
-   * lineage-sdk/
-4d44cd6f Automatic translation import
-e2cf866c PerformanceManager: Fix applying power profile in low power mode
-
-   * packages/apps/Blissify/
-186345d Lockscreen Clock Font Size [2/2]
-4d55b74 Blissify: Lock date font size [2/2]
-9c1872d Blissify: Add MIUI 11 VoLTE icon [2/2]
-
-   * packages/apps/Settings/
-c336a69eae Settings: Adaptive brightness: Fix summary fuckery
-6f42737e75 Settings: Fix settings dashboard summary while warp charging
-cb8eb6591d Settings: Fix settings dashboard summary while dash charging
-4aba1d7eea Settings: Themes: make sure settings shortcut icons follow system accent
-a38f9d4630 Settings: Desktop backup password: Tint buttons to match system theme
-8fab2383f4 Settings: Power detail pages: Finish off the rest of the icon tinting
-24691ea56e Settings: Fix icon tinting in power detail pages
-90ef29006d Settings: Fix textApperance of our modified gesture dialog
-
-   * packages/apps/ThemePicker/
-01e317b Revert "Use CenterCropBitmapTask for theme wallpapers"
-67dbacf ThemePicker: Show items name under the title
-59a85c3 ThemePicker: Clean that color chip naming mess
-ef4278d ThemePicker: Change color chip selector style to single border
-1fda206 ThemePicker: Fix wrong background color on side of buttons
-3185aaf ThemePicker: Fix drawing theme option border
-18975c0 ThemePicker: Remove bottom navbar tip code
-8d232d8 ThemePicker: Fix padding for the applied styles
-64c080a Revert "ThemePicker: Showcase the Font name"
-e8c7595 ThemePicker: fix marking current selected clock face on start
-
-   * vendor/bliss/
-b4846643 Merge changes from topic "misc" into q10
 
