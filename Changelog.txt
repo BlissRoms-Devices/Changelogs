@@ -1,12 +1,46 @@
 ====================
+     03-02-2020
+====================
+
+
+   * frameworks/base/
+bd80a65f3f9 Alert Slider: Improve layout
+91c01fafdce DozeSensors: do not use binned brightness sensor for proximity if not supported
+6464a8e3e41 Alert Slider: Add toggle to disable notifications [1/2]
+b57f46380d1 Alert slider: Use default position behaviour if position not specified in intent
+05174b6c36e Alert Slider: Clean up usage of Orientation Listener
+f4d4387e952 Alert Slider: Apply theme more dynamically
+4a288aab0c7 SystemUI: fix possible case where aod stays on after notification pulse
+e2fa200a759 NotifcationPanelView: Make sure notification pulse animation stops.
+919cd123a60 SystemUI: day 0 notification light pulse fixes
+54da50b3c2e Revert "base: Allow limiting edge lighting repeats [1/2]"
+227be6ee914 SystemUI: add timeout for ambient notification pulse
+c17ac4689cd base: cleanup notification pulse values
+
+   * packages/apps/Blissify/
+8d6ff1f Merge "Blissify: Add Russian translation" into q
+ddea183 Blissify: Hide Force Navbar preference for Non-Hw keys devices
+84d5999 AoD notification pulse timeout option: Added some lower timeouts.
+2e44504 Revert "Allow limiting edge lighting repeats [2/2]"
+b2f1751 Blissify: add aod notification pulse timeout option [2/2]
+cc661ed NotificationsSettings: Cleanup notification pulse values.
+
+====================
      03-01-2020
 ====================
 
+
+   * packages/apps/Blissify/
+fc0263d Blissify: Add Russian translation
 
 ====================
      02-29-2020
 ====================
 
+
+   * packages/resources/devicesettings/
+95f475e Add strings for camera focus fix toggle
+cffa54f Add strings for quick charge toggle
 
 ====================
      02-28-2020
@@ -366,24 +400,4 @@ d9c20f3 Update gitreview file
    * packages/services/Telecomm/
 177ec46c Fix default value for flashlight blink on incoming calls
 23b53fb3 Telecomm: Add vibration patterns from OOS
-
-====================
-     02-16-2020
-====================
-
-
-   * external/google/
-d72f250 Add .gitreview
-
-   * hardware/qcom-caf/sdm845/audio/
-b415d7030 hal: Include POSIX thread header
-
-   * packages/apps/Settings/
-38067587ae Settings: Icons: add DNS icon
-011d60ebe4 Settings: Add drawable for Private DNS
-
-   * vendor/bliss/
-0f83daab priv-app: Whitelist more Google permissions
-2a545b82 priv-app: Whitelist more vending permissions
-5e6348a5 vendor/bliss: Add Google privapp permissions
 
