@@ -1,7 +1,30 @@
 ====================
+     03-03-2020
+====================
+
+
+   * packages/apps/Blissify/
+b9eb6dd Alert Slider: Add toggle to disable notifications [2/2]
+
+   * packages/apps/LineageParts/
+8d90448 Add haptic event when waking device
+
+   * vendor/bliss/
+4efbd278 vendor: update Lawnchair to q_pre_alpha-2616
+6f164de5 dtbo: Sort the files we found
+22eb802e tasks: dtbo: Add support for custom dtbo generation rules
+892bd802 apn: Update Canadian carriers
+582dad27 config: Dexpreopt speed compile SystemUI instead of SystemUIGoogle
+2228089f config: Add SysUI to PRODUCT_DEXPREOPT_SPEED_APPS
+def3dc67 vendor: Remove Pixel Launcher
+
+====================
      03-02-2020
 ====================
 
+
+   * build/make/
+41d18054a build: Add vendor.prop and odm.prop capability
 
    * frameworks/base/
 bd80a65f3f9 Alert Slider: Improve layout
@@ -32,6 +55,10 @@ cc661ed NotificationsSettings: Cleanup notification pulse values.
 
    * packages/apps/Blissify/
 fc0263d Blissify: Add Russian translation
+
+   * packages/apps/LineageParts/
+ca8a74f TouchGestures: Add wake device as a gesture action
+2727cfb TouchGestures: Remove haptic feedback for ambient gesture action
 
 ====================
      02-29-2020
@@ -368,36 +395,4 @@ abcd0dc Blissify: update icons
 2bb855d586 Settings: Initial import for Pixel-specific feature Settings
 fe9ca2409b Settings: add fod option in FP location overlay
 79f2ace2a9 Settings: Add vibration patterns from OOS and
-
-====================
-     02-17-2020
-====================
-
-
-   * build/make/
-9b953115f build: generate recovery ramdisk image from TARGET_PREBUILT_RECOVERY_RAMDISK
-269bec92d build: support using a prebuilt recovery ramdisk
-
-   * frameworks/base/
-897f8bbf737 Revert "lowered animations duration"
-e56cfaa923c base: Add vibration patterns from OOS
-f6986eda9d3 Add Dialer's public strings
-
-   * hardware/qcom-caf/sm8150/display/
-8d7a56ce gralloc: Add option for unaligned YCrCb pixel format
-000ff662 gralloc: Add option for unaligned NV21_ZSL pixel format
-1d40487f gralloc: Add option for YCrCb venus camera preview
-931cc83f gralloc: Allow devices to opt-in for YCrCb camera preview
-
-   * packages/services/OmniJaws/
-e553d80 OmniJaws: METNorwayProvider: adjust icon mapping
-1ee7445 OmniJaws: update METNorwayProvider to latest API changes
-9731a95 OmniJaws: dont hardcode string for unknown city
-3e52617 OmniJaws: when widget receives error try to show last data
-717137f Add provider: MET Norway
-d9c20f3 Update gitreview file
-
-   * packages/services/Telecomm/
-177ec46c Fix default value for flashlight blink on incoming calls
-23b53fb3 Telecomm: Add vibration patterns from OOS
 
