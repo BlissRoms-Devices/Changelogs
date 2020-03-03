@@ -1,4 +1,12 @@
 ====================
+     03-04-2020
+====================
+
+
+   * frameworks/base/
+d0eab082aff Merge "Add minimize & pip buttons to freeform windows" into q
+
+====================
      03-03-2020
 ====================
 
@@ -52,6 +60,9 @@ cc661ed NotificationsSettings: Cleanup notification pulse values.
      03-01-2020
 ====================
 
+
+   * frameworks/base/
+54456cc3a35 Add minimize & pip buttons to freeform windows
 
    * packages/apps/Blissify/
 fc0263d Blissify: Add Russian translation
@@ -362,37 +373,4 @@ dfe442b749 Merge "Use IEC units in app info data usage." into q
 507adcc themes: Update Cocon font
 1a62b78 Add GrandHotel and Redressed fonts [2/2]
 239af9e Add Cocon and Quando fonts [2/2]
-
-====================
-     02-18-2020
-====================
-
-
-   * external/google/
-f59d6f5 Remove duplicated FeatureFactoryImpl
-4fab8b1 SettingsGoogle: Use BLISSIFY Metric
-f35cc72 SystemUIGoogle: Use BlissUtils
-
-   * frameworks/base/
-bf2d27f1708 BlissUtils: Add toggleVolumePanel action
-5cb68a3a3d9 Introduce long squeeze action
-0aa8ea578df Active Edge [1/2]
-4cadb2dba46 Flashlight toggle api improvements
-e67bdf5680c base: add camera flash toggle api
-346a335ea24 Add some static custom utilities
-dd974ecfb43 BlissUtils: Cleanup screen on action code
-f872c3d7099 BlissUtils: Add screen on action
-c45610d3ce8 KeyguardIndicationController: Protect updateChargingIndication() from NPE.
-3c16cc819fb SystemUI: Disable keyguard charging animation by default
-f7552b86ac2 SystemUI: Fix keyguard charging NPE
-2da131a8552 SystemUI: fix qs footer divider width
-
-   * packages/apps/Blissify/
-abcd0dc Blissify: update icons
-
-   * packages/apps/Settings/
-907124bb22 Update raw animations and drawables from Pixel 4 XL
-2bb855d586 Settings: Initial import for Pixel-specific feature Settings
-fe9ca2409b Settings: add fod option in FP location overlay
-79f2ace2a9 Settings: Add vibration patterns from OOS and
 
