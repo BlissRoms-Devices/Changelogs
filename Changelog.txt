@@ -1,15 +1,116 @@
 ====================
+     03-05-2020
+====================
+
+
+   * frameworks/base/
+01c3e33dc42 Add auth framework for outgoing SMS messages.
+b1884b84a9a Check if EIMS when confirming network
+1f366b5dc46 net: modify connecitvity rematch logic to support MSIM devices
+ddd758c42ba Add ICCID into CarrierIdentifier
+2bb0e8680fd BT: Send info if call is CS type from telecomm service to BT apps.
+29114124878 Emergency SMS carrier config flag
+a8f0a3e1b9c IMS-VT: Add config to control holding a video call
+65b75654903 SMS: Parsing of CDMA MMS notification carried by SMS
+ae62407af51 Telephony: Get SIM card capacity count of SMS
+94a9417c9c5 IMS: Add carrier config for RTT always enabled
+4bc7e396956 IMS: Conference URI support.
+495dbbed536 IMS: Propagate RTT capability of the called party to UI
+ceebb6f6c1e IMS: Add CALL_TYPE for audio and video inactive
+08d9e39842c IMS: Propagate call session property changed message
+ebb85aba8d4 Use proper coded alphabet when a contact is written into EF_ADN of USIM.
+b3a6d2dafca SEEMP: framework instrumentation and AppProtect features
+1304dc6237f Telephony: Add DisconnectCause values for clear code
+0bf6b37b5f6 IMS: Add UT interface to query CF setting for service class.
+d1b7e824c37 IMS: Add flag to control reset UT capability
+5966d2a9004 Add config to disable CDMA call forward/waiting
+87f8879c05c SystemUI: add optional back gesture vibration tick [1/2]
+97d2b2c9015 SystemUI: AODTile: Use MD2 Icon
+c48004c6131 SystemUI: Improve Screen stabilization settings layout
+3f2dafc3742 SystemUI: Use MD2 icon for Screen Stabilization tile
+2dff28a4688 base: Screen Stabilization [1/2]
+a2fafd60ea4 SystemUI: Fix QS tiles clipping when too many icons in view
+2e968ea13ff VibratorService: Update ONEPLUS_EFFECT_TICK constant value
+4350b56772f VibratorService: Fix double click effect with OnePlus vibrator format
+e81f66d5e22 VibratorService: update constant values for OnePlus HAL
+7c2ab89174a Ims: Add suppport for "Ims Preferred" WFC Preference
+00026a58e8b [1/2] base: expose auto night mode sunset and sunrise values on API
+9665f9d9e4f SystemUI: use doze_pulse_duration_visible as timeout for showing ambient notifications
+b55d7a60b57 Merge changes from topic "fod" into q
+
+   * frameworks/opt/net/ims/
+78c686f IMS: Add UT interface to query CF setting for service class.
+
+   * frameworks/opt/telephony/
+876107881 add for community - community is not pleased
+46837b455 RIL: Allow overriding RadioResponse and RadioIndication
+cd7680c52 Revert "Clean up getPhoneCount in PhoneFactory#makeDefaultPhone"
+69a8e936c RIL: Fix manual network selection with old modem
+
+   * manifest/
+004f1b8 manifest: track net/ims
+
+   * packages/apps/Blissify/
+c9120c2 Buttons: Re-add navigation long press options
+e1d8015 Merge changes from topic "Blissify_menu" into q
+ef50e9f Blissify: change icon placement to the right side
+5196894 Blissify: remove that weird circle inside icons
+
+   * packages/apps/Settings/
+9c86ad2cf2 Settings: add optional back gesture vibration tick [2/2]
+dff4888a63 [2/2] Settings: expose auto night mode sunset and sunriuse values on API
+
+====================
      03-04-2020
 ====================
 
 
    * frameworks/base/
+8541a71d2d9 SystemUI: Update OOS FOD animations
+f868d2d7138 SystemUI: Add OP Ripple animations [1/2]
+8465dfb6979 Base: Add accent colored FOD pressed state icon [1/2]
+089bb90e369 SystemUI: Add new FOD pressed state icons [1/2]
+adfe63ce520 SystemUI: Separate FODAnimation into it's own class
+b0589a86430 Revert "FODCircleView: disable touch detection on screen off"
+b4497ef80f5 SystemUI: Add ColorOS7 recognizing FP animations [1/2]
+2a36a8d6c64 SystemUI: Add BlueFirework recognizing FP animation [1/2]
+676ec6ea020 Remove wallpaper color option for FOD
+acdd87b95f3 FODCircleView: cleanup FOD customization techniques
+4ab95dfed32 SystemUI: Add scratch style FOD icons [1/2]
+b30c97e8350 SystemUI: Add PureView recognizing FP animations
+5821bd21b08 SystemUI: Add OP Recognizing FP animations [1/2]
+711b6b158f2 SystemUI: Recognizing FP animation effects [1/2]
+c58aab6cc42 FODCircleView: Recognizing fingerprint animation [1/2]
+00a6468d29e FODCircleView: only move in Y direction
+2020020056c FODCircleView: disable touch detection on screen off
 d0eab082aff Merge "Add minimize & pip buttons to freeform windows" into q
+
+   * frameworks/native/
+6e98968ea native: Screen Stabilization [2/2]
+
+   * packages/apps/Blissify/
+9109f66 Blissify: Add OP Ripple animations [2/2]
+4aa5fe9 Blissify: Add ColorOS7 recognizing FP animations [2/2]
+c8898ff Blissify: Add accent colored FOD pressed state icon [2/2]
+e8fa63b Blissify: Add new FOD pressed state icons [2/2]
+967a4b6 Blissify: Add BlueFirework recognizing FP animation [2/2]
+6cbbef1 Remove wallpaper color option for FOD
+1eda927 Blissify: Add scratch style FOD icons [2/2]
+5f360fb Blissify: Add PureView recognizing FP animations
+db9ebea Blissify: Add OP Recognizing FP animations [2/2]
+b9a3dc7 Blissify: Recognizing fingerprint animation picker [2/2]
+9f2b3c4 Blissify: Recognizing fingerprint animation [2/2]
 
 ====================
      03-03-2020
 ====================
 
+
+   * frameworks/av/
+1079f8acc Camera: Check consumer interface before disconnecting
+3fcd9d784 Camera: Add support for manual 3A.
+06d9f4d03 camera: allow device to append camera parameters
+38c113c86 libcameraservice: Don't pass NULL args on setCallbacks call
 
    * packages/apps/Blissify/
 b9eb6dd Alert Slider: Add toggle to disable notifications [2/2]
@@ -18,6 +119,9 @@ b9eb6dd Alert Slider: Add toggle to disable notifications [2/2]
 8d90448 Add haptic event when waking device
 
    * vendor/bliss/
+627258cf vendor: fix version in backuptool
+fb8319c9 prebuilt: backuptool: Implement dynamic system mount for A-only
+4c512ff9 Revert "prebuilt: Add a script to simplify A-only recovery system mount"
 4efbd278 vendor: update Lawnchair to q_pre_alpha-2616
 6f164de5 dtbo: Sort the files we found
 22eb802e tasks: dtbo: Add support for custom dtbo generation rules
@@ -32,6 +136,10 @@ def3dc67 vendor: Remove Pixel Launcher
 
 
    * build/make/
+7fb90b4e6 sign_target_apks: Add networkstack to default key_map
+fafc02676 releasetools: Use 0oXXX instead of 0XXX for octal
+7e19c5f10 releasetools: Move system mount handling to backuptool
+04a7e793a Revert "releasetools: Implement system-mount script to support any recovery system mount"
 41d18054a build: Add vendor.prop and odm.prop capability
 
    * frameworks/base/
@@ -305,72 +413,4 @@ c384dfe Revert "tools-bliss: update repo to v2.0"
    * packages/apps/Settings/
 4544293413 FeatureFactoryImpl: PowerUsageFeatureProviderGoogleImpl: Catch NameNotFoundException
 8d4e4a5a11 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
-
-====================
-     02-19-2020
-====================
-
-
-   * external/google/
-0bcb9de Merge "SystemUIGoogle: Fix concurrent modification crash" into q
-00cf5f4 SystemUIGoogle: Fix concurrent modification crash
-
-   * frameworks/base/
-9616a196530 SystemUI: Improve EnhancedEstimatesGoogleImpl
-e8befcd98a7 SystemUI: EnhancedEstimatesGoogleImp: Catch NameNotFoundException
-2cc27fb37df SystemUI: SystemUIGoogleModule: Switch to EnhancedEstimatesGoogleImpl
-3cf481736a7 base: Add San Francisco Display Pro font [1/2]
-acaabf771e6 Add GrandHotel and Redressed fonts [1/2]
-d69d5d5cd54 Add Cocon and Quando fonts [1/2]
-ef7094dea53 Fix AnimatedImageDrawables using ByteBuffers
-8307d538d8b Fix black image wallpaper issue
-b2e63d84797 Refine battery saver footer string
-f0b9e4e6cd8 Ignore null package names on AppIdleHistory writes
-bb78c2fa2db Re-add settings to relax device ID access restrictions [1/2]
-a9defc04e80 Process: Use audio-app cpuset if available
-71c52265230 Merge "KeyguardIndicationController: Protect updateChargingIndication() from NPE." into q
-15815a94e5e Merge changes from topic "pixel" into q
-86bc7e4d16c Merge changes from topic "pixel" into q
-20bf25dadd6 SystemUI: handle camera launch gesture from keyhandler
-4b95a766113 Revert "SystemUI: handle camera launch gesture from keyhandler"
-1661d971b1a Merge changes from topic "good-stuff" into q
-
-   * manifest/
-96f787f manifest: Track external/google from BlissRoms
-
-   * packages/apps/Blissify/
-66d8818 Blissify: Fix hiding smart pixels preference
-57168aa Blissify: Add settings to relax device ID access restrictions [2/2]
-b6f8180 Merge changes from topic "pixel" into q
-6bf3fc9 Blissify: Disable keyguard charging animation by default
-8642355 Motion & Squeeze: Let's use Google's controller method for preferences
-59ca504 Active Edge [2/2]
-b0d2a4c Blissify: Motion Sense [2/2]
-71077f1 Blissify: Display Pixel Gestures only for Pixel Devices
-041436e Blissify: Add Pixel Gestures Sub Category
-
-   * packages/apps/LineageParts/
-4dbcd56 LineageParts: Fix KeyHandler for opening messaging app
-7c6f1a7 LineageParts: Fix dark theme issues
-cf513da LineageParts: RIP profiles app groups
-0a87ea2 LineageParts: Slightly improve package list dialog style
-70840b9 LineageParts: Convert profile trigger list fragment to RecyclerView
-1f44622 LineageParts: Switch to (ctx).getSystemService(x.class) everywhere
-c9add10 LineageParts: Use 'OK' instead of 'Cancel' in requestRemoveProfileDialog()
-c934a7d LineageParts: Improve profiles list style
-3ee6de6 LineageParts: Improve the way profile triggers UI looks
-3628f7b LineageParts: Fix profile action bar icon colors
-95d3d1a LineageParts: Convert profile settings list to RecyclerView
-4556b28 LineageParts: Make profiles UI look slightly better
-902ac00 LineageParts: Reenable system profiles
-
-   * packages/apps/Settings/
-ee0c04f294 Merge changes from topic "pixel" into q
-dfe442b749 Merge "Use IEC units in app info data usage." into q
-
-   * vendor/themes/
-790cc6b themes: Add San Francisco Display Pro font [2/2]
-507adcc themes: Update Cocon font
-1a62b78 Add GrandHotel and Redressed fonts [2/2]
-239af9e Add Cocon and Quando fonts [2/2]
 
