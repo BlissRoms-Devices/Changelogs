@@ -1,9 +1,19 @@
 ====================
+     03-06-2020
+====================
+
+
+====================
      03-05-2020
 ====================
 
 
    * frameworks/base/
+75b3e4b5727 Pad ime_switcher same as navbar buttons
+76ad5db22a1 Fix double tap to sleep on quick status bar
+31649c5eea7 Start BiometricService even if no hardware is present
+0fe3706e226 PhoneWindowManager: Fix screen peek KEY_FOCUS handling
+6ca9381a677 Camera button support
 01c3e33dc42 Add auth framework for outgoing SMS messages.
 b1884b84a9a Check if EIMS when confirming network
 1f366b5dc46 net: modify connecitvity rematch logic to support MSIM devices
@@ -404,13 +414,4 @@ e380592 Blissify: Add new Pixel Gesture Icons
 
    * prebuilts/tools-bliss/
 c384dfe Revert "tools-bliss: update repo to v2.0"
-
-====================
-     02-20-2020
-====================
-
-
-   * packages/apps/Settings/
-4544293413 FeatureFactoryImpl: PowerUsageFeatureProviderGoogleImpl: Catch NameNotFoundException
-8d4e4a5a11 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
 
