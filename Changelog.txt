@@ -1,4 +1,9 @@
 ====================
+     03-07-2020
+====================
+
+
+====================
      03-06-2020
 ====================
 
@@ -389,29 +394,4 @@ c516041a92a SystemUI: trigger pulse light only for notifications
 bacca51 Edge light: Allow to set either an accent color or a custom color.
 ad02cd5 Ambient light settings
 70f7d2e Pulse and Ambient notification bars [2/2]
-
-====================
-     02-21-2020
-====================
-
-
-   * frameworks/base/
-5135271b6b6 systemui: use headline font for vpn
-5b30e408f61 packages: SystemUI: improve the VPN footer layout
-e84ce0707fa SystemUI: Update clock & date font styles
-e3cbc28b91b Add Network Preference Bitmaps (1/2)
-f4792968f2a base: lightservice: strengthen useScaleBrightness checking
-fbf24bf73fa base: SystemUI: add tuner to hide qs security footer
-d387c0dc9ba Merge changes I8e922fcb,I3c6928d8 into q
-
-   * frameworks/native/
-a247b4425 libui: Extend adb95ae to Gralloc3
-f37d479ea libui: Allow invalid bits from callers conditionally
-
-   * packages/apps/Blissify/
-7b36c4d Blissify: Update clock & date font styles
-e380592 Blissify: Add new Pixel Gesture Icons
-
-   * prebuilts/tools-bliss/
-c384dfe Revert "tools-bliss: update repo to v2.0"
 
