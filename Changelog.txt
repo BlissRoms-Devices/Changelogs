@@ -1,4 +1,68 @@
 ====================
+     03-08-2020
+====================
+
+
+   * build/make/
+d4fab4276 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//build into q
+
+   * development/
+7649b3242 Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
+
+   * frameworks/av/
+f61e477bf Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/av into q
+
+   * frameworks/base/
+8558b491267 SystemUI: Add scratch style FOD icons [1/2]
+980edf34054 Revert "SystemUI: Add scratch style FOD icons [1/2]"
+1db35f86f13 SystemUI: Fix keyguard charging NPE
+c399cbfe71e Revert "Remove keyguard_indication_area_overlay"
+3c64e7a2a80 Merge tag 'android-10.0.0_r31' into q
+
+   * frameworks/opt/net/wifi/
+876987a75 Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
+
+   * frameworks/opt/telephony/
+0aee0d475 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD
+
+   * hardware/qcom/audio/
+722c28c Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
+
+   * manifest/
+46ddd86 Merge branch 'android-10.0.0_r31' of https://android.googlesource.com/platform//manifest into q
+
+   * packages/apps/CarrierConfig/
+6a2d82a Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
+
+   * packages/apps/CertInstaller/
+632944e Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
+
+   * packages/apps/PermissionController/
+675a6f8b Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into q
+
+   * packages/apps/Settings/
+98050b41ec Merge tag 'android-10.0.0_r31' into q
+
+   * packages/apps/ThemePicker/
+bf89d41 Merge tag 'android-10.0.0_r31' into q
+
+   * system/bt/
+c4fdef720 Prevent abort in case of command timeout
+426a83eab Add support to force disable enhanced sco commands
+8a2660fa8 Bluetooth: Read BLE vendor capability to proceed on Secure conn
+1833af905 Fix L version ble_vendor_capability sanity check crash.
+fff895626 Add .gitreview
+
+   * system/core/
+5b40f7234 Store crashing process name in sysprop
+c7f9d199d Allowing /avb/q-developer-gsi.avbpubkey for DSU
+e2373d89f Adding the AVB public key for Q-Developer-GSI
+
+   * vendor/bliss/
+102ab26f config: Bump to Bliss v12.5 Release
+95b64cac config: Whitelist wellbeing and gms permission
+
+====================
      03-07-2020
 ====================
 
@@ -7,6 +71,64 @@
      03-06-2020
 ====================
 
+   * art/
+3c62347f4e Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//art into q
+
+   * bootable/recovery/
+aab0eae3 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//bootable/recovery into q
+
+   * build/soong/
+30f7513c Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//build/soong into HEAD
+
+   * frameworks/base/
+567786a13e7 Squash revert
+
+   * frameworks/native/
+be09bd5a8 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//frameworks/native into HEAD
+
+   * hardware/interfaces/
+df0cfc31a Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//hardware/interfaces into q
+
+   * hardware/qcom/display/
+5ee455bc Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//hardware/qcom/display into q
+
+   * hardware/qcom/media/
+9e38c12 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//hardware/qcom/media into q
+
+   * packages/apps/Contacts/
+27f2a9cb8 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/Contacts into q
+
+   * packages/apps/Dialer/
+d2c71dbd5 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/Dialer into q
+
+   * packages/apps/DocumentsUI/
+9b21d695b Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/DocumentsUI into q
+
+   * packages/apps/Nfc/
+0e97938a Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/Nfc into q
+
+   * packages/apps/Settings/
+dc5ca2e5fa Settings: add optional back gesture vibration tick [2/2]
+752887a7a5 [2/2] Settings: expose auto night mode sunset and sunriuse values on API
+b0a24503a9 Settings: Add high touch sensitivity and touchscreen hovering toggles
+
+   * packages/inputmethods/LatinIME/
+27ab475df Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/inputmethods/LatinIME into q
+
+   * packages/providers/DownloadProvider/
+d3a58822 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into q
+
+   * packages/providers/MediaProvider/
+db610f2 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/providers/MediaProvider into q
+
+   * packages/services/Telecomm/
+6d13489a Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/services/Telecomm into q
+
+   * packages/services/Telephony/
+bee6d8db3 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/services/Telephony into q
+
+   * system/sepolicy/
+011ba6a7 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//system/sepolicy into q
 
 ====================
      03-05-2020
@@ -64,16 +186,14 @@ cd7680c52 Revert "Clean up getPhoneCount in PhoneFactory#makeDefaultPhone"
 
    * manifest/
 004f1b8 manifest: track net/ims
+349b5dc Manifest for Android 10.0.0 Release 31
+720bca6 Add platform/tools/apifinder
 
    * packages/apps/Blissify/
 c9120c2 Buttons: Re-add navigation long press options
 e1d8015 Merge changes from topic "Blissify_menu" into q
 ef50e9f Blissify: change icon placement to the right side
 5196894 Blissify: remove that weird circle inside icons
-
-   * packages/apps/Settings/
-9c86ad2cf2 Settings: add optional back gesture vibration tick [2/2]
-dff4888a63 [2/2] Settings: expose auto night mode sunset and sunriuse values on API
 
 ====================
      03-04-2020
@@ -126,6 +246,9 @@ b9a3dc7 Blissify: Recognizing fingerprint animation picker [2/2]
 3fcd9d784 Camera: Add support for manual 3A.
 06d9f4d03 camera: allow device to append camera parameters
 38c113c86 libcameraservice: Don't pass NULL args on setCallbacks call
+
+   * manifest/
+38f3fdb Manifest for Android 10.0.0 Release 30
 
    * packages/apps/Blissify/
 b9eb6dd Alert Slider: Add toggle to disable notifications [2/2]
@@ -230,9 +353,6 @@ bbfa735 Blissify: Buttons: Add navbar fragment
 4e9e0fe Add ANBI and HW Keys disable toggles
 696aa8e Blissify: refactor buttons fragment
 
-   * packages/apps/Settings/
-c2720384ec Settings: Add high touch sensitivity and touchscreen hovering toggles
-
 ====================
      02-26-2020
 ====================
@@ -262,25 +382,6 @@ a3ec580 wcnss-service: Remove setup_wlan_driver_ath_prop()
    * packages/apps/LineageParts/
 83f500a Show "No apps" if no apps can be forced to full screen aspect ratio
 e006161 LineageParts: gestures: Add ambient as a gesture action
-
-   * packages/apps/Settings/
-da93b1a60f Add feature provider for face unlock
-f6e60ee11e Fix Settings crash when clicks Notifications
-f0c56f89ef Always use local timezone for parsing date
-6d682ac91f Fix "Skip lock screen" not working for secondary user
-962eeb93c5 Sync dimen from SystemUI
-a7f83b88f7 Battery icon is too large
-67a501b7a9 Fix the MMS messages toggle preference not working
-a37755d37e Fix Settings creating too many threads unexpectedly
-38733fbe12 Revert "Remove attention controller"
-55cd143298 Revert "Update attention string"
-794e4c8eb5 Settings: create and set the DarkUI pref controller in DisplaySettings too
-74dee807ef Dark theme settings activity
-c7ab35c0fb Dark theme drop down does not show selected option
-d0cb3be903 Battery saver mode should disable dark mode modification
-1ac18b37f9 Add a dark theme slice
-cc4a01450d DarkUIPreferenceController null exception
-1a4cb413df Revert "Revert "Add settings for scheduling dark theme""
 
    * vendor/bliss/
 27889db2 permissions: Whitelist ThemePicker permissions
@@ -363,35 +464,4 @@ d618718 ThemePicker: Extend the max theme limit
 ebc52e5 ThemePicker: Fix READ_EXTERNAL_STORAGE permission and ask on start
 0823980 ThemePicker: integrate into Blissify
 ff95701 ThemePicker: make it a standalone app
-
-====================
-     02-22-2020
-====================
-
-
-   * frameworks/base/
-45e108b6b08 SystemUI: Fix persistent Settings icon mess
-47e05bcc95e SettingsLib: mutate drawable before tinting for buildBtRainbowDrawable
-270d70ef62f base: fix TwilightService start and initial location update
-2a687abd65f base: Add an option to pulse edge light for all doze triggers [1/2]
-2fe10735724 base: Allow limiting edge lighting repeats [1/2]
-9b943d4e9a9 SystemUI: Pulse light accent color option
-b095417a2ab SystemUI: Allow changing duration of ambient edge light [1/2]
-f0abf092734 SystemUI: Add edge light color [1/2]
-43833f93b62 SystemUI: only call  showAodContent(true) if we are still on the keyguard
-3b8f9a2a511 SystemUI: replace pulse light drawable with our own vector
-a232f4b142d SystemUI: use ROWS_HIGH_PRIORITY for active notification pulse check
-704c4204f44 SystemUI: kill any leftover notification pulse on new pulse start
-04efbebf169 SystemUI: add Ambient Lights always on hide aod content option
-c516041a92a SystemUI: trigger pulse light only for notifications
-9abba948747 [1/2] SystemUI: add Pulse and Ambient notification bars
-262957ca039 [SQUASH] revert ambient pulse notification
-
-   * packages/apps/Blissify/
-27ffd91 Revert "Blissify: Add auto color option for edge lightning [2/2]"
-9963d2c Add an option to pulse edge light for all doze triggers [2/2]
-259bf5f Allow limiting edge lighting repeats [2/2]
-bacca51 Edge light: Allow to set either an accent color or a custom color.
-ad02cd5 Ambient light settings
-70f7d2e Pulse and Ambient notification bars [2/2]
 
