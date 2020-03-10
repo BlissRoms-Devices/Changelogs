@@ -1,4 +1,14 @@
 ====================
+     03-11-2020
+====================
+
+
+====================
+     03-10-2020
+====================
+
+
+====================
      03-09-2020
 ====================
 
@@ -17,6 +27,9 @@ d4fab4276 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/pla
    * development/
 7649b3242 Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
 
+   * external/p7zip/
+6f674e4 p7zip: Enforce large files support
+
    * frameworks/av/
 f61e477bf Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/av into q
 
@@ -32,6 +45,9 @@ c399cbfe71e Revert "Remove keyguard_indication_area_overlay"
 
    * frameworks/opt/telephony/
 0aee0d475 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD
+
+   * hardware/qcom-caf/msm8996/audio/
+e33f77662 audio: Fix flac offload not working
 
    * hardware/qcom/audio/
 722c28c Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
@@ -208,6 +224,12 @@ ef50e9f Blissify: change icon placement to the right side
 ====================
 
 
+   * frameworks/av/
+1079f8acc Camera: Check consumer interface before disconnecting
+3fcd9d784 Camera: Add support for manual 3A.
+06d9f4d03 camera: allow device to append camera parameters
+38c113c86 libcameraservice: Don't pass NULL args on setCallbacks call
+
    * frameworks/base/
 8541a71d2d9 SystemUI: Update OOS FOD animations
 f868d2d7138 SystemUI: Add OP Ripple animations [1/2]
@@ -248,12 +270,6 @@ b9a3dc7 Blissify: Recognizing fingerprint animation picker [2/2]
      03-03-2020
 ====================
 
-
-   * frameworks/av/
-1079f8acc Camera: Check consumer interface before disconnecting
-3fcd9d784 Camera: Add support for manual 3A.
-06d9f4d03 camera: allow device to append camera parameters
-38c113c86 libcameraservice: Don't pass NULL args on setCallbacks call
 
    * manifest/
 38f3fdb Manifest for Android 10.0.0 Release 30
@@ -373,51 +389,4 @@ f08e15777e4 Alert slider: Work better with Key Handlers
 
    * hardware/qcom-caf/wlan/
 a3ec580 wcnss-service: Remove setup_wlan_driver_ath_prop()
-
-====================
-     02-25-2020
-====================
-
-
-   * frameworks/base/
-2c71ac51998 Apply Dark theme changes when screen off only
-685b77cc41a Updated UiModeManagerService to always trigger configuration change for setNightMode if it is AAE.
-2c188eba3c5 Dark theme twilight mode backend and tile
-
-   * packages/apps/Blissify/
-85295f4 Blissify: Move Misc to bottom end
-
-   * packages/apps/LineageParts/
-83f500a Show "No apps" if no apps can be forced to full screen aspect ratio
-e006161 LineageParts: gestures: Add ambient as a gesture action
-
-   * vendor/bliss/
-27889db2 permissions: Whitelist ThemePicker permissions
-
-====================
-     02-24-2020
-====================
-
-
-   * frameworks/base/
-e7e93125923 Use Cloudflare DNS servers as hints
-3a7556b5bdf Use Cloudflare DNS as the default fallback
-317703c0dde NetworkDiagnostics: switch to Cloudflare DNS
-cf8eb4715a4 Use Cloudflare DNS servers as defaults for tethering
-dc84eafa0fc Add ripple effect to oos dismiss all
-d6f83a7ffb1 Revert "OOS dismiss button: Use accent color for background"
-e2566639bea [1/2] SystemUI: Lockscreen blur level: Code fixes and allow no blur
-f239c653a62 SystemUI: Partially Revert "Fix some crashes with lockscreen album art filter"
-
-   * packages/apps/Blissify/
-53afe43 Merge "Blissify: Buttons: fix key mismatch" into q
-e87d6e1 Blissify: Buttons: fix key mismatch
-2d6b4bd [2/2] lock screen media artwork blur rework
-1b23855 Revert "Enable artwork Blur level only when art filter is set to blur"
-a03e971 Blissify: integrate ThemePicker
-c11d0b1 Blissify: Move Aosp themeing to Blissfy
-8def51d Blissify: Add Themes Section
-
-   * vendor/bliss/
-1140ac1d config: Bump up to Bliss v12.4
 
