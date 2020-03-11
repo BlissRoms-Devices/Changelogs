@@ -1,4 +1,18 @@
 ====================
+     03-12-2020
+====================
+
+   * art/
+752617cec4 Add .gitreview
+a474ceb20c art: extend the supported cpu_variant list for arm64
+
+   * lineage-sdk/
+8d4abf51 lineage-sdk: Drop Expanded Desktop API
+
+   * packages/apps/LineageParts/
+6c29995 LineageParts: Drop Expanded Desktop feature
+
+====================
      03-11-2020
 ====================
 
@@ -8,10 +22,16 @@
 ====================
 
 
+   * external/google/
+d504053 Dreamliner: Fix abstract method error
+
 ====================
      03-09-2020
 ====================
 
+
+   * device/qcom/sepolicy/
+f33d7b25 Expose TimeService app cert to soong
 
    * packages/apps/ThemePicker/
 cc1ab40 Merge tag 'android-10.0.0_r31' into q
@@ -224,12 +244,6 @@ ef50e9f Blissify: change icon placement to the right side
 ====================
 
 
-   * frameworks/av/
-1079f8acc Camera: Check consumer interface before disconnecting
-3fcd9d784 Camera: Add support for manual 3A.
-06d9f4d03 camera: allow device to append camera parameters
-38c113c86 libcameraservice: Don't pass NULL args on setCallbacks call
-
    * frameworks/base/
 8541a71d2d9 SystemUI: Update OOS FOD animations
 f868d2d7138 SystemUI: Add OP Ripple animations [1/2]
@@ -270,6 +284,12 @@ b9a3dc7 Blissify: Recognizing fingerprint animation picker [2/2]
      03-03-2020
 ====================
 
+
+   * frameworks/av/
+1079f8acc Camera: Check consumer interface before disconnecting
+3fcd9d784 Camera: Add support for manual 3A.
+06d9f4d03 camera: allow device to append camera parameters
+38c113c86 libcameraservice: Don't pass NULL args on setCallbacks call
 
    * manifest/
 38f3fdb Manifest for Android 10.0.0 Release 30
@@ -376,17 +396,4 @@ f8509f1 Settings: Fix default value for proximity on wake pref
 bbfa735 Blissify: Buttons: Add navbar fragment
 4e9e0fe Add ANBI and HW Keys disable toggles
 696aa8e Blissify: refactor buttons fragment
-
-====================
-     02-26-2020
-====================
-
-
-   * frameworks/base/
-5aab72d6746 Resolver: Modernize layout
-29ab1e120d9 Alert slider: Do not hardcode slider position based on ringer mode
-f08e15777e4 Alert slider: Work better with Key Handlers
-
-   * hardware/qcom-caf/wlan/
-a3ec580 wcnss-service: Remove setup_wlan_driver_ath_prop()
 
