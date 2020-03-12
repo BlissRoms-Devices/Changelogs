@@ -1,4 +1,29 @@
 ====================
+     03-13-2020
+====================
+
+
+   * frameworks/base/
+36dfe25785d Add device key action to toggle flashlight [2/3]
+1ea6fdacc70 SystemUI: KG Charging Animation: Add more animations [1/3]
+f4f598ae8bd Remove unnecessary battery meter view impl in keyguard statusbar
+4b97e5a954d PowerManagerService: Improve waking device when prox check disabled
+91ddf17f578 base: allow for customizing the length of the navigation handle [1/2]
+
+   * lineage-sdk/
+8113156d Add device key action to toggle flashlight [1/3]
+
+   * packages/apps/Settings/
+a2da811964 Settings: allow for customizing the length of the navigation handle [2/2]
+
+   * vendor/bliss/
+b2a0c1a2 vendor: fix backuptool version one final time
+1725714e vendor: add OPScreenRecorder [1/2]
+d42a092f extract_utils: Fix up 4a2b65fb60af23b6beccd8c405fc7cea90b9474d
+a633c48e extract_utils: Fix bad substitution for zsh
+40bb5053 vendor: modernize functions
+
+====================
      03-12-2020
 ====================
 
@@ -6,11 +31,31 @@
 752617cec4 Add .gitreview
 a474ceb20c art: extend the supported cpu_variant list for arm64
 
+   * external/airbnb-lottie/
+a90ad3c2 KG Charging Animation: Add more animations [2/3]
+
+   * frameworks/base/
+d8e536ee73d Gesture nav Assistant handles: don't show them in lockscreen
+44bb111c903 fw/b torch: Let long press power turn torch off when screen is on.
+
    * lineage-sdk/
 8d4abf51 lineage-sdk: Drop Expanded Desktop API
 
+   * packages/apps/Blissify/
+1f46910 Add device key action to toggle flashlight [3/3]
+3add4e7 KG Charging Animation: Add more animations [3/3]
+
    * packages/apps/LineageParts/
 6c29995 LineageParts: Drop Expanded Desktop feature
+
+   * system/core/
+1c0e5741f fastbootd: usb: fallback to v1 descriptors
+0c1359943 reboot: allow opting-in to fastbootd
+
+   * vendor/bliss/
+cd77d651 backuptool: Fix backup/restore functionality
+abe4e5b7 backuptool: Properly unmount system partition
+d4e9ef20 backuptool: Remove backup blacklist/whitelist
 
 ====================
      03-11-2020
@@ -25,6 +70,16 @@ a474ceb20c art: extend the supported cpu_variant list for arm64
    * external/google/
 d504053 Dreamliner: Fix abstract method error
 
+   * vendor/qcom/opensource/audio/
+343077c Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-17.1
+
+   * vendor/qcom/opensource/interfaces/
+ee4d3f3 interfaces: Regenerate blueprints
+4ebae93 Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces into lineage-17.1
+
+   * vendor/qcom/opensource/power/
+b575759 Add power hints for FHD480 and HD960
+
 ====================
      03-09-2020
 ====================
@@ -33,8 +88,39 @@ d504053 Dreamliner: Fix abstract method error
    * device/qcom/sepolicy/
 f33d7b25 Expose TimeService app cert to soong
 
+   * hardware/qcom-caf/msm8996/audio/
+102e042c8 Merge tag 'LA.UM.8.6.r1-04000-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.1-caf-msm8996
+
+   * hardware/qcom-caf/msm8996/media/
+b07da4411 Merge tag 'LA.UM.8.6.r1-04000-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into lineage-17.1-caf-msm8996
+
+   * hardware/qcom-caf/thermal/
+8c677b6 Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/thermal into lineage-17.1
+
+   * hardware/qcom-caf/wlan/
+bcc083a Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into lineage-17.1
+
    * packages/apps/ThemePicker/
 cc1ab40 Merge tag 'android-10.0.0_r31' into q
+
+   * vendor/codeaurora/telephony/
+4562c55 Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into lineage-17.1
+
+   * vendor/qcom/opensource/dataservices/
+4293129 Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/dataservices into lineage-17.1
+
+   * vendor/qcom/opensource/fm-commonsys/
+c6f6bde Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/fm-commonsys into lineage-17.1
+
+   * vendor/qcom/opensource/power/
+00f8db4 power: add core ctl and io power changes to powerhal
+fb30af8 power: Add powerhints for QVR use-cases
+85c7adc Power: update powerhal settings
+74887e8 power : Modified APC freqency of lito for R2
+338920c Power:Add powerhints to camera and VR
+
+   * vendor/qcom/opensource/thermal-engine/
+84005fb Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/thermal-engine into lineage-17.1
 
 ====================
      03-08-2020
@@ -68,6 +154,12 @@ c399cbfe71e Revert "Remove keyguard_indication_area_overlay"
 
    * hardware/qcom-caf/msm8996/audio/
 e33f77662 audio: Fix flac offload not working
+
+   * hardware/qcom-caf/msm8998/audio/
+007fe16c8 Merge tag 'LA.UM.8.4.r1-05200-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.1-caf-msm8998
+
+   * hardware/qcom-caf/msm8998/media/
+7d9631d63 Merge tag 'LA.UM.8.4.r1-05200-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into lineage-17.1-caf-msm8998
 
    * hardware/qcom/audio/
 722c28c Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
@@ -374,26 +466,4 @@ cffa54f Add strings for quick charge toggle
      02-28-2020
 ====================
 
-
-====================
-     02-27-2020
-====================
-
-
-   * frameworks/base/
-86cfe06ac67 SystemUI: Always keep clock widget visible while dozing
-014310dd949 SystemUI: Always keep slice view while dozing
-ba185a1001c SystemUI: Keyguard: Hide Clock frame instead of the whole container
-8f135aa0e64 Revert "SystemUI: Keyguard: Hide Clock frame instead of the whole container"
-62f30f98082 Allow zero stride
-589f13e57eb Enlarge EPSILON to 0.01 for android.display.cts.DisplayTest#testModeSwitch pass
-3a15c171e31 Move high touch sensitivity and hovering to InputService
-
-   * packages/apps/Blissify/
-f8509f1 Settings: Fix default value for proximity on wake pref
-7bc1bab Blissify: Add search indexable for notifications fragment
-58a958b Blissify: Update lockscreen date hide string
-bbfa735 Blissify: Buttons: Add navbar fragment
-4e9e0fe Add ANBI and HW Keys disable toggles
-696aa8e Blissify: refactor buttons fragment
 
