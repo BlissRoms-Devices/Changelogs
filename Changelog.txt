@@ -1,4 +1,26 @@
 ====================
+     03-14-2020
+====================
+
+
+   * frameworks/base/
+54f2193b984 base: Revert latest blur level commits
+ca2ebdf35c6 SystemUI: fix accent based lockscreen clocks
+c12bb8a583c base: Remove accent overlays [1/3]
+a858c64414a Improve applying Accent colors
+80765293ecb base: Perform accent prop set in UiModeManagerService
+13c446bcfdc base: RGB Accent Picker [1/2]
+
+   * packages/apps/Blissify/
+933a8da Blissify: Revert latest blur level commits
+07a6a86 Blissify: Remove accent overlays [3/3]
+7c69ebc RGB Accent Picker [2/2]
+
+   * system/bt/
+9ebf74456 Add support force disable sco enhanced sync commands
+95c241253 Revert "Add support to force disable enhanced sco commands"
+
+====================
      03-13-2020
 ====================
 
@@ -14,6 +36,9 @@ f4f598ae8bd Remove unnecessary battery meter view impl in keyguard statusbar
 8113156d Add device key action to toggle flashlight [1/3]
 
    * packages/apps/Settings/
+8a2ceaf8f4 Settings: Enable PermissionBar Chart
+881d01ee20 Revert "Remove permission bar chart in Privacy setting"
+5b50a58cb3 Settings: Fix r31 merge
 a2da811964 Settings: allow for customizing the length of the navigation handle [2/2]
 
    * vendor/bliss/
@@ -22,6 +47,9 @@ b2a0c1a2 vendor: fix backuptool version one final time
 d42a092f extract_utils: Fix up 4a2b65fb60af23b6beccd8c405fc7cea90b9474d
 a633c48e extract_utils: Fix bad substitution for zsh
 40bb5053 vendor: modernize functions
+
+   * vendor/themes/
+7651fe7 themes: Remove accent overlays [2/3]
 
 ====================
      03-12-2020
@@ -461,9 +489,4 @@ ca8a74f TouchGestures: Add wake device as a gesture action
    * packages/resources/devicesettings/
 95f475e Add strings for camera focus fix toggle
 cffa54f Add strings for quick charge toggle
-
-====================
-     02-28-2020
-====================
-
 
