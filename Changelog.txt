@@ -1,4 +1,9 @@
 ====================
+     03-15-2020
+====================
+
+
+====================
      03-14-2020
 ====================
 
@@ -480,13 +485,4 @@ fc0263d Blissify: Add Russian translation
    * packages/apps/LineageParts/
 ca8a74f TouchGestures: Add wake device as a gesture action
 2727cfb TouchGestures: Remove haptic feedback for ambient gesture action
-
-====================
-     02-29-2020
-====================
-
-
-   * packages/resources/devicesettings/
-95f475e Add strings for camera focus fix toggle
-cffa54f Add strings for quick charge toggle
 
