@@ -1,10 +1,32 @@
 ====================
+     03-17-2020
+====================
+
+
+   * frameworks/base/
+861e17f0eed QS: Use Settings.Panel intents for WiFi and NFC
+9e5b21deb9d SettingsProvider: Disable Bluetooth by default
+
+   * lineage-sdk/
+76549809 Implement edge long swipe gesture [2/3]
+
+====================
      03-16-2020
 ====================
 
 
+   * frameworks/base/
+f737a988aa2 Implement edge long swipe gesture [1/3]
+de5256bd565 AlarmManagerService: Fix FWR before boot completed
+f715a7fe83d Sanitize Bluetooth device names without regex
+3bb8203ec40 Send battery low intent when battery warning boundary changed
+708010fcdff SystemUI: Disable heads up debugging on non eng builds
+
    * manifest/
 22d2f37 manifest: Track libcore
+
+   * packages/apps/Blissify/
+a507db8 Implement edge long swipe gesture [3/3]
 
    * vendor/bliss/
 fa44f37d vendor: repopick: update for bliss
@@ -494,38 +516,4 @@ fb8319c9 prebuilt: backuptool: Implement dynamic system mount for A-only
 582dad27 config: Dexpreopt speed compile SystemUI instead of SystemUIGoogle
 2228089f config: Add SysUI to PRODUCT_DEXPREOPT_SPEED_APPS
 def3dc67 vendor: Remove Pixel Launcher
-
-====================
-     03-02-2020
-====================
-
-
-   * build/make/
-7fb90b4e6 sign_target_apks: Add networkstack to default key_map
-fafc02676 releasetools: Use 0oXXX instead of 0XXX for octal
-7e19c5f10 releasetools: Move system mount handling to backuptool
-04a7e793a Revert "releasetools: Implement system-mount script to support any recovery system mount"
-41d18054a build: Add vendor.prop and odm.prop capability
-
-   * frameworks/base/
-bd80a65f3f9 Alert Slider: Improve layout
-91c01fafdce DozeSensors: do not use binned brightness sensor for proximity if not supported
-6464a8e3e41 Alert Slider: Add toggle to disable notifications [1/2]
-b57f46380d1 Alert slider: Use default position behaviour if position not specified in intent
-05174b6c36e Alert Slider: Clean up usage of Orientation Listener
-f4d4387e952 Alert Slider: Apply theme more dynamically
-4a288aab0c7 SystemUI: fix possible case where aod stays on after notification pulse
-e2fa200a759 NotifcationPanelView: Make sure notification pulse animation stops.
-919cd123a60 SystemUI: day 0 notification light pulse fixes
-54da50b3c2e Revert "base: Allow limiting edge lighting repeats [1/2]"
-227be6ee914 SystemUI: add timeout for ambient notification pulse
-c17ac4689cd base: cleanup notification pulse values
-
-   * packages/apps/Blissify/
-8d6ff1f Merge "Blissify: Add Russian translation" into q
-ddea183 Blissify: Hide Force Navbar preference for Non-Hw keys devices
-84d5999 AoD notification pulse timeout option: Added some lower timeouts.
-2e44504 Revert "Allow limiting edge lighting repeats [2/2]"
-b2f1751 Blissify: add aod notification pulse timeout option [2/2]
-cc661ed NotificationsSettings: Cleanup notification pulse values.
 
