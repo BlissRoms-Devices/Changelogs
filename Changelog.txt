@@ -1,9 +1,42 @@
 ====================
+     03-18-2020
+====================
+
+
+   * device/qcom/sepolicy-legacy-um/
+61b254e Expose TimeService app cert to soong
+
+   * frameworks/base/
+48d483d8189 Add device key action to take screenshot [2/3]
+3a619acc5c9 Clean up API for screenshot type
+00eb1d86871 Use API function for three finger screenshot
+
+   * lineage-sdk/
+2c3b0c0c Add device key action to take screenshot [1/3]
+
+   * packages/apps/Blissify/
+6a1f484 Add device key action to take screenshot [3/3]
+
+   * packages/apps/Settings/
+cfed342fc7 Settings: Disable Google Play system update check
+
+   * packages/apps/ThemePicker/
+866298a ThemePicker: Preview Light and Dark mode in Primary screen
+28217fd ThemePicker: allow full heigth for bottom layout in style option picker
+bbe1dc7 ThemePicker: allow custom empty option message
+ac1ec3b ThemePicker: add support for header images in themes
+bf87ec5 Revert "ThemeFragment: handle case where no custom wallpaper is available"
+
+====================
      03-17-2020
 ====================
 
 
+   * device/lineage/sepolicy/
+f85321c bliss: common: add rules for RGB/HSL accentpicker
+
    * frameworks/base/
+c5b5f5eed48 KeyguardIndicationController: Fix NPE in latest Charging Animation code.
 861e17f0eed QS: Use Settings.Panel intents for WiFi and NFC
 9e5b21deb9d SettingsProvider: Disable Bluetooth by default
 
@@ -484,36 +517,4 @@ e8fa63b Blissify: Add new FOD pressed state icons [2/2]
 db9ebea Blissify: Add OP Recognizing FP animations [2/2]
 b9a3dc7 Blissify: Recognizing fingerprint animation picker [2/2]
 9f2b3c4 Blissify: Recognizing fingerprint animation [2/2]
-
-====================
-     03-03-2020
-====================
-
-
-   * frameworks/av/
-1079f8acc Camera: Check consumer interface before disconnecting
-3fcd9d784 Camera: Add support for manual 3A.
-06d9f4d03 camera: allow device to append camera parameters
-38c113c86 libcameraservice: Don't pass NULL args on setCallbacks call
-
-   * manifest/
-38f3fdb Manifest for Android 10.0.0 Release 30
-
-   * packages/apps/Blissify/
-b9eb6dd Alert Slider: Add toggle to disable notifications [2/2]
-
-   * packages/apps/LineageParts/
-8d90448 Add haptic event when waking device
-
-   * vendor/bliss/
-627258cf vendor: fix version in backuptool
-fb8319c9 prebuilt: backuptool: Implement dynamic system mount for A-only
-4c512ff9 Revert "prebuilt: Add a script to simplify A-only recovery system mount"
-4efbd278 vendor: update Lawnchair to q_pre_alpha-2616
-6f164de5 dtbo: Sort the files we found
-22eb802e tasks: dtbo: Add support for custom dtbo generation rules
-892bd802 apn: Update Canadian carriers
-582dad27 config: Dexpreopt speed compile SystemUI instead of SystemUIGoogle
-2228089f config: Add SysUI to PRODUCT_DEXPREOPT_SPEED_APPS
-def3dc67 vendor: Remove Pixel Launcher
 
