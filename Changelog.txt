@@ -1,14 +1,38 @@
 ====================
+     03-20-2020
+====================
+
+
+   * packages/apps/Blissify/
+7fc20fd Blissify: some tidying up
+7693dc2 Blissify: Fix duplicate key
+
+   * packages/apps/Settings/
+2be5bf6fcc Running services fragment: clean up layout
+
+====================
      03-19-2020
 ====================
 
 
+   * frameworks/av/
+1a804e435 cameraserver: Fix logic to skip callbacks for non HAL3 devices for vendor listeners.
+
    * frameworks/base/
+2c56a920b6e Visualizer: Ensure multi-thread safety
+71eb3c5904d bugfix for noteResetVideoLocked
+ed7b1737106 SystemUI: Tint active qs tile expand indicator with accent color
+648ea0b584d QSTile: tint second line of active tile as well
+a465a67a564 Adjust QS tile background and icon color
+cdd14844dc1 QS tile label: tint it with accent color and use bolder font
 f01ddc1fdfc base: omnijaws: fix settings intent
 5069092fc7f DataSwitchTile: dont show toast on click
 ac59570de81 base: SystemUI: Make QS Status font bolder and bigger
 7681ba12e47 SystemUI: Set proper margin and padding for lockscreen bottom shortcuts
 63c387bdc61 SystemUI: QS blur improvements
+
+   * packages/apps/ThemePicker/
+58132c2 ThemePicker: Remove accent color step
 
 ====================
      03-18-2020
@@ -432,69 +456,4 @@ bee6d8db3 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/pla
 
    * system/sepolicy/
 011ba6a7 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//system/sepolicy into q
-
-====================
-     03-05-2020
-====================
-
-
-   * frameworks/base/
-75b3e4b5727 Pad ime_switcher same as navbar buttons
-76ad5db22a1 Fix double tap to sleep on quick status bar
-31649c5eea7 Start BiometricService even if no hardware is present
-0fe3706e226 PhoneWindowManager: Fix screen peek KEY_FOCUS handling
-6ca9381a677 Camera button support
-01c3e33dc42 Add auth framework for outgoing SMS messages.
-b1884b84a9a Check if EIMS when confirming network
-1f366b5dc46 net: modify connecitvity rematch logic to support MSIM devices
-ddd758c42ba Add ICCID into CarrierIdentifier
-2bb0e8680fd BT: Send info if call is CS type from telecomm service to BT apps.
-29114124878 Emergency SMS carrier config flag
-a8f0a3e1b9c IMS-VT: Add config to control holding a video call
-65b75654903 SMS: Parsing of CDMA MMS notification carried by SMS
-ae62407af51 Telephony: Get SIM card capacity count of SMS
-94a9417c9c5 IMS: Add carrier config for RTT always enabled
-4bc7e396956 IMS: Conference URI support.
-495dbbed536 IMS: Propagate RTT capability of the called party to UI
-ceebb6f6c1e IMS: Add CALL_TYPE for audio and video inactive
-08d9e39842c IMS: Propagate call session property changed message
-ebb85aba8d4 Use proper coded alphabet when a contact is written into EF_ADN of USIM.
-b3a6d2dafca SEEMP: framework instrumentation and AppProtect features
-1304dc6237f Telephony: Add DisconnectCause values for clear code
-0bf6b37b5f6 IMS: Add UT interface to query CF setting for service class.
-d1b7e824c37 IMS: Add flag to control reset UT capability
-5966d2a9004 Add config to disable CDMA call forward/waiting
-87f8879c05c SystemUI: add optional back gesture vibration tick [1/2]
-97d2b2c9015 SystemUI: AODTile: Use MD2 Icon
-c48004c6131 SystemUI: Improve Screen stabilization settings layout
-3f2dafc3742 SystemUI: Use MD2 icon for Screen Stabilization tile
-2dff28a4688 base: Screen Stabilization [1/2]
-a2fafd60ea4 SystemUI: Fix QS tiles clipping when too many icons in view
-2e968ea13ff VibratorService: Update ONEPLUS_EFFECT_TICK constant value
-4350b56772f VibratorService: Fix double click effect with OnePlus vibrator format
-e81f66d5e22 VibratorService: update constant values for OnePlus HAL
-7c2ab89174a Ims: Add suppport for "Ims Preferred" WFC Preference
-00026a58e8b [1/2] base: expose auto night mode sunset and sunrise values on API
-9665f9d9e4f SystemUI: use doze_pulse_duration_visible as timeout for showing ambient notifications
-b55d7a60b57 Merge changes from topic "fod" into q
-
-   * frameworks/opt/net/ims/
-78c686f IMS: Add UT interface to query CF setting for service class.
-
-   * frameworks/opt/telephony/
-876107881 add for community - community is not pleased
-46837b455 RIL: Allow overriding RadioResponse and RadioIndication
-cd7680c52 Revert "Clean up getPhoneCount in PhoneFactory#makeDefaultPhone"
-69a8e936c RIL: Fix manual network selection with old modem
-
-   * manifest/
-004f1b8 manifest: track net/ims
-349b5dc Manifest for Android 10.0.0 Release 31
-720bca6 Add platform/tools/apifinder
-
-   * packages/apps/Blissify/
-c9120c2 Buttons: Re-add navigation long press options
-e1d8015 Merge changes from topic "Blissify_menu" into q
-ef50e9f Blissify: change icon placement to the right side
-5196894 Blissify: remove that weird circle inside icons
 
