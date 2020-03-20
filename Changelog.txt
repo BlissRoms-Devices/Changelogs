@@ -1,4 +1,9 @@
 ====================
+     03-21-2020
+====================
+
+
+====================
      03-20-2020
 ====================
 
@@ -175,36 +180,6 @@ a633c48e extract_utils: Fix bad substitution for zsh
 ====================
 
    * art/
-e0f80347af Protect/Unprotect regions (region space) only in debug build
-ae04b8581d ART: ARM64: Improve FP IsInfinity intrinsic.
-b3598dc968 Enable support of VecLoad/VecStore in LSE
-53afb2601f Utilize partially used TLABs
-176d30be8c Workaround w.r.t. an assertion failure in AOSP LLVM for a new SP
-4171fc4e4a Make the $/# in front of constants optional
-9d68611dbe Trigger GC when 90% heap is utilized
-e1343b59ab ARM64: FP16 greater/less/greaterEquals/lessEquals intrinsics for ARMv8
-7d0e1b5714 ARM64: FP16.rint() intrinsic for ARMv8
-5e2b5bc63b ARM64: FP16.ceil() intrinsic for ARMv8
-f267b6e687 ARM64: FP16.floor() intrinsic for ARMv8
-16c24439b2 ARM64: Pass simd half floating point feature to VIXL macroassembler.
-5290624681 ARM: Remove unnecessary kCoreAlwaysSpillRegister.
-4069454b2b Remove ShadowFrame::HasReferenceArray()
-87f01df4f0 ARM/ARM64: Use trampolines for slow-path entrypoint calls.
-e7678694fa ARM64: Improve BoundsCheck for constant inputs.
-d5ee475840 ART: ARM64: Optimize frame size for SIMD graphs.
-6f6374a8cd ART: ARM64: Fix saved fpu stack offsets for SIMD.
-03c256e250 ARM/ARM64: Improve frame entry/exit codegen.
-789aca460a [optimizing] Improve constant folding on logical and
-47a98a2b4c ART: Preallocate offset map
-168415a97d Fix intersecting live ranges created by instruction scheduler
-7a5f1b7011 ART: Refactor SchedulingGraph for consistency and clarity
-accc05cd28 Optimize stack maps: add fast path for no inline info.
-3ee4012f56 Optimize stack map decoding.
-f739f3138f ART: Improve VisitStringGetCharsNoCheck intrinsic for compressed strings, using SIMD
-7203f9fa45 Revert^2 "ARM64: toHalf() intrinsic for ARMv8"
-2e94f34c8a ARM64: toFloat() intrinsics with ARMv8 FP16.
-d780b0c19b ART: Optimize StringBuilder append pattern.
-a8e192edff ART: Mark StringBuilder.append()s as intrinsics.
 752617cec4 Add .gitreview
 a474ceb20c art: extend the supported cpu_variant list for arm64
 
@@ -214,20 +189,6 @@ a90ad3c2 KG Charging Animation: Add more animations [2/3]
    * frameworks/base/
 d8e536ee73d Gesture nav Assistant handles: don't show them in lockscreen
 44bb111c903 fw/b torch: Let long press power turn torch off when screen is on.
-
-   * libcore/
-10744b2fb Use round to nearest with ties to nearest even in FP16.rint
-650206e4d Mask result with qNaN if input to rint is NaN
-3acf0caf4 Mask result with qNaN if input to ceil is NaN
-034ffcd2f Tests for Half.floor for NaN values
-7e4326ba5 [REAPPLY] Add test cases for libcore FP16 APIs
-871b20f8c Replace comparison check for infinity with isNaN function call
-e78203693 Fixed weird variable naming in FP16.java
-111194f5e Mask result with qNaN if input to floor is NaN
-2664d5346 Add test cases for libcore FP16 APIs
-5eea5be85 Round to nearest even instead of to nearest 0.5 up
-d24a625e4 Correct the exponent value calculated when converting from float to half
-89c7217ef Move Half implementations to libcore to allow ART optimizations
 
    * lineage-sdk/
 8d4abf51 lineage-sdk: Drop Expanded Desktop API
@@ -390,70 +351,4 @@ e2373d89f Adding the AVB public key for Q-Developer-GSI
      03-07-2020
 ====================
 
-
-====================
-     03-06-2020
-====================
-
-   * art/
-3c62347f4e Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//art into q
-
-   * bootable/recovery/
-aab0eae3 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//bootable/recovery into q
-
-   * build/soong/
-30f7513c Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//build/soong into HEAD
-
-   * frameworks/base/
-567786a13e7 Squash revert
-
-   * frameworks/native/
-be09bd5a8 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//frameworks/native into HEAD
-
-   * hardware/interfaces/
-df0cfc31a Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//hardware/interfaces into q
-
-   * hardware/qcom/display/
-5ee455bc Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//hardware/qcom/display into q
-
-   * hardware/qcom/media/
-9e38c12 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//hardware/qcom/media into q
-
-   * packages/apps/Contacts/
-27f2a9cb8 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/Contacts into q
-
-   * packages/apps/Dialer/
-d2c71dbd5 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/Dialer into q
-
-   * packages/apps/DocumentsUI/
-9b21d695b Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/DocumentsUI into q
-
-   * packages/apps/Nfc/
-0e97938a Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/Nfc into q
-
-   * packages/apps/Settings/
-dc5ca2e5fa Settings: add optional back gesture vibration tick [2/2]
-752887a7a5 [2/2] Settings: expose auto night mode sunset and sunriuse values on API
-b0a24503a9 Settings: Add high touch sensitivity and touchscreen hovering toggles
-
-   * packages/apps/WallpaperPicker2/
-92358d2 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/apps/WallpaperPicker2 into q
-
-   * packages/inputmethods/LatinIME/
-27ab475df Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/inputmethods/LatinIME into q
-
-   * packages/providers/DownloadProvider/
-d3a58822 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into q
-
-   * packages/providers/MediaProvider/
-db610f2 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/providers/MediaProvider into q
-
-   * packages/services/Telecomm/
-6d13489a Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/services/Telecomm into q
-
-   * packages/services/Telephony/
-bee6d8db3 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//packages/services/Telephony into q
-
-   * system/sepolicy/
-011ba6a7 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//system/sepolicy into q
 
