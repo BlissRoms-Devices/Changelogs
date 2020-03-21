@@ -1,7 +1,37 @@
 ====================
+     03-22-2020
+====================
+
+
+   * packages/apps/Settings/
+a7e9c1a0c4 Remove legal information from being indexable
+d7e2231aaf Comment out Legal/Regulatory info
+20c75d9ce9 Settings: reword gesture block ime option
+7e211c890a [2/2] Settings: dont block IME space for back gesture
+
+====================
      03-21-2020
 ====================
 
+
+   * frameworks/base/
+321fa0632aa SystemUI: Show charging status in addition to trust granted/transient status
+e6bf389e248 DataSwitchTile: grant missing permission
+07ebb2ddbb7 Fix error com.google.android.gms.persistent
+f7179afec5f [1/2] SystemUI: dont block IME space for back gesture
+22cf836c6e4 pm: Add flags for UFS card for encryption in vold
+0ee196ab39b Apply proper displayCutout rotation in density 480 dpi and 270 degrees rotation.
+f0691eaf07c QS: Use Mobile Data panel for CellularTile
+1e5c8d3a6f8 QS: Add and use Mobile Data panel
+
+   * packages/apps/Blissify/
+7b8f200 Blissify: Link to themepicker's clock styles
+
+   * packages/apps/Settings/
+0857c97477 Settings: Always show last charged time
+
+   * packages/apps/ThemePicker/
+054237a Add LockClockPickerActivity
 
 ====================
      03-20-2020
@@ -214,6 +244,17 @@ d4e9ef20 backuptool: Remove backup blacklist/whitelist
 ====================
 
 
+   * hardware/qcom-caf/sm8150/audio/
+72fccd62a Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
+1ea28cdd2 hal: Add missing includes
+
+   * hardware/qcom-caf/sm8150/display/
+cd4f43fb Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into HEAD
+c333599a Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
+
+   * hardware/qcom-caf/sm8150/media/
+a03cbc4f Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
+
 ====================
      03-10-2020
 ====================
@@ -346,9 +387,4 @@ e2373d89f Adding the AVB public key for Q-Developer-GSI
    * vendor/bliss/
 102ab26f config: Bump to Bliss v12.5 Release
 95b64cac config: Whitelist wellbeing and gms permission
-
-====================
-     03-07-2020
-====================
-
 
