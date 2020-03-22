@@ -1,9 +1,43 @@
 ====================
+     03-23-2020
+====================
+
+
+   * frameworks/base/
+5e01d8f8ffa base: Reverse actions for QS and notification panel
+9a8ad68fe38 base: Add more custom actions [1/3]
+5bb02b50f4d base: Add device key action to expand notifications panel [1/3]
+9f8dea5fb12 base: Add device key action to Clear all notifications [1/3]
+edc6a4dbc84 base: Add device key action to toggle volume panel [1/3]
+cb2b9860ba0 Merge "Blissutils: add Doze package checks" into q
+d8afe2763e4 Blissutils: add Doze package checks
+e3cdd07ebb1 Lower Animation Scale Durations
+
+   * lineage-sdk/
+d8810b17 Add more custom actions [2/3]
+0a9d66d3 Add device key action to expand notifications panel [2/3]
+afac3662 Add device key action to Clear notifications [2/3]
+a51befaa Add device key action to toggle volume panel [2/3]
+
+   * packages/apps/Blissify/
+694960f Blissify: Add more custom actions [3/3]
+80b1571 Blissify: Add device key action to expand notifications panel [3/3]
+7123126 Blissify: Add device key action to Clear notifications [3/3]
+7563ad1 Blissify: Add device key action to toggle volume panel [3/3]
+
+   * packages/apps/Settings/
+9a58f41496 panels: Add Mobile Data panel
+
+====================
      03-22-2020
 ====================
 
 
+   * packages/apps/Blissify/
+a8b4be5 Blissify: Increase max limit of statusbar padding
+
    * packages/apps/Settings/
+bf002bc0bb Settings: doze: custom packages have priority
 a7e9c1a0c4 Remove legal information from being indexable
 d7e2231aaf Comment out Legal/Regulatory info
 20c75d9ce9 Settings: reword gesture block ime option
@@ -244,6 +278,14 @@ d4e9ef20 backuptool: Remove backup blacklist/whitelist
 ====================
 
 
+====================
+     03-10-2020
+====================
+
+
+   * external/google/
+d504053 Dreamliner: Fix abstract method error
+
    * hardware/qcom-caf/sm8150/audio/
 72fccd62a Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
 1ea28cdd2 hal: Add missing includes
@@ -254,14 +296,6 @@ c333599a Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.or
 
    * hardware/qcom-caf/sm8150/media/
 a03cbc4f Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
-
-====================
-     03-10-2020
-====================
-
-
-   * external/google/
-d504053 Dreamliner: Fix abstract method error
 
    * vendor/qcom/opensource/audio/
 343077c Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-17.1
@@ -314,77 +348,4 @@ fb30af8 power: Add powerhints for QVR use-cases
 
    * vendor/qcom/opensource/thermal-engine/
 84005fb Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/thermal-engine into lineage-17.1
-
-====================
-     03-08-2020
-====================
-
-
-   * build/make/
-d4fab4276 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform//build into q
-
-   * development/
-7649b3242 Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
-
-   * external/p7zip/
-6f674e4 p7zip: Enforce large files support
-
-   * frameworks/av/
-f61e477bf Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/av into q
-
-   * frameworks/base/
-8558b491267 SystemUI: Add scratch style FOD icons [1/2]
-980edf34054 Revert "SystemUI: Add scratch style FOD icons [1/2]"
-1db35f86f13 SystemUI: Fix keyguard charging NPE
-c399cbfe71e Revert "Remove keyguard_indication_area_overlay"
-3c64e7a2a80 Merge tag 'android-10.0.0_r31' into q
-
-   * frameworks/opt/net/wifi/
-876987a75 Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
-
-   * frameworks/opt/telephony/
-0aee0d475 Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD
-
-   * hardware/qcom-caf/msm8996/audio/
-e33f77662 audio: Fix flac offload not working
-
-   * hardware/qcom-caf/msm8998/audio/
-007fe16c8 Merge tag 'LA.UM.8.4.r1-05200-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.1-caf-msm8998
-
-   * hardware/qcom-caf/msm8998/media/
-7d9631d63 Merge tag 'LA.UM.8.4.r1-05200-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into lineage-17.1-caf-msm8998
-
-   * hardware/qcom/audio/
-722c28c Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
-
-   * manifest/
-46ddd86 Merge branch 'android-10.0.0_r31' of https://android.googlesource.com/platform//manifest into q
-
-   * packages/apps/CarrierConfig/
-6a2d82a Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
-
-   * packages/apps/CertInstaller/
-632944e Merge tag 'android-10.0.0_r31' into lineage-17.1-android-10.0.0_r31
-
-   * packages/apps/PermissionController/
-675a6f8b Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into q
-
-   * packages/apps/Settings/
-98050b41ec Merge tag 'android-10.0.0_r31' into q
-
-   * system/bt/
-c4fdef720 Prevent abort in case of command timeout
-426a83eab Add support to force disable enhanced sco commands
-8a2660fa8 Bluetooth: Read BLE vendor capability to proceed on Secure conn
-1833af905 Fix L version ble_vendor_capability sanity check crash.
-fff895626 Add .gitreview
-
-   * system/core/
-5b40f7234 Store crashing process name in sysprop
-c7f9d199d Allowing /avb/q-developer-gsi.avbpubkey for DSU
-e2373d89f Adding the AVB public key for Q-Developer-GSI
-
-   * vendor/bliss/
-102ab26f config: Bump to Bliss v12.5 Release
-95b64cac config: Whitelist wellbeing and gms permission
 
