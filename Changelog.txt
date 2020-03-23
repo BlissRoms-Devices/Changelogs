@@ -1,9 +1,33 @@
 ====================
+     03-24-2020
+====================
+
+
+   * external/google/
+ed05db3 CustomActions: Enable more actions
+
+   * frameworks/base/
+5b199118b53 Merge "SmartCharging: Change default overlays" into q
+83ea9c60935 SmartCharging: Change default overlays
+
+   * manifest/
+58ba2d4 manifest: Track hardware_qcom_data_ipacfg-mgr from Lineage
+
+   * packages/apps/Blissify/
+708fba9 Active Edge: enable more actions
+f0aabee Blissify: Add full accent sammy clock style [2/2]
+
+   * packages/apps/Settings/
+260a690650 Settings: Elaborate footer note for smart charging
+
+====================
      03-23-2020
 ====================
 
 
    * frameworks/base/
+84364de86e4 base: Add full accent sammy clock style [1/2]
+9032349c11a Decrease line spacing in sammy clock styles
 5e01d8f8ffa base: Reverse actions for QS and notification panel
 9a8ad68fe38 base: Add more custom actions [1/3]
 5bb02b50f4d base: Add device key action to expand notifications panel [1/3]
@@ -306,46 +330,4 @@ ee4d3f3 interfaces: Regenerate blueprints
 
    * vendor/qcom/opensource/power/
 b575759 Add power hints for FHD480 and HD960
-
-====================
-     03-09-2020
-====================
-
-
-   * device/qcom/sepolicy/
-f33d7b25 Expose TimeService app cert to soong
-
-   * hardware/qcom-caf/msm8996/audio/
-102e042c8 Merge tag 'LA.UM.8.6.r1-04000-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-17.1-caf-msm8996
-
-   * hardware/qcom-caf/msm8996/media/
-b07da4411 Merge tag 'LA.UM.8.6.r1-04000-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into lineage-17.1-caf-msm8996
-
-   * hardware/qcom-caf/thermal/
-8c677b6 Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/thermal into lineage-17.1
-
-   * hardware/qcom-caf/wlan/
-bcc083a Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into lineage-17.1
-
-   * packages/apps/ThemePicker/
-cc1ab40 Merge tag 'android-10.0.0_r31' into q
-
-   * vendor/codeaurora/telephony/
-4562c55 Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into lineage-17.1
-
-   * vendor/qcom/opensource/dataservices/
-4293129 Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/dataservices into lineage-17.1
-
-   * vendor/qcom/opensource/fm-commonsys/
-c6f6bde Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/fm-commonsys into lineage-17.1
-
-   * vendor/qcom/opensource/power/
-00f8db4 power: add core ctl and io power changes to powerhal
-fb30af8 power: Add powerhints for QVR use-cases
-85c7adc Power: update powerhal settings
-74887e8 power : Modified APC freqency of lito for R2
-338920c Power:Add powerhints to camera and VR
-
-   * vendor/qcom/opensource/thermal-engine/
-84005fb Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/thermal-engine into lineage-17.1
 
