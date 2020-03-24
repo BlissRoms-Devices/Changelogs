@@ -1,4 +1,9 @@
 ====================
+     03-25-2020
+====================
+
+
+====================
      03-24-2020
 ====================
 
@@ -301,33 +306,4 @@ d4e9ef20 backuptool: Remove backup blacklist/whitelist
      03-11-2020
 ====================
 
-
-====================
-     03-10-2020
-====================
-
-
-   * external/google/
-d504053 Dreamliner: Fix abstract method error
-
-   * hardware/qcom-caf/sm8150/audio/
-72fccd62a Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
-1ea28cdd2 hal: Add missing includes
-
-   * hardware/qcom-caf/sm8150/display/
-cd4f43fb Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into HEAD
-c333599a Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
-
-   * hardware/qcom-caf/sm8150/media/
-a03cbc4f Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
-
-   * vendor/qcom/opensource/audio/
-343077c Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-17.1
-
-   * vendor/qcom/opensource/interfaces/
-ee4d3f3 interfaces: Regenerate blueprints
-4ebae93 Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces into lineage-17.1
-
-   * vendor/qcom/opensource/power/
-b575759 Add power hints for FHD480 and HD960
 
