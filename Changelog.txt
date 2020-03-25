@@ -1,7 +1,47 @@
 ====================
+     03-26-2020
+====================
+
+
+   * frameworks/base/
+a0a3f478791 Merge changes from topic "slim-recent" into q
+def88a5c7c0 Merge "base: Grant storage permission to Lawnchair" into q
+61e97d187a2 base: Grant storage permission to Lawnchair
+638096ef3b1 SystemUI: Require unlocking to use some quick tiles
+9a3d624969d Revert "base: allow for customizing the length of the navigation handle [1/2]"
+25642b2e901 fwb: Slim recents Q
+ce4f22665b7 base: Add Slim helper classes and constants
+098480cec20 Freedom windows: fix drag [1/2]
+
+   * frameworks/opt/slimrecent/
+0186dd0 slimrecent: Revert AICP empty view
+
+   * manifest/
+63507ac manifest: Track frameworks/opt/slimrecent
+
+   * packages/apps/Blissify/
+3b5f55a Blissify: slimRecents: Changes for android 10
+3aaebf1 Slim recents [2/3]
+dd821f2 Add back DSLV / ActionListViewSettings
+
+   * packages/apps/Settings/
+bce8f18184 Revert "Settings: allow for customizing the length of the navigation handle [2/2]"
+
+====================
      03-25-2020
 ====================
 
+
+   * frameworks/native/
+955b99ec6 Freedom windows: fix drag [2/2]
+
+   * frameworks/opt/slimrecent/
+9ba4e6e slimrecent: fix imports
+
+   * packages/apps/Settings/
+03df53b6c9 Settings: Avoid rendering hidden preferences
+7a0f8c76c1 QS panels: fix data usage display on mobile panel
+48503ada5c QS panels: Improvements
 
 ====================
      03-24-2020
@@ -252,6 +292,12 @@ f4f598ae8bd Remove unnecessary battery meter view impl in keyguard statusbar
    * lineage-sdk/
 8113156d Add device key action to toggle flashlight [1/3]
 
+   * packages/apps/Jelly/
+a12581d Jelly: Update to AS 3.6.1
+
+   * packages/apps/Recorder/
+3ca5602 Recorder: Add support for playback audio
+
    * packages/apps/Settings/
 8a2ceaf8f4 Settings: Enable PermissionBar Chart
 881d01ee20 Revert "Remove permission bar chart in Privacy setting"
@@ -301,9 +347,4 @@ d8e536ee73d Gesture nav Assistant handles: don't show them in lockscreen
 cd77d651 backuptool: Fix backup/restore functionality
 abe4e5b7 backuptool: Properly unmount system partition
 d4e9ef20 backuptool: Remove backup blacklist/whitelist
-
-====================
-     03-11-2020
-====================
-
 
