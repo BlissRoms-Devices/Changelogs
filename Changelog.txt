@@ -1,4 +1,17 @@
 ====================
+     03-27-2020
+====================
+
+
+   * frameworks/base/
+80e58c13d34 Don't include the data dir in zygote library paths.
+04913339437 Fix for recycling key events when sending global button broadcast
+008439b6ab3 Make sure the right DND config is used
+07a54872470 Fix wrong variable in AccountManagerService's TokenCache
+46816297071 Fix ThumbnailUtils thumbnail pts calculation
+f37e05b496e QS: Add and use Bluetooth Panel instead of full Settings
+
+====================
      03-26-2020
 ====================
 
@@ -25,6 +38,9 @@ ce4f22665b7 base: Add Slim helper classes and constants
 dd821f2 Add back DSLV / ActionListViewSettings
 
    * packages/apps/Settings/
+db1965ca8d Settings: panels: Fix pair new device icon
+70acbead54 Settings: add pair new to BT panel slice
+4d76a63d7a panels: Add Bluetooth panel
 bce8f18184 Revert "Settings: allow for customizing the length of the navigation handle [2/2]"
 
 ====================
@@ -313,38 +329,4 @@ a633c48e extract_utils: Fix bad substitution for zsh
 
    * vendor/themes/
 7651fe7 themes: Remove accent overlays [2/3]
-
-====================
-     03-12-2020
-====================
-
-   * art/
-752617cec4 Add .gitreview
-a474ceb20c art: extend the supported cpu_variant list for arm64
-
-   * external/airbnb-lottie/
-a90ad3c2 KG Charging Animation: Add more animations [2/3]
-
-   * frameworks/base/
-d8e536ee73d Gesture nav Assistant handles: don't show them in lockscreen
-44bb111c903 fw/b torch: Let long press power turn torch off when screen is on.
-
-   * lineage-sdk/
-8d4abf51 lineage-sdk: Drop Expanded Desktop API
-
-   * packages/apps/Blissify/
-1f46910 Add device key action to toggle flashlight [3/3]
-3add4e7 KG Charging Animation: Add more animations [3/3]
-
-   * packages/apps/LineageParts/
-6c29995 LineageParts: Drop Expanded Desktop feature
-
-   * system/core/
-1c0e5741f fastbootd: usb: fallback to v1 descriptors
-0c1359943 reboot: allow opting-in to fastbootd
-
-   * vendor/bliss/
-cd77d651 backuptool: Fix backup/restore functionality
-abe4e5b7 backuptool: Properly unmount system partition
-d4e9ef20 backuptool: Remove backup blacklist/whitelist
 
