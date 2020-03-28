@@ -1,7 +1,46 @@
 ====================
+     03-29-2020
+====================
+
+
+   * frameworks/base/
+674684b786e Add lockscreen battery info as TunerService tunable
+669a5748b62 Fix setting lockscreen charging animation on boot
+c36b2d44e70 Lockscreen no blur option: fix SysUI FC
+3ce35ad67e6 Lockscreen art blur: smaller seekbar range and allow no blur [1/2]
+745fde62e49 Losckreen blur level: code fixes
+70c821be5ce [1/2] base: configure lock screen media artwork blur level
+c00f7344834 Revert "base: configure lock screen media artwork blur level [1/2]"
+a179b594cd1 SystemUI: Partially Revert "Fix some crashes with lockscreen album art filter"
+49f69c49b2f FODAnimation: Check if view is null before adding a new one
+99f274a6bbd FODCircleView: Don't show on certain cases
+
+   * packages/apps/Blissify/
+091411d Lockscreen art blur: smaller seekbar range and allow no blur [2/2]
+
+====================
      03-28-2020
 ====================
 
+
+   * device/lineage/sepolicy/
+2501507 sepolicy: Adress apexd denial
+72efd79 sepolicy: Fix OTA on encrypted f2fs.
+
+   * frameworks/base/
+127d6fb7288 FODCircleView: Also hide circle on auth error
+410b79ebf1d SystemUI: Conditionally hide extra biometric help on keyguard
+8341e0399da FODCircleView: Hide animation when auth fails
+6c9f442fc83 SystemUI: Port more Assist things from Pixel SystemUI
+f18f6c53b82 SystemUI: Port pixel navigation bar
+14d961b0317 Revert "Add colors to assistant animation"
+e160c83ee64 Revert "SystemUI: assist: disable old Assistant animations"
+
+   * vendor/bliss/
+19f26bec envsetup: s/wait-for-online/wait-for-device-recovery/g
+aaf69927 aosp_audio: copy our own old AOSP alarm variants
+32f5bdd0 Revert "Import and build SafetyHub"
+3f0627d7 Revert "overlay: Add PixelDocumentsUIGoogleOverlay"
 
 ====================
      03-27-2020
@@ -278,26 +317,4 @@ fa44f37d vendor: repopick: update for bliss
 
    * hardware/qcom-caf/msm8998/audio/
 5dcabd277 hal: Remove property violating property isolation
-
-====================
-     03-14-2020
-====================
-
-
-   * frameworks/base/
-54f2193b984 base: Revert latest blur level commits
-ca2ebdf35c6 SystemUI: fix accent based lockscreen clocks
-c12bb8a583c base: Remove accent overlays [1/3]
-a858c64414a Improve applying Accent colors
-80765293ecb base: Perform accent prop set in UiModeManagerService
-13c446bcfdc base: RGB Accent Picker [1/2]
-
-   * packages/apps/Blissify/
-933a8da Blissify: Revert latest blur level commits
-07a6a86 Blissify: Remove accent overlays [3/3]
-7c69ebc RGB Accent Picker [2/2]
-
-   * system/bt/
-9ebf74456 Add support force disable sco enhanced sync commands
-95c241253 Revert "Add support to force disable enhanced sco commands"
 
