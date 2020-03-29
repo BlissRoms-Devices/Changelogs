@@ -1,4 +1,29 @@
 ====================
+     03-30-2020
+====================
+
+
+   * external/mksh/
+ae5f5fa mksh: don't use /data/local for TMPDIR in recovery
+
+   * frameworks/base/
+dd78bc6618e base: wrap the size of the navigation handle
+bc518bd00c6 base: allow for customizing the length of the navigation handle [1/2]
+21637c9b567 EdgeBackGestureHandler: Handle all exceptions with WindowManagerService
+f9ad1764226 Navbar: Switch gesture navbar to new navigation bar key event source
+08c54269e4c [hwui] fix -Wimplicit-int-float-conversion
+f5c1495cb38 [frameworks][base] move -Wno-implicit-fallthrough from cflags to cppflags
+4f2ced831dc FOD: Show fod circle below pattern/pin view
+4ae3c866c09 ListView: Disable dividers by default
+2d4311d48b9 PMS and WMS deadlock when uninstalling APP
+682f6a53f99 Not register sensor if StatusBar state is not KEYGUARD
+c879b4eb609 os: Process: Fix wrong code in isThreadInProcess
+19693af590e Catch IllegalStateException when verify APK
+60a32ebecd0 lib/androidfw: Fix reversed logic
+d06e1075d7c SystemUI: move QS system info to qs header info
+9ef701ebadf SystemUI: Fix status bar weather placement in qs header
+
+====================
      03-29-2020
 ====================
 
@@ -17,6 +42,9 @@ a179b594cd1 SystemUI: Partially Revert "Fix some crashes with lockscreen album a
 
    * packages/apps/Blissify/
 091411d Lockscreen art blur: smaller seekbar range and allow no blur [2/2]
+
+   * packages/apps/Settings/
+bcb59fb272 Settings: allow for customizing the length of the navigation handle [2/2]
 
 ====================
      03-28-2020
@@ -309,12 +337,4 @@ a507db8 Implement edge long swipe gesture [3/3]
 
    * vendor/bliss/
 fa44f37d vendor: repopick: update for bliss
-
-====================
-     03-15-2020
-====================
-
-
-   * hardware/qcom-caf/msm8998/audio/
-5dcabd277 hal: Remove property violating property isolation
 
