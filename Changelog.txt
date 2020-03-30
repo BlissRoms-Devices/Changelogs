@@ -1,4 +1,28 @@
 ====================
+     03-31-2020
+====================
+
+
+   * frameworks/base/
+2753ba82662 Revert "SystemUI: Improve QS header info layout"
+d02bb5dfe04 base: Qs data usage: Remove "used" string
+4ee1ce5ef70 Disable Quick Settings on secure lockscreen (1/2)
+79a9c90eebf Screenrecord: Android R dev preview style dialog
+4abaed11ed3 VoWifi notification for emergency calls
+e5c5ff9abf5 SystemUI: fix binary clock update
+20e63d4b5d2 QS Header data usage info [1/2]
+
+   * packages/apps/Blissify/
+c07cd91 QS Header data usage info [2/2]
+c4c268e Disable Quick Settings on secure lockscreen (2/2)
+
+   * packages/apps/ThemePicker/
+2b0ce5c Revert "ThemePicker: add support for header images in themes"
+
+   * vendor/bliss/
+346b3d21 OPScreenRecorder: Update to v2.3.0
+
+====================
      03-30-2020
 ====================
 
@@ -45,6 +69,9 @@ a179b594cd1 SystemUI: Partially Revert "Fix some crashes with lockscreen album a
 
    * packages/apps/Settings/
 bcb59fb272 Settings: allow for customizing the length of the navigation handle [2/2]
+
+   * vendor/nxp/opensource/sn100x/halimpl/
+e747bcc8 sn100x: halimpl: ignore autonomous mode writes if the feature is disabled
 
 ====================
      03-28-2020
@@ -260,8 +287,22 @@ ac59570de81 base: SystemUI: Make QS Status font bolder and bigger
 7681ba12e47 SystemUI: Set proper margin and padding for lockscreen bottom shortcuts
 63c387bdc61 SystemUI: QS blur improvements
 
+   * hardware/qcom-caf/wlan/
+c497d3e Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into lineage-17.1
+
    * packages/apps/ThemePicker/
 58132c2 ThemePicker: Remove accent color step
+
+   * vendor/qcom/opensource/fm-commonsys/
+70db5dc Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/fm-commonsys into lineage-17.1
+
+   * vendor/qcom/opensource/interfaces/
+c620290 Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces into lineage-17.1
+
+   * vendor/qcom/opensource/power/
+deac3ff Add Powerhal support for bengal
+19253bc Power: Add Camera Powerhal settings for Bitra
+23222c4 qvr powerhints
 
 ====================
      03-18-2020
@@ -316,25 +357,4 @@ c5b5f5eed48 KeyguardIndicationController: Fix NPE in latest Charging Animation c
 
    * lineage-sdk/
 76549809 Implement edge long swipe gesture [2/3]
-
-====================
-     03-16-2020
-====================
-
-
-   * frameworks/base/
-f737a988aa2 Implement edge long swipe gesture [1/3]
-de5256bd565 AlarmManagerService: Fix FWR before boot completed
-f715a7fe83d Sanitize Bluetooth device names without regex
-3bb8203ec40 Send battery low intent when battery warning boundary changed
-708010fcdff SystemUI: Disable heads up debugging on non eng builds
-
-   * manifest/
-22d2f37 manifest: Track libcore
-
-   * packages/apps/Blissify/
-a507db8 Implement edge long swipe gesture [3/3]
-
-   * vendor/bliss/
-fa44f37d vendor: repopick: update for bliss
 
