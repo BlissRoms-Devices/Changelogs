@@ -1,4 +1,9 @@
 ====================
+     04-01-2020
+====================
+
+
+====================
      03-31-2020
 ====================
 
@@ -341,20 +346,4 @@ cfed342fc7 Settings: Disable Google Play system update check
 bbe1dc7 ThemePicker: allow custom empty option message
 ac1ec3b ThemePicker: add support for header images in themes
 bf87ec5 Revert "ThemeFragment: handle case where no custom wallpaper is available"
-
-====================
-     03-17-2020
-====================
-
-
-   * device/lineage/sepolicy/
-f85321c bliss: common: add rules for RGB/HSL accentpicker
-
-   * frameworks/base/
-c5b5f5eed48 KeyguardIndicationController: Fix NPE in latest Charging Animation code.
-861e17f0eed QS: Use Settings.Panel intents for WiFi and NFC
-9e5b21deb9d SettingsProvider: Disable Bluetooth by default
-
-   * lineage-sdk/
-76549809 Implement edge long swipe gesture [2/3]
 
