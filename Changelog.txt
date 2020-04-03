@@ -1,10 +1,60 @@
 ====================
+     04-04-2020
+====================
+
+
+   * frameworks/base/
+f19d96fdf60 CurrentWeatherView: clear the view if weather is not available
+97f5c0ee642 OmniJaws: grant location permission by default
+36d383e4ec4 OmniJawsClient: move to framework core
+97a8ecbc59a base: Allow to set default refresh rate value [1/2]
+3a5678d0dae Ambient music: send the proper pulse reason on slpi tap
+572d552af75 Telephony: Rename VoWiFi Emergency notification intent.
+60917add5de IMS: Add new Carrier Config.
+f16853f404e Cellular QS tile: Kill dialog & reinforce secure lockscreen
+462671134ea Fix lock icon being stuck in AoD after pulsing notifications
+600942df7ec Screen record: Collapse QS panel when launching dialog
+cfdff7e2d32 Revert "Delay blanking of displays to improve performance"
+367291b93ce Revert "Allow devices to configure the blanking delay on displays"
+430071552bc SystemUI: Fix disable QS pulldown on secure lockscreen
+
+   * packages/apps/Settings/
+3dc0f00319 Settings: Fix carkit can't get phonebook access permission by default.
+6a4cf47938 Settings: Fix navigation handle length seekbar theme
+5a6e0d6f14 Slices: use the same string for BT and Wifi master switch
+5c25fe4d07 Settings: Allow to set default refresh rate value [2/2]
+
+   * packages/services/OmniJaws/
+306e7ca OmniJaws: Introduce 15 and 30 minute interval times
+8359ce2 OmniJaws: enable the service by default
+f5346e7 OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly
+
+   * vendor/bliss/
+f8db2595 Revert "bliss: Use prebuilt repo tool for Changelog generation"
+
+====================
      04-03-2020
 ====================
 
 
+   * frameworks/base/
+3132a403cea QS: Locale Tile
+
    * hardware/qcom/display/
 5eff5cb9 Merge branch 'lineage-17.1' of github.com:LineageOS/android_hardware_qcom_display into HEAD
+
+   * system/sepolicy/
+16e1d93b audioserver: allow audioserver to generate audio HAL tombstones
+d31386bf sepolicy: Address denials for legacy last_kmsg file
+0a7fbb38 Allow init to write to /proc/cpu/alignment
+561c113c sepolicy: Treat proc-based DT fstab the same and sys-based
+5e9b4209 Fix storaged access to /sys/block/mmcblk0/stat after 48027a00
+ccc4921d file_contexts: Include legacy /system/vendor paths
+7f87ea69 app_zygote need access to oem partition
+fe00355a Set odm and vendor build.version.incremental to be publicly readable
+f4422ece Allow vendor to configure lmkd properties
+3c7b7232 Mark mediacodec_2{6,7,8} as hal_omx_server
+49f7a01d Export vold FDE algorithm properties
 
    * vendor/bliss/
 19f8dcb8 vendor: add missing permission for systemui
@@ -44,15 +94,39 @@ d02bb5dfe04 base: Qs data usage: Remove "used" string
 e5c5ff9abf5 SystemUI: fix binary clock update
 20e63d4b5d2 QS Header data usage info [1/2]
 
+   * packages/apps/AudioFX/
+4ff57f0 Automatic translation import
+
    * packages/apps/Blissify/
 c07cd91 QS Header data usage info [2/2]
 c4c268e Disable Quick Settings on secure lockscreen (2/2)
 
+   * packages/apps/Eleven/
+8687c0f Automatic translation import
+
+   * packages/apps/FMRadio/
+e03d744 Automatic translation import
+
+   * packages/apps/Jelly/
+8a3ea03 Automatic translation import
+
+   * packages/apps/Profiles/
+58281a3 Automatic translation import
+
+   * packages/apps/Recorder/
+821be82 Automatic translation import
+
    * packages/apps/ThemePicker/
 2b0ce5c Revert "ThemePicker: add support for header images in themes"
 
+   * packages/resources/devicesettings/
+0b16352 Automatic translation import
+
    * vendor/bliss/
 346b3d21 OPScreenRecorder: Update to v2.3.0
+
+   * vendor/qcom/opensource/fm-commonsys/
+cc7dc91 Automatic translation import
 
 ====================
      03-30-2020
@@ -285,16 +359,4 @@ f0691eaf07c QS: Use Mobile Data panel for CellularTile
 
    * packages/apps/ThemePicker/
 054237a Add LockClockPickerActivity
-
-====================
-     03-20-2020
-====================
-
-
-   * packages/apps/Blissify/
-7fc20fd Blissify: some tidying up
-7693dc2 Blissify: Fix duplicate key
-
-   * packages/apps/Settings/
-2be5bf6fcc Running services fragment: clean up layout
 
