@@ -1,7 +1,23 @@
 ====================
+     04-05-2020
+====================
+
+
+   * frameworks/base/
+f94c34f32fe Prevent HandlerThread from losing interrupted flag
+f3596935921 FODCircleView: update position of icon before show
+a9649d5bac5 SystemUI: Blacklist KEY_EDGE_LONG_SWIPE_ACTION for tuner
+e5b6685432a AudioService: communicate audio HAL process pids to native audioserver
+
+====================
      04-04-2020
 ====================
 
+
+   * frameworks/av/
+0177de9e2 media utils: dump audio HAL service before restarting audioserver
+ae9bd2f4d audiopolicy: Fixup 7f84dfd and re-sync with CAF
+9112e38ba TimeCheck: fix use of uninitialized variable
 
    * frameworks/base/
 f19d96fdf60 CurrentWeatherView: clear the view if weather is not available
@@ -30,6 +46,8 @@ cfdff7e2d32 Revert "Delay blanking of displays to improve performance"
 f5346e7 OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly
 
    * vendor/bliss/
+318f2fea Allow A/B OTA downgrades on debuggable builds
+c216ea53 soong_config: Add TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE
 f8db2595 Revert "bliss: Use prebuilt repo tool for Changelog generation"
 
 ====================
@@ -216,6 +234,9 @@ aaf69927 aosp_audio: copy our own old AOSP alarm variants
 46816297071 Fix ThumbnailUtils thumbnail pts calculation
 f37e05b496e QS: Add and use Bluetooth Panel instead of full Settings
 
+   * hardware/qcom-caf/sm8150/display/
+1c194982 display: Squashed revert of LA.UM.8.1.r1-14300-sm8150.0
+
 ====================
      03-26-2020
 ====================
@@ -335,28 +356,4 @@ a7e9c1a0c4 Remove legal information from being indexable
 d7e2231aaf Comment out Legal/Regulatory info
 20c75d9ce9 Settings: reword gesture block ime option
 7e211c890a [2/2] Settings: dont block IME space for back gesture
-
-====================
-     03-21-2020
-====================
-
-
-   * frameworks/base/
-321fa0632aa SystemUI: Show charging status in addition to trust granted/transient status
-e6bf389e248 DataSwitchTile: grant missing permission
-07ebb2ddbb7 Fix error com.google.android.gms.persistent
-f7179afec5f [1/2] SystemUI: dont block IME space for back gesture
-22cf836c6e4 pm: Add flags for UFS card for encryption in vold
-0ee196ab39b Apply proper displayCutout rotation in density 480 dpi and 270 degrees rotation.
-f0691eaf07c QS: Use Mobile Data panel for CellularTile
-1e5c8d3a6f8 QS: Add and use Mobile Data panel
-
-   * packages/apps/Blissify/
-7b8f200 Blissify: Link to themepicker's clock styles
-
-   * packages/apps/Settings/
-0857c97477 Settings: Always show last charged time
-
-   * packages/apps/ThemePicker/
-054237a Add LockClockPickerActivity
 
