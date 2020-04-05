@@ -1,4 +1,13 @@
 ====================
+     04-06-2020
+====================
+
+
+   * build/make/
+dabb0efb2 releasetools: do not remove dynamic partitions in system-only builds
+dbe6d174e Generate block based OTA for product partitions
+
+====================
      04-05-2020
 ====================
 
@@ -341,19 +350,4 @@ a51befaa Add device key action to toggle volume panel [2/3]
 
    * packages/apps/Settings/
 9a58f41496 panels: Add Mobile Data panel
-
-====================
-     03-22-2020
-====================
-
-
-   * packages/apps/Blissify/
-a8b4be5 Blissify: Increase max limit of statusbar padding
-
-   * packages/apps/Settings/
-bf002bc0bb Settings: doze: custom packages have priority
-a7e9c1a0c4 Remove legal information from being indexable
-d7e2231aaf Comment out Legal/Regulatory info
-20c75d9ce9 Settings: reword gesture block ime option
-7e211c890a [2/2] Settings: dont block IME space for back gesture
 
