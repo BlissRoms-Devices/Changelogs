@@ -1,4 +1,15 @@
 ====================
+     04-07-2020
+====================
+
+
+   * device/qcom/sepolicy/
+3c39ac89 Merge 'lineage-17.1' into q
+
+   * vendor/bliss/
+7c33ed2d prebuilt: Update BlissPapers to v2.1 Release
+
+====================
      04-06-2020
 ====================
 
@@ -111,6 +122,9 @@ d7662d1 sepolicy: Fix Lawnchair denials
      03-31-2020
 ====================
 
+
+   * device/qcom/sepolicy/
+c662fab7 Fix broken userdebug_or_eng checks
 
    * frameworks/base/
 2753ba82662 Revert "SystemUI: Improve QS header info layout"
@@ -318,36 +332,4 @@ f0aabee Blissify: Add full accent sammy clock style [2/2]
 
    * packages/apps/Settings/
 260a690650 Settings: Elaborate footer note for smart charging
-
-====================
-     03-23-2020
-====================
-
-
-   * frameworks/base/
-84364de86e4 base: Add full accent sammy clock style [1/2]
-9032349c11a Decrease line spacing in sammy clock styles
-5e01d8f8ffa base: Reverse actions for QS and notification panel
-9a8ad68fe38 base: Add more custom actions [1/3]
-5bb02b50f4d base: Add device key action to expand notifications panel [1/3]
-9f8dea5fb12 base: Add device key action to Clear all notifications [1/3]
-edc6a4dbc84 base: Add device key action to toggle volume panel [1/3]
-cb2b9860ba0 Merge "Blissutils: add Doze package checks" into q
-d8afe2763e4 Blissutils: add Doze package checks
-e3cdd07ebb1 Lower Animation Scale Durations
-
-   * lineage-sdk/
-d8810b17 Add more custom actions [2/3]
-0a9d66d3 Add device key action to expand notifications panel [2/3]
-afac3662 Add device key action to Clear notifications [2/3]
-a51befaa Add device key action to toggle volume panel [2/3]
-
-   * packages/apps/Blissify/
-694960f Blissify: Add more custom actions [3/3]
-80b1571 Blissify: Add device key action to expand notifications panel [3/3]
-7123126 Blissify: Add device key action to Clear notifications [3/3]
-7563ad1 Blissify: Add device key action to toggle volume panel [3/3]
-
-   * packages/apps/Settings/
-9a58f41496 panels: Add Mobile Data panel
 
