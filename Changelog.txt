@@ -1,10 +1,70 @@
 ====================
+     04-08-2020
+====================
+
+
+   * build/make/
+250ed8fd5 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//build into q
+
+   * frameworks/av/
+39b0b131d Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//frameworks/av into q
+
+   * frameworks/base/
+500eab06140 Merge tag 'android-10.0.0_r33' into q
+b04ad64cfd1 SystemUI: Fix Edge light repeat count
+d02a28a56ad SystemUI: Allow limiting edge lighting repeats [1/2]
+b2ccd8c6f50 SystemUI: Allow listening for face only on pin/pass view
+8c2c777a95f [3/4] Port face unlock feature
+8014603b702 SystemUI: Fix NPE on OpaEnableDispatcher
+bd0a3d97e39 SystemUI: fix notification light pulse for repeating notifications
+
+   * hardware/libhardware/
+d7911112 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//hardware/libhardware into q
+
+   * hardware/qcom/media/
+d574fc5 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//hardware/qcom/media into q
+
+   * manifest/
+a8ae7df Merge branch 'android-10.0.0_r33' of https://android.googlesource.com/platform//manifest into q
+c582911 [1/4] Port face unlock feature
+0a24099 Move libcxx to lineage fork
+fa419d6 manifest: Track lineage external/libhevc
+51e9a0a Switch to lineage chromium-webview fork
+daad1b4 Manifest for Android 10.0.0 Release 33 (QQ2A.200405.005)
+
+   * packages/apps/Settings/
+5346691014 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into q
+4ae79e607f Settings: Merge extra strings in one file
+519ca1d10b [4/4] Port face unlock feature
+
+   * system/bt/
+a32c56075 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//system/bt into q
+
+   * system/netd/
+b6b39a1f Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//system/netd into q
+
+   * vendor/bliss/
+fd23c675 [2/4] Port face unlock feature
+
+====================
      04-07-2020
 ====================
 
 
+   * device/lineage/sepolicy/
+96da39a lineage: Introduce a new flag to exclude fuseblk sepolicy
+445386e exynos: Allow livedisplay to write to /data/vendor/display
+8b4546b exynos: Add hal_lineage_livedisplay policy
+8d16d6b legacy-common: Simplify legacy camera HAL1 rules
+6cbb923 sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+34838b1 sepolicy: Nuke sdfat from genfs
+d61361b gallery_app: Allow binder call with gpuservice
+
    * device/qcom/sepolicy/
 3c39ac89 Merge 'lineage-17.1' into q
+
+   * external/motorola/faceunlock/
+6b03cdf Automatic translation import
 
    * vendor/bliss/
 7c33ed2d prebuilt: Update BlissPapers to v2.1 Release
@@ -18,10 +78,16 @@
 dabb0efb2 releasetools: do not remove dynamic partitions in system-only builds
 dbe6d174e Generate block based OTA for product partitions
 
+   * external/motorola/faceunlock/
+f79c7fe faceunlock: Import blobs
+
 ====================
      04-05-2020
 ====================
 
+
+   * external/motorola/faceunlock/
+c3ea72e Initial empty repo
 
    * frameworks/base/
 f94c34f32fe Prevent HandlerThread from losing interrupted flag
@@ -53,6 +119,9 @@ f16853f404e Cellular QS tile: Kill dialog & reinforce secure lockscreen
 cfdff7e2d32 Revert "Delay blanking of displays to improve performance"
 367291b93ce Revert "Allow devices to configure the blanking delay on displays"
 430071552bc SystemUI: Fix disable QS pulldown on secure lockscreen
+
+   * packages/apps/Blissify/
+bd48d5f Allow limiting edge lighting repeats [2/2]
 
    * packages/apps/Settings/
 3dc0f00319 Settings: Fix carkit can't get phonebook access permission by default.
@@ -265,6 +334,9 @@ f37e05b496e QS: Add and use Bluetooth Panel instead of full Settings
 ====================
 
 
+   * external/libcxx/
+0dfca9975 Make libc++fs vendor available and as a shared lib
+
    * frameworks/base/
 a0a3f478791 Merge changes from topic "slim-recent" into q
 def88a5c7c0 Merge "base: Grant storage permission to Lawnchair" into q
@@ -310,26 +382,4 @@ d0d09a14 Export techpack/audio uapi headers of msm 4.14 kernel
 03df53b6c9 Settings: Avoid rendering hidden preferences
 7a0f8c76c1 QS panels: fix data usage display on mobile panel
 48503ada5c QS panels: Improvements
-
-====================
-     03-24-2020
-====================
-
-
-   * external/google/
-ed05db3 CustomActions: Enable more actions
-
-   * frameworks/base/
-5b199118b53 Merge "SmartCharging: Change default overlays" into q
-83ea9c60935 SmartCharging: Change default overlays
-
-   * manifest/
-58ba2d4 manifest: Track hardware_qcom_data_ipacfg-mgr from Lineage
-
-   * packages/apps/Blissify/
-708fba9 Active Edge: enable more actions
-f0aabee Blissify: Add full accent sammy clock style [2/2]
-
-   * packages/apps/Settings/
-260a690650 Settings: Elaborate footer note for smart charging
 
