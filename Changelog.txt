@@ -1,4 +1,18 @@
 ====================
+     04-09-2020
+====================
+
+
+   * frameworks/base/
+7a23b593f67 Proper fix of Android Auto (#403)
+4b0d7300743 Revert "Revert "DO NOT MERGE Revert "Adding the privacy chip to the CarStatusBar"""
+9a5b4d127e8 UninstallAlertDialogFragment: Catch IllegalArgumentException
+aafe5f568c8 SystemUI: Remove duplicate CONFIGURE_WIFI_DISPLAY permission
+
+   * vendor/bliss/
+c2092eb9 versions: Bump to Bliss v12.6 Release
+
+====================
      04-08-2020
 ====================
 
@@ -6,10 +20,20 @@
    * build/make/
 250ed8fd5 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//build into q
 
+   * device/lineage/sepolicy/
+9304cbf common: add rules for Gradient picker
+
    * frameworks/av/
+918417036 [2/2] av: Remove restrictions for system audio record
 39b0b131d Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//frameworks/av into q
 
    * frameworks/base/
+1759c037d7a [1/2] base: Remove restrictions for system audio record
+f2d99412dc8 base: Perform gradient prop set in UiModeManagerService
+25ec7e0996f Introduce RGB Gradient Picker [1/2]
+c203c8c410a SystemUI: improve gradient accent code
+1cb0951f219 Gradient Accents: align more seekbar to gradient.
+889ed7d2bcb [SQUASHED] Gradient Accents
 500eab06140 Merge tag 'android-10.0.0_r33' into q
 b04ad64cfd1 SystemUI: Fix Edge light repeat count
 d02a28a56ad SystemUI: Allow limiting edge lighting repeats [1/2]
@@ -32,6 +56,9 @@ fa419d6 manifest: Track lineage external/libhevc
 51e9a0a Switch to lineage chromium-webview fork
 daad1b4 Manifest for Android 10.0.0 Release 33 (QQ2A.200405.005)
 
+   * packages/apps/Blissify/
+fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
+
    * packages/apps/Settings/
 5346691014 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into q
 4ae79e607f Settings: Merge extra strings in one file
@@ -45,6 +72,9 @@ b6b39a1f Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/plat
 
    * vendor/bliss/
 fd23c675 [2/4] Port face unlock feature
+
+   * vendor/themes/
+94b00d7 vendor: Gradient Shit [2/2]
 
 ====================
      04-07-2020
@@ -65,6 +95,9 @@ d61361b gallery_app: Allow binder call with gpuservice
 
    * external/motorola/faceunlock/
 6b03cdf Automatic translation import
+
+   * packages/apps/OmniStyle/
+820c60f OmniStyles: Add Bliss Logo Headers
 
    * vendor/bliss/
 7c33ed2d prebuilt: Update BlissPapers to v2.1 Release
@@ -366,20 +399,4 @@ bce8f18184 Revert "Settings: allow for customizing the length of the navigation 
 
    * vendor/bliss/
 d0d09a14 Export techpack/audio uapi headers of msm 4.14 kernel
-
-====================
-     03-25-2020
-====================
-
-
-   * frameworks/native/
-955b99ec6 Freedom windows: fix drag [2/2]
-
-   * frameworks/opt/slimrecent/
-9ba4e6e slimrecent: fix imports
-
-   * packages/apps/Settings/
-03df53b6c9 Settings: Avoid rendering hidden preferences
-7a0f8c76c1 QS panels: fix data usage display on mobile panel
-48503ada5c QS panels: Improvements
 
