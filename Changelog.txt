@@ -1,4 +1,51 @@
 ====================
+     04-10-2020
+====================
+
+
+   * frameworks/av/
+a6f4a1dd0 Adapt session API for newly added AudioPolicyService code
+
+   * frameworks/base/
+e765f17aaa5 SystemUI: Introduce Adaptive Playback [1/2]
+1df8099bf05 base: Implement raise to wake (1/2)
+854dc09519e core: add gradient to switches
+cc892c0f62d Revert "base: Add OOS style switches"
+b7089583be3 fwb: Use persist.sys.recovery_update instead of uncrypt prop
+b9f5b7cf4bb LocationTile: Check for secure keyguard also on handleClick
+9a77e6da107 QS: Fix extra lines when icon number is small
+039eb6b8f66 SystemUI: Restore keyguard dimens after b40a3db3313f13b2af86f818a83afbb5e777be55
+303fdb6ba2e fixup! SystemUI: Allow to disable Lockscreen Media Art [1/3]
+ac7ffbbc942 Handle negative background data usage
+cfdb2253013 AndroidRuntime: Remove support for image classes
+614004e1a1f base: SystemUI: Disable junky LS clock & slice transition animations
+bb0e080c209 SystemUI: Improve qs detail theming
+c947a1b7028 fwb: Guard some functions against face unlock
+1195faee1fd SystemUI: Keyguard: Only apply padding if fod view showing
+26c559b81c7 FODCircleView: Fix high brightness after unlocking
+6cd594d107e SystemUI: Cleanup pixel live wallpapers changes
+
+   * packages/apps/BlissUpdater/
+bdf4c5a Updates: Use persist.sys.recovery_update instead of uncrypt prop
+f999604 Conditionally disable uncrypt
+
+   * packages/apps/Blissify/
+c0280e5 Revert "Enable artwork Blur level only when art filter is set to blur"
+
+   * packages/apps/CustomDoze/
+5d62038 implement raise to wake (2/2)
+
+   * packages/apps/Settings/
+1f97b6bf58 [2/2] Settings: Introduce Adaptive Playback
+
+   * system/netd/
+8053fa15 netd: Don't fail on FTP or PPTP conntrack failure
+
+   * vendor/bliss/
+c1bd4445 extract_utils: Generate deodexed apk/jar with consistent checksum
+30c5a42f extract_utils: Fix doubled path separator
+
+====================
      04-09-2020
 ====================
 
@@ -8,6 +55,9 @@
 4b0d7300743 Revert "Revert "DO NOT MERGE Revert "Adding the privacy chip to the CarStatusBar"""
 9a5b4d127e8 UninstallAlertDialogFragment: Catch IllegalArgumentException
 aafe5f568c8 SystemUI: Remove duplicate CONFIGURE_WIFI_DISPLAY permission
+
+   * packages/apps/Blissify/
+fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
 
    * vendor/bliss/
 c2092eb9 versions: Bump to Bliss v12.6 Release
@@ -55,9 +105,6 @@ c582911 [1/4] Port face unlock feature
 fa419d6 manifest: Track lineage external/libhevc
 51e9a0a Switch to lineage chromium-webview fork
 daad1b4 Manifest for Android 10.0.0 Release 33 (QQ2A.200405.005)
-
-   * packages/apps/Blissify/
-fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
 
    * packages/apps/Settings/
 5346691014 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into q
@@ -212,6 +259,9 @@ ae5e36b3749 DisplayPolicy: Fix watchdog when adding new display
 8893ade143c a11y: don't crash the system when illegal component name encounted
 6baa2d0bd3b Modify start/stop condition for mScreenDozeTimer.
 
+   * vendor/qcom/opensource/interfaces/
+8086cfc Regenerate blueprints for LA.UM.8.1.r1-14500-sm8150.0
+
 ====================
      04-01-2020
 ====================
@@ -219,6 +269,9 @@ ae5e36b3749 DisplayPolicy: Fix watchdog when adding new display
 
    * device/lineage/sepolicy/
 d7662d1 sepolicy: Fix Lawnchair denials
+
+   * vendor/qcom/opensource/interfaces/
+236f51d display: Remove mapper 4.0 and allocator 4.0
 
 ====================
      03-31-2020
@@ -361,42 +414,4 @@ f37e05b496e QS: Add and use Bluetooth Panel instead of full Settings
 
    * hardware/qcom-caf/sm8150/display/
 1c194982 display: Squashed revert of LA.UM.8.1.r1-14300-sm8150.0
-
-====================
-     03-26-2020
-====================
-
-
-   * external/libcxx/
-0dfca9975 Make libc++fs vendor available and as a shared lib
-
-   * frameworks/base/
-a0a3f478791 Merge changes from topic "slim-recent" into q
-def88a5c7c0 Merge "base: Grant storage permission to Lawnchair" into q
-61e97d187a2 base: Grant storage permission to Lawnchair
-638096ef3b1 SystemUI: Require unlocking to use some quick tiles
-9a3d624969d Revert "base: allow for customizing the length of the navigation handle [1/2]"
-25642b2e901 fwb: Slim recents Q
-ce4f22665b7 base: Add Slim helper classes and constants
-098480cec20 Freedom windows: fix drag [1/2]
-
-   * frameworks/opt/slimrecent/
-0186dd0 slimrecent: Revert AICP empty view
-
-   * manifest/
-63507ac manifest: Track frameworks/opt/slimrecent
-
-   * packages/apps/Blissify/
-3b5f55a Blissify: slimRecents: Changes for android 10
-3aaebf1 Slim recents [2/3]
-dd821f2 Add back DSLV / ActionListViewSettings
-
-   * packages/apps/Settings/
-db1965ca8d Settings: panels: Fix pair new device icon
-70acbead54 Settings: add pair new to BT panel slice
-4d76a63d7a panels: Add Bluetooth panel
-bce8f18184 Revert "Settings: allow for customizing the length of the navigation handle [2/2]"
-
-   * vendor/bliss/
-d0d09a14 Export techpack/audio uapi headers of msm 4.14 kernel
 
