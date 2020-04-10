@@ -1,4 +1,16 @@
 ====================
+     04-11-2020
+====================
+
+
+   * packages/apps/Recorder/
+f23bcc6 Revert "Recorder: Add support for playback audio"
+
+   * vendor/bliss/
+e8c98712 prebuilt: Update AboutBliss App
+74c163d4 prebuilt: Update BlissStatistics to v2.0
+
+====================
      04-10-2020
 ====================
 
@@ -56,9 +68,6 @@ c1bd4445 extract_utils: Generate deodexed apk/jar with consistent checksum
 9a5b4d127e8 UninstallAlertDialogFragment: Catch IllegalArgumentException
 aafe5f568c8 SystemUI: Remove duplicate CONFIGURE_WIFI_DISPLAY permission
 
-   * packages/apps/Blissify/
-fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
-
    * vendor/bliss/
 c2092eb9 versions: Bump to Bliss v12.6 Release
 
@@ -105,6 +114,9 @@ c582911 [1/4] Port face unlock feature
 fa419d6 manifest: Track lineage external/libhevc
 51e9a0a Switch to lineage chromium-webview fork
 daad1b4 Manifest for Android 10.0.0 Release 33 (QQ2A.200405.005)
+
+   * packages/apps/Blissify/
+fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
 
    * packages/apps/Settings/
 5346691014 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into q
@@ -398,20 +410,4 @@ e160c83ee64 Revert "SystemUI: assist: disable old Assistant animations"
 aaf69927 aosp_audio: copy our own old AOSP alarm variants
 32f5bdd0 Revert "Import and build SafetyHub"
 3f0627d7 Revert "overlay: Add PixelDocumentsUIGoogleOverlay"
-
-====================
-     03-27-2020
-====================
-
-
-   * frameworks/base/
-80e58c13d34 Don't include the data dir in zygote library paths.
-04913339437 Fix for recycling key events when sending global button broadcast
-008439b6ab3 Make sure the right DND config is used
-07a54872470 Fix wrong variable in AccountManagerService's TokenCache
-46816297071 Fix ThumbnailUtils thumbnail pts calculation
-f37e05b496e QS: Add and use Bluetooth Panel instead of full Settings
-
-   * hardware/qcom-caf/sm8150/display/
-1c194982 display: Squashed revert of LA.UM.8.1.r1-14300-sm8150.0
 
