@@ -1,10 +1,51 @@
 ====================
+     04-12-2020
+====================
+
+
+   * frameworks/base/
+e038bb26eb4 SystemUI: Expand clock font size changes to Typeclock [1/2]
+91225c5b6b2 TypeClock: bring back O’{minute}
+0aa2caf5c54 fw/b: Squash of app fw restriction commits
+6b30d0316c6 base: do not use new lockscreen layout for bypass
+2fc590d0e2c ScreenshotSelector: handle rotation issues
+ec81bd606ab Show QS data saver info dialog until enabled
+4467ba5fb26 SystemUI: Fix showing duplicated charging status
+fb6e5d37a29 LS OwnerInfo Fonts & Size Options [1/2]
+
+   * packages/apps/Blissify/
+7605a39 Blissify: add typeclock usage warning
+80640d8 Blissify: Adjust lock clock font size min values [2/2]
+
+   * packages/apps/Settings/
+f70ce517e1 Settings: per-app cellular data, vpn and wifi restrictions
+7acaeef4b0 SettingsBaseActivity: fix clipped or not matching height settings content
+a71e9fa0f6 MobileNetworkActivity: fix bottom nav gravity
+
+   * system/netd/
+797848d0 system/netd: Add BPF support for lineage network restrictions
+9748e94b system/netd: Squash of app fw restriction commits
+
+   * vendor/bliss/
+5daabb2e prebuilt: Update BlissStatistics App
+
+====================
      04-11-2020
 ====================
 
 
+   * frameworks/base/
+36225510b16 Revert "core: Implement Aggressive Battery [1/2]"
+
+   * packages/apps/Blissify/
+2180b64 LS OwnerInfo Fonts & Size Options [2/2]
+2cd3ce3 Revert: Blissify: Implement Aggressive Battery [2/2]
+
    * packages/apps/Recorder/
 f23bcc6 Revert "Recorder: Add support for playback audio"
+
+   * packages/apps/ThemePicker/
+a748ddc ThemePicker: Let's put more safe checks for default theme
 
    * vendor/bliss/
 e8c98712 prebuilt: Update AboutBliss App
@@ -68,6 +109,9 @@ c1bd4445 extract_utils: Generate deodexed apk/jar with consistent checksum
 9a5b4d127e8 UninstallAlertDialogFragment: Catch IllegalArgumentException
 aafe5f568c8 SystemUI: Remove duplicate CONFIGURE_WIFI_DISPLAY permission
 
+   * packages/apps/Blissify/
+fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
+
    * vendor/bliss/
 c2092eb9 versions: Bump to Bliss v12.6 Release
 
@@ -114,9 +158,6 @@ c582911 [1/4] Port face unlock feature
 fa419d6 manifest: Track lineage external/libhevc
 51e9a0a Switch to lineage chromium-webview fork
 daad1b4 Manifest for Android 10.0.0 Release 33 (QQ2A.200405.005)
-
-   * packages/apps/Blissify/
-fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
 
    * packages/apps/Settings/
 5346691014 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into q
@@ -386,28 +427,4 @@ bcb59fb272 Settings: allow for customizing the length of the navigation handle [
 
    * vendor/nxp/opensource/sn100x/halimpl/
 e747bcc8 sn100x: halimpl: ignore autonomous mode writes if the feature is disabled
-
-====================
-     03-28-2020
-====================
-
-
-   * device/lineage/sepolicy/
-2501507 sepolicy: Adress apexd denial
-72efd79 sepolicy: Fix OTA on encrypted f2fs.
-
-   * frameworks/base/
-127d6fb7288 FODCircleView: Also hide circle on auth error
-410b79ebf1d SystemUI: Conditionally hide extra biometric help on keyguard
-8341e0399da FODCircleView: Hide animation when auth fails
-6c9f442fc83 SystemUI: Port more Assist things from Pixel SystemUI
-f18f6c53b82 SystemUI: Port pixel navigation bar
-14d961b0317 Revert "Add colors to assistant animation"
-e160c83ee64 Revert "SystemUI: assist: disable old Assistant animations"
-
-   * vendor/bliss/
-19f26bec envsetup: s/wait-for-online/wait-for-device-recovery/g
-aaf69927 aosp_audio: copy our own old AOSP alarm variants
-32f5bdd0 Revert "Import and build SafetyHub"
-3f0627d7 Revert "overlay: Add PixelDocumentsUIGoogleOverlay"
 
