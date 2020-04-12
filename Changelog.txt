@@ -1,4 +1,17 @@
 ====================
+     04-13-2020
+====================
+
+
+   * packages/apps/Blissify/
+c80a2fa Merge "Blissify: Add a summary to Pixel Gestures" into q
+6821750 Merge "Automatic translation import" into q
+bf86852 Blissify: Add a summary to Pixel Gestures
+
+   * packages/apps/Settings/
+4bd4f820e7 Settings: Remove these pixel gesture icons
+
+====================
      04-12-2020
 ====================
 
@@ -16,6 +29,7 @@ fb6e5d37a29 LS OwnerInfo Fonts & Size Options [1/2]
    * packages/apps/Blissify/
 7605a39 Blissify: add typeclock usage warning
 80640d8 Blissify: Adjust lock clock font size min values [2/2]
+65031b1 Automatic translation import
 
    * packages/apps/Settings/
 f70ce517e1 Settings: per-app cellular data, vpn and wifi restrictions
@@ -401,30 +415,4 @@ c879b4eb609 os: Process: Fix wrong code in isThreadInProcess
 60a32ebecd0 lib/androidfw: Fix reversed logic
 d06e1075d7c SystemUI: move QS system info to qs header info
 9ef701ebadf SystemUI: Fix status bar weather placement in qs header
-
-====================
-     03-29-2020
-====================
-
-
-   * frameworks/base/
-674684b786e Add lockscreen battery info as TunerService tunable
-669a5748b62 Fix setting lockscreen charging animation on boot
-c36b2d44e70 Lockscreen no blur option: fix SysUI FC
-3ce35ad67e6 Lockscreen art blur: smaller seekbar range and allow no blur [1/2]
-745fde62e49 Losckreen blur level: code fixes
-70c821be5ce [1/2] base: configure lock screen media artwork blur level
-c00f7344834 Revert "base: configure lock screen media artwork blur level [1/2]"
-a179b594cd1 SystemUI: Partially Revert "Fix some crashes with lockscreen album art filter"
-49f69c49b2f FODAnimation: Check if view is null before adding a new one
-99f274a6bbd FODCircleView: Don't show on certain cases
-
-   * packages/apps/Blissify/
-091411d Lockscreen art blur: smaller seekbar range and allow no blur [2/2]
-
-   * packages/apps/Settings/
-bcb59fb272 Settings: allow for customizing the length of the navigation handle [2/2]
-
-   * vendor/nxp/opensource/sn100x/halimpl/
-e747bcc8 sn100x: halimpl: ignore autonomous mode writes if the feature is disabled
 
