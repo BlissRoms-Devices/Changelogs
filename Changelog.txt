@@ -1,4 +1,12 @@
 ====================
+     04-14-2020
+====================
+
+
+   * vendor/bliss/
+bb139ae5 vendor/bliss: Fix changelog with broken repo forall -p
+
+====================
      04-13-2020
 ====================
 
@@ -65,6 +73,9 @@ a748ddc ThemePicker: Let's put more safe checks for default theme
 e8c98712 prebuilt: Update AboutBliss App
 74c163d4 prebuilt: Update BlissStatistics to v2.0
 
+   * vendor/qcom/opensource/power/
+f42873e power: Add the custom set_feature lib as whole static library
+
 ====================
      04-10-2020
 ====================
@@ -123,9 +134,6 @@ c1bd4445 extract_utils: Generate deodexed apk/jar with consistent checksum
 9a5b4d127e8 UninstallAlertDialogFragment: Catch IllegalArgumentException
 aafe5f568c8 SystemUI: Remove duplicate CONFIGURE_WIFI_DISPLAY permission
 
-   * packages/apps/Blissify/
-fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
-
    * vendor/bliss/
 c2092eb9 versions: Bump to Bliss v12.6 Release
 
@@ -172,6 +180,9 @@ c582911 [1/4] Port face unlock feature
 fa419d6 manifest: Track lineage external/libhevc
 51e9a0a Switch to lineage chromium-webview fork
 daad1b4 Manifest for Android 10.0.0 Release 33 (QQ2A.200405.005)
+
+   * packages/apps/Blissify/
+fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
 
    * packages/apps/Settings/
 5346691014 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into q
@@ -390,29 +401,4 @@ e03d744 Automatic translation import
 
    * vendor/qcom/opensource/fm-commonsys/
 cc7dc91 Automatic translation import
-
-====================
-     03-30-2020
-====================
-
-
-   * external/mksh/
-ae5f5fa mksh: don't use /data/local for TMPDIR in recovery
-
-   * frameworks/base/
-dd78bc6618e base: wrap the size of the navigation handle
-bc518bd00c6 base: allow for customizing the length of the navigation handle [1/2]
-21637c9b567 EdgeBackGestureHandler: Handle all exceptions with WindowManagerService
-f9ad1764226 Navbar: Switch gesture navbar to new navigation bar key event source
-08c54269e4c [hwui] fix -Wimplicit-int-float-conversion
-f5c1495cb38 [frameworks][base] move -Wno-implicit-fallthrough from cflags to cppflags
-4f2ced831dc FOD: Show fod circle below pattern/pin view
-4ae3c866c09 ListView: Disable dividers by default
-2d4311d48b9 PMS and WMS deadlock when uninstalling APP
-682f6a53f99 Not register sensor if StatusBar state is not KEYGUARD
-c879b4eb609 os: Process: Fix wrong code in isThreadInProcess
-19693af590e Catch IllegalStateException when verify APK
-60a32ebecd0 lib/androidfw: Fix reversed logic
-d06e1075d7c SystemUI: move QS system info to qs header info
-9ef701ebadf SystemUI: Fix status bar weather placement in qs header
 
