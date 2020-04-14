@@ -1,7 +1,39 @@
 ====================
+     04-15-2020
+====================
+
+
+   * device/lineage/sepolicy/
+9f55279 Allow platform access for fps info
+
+   * frameworks/av/
+ff2c536fb audiopolicy: Fixes for internal audio recording
+d4c6790a2 audiopolicy: Load the engine library dynamically
+
+   * packages/apps/Blissify/
+82a6572 Automatic translation import
+7e655c2 Blissify: Add a summary to Pixel Gestures
+
+   * packages/apps/Settings/
+9570ab34ac Merge changes from topic "anim_about" into q
+609ba3bc30 Settings: Fix Device admin showing empty list
+6c1d35492c Settings: dashboard suggestions play nice with dark theme
+7ffc3bccba Remove the "About phone" avatar
+c5b7d66723 Animated Bliss Logo in About phone
+
+   * system/sepolicy/
+d51eb954 sepolicy: Allow recovery to alter /
+91484901 sepolicy: whitelist recovery from node creation neverallow
+715f494b sepolicy: Add sdcard_posix_contextmount_type attribute
+
+====================
      04-14-2020
 ====================
 
+
+   * packages/apps/Dialer/
+11e364acc Dialer: Fix leaked ServiceConnection in CallRecorderService
+42ad28f81 Dialer: expose dialer toolbar text colors
 
    * vendor/bliss/
 bb139ae5 vendor/bliss: Fix changelog with broken repo forall -p
@@ -11,10 +43,11 @@ bb139ae5 vendor/bliss: Fix changelog with broken repo forall -p
 ====================
 
 
-   * packages/apps/Blissify/
-c80a2fa Merge "Blissify: Add a summary to Pixel Gestures" into q
-6821750 Merge "Automatic translation import" into q
-bf86852 Blissify: Add a summary to Pixel Gestures
+   * frameworks/base/
+a1ebd974c9f ReadingModeTile: Go away if wellbeing app is enabled
+58203af4f5a Need to check current user when triggering notification lights
+ee3b3dbfe2a AudioService: fix audio mode not reset to MODE_NORMAL
+a640c1d5d2e SystemUI: FPS Info Overlay & Tile
 
    * packages/apps/Settings/
 4bd4f820e7 Settings: Remove these pixel gesture icons
@@ -37,7 +70,6 @@ fb6e5d37a29 LS OwnerInfo Fonts & Size Options [1/2]
    * packages/apps/Blissify/
 7605a39 Blissify: add typeclock usage warning
 80640d8 Blissify: Adjust lock clock font size min values [2/2]
-65031b1 Automatic translation import
 
    * packages/apps/Settings/
 f70ce517e1 Settings: per-app cellular data, vpn and wifi restrictions
@@ -350,55 +382,4 @@ d7662d1 sepolicy: Fix Lawnchair denials
 
    * vendor/qcom/opensource/interfaces/
 236f51d display: Remove mapper 4.0 and allocator 4.0
-
-====================
-     03-31-2020
-====================
-
-
-   * device/qcom/sepolicy/
-c662fab7 Fix broken userdebug_or_eng checks
-
-   * frameworks/base/
-2753ba82662 Revert "SystemUI: Improve QS header info layout"
-d02bb5dfe04 base: Qs data usage: Remove "used" string
-4ee1ce5ef70 Disable Quick Settings on secure lockscreen (1/2)
-79a9c90eebf Screenrecord: Android R dev preview style dialog
-4abaed11ed3 VoWifi notification for emergency calls
-e5c5ff9abf5 SystemUI: fix binary clock update
-20e63d4b5d2 QS Header data usage info [1/2]
-
-   * packages/apps/AudioFX/
-4ff57f0 Automatic translation import
-
-   * packages/apps/Blissify/
-c07cd91 QS Header data usage info [2/2]
-c4c268e Disable Quick Settings on secure lockscreen (2/2)
-
-   * packages/apps/Eleven/
-8687c0f Automatic translation import
-
-   * packages/apps/FMRadio/
-e03d744 Automatic translation import
-
-   * packages/apps/Jelly/
-8a3ea03 Automatic translation import
-
-   * packages/apps/Profiles/
-58281a3 Automatic translation import
-
-   * packages/apps/Recorder/
-821be82 Automatic translation import
-
-   * packages/apps/ThemePicker/
-2b0ce5c Revert "ThemePicker: add support for header images in themes"
-
-   * packages/resources/devicesettings/
-0b16352 Automatic translation import
-
-   * vendor/bliss/
-346b3d21 OPScreenRecorder: Update to v2.3.0
-
-   * vendor/qcom/opensource/fm-commonsys/
-cc7dc91 Automatic translation import
 
