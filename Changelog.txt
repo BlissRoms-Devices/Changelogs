@@ -1,4 +1,12 @@
 ====================
+     04-17-2020
+====================
+
+
+   * packages/apps/Blissify/
+bee0a4e Unlock with fingerprint on notification double tap without pin/password/pattern [2/2]
+
+====================
      04-16-2020
 ====================
 
@@ -14,6 +22,10 @@
    * frameworks/av/
 ff2c536fb audiopolicy: Fixes for internal audio recording
 d4c6790a2 audiopolicy: Load the engine library dynamically
+
+   * frameworks/base/
+428b46fee09 Unlock without bouncer: Use Tuner API
+97ae036bac1 Unlock with fingerprint on notification double tap without pin/passward/pattern [1/2] (#404)
 
    * packages/apps/Blissify/
 82a6572 Automatic translation import
@@ -360,20 +372,4 @@ f4422ece Allow vendor to configure lmkd properties
 
    * vendor/bliss/
 19f8dcb8 vendor: add missing permission for systemui
-
-====================
-     04-02-2020
-====================
-
-
-   * frameworks/base/
-6578c9015d1 SystemUI: Fix disable QS pulldown on secure lockscreens
-74504060231 DefaultPermissionGrantPolicy: Silence harmless errors
-ae5e36b3749 DisplayPolicy: Fix watchdog when adding new display
-5a908a00750 Audioservice:do not supress music volume adjustment
-8893ade143c a11y: don't crash the system when illegal component name encounted
-6baa2d0bd3b Modify start/stop condition for mScreenDozeTimer.
-
-   * vendor/qcom/opensource/interfaces/
-8086cfc Regenerate blueprints for LA.UM.8.1.r1-14500-sm8150.0
 
