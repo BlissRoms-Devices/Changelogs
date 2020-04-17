@@ -1,7 +1,61 @@
 ====================
+     04-18-2020
+====================
+
+
+   * frameworks/base/
+66da7d6eb04 Merge "Revert "SystemUI: Restore keyguard dimens after b40a3db3313f13b2af86f818a83afbb5e777be55"" into q
+
+   * packages/apps/Eleven/
+cf10f3a .gitignore: ignore export folders when generating APKs
+145c292 Eleven: remove search feature
+cbb0b6b Eleven: fix popup menu positioning
+8df3d41 menu: clean up playlist helpers
+daecf8f AudioPlayer: convert headerbar into toolbar
+bb1a94d Settings: convert to PreferenceFragmentCompat
+95a7c9e Move to AppCompat theme
+c35d071 layouts: right/left -> start/end
+24bc08e Add gradient option for album art and use it by default
+d149292 Hide search and back button for player and queue screens
+05c8e90 Start revamping the player UI
+6f97a25 Fix some lint issues in MusicPlaybackService.
+7a0dd6d Don't update notification twice on play start.
+a818589 Avoid usage of deprecated APIs in MusicPlaybackService.
+1e581d8 Refactor AUDIO_BECOMING_NOISY broadcast handling.
+4ba3fd3 Simplify queue change notification handling.
+d275ec0 Bind/unbind service on start/stop instead of create/destroy.
+1f5989f Stop playback button updates when playback fragment is stopped.
+b0e8133 Fix notification foreground tracking behavior
+a63a1fb Use SystemClock.elapsedRealtime() for notification tracking time
+f93fbfe Refactor music playback service binding logic.
+1ac38c4 gradle: update plugin and wrapper
+
+   * packages/apps/Jelly/
+b708c1b Jelly: Enforce pattern to be matching
+000c793 Jelly: Replace ProgressDialog with an AlertDialog
+57e046a Jelly: Suppress warning on Q deprecation
+570821b Jelly: Don't use LocalBroadcastManager
+16aa7d0 Jelly: Bump Sdk version to 29
+5a7565b Jelly: Fix some cast warnings
+038c888 Jelly: Import ContentProvider.requireContext from R
+f345cc5 Jelly: Switch to androidx preference
+26de094 Jelly: Switch to androidx loader
+
+   * packages/apps/Settings/
+631d5c3e4d Merge "Revert Settings Blur" into q
+
+====================
      04-17-2020
 ====================
 
+
+   * frameworks/base/
+3d72fee7f8e Revert "SystemUI: Restore keyguard dimens after b40a3db3313f13b2af86f818a83afbb5e777be55"
+e5469d5d5e9 base: use bypassEnabledBiometric consistently
+3b6cfb77ed1 Fix Google Markup FC
+7ea9b9873ba SettingsProvider: Resolve package name that requires permission
+df9619d07e6 Export all font configs
+9f494e531fe fw/b: Prevent double interface restriction remove on interface name change
 
    * packages/apps/Blissify/
 bee0a4e Unlock with fingerprint on notification double tap without pin/password/pattern [2/2]
@@ -33,6 +87,7 @@ d4c6790a2 audiopolicy: Load the engine library dynamically
 
    * packages/apps/Settings/
 9570ab34ac Merge changes from topic "anim_about" into q
+0a063f90b2 Revert Settings Blur
 609ba3bc30 Settings: Fix Device admin showing empty list
 6c1d35492c Settings: dashboard suggestions play nice with dark theme
 7ffc3bccba Remove the "About phone" avatar
@@ -288,6 +343,9 @@ dbe6d174e Generate block based OTA for product partitions
    * external/motorola/faceunlock/
 f79c7fe faceunlock: Import blobs
 
+   * hardware/qcom-caf/sm8150/media/
+43135520 mm-video-v412: Enable UBWC conditionally.
+
 ====================
      04-05-2020
 ====================
@@ -301,6 +359,9 @@ f94c34f32fe Prevent HandlerThread from losing interrupted flag
 f3596935921 FODCircleView: update position of icon before show
 a9649d5bac5 SystemUI: Blacklist KEY_EDGE_LONG_SWIPE_ACTION for tuner
 e5b6685432a AudioService: communicate audio HAL process pids to native audioserver
+
+   * packages/apps/Jelly/
+9a97a3c Jelly: Move to kotlin
 
 ====================
      04-04-2020
@@ -345,31 +406,4 @@ f5346e7 OmniJaws: Use openweather api for sunset/sunrise and change weather icon
 318f2fea Allow A/B OTA downgrades on debuggable builds
 c216ea53 soong_config: Add TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE
 f8db2595 Revert "bliss: Use prebuilt repo tool for Changelog generation"
-
-====================
-     04-03-2020
-====================
-
-
-   * frameworks/base/
-3132a403cea QS: Locale Tile
-
-   * hardware/qcom/display/
-5eff5cb9 Merge branch 'lineage-17.1' of github.com:LineageOS/android_hardware_qcom_display into HEAD
-
-   * system/sepolicy/
-16e1d93b audioserver: allow audioserver to generate audio HAL tombstones
-d31386bf sepolicy: Address denials for legacy last_kmsg file
-0a7fbb38 Allow init to write to /proc/cpu/alignment
-561c113c sepolicy: Treat proc-based DT fstab the same and sys-based
-5e9b4209 Fix storaged access to /sys/block/mmcblk0/stat after 48027a00
-ccc4921d file_contexts: Include legacy /system/vendor paths
-7f87ea69 app_zygote need access to oem partition
-fe00355a Set odm and vendor build.version.incremental to be publicly readable
-f4422ece Allow vendor to configure lmkd properties
-3c7b7232 Mark mediacodec_2{6,7,8} as hal_omx_server
-49f7a01d Export vold FDE algorithm properties
-
-   * vendor/bliss/
-19f8dcb8 vendor: add missing permission for systemui
 
