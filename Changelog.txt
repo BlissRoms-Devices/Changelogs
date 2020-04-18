@@ -1,10 +1,45 @@
 ====================
+     04-19-2020
+====================
+
+
+   * frameworks/base/
+bb83d65036d SystemUI: Add thumbnails for new clocks
+61373cc2ab6 SystemUI: add ability to change font style for new clocks
+ef529d03096 SystemUI: Add ability to change sizes for new clocks
+
+   * packages/apps/Jelly/
+745883e Jelly: Invert check
+4364bf9 Jelly: Make sure constraint isn't null
+
+   * packages/services/Telecomm/
+980ad32c Bluetooth: Support to know if there is High Def call
+
+====================
      04-18-2020
 ====================
 
 
    * frameworks/base/
+78e656661a3 SystemUI: MNMLMinimalClock: fix preview
+20fafcf0026 SystemUI: DividedLinesClock: Fix NPE on setTextColor
+4dea4642d39 SystemUI: Sfuny: Fix NPE on setDarkAmount.
+61df11ebd36 SystemUI: Alphabetise clocks
+79156d664e6 SystemUI: Adapt latest clocks to our layout
+f7b0d10a0d2 SystemUI: add more fixes for minimal
+72b31c3d44c SystemUI: Add MNML based clock desgins
+9d396cda43d SystemUI: Add SFUNY clock
+1d1c680a93a SystemUI: Add Divided Lines Clock
+6daa2b228ea Do not clean up ART profiles during OTAs
+7d2bba0f747 Handle ParcelableException instead of crashing system server
 66da7d6eb04 Merge "Revert "SystemUI: Restore keyguard dimens after b40a3db3313f13b2af86f818a83afbb5e777be55"" into q
+
+   * frameworks/native/
+e8cffa764 Add a separate flag in the installer for keeping ART profiles
+
+   * packages/apps/Dialer/
+b05e31e3a Fix Dialer memory leaks
+a8b921920 Fix FATAL Exception in PostCallActivity
 
    * packages/apps/Eleven/
 cf10f3a .gitignore: ignore export folders when generating APKs
@@ -43,6 +78,10 @@ f345cc5 Jelly: Switch to androidx preference
 
    * packages/apps/Settings/
 631d5c3e4d Merge "Revert Settings Blur" into q
+
+   * system/bt/
+c66ca2ab4 Bluetooth: Support to know if there is High Def call
+2221de6ea Revert "Bluetooth HFP: Use WBS by default (1/5)"
 
 ====================
      04-17-2020
@@ -362,48 +401,4 @@ e5b6685432a AudioService: communicate audio HAL process pids to native audioserv
 
    * packages/apps/Jelly/
 9a97a3c Jelly: Move to kotlin
-
-====================
-     04-04-2020
-====================
-
-
-   * frameworks/av/
-0177de9e2 media utils: dump audio HAL service before restarting audioserver
-ae9bd2f4d audiopolicy: Fixup 7f84dfd and re-sync with CAF
-9112e38ba TimeCheck: fix use of uninitialized variable
-
-   * frameworks/base/
-f19d96fdf60 CurrentWeatherView: clear the view if weather is not available
-97f5c0ee642 OmniJaws: grant location permission by default
-36d383e4ec4 OmniJawsClient: move to framework core
-97a8ecbc59a base: Allow to set default refresh rate value [1/2]
-3a5678d0dae Ambient music: send the proper pulse reason on slpi tap
-572d552af75 Telephony: Rename VoWiFi Emergency notification intent.
-60917add5de IMS: Add new Carrier Config.
-f16853f404e Cellular QS tile: Kill dialog & reinforce secure lockscreen
-462671134ea Fix lock icon being stuck in AoD after pulsing notifications
-600942df7ec Screen record: Collapse QS panel when launching dialog
-cfdff7e2d32 Revert "Delay blanking of displays to improve performance"
-367291b93ce Revert "Allow devices to configure the blanking delay on displays"
-430071552bc SystemUI: Fix disable QS pulldown on secure lockscreen
-
-   * packages/apps/Blissify/
-bd48d5f Allow limiting edge lighting repeats [2/2]
-
-   * packages/apps/Settings/
-3dc0f00319 Settings: Fix carkit can't get phonebook access permission by default.
-6a4cf47938 Settings: Fix navigation handle length seekbar theme
-5a6e0d6f14 Slices: use the same string for BT and Wifi master switch
-5c25fe4d07 Settings: Allow to set default refresh rate value [2/2]
-
-   * packages/services/OmniJaws/
-306e7ca OmniJaws: Introduce 15 and 30 minute interval times
-8359ce2 OmniJaws: enable the service by default
-f5346e7 OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly
-
-   * vendor/bliss/
-318f2fea Allow A/B OTA downgrades on debuggable builds
-c216ea53 soong_config: Add TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE
-f8db2595 Revert "bliss: Use prebuilt repo tool for Changelog generation"
 
