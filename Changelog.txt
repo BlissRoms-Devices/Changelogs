@@ -1,12 +1,41 @@
 ====================
-     04-19-2020
+     04-20-2020
 ====================
 
 
    * frameworks/base/
-bb83d65036d SystemUI: Add thumbnails for new clocks
-61373cc2ab6 SystemUI: add ability to change font style for new clocks
-ef529d03096 SystemUI: Add ability to change sizes for new clocks
+9d2df3fe957 AccentUtils: add coloraccent to resource list
+5eadeafd831 SystemUI: add nerves clock
+2ae44d27833 Add an option to ask pin for shutdown/reboot on secure lockscreen [1/2]
+962552ecd19 SystemUI: Add Oroño clock
+53b22384fb4 SystemUI: Add thumbnails for new clocks
+e3eb84dba3b SystemUI: add ability to change font style for new clocks
+37a3aa88136 SystemUI: Add ability to change sizes for new clocks
+fcc4e7f454a SystemUI: MNMLMinimalClock: fix preview
+05fb02e40a0 SystemUI: DividedLinesClock: Fix NPE on setTextColor
+7cabf8cc938 SystemUI: Sfuny: Fix NPE on setDarkAmount.
+5ae4dc0f9ec SystemUI: Alphabetise clocks
+98f1c25aee2 SystemUI: Adapt latest clocks to our layout
+deab48d01a4 SystemUI: Add MNML based clock desgins
+
+   * manifest/
+ff5696a manifest: Add gitlab default revision
+
+   * packages/apps/Blissify/
+de3901f Blissify: Add an option to ask pin for shutdown/reboot on secure lockscreen [2/2]
+48daf02 Blissify: Add shishu nerves clock [2/2]
+
+   * vendor/bliss/
+4e826fce Merge "prebuilt: Add weather icon themes for OmniJaws" into q10
+8c580f5e vendor: Add missing permission for launcher
+3da53833 privapp-permissions: Allow Launcher3 to use android.permission.FORCE_STOP_PACKAGES
+942370b7 privapp-permissions: Allow Trebuchet to use android.permission.STATUS_BAR
+69337c5e privapp-permissions: Add new launcher3 permissions
+
+====================
+     04-19-2020
+====================
+
 
    * packages/apps/Jelly/
 745883e Jelly: Invert check
@@ -21,13 +50,6 @@ ef529d03096 SystemUI: Add ability to change sizes for new clocks
 
 
    * frameworks/base/
-78e656661a3 SystemUI: MNMLMinimalClock: fix preview
-20fafcf0026 SystemUI: DividedLinesClock: Fix NPE on setTextColor
-4dea4642d39 SystemUI: Sfuny: Fix NPE on setDarkAmount.
-61df11ebd36 SystemUI: Alphabetise clocks
-79156d664e6 SystemUI: Adapt latest clocks to our layout
-f7b0d10a0d2 SystemUI: add more fixes for minimal
-72b31c3d44c SystemUI: Add MNML based clock desgins
 9d396cda43d SystemUI: Add SFUNY clock
 1d1c680a93a SystemUI: Add Divided Lines Clock
 6daa2b228ea Do not clean up ART profiles during OTAs
@@ -103,6 +125,12 @@ bee0a4e Unlock with fingerprint on notification double tap without pin/password/
      04-16-2020
 ====================
 
+
+   * manifest/
+f73b4c3 manifests: untrack Launcher3 and start tracking Trebuchet from LOS
+
+   * vendor/bliss/
+d301cff5 vendor: allow choosing Lawnchair or Trebuchet as launcher at build time
 
 ====================
      04-15-2020
@@ -193,6 +221,7 @@ a71e9fa0f6 MobileNetworkActivity: fix bottom nav gravity
 
    * vendor/bliss/
 5daabb2e prebuilt: Update BlissStatistics App
+81000038 prebuilt: Add weather icon themes for OmniJaws
 
 ====================
      04-11-2020
@@ -384,21 +413,4 @@ f79c7fe faceunlock: Import blobs
 
    * hardware/qcom-caf/sm8150/media/
 43135520 mm-video-v412: Enable UBWC conditionally.
-
-====================
-     04-05-2020
-====================
-
-
-   * external/motorola/faceunlock/
-c3ea72e Initial empty repo
-
-   * frameworks/base/
-f94c34f32fe Prevent HandlerThread from losing interrupted flag
-f3596935921 FODCircleView: update position of icon before show
-a9649d5bac5 SystemUI: Blacklist KEY_EDGE_LONG_SWIPE_ACTION for tuner
-e5b6685432a AudioService: communicate audio HAL process pids to native audioserver
-
-   * packages/apps/Jelly/
-9a97a3c Jelly: Move to kotlin
 
