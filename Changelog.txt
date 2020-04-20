@@ -1,4 +1,12 @@
 ====================
+     04-21-2020
+====================
+
+
+   * manifest/
+97add5b manifest: Track launcher from BlissRoms
+
+====================
      04-20-2020
 ====================
 
@@ -24,6 +32,45 @@ ff5696a manifest: Add gitlab default revision
    * packages/apps/Blissify/
 de3901f Blissify: Add an option to ask pin for shutdown/reboot on secure lockscreen [2/2]
 48daf02 Blissify: Add shishu nerves clock [2/2]
+
+   * packages/apps/Trebuchet/
+e6fb1bf5c Trebuchet: Add preferences removed by mistake
+fb976f9c4 disable promisse apps
+443de50a7 Add missing STATUS_BAR permission
+a6144433e SettingsMisc: Fix shared preferences name
+639557a1a Launcher: Call mStateManager directly
+f5bce8704 Trebuchet: Remove empty app drawer preferences
+956ee7954 Trebuchet: Ensure no divider shown in preferences
+96a4fd2c4 IconPack: Fix setting summary after selecting icon pack
+5efabc5fd Trebuchet: Rewrite IconPack for ListPreference.
+56c799b26 Trebuchet: Workaround the Icon pack issue on adaptive apps
+2a2241f90 Trebuchet: Add simple iconpack support
+b7bbdf7dd SystemShortcut: Add uninstall option
+734c5a18d Trebuchet: Match google feed integration strings with pixel launcher
+c5a4a1322 Trebuchet: allow to swipe down on recents view to clear all
+41f57bb2b Workspace: No separate folders for google and play apps
+abca44f57 ShadeSpace: Make it compatible with android-10.0.0_r31
+12857163b Trebuchet: Clear text for shadespace subtext
+30f692d3e Trebuchet: Make shadespace toggleable
+bb939702c Replace Smartspace widget host view with Shade Space
+91d88014e Trebuchet: Disable top/hotseat gradient
+97aa3b54b Add double tap to sleep gesture
+3f13f3b03 Trebuchet: Use system fonts
+32f865a7d Trebuchet: Follow system color for dark style
+e1d6dd365 Trebuchet: Update workspace and device profiles
+97345dda2 Utilities: Use MODEL_EXECUTOR for needs restart code
+e039b5963 Trebuchet: Add launcher restart for google app toggle
+b96dcf0f3 Trebuchet: Extend notification listener with proxy
+7b884babd Trebuchet: new icon for kill app option
+a4ec7f75c New Recents: add kill action to app shortcuts popup
+4b3352207 Trebuchet: Add permission to allow updating database
+df4a2ca7d Trebuchet: Add restart action for toggling settings
+2cae94689 Elevate to 'core/platform' app'
+050cdfcc0 Rearrange settings
+f81c88a63 Add back button to Settings
+fd4fadcc5 Trebuchet: use common style for recents task menu divider
+a9a19f548 Trebuchet: Let's make the search bar on all apps round
+68d4fda86 Add .gitreview
 
    * vendor/bliss/
 4e826fce Merge "prebuilt: Add weather icon themes for OmniJaws" into q10
@@ -398,19 +445,4 @@ d61361b gallery_app: Allow binder call with gpuservice
 
    * vendor/bliss/
 7c33ed2d prebuilt: Update BlissPapers to v2.1 Release
-
-====================
-     04-06-2020
-====================
-
-
-   * build/make/
-dabb0efb2 releasetools: do not remove dynamic partitions in system-only builds
-dbe6d174e Generate block based OTA for product partitions
-
-   * external/motorola/faceunlock/
-f79c7fe faceunlock: Import blobs
-
-   * hardware/qcom-caf/sm8150/media/
-43135520 mm-video-v412: Enable UBWC conditionally.
 
