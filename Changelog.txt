@@ -1,10 +1,82 @@
 ====================
+     04-22-2020
+====================
+
+
+   * frameworks/base/
+6b151f6262a Revert "Unlock with fingerprint on notification double tap without pin/passward/pattern [1/2] (#404)"
+b8c834c0490 Revert "Unlock without bouncer: Use Tuner API"
+014b3ac4375 Add switch for vpn, data saver and roaming icons
+f517dccee92 Fix up statusbar paddings for devices with display cutouts
+808079403a3 Quick status bar: Add battery meter view to linear layout
+4f75dc5215f Fix up custom rounded corner setting for status bar
+b4afb4f3b0f Merge "Move primary color overlays to vendor/themes [1/2]" into q
+bf906616938 QS: introduce ADB tile (1/2)
+0ad68d369fe Move primary color overlays to vendor/themes [1/2]
+
+   * lineage-sdk/
+0699d667 QS: introduce ADB tile (2/2)
+
+   * manifest/
+b4b7285 manifest: add BlissRoms GitLab remote declaration
+
+   * packages/apps/Jelly/
+db92462 Jelly: set WebView focusable
+
+   * vendor/bliss/
+b9d08b6d ThemePicker: Do not override default values
+d4028f29 ThemePicker: show our apps in icon previews
+409a62a5 Add overlay to specify our custom theme provider
+d5135683 Revert "Initial night overlays"
+e4723d14 vendor: move some overlays to vendor/themes [1/2]
+77c0ce9e vendor: Remove PixelThemes and SettingsIntelligence
+
+   * vendor/themes/
+52b2ca4 themes: Set proper dark color for emergency icon in power menu
+34b2244 themes: extend Settings exposures from system for primarys
+89b6552 Cleanup all unwanted themes
+37a2303 themes: Add primary overlays from fwb [2/2]
+53dea04 overlay: Fire->Flame
+f99370d themes: build primary overlays
+7db1850 overlay: restore pixel blue colors to previous values
+1aeb660 themes: cleanup
+3fe3179 themes: Add Bliss themes stub
+1a1ef69 overlay: Seperate Settings exposures from system for primarys
+bae013a overlay: Allow to theme Settings with primary
+cd8194d Overlay: Add OnePlus Dark Primary
+7dabb00 overlays: Add Flame primary
+438c9ad Overlay: Add Solarized Dark Primary
+f33c4c9 Overlay: Add Lead Black Primary
+d3f1f44 themes: Add Charcoal Black Primary
+43ef0dc themes: Cleanup hardcoded colors and use/overlay AOSP values
+917c8c0 themes: don't hardcode Screenrecord dialog color
+cf86404 overlays: Remove more duplicate exposures
+2e864a5 overlays: Remove duplicate exposure for notifications
+42c8432 Notification guts: Adapt to system theme
+2ebe7ad Overlay: Adjust a few exposures for our theming
+a0734ad ThemePicker: Switch to a new style for color accent chips
+
+====================
      04-21-2020
 ====================
 
 
    * manifest/
 97add5b manifest: Track launcher from BlissRoms
+
+   * vendor/themes/
+190c49f Fix brightness slider under Settings/Display
+b9855da Theme Moar dialogs
+29c0d97 Theme safe boot dialog
+c012855 Kill teal color for the default printer service
+958cdcc Resolve theme issues (see commit message)
+319a1e0 bliss: Bring back Pixel style theming
+849d82a overlay: Theme Settings search bar on dark theme
+0d5564c Update default pixel colors
+00964fc More pixel theme changes
+8e0941e Use Pixel theme colors as default
+5b6962f overlay: Tint biometric icon with Pixel colors
+27bcddb themes: move some overlays from vendor/bliss [1/2]
 
 ====================
      04-20-2020
@@ -30,6 +102,7 @@ deab48d01a4 SystemUI: Add MNML based clock desgins
 ff5696a manifest: Add gitlab default revision
 
    * packages/apps/Blissify/
+0ecff11 Revert "Unlock with fingerprint on notification double tap without pin/password/pattern [2/2]"
 de3901f Blissify: Add an option to ask pin for shutdown/reboot on secure lockscreen [2/2]
 48daf02 Blissify: Add shishu nerves clock [2/2]
 
@@ -419,30 +492,4 @@ fd23c675 [2/4] Port face unlock feature
 
    * vendor/themes/
 94b00d7 vendor: Gradient Shit [2/2]
-
-====================
-     04-07-2020
-====================
-
-
-   * device/lineage/sepolicy/
-96da39a lineage: Introduce a new flag to exclude fuseblk sepolicy
-445386e exynos: Allow livedisplay to write to /data/vendor/display
-8b4546b exynos: Add hal_lineage_livedisplay policy
-8d16d6b legacy-common: Simplify legacy camera HAL1 rules
-6cbb923 sepolicy: Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
-34838b1 sepolicy: Nuke sdfat from genfs
-d61361b gallery_app: Allow binder call with gpuservice
-
-   * device/qcom/sepolicy/
-3c39ac89 Merge 'lineage-17.1' into q
-
-   * external/motorola/faceunlock/
-6b03cdf Automatic translation import
-
-   * packages/apps/OmniStyle/
-820c60f OmniStyles: Add Bliss Logo Headers
-
-   * vendor/bliss/
-7c33ed2d prebuilt: Update BlissPapers to v2.1 Release
 
