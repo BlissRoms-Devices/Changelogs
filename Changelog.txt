@@ -1,9 +1,26 @@
 ====================
+     04-23-2020
+====================
+
+
+   * packages/apps/Blissify/
+7ec25cf Blissify: Add 30sec timeout for LongPress Torch
+
+   * vendor/bliss/
+9a0e327d Merge changes from topic "cleanup" into q10
+
+   * vendor/qcom/opensource/libfmjni/
+01148c2 libfmjni: add vendor tag for vendor property value
+
+====================
      04-22-2020
 ====================
 
 
    * frameworks/base/
+a52beb5e1b2 base: Drop LTE tile
+017dcc460cd NavigationBarView: Fix cursor keys visibility with gestural mode enabled
+3263373a0b4 Revert "SystemUI: Advanced location tile"
 6b151f6262a Revert "Unlock with fingerprint on notification double tap without pin/passward/pattern [1/2] (#404)"
 b8c834c0490 Revert "Unlock without bouncer: Use Tuner API"
 014b3ac4375 Add switch for vpn, data saver and roaming icons
@@ -30,6 +47,8 @@ d4028f29 ThemePicker: show our apps in icon previews
 d5135683 Revert "Initial night overlays"
 e4723d14 vendor: move some overlays to vendor/themes [1/2]
 77c0ce9e vendor: Remove PixelThemes and SettingsIntelligence
+313c6c71 vendor/bliss: Kill Accents
+bcdca6b6 vendor/bliss: Kill all media files
 
    * vendor/themes/
 52b2ca4 themes: Set proper dark color for emergency icon in power menu
@@ -428,68 +447,4 @@ aafe5f568c8 SystemUI: Remove duplicate CONFIGURE_WIFI_DISPLAY permission
 
    * vendor/bliss/
 c2092eb9 versions: Bump to Bliss v12.6 Release
-
-====================
-     04-08-2020
-====================
-
-
-   * build/make/
-250ed8fd5 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//build into q
-
-   * device/lineage/sepolicy/
-9304cbf common: add rules for Gradient picker
-
-   * frameworks/av/
-918417036 [2/2] av: Remove restrictions for system audio record
-39b0b131d Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//frameworks/av into q
-
-   * frameworks/base/
-1759c037d7a [1/2] base: Remove restrictions for system audio record
-f2d99412dc8 base: Perform gradient prop set in UiModeManagerService
-25ec7e0996f Introduce RGB Gradient Picker [1/2]
-c203c8c410a SystemUI: improve gradient accent code
-1cb0951f219 Gradient Accents: align more seekbar to gradient.
-889ed7d2bcb [SQUASHED] Gradient Accents
-500eab06140 Merge tag 'android-10.0.0_r33' into q
-b04ad64cfd1 SystemUI: Fix Edge light repeat count
-d02a28a56ad SystemUI: Allow limiting edge lighting repeats [1/2]
-b2ccd8c6f50 SystemUI: Allow listening for face only on pin/pass view
-8c2c777a95f [3/4] Port face unlock feature
-8014603b702 SystemUI: Fix NPE on OpaEnableDispatcher
-bd0a3d97e39 SystemUI: fix notification light pulse for repeating notifications
-
-   * hardware/libhardware/
-d7911112 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//hardware/libhardware into q
-
-   * hardware/qcom/media/
-d574fc5 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//hardware/qcom/media into q
-
-   * manifest/
-a8ae7df Merge branch 'android-10.0.0_r33' of https://android.googlesource.com/platform//manifest into q
-c582911 [1/4] Port face unlock feature
-0a24099 Move libcxx to lineage fork
-fa419d6 manifest: Track lineage external/libhevc
-51e9a0a Switch to lineage chromium-webview fork
-daad1b4 Manifest for Android 10.0.0 Release 33 (QQ2A.200405.005)
-
-   * packages/apps/Blissify/
-fee66ce Blissify : Introduce RGB Gradient Picker [2/2]
-
-   * packages/apps/Settings/
-5346691014 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into q
-4ae79e607f Settings: Merge extra strings in one file
-519ca1d10b [4/4] Port face unlock feature
-
-   * system/bt/
-a32c56075 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//system/bt into q
-
-   * system/netd/
-b6b39a1f Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform//system/netd into q
-
-   * vendor/bliss/
-fd23c675 [2/4] Port face unlock feature
-
-   * vendor/themes/
-94b00d7 vendor: Gradient Shit [2/2]
 
