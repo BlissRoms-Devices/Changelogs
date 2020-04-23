@@ -1,12 +1,58 @@
 ====================
+     04-24-2020
+====================
+
+
+   * packages/apps/AudioFX/
+4813ced Automatic translation import
+
+   * packages/apps/CertInstaller/
+c5f0c7d Automatic translation import
+
+   * packages/apps/Eleven/
+ceafd83 Automatic translation import
+
+   * packages/apps/FMRadio/
+4badb4c Automatic translation import
+
+   * packages/apps/Jelly/
+089fbab Automatic translation import
+
+   * packages/apps/Profiles/
+cae3c7a Automatic translation import
+
+   * packages/apps/Recorder/
+882113a Automatic translation import
+
+   * packages/apps/Settings/
+b308033787 Settings: Switch to common build status prop
+
+   * packages/resources/devicesettings/
+e886cdf Automatic translation import
+
+   * vendor/bliss/
+4db6dda6 bliss: Remove unwanted status prop
+cc449796 vendor/bliss: Move Bliss versioning to build/core
+
+   * vendor/qcom/opensource/fm-commonsys/
+7f0bd23 Automatic translation import
+
+====================
      04-23-2020
 ====================
 
+
+   * build/make/
+0ce4bb9a8 build: Include BlissRoms specific properties in build.prop
+82102b608 releasetools: Move system mount handling to backuptool
+d8fb455ef releasetools: squash backuptool support
+a04d004e1 Squash revert backuptool
 
    * packages/apps/Blissify/
 7ec25cf Blissify: Add 30sec timeout for LongPress Torch
 
    * vendor/bliss/
+5464746c backuptool: Add static version for backuptool to work
 9a0e327d Merge changes from topic "cleanup" into q10
 
    * vendor/qcom/opensource/libfmjni/
@@ -433,18 +479,4 @@ c0280e5 Revert "Enable artwork Blur level only when art filter is set to blur"
    * vendor/bliss/
 c1bd4445 extract_utils: Generate deodexed apk/jar with consistent checksum
 30c5a42f extract_utils: Fix doubled path separator
-
-====================
-     04-09-2020
-====================
-
-
-   * frameworks/base/
-7a23b593f67 Proper fix of Android Auto (#403)
-4b0d7300743 Revert "Revert "DO NOT MERGE Revert "Adding the privacy chip to the CarStatusBar"""
-9a5b4d127e8 UninstallAlertDialogFragment: Catch IllegalArgumentException
-aafe5f568c8 SystemUI: Remove duplicate CONFIGURE_WIFI_DISPLAY permission
-
-   * vendor/bliss/
-c2092eb9 versions: Bump to Bliss v12.6 Release
 
