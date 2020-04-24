@@ -1,7 +1,42 @@
 ====================
+     04-25-2020
+====================
+
+
+   * frameworks/base/
+d672a6b71bb Revert "Quick status bar: Add battery meter view to linear layout"
+d9b9720a9bc Screenrec: Cleanup dialog layout
+2360c9a893d Screenrec: Add support for AudioPlaybackCapture
+52de27b6f4e Screenrec: Switch to low quality switch to a bitrate selector
+d6560f15aed Screenrecord: Improve dialog style
+50057b5f7b1 QSContainerImpl: Ensure we set valid colors only
+30e3764d1cc QSContainerImpl: Toggle QS color overlay as necessary
+ba299ccbe1f Multiply the total memory by mem_unit
+
+   * lineage-sdk/
+cfc123a8 Profiles: Work with a list of subscriptions
+
+   * packages/apps/Eleven/
+1185fee Eleven: Get rid of lockscreen media art option
+
+   * vendor/qcom/opensource/fm-commonsys/
+538368a jni: Resolve property isolation issues
+
+   * vendor/themes/
+b473f8f Update GoogleSans
+bc3e128 Overlay: Moar dark theme updates
+8832859 themes: remove redundant overlay
+c73a63f Tint suggestion icons to match system accent
+804ea0a Center the suggestion card button
+
+====================
      04-24-2020
 ====================
 
+
+   * lineage-sdk/
+3e8de26a profiles: Fix typo in static variable naming
+eef56b3f profiles: Account for deprecated location API methods
 
    * packages/apps/AudioFX/
 4813ced Automatic translation import
@@ -18,6 +53,11 @@ ceafd83 Automatic translation import
    * packages/apps/Jelly/
 089fbab Automatic translation import
 
+   * packages/apps/LineageParts/
+25561ba LiveDisplaySettings: Hide Reading Mode if wellbeing app is enabled
+67d8e12 Parts: Convert charging sound path to uri
+dbbc031 profiles: Goodbye GPS, welcome Location services
+
    * packages/apps/Profiles/
 cae3c7a Automatic translation import
 
@@ -26,6 +66,9 @@ cae3c7a Automatic translation import
 
    * packages/apps/Settings/
 b308033787 Settings: Switch to common build status prop
+
+   * packages/apps/Trebuchet/
+aaee9740a update wallpaper picker package
 
    * packages/resources/devicesettings/
 e886cdf Automatic translation import
@@ -36,6 +79,23 @@ cc449796 vendor/bliss: Move Bliss versioning to build/core
 
    * vendor/qcom/opensource/fm-commonsys/
 7f0bd23 Automatic translation import
+
+   * vendor/qcom/opensource/libfmjni/
+e33227e libfmjni: Resolve property isolation issues
+
+   * vendor/themes/
+8818629 themes: Set proper dark color for emergency icon in power menu
+bbe4206 themes: extend Settings exposures from system for primarys
+7e6b0fe Cleanup all unwanted themes
+5ecca30 themes: Add primary overlays from fwb [2/2]
+ae8de44 overlay: Fire->Flame
+e08f04c themes: build primary overlays
+f7f984e overlay: restore pixel blue colors to previous values
+7c07c03 themes: cleanup
+0850203 themes: Add Bliss themes stub
+ffbc384 overlay: Seperate Settings exposures from system for primarys
+ca4e0d3 overlay: Allow to theme Settings with primary
+1923cc0 overlay: unify dark SystemUI styles and support primary overlays
 
 ====================
      04-23-2020
@@ -97,17 +157,6 @@ e4723d14 vendor: move some overlays to vendor/themes [1/2]
 bcdca6b6 vendor/bliss: Kill all media files
 
    * vendor/themes/
-52b2ca4 themes: Set proper dark color for emergency icon in power menu
-34b2244 themes: extend Settings exposures from system for primarys
-89b6552 Cleanup all unwanted themes
-37a2303 themes: Add primary overlays from fwb [2/2]
-53dea04 overlay: Fire->Flame
-f99370d themes: build primary overlays
-7db1850 overlay: restore pixel blue colors to previous values
-1aeb660 themes: cleanup
-3fe3179 themes: Add Bliss themes stub
-1a1ef69 overlay: Seperate Settings exposures from system for primarys
-bae013a overlay: Allow to theme Settings with primary
 cd8194d Overlay: Add OnePlus Dark Primary
 7dabb00 overlays: Add Flame primary
 438c9ad Overlay: Add Solarized Dark Primary
@@ -432,51 +481,4 @@ e8c98712 prebuilt: Update AboutBliss App
 
    * vendor/qcom/opensource/power/
 f42873e power: Add the custom set_feature lib as whole static library
-
-====================
-     04-10-2020
-====================
-
-
-   * frameworks/av/
-a6f4a1dd0 Adapt session API for newly added AudioPolicyService code
-
-   * frameworks/base/
-e765f17aaa5 SystemUI: Introduce Adaptive Playback [1/2]
-1df8099bf05 base: Implement raise to wake (1/2)
-854dc09519e core: add gradient to switches
-cc892c0f62d Revert "base: Add OOS style switches"
-b7089583be3 fwb: Use persist.sys.recovery_update instead of uncrypt prop
-b9f5b7cf4bb LocationTile: Check for secure keyguard also on handleClick
-9a77e6da107 QS: Fix extra lines when icon number is small
-039eb6b8f66 SystemUI: Restore keyguard dimens after b40a3db3313f13b2af86f818a83afbb5e777be55
-303fdb6ba2e fixup! SystemUI: Allow to disable Lockscreen Media Art [1/3]
-ac7ffbbc942 Handle negative background data usage
-cfdb2253013 AndroidRuntime: Remove support for image classes
-614004e1a1f base: SystemUI: Disable junky LS clock & slice transition animations
-bb0e080c209 SystemUI: Improve qs detail theming
-c947a1b7028 fwb: Guard some functions against face unlock
-1195faee1fd SystemUI: Keyguard: Only apply padding if fod view showing
-26c559b81c7 FODCircleView: Fix high brightness after unlocking
-6cd594d107e SystemUI: Cleanup pixel live wallpapers changes
-
-   * packages/apps/BlissUpdater/
-bdf4c5a Updates: Use persist.sys.recovery_update instead of uncrypt prop
-f999604 Conditionally disable uncrypt
-
-   * packages/apps/Blissify/
-c0280e5 Revert "Enable artwork Blur level only when art filter is set to blur"
-
-   * packages/apps/CustomDoze/
-5d62038 implement raise to wake (2/2)
-
-   * packages/apps/Settings/
-1f97b6bf58 [2/2] Settings: Introduce Adaptive Playback
-
-   * system/netd/
-8053fa15 netd: Don't fail on FTP or PPTP conntrack failure
-
-   * vendor/bliss/
-c1bd4445 extract_utils: Generate deodexed apk/jar with consistent checksum
-30c5a42f extract_utils: Fix doubled path separator
 
