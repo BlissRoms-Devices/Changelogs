@@ -1,4 +1,12 @@
 ====================
+     04-26-2020
+====================
+
+
+   * packages/apps/Jelly/
+394a88d Jelly: Set query text only if values are valid
+
+====================
      04-25-2020
 ====================
 
@@ -456,29 +464,4 @@ a71e9fa0f6 MobileNetworkActivity: fix bottom nav gravity
    * vendor/bliss/
 5daabb2e prebuilt: Update BlissStatistics App
 81000038 prebuilt: Add weather icon themes for OmniJaws
-
-====================
-     04-11-2020
-====================
-
-
-   * frameworks/base/
-36225510b16 Revert "core: Implement Aggressive Battery [1/2]"
-
-   * packages/apps/Blissify/
-2180b64 LS OwnerInfo Fonts & Size Options [2/2]
-2cd3ce3 Revert: Blissify: Implement Aggressive Battery [2/2]
-
-   * packages/apps/Recorder/
-f23bcc6 Revert "Recorder: Add support for playback audio"
-
-   * packages/apps/ThemePicker/
-a748ddc ThemePicker: Let's put more safe checks for default theme
-
-   * vendor/bliss/
-e8c98712 prebuilt: Update AboutBliss App
-74c163d4 prebuilt: Update BlissStatistics to v2.0
-
-   * vendor/qcom/opensource/power/
-f42873e power: Add the custom set_feature lib as whole static library
 
