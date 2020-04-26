@@ -1,7 +1,17 @@
 ====================
+     04-27-2020
+====================
+
+
+====================
      04-26-2020
 ====================
 
+
+   * packages/apps/Eleven/
+b8e1211 Eleven: Remove casts from calls to getSystemService
+138bca1 Eleven: Retrieve ShakeToPlay user pref using dedicated method
+0d0d792 Eleven: Bind settings fragment to music playback service
 
    * packages/apps/Jelly/
 394a88d Jelly: Set query text only if values are valid
@@ -432,36 +442,4 @@ a640c1d5d2e SystemUI: FPS Info Overlay & Tile
 
    * packages/apps/Settings/
 4bd4f820e7 Settings: Remove these pixel gesture icons
-
-====================
-     04-12-2020
-====================
-
-
-   * frameworks/base/
-e038bb26eb4 SystemUI: Expand clock font size changes to Typeclock [1/2]
-91225c5b6b2 TypeClock: bring back O’{minute}
-0aa2caf5c54 fw/b: Squash of app fw restriction commits
-6b30d0316c6 base: do not use new lockscreen layout for bypass
-2fc590d0e2c ScreenshotSelector: handle rotation issues
-ec81bd606ab Show QS data saver info dialog until enabled
-4467ba5fb26 SystemUI: Fix showing duplicated charging status
-fb6e5d37a29 LS OwnerInfo Fonts & Size Options [1/2]
-
-   * packages/apps/Blissify/
-7605a39 Blissify: add typeclock usage warning
-80640d8 Blissify: Adjust lock clock font size min values [2/2]
-
-   * packages/apps/Settings/
-f70ce517e1 Settings: per-app cellular data, vpn and wifi restrictions
-7acaeef4b0 SettingsBaseActivity: fix clipped or not matching height settings content
-a71e9fa0f6 MobileNetworkActivity: fix bottom nav gravity
-
-   * system/netd/
-797848d0 system/netd: Add BPF support for lineage network restrictions
-9748e94b system/netd: Squash of app fw restriction commits
-
-   * vendor/bliss/
-5daabb2e prebuilt: Update BlissStatistics App
-81000038 prebuilt: Add weather icon themes for OmniJaws
 
