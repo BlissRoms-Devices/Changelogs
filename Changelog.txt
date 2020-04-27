@@ -1,4 +1,81 @@
 ====================
+     04-28-2020
+====================
+
+
+   * manifest/
+930b752 manifest: Track Launcher3 from BlissRoms
+
+   * packages/apps/Blissify/
+d2e5a2a Blissify: Disable Advance Reboot by default
+
+   * packages/apps/Launcher3/
+5d794e503 wallpapers: let users choose their preferred app
+009ffa635 styles: align with bliss primary colors
+bee328827 Rebrand to Blissify Launcher
+56e017b01 Make double tap to sleep gesture optional
+2fc68d12b Launcher3: Use system fonts
+2cf1adb8b AospLauncher: Avoid crash when default qsb is reinflated
+09310d7c3 Launcher3: double tap on home screen to turn off screen
+c52ed9178 Update Device Profile and Workspace
+b90dc1a3d AospLauncher: Copy component name to clipboard when long pressing title
+bb2034f98 AospLauncher: Fix icon pack calendar using default drawable ID
+dc26e22d3 AospLauncher: Set icon pack to "Default" if the current icon pack has no icon
+afa942157 AospLauncher: Filter icon packs without icon from selection menu in app info
+69a1f264b AospLauncher: Try binding At A Glance on first boot
+e0e4fdd77 AospLauncher: Open calendar when clicking At A Glance without Google App
+587053773 AospLauncher: Try binding At A Glance immediately when creating the view
+25ee09eca Elevate to 'core/platform' app'
+c6b324b63 Globally disable debug logging
+cdc270723 Specify the wallpaper picker package
+712c15d9b Launcher3: Disable uneeded dev settings
+e249322f3 Launcher3: Include manifests properly
+fd3f8da54 Launcher3: Add permission to allow updating database
+c9d8fdc92 Launcher3: Disable top/hotseat gradient
+1d15bb7c6 Launcher3: Add restart action for toggling settings
+44bf0431e Launcher3: Improve work banner layout at the bottom of the app drawer
+535e9ce27 Launcher3: Change padding in work tab footer
+5e0198737 Launcher3: Do not check fast scroll movement to fix unresponsiveness
+e4f94a78c AospLauncher: Clear all icon overrides when changing global icon pack
+a2b13550c AospLauncher: Bypass adaptive icon wrapping with icon pack icons
+cac44ea87 IconLoader: Add config hint to bypass adaptive icon wrapping
+f4985b05a AospLauncher: Add Icon Pack Support from Shade Launcher
+fe73d4150 AospLauncher: Add AppInfo Bottom Sheet from Shade Launcher
+f45fb6a5b AospLauncher: Replace top search bar with At A Glance
+6c5db2fc5 AospLauncher: Fix pending shortcut info retrieval after android-10.0.0_r25
+6293f3786 AospLauncher: Add support for Google QuickSearchBox
+1ef19effc Launcher3: Import updated device profile configuration
+2749c64ad Launcher3: Consider extra header content as visible elements
+dba2c843d quickstep: Always show all apps divider in prediciton view
+1ca0c9a99 AospLauncher: Add dark theme support to Google Feed
+58cd91d61 AospLauncher: Switch to advanced Google Feed
+75b2c6d13 AospLauncher: Hide Notification Dots on low RAM devices
+cf7dfe486 Launcher3: exclude from recents
+fd96ce586 proguard: Also keep FixedScaleDrawable
+1c92e7367 DeviceProfile: fix divide by zero
+58e2cbb40 Launcher3: Can't search out local app by Chinese
+ca8773611 PagedView: fix pointer index out of range
+31edf9ab8 Workspace: Allow resizing any widget
+b3c49fe3b Launcher3: Stability NullPointer issue
+878fe2637 Launcher3: No Calendarwidget 4x4 widget displayed
+634dcb7b5 Fix search bar incorrectly positioned after swiping up to home
+c0630d7f8 AospLauncher: Google Feed integration
+94b04bbfc AospLauncher: Move callbacks to outer class
+b94ae6a86 Create Aosp Launcher
+594cf7723 Launcher3: Fix launcher preview rendering
+4f5ad0de3 Add .gitreview
+
+   * packages/apps/Settings/
+88759fd9ff Merge changes I13894a86,Ic90c8a19,Id8137425,Id87843eb,I1f7cccf0, ... into q
+
+   * vendor/bliss/
+a0f52613 vendor/bliss: Disable Gesture Navigation by default
+94b326aa bliss: Build Launcher3
+
+   * vendor/themes/
+95a6059 Merge "themes: overlay: make wifi/bt/mobile panels pick primary color" into q
+
+====================
      04-27-2020
 ====================
 
@@ -16,12 +93,22 @@ b8e1211 Eleven: Remove casts from calls to getSystemService
    * packages/apps/Jelly/
 394a88d Jelly: Set query text only if values are valid
 
+   * vendor/themes/
+7e06a2b themes: overlay: make wifi/bt/mobile panels pick primary color
+bf9ea34 themes: primary: make Bliss Black amoled black
+
 ====================
      04-25-2020
 ====================
 
 
    * frameworks/base/
+5c9013e4bd4 SystemUI: decrease margin between qs and text
+c1be480f5d1 base: Make 'R style' notification headers toggleable [1/2]
+78948ed0b59 Implement R style notification section headers
+522603ea39c SystemUI: Lockscreen clock: don't show hour in single digit
+caf5d524d32 SystemUI: Ambient Edge Pulse layout [1/2]
+a96c88ca423 Revert "SystemUI: fix notification light pulse for repeating notifications"
 d672a6b71bb Revert "Quick status bar: Add battery meter view to linear layout"
 d9b9720a9bc Screenrec: Cleanup dialog layout
 2360c9a893d Screenrec: Add support for AudioPlaybackCapture
@@ -34,8 +121,19 @@ ba299ccbe1f Multiply the total memory by mem_unit
    * lineage-sdk/
 cfc123a8 Profiles: Work with a list of subscriptions
 
+   * packages/apps/Blissify/
+39a69d5 Blissify: Make 'R style' notification headers toggleable [2/2]
+
    * packages/apps/Eleven/
 1185fee Eleven: Get rid of lockscreen media art option
+
+   * packages/apps/Settings/
+02372c280f Settings: Add LineageParts charging sound settings preference
+92c27b8521 Settings: Only show gesture navigation if device has a software nav bar
+af5718250a Searchbar: Clean up code for avatar view
+86f2cee569 SearchBar: Add avatar to search bar
+656793006f Button text for app space management is overwritten
+c3003dfbe2 development: Add setting for updating recovery
 
    * vendor/qcom/opensource/fm-commonsys/
 538368a jni: Resolve property isolation issues
@@ -58,6 +156,9 @@ eef56b3f profiles: Account for deprecated location API methods
 
    * packages/apps/AudioFX/
 4813ced Automatic translation import
+
+   * packages/apps/Blissify/
+2e44ebc Ambient Edge Pulse Layout [2/2]
 
    * packages/apps/CertInstaller/
 c5f0c7d Automatic translation import
@@ -84,9 +185,6 @@ cae3c7a Automatic translation import
 
    * packages/apps/Settings/
 b308033787 Settings: Switch to common build status prop
-
-   * packages/apps/Trebuchet/
-aaee9740a update wallpaper picker package
 
    * packages/resources/devicesettings/
 e886cdf Automatic translation import
@@ -237,45 +335,6 @@ ff5696a manifest: Add gitlab default revision
 0ecff11 Revert "Unlock with fingerprint on notification double tap without pin/password/pattern [2/2]"
 de3901f Blissify: Add an option to ask pin for shutdown/reboot on secure lockscreen [2/2]
 48daf02 Blissify: Add shishu nerves clock [2/2]
-
-   * packages/apps/Trebuchet/
-e6fb1bf5c Trebuchet: Add preferences removed by mistake
-fb976f9c4 disable promisse apps
-443de50a7 Add missing STATUS_BAR permission
-a6144433e SettingsMisc: Fix shared preferences name
-639557a1a Launcher: Call mStateManager directly
-f5bce8704 Trebuchet: Remove empty app drawer preferences
-956ee7954 Trebuchet: Ensure no divider shown in preferences
-96a4fd2c4 IconPack: Fix setting summary after selecting icon pack
-5efabc5fd Trebuchet: Rewrite IconPack for ListPreference.
-56c799b26 Trebuchet: Workaround the Icon pack issue on adaptive apps
-2a2241f90 Trebuchet: Add simple iconpack support
-b7bbdf7dd SystemShortcut: Add uninstall option
-734c5a18d Trebuchet: Match google feed integration strings with pixel launcher
-c5a4a1322 Trebuchet: allow to swipe down on recents view to clear all
-41f57bb2b Workspace: No separate folders for google and play apps
-abca44f57 ShadeSpace: Make it compatible with android-10.0.0_r31
-12857163b Trebuchet: Clear text for shadespace subtext
-30f692d3e Trebuchet: Make shadespace toggleable
-bb939702c Replace Smartspace widget host view with Shade Space
-91d88014e Trebuchet: Disable top/hotseat gradient
-97aa3b54b Add double tap to sleep gesture
-3f13f3b03 Trebuchet: Use system fonts
-32f865a7d Trebuchet: Follow system color for dark style
-e1d6dd365 Trebuchet: Update workspace and device profiles
-97345dda2 Utilities: Use MODEL_EXECUTOR for needs restart code
-e039b5963 Trebuchet: Add launcher restart for google app toggle
-b96dcf0f3 Trebuchet: Extend notification listener with proxy
-7b884babd Trebuchet: new icon for kill app option
-a4ec7f75c New Recents: add kill action to app shortcuts popup
-4b3352207 Trebuchet: Add permission to allow updating database
-df4a2ca7d Trebuchet: Add restart action for toggling settings
-2cae94689 Elevate to 'core/platform' app'
-050cdfcc0 Rearrange settings
-f81c88a63 Add back button to Settings
-fd4fadcc5 Trebuchet: use common style for recents task menu divider
-a9a19f548 Trebuchet: Let's make the search bar on all apps round
-68d4fda86 Add .gitreview
 
    * vendor/bliss/
 4e826fce Merge "prebuilt: Add weather icon themes for OmniJaws" into q10
@@ -428,18 +487,4 @@ d51eb954 sepolicy: Allow recovery to alter /
 
    * vendor/bliss/
 bb139ae5 vendor/bliss: Fix changelog with broken repo forall -p
-
-====================
-     04-13-2020
-====================
-
-
-   * frameworks/base/
-a1ebd974c9f ReadingModeTile: Go away if wellbeing app is enabled
-58203af4f5a Need to check current user when triggering notification lights
-ee3b3dbfe2a AudioService: fix audio mode not reset to MODE_NORMAL
-a640c1d5d2e SystemUI: FPS Info Overlay & Tile
-
-   * packages/apps/Settings/
-4bd4f820e7 Settings: Remove these pixel gesture icons
 
