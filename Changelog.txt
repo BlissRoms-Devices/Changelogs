@@ -1,4 +1,22 @@
 ====================
+     04-29-2020
+====================
+
+
+   * packages/apps/Blissify/
+9cd07d4 Blissify: Remove unwanted drawable
+
+   * packages/apps/Launcher3/
+e2188b54d update wallpaper picker package
+46abcb4f9 Specify the component name to start the picker
+70ca69e0d Specify the wallpaper picker package
+b9213349a make at-a-glance widget optional
+6dfef30da New Recents: add kill action to app shortcuts popup
+
+   * packages/apps/Settings/
+79e1b6dff9 Settings: Make Blissify Dashboard Icon Adaptive
+
+====================
      04-28-2020
 ====================
 
@@ -149,6 +167,9 @@ c73a63f Tint suggestion icons to match system accent
      04-24-2020
 ====================
 
+
+   * external/chromium-webview/
+0ac43ed Update Chromium Webview to 81.0.4044.117
 
    * lineage-sdk/
 3e8de26a profiles: Fix typo in static variable naming
@@ -475,16 +496,4 @@ c5b7d66723 Animated Bliss Logo in About phone
 d51eb954 sepolicy: Allow recovery to alter /
 91484901 sepolicy: whitelist recovery from node creation neverallow
 715f494b sepolicy: Add sdcard_posix_contextmount_type attribute
-
-====================
-     04-14-2020
-====================
-
-
-   * packages/apps/Dialer/
-11e364acc Dialer: Fix leaked ServiceConnection in CallRecorderService
-42ad28f81 Dialer: expose dialer toolbar text colors
-
-   * vendor/bliss/
-bb139ae5 vendor/bliss: Fix changelog with broken repo forall -p
 
