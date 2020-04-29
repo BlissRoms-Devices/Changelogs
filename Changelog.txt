@@ -1,4 +1,9 @@
 ====================
+     04-30-2020
+====================
+
+
+====================
      04-29-2020
 ====================
 
@@ -463,37 +468,4 @@ f73b4c3 manifests: untrack Launcher3 and start tracking Trebuchet from LOS
 
    * vendor/bliss/
 d301cff5 vendor: allow choosing Lawnchair or Trebuchet as launcher at build time
-
-====================
-     04-15-2020
-====================
-
-
-   * device/lineage/sepolicy/
-9f55279 Allow platform access for fps info
-
-   * frameworks/av/
-ff2c536fb audiopolicy: Fixes for internal audio recording
-d4c6790a2 audiopolicy: Load the engine library dynamically
-
-   * frameworks/base/
-428b46fee09 Unlock without bouncer: Use Tuner API
-97ae036bac1 Unlock with fingerprint on notification double tap without pin/passward/pattern [1/2] (#404)
-
-   * packages/apps/Blissify/
-82a6572 Automatic translation import
-7e655c2 Blissify: Add a summary to Pixel Gestures
-
-   * packages/apps/Settings/
-9570ab34ac Merge changes from topic "anim_about" into q
-0a063f90b2 Revert Settings Blur
-609ba3bc30 Settings: Fix Device admin showing empty list
-6c1d35492c Settings: dashboard suggestions play nice with dark theme
-7ffc3bccba Remove the "About phone" avatar
-c5b7d66723 Animated Bliss Logo in About phone
-
-   * system/sepolicy/
-d51eb954 sepolicy: Allow recovery to alter /
-91484901 sepolicy: whitelist recovery from node creation neverallow
-715f494b sepolicy: Add sdcard_posix_contextmount_type attribute
 
