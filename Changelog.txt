@@ -1,7 +1,18 @@
 ====================
+     05-01-2020
+====================
+
+
+   * external/bash/
+aeab988 inputrc: Import from Ubuntu
+
+====================
      04-30-2020
 ====================
 
+
+   * packages/apps/ThemePicker/
+e2a603b Specify we read and write launcher settings
 
 ====================
      04-29-2020
@@ -9,6 +20,7 @@
 
 
    * packages/apps/Blissify/
+68e3b16 Blissify: Disable Emergency Option on Power Menu by default
 9cd07d4 Blissify: Remove unwanted drawable
 
    * packages/apps/Launcher3/
@@ -20,6 +32,9 @@ b9213349a make at-a-glance widget optional
 
    * packages/apps/Settings/
 79e1b6dff9 Settings: Make Blissify Dashboard Icon Adaptive
+
+   * vendor/bliss/
+af2d4fea prebuilts: Update AboutBliss to v2.0.0 Release
 
 ====================
      04-28-2020
@@ -457,15 +472,4 @@ df9619d07e6 Export all font configs
 
    * packages/apps/Blissify/
 bee0a4e Unlock with fingerprint on notification double tap without pin/password/pattern [2/2]
-
-====================
-     04-16-2020
-====================
-
-
-   * manifest/
-f73b4c3 manifests: untrack Launcher3 and start tracking Trebuchet from LOS
-
-   * vendor/bliss/
-d301cff5 vendor: allow choosing Lawnchair or Trebuchet as launcher at build time
 
