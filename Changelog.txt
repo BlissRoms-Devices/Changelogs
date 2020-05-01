@@ -1,4 +1,18 @@
 ====================
+     05-02-2020
+====================
+
+
+   * frameworks/base/
+99afa614598 SystemUI: Update fonts for carrier label
+b53cb4c4874 Fix WebView vulnerability by disallowing file access
+7c47599e929 fixup! lockscreen: Add support for showing unlock screen directly
+1b81b84150e SystemUI: Fix oversized battery icon
+
+   * vendor/bliss/
+87abafb1 overlay: Update Default wallpaper
+
+====================
      05-01-2020
 ====================
 
@@ -18,6 +32,13 @@ e2a603b Specify we read and write launcher settings
      04-29-2020
 ====================
 
+
+   * frameworks/base/
+20bf4b65d4b TypeClock: Align owner info as per the clock style
+45b07fb37a9 Clean up duplicated uses-permission
+6fe9005190f Camera: Rename prevent power key permission
+6a1b85ba6e7 FODCircleView: Show while bouncer is requesting Pattern or PIN
+bac395f4ed1 Revert "FOD: Show fod circle below pattern/pin view"
 
    * packages/apps/Blissify/
 68e3b16 Blissify: Disable Emergency Option on Power Menu by default
@@ -456,20 +477,4 @@ f345cc5 Jelly: Switch to androidx preference
    * system/bt/
 c66ca2ab4 Bluetooth: Support to know if there is High Def call
 2221de6ea Revert "Bluetooth HFP: Use WBS by default (1/5)"
-
-====================
-     04-17-2020
-====================
-
-
-   * frameworks/base/
-3d72fee7f8e Revert "SystemUI: Restore keyguard dimens after b40a3db3313f13b2af86f818a83afbb5e777be55"
-e5469d5d5e9 base: use bypassEnabledBiometric consistently
-3b6cfb77ed1 Fix Google Markup FC
-7ea9b9873ba SettingsProvider: Resolve package name that requires permission
-df9619d07e6 Export all font configs
-9f494e531fe fw/b: Prevent double interface restriction remove on interface name change
-
-   * packages/apps/Blissify/
-bee0a4e Unlock with fingerprint on notification double tap without pin/password/pattern [2/2]
 
