@@ -1,16 +1,60 @@
 ====================
+     05-03-2020
+====================
+
+
+   * device/lineage/sepolicy/
+0c38329 sepolicy: add hal_lineage_powershare
+
+   * frameworks/base/
+91d9aa59c67 StatusBar: call the update method for observer
+db9a2924803 Add isApplicationOnUicc API
+c3206378098 GlobalActions: Fix Airplane mode toggle
+158ade0c95f base: SystemUI: add qs powershare tile
+
+   * hardware/lineage/interfaces/
+b03021d cryptfshw: Introduce QSEECom backend implementation
+4124c8c Revert "cryptfshw: Introduce QTI backend implementation"
+6084619 lineage/interfaces: add powershare HAL
+aca56a5 [AWARE] Protect string copy against buffer overflow
+
+   * lineage-sdk/
+2b6e2122 lineage-sdk: add powershare qs tile
+
+   * packages/apps/Blissify/
+6994e67 Blissify: fix qs battery style hidden
+83f0814 Wired/BT headset: make ringtone audio focus customizable [2/2]
+
+   * packages/services/Telephony/
+5d68d4c38 fixup! Add isApplicationOnUicc API
+42d9760e2 Add isApplicationOnUicc API
+
+   * vendor/bliss/
+56511c2c privapp-permissions: Update PREVENT_POWER_KEY permission for Camera
+
+====================
      05-02-2020
 ====================
 
 
    * frameworks/base/
+004bd78c388 FOD Animations: convert to webp icons
+cde6c97a975 Wired/BT headset: make ringtone audio focus customizable [1/2]
+e8b3b4354a3 Add config to make Smart Charging available on device
 99afa614598 SystemUI: Update fonts for carrier label
 b53cb4c4874 Fix WebView vulnerability by disallowing file access
 7c47599e929 fixup! lockscreen: Add support for showing unlock screen directly
 1b81b84150e SystemUI: Fix oversized battery icon
 
+   * packages/apps/Settings/
+db74ebabb4 Settings: Add overlay to disable smart charging
+
    * vendor/bliss/
+2c1be789 vendor: Build CustomDoze for all devices
 87abafb1 overlay: Update Default wallpaper
+
+   * vendor/support/
+8296e05 support: add GlobalSettingListPreference
 
 ====================
      05-01-2020
@@ -416,65 +460,4 @@ de3901f Blissify: Add an option to ask pin for shutdown/reboot on secure lockscr
 
    * packages/services/Telecomm/
 980ad32c Bluetooth: Support to know if there is High Def call
-
-====================
-     04-18-2020
-====================
-
-
-   * frameworks/base/
-9d396cda43d SystemUI: Add SFUNY clock
-1d1c680a93a SystemUI: Add Divided Lines Clock
-6daa2b228ea Do not clean up ART profiles during OTAs
-7d2bba0f747 Handle ParcelableException instead of crashing system server
-66da7d6eb04 Merge "Revert "SystemUI: Restore keyguard dimens after b40a3db3313f13b2af86f818a83afbb5e777be55"" into q
-
-   * frameworks/native/
-e8cffa764 Add a separate flag in the installer for keeping ART profiles
-
-   * packages/apps/Dialer/
-b05e31e3a Fix Dialer memory leaks
-a8b921920 Fix FATAL Exception in PostCallActivity
-
-   * packages/apps/Eleven/
-cf10f3a .gitignore: ignore export folders when generating APKs
-145c292 Eleven: remove search feature
-cbb0b6b Eleven: fix popup menu positioning
-8df3d41 menu: clean up playlist helpers
-daecf8f AudioPlayer: convert headerbar into toolbar
-bb1a94d Settings: convert to PreferenceFragmentCompat
-95a7c9e Move to AppCompat theme
-c35d071 layouts: right/left -> start/end
-24bc08e Add gradient option for album art and use it by default
-d149292 Hide search and back button for player and queue screens
-05c8e90 Start revamping the player UI
-6f97a25 Fix some lint issues in MusicPlaybackService.
-7a0dd6d Don't update notification twice on play start.
-a818589 Avoid usage of deprecated APIs in MusicPlaybackService.
-1e581d8 Refactor AUDIO_BECOMING_NOISY broadcast handling.
-4ba3fd3 Simplify queue change notification handling.
-d275ec0 Bind/unbind service on start/stop instead of create/destroy.
-1f5989f Stop playback button updates when playback fragment is stopped.
-b0e8133 Fix notification foreground tracking behavior
-a63a1fb Use SystemClock.elapsedRealtime() for notification tracking time
-f93fbfe Refactor music playback service binding logic.
-1ac38c4 gradle: update plugin and wrapper
-
-   * packages/apps/Jelly/
-b708c1b Jelly: Enforce pattern to be matching
-000c793 Jelly: Replace ProgressDialog with an AlertDialog
-57e046a Jelly: Suppress warning on Q deprecation
-570821b Jelly: Don't use LocalBroadcastManager
-16aa7d0 Jelly: Bump Sdk version to 29
-5a7565b Jelly: Fix some cast warnings
-038c888 Jelly: Import ContentProvider.requireContext from R
-f345cc5 Jelly: Switch to androidx preference
-26de094 Jelly: Switch to androidx loader
-
-   * packages/apps/Settings/
-631d5c3e4d Merge "Revert Settings Blur" into q
-
-   * system/bt/
-c66ca2ab4 Bluetooth: Support to know if there is High Def call
-2221de6ea Revert "Bluetooth HFP: Use WBS by default (1/5)"
 
