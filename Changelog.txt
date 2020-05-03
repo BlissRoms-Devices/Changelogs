@@ -1,4 +1,14 @@
 ====================
+     05-04-2020
+====================
+
+
+   * frameworks/base/
+ad42b5aff43 TypeClock: Align Date widget as per the clock style
+7847ae2303a base: SystemUI: fix NPE in PowerShareTile
+45dd9fb58ab base: Tune some dimens to make icon spacing on SB equal
+
+====================
      05-03-2020
 ====================
 
@@ -7,6 +17,7 @@
 0c38329 sepolicy: add hal_lineage_powershare
 
    * frameworks/base/
+920c0363f32 EdgeBackGestureHandler: Perform edge haptic for both back and long swipe
 91d9aa59c67 StatusBar: call the update method for observer
 db9a2924803 Add isApplicationOnUicc API
 c3206378098 GlobalActions: Fix Airplane mode toggle
@@ -448,16 +459,4 @@ de3901f Blissify: Add an option to ask pin for shutdown/reboot on secure lockscr
 3da53833 privapp-permissions: Allow Launcher3 to use android.permission.FORCE_STOP_PACKAGES
 942370b7 privapp-permissions: Allow Trebuchet to use android.permission.STATUS_BAR
 69337c5e privapp-permissions: Add new launcher3 permissions
-
-====================
-     04-19-2020
-====================
-
-
-   * packages/apps/Jelly/
-745883e Jelly: Invert check
-4364bf9 Jelly: Make sure constraint isn't null
-
-   * packages/services/Telecomm/
-980ad32c Bluetooth: Support to know if there is High Def call
 
