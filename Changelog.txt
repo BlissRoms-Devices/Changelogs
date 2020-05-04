@@ -1,4 +1,13 @@
 ====================
+     05-05-2020
+====================
+
+
+   * vendor/bliss/
+90756896 Merge "Add default keyguard fod dimens" into q10
+28e4034b Merge "vendor: Allow providing camera server and service" into q10
+
+====================
      05-04-2020
 ====================
 
@@ -15,6 +24,10 @@ ad42b5aff43 TypeClock: Align Date widget as per the clock style
 
    * device/lineage/sepolicy/
 0c38329 sepolicy: add hal_lineage_powershare
+
+   * frameworks/av/
+56f51a433 cameraserver: Fix libcameraserver location
+18db97019 av: Allow providing camera server and service
 
    * frameworks/base/
 920c0363f32 EdgeBackGestureHandler: Perform edge haptic for both back and long swipe
@@ -42,6 +55,8 @@ aca56a5 [AWARE] Protect string copy against buffer overflow
 
    * vendor/bliss/
 56511c2c privapp-permissions: Update PREVENT_POWER_KEY permission for Camera
+01715ab8 Add default keyguard fod dimens
+2997445f vendor: Allow providing camera server and service
 
 ====================
      05-02-2020
@@ -424,39 +439,4 @@ c012855 Kill teal color for the default printer service
 8e0941e Use Pixel theme colors as default
 5b6962f overlay: Tint biometric icon with Pixel colors
 27bcddb themes: move some overlays from vendor/bliss [1/2]
-
-====================
-     04-20-2020
-====================
-
-
-   * frameworks/base/
-9d2df3fe957 AccentUtils: add coloraccent to resource list
-5eadeafd831 SystemUI: add nerves clock
-2ae44d27833 Add an option to ask pin for shutdown/reboot on secure lockscreen [1/2]
-962552ecd19 SystemUI: Add Oroño clock
-53b22384fb4 SystemUI: Add thumbnails for new clocks
-e3eb84dba3b SystemUI: add ability to change font style for new clocks
-37a3aa88136 SystemUI: Add ability to change sizes for new clocks
-fcc4e7f454a SystemUI: MNMLMinimalClock: fix preview
-05fb02e40a0 SystemUI: DividedLinesClock: Fix NPE on setTextColor
-7cabf8cc938 SystemUI: Sfuny: Fix NPE on setDarkAmount.
-5ae4dc0f9ec SystemUI: Alphabetise clocks
-98f1c25aee2 SystemUI: Adapt latest clocks to our layout
-deab48d01a4 SystemUI: Add MNML based clock desgins
-
-   * manifest/
-ff5696a manifest: Add gitlab default revision
-
-   * packages/apps/Blissify/
-0ecff11 Revert "Unlock with fingerprint on notification double tap without pin/password/pattern [2/2]"
-de3901f Blissify: Add an option to ask pin for shutdown/reboot on secure lockscreen [2/2]
-48daf02 Blissify: Add shishu nerves clock [2/2]
-
-   * vendor/bliss/
-4e826fce Merge "prebuilt: Add weather icon themes for OmniJaws" into q10
-8c580f5e vendor: Add missing permission for launcher
-3da53833 privapp-permissions: Allow Launcher3 to use android.permission.FORCE_STOP_PACKAGES
-942370b7 privapp-permissions: Allow Trebuchet to use android.permission.STATUS_BAR
-69337c5e privapp-permissions: Add new launcher3 permissions
 
