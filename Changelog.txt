@@ -1,7 +1,84 @@
 ====================
+     05-06-2020
+====================
+
+
+   * build/make/
+7fbc32801 Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/platform//build into q
+
+   * frameworks/av/
+0934b239a Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/platform//frameworks/av into q
+
+   * frameworks/base/
+3c9b382e0f6 TypeClock: Add padding to date widget
+bcb6e08baca SystemUI: Redesign volume dialog
+cc28ec280fe base: Redo expanded volume panel for 10.x
+a13bb32ec62 Network Traffice: Trivial improvements
+37f9cb82104 fw/b: adb network tile: Don't make ConnectionManager get calls from callback
+0708dd402a6 fw/b data restrictions: Don't call getNetworkCapabilities() in the callback
+605833af636 telephony: URI cannot be created with negative subIds
+152faaf4a31 Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into q
+
+   * lineage-sdk/
+f90f2fb9 Add more custom actions [2/3]
+258b4eb0 Add device key action to expand notifications panel [2/3]
+17fcae2e Add device key action to Clear notifications [2/3]
+624a46ac Add device key action to toggle volume panel [2/3]
+793b59ed QS: introduce ADB tile (2/2)
+e0a67b8c lineage-sdk: Add camera intents for camera state [2/2]
+a953a89d Network traffic mode for status bar [1/3]
+15460ce6 Add power menu option for screen record [2/3]
+97011b50 sdk: Allow more actions for long swipe
+81f57624 Add device key action to take screenshot [1/3]
+2c3f4ce7 Add device key action to toggle flashlight [1/3]
+92a026a8 lineage-sdk: Remove DB upgrade for FORCE_SHOW_NAVBAR
+b7e5eb56 Add toggle to allow advanced restart on secured lockscreen [1/2]
+597399c6 Add Restart SystemUI button on Advanced Restart Menu (2/2)
+e986c2b1 lineage-sdk: Try loading default setting value for switch
+74daa84d sdk: Disable selinux warning alert for now
+6c8dc4e8 Add option to select brightness slider positon [1/3]
+6fcea3f0 Battery light: 100% charged level (3/3)
+aac8fc5e Allow value 3 for status bar quick pull down
+6a30f5e1 Allow value to hide the clock
+ff3a2f46 sdk: Set summary automatically if required
+b839e5a0 Add customizable action for back long press button [1/3]
+529da45a Reduce default kill timeout
+1f916673 Add device key action to kill app [1/3]
+454b01c7 sdk: Kill trust interface hint on first boot
+5a7b2c61 Disable by livedisplay by default
+06a10d3c Add .gitreview
+b19fd372 sdk: Point to vendor/bliss
+eec59ae1 Trust: Actually cancel notification if the setting is disabled
+
+   * manifest/
+356e583 Merge branch 'android-10.0.0_r35' of https://android.googlesource.com/platform//manifest into q
+
+   * packages/apps/Settings/
+6d3983294f Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/platform//packages/apps/Settings into q
+
+   * packages/services/Telephony/
+03308d78f Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/platform//packages/services/Telephony into q
+
+   * system/bt/
+f2c7f0226 Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/platform//system/bt into q
+
+   * vendor/bliss/
+5dabe4b2 Merge "vendor: define CustomDoze in overlay as default doze package" into q10
+9f5793b6 vendor: define CustomDoze in overlay as default doze package
+0c2317e7 versions: Bump to BlissRoms v12.7 Release
+132d536c bootanimation: Update bootanimation and Fix Glitches
+
+====================
      05-05-2020
 ====================
 
+
+   * lineage-sdk/
+082c3c6b lineage-sdk: NetworkTraffic: Cleanup network callback
+
+   * manifest/
+d8bc74e Manifest for Android 10.0.0 Release 35
+3900458 Manifest for Android 10.0.0 Release 34
 
    * vendor/bliss/
 90756896 Merge "Add default keyguard fod dimens" into q10
@@ -42,9 +119,6 @@ b03021d cryptfshw: Introduce QSEECom backend implementation
 6084619 lineage/interfaces: add powershare HAL
 aca56a5 [AWARE] Protect string copy against buffer overflow
 
-   * lineage-sdk/
-2b6e2122 lineage-sdk: add powershare qs tile
-
    * packages/apps/Blissify/
 6994e67 Blissify: fix qs battery style hidden
 83f0814 Wired/BT headset: make ringtone audio focus customizable [2/2]
@@ -71,6 +145,9 @@ e8b3b4354a3 Add config to make Smart Charging available on device
 b53cb4c4874 Fix WebView vulnerability by disallowing file access
 7c47599e929 fixup! lockscreen: Add support for showing unlock screen directly
 1b81b84150e SystemUI: Fix oversized battery icon
+
+   * lineage-sdk/
+1c3c0432 lineage-sdk: add powershare qs tile
 
    * packages/apps/Settings/
 db74ebabb4 Settings: Add overlay to disable smart charging
@@ -247,9 +324,6 @@ d6560f15aed Screenrecord: Improve dialog style
 30e3764d1cc QSContainerImpl: Toggle QS color overlay as necessary
 ba299ccbe1f Multiply the total memory by mem_unit
 
-   * lineage-sdk/
-cfc123a8 Profiles: Work with a list of subscriptions
-
    * packages/apps/Blissify/
 39a69d5 Blissify: Make 'R style' notification headers toggleable [2/2]
 
@@ -283,8 +357,7 @@ c73a63f Tint suggestion icons to match system accent
 0ac43ed Update Chromium Webview to 81.0.4044.117
 
    * lineage-sdk/
-3e8de26a profiles: Fix typo in static variable naming
-eef56b3f profiles: Account for deprecated location API methods
+8bd3a0cb Automatic translation import
 
    * packages/apps/AudioFX/
 4813ced Automatic translation import
@@ -356,6 +429,9 @@ ca4e0d3 overlay: Allow to theme Settings with primary
 d8fb455ef releasetools: squash backuptool support
 a04d004e1 Squash revert backuptool
 
+   * lineage-sdk/
+373a11ad Profiles: Work with a list of subscriptions
+
    * packages/apps/Blissify/
 7ec25cf Blissify: Add 30sec timeout for LongPress Torch
 
@@ -386,7 +462,10 @@ bf906616938 QS: introduce ADB tile (1/2)
 0ad68d369fe Move primary color overlays to vendor/themes [1/2]
 
    * lineage-sdk/
-0699d667 QS: introduce ADB tile (2/2)
+fdf30702 sdk: Allow translucent notifications background on lockscreen [2/3]
+5802c111 lineage-sdk: Update path for custom charging sound
+b485a25a profiles: Fix typo in static variable naming
+bd39ad8c profiles: Account for deprecated location API methods
 
    * manifest/
 b4b7285 manifest: add BlissRoms GitLab remote declaration
@@ -417,26 +496,4 @@ cf86404 overlays: Remove more duplicate exposures
 42c8432 Notification guts: Adapt to system theme
 2ebe7ad Overlay: Adjust a few exposures for our theming
 a0734ad ThemePicker: Switch to a new style for color accent chips
-
-====================
-     04-21-2020
-====================
-
-
-   * manifest/
-97add5b manifest: Track launcher from BlissRoms
-
-   * vendor/themes/
-190c49f Fix brightness slider under Settings/Display
-b9855da Theme Moar dialogs
-29c0d97 Theme safe boot dialog
-c012855 Kill teal color for the default printer service
-958cdcc Resolve theme issues (see commit message)
-319a1e0 bliss: Bring back Pixel style theming
-849d82a overlay: Theme Settings search bar on dark theme
-0d5564c Update default pixel colors
-00964fc More pixel theme changes
-8e0941e Use Pixel theme colors as default
-5b6962f overlay: Tint biometric icon with Pixel colors
-27bcddb themes: move some overlays from vendor/bliss [1/2]
 
