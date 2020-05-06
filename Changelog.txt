@@ -1,4 +1,9 @@
 ====================
+     05-07-2020
+====================
+
+
+====================
      05-06-2020
 ====================
 
@@ -441,59 +446,4 @@ a04d004e1 Squash revert backuptool
 
    * vendor/qcom/opensource/libfmjni/
 01148c2 libfmjni: add vendor tag for vendor property value
-
-====================
-     04-22-2020
-====================
-
-
-   * frameworks/base/
-a52beb5e1b2 base: Drop LTE tile
-017dcc460cd NavigationBarView: Fix cursor keys visibility with gestural mode enabled
-3263373a0b4 Revert "SystemUI: Advanced location tile"
-6b151f6262a Revert "Unlock with fingerprint on notification double tap without pin/passward/pattern [1/2] (#404)"
-b8c834c0490 Revert "Unlock without bouncer: Use Tuner API"
-014b3ac4375 Add switch for vpn, data saver and roaming icons
-f517dccee92 Fix up statusbar paddings for devices with display cutouts
-808079403a3 Quick status bar: Add battery meter view to linear layout
-4f75dc5215f Fix up custom rounded corner setting for status bar
-b4afb4f3b0f Merge "Move primary color overlays to vendor/themes [1/2]" into q
-bf906616938 QS: introduce ADB tile (1/2)
-0ad68d369fe Move primary color overlays to vendor/themes [1/2]
-
-   * lineage-sdk/
-fdf30702 sdk: Allow translucent notifications background on lockscreen [2/3]
-5802c111 lineage-sdk: Update path for custom charging sound
-b485a25a profiles: Fix typo in static variable naming
-bd39ad8c profiles: Account for deprecated location API methods
-
-   * manifest/
-b4b7285 manifest: add BlissRoms GitLab remote declaration
-
-   * packages/apps/Jelly/
-db92462 Jelly: set WebView focusable
-
-   * vendor/bliss/
-b9d08b6d ThemePicker: Do not override default values
-d4028f29 ThemePicker: show our apps in icon previews
-409a62a5 Add overlay to specify our custom theme provider
-d5135683 Revert "Initial night overlays"
-e4723d14 vendor: move some overlays to vendor/themes [1/2]
-77c0ce9e vendor: Remove PixelThemes and SettingsIntelligence
-313c6c71 vendor/bliss: Kill Accents
-bcdca6b6 vendor/bliss: Kill all media files
-
-   * vendor/themes/
-cd8194d Overlay: Add OnePlus Dark Primary
-7dabb00 overlays: Add Flame primary
-438c9ad Overlay: Add Solarized Dark Primary
-f33c4c9 Overlay: Add Lead Black Primary
-d3f1f44 themes: Add Charcoal Black Primary
-43ef0dc themes: Cleanup hardcoded colors and use/overlay AOSP values
-917c8c0 themes: don't hardcode Screenrecord dialog color
-cf86404 overlays: Remove more duplicate exposures
-2e864a5 overlays: Remove duplicate exposure for notifications
-42c8432 Notification guts: Adapt to system theme
-2ebe7ad Overlay: Adjust a few exposures for our theming
-a0734ad ThemePicker: Switch to a new style for color accent chips
 
