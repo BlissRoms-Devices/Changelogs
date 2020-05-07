@@ -1,4 +1,9 @@
 ====================
+     05-08-2020
+====================
+
+
+====================
      05-07-2020
 ====================
 
@@ -422,28 +427,4 @@ f7f984e overlay: restore pixel blue colors to previous values
 ffbc384 overlay: Seperate Settings exposures from system for primarys
 ca4e0d3 overlay: Allow to theme Settings with primary
 1923cc0 overlay: unify dark SystemUI styles and support primary overlays
-
-====================
-     04-23-2020
-====================
-
-
-   * build/make/
-0ce4bb9a8 build: Include BlissRoms specific properties in build.prop
-82102b608 releasetools: Move system mount handling to backuptool
-d8fb455ef releasetools: squash backuptool support
-a04d004e1 Squash revert backuptool
-
-   * lineage-sdk/
-373a11ad Profiles: Work with a list of subscriptions
-
-   * packages/apps/Blissify/
-7ec25cf Blissify: Add 30sec timeout for LongPress Torch
-
-   * vendor/bliss/
-5464746c backuptool: Add static version for backuptool to work
-9a0e327d Merge changes from topic "cleanup" into q10
-
-   * vendor/qcom/opensource/libfmjni/
-01148c2 libfmjni: add vendor tag for vendor property value
 
