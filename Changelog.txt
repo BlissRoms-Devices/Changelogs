@@ -1,4 +1,19 @@
 ====================
+     05-09-2020
+====================
+
+
+   * frameworks/base/
+c9af604675b FODCircleView: Let us call show() when mIsBouncer() && !isPinOrPattern()
+7ba9ee68eab PowerManager: Move custom API definition to end of AIDL
+8fa50a82d3c SystemUI: Make sure notification icons are sticked to the left
+dc3bb63fdbb TypeClock: Fix padding and gravity
+
+   * packages/apps/Settings/
+825d8d9315 Settings: Adaptive Playback: allow choosing no timeout.
+5004615838 Settings: Hide carrier settings version if empty
+
+====================
      05-08-2020
 ====================
 
@@ -7,6 +22,19 @@
      05-07-2020
 ====================
 
+
+   * frameworks/base/
+e1ba801d954 Don't change public API
+4c9aabce39c Phone ringtone setting for Multi SIM device
+3c3c9ab8765 Revert "base: Phone ringtone setting for Multi SIM device [1/3]"
+
+   * packages/apps/Settings/
+575519212e Phone ringtone setting for Multi SIM device
+9452859319 Revert "Settings: Phone ringtone setting for Multi SIM device [2/3]"
+fca43620a5 Revert "Settings: enable SIM card ringtone only if slot not empty"
+
+   * packages/services/Telecomm/
+29db3002 Phone ringtone setting for Multi SIM device
 
 ====================
      05-06-2020
@@ -357,74 +385,4 @@ bc3e128 Overlay: Moar dark theme updates
 8832859 themes: remove redundant overlay
 c73a63f Tint suggestion icons to match system accent
 804ea0a Center the suggestion card button
-
-====================
-     04-24-2020
-====================
-
-
-   * external/chromium-webview/
-0ac43ed Update Chromium Webview to 81.0.4044.117
-
-   * lineage-sdk/
-8bd3a0cb Automatic translation import
-
-   * packages/apps/AudioFX/
-4813ced Automatic translation import
-
-   * packages/apps/Blissify/
-2e44ebc Ambient Edge Pulse Layout [2/2]
-
-   * packages/apps/CertInstaller/
-c5f0c7d Automatic translation import
-
-   * packages/apps/Eleven/
-ceafd83 Automatic translation import
-
-   * packages/apps/FMRadio/
-4badb4c Automatic translation import
-
-   * packages/apps/Jelly/
-089fbab Automatic translation import
-
-   * packages/apps/LineageParts/
-25561ba LiveDisplaySettings: Hide Reading Mode if wellbeing app is enabled
-67d8e12 Parts: Convert charging sound path to uri
-dbbc031 profiles: Goodbye GPS, welcome Location services
-
-   * packages/apps/Profiles/
-cae3c7a Automatic translation import
-
-   * packages/apps/Recorder/
-882113a Automatic translation import
-
-   * packages/apps/Settings/
-b308033787 Settings: Switch to common build status prop
-
-   * packages/resources/devicesettings/
-e886cdf Automatic translation import
-
-   * vendor/bliss/
-4db6dda6 bliss: Remove unwanted status prop
-cc449796 vendor/bliss: Move Bliss versioning to build/core
-
-   * vendor/qcom/opensource/fm-commonsys/
-7f0bd23 Automatic translation import
-
-   * vendor/qcom/opensource/libfmjni/
-e33227e libfmjni: Resolve property isolation issues
-
-   * vendor/themes/
-8818629 themes: Set proper dark color for emergency icon in power menu
-bbe4206 themes: extend Settings exposures from system for primarys
-7e6b0fe Cleanup all unwanted themes
-5ecca30 themes: Add primary overlays from fwb [2/2]
-ae8de44 overlay: Fire->Flame
-e08f04c themes: build primary overlays
-f7f984e overlay: restore pixel blue colors to previous values
-7c07c03 themes: cleanup
-0850203 themes: Add Bliss themes stub
-ffbc384 overlay: Seperate Settings exposures from system for primarys
-ca4e0d3 overlay: Allow to theme Settings with primary
-1923cc0 overlay: unify dark SystemUI styles and support primary overlays
 
