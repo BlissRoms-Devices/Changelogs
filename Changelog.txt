@@ -1,4 +1,15 @@
 ====================
+     05-10-2020
+====================
+
+
+   * development/
+a9dcc4229 privapp_permissions: Check product privapp_permissions
+
+   * external/bash/
+b330f71 bashrc: Add `ll` alias
+
+====================
      05-09-2020
 ====================
 
@@ -340,49 +351,4 @@ b8e1211 Eleven: Remove casts from calls to getSystemService
    * vendor/themes/
 7e06a2b themes: overlay: make wifi/bt/mobile panels pick primary color
 bf9ea34 themes: primary: make Bliss Black amoled black
-
-====================
-     04-25-2020
-====================
-
-
-   * frameworks/base/
-5c9013e4bd4 SystemUI: decrease margin between qs and text
-c1be480f5d1 base: Make 'R style' notification headers toggleable [1/2]
-78948ed0b59 Implement R style notification section headers
-522603ea39c SystemUI: Lockscreen clock: don't show hour in single digit
-caf5d524d32 SystemUI: Ambient Edge Pulse layout [1/2]
-a96c88ca423 Revert "SystemUI: fix notification light pulse for repeating notifications"
-d672a6b71bb Revert "Quick status bar: Add battery meter view to linear layout"
-d9b9720a9bc Screenrec: Cleanup dialog layout
-2360c9a893d Screenrec: Add support for AudioPlaybackCapture
-52de27b6f4e Screenrec: Switch to low quality switch to a bitrate selector
-d6560f15aed Screenrecord: Improve dialog style
-50057b5f7b1 QSContainerImpl: Ensure we set valid colors only
-30e3764d1cc QSContainerImpl: Toggle QS color overlay as necessary
-ba299ccbe1f Multiply the total memory by mem_unit
-
-   * packages/apps/Blissify/
-39a69d5 Blissify: Make 'R style' notification headers toggleable [2/2]
-
-   * packages/apps/Eleven/
-1185fee Eleven: Get rid of lockscreen media art option
-
-   * packages/apps/Settings/
-02372c280f Settings: Add LineageParts charging sound settings preference
-92c27b8521 Settings: Only show gesture navigation if device has a software nav bar
-af5718250a Searchbar: Clean up code for avatar view
-86f2cee569 SearchBar: Add avatar to search bar
-656793006f Button text for app space management is overwritten
-c3003dfbe2 development: Add setting for updating recovery
-
-   * vendor/qcom/opensource/fm-commonsys/
-538368a jni: Resolve property isolation issues
-
-   * vendor/themes/
-b473f8f Update GoogleSans
-bc3e128 Overlay: Moar dark theme updates
-8832859 themes: remove redundant overlay
-c73a63f Tint suggestion icons to match system accent
-804ea0a Center the suggestion card button
 
