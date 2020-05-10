@@ -1,4 +1,27 @@
 ====================
+     05-11-2020
+====================
+
+
+   * frameworks/base/
+0c451887222 SystemUI: Hide date widget by default for some clocks
+be1f08fc21d Revert "Fix deletion of VkSemaphores in VulkanManager."
+753f313a8f7 SystemUI: Add new fonts to clock/date/carrier label [1/2]
+cd092f2cfe9 SystemUI: Add option to show/hide lockscreen clock [1/2]
+0b360fe02e5 SystemUI: Lockscreen clock styles: Add sammy accent hour clock [1/2]
+9c94a25e71e Revert "SystemUI: add nerves clock"
+c07b265ba53 base: Kang La Fontage from Bootleggers [1/2]
+bfdeaa8e915 Revert "Reland "Apply front scrim to doze pulsing""
+34d9972b124 Revert "Fix AoD front scrim being opaque at DOZE_PULSING."
+dcf759465ed FODCircleView: Fix position on keyguard if cutout is hidden
+fc333cb02e8 FODCircleView: Fix position if cutout is hidden
+
+   * packages/apps/Blissify/
+77fca53 Revert "Blissify: Add shishu nerves clock [2/2]"
+caf5dbe Blissify: Add new fonts to clock/date/carrier label [2/2]
+cf0759a Blissify: Add option to show/hide lockscreen clock [2/2]
+
+====================
      05-10-2020
 ====================
 
@@ -8,6 +31,10 @@ a9dcc4229 privapp_permissions: Check product privapp_permissions
 
    * external/bash/
 b330f71 bashrc: Add `ll` alias
+
+   * vendor/themes/
+1f57d6d themes: Kang La Fontage from Bootleggers [2/2]
+0d5c8fb themes: increase footer end padding
 
 ====================
      05-09-2020
@@ -20,9 +47,25 @@ c9af604675b FODCircleView: Let us call show() when mIsBouncer() && !isPinOrPatte
 8fa50a82d3c SystemUI: Make sure notification icons are sticked to the left
 dc3bb63fdbb TypeClock: Fix padding and gravity
 
+   * frameworks/opt/net/wifi/
+a28db699f wifi_hal: add slsi wifi hal support
+
    * packages/apps/Settings/
 825d8d9315 Settings: Adaptive Playback: allow choosing no timeout.
 5004615838 Settings: Hide carrier settings version if empty
+
+   * vendor/themes/
+986d6c3 [2/2] overlay: change layout of keyguard status slice view
+fc5fe8d themes: increase qs_panel_padding_top to prevent overlap of brightness with header
+ab044c6 themes: reduce qs footer height
+01a332f themes: cleanup SystemUI dimens overlay
+908d9cf themes: change default corner size to 8dp
+263ef28 themes: overlay: set power menu and volume dialog corner to same as system
+52a9267 themes: reduce default size of quick_qs_offset_height
+7240602 [2/2] overlay: header image tweaks
+be98a23 [4/4] overlay: qs status bar header image
+af60853 themes: overlay: set default qs_header_tile_margin_horizontal to 13dp
+68a65f8 themes: overlay: dimen tweaks
 
 ====================
      05-08-2020
@@ -334,21 +377,4 @@ a0f52613 vendor/bliss: Disable Gesture Navigation by default
      04-27-2020
 ====================
 
-
-====================
-     04-26-2020
-====================
-
-
-   * packages/apps/Eleven/
-b8e1211 Eleven: Remove casts from calls to getSystemService
-138bca1 Eleven: Retrieve ShakeToPlay user pref using dedicated method
-0d0d792 Eleven: Bind settings fragment to music playback service
-
-   * packages/apps/Jelly/
-394a88d Jelly: Set query text only if values are valid
-
-   * vendor/themes/
-7e06a2b themes: overlay: make wifi/bt/mobile panels pick primary color
-bf9ea34 themes: primary: make Bliss Black amoled black
 
