@@ -1,7 +1,53 @@
 ====================
+     05-13-2020
+====================
+
+
+   * frameworks/base/
+98d7a69e734 FOD: apply bottom padding only when fod icon is showing
+bf5ccbad48a SystemUI: Add required priv-app permissions
+91030bb8cbe StitchImageUtility: Fix editor on multi user
+ca2b79b0e0f fwb: Port long screenshot implementation from Asus
+290173b6aef Revert longshot for asus stitch image
+3c02702ddb0 [1/2] SystemUI: change layout of keyguard status slice view
+
+   * lineage-sdk/
+0de23b4c LineageSettingsProvider: Add privapp permissions xml
+a52002c9 sdk: Remove weather from default services
+
+   * manifest/
+875bb7a track and add LOS Snap Camera (1/2)
+86a626f Track StitchImage
+
+   * packages/apps/Dialer/
+200ad03f2 Dialer: Add extra privapp permissions xml
+
+   * packages/apps/Launcher3/
+9afdcc780 Launcher3: Add extra privapp permissions xml
+
+   * packages/apps/LineageParts/
+fbca85b LineageParts: Add privapp permissions xml
+b6b9bd6 LineageParts: Migrate to Android.bp
+
+   * packages/apps/Recorder/
+b0f788c Revert "ScreenService: start recording on a background Thread"
+
+   * vendor/bliss/
+df36c1e4 vendor: build snap
+c63078e8 Merge "Revert "Add default keyguard fod dimens"" into q10
+6f03202e Revert "Add default keyguard fod dimens"
+
+   * vendor/themes/
+ff8f2f9 themes: SystemUI: remove qs_panel_padding_top
+
+====================
      05-12-2020
 ====================
 
+
+   * device/lineage/sepolicy/
+64879de Revert "sepolicy: Add rules for Long screenshot service"
+1f0fd2f qcom: Add legacymm livedisplay sepolicy
 
    * packages/apps/Blissify/
 a5b49d4 Blissify: add reset routine for slim recents
@@ -10,6 +56,14 @@ a5b49d4 Blissify: add reset routine for slim recents
 4ca9c40 FMRadio: add BOARD_HAVE_SLSI_FM guard
 
    * vendor/bliss/
+1176b800 vendor: Build StitchImage
+dd9e2c2a Revert longshot for stitch image
+f531f44b config: Move permission xml to apps
+6d65464a config: Remove unused Recorder privapp permissions
+1601d7bf Revert "Add rules for non platform apps that use hidden APIs"
+259a7322 config: Don't copy weather permission xml
+f7bcb4fe extract_utils: Handle Brotli compressed block image
+9439a4a8 extract_utils: Support odm/product/vendor partition for zip extract
 8aa345dc Merge "prebuilts: Add SoundPickerPrebuilt" into q10
 77e3263d prebuilts: Add SoundPickerPrebuilt
 
@@ -17,6 +71,9 @@ a5b49d4 Blissify: add reset routine for slim recents
      05-11-2020
 ====================
 
+
+   * external/asus/stitchimage/
+25d6b05 Automatic translation import
 
    * frameworks/av/
 76046ba73 cameraserver: Fix libcameraserver location for NO_CAMERA_SERVER
@@ -95,6 +152,10 @@ a28db699f wifi_hal: add slsi wifi hal support
    * packages/apps/Settings/
 825d8d9315 Settings: Adaptive Playback: allow choosing no timeout.
 5004615838 Settings: Hide carrier settings version if empty
+
+   * packages/apps/Snap/
+813ca62f1 Move Snap and its libs to /product
+bda901371 Snap: Add privapp permissions xml
 
    * vendor/themes/
 986d6c3 [2/2] overlay: change layout of keyguard status slice view
@@ -347,81 +408,4 @@ b9213349a make at-a-glance widget optional
 
    * vendor/bliss/
 af2d4fea prebuilts: Update AboutBliss to v2.0.0 Release
-
-====================
-     04-28-2020
-====================
-
-
-   * manifest/
-930b752 manifest: Track Launcher3 from BlissRoms
-
-   * packages/apps/Blissify/
-d2e5a2a Blissify: Disable Advance Reboot by default
-
-   * packages/apps/Launcher3/
-5d794e503 wallpapers: let users choose their preferred app
-009ffa635 styles: align with bliss primary colors
-bee328827 Rebrand to Blissify Launcher
-56e017b01 Make double tap to sleep gesture optional
-2fc68d12b Launcher3: Use system fonts
-2cf1adb8b AospLauncher: Avoid crash when default qsb is reinflated
-09310d7c3 Launcher3: double tap on home screen to turn off screen
-c52ed9178 Update Device Profile and Workspace
-b90dc1a3d AospLauncher: Copy component name to clipboard when long pressing title
-bb2034f98 AospLauncher: Fix icon pack calendar using default drawable ID
-dc26e22d3 AospLauncher: Set icon pack to "Default" if the current icon pack has no icon
-afa942157 AospLauncher: Filter icon packs without icon from selection menu in app info
-69a1f264b AospLauncher: Try binding At A Glance on first boot
-e0e4fdd77 AospLauncher: Open calendar when clicking At A Glance without Google App
-587053773 AospLauncher: Try binding At A Glance immediately when creating the view
-25ee09eca Elevate to 'core/platform' app'
-c6b324b63 Globally disable debug logging
-cdc270723 Specify the wallpaper picker package
-712c15d9b Launcher3: Disable uneeded dev settings
-e249322f3 Launcher3: Include manifests properly
-fd3f8da54 Launcher3: Add permission to allow updating database
-c9d8fdc92 Launcher3: Disable top/hotseat gradient
-1d15bb7c6 Launcher3: Add restart action for toggling settings
-44bf0431e Launcher3: Improve work banner layout at the bottom of the app drawer
-535e9ce27 Launcher3: Change padding in work tab footer
-5e0198737 Launcher3: Do not check fast scroll movement to fix unresponsiveness
-e4f94a78c AospLauncher: Clear all icon overrides when changing global icon pack
-a2b13550c AospLauncher: Bypass adaptive icon wrapping with icon pack icons
-cac44ea87 IconLoader: Add config hint to bypass adaptive icon wrapping
-f4985b05a AospLauncher: Add Icon Pack Support from Shade Launcher
-fe73d4150 AospLauncher: Add AppInfo Bottom Sheet from Shade Launcher
-f45fb6a5b AospLauncher: Replace top search bar with At A Glance
-6c5db2fc5 AospLauncher: Fix pending shortcut info retrieval after android-10.0.0_r25
-6293f3786 AospLauncher: Add support for Google QuickSearchBox
-1ef19effc Launcher3: Import updated device profile configuration
-2749c64ad Launcher3: Consider extra header content as visible elements
-dba2c843d quickstep: Always show all apps divider in prediciton view
-1ca0c9a99 AospLauncher: Add dark theme support to Google Feed
-58cd91d61 AospLauncher: Switch to advanced Google Feed
-75b2c6d13 AospLauncher: Hide Notification Dots on low RAM devices
-cf7dfe486 Launcher3: exclude from recents
-fd96ce586 proguard: Also keep FixedScaleDrawable
-1c92e7367 DeviceProfile: fix divide by zero
-58e2cbb40 Launcher3: Can't search out local app by Chinese
-ca8773611 PagedView: fix pointer index out of range
-31edf9ab8 Workspace: Allow resizing any widget
-b3c49fe3b Launcher3: Stability NullPointer issue
-878fe2637 Launcher3: No Calendarwidget 4x4 widget displayed
-634dcb7b5 Fix search bar incorrectly positioned after swiping up to home
-c0630d7f8 AospLauncher: Google Feed integration
-94b04bbfc AospLauncher: Move callbacks to outer class
-b94ae6a86 Create Aosp Launcher
-594cf7723 Launcher3: Fix launcher preview rendering
-4f5ad0de3 Add .gitreview
-
-   * packages/apps/Settings/
-88759fd9ff Merge changes I13894a86,Ic90c8a19,Id8137425,Id87843eb,I1f7cccf0, ... into q
-
-   * vendor/bliss/
-a0f52613 vendor/bliss: Disable Gesture Navigation by default
-94b326aa bliss: Build Launcher3
-
-   * vendor/themes/
-95a6059 Merge "themes: overlay: make wifi/bt/mobile panels pick primary color" into q
 
