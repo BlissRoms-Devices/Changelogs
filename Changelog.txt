@@ -1,4 +1,9 @@
 ====================
+     05-14-2020
+====================
+
+
+====================
      05-13-2020
 ====================
 
@@ -379,33 +384,4 @@ a3bab2aa3 Modify gralloc0 implementation
 
    * packages/apps/ThemePicker/
 e2a603b Specify we read and write launcher settings
-
-====================
-     04-29-2020
-====================
-
-
-   * frameworks/base/
-20bf4b65d4b TypeClock: Align owner info as per the clock style
-45b07fb37a9 Clean up duplicated uses-permission
-6fe9005190f Camera: Rename prevent power key permission
-6a1b85ba6e7 FODCircleView: Show while bouncer is requesting Pattern or PIN
-bac395f4ed1 Revert "FOD: Show fod circle below pattern/pin view"
-
-   * packages/apps/Blissify/
-68e3b16 Blissify: Disable Emergency Option on Power Menu by default
-9cd07d4 Blissify: Remove unwanted drawable
-
-   * packages/apps/Launcher3/
-e2188b54d update wallpaper picker package
-46abcb4f9 Specify the component name to start the picker
-70ca69e0d Specify the wallpaper picker package
-b9213349a make at-a-glance widget optional
-6dfef30da New Recents: add kill action to app shortcuts popup
-
-   * packages/apps/Settings/
-79e1b6dff9 Settings: Make Blissify Dashboard Icon Adaptive
-
-   * vendor/bliss/
-af2d4fea prebuilts: Update AboutBliss to v2.0.0 Release
 
