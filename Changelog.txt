@@ -1,7 +1,37 @@
 ====================
+     05-15-2020
+====================
+
+
+   * frameworks/base/
+837eb053df1 SystemUI: Move charging animation above FOD icon if In-display fingerprint is active
+d2e1cbf453e Merge changes from topic "header-height" into q
+
+   * manifest/
+f8e4b09 manifest: Track system/bpf from BlissRoms
+
+   * packages/apps/Blissify/
+4ffc07d Blissify: Make header image height user configurable [2/2]
+
+   * vendor/bliss/
+3ef00070 prebuilts: Update AboutBliss App
+
+====================
      05-14-2020
 ====================
 
+
+   * frameworks/base/
+f75dee84917 TypeClock: Properly calculate the height
+6cda29d0120 LTE+ indicator not shown when attached to CA network
+756bf4fc538 SystemUI: Make header image height offset user configurable [1/2]
+
+   * vendor/bliss/
+c3fd8eb3 vendor: Build sqlite3
+52048fb1 kernel: Conditionally use dtc from prebuilt
+00cee305 Add product_launched_with_j{,_mr1,mr2}.mk
+e0b8f12a tasks: kernel: Clarify prebuilt kernel deprecation notice
+85dfa412 kernel: Allow specifying a custom linker binary
 
 ====================
      05-13-2020
@@ -9,6 +39,7 @@
 
 
    * frameworks/base/
+9cd49b7d43d charger: don't show animation when unplugging
 98d7a69e734 FOD: apply bottom padding only when fod icon is showing
 bf5ccbad48a SystemUI: Add required priv-app permissions
 91030bb8cbe StitchImageUtility: Fix editor on multi user
@@ -105,6 +136,9 @@ cf0759a Blissify: Add option to show/hide lockscreen clock [2/2]
 582bae60f3 Notification log: Increase historical notifications to 100
 4f226ca53e Notification log improvements
 3b4c95c23b Expose the notification log
+
+   * system/bpf/
+a32aafa bpf: change how we detect device bpf support level
 
    * vendor/bliss/
 a7756ac9 overlay: Set default AOSP app providers
@@ -372,16 +406,4 @@ db74ebabb4 Settings: Add overlay to disable smart charging
 
    * external/bash/
 aeab988 inputrc: Import from Ubuntu
-
-====================
-     04-30-2020
-====================
-
-
-   * hardware/qcom-caf/msm8916/display/
-a3bab2aa3 Modify gralloc0 implementation
-5ab3f1111 Make hwc_vsync thread realtime
-
-   * packages/apps/ThemePicker/
-e2a603b Specify we read and write launcher settings
 
