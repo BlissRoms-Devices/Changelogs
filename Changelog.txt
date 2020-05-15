@@ -1,4 +1,123 @@
 ====================
+     05-16-2020
+====================
+
+
+   * bootable/recovery/
+0c20398b reovery: modify product soong variables
+
+   * build/make/
+33a1fb076 releasetools: Use du -b
+443516eeb Add mke2fs.conf to otatools
+75b3ce4cd Don't package mke2fs.conf in otatools.zip
+ff7c53405 Compute the needed shared libs for otatools.
+7c12b6867 Remove unused shared libs from otatools.
+70f3a5f79 Update the references to verity tools.
+
+   * device/lineage/sepolicy/
+c5b09d4 sepolicy: recovery: fix neverallows
+2064d3e sepolicy: recovery: allow reading fbe key version
+f18cdf1 sepolicy: recovery: allow mounting of internal storage
+419e8a3 sepolicy: recovery: allow mounting of usb storage
+50eb4e7 sepolicy: recovery: Allow volume manager write to /sys/*/uevent
+5b30072 sepolicy: recovery: Add policy for /dev/block/volmgr
+aad84c6 sepolicy: recovery: Fix the volume manager blkid.tab denial
+e5fa42d sepolicy: recovery: Allow reading proc_filesystems
+6a8f367 sepolicy: recovery: Add policy for volume manager
+e7c459a lineage: Assign bash the same label as the default shell
+28bb8b6 Revert "Label lineage.service.adb.root as system prop"
+43cd901 sepolicy: qcom: Label custom FM Radio property
+5b53bed sepolicy: allow adbroot service to change adb root status
+4abd286 Revert "common: Allow adbd to set a system_prop"
+
+   * frameworks/base/
+9ca66ce8a34 Whitelist settings to use adb root permission
+d6e3813617e ADBRootService: Remove redundant permission check
+72b13823d4b ADBRootService: Deal with binder death
+e1cf76852ed Fix ADB root system API extension
+72d96d5f07c Expose the ADBRoot interface to priv-apps
+
+   * manifest/
+041df71 Merge changes from topic "updates" into q
+089015c Fetch lineage build-tools
+b7aa49c manifest: Switch to lineage fork of e2fsprogs
+82a4330 manifest: Use our forks of e/{cldr,icu} and s/timezone
+453c830 manifest: Sync vendor/qcom/opensource/vibrator
+3f764df manifest: Track additional Pixel 4{,XL} hardware repo
+e564861 manifest: Track lineage external/ppp
+71a5a52 manifest: Track lineage external/gptfdisk
+
+   * packages/apps/Blissify/
+f24edc2 Blissify: add Dasbhboard condition strings from settings
+
+   * packages/apps/Settings/
+6fca535e8d Settings: notifications: move some preferences out of advanced
+ee3fe84c3b Revert "Add skip lock screen in Notification & security lock screen settings"
+82cef2eef7 Remove the "About phone" avatar
+3ec734d2d1 Animated Bliss Logo in About phone
+af64aa7519 Settings: Make Blissify Dashboard Icon Adaptive
+c6519bf34d Notification log: Increase historical notifications to 100
+e64c0760d3 Notification log improvements
+2dc983902c Expose the notification log
+96681c3e5e DarkMode Settings: Use List Preference rather ugly Drop Down
+adc8ff895c Settings: Adaptive Playback: allow choosing no timeout.
+281d61e55f Settings: Add overlay to disable smart charging
+cae7549167 Searchbar: Clean up code for avatar view
+af89c6dd8a SearchBar: Add avatar to search bar
+60790682b0 Settings: Switch to common build status prop
+c43b1bc33f Settings: Fix Device admin showing empty list
+e7ddea83ea Settings: dashboard suggestions play nice with dark theme
+c41da4c6b4 Settings: Remove these pixel gesture icons
+ec6f212468 [2/2] Settings: Introduce Adaptive Playback
+d333d4916c Settings: Merge extra strings in one file
+813ed605b3 [4/4] Port face unlock feature
+4fd422a582 Settings: Fix carkit can't get phonebook access permission by default.
+f0671fae21 Settings: Fix navigation handle length seekbar theme
+33c82dc4a1 Slices: use the same string for BT and Wifi master switch
+56df65feba Settings: Allow to set default refresh rate value [2/2]
+a062e0de32 Settings: allow for customizing the length of the navigation handle [2/2]
+3bdb7d3fa6 Settings: panels: Fix pair new device icon
+8ea6ccb9cb Settings: add pair new to BT panel slice
+d76bdf6d2e panels: Add Bluetooth panel
+4a4c986071 Revert "Settings: allow for customizing the length of the navigation handle [2/2]"
+5ff4d0e71b Settings: Avoid rendering hidden preferences
+005c3832d7 QS panels: fix data usage display on mobile panel
+6a106da352 QS panels: Improvements
+ad19b378e3 Settings: Elaborate footer note for smart charging
+0c9c4fe8a4 panels: Add Mobile Data panel
+7c49e3d3fc Settings: doze: custom packages have priority
+0e953068a1 Remove legal information from being indexable
+752e8cbbc6 Comment out Legal/Regulatory info
+91bd58d0fd Settings: reword gesture block ime option
+11b58d3360 [2/2] Settings: dont block IME space for back gesture
+043c97310b Settings: Always show last charged time
+2ebb687972 Running services fragment: clean up layout
+42407987c7 Settings: Disable Google Play system update check
+fe643b16df Settings: allow for customizing the length of the navigation handle [2/2]
+35bbec9c51 Settings: add optional back gesture vibration tick [2/2]
+4be9dbc9a2 [2/2] Settings: expose auto night mode sunset and sunriuse values on API
+9afc409366 Revert "Show Styles & Wallpaper in Settings"
+1a0e879caf Settings: Move aosp themeing to Blissify
+
+   * system/core/
+18315a6f1 init: modify product soong variables
+d68280db8 Make GetDeviceLockStatus() favor unlocked devices
+f0994b336 healthd: Add WARP charger type
+0fb8f77b0 Shut up camera and wcnss debug output
+6d88e1d2e Filter GalleryDatab*
+d59f499c1 Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
+161b049e6 init: ro.build.selinux should be 0
+c79d608f0 init: add several more keys to spoof
+a084cecdf init: workaround SafetyNet check
+85142fbb4 init: Weaken property override security for the init extension
+80c2c7e51 LockscreenCharging: squashed (2/3)
+20141e552 Add .gitreview
+
+   * vendor/bliss/
+03c568a8 lineage: Add flag for skipping EV_REL input in recovery
+c61824ca Build adb_root
+
+====================
      05-15-2020
 ====================
 
@@ -13,8 +132,140 @@ f8e4b09 manifest: Track system/bpf from BlissRoms
    * packages/apps/Blissify/
 4ffc07d Blissify: Make header image height user configurable [2/2]
 
-   * vendor/bliss/
-3ef00070 prebuilts: Update AboutBliss App
+   * packages/apps/LineageParts/
+09f2d43 LineageParts: Fix animation for search results
+f0974ae LineageParts: Profiles: Even more improvements
+6b2c5d5 Trust: Request removal of the notification when disabling the preference
+f8f7c30 LineageParts: Remove obselete PreferenceCategory for LiveDisplay
+0e3a0fe PerfProfileSettings: Hide from search results when there are no profiles
+f6ed457 TouchscreenGestureSettings: Hide from search results if unsupported
+b27585a DeviceUtils: Add helper methods to retrieve device's key capabilities
+c465cfa StatusBarSettings: Fix NW traffic not being properly hidden from search
+e6a8fa2 DeviceUtils: Drop useless cast when calling getSystemService
+d9056f0 LineageParts: Drop no longer necessary casts when calling findPreference()
+aff2639 LineageParts: Remove unavailable entries from search
+
+   * packages/apps/Settings/
+1e0172ab2d Settings: Remove duplicate preferences
+2da1b06780 FeatureFactoryImpl: PowerUsageFeatureProviderGoogleImpl: Catch NameNotFoundException
+302e58f590 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
+b08c49c47b Update raw animations and drawables from Pixel 4 XL
+3e78533110 Settings: Initial import for Pixel-specific feature Settings
+3e59625fcc Settings: add fod option in FP location overlay
+f1bdd0ad91 Settings: Add vibration patterns from OOS and
+a63c2e0c50 Settings: Icons: add DNS icon
+f77d3e970b Settings: Add drawable for Private DNS
+3eedd9df06 Settings: Adaptive brightness: Fix summary fuckery
+59a66a6d1b Settings: Fix settings dashboard summary while warp charging
+a3017fdec5 Settings: Fix settings dashboard summary while dash charging
+8bf107edd7 Settings: Themes: make sure settings shortcut icons follow system accent
+d312742de2 Settings: Desktop backup password: Tint buttons to match system theme
+9afeb28074 Settings: Power detail pages: Finish off the rest of the icon tinting
+e28a390a6b Settings: Fix icon tinting in power detail pages
+8848bd7acc Settings: Fix textApperance of our modified gesture dialog
+56f208abd4 Add primary color picker from Styles & Wallpapers
+b0f4a41e32 Add Statusbar Icon Picker from Styles & Wallpapers
+e1a2ff7fe4 Setting: Add vibration intensities
+5d22fdbadf Settings: Allow to hide arrow for back gesture [2/2]
+8e1b2b6f3c Settings: Fix NPE with customdialogpref for backlight settings
+685d7d2392 Settings: Fixes sound panel create multiple SoundSettings activity
+11bd7bfd30 Settings: Move the hide pill toggle to gesture settings dialog
+005c656e2e Settings: Hide pill in full gestural nav mode [2/2]
+a1e2d6d451 Settings: Use global fonts in styles
+d5eac33943 Settings: Hide long press kill
+b71e741787 Settings: Allow to quickly open Running Services from QS [2/2]
+4a6f524125 Settings: fix hardcoded black text in storage summary
+bafdd4c133 FeatureFactoryImpl: Implement RoutinesActionBroadcastReceiver
+71e462284a Settings: Address a memory leak
+927db9eb99  FeatureFactoryImpl: Initial import of ContextualCardProvider
+535cb32c93 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
+5582b851d2 FeatureFactoryImpl: ApplicationFeatureProviderGoogleImpl: Remove com.android.packageinstaller from keepEnabledPackages
+37db0f4cf6 Settings: Display 'Warp charging' for warp charge in battery settings [2/2]
+86e0957beb Settings: Display 'Dash charging' for dash charge in battery settings [2/2]
+3f4c8f0cda Battery charge warning [2/2]
+d0c693a5cd Enable fingerprint swipe gestures by default [2/2]
+b28b40f0f4 Settings: Enable App Info Memory Settings
+4d983df49b Settings: Define HAFR Activity [2/3]
+21165792fb Settings: Use same icons for sliders as fw_base
+aebd6545ae Settings: Move custom DP settings under display submenu
+6b422e0e30 AnimationSeekbar: Change default max and digits
+9ef5573ee2 Settings: Convert AnimationScalePreference to CustomDialogPreferenceCompat
+2b1b587e06 Settings: AnimationScale: Fix force close when not using english
+db03a2f473 Settings: Use seekbar to allow setting arbitrary animation values
+fa23d1b090 Settings: Add refresh rate setting [2/2]
+9761dbb7c5 Settings: Add hide notch support [2/2]
+e77a5124ce Revert "Make fingerprint illustrations single color"
+83cde77685 Settings: Add platform and RAM to Model & Hardware
+a6accbf680 Settings: Disable stock battery percent toggle
+27026d31f8 Fix crash when going back from battery
+e9369af8a0 Aosp Ambient music: allow to pulse on new tracks [2/2]
+e93027af94 Bring back Gaming mode [2/3]
+34b0457282 settings: Protect sensitive info on About device
+450ced9a85 fuelgauge: Fix possible memory leaks
+0e5f6e95fa fuelgauge: Implement Early Warnings
+0016c2aac0 fuelgauge: Use Enhanced Battery Prediction from Turbo
+6b2410de96 Port "Battery Usage Alerts" feature from factory images
+2b5cdb0853 Open app when clicking on icon in App Info
+75829f964b Settings: Option to mute media with gesture [2/2]
+a40c56f816 Allow to dismiss notifications with back FP left/right swipe [2/2]
+07cbdda075 Settings: move force dark preference to display settings
+2f40a46107 Settings: Move theming to display settings
+834d8e58df Revert "Remove theming developer settings."
+04cd69a761 Settings: Cleanup
+e53c2bd8ef SoundSettings: Add screenshot sounds settings
+02f857cd97 InstalledApp: show link to Google Play
+23d903fb1e Settings: remove unneeded collapse limits
+79918786b1 SmartCharging: add reset battery stats option [2/2]
+c547ea62b5 SmartCharging: allow user set resume level [2/2]
+2a9466026d Settings: Smart Charging (2/4)
+5f5d8e85a7 Settings: Enable FeatureFlags on "user" builds too
+2c557dde8e Settings: Update some icons to MD2
+356303ad2a DisplaySettings: font size in 5% steps from 80% to 130%
+5f8e80d20c Battery: show battery temp on power summary
+28a52e2eb3 [2/2] Settings: navigation mode settings
+dcc8a7d9c9 fuelgauge: add back battery level animation
+4514d94d82 Settings: move lockscreen media art & visualizer to blissify [2/2]
+7da0b8c512 Display: Move to Blissify [1/2]
+010cbed266 Developer opts: set default notification channel warnings
+c16170e6f1 Settings: Show me more than 4 items in the menus!
+3f55b9540b Settings: disable all bugreport settings
+a17a68b108 Settings: Move Advanced Restart switch to Blissify [1/2]
+cbf6f3388c Settings: disable FLAG_WINDOW_IS_OBSCURED check in accessibility
+1b26a59622 Settings: show battery times in summary
+f45aadef3e Settings: display fstype for mounted volumes
+9294db1ee4 Settings: Reset battery stats [2/2]
+2e840bbe53 PowerUsageSummary: Remove advanced battery menu item
+85d23ab186 Settings: PowerUsageSummary: open advanced usage on header click
+f1281649d8 Keyguard: Forward port lockscreen quick unlock (2/2)
+80b64c96b7 Settings: Use dashboard drawable from Blissify
+f5fa835c07 Include support repo
+9422bf01a3 AmbientDisplay: Add custom pref for devices with custom doze packages
+83de05ec47 Settings: IS_DEBUGGABLE -> IS_ENG
+0006bcf5ba QS dev tiles: Don't set them to active area
+967ad61186 WiFi: Remove country code checking.
+249ab5e93e DevelopmentSettings: Disable automatic updates
+ea3f34ffba Remove feedback and bug report stuff
+31d9a585ff Remove the Automatic ota check option but be sure it's disabled
+c8def124e9 Add back arrow to Desktop backup password
+6087ba7bfe Settings: Add animations on some preferences
+ff958aae6e Settings: Import Adaptive Battery translations from crosshatch
+a0963bde7a FeatureFactoryImpl: Import PowerUsageFeatureProviderGoogleImpl
+4041d85770 FeatureFactoryImpl: Implement ApplicationFeatureProviderGoogleImpl
+69a15e1165 FeatureFactoryImpl: Implement SuggestionFeatureProvider
+d47543f331 FeatureFactoryImpl: Implement SearchFeatureProviderGoogleImpl
+48cd46c0bc FeatureFactoryImpl: Implement AccountFeatureProviderGoogleImpl
+07d64c3d8a Settings: Initial implementation of FeatureFactoryImpl from Pixel
+b1b9bcb482 Settings: Integrate Blissify into Settings
+5d03601e08 Settings: Add BlissUpdater to System dashboard
+2469b6cd18 values: Disable System Updater
+31e1a1a8a2 BlissInfo: Add Bliss logo header
+7fad618ec0 BlissInfo: Add Changelog
+61ba6507f1 Add Bliss Logo to System Dashboard
+997449890c AboutPhone: Add Bliss device
+0f30b79b22 AboutPhone: Add Bliss build status
+b9766f6545 AboutPhone: Add Bliss build date
+5f4a3562ec AboutPhone: Add Bliss version
+74d6a334b3 Add .gitreview
 
 ====================
      05-14-2020
@@ -25,6 +276,9 @@ f8e4b09 manifest: Track system/bpf from BlissRoms
 f75dee84917 TypeClock: Properly calculate the height
 6cda29d0120 LTE+ indicator not shown when attached to CA network
 756bf4fc538 SystemUI: Make header image height offset user configurable [1/2]
+
+   * packages/apps/Settings/
+827334a163 LanguageAndInputSettings: Hide touch hovering from search if needed
 
    * vendor/bliss/
 c3fd8eb3 vendor: Build sqlite3
@@ -132,11 +386,6 @@ fc333cb02e8 FODCircleView: Fix position if cutout is hidden
 caf5dbe Blissify: Add new fonts to clock/date/carrier label [2/2]
 cf0759a Blissify: Add option to show/hide lockscreen clock [2/2]
 
-   * packages/apps/Settings/
-582bae60f3 Notification log: Increase historical notifications to 100
-4f226ca53e Notification log improvements
-3b4c95c23b Expose the notification log
-
    * system/bpf/
 a32aafa bpf: change how we detect device bpf support level
 
@@ -158,9 +407,6 @@ b330f71 bashrc: Add `ll` alias
 
    * packages/apps/Eleven/
 89a9397 Eleven: Move to /product
-
-   * packages/apps/Settings/
-68144d41db DarkMode Settings: Use List Preference rather ugly Drop Down
 
    * vendor/themes/
 1f57d6d themes: Kang La Fontage from Bootleggers [2/2]
@@ -188,13 +434,12 @@ a28db699f wifi_hal: add slsi wifi hal support
    * packages/apps/Eleven/
 049d349 Eleven: Add privapp permissions xml
 
-   * packages/apps/Settings/
-825d8d9315 Settings: Adaptive Playback: allow choosing no timeout.
-5004615838 Settings: Hide carrier settings version if empty
-
    * packages/apps/Snap/
 813ca62f1 Move Snap and its libs to /product
 bda901371 Snap: Add privapp permissions xml
+
+   * prebuilts/build-tools/
+f068d8b Use an updated version of toybox from du ab/6416774
 
    * vendor/themes/
 986d6c3 [2/2] overlay: change layout of keyguard status slice view
@@ -214,6 +459,9 @@ af60853 themes: overlay: set default qs_header_tile_margin_horizontal to 13dp
 ====================
 
 
+   * bootable/recovery/
+2070c421 minui: Allow skipping EV_REL input devices.
+
 ====================
      05-07-2020
 ====================
@@ -229,11 +477,6 @@ e1ba801d954 Don't change public API
 
    * packages/apps/FMRadio/
 720ac70 FMRadio: Add privapp permissions xml
-
-   * packages/apps/Settings/
-575519212e Phone ringtone setting for Multi SIM device
-9452859319 Revert "Settings: Phone ringtone setting for Multi SIM device [2/3]"
-fca43620a5 Revert "Settings: enable SIM card ringtone only if slot not empty"
 
    * packages/services/Telecomm/
 29db3002 Phone ringtone setting for Multi SIM device
@@ -294,7 +537,8 @@ eec59ae1 Trust: Actually cancel notification if the setting is disabled
 356e583 Merge branch 'android-10.0.0_r35' of https://android.googlesource.com/platform//manifest into q
 
    * packages/apps/Settings/
-6d3983294f Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/platform//packages/apps/Settings into q
+50dade6a5a Merge tag 'android-10.0.0_r35' into lineage-17.1-android-10.0.0_r35
+2a59774645 Settings: Hide carrier settings version if empty
 
    * packages/services/Telephony/
 03308d78f Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/platform//packages/services/Telephony into q
@@ -333,6 +577,9 @@ d8bc74e Manifest for Android 10.0.0 Release 35
 ad42b5aff43 TypeClock: Align Date widget as per the clock style
 7847ae2303a base: SystemUI: fix NPE in PowerShareTile
 45dd9fb58ab base: Tune some dimens to make icon spacing on SB equal
+
+   * system/core/
+444f4c68e fs_mgr: skip setting rootfs block as ro during mount_all in recovery
 
 ====================
      05-03-2020
@@ -377,6 +624,17 @@ aca56a5 [AWARE] Protect string copy against buffer overflow
 ====================
 
 
+   * bootable/recovery/
+cba1be44 recovery: handle interrupts in apply update menu
+
+   * external/cldr/
+d78ab2b CLDR-13739 tzdata2020a updates (#440) [Q]
+78e187d CLDR-13029 Update windowsZones.xml to 2019b level (#139)
+
+   * external/icu/
+8d16bec80 Update Android to tzdb 2020a [Q branch]
+877982cfd Track CLDR-13029 / 2019b changes
+
    * frameworks/base/
 004bd78c388 FOD Animations: convert to webp icons
 cde6c97a975 Wired/BT headset: make ringtone audio focus customizable [1/2]
@@ -389,8 +647,9 @@ b53cb4c4874 Fix WebView vulnerability by disallowing file access
    * lineage-sdk/
 1c3c0432 lineage-sdk: add powershare qs tile
 
-   * packages/apps/Settings/
-db74ebabb4 Settings: Add overlay to disable smart charging
+   * system/timezone/
+15123fa Update Android to tzdb 2020a [Q branch]
+327614e Track CLDR-13029 / 2019b changes
 
    * vendor/bliss/
 2c1be789 vendor: Build CustomDoze for all devices
@@ -398,12 +657,4 @@ db74ebabb4 Settings: Add overlay to disable smart charging
 
    * vendor/support/
 8296e05 support: add GlobalSettingListPreference
-
-====================
-     05-01-2020
-====================
-
-
-   * external/bash/
-aeab988 inputrc: Import from Ubuntu
 
