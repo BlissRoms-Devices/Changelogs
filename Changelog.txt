@@ -1,4 +1,13 @@
 ====================
+     05-17-2020
+====================
+
+
+   * system/extras/
+0a0b6aea mkuserimg_mke2fs.py: Package mke2fs.conf
+679748e6 verity: Update the build rules for verity tools.
+
+====================
      05-16-2020
 ====================
 
@@ -618,43 +627,4 @@ aca56a5 [AWARE] Protect string copy against buffer overflow
 56511c2c privapp-permissions: Update PREVENT_POWER_KEY permission for Camera
 01715ab8 Add default keyguard fod dimens
 2997445f vendor: Allow providing camera server and service
-
-====================
-     05-02-2020
-====================
-
-
-   * bootable/recovery/
-cba1be44 recovery: handle interrupts in apply update menu
-
-   * external/cldr/
-d78ab2b CLDR-13739 tzdata2020a updates (#440) [Q]
-78e187d CLDR-13029 Update windowsZones.xml to 2019b level (#139)
-
-   * external/icu/
-8d16bec80 Update Android to tzdb 2020a [Q branch]
-877982cfd Track CLDR-13029 / 2019b changes
-
-   * frameworks/base/
-004bd78c388 FOD Animations: convert to webp icons
-cde6c97a975 Wired/BT headset: make ringtone audio focus customizable [1/2]
-e8b3b4354a3 Add config to make Smart Charging available on device
-99afa614598 SystemUI: Update fonts for carrier label
-b53cb4c4874 Fix WebView vulnerability by disallowing file access
-7c47599e929 fixup! lockscreen: Add support for showing unlock screen directly
-1b81b84150e SystemUI: Fix oversized battery icon
-
-   * lineage-sdk/
-1c3c0432 lineage-sdk: add powershare qs tile
-
-   * system/timezone/
-15123fa Update Android to tzdb 2020a [Q branch]
-327614e Track CLDR-13029 / 2019b changes
-
-   * vendor/bliss/
-2c1be789 vendor: Build CustomDoze for all devices
-87abafb1 overlay: Update Default wallpaper
-
-   * vendor/support/
-8296e05 support: add GlobalSettingListPreference
 
