@@ -1,4 +1,12 @@
 ====================
+     05-18-2020
+====================
+
+
+   * packages/apps/Settings/
+c3353fc5a8 Settings: Add simple maintainer string
+
+====================
      05-17-2020
 ====================
 
@@ -40,6 +48,8 @@ e7c459a lineage: Assign bash the same label as the default shell
 4abd286 Revert "common: Allow adbd to set a system_prop"
 
    * frameworks/base/
+cfcf1cb8bed fixup! SystemUI: Allow translucent notifications background on lockscreen [1/3]
+b2063d86212 SystemUI: Allow translucent notifications background on lockscreen [1/3]
 9ca66ce8a34 Whitelist settings to use adb root permission
 d6e3813617e ADBRootService: Remove redundant permission check
 72b13823d4b ADBRootService: Deal with binder death
@@ -589,42 +599,4 @@ ad42b5aff43 TypeClock: Align Date widget as per the clock style
 
    * system/core/
 444f4c68e fs_mgr: skip setting rootfs block as ro during mount_all in recovery
-
-====================
-     05-03-2020
-====================
-
-
-   * device/lineage/sepolicy/
-0c38329 sepolicy: add hal_lineage_powershare
-
-   * frameworks/av/
-56f51a433 cameraserver: Fix libcameraserver location
-18db97019 av: Allow providing camera server and service
-
-   * frameworks/base/
-920c0363f32 EdgeBackGestureHandler: Perform edge haptic for both back and long swipe
-91d9aa59c67 StatusBar: call the update method for observer
-db9a2924803 Add isApplicationOnUicc API
-c3206378098 GlobalActions: Fix Airplane mode toggle
-158ade0c95f base: SystemUI: add qs powershare tile
-
-   * hardware/lineage/interfaces/
-b03021d cryptfshw: Introduce QSEECom backend implementation
-4124c8c Revert "cryptfshw: Introduce QTI backend implementation"
-6084619 lineage/interfaces: add powershare HAL
-aca56a5 [AWARE] Protect string copy against buffer overflow
-
-   * packages/apps/Blissify/
-6994e67 Blissify: fix qs battery style hidden
-83f0814 Wired/BT headset: make ringtone audio focus customizable [2/2]
-
-   * packages/services/Telephony/
-5d68d4c38 fixup! Add isApplicationOnUicc API
-42d9760e2 Add isApplicationOnUicc API
-
-   * vendor/bliss/
-56511c2c privapp-permissions: Update PREVENT_POWER_KEY permission for Camera
-01715ab8 Add default keyguard fod dimens
-2997445f vendor: Allow providing camera server and service
 
