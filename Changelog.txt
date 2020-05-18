@@ -1,4 +1,15 @@
 ====================
+     05-19-2020
+====================
+
+
+   * hardware/qcom-caf/common/
+3b586a8 Don't BUILD_WITHOUT_VENDOR
+
+   * hardware/qcom-caf/sm8150/audio/
+12480be3c a2dp: Add a null check before iterating over a2dp.adev->usecase_list
+
+====================
      05-18-2020
 ====================
 
@@ -586,17 +597,4 @@ d8bc74e Manifest for Android 10.0.0 Release 35
    * vendor/bliss/
 90756896 Merge "Add default keyguard fod dimens" into q10
 28e4034b Merge "vendor: Allow providing camera server and service" into q10
-
-====================
-     05-04-2020
-====================
-
-
-   * frameworks/base/
-ad42b5aff43 TypeClock: Align Date widget as per the clock style
-7847ae2303a base: SystemUI: fix NPE in PowerShareTile
-45dd9fb58ab base: Tune some dimens to make icon spacing on SB equal
-
-   * system/core/
-444f4c68e fs_mgr: skip setting rootfs block as ro during mount_all in recovery
 
