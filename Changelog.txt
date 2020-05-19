@@ -1,4 +1,12 @@
 ====================
+     05-20-2020
+====================
+
+
+   * vendor/themes/
+119a761 themes: nuke drag handle height
+
+====================
      05-19-2020
 ====================
 
@@ -581,20 +589,4 @@ f2c7f0226 Merge tag 'android-10.0.0_r35' of https://android.googlesource.com/pla
 9f5793b6 vendor: define CustomDoze in overlay as default doze package
 0c2317e7 versions: Bump to BlissRoms v12.7 Release
 132d536c bootanimation: Update bootanimation and Fix Glitches
-
-====================
-     05-05-2020
-====================
-
-
-   * lineage-sdk/
-082c3c6b lineage-sdk: NetworkTraffic: Cleanup network callback
-
-   * manifest/
-d8bc74e Manifest for Android 10.0.0 Release 35
-3900458 Manifest for Android 10.0.0 Release 34
-
-   * vendor/bliss/
-90756896 Merge "Add default keyguard fod dimens" into q10
-28e4034b Merge "vendor: Allow providing camera server and service" into q10
 
