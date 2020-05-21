@@ -1,12 +1,76 @@
 ====================
+     05-22-2020
+====================
+
+
+   * frameworks/base/
+491f2e9310f base: Extended suspend actions (1/3)
+01fd3409826 base: Suspend Actions [1/3]
+7a01465dc27 base: notch-city: Add 3 mode display cutout handler
+88918a81508 BlissUtils: update notch check logic
+ec0b38f11ef Revert "fwb: Add hide notch support [1/2]"
+b78829ce5f3 Fix NPE when resizing with transferring focus failed
+4c6a8444f91 Fix freeform window moving/resizing doesn't work
+a4b85185669 Revert "Freedom windows: fix drag [1/2]"
+e5e05fb9c08 fixup - Camera: Ignore torch status update for aux or compsite camera
+22da4787115 camera: Support exposing aux camera to apps
+095a83ed1f4 Camera: Cleanup aux camera exposing
+47058eb04e0 SystemUI: Check for custom clock plugin before applying text clock
+653237487c0 SystemUI: CustomTextClock Size and font
+2eaa5383d55 SystemUI: Custom Text Clock Customizations [1/2]
+6d4efbfa3f2 Lockscreen Clock Styles: Introduce Q style text clock [1/2]
+895971d3630 base: Make IME button space optional [1/2]
+5c75699f152 Revert "SystsmUI: gesture mode navbar nitpick"
+faee5d16741 Gesture nav toggle: show IME when needed and improve code
+f81a4600d0f Allow to hide navigation bar gesture completely [1/2]
+43e0c92fac3 Revert "base: Hide pill in full gestural nav mode [1/2]"
+
+   * packages/apps/Blissify/
+4c5178c Blissify: Add icon for slim recents
+6ee5b81 Blissify: Add 3 mode display cutout handler [3/3]
+46250dc Blissify: Hide ticker settings for notch devices
+d4cc440 Blissify: cleanup suspend actions
+066b326 Blissify: Extended suspend actions (3/3)
+5187cbe Blissify: Suspend Actions [3/3]
+
+   * packages/apps/Settings/
+41eebfd0d4 Revert "Settings: Add hide notch support [2/2]"
+1be1fd9e18 Settings: improve back gesture options dialog layout
+4c243f981d Settings: Make IME button space optional [2/2]
+
+====================
      05-21-2020
 ====================
 
+
+   * frameworks/base/
+0a283c2e6eb BlissUtils: Add method to detect whether overlay is enabled
+6558d3b5eb7 SettingsLib: Allow Skia Vulkan to be used as HW renderer
+f8649c4e43f Revert "Revert "Add developer setting to set the default GPU renderer.""
+e0f9b0f741b RecordingService: Catch IllegalStateException
+be76d1178d8 SystemUI: Initialize proper visibility for notification icons container
+
+   * packages/apps/Blissify/
+9d97aee [HACK]: Remove text clock when a custom plugin clock is applied
+
+   * packages/apps/Settings/
+c699b350ce Settings: simplify gesture navbar toggle
+0715da9dfc Allow to hide navigation bar gesture completely [2/2]
+0673791559 Revert "Settings: Hide pill in full gestural nav mode [2/2]"
+09c1a411cd Revert "Settings: Move the hide pill toggle to gesture settings dialog"
+ff73c92c63 Revert "Revert "Add developer setting to set the default GPU renderer.""
 
 ====================
      05-20-2020
 ====================
 
+
+   * packages/services/Telephony/
+d28ce97ab Extended suspend actions (2/3)
+c497cf4b9 Suspend Actions [2/3]
+
+   * vendor/bliss/
+ab09899e vendor: notch-city: Add 3 mode display cutout handler
 
    * vendor/themes/
 119a761 themes: nuke drag handle height
@@ -27,6 +91,12 @@
 ====================
 
 
+   * frameworks/base/
+1f38262884f Statusbar Clock Customization [1/2]
+
+   * packages/apps/Blissify/
+f732941 Blissify: Custom Text Clock Customizations [2/2]
+
    * packages/apps/Settings/
 c3353fc5a8 Settings: Add simple maintainer string
 
@@ -34,6 +104,9 @@ c3353fc5a8 Settings: Add simple maintainer string
      05-17-2020
 ====================
 
+
+   * packages/apps/Blissify/
+07dde38 Statusbar Clock Customization [2/2]
 
    * system/extras/
 0a0b6aea mkuserimg_mke2fs.py: Package mke2fs.conf
@@ -451,10 +524,6 @@ b330f71 bashrc: Add `ll` alias
    * packages/apps/Eleven/
 89a9397 Eleven: Move to /product
 
-   * packages/apps/Snap/
-813ca62f1 Move Snap and its libs to /product
-bda901371 Snap: Add privapp permissions xml
-
    * vendor/themes/
 1f57d6d themes: Kang La Fontage from Bootleggers [2/2]
 0d5c8fb themes: increase footer end padding
@@ -481,6 +550,10 @@ a28db699f wifi_hal: add slsi wifi hal support
    * packages/apps/Eleven/
 049d349 Eleven: Add privapp permissions xml
 
+   * packages/apps/Snap/
+813ca62f1 Move Snap and its libs to /product
+bda901371 Snap: Add privapp permissions xml
+
    * prebuilts/build-tools/
 f068d8b Use an updated version of toybox from du ab/6416774
 
@@ -504,23 +577,4 @@ af60853 themes: overlay: set default qs_header_tile_margin_horizontal to 13dp
 
    * bootable/recovery/
 2070c421 minui: Allow skipping EV_REL input devices.
-
-====================
-     05-07-2020
-====================
-
-
-   * frameworks/base/
-e1ba801d954 Don't change public API
-4c9aabce39c Phone ringtone setting for Multi SIM device
-3c3c9ab8765 Revert "base: Phone ringtone setting for Multi SIM device [1/3]"
-
-   * packages/apps/AudioFX/
-1b01d61 AudioFX: Add privapp permissions xml
-
-   * packages/apps/FMRadio/
-720ac70 FMRadio: Add privapp permissions xml
-
-   * packages/services/Telecomm/
-29db3002 Phone ringtone setting for Multi SIM device
 
