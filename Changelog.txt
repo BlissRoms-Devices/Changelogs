@@ -1,4 +1,20 @@
 ====================
+     05-24-2020
+====================
+
+
+   * frameworks/base/
+70a8f54fdbd SystemUI: Prevent loop with display timeout
+9ad13431024 SystemUI: Improve custom text clock allignment code
+
+   * packages/apps/Blissify/
+c80fd9f Blissify: change clock style summary properly
+
+   * packages/apps/Settings/
+888d3de70a Settings: force enable ime space for 2/3 button navbar
+79796503c8 Settings: Improve gesture navigation handle length [2/2]
+
+====================
      05-23-2020
 ====================
 
@@ -12,7 +28,6 @@ ab45f095aec base: Add support to disable h265 on screenrecorder
 63e297b Blissify: reset values to default after switching from notch hide to normal
 
    * packages/apps/Settings/
-1a9abf3dc5 Settings: Improve gesture navigation handle length [2/3]
 f253456b9d Revert "Settings: Add hide notch support [2/2]"
 725e44c25a Settings: improve back gesture options dialog layout
 ee75c045e7 Settings: Make IME button space optional [2/2]
@@ -538,47 +553,4 @@ b330f71 bashrc: Add `ll` alias
    * vendor/themes/
 1f57d6d themes: Kang La Fontage from Bootleggers [2/2]
 0d5c8fb themes: increase footer end padding
-
-====================
-     05-09-2020
-====================
-
-
-   * frameworks/base/
-c9af604675b FODCircleView: Let us call show() when mIsBouncer() && !isPinOrPattern()
-7ba9ee68eab PowerManager: Move custom API definition to end of AIDL
-8fa50a82d3c SystemUI: Make sure notification icons are sticked to the left
-dc3bb63fdbb TypeClock: Fix padding and gravity
-
-   * frameworks/opt/net/wifi/
-a28db699f wifi_hal: add slsi wifi hal support
-
-   * frameworks/opt/telephony/
-1cb0a371f Split uicc records loading in two groups.
-2dcf3ec7d Fetching IMSI from RUIM properly
-9fc38c0aa Fix wrong APN list issue for multimode SIM cards.
-
-   * packages/apps/Eleven/
-89a9397 Eleven: Move to /product
-049d349 Eleven: Add privapp permissions xml
-
-   * packages/apps/Snap/
-813ca62f1 Move Snap and its libs to /product
-bda901371 Snap: Add privapp permissions xml
-
-   * prebuilts/build-tools/
-f068d8b Use an updated version of toybox from du ab/6416774
-
-   * vendor/themes/
-986d6c3 [2/2] overlay: change layout of keyguard status slice view
-fc5fe8d themes: increase qs_panel_padding_top to prevent overlap of brightness with header
-ab044c6 themes: reduce qs footer height
-01a332f themes: cleanup SystemUI dimens overlay
-908d9cf themes: change default corner size to 8dp
-263ef28 themes: overlay: set power menu and volume dialog corner to same as system
-52a9267 themes: reduce default size of quick_qs_offset_height
-7240602 [2/2] overlay: header image tweaks
-be98a23 [4/4] overlay: qs status bar header image
-af60853 themes: overlay: set default qs_header_tile_margin_horizontal to 13dp
-68a65f8 themes: overlay: dimen tweaks
 
