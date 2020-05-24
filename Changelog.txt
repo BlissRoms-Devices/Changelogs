@@ -1,4 +1,12 @@
 ====================
+     05-25-2020
+====================
+
+
+   * external/bash/
+5f857b9 bashrc: Use full current working directory path for root as well
+
+====================
      05-24-2020
 ====================
 
@@ -7,12 +15,33 @@
 70a8f54fdbd SystemUI: Prevent loop with display timeout
 9ad13431024 SystemUI: Improve custom text clock allignment code
 
+   * packages/apps/AudioFX/
+9e0dcdc Automatic translation import
+
    * packages/apps/Blissify/
 c80fd9f Blissify: change clock style summary properly
+
+   * packages/apps/Eleven/
+5946f79 Automatic translation import
+
+   * packages/apps/Jelly/
+00e64bf Automatic translation import
+
+   * packages/apps/Recorder/
+a2e9b40 Automatic translation import
 
    * packages/apps/Settings/
 888d3de70a Settings: force enable ime space for 2/3 button navbar
 79796503c8 Settings: Improve gesture navigation handle length [2/2]
+
+   * packages/apps/Snap/
+31f7b4de4 Automatic translation import
+
+   * packages/resources/devicesettings/
+fe24103 Automatic translation import
+
+   * vendor/qcom/opensource/fm-commonsys/
+11158ac Automatic translation import
 
 ====================
      05-23-2020
@@ -538,19 +567,4 @@ a32aafa bpf: change how we detect device bpf support level
 a7756ac9 overlay: Set default AOSP app providers
 bcf8e89c Add multiple topics support to repopick
 fc182536 Revert "overlay: Add GooglePermissionControllerOverlay"
-
-====================
-     05-10-2020
-====================
-
-
-   * development/
-a9dcc4229 privapp_permissions: Check product privapp_permissions
-
-   * external/bash/
-b330f71 bashrc: Add `ll` alias
-
-   * vendor/themes/
-1f57d6d themes: Kang La Fontage from Bootleggers [2/2]
-0d5c8fb themes: increase footer end padding
 
