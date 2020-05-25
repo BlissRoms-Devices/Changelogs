@@ -1,10 +1,123 @@
 ====================
+     05-26-2020
+====================
+
+
+   * device/lineage/sepolicy/
+0f25864 sepolicy: Adress apexd denial
+0fb680b sepolicy: Fix OTA on encrypted f2fs.
+f02daf9 bliss: common: add rules for RGB/HSL accentpicker & Gradient picker
+32fd51c Allow Snap cam access for gpu service
+2b6c40b sepolicy: Allow system_server to read and write to sysfs_battery_supply
+7e902f6 sepolicy: Smart Charging (3/4)
+c7d4696 sepolicy: Add sepolicy for Bliss OTA Updater
+6a31f3d sepolicy: Allow CPUInfo access to thermal sysfs
+d02100c Add .gitreview
+
+   * device/qcom/sepolicy/
+46d98a17 sepolicy: Unlabel aux camera whitelist prop
+
+   * device/qcom/sepolicy-legacy-um/
+472aa62 sepolicy: Unlabel aux camera whitelist prop
+11e1118 Sepolicy: add define for lksecapp vbmeta and dtbo
+
+   * frameworks/av/
+927502b89 CamcorderProfiles: Add 8KUHD camcorder profile
+77c3d4508 Camera: Add support for manual 3A.
+5d01f93a2 camera: allow device to append camera parameters
+7ca3704e0 libcameraservice: Don't pass NULL args on setCallbacks call
+58f764dfb audiopolicy: Fixes for internal audio recording
+e3c26d235 av: modify product soong variables
+5d3aa61e3 GraphicBufferSource: ensure EOS buffer can be submitted
+46c76fccf libstagefright: Allow HFR-60 in HAL-3 recording
+48902ad6f audio: add support for error handling of dsp SSR
+b808a2b4a aaudio: set primary flag for AAUDIO_PERFORMANCE_MODE_NONE
+3d22166d0 Fix memory leak in MPEG2PSExtractor
+4b716ef23 Fix native exception occurred when seeking mp4 file
+349d87675 Fix out of bounds access
+7f0ee8965 validate width*height doesn't overflow in image file
+58d5b5b30 Fix exception when delete an uninitialized object
+df7befeb4 codec2: read fallback ION params from system properties
+26e8d1589 mTraits is used without been locked
+d2766e2b0 codec2: fallback to yuv420p color format thumbnail in C2
+121a76d26 vorbisdec: support 192Khz sample rate for vorbis
+e28757c89 aacenc: handle and warn overlapping timestamps
+5cac78db1 cameraserver: Fix libcameraserver location for NO_CAMERA_SERVER
+ec443383b cameraserver: Fix libcameraserver location
+e76b99c4e av: Allow providing camera server and service
+d952f65fe [2/2] av: Remove restrictions for system audio record
+841b49e51 Camera: Skip stream size check for whitelisted apps.
+081a0b372 ld.config: add libashmemd_client.so to platform shared libs
+e2dd9d04f av: camera: Allow disabling shutter sound for specific packages
+bf1788278 cameraservice: move client_package_name to data/misc
+87f9a26a1 libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO
+
+   * hardware/interfaces/
+f6ab11140 interfaces: modify soong product variables
+8f8c10672 Fix build errors.
+
+   * hardware/lineage/interfaces/
+18589a6 modify soong product variable
+
+   * manifest/
+0417260 manifest: Track more repos from lineage
+
+   * packages/apps/Contacts/
+ce619c7d4 Merge 'lineage-17.1' into q
+
+   * packages/apps/DeskClock/
+e5baf8f75 Merge 'lineage-17.1' into q
+
+   * packages/apps/Dialer/
+b0457caa5 Dialer: allow framework to do dark theming automatically
+5bd572ad5 Updated target SDK from 28 to 29.
+
+   * packages/apps/DocumentsUI/
+beff17bc2 Merge 'lineage-17.1' into q
+
+   * packages/apps/Nfc/
+ee06c7df Merge 'lineage-17.1' into q
+
+   * packages/apps/PermissionController/
+980a1e2d Merge 'lineage-17.1' into q
+
+   * packages/providers/DownloadProvider/
+9fce37eb Merge 'lineage-17.1' into q
+
+   * packages/providers/MediaProvider/
+d1d446d Merge 'lineage-17.1' into q
+
+   * system/bt/
+78d9828da Bluetooth: Support to know if there is High Def call
+
+   * system/sepolicy/
+863fc01b Allow adb start/stop mdnsd via ctl.start/stop
+3fae4eba sepolicy: Relabel wifi. properties as wifi_prop
+
+   * system/vold/
+c25cef2 vold: modify soong product variables
+
+   * vendor/bliss/
+89550191 extract_utils: Fix vendor Android.bp creation with subdirectory
+f87f0972 BoardConfigQcom: Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES
+
+====================
      05-25-2020
 ====================
 
 
    * external/bash/
 5f857b9 bashrc: Use full current working directory path for root as well
+
+   * packages/apps/Contacts/
+f4b3f273d Contacts: manually configure dark theme for list
+81ebd00f9 Contacts: allow framework to do dark theming automatically
+991dae2e2 AOSP/Contacts - Updated to sdkVersion 29.
+
+   * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
+a1d7de50 Fix style name DialogAlertDayNight
+f48a631d Add dark mode support for AlertDialog
+63a7284e Migrated Nfc to androidx
 
 ====================
      05-24-2020
@@ -20,6 +133,13 @@
 
    * packages/apps/Blissify/
 c80fd9f Blissify: change clock style summary properly
+
+   * packages/apps/Bluetooth/
+837b47f2 Bluetooth string: removed id="sender" in bt_sm_2_1_
+3aea9ee5 translate="false" -> translatable="false"
+
+   * packages/apps/Contacts/
+681987983 Automatic translation import
 
    * packages/apps/Eleven/
 5946f79 Automatic translation import
@@ -186,22 +306,6 @@ ff7c53405 Compute the needed shared libs for otatools.
 7c12b6867 Remove unused shared libs from otatools.
 70f3a5f79 Update the references to verity tools.
 
-   * device/lineage/sepolicy/
-c5b09d4 sepolicy: recovery: fix neverallows
-2064d3e sepolicy: recovery: allow reading fbe key version
-f18cdf1 sepolicy: recovery: allow mounting of internal storage
-419e8a3 sepolicy: recovery: allow mounting of usb storage
-50eb4e7 sepolicy: recovery: Allow volume manager write to /sys/*/uevent
-5b30072 sepolicy: recovery: Add policy for /dev/block/volmgr
-aad84c6 sepolicy: recovery: Fix the volume manager blkid.tab denial
-e5fa42d sepolicy: recovery: Allow reading proc_filesystems
-6a8f367 sepolicy: recovery: Add policy for volume manager
-e7c459a lineage: Assign bash the same label as the default shell
-28bb8b6 Revert "Label lineage.service.adb.root as system prop"
-43cd901 sepolicy: qcom: Label custom FM Radio property
-5b53bed sepolicy: allow adbroot service to change adb root status
-4abd286 Revert "common: Allow adbd to set a system_prop"
-
    * frameworks/base/
 cfcf1cb8bed fixup! SystemUI: Allow translucent notifications background on lockscreen [1/3]
 b2063d86212 SystemUI: Allow translucent notifications background on lockscreen [1/3]
@@ -295,6 +399,10 @@ c61824ca Build adb_root
      05-15-2020
 ====================
 
+
+   * device/lineage/sepolicy/
+f96e6b6 common: Expose aux camera {black,white}list props
+e2d01a8 Revert "Label lineage.service.adb.root as system prop"
 
    * frameworks/base/
 837eb053df1 SystemUI: Move charging animation above FOD icon if In-display fingerprint is active
@@ -509,10 +617,6 @@ ff8f2f9 themes: SystemUI: remove qs_panel_padding_top
 ====================
 
 
-   * device/lineage/sepolicy/
-64879de Revert "sepolicy: Add rules for Long screenshot service"
-1f0fd2f qcom: Add legacymm livedisplay sepolicy
-
    * packages/apps/Blissify/
 a5b49d4 Blissify: add reset routine for slim recents
 
@@ -530,41 +634,4 @@ f7bcb4fe extract_utils: Handle Brotli compressed block image
 9439a4a8 extract_utils: Support odm/product/vendor partition for zip extract
 8aa345dc Merge "prebuilts: Add SoundPickerPrebuilt" into q10
 77e3263d prebuilts: Add SoundPickerPrebuilt
-
-====================
-     05-11-2020
-====================
-
-
-   * external/asus/stitchimage/
-25d6b05 Automatic translation import
-
-   * frameworks/av/
-76046ba73 cameraserver: Fix libcameraserver location for NO_CAMERA_SERVER
-
-   * frameworks/base/
-0c451887222 SystemUI: Hide date widget by default for some clocks
-be1f08fc21d Revert "Fix deletion of VkSemaphores in VulkanManager."
-753f313a8f7 SystemUI: Add new fonts to clock/date/carrier label [1/2]
-cd092f2cfe9 SystemUI: Add option to show/hide lockscreen clock [1/2]
-0b360fe02e5 SystemUI: Lockscreen clock styles: Add sammy accent hour clock [1/2]
-9c94a25e71e Revert "SystemUI: add nerves clock"
-c07b265ba53 base: Kang La Fontage from Bootleggers [1/2]
-bfdeaa8e915 Revert "Reland "Apply front scrim to doze pulsing""
-34d9972b124 Revert "Fix AoD front scrim being opaque at DOZE_PULSING."
-dcf759465ed FODCircleView: Fix position on keyguard if cutout is hidden
-fc333cb02e8 FODCircleView: Fix position if cutout is hidden
-
-   * packages/apps/Blissify/
-77fca53 Revert "Blissify: Add shishu nerves clock [2/2]"
-caf5dbe Blissify: Add new fonts to clock/date/carrier label [2/2]
-cf0759a Blissify: Add option to show/hide lockscreen clock [2/2]
-
-   * system/bpf/
-a32aafa bpf: change how we detect device bpf support level
-
-   * vendor/bliss/
-a7756ac9 overlay: Set default AOSP app providers
-bcf8e89c Add multiple topics support to repopick
-fc182536 Revert "overlay: Add GooglePermissionControllerOverlay"
 
