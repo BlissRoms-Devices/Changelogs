@@ -1,7 +1,38 @@
 ====================
+     05-27-2020
+====================
+
+
+   * frameworks/base/
+9be16d7a187 Merge "bluetooth: fix communication / icon after clean flash and first pairing" into q
+b7d57120de0 SystemUI: Update Bluetooth battery level assets
+3ea5326ecca SystemUi: Cleanup bluetooth battery level commits
+2cf59ed4701 bluetooth: fix communication / icon after clean flash and first pairing
+
+   * manifest/
+5ff9e18 manifest: track our fork of apps/Bluetooth
+
+   * packages/apps/Bluetooth/
+dff4f5e4 Add .gitreview
+f416d395 headset: fix AT +XAPL messages reponse for devices that use APPLE protocol
+
+   * packages/apps/Dialer/
+234a9b9a6  Failed to show hold call when user click swap and merge simultaneously
+6a485855e AOSP/Dialer - Fix improperly formatted resource string in Dialer across many languages.
+0db9af4b7 Fix the issue that automatic mute state remains ON after adding VT call
+760ebfb5e Fix error case which session change request failed when pausing video
+070a52ba4 Fix for button flickering issue when video call screen rotates
+25ab29663 Fix to update peer dimensions when video screen resumes foreground
+0c1f107a8 Fix issue that the hold label is not shown during remote video holding
+51dcf6087 Fix preview image overlaps a call button during video call
+
+====================
      05-26-2020
 ====================
 
+
+   * bionic/
+e6418c875 android_getaddrinfo_proxy: fix memory leak on failure.
 
    * device/lineage/sepolicy/
 0f25864 sepolicy: Adress apexd denial
@@ -51,6 +82,9 @@ d952f65fe [2/2] av: Remove restrictions for system audio record
 e2dd9d04f av: camera: Allow disabling shutter sound for specific packages
 bf1788278 cameraservice: move client_package_name to data/misc
 87f9a26a1 libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO
+
+   * frameworks/native/
+5e6356c57 Revert "Freedom windows: fix drag [2/2]"
 
    * hardware/interfaces/
 f6ab11140 interfaces: modify soong product variables
@@ -611,27 +645,4 @@ c63078e8 Merge "Revert "Add default keyguard fod dimens"" into q10
 
    * vendor/themes/
 ff8f2f9 themes: SystemUI: remove qs_panel_padding_top
-
-====================
-     05-12-2020
-====================
-
-
-   * packages/apps/Blissify/
-a5b49d4 Blissify: add reset routine for slim recents
-
-   * packages/apps/FMRadio/
-4ca9c40 FMRadio: add BOARD_HAVE_SLSI_FM guard
-
-   * vendor/bliss/
-1176b800 vendor: Build StitchImage
-dd9e2c2a Revert longshot for stitch image
-f531f44b config: Move permission xml to apps
-6d65464a config: Remove unused Recorder privapp permissions
-1601d7bf Revert "Add rules for non platform apps that use hidden APIs"
-259a7322 config: Don't copy weather permission xml
-f7bcb4fe extract_utils: Handle Brotli compressed block image
-9439a4a8 extract_utils: Support odm/product/vendor partition for zip extract
-8aa345dc Merge "prebuilts: Add SoundPickerPrebuilt" into q10
-77e3263d prebuilts: Add SoundPickerPrebuilt
 
