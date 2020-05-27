@@ -1,9 +1,61 @@
 ====================
-     05-27-2020
+     05-28-2020
 ====================
 
 
    * frameworks/base/
+67a4d7af242 SystemUI: fix clocks visibility
+85b53494191 bluetooth: fixup! communication / icon after clean flash and first pairing
+f8437be1088 Fix other lights when backlight uses SurfaceController API
+ef18dbefae1 translate="false" -> translatable="false"
+e3a146c739b Add Light/Dark theme for bugreport warning dialog
+903f01e3b94 Fix bugreport warning dialog
+aea658048c3 Tuner: Remove most keys from blacklist
+
+   * manifest/
+d67f915 manifest: Track our external/skia
+
+   * packages/apps/Blissify/
+d74424e DeviceUtils: Add helper methods to retrieve device's key capabilities
+4d94bdb Buttons: Hide arrow keys option if gestural mode is enabled
+6299878 Buttons: Dynamically hide/show navigation preferences
+
+   * packages/apps/Messaging/
+2d8a154 Messaging: fix dark mode ExpandableListView e.g. vcf card attachment
+d25d895 Messaging: fix dark theme of settings dialogs
+ac23ecc Messaging: use config_dialogCornerRadius for contacts popup
+df2429a Messaging: Adapt night mode for new changes
+c344378 Dark theme: Clean up
+4a9182b Messaging: add night mode
+
+   * packages/apps/Settings/
+7c0a543c5b Revert "Slices: use the same string for BT and Wifi master switch"
+bb133d11f8 Disable dashboards conditions and suggestions (3/3)
+f153ec96f7 Fixes ApnEditor not restoring previous UI
+e8ff675f29 Fix volume slider color is not correct
+ddb56ae8e1 translate="false" -> translatable="false"
+6d7c587d0f Automatic translation import
+29c1a1987a hardwareinfo: Hide hardware revision if empty
+34b0540930 Preserve icon for "manage space"
+
+   * vendor/themes/
+c5dd85a themes: SystemUI: increase system icons keyguard padding
+
+====================
+     05-27-2020
+====================
+
+
+   * external/skia/
+9b8c9c8fd1 Allow to rebind GL texture if AHB content has changed
+893e92ab24 restore _DXDY image shader on ARM
+
+   * frameworks/base/
+c6c5060ac99 TunerServiceImpl: Prevent Lineage keys from tuner reset
+c1d689514e2 TextureView rebind GL texture, if AHB content has changed
+c2e62ec7833 Start process of next activity with top priority in advance
+ab41c8f6fc6 Revert "cgroup follow for procs in the same cgroup.procs"
+febf291f856 Don't send interaction hint for unnecessary events
 9be16d7a187 Merge "bluetooth: fix communication / icon after clean flash and first pairing" into q
 b7d57120de0 SystemUI: Update Bluetooth battery level assets
 3ea5326ecca SystemUi: Cleanup bluetooth battery level commits
@@ -25,6 +77,13 @@ f416d395 headset: fix AT +XAPL messages reponse for devices that use APPLE proto
 25ab29663 Fix to update peer dimensions when video screen resumes foreground
 0c1f107a8 Fix issue that the hold label is not shown during remote video holding
 51dcf6087 Fix preview image overlaps a call button during video call
+
+   * packages/apps/Messaging/
+dc669ad Messaging - Breathing missedcall/sms/voicemail [4/5]
+79312c3 Add .gitreview
+
+   * system/core/
+4458ee37e Allow to drop existing fd cache of cgroup path
 
 ====================
      05-26-2020
@@ -148,6 +207,17 @@ f4b3f273d Contacts: manually configure dark theme for list
 81ebd00f9 Contacts: allow framework to do dark theming automatically
 991dae2e2 AOSP/Contacts - Updated to sdkVersion 29.
 
+   * packages/apps/Messaging/
+a59d697 Import translations. DO NOT MERGE
+bdacda4 Rescheduling pending messages after outside window failure
+398ad51 Fix NPE on MultiConversationNotificationState
+e3485c1 Hide APN prefs if platform APIs are used
+2af21a4 Use ic_add_white for consistency instead
+f730ce2 Fix to show APN prefs correctly
+446e3a7 Fix NPE
+7e2d9a0 Handle delivered messages as completed messages
+d07c5ef Messaging: Contact Colors
+
    * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
 a1d7de50 Fix style name DialogAlertDayNight
 f48a631d Add dark mode support for AlertDialog
@@ -186,7 +256,6 @@ a2e9b40 Automatic translation import
 
    * packages/apps/Settings/
 888d3de70a Settings: force enable ime space for 2/3 button navbar
-79796503c8 Settings: Improve gesture navigation handle length [2/2]
 
    * packages/apps/Snap/
 31f7b4de4 Automatic translation import
@@ -211,6 +280,7 @@ ab45f095aec base: Add support to disable h265 on screenrecorder
 63e297b Blissify: reset values to default after switching from notch hide to normal
 
    * packages/apps/Settings/
+79796503c8 Settings: Improve gesture navigation handle length [2/2]
 f253456b9d Revert "Settings: Add hide notch support [2/2]"
 725e44c25a Settings: improve back gesture options dialog layout
 ee75c045e7 Settings: Make IME button space optional [2/2]
@@ -298,6 +368,11 @@ ab09899e vendor: notch-city: Add 3 mode display cutout handler
    * hardware/qcom-caf/sm8150/audio/
 12480be3c a2dp: Add a null check before iterating over a2dp.adev->usecase_list
 
+   * packages/apps/Messaging/
+3aa027c Messaging: disable auto dark theming on message bubble
+7f855cc Messaging: allow framework to do dark theming automatically
+924731e Messaging: bump target SDK version to 29
+
 ====================
      05-18-2020
 ====================
@@ -361,6 +436,9 @@ e564861 manifest: Track lineage external/ppp
 
    * packages/apps/Blissify/
 f24edc2 Blissify: add Dasbhboard condition strings from settings
+
+   * packages/apps/Messaging/
+24bb01e Messaging: Fix sysconfig whitelist filename
 
    * packages/apps/Settings/
 6fca535e8d Settings: notifications: move some preferences out of advanced
@@ -602,47 +680,4 @@ c3fd8eb3 vendor: Build sqlite3
 00cee305 Add product_launched_with_j{,_mr1,mr2}.mk
 e0b8f12a tasks: kernel: Clarify prebuilt kernel deprecation notice
 85dfa412 kernel: Allow specifying a custom linker binary
-
-====================
-     05-13-2020
-====================
-
-
-   * frameworks/base/
-9cd49b7d43d charger: don't show animation when unplugging
-98d7a69e734 FOD: apply bottom padding only when fod icon is showing
-bf5ccbad48a SystemUI: Add required priv-app permissions
-91030bb8cbe StitchImageUtility: Fix editor on multi user
-ca2b79b0e0f fwb: Port long screenshot implementation from Asus
-290173b6aef Revert longshot for asus stitch image
-3c02702ddb0 [1/2] SystemUI: change layout of keyguard status slice view
-
-   * lineage-sdk/
-0de23b4c LineageSettingsProvider: Add privapp permissions xml
-a52002c9 sdk: Remove weather from default services
-
-   * manifest/
-875bb7a track and add LOS Snap Camera (1/2)
-86a626f Track StitchImage
-
-   * packages/apps/Dialer/
-200ad03f2 Dialer: Add extra privapp permissions xml
-
-   * packages/apps/Launcher3/
-9afdcc780 Launcher3: Add extra privapp permissions xml
-
-   * packages/apps/LineageParts/
-fbca85b LineageParts: Add privapp permissions xml
-b6b9bd6 LineageParts: Migrate to Android.bp
-
-   * packages/apps/Recorder/
-b0f788c Revert "ScreenService: start recording on a background Thread"
-
-   * vendor/bliss/
-df36c1e4 vendor: build snap
-c63078e8 Merge "Revert "Add default keyguard fod dimens"" into q10
-6f03202e Revert "Add default keyguard fod dimens"
-
-   * vendor/themes/
-ff8f2f9 themes: SystemUI: remove qs_panel_padding_top
 
