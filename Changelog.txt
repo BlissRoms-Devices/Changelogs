@@ -1,4 +1,13 @@
 ====================
+     05-29-2020
+====================
+
+
+   * build/soong/
+811968f3 soong: arch.go: add support for kryo300
+42e60b18 soong: use -mcpu=cortex-a55 for kryo300 and kryo385
+
+====================
      05-28-2020
 ====================
 
@@ -256,6 +265,7 @@ a2e9b40 Automatic translation import
 
    * packages/apps/Settings/
 888d3de70a Settings: force enable ime space for 2/3 button navbar
+79796503c8 Settings: Improve gesture navigation handle length [2/2]
 
    * packages/apps/Snap/
 31f7b4de4 Automatic translation import
@@ -280,7 +290,6 @@ ab45f095aec base: Add support to disable h265 on screenrecorder
 63e297b Blissify: reset values to default after switching from notch hide to normal
 
    * packages/apps/Settings/
-79796503c8 Settings: Improve gesture navigation handle length [2/2]
 f253456b9d Revert "Settings: Add hide notch support [2/2]"
 725e44c25a Settings: improve back gesture options dialog layout
 ee75c045e7 Settings: Make IME button space optional [2/2]
@@ -660,24 +669,4 @@ b1b9bcb482 Settings: Integrate Blissify into Settings
 b9766f6545 AboutPhone: Add Bliss build date
 5f4a3562ec AboutPhone: Add Bliss version
 74d6a334b3 Add .gitreview
-
-====================
-     05-14-2020
-====================
-
-
-   * frameworks/base/
-f75dee84917 TypeClock: Properly calculate the height
-6cda29d0120 LTE+ indicator not shown when attached to CA network
-756bf4fc538 SystemUI: Make header image height offset user configurable [1/2]
-
-   * packages/apps/Settings/
-827334a163 LanguageAndInputSettings: Hide touch hovering from search if needed
-
-   * vendor/bliss/
-c3fd8eb3 vendor: Build sqlite3
-52048fb1 kernel: Conditionally use dtc from prebuilt
-00cee305 Add product_launched_with_j{,_mr1,mr2}.mk
-e0b8f12a tasks: kernel: Clarify prebuilt kernel deprecation notice
-85dfa412 kernel: Allow specifying a custom linker binary
 
