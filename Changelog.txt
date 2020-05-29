@@ -1,4 +1,30 @@
 ====================
+     05-30-2020
+====================
+
+
+   * frameworks/base/
+2d7c4d86756 OneUI-like settings actionbar [1/3]
+ef08ce6c4f3 SystemUI: Do not convert application name to ISO-8859-15
+634c730d8e2 SystemUI: Blacklist MobileSignalController for tuner
+79f969994b0 Add rounded hexagon icon overlay
+
+   * packages/apps/Blissify/
+5674fe0 OneUI-like settings actionbar [3/3]
+
+   * packages/apps/Settings/
+677948147a Settings: Tweak some search dimens
+b12bd5d90b PanelLayout: use darker color for dark mode background & get rid of dividers
+8a5f915536 For now disable oneui actionbar for submenus
+b183954ff7 OneUI-like settings actionbar [2/3]
+27a26bdb82 Add ScrollView to gesture options dialog
+a22a7863cb Fix NPE if default supervisor is not defined
+8903022ca7 Settings: Battery: Redesign BatteryMeterView
+
+   * vendor/bliss/
+f9a7dd6f vendor: fix building adb root
+
+====================
      05-29-2020
 ====================
 
@@ -515,158 +541,4 @@ a084cecdf init: workaround SafetyNet check
    * vendor/bliss/
 03c568a8 lineage: Add flag for skipping EV_REL input in recovery
 c61824ca Build adb_root
-
-====================
-     05-15-2020
-====================
-
-
-   * device/lineage/sepolicy/
-f96e6b6 common: Expose aux camera {black,white}list props
-e2d01a8 Revert "Label lineage.service.adb.root as system prop"
-
-   * frameworks/base/
-837eb053df1 SystemUI: Move charging animation above FOD icon if In-display fingerprint is active
-d2e1cbf453e Merge changes from topic "header-height" into q
-
-   * manifest/
-f8e4b09 manifest: Track system/bpf from BlissRoms
-
-   * packages/apps/Blissify/
-4ffc07d Blissify: Make header image height user configurable [2/2]
-
-   * packages/apps/LineageParts/
-09f2d43 LineageParts: Fix animation for search results
-f0974ae LineageParts: Profiles: Even more improvements
-6b2c5d5 Trust: Request removal of the notification when disabling the preference
-f8f7c30 LineageParts: Remove obselete PreferenceCategory for LiveDisplay
-0e3a0fe PerfProfileSettings: Hide from search results when there are no profiles
-f6ed457 TouchscreenGestureSettings: Hide from search results if unsupported
-b27585a DeviceUtils: Add helper methods to retrieve device's key capabilities
-c465cfa StatusBarSettings: Fix NW traffic not being properly hidden from search
-e6a8fa2 DeviceUtils: Drop useless cast when calling getSystemService
-d9056f0 LineageParts: Drop no longer necessary casts when calling findPreference()
-aff2639 LineageParts: Remove unavailable entries from search
-
-   * packages/apps/Settings/
-1e0172ab2d Settings: Remove duplicate preferences
-2da1b06780 FeatureFactoryImpl: PowerUsageFeatureProviderGoogleImpl: Catch NameNotFoundException
-302e58f590 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
-b08c49c47b Update raw animations and drawables from Pixel 4 XL
-3e78533110 Settings: Initial import for Pixel-specific feature Settings
-3e59625fcc Settings: add fod option in FP location overlay
-f1bdd0ad91 Settings: Add vibration patterns from OOS and
-a63c2e0c50 Settings: Icons: add DNS icon
-f77d3e970b Settings: Add drawable for Private DNS
-3eedd9df06 Settings: Adaptive brightness: Fix summary fuckery
-59a66a6d1b Settings: Fix settings dashboard summary while warp charging
-a3017fdec5 Settings: Fix settings dashboard summary while dash charging
-8bf107edd7 Settings: Themes: make sure settings shortcut icons follow system accent
-d312742de2 Settings: Desktop backup password: Tint buttons to match system theme
-9afeb28074 Settings: Power detail pages: Finish off the rest of the icon tinting
-e28a390a6b Settings: Fix icon tinting in power detail pages
-8848bd7acc Settings: Fix textApperance of our modified gesture dialog
-56f208abd4 Add primary color picker from Styles & Wallpapers
-b0f4a41e32 Add Statusbar Icon Picker from Styles & Wallpapers
-e1a2ff7fe4 Setting: Add vibration intensities
-5d22fdbadf Settings: Allow to hide arrow for back gesture [2/2]
-8e1b2b6f3c Settings: Fix NPE with customdialogpref for backlight settings
-685d7d2392 Settings: Fixes sound panel create multiple SoundSettings activity
-11bd7bfd30 Settings: Move the hide pill toggle to gesture settings dialog
-005c656e2e Settings: Hide pill in full gestural nav mode [2/2]
-a1e2d6d451 Settings: Use global fonts in styles
-d5eac33943 Settings: Hide long press kill
-b71e741787 Settings: Allow to quickly open Running Services from QS [2/2]
-4a6f524125 Settings: fix hardcoded black text in storage summary
-bafdd4c133 FeatureFactoryImpl: Implement RoutinesActionBroadcastReceiver
-71e462284a Settings: Address a memory leak
-927db9eb99  FeatureFactoryImpl: Initial import of ContextualCardProvider
-535cb32c93 FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
-5582b851d2 FeatureFactoryImpl: ApplicationFeatureProviderGoogleImpl: Remove com.android.packageinstaller from keepEnabledPackages
-37db0f4cf6 Settings: Display 'Warp charging' for warp charge in battery settings [2/2]
-86e0957beb Settings: Display 'Dash charging' for dash charge in battery settings [2/2]
-3f4c8f0cda Battery charge warning [2/2]
-d0c693a5cd Enable fingerprint swipe gestures by default [2/2]
-b28b40f0f4 Settings: Enable App Info Memory Settings
-4d983df49b Settings: Define HAFR Activity [2/3]
-21165792fb Settings: Use same icons for sliders as fw_base
-aebd6545ae Settings: Move custom DP settings under display submenu
-6b422e0e30 AnimationSeekbar: Change default max and digits
-9ef5573ee2 Settings: Convert AnimationScalePreference to CustomDialogPreferenceCompat
-2b1b587e06 Settings: AnimationScale: Fix force close when not using english
-db03a2f473 Settings: Use seekbar to allow setting arbitrary animation values
-fa23d1b090 Settings: Add refresh rate setting [2/2]
-9761dbb7c5 Settings: Add hide notch support [2/2]
-e77a5124ce Revert "Make fingerprint illustrations single color"
-83cde77685 Settings: Add platform and RAM to Model & Hardware
-a6accbf680 Settings: Disable stock battery percent toggle
-27026d31f8 Fix crash when going back from battery
-e9369af8a0 Aosp Ambient music: allow to pulse on new tracks [2/2]
-e93027af94 Bring back Gaming mode [2/3]
-34b0457282 settings: Protect sensitive info on About device
-450ced9a85 fuelgauge: Fix possible memory leaks
-0e5f6e95fa fuelgauge: Implement Early Warnings
-0016c2aac0 fuelgauge: Use Enhanced Battery Prediction from Turbo
-6b2410de96 Port "Battery Usage Alerts" feature from factory images
-2b5cdb0853 Open app when clicking on icon in App Info
-75829f964b Settings: Option to mute media with gesture [2/2]
-a40c56f816 Allow to dismiss notifications with back FP left/right swipe [2/2]
-07cbdda075 Settings: move force dark preference to display settings
-2f40a46107 Settings: Move theming to display settings
-834d8e58df Revert "Remove theming developer settings."
-04cd69a761 Settings: Cleanup
-e53c2bd8ef SoundSettings: Add screenshot sounds settings
-02f857cd97 InstalledApp: show link to Google Play
-23d903fb1e Settings: remove unneeded collapse limits
-79918786b1 SmartCharging: add reset battery stats option [2/2]
-c547ea62b5 SmartCharging: allow user set resume level [2/2]
-2a9466026d Settings: Smart Charging (2/4)
-5f5d8e85a7 Settings: Enable FeatureFlags on "user" builds too
-2c557dde8e Settings: Update some icons to MD2
-356303ad2a DisplaySettings: font size in 5% steps from 80% to 130%
-5f8e80d20c Battery: show battery temp on power summary
-28a52e2eb3 [2/2] Settings: navigation mode settings
-dcc8a7d9c9 fuelgauge: add back battery level animation
-4514d94d82 Settings: move lockscreen media art & visualizer to blissify [2/2]
-7da0b8c512 Display: Move to Blissify [1/2]
-010cbed266 Developer opts: set default notification channel warnings
-c16170e6f1 Settings: Show me more than 4 items in the menus!
-3f55b9540b Settings: disable all bugreport settings
-a17a68b108 Settings: Move Advanced Restart switch to Blissify [1/2]
-cbf6f3388c Settings: disable FLAG_WINDOW_IS_OBSCURED check in accessibility
-1b26a59622 Settings: show battery times in summary
-f45aadef3e Settings: display fstype for mounted volumes
-9294db1ee4 Settings: Reset battery stats [2/2]
-2e840bbe53 PowerUsageSummary: Remove advanced battery menu item
-85d23ab186 Settings: PowerUsageSummary: open advanced usage on header click
-f1281649d8 Keyguard: Forward port lockscreen quick unlock (2/2)
-80b64c96b7 Settings: Use dashboard drawable from Blissify
-f5fa835c07 Include support repo
-9422bf01a3 AmbientDisplay: Add custom pref for devices with custom doze packages
-83de05ec47 Settings: IS_DEBUGGABLE -> IS_ENG
-0006bcf5ba QS dev tiles: Don't set them to active area
-967ad61186 WiFi: Remove country code checking.
-249ab5e93e DevelopmentSettings: Disable automatic updates
-ea3f34ffba Remove feedback and bug report stuff
-31d9a585ff Remove the Automatic ota check option but be sure it's disabled
-c8def124e9 Add back arrow to Desktop backup password
-6087ba7bfe Settings: Add animations on some preferences
-ff958aae6e Settings: Import Adaptive Battery translations from crosshatch
-a0963bde7a FeatureFactoryImpl: Import PowerUsageFeatureProviderGoogleImpl
-4041d85770 FeatureFactoryImpl: Implement ApplicationFeatureProviderGoogleImpl
-69a15e1165 FeatureFactoryImpl: Implement SuggestionFeatureProvider
-d47543f331 FeatureFactoryImpl: Implement SearchFeatureProviderGoogleImpl
-48cd46c0bc FeatureFactoryImpl: Implement AccountFeatureProviderGoogleImpl
-07d64c3d8a Settings: Initial implementation of FeatureFactoryImpl from Pixel
-b1b9bcb482 Settings: Integrate Blissify into Settings
-5d03601e08 Settings: Add BlissUpdater to System dashboard
-2469b6cd18 values: Disable System Updater
-31e1a1a8a2 BlissInfo: Add Bliss logo header
-7fad618ec0 BlissInfo: Add Changelog
-61ba6507f1 Add Bliss Logo to System Dashboard
-997449890c AboutPhone: Add Bliss device
-0f30b79b22 AboutPhone: Add Bliss build status
-b9766f6545 AboutPhone: Add Bliss build date
-5f4a3562ec AboutPhone: Add Bliss version
-74d6a334b3 Add .gitreview
 
