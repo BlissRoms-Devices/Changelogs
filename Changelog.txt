@@ -1,7 +1,41 @@
 ====================
+     05-31-2020
+====================
+
+
+   * frameworks/base/
+bf4060cf39d AlarmManagerService.setKernelTime: fix incorrect limit.
+b60eceb6e5c Check user unlocked before write to /data/system_ce/0/snapshots
+0c70790a884 SystemUI: Fix qs system info text in light theme
+394d45c8de6 QuickStatusBarHeader: minor code improvement
+faf691a1c62 SystemUI: set oneplus slate as default font [1/2]
+
+   * manifest/
+ca3f47b manifest: Track etar
+30841ce android: Move to our own fork of timezonepicker
+a46a416 Remove unused frameworks/opt/datetimepicker
+
+   * packages/apps/Blissify/
+a85bf78 Blissify: set oneplus slate as default font [2/2]
+
+   * packages/apps/SettingsIntelligence/
+f9f40c3 update .gitreview
+f77833e Normalize dynamic search result in Japanese
+f5993b3 Scrolling search results and autorotate cause crash
+eb675ee Fix "null" string displaying in the breadcrumbs of search results.
+ef80771 Correct colors for icons in "Search settings" for dark theme
+
+====================
      05-30-2020
 ====================
 
+
+   * build/soong/
+7a9e85bd configs.go : Allow bison, flex (#3)
+935ee9d2 soong: Whitelist perl usage
+27f2954f Allow the flock for kernel builds
+180293cc Define AArch32 soong variable
+1a46e238 soong : add more tools to paths whitelist
 
    * frameworks/base/
 2d7c4d86756 OneUI-like settings actionbar [1/3]
@@ -11,6 +45,11 @@ ef08ce6c4f3 SystemUI: Do not convert application name to ISO-8859-15
 
    * packages/apps/Blissify/
 5674fe0 OneUI-like settings actionbar [3/3]
+
+   * packages/apps/Etar/
+5673a7e6 Strike through title of canceled events in all views (#278)
+5d071c5a Add `status` field to `Event` class (#71 and #201)
+3db48aff Correct a typo
 
    * packages/apps/Settings/
 677948147a Settings: Tweak some search dimens
@@ -54,6 +93,12 @@ d67f915 manifest: Track our external/skia
 d74424e DeviceUtils: Add helper methods to retrieve device's key capabilities
 4d94bdb Buttons: Hide arrow keys option if gestural mode is enabled
 6299878 Buttons: Dynamically hide/show navigation preferences
+
+   * packages/apps/Etar/
+bafe5a02 Etar: Don't optimize out no-arg Fragment constructors
+5a76d6dc Etar: Enable usage of local proguard.flags file
+7c9c8da0 Accept "application/ics" in ImportActivity intent-filter
+3ffbcb7a Use correct app bar color
 
    * packages/apps/Messaging/
 2d8a154 Messaging: fix dark mode ExpandableListView e.g. vcf card attachment
@@ -203,6 +248,11 @@ b0457caa5 Dialer: allow framework to do dark theming automatically
    * packages/apps/DocumentsUI/
 beff17bc2 Merge 'lineage-17.1' into q
 
+   * packages/apps/Etar/
+27cafb41 Etar: Modify about page
+f3d21700 Etar: Rename package to org.lineageos.etar
+547aeae3 Etar: Switch back to AOSP application name
+
    * packages/apps/Nfc/
 ee06c7df Merge 'lineage-17.1' into q
 
@@ -241,6 +291,11 @@ f87f0972 BoardConfigQcom: Allow a device to opt-out hardset of PRODUCT_SOONG_NAM
 f4b3f273d Contacts: manually configure dark theme for list
 81ebd00f9 Contacts: allow framework to do dark theming automatically
 991dae2e2 AOSP/Contacts - Updated to sdkVersion 29.
+
+   * packages/apps/Etar/
+e52b0927 Etar: adaptive icon
+8a3e3cf6 Say hello to Android.bp and farewell to Android.mk
+5188ba3f Fix retrieving resource ids after --rename-manifest-package (#705)
 
    * packages/apps/Messaging/
 a59d697 Import translations. DO NOT MERGE
@@ -282,6 +337,10 @@ c80fd9f Blissify: change clock style summary properly
 
    * packages/apps/Eleven/
 5946f79 Automatic translation import
+
+   * packages/apps/Etar/
+dd179aa3 Fix export to SD card (#701)
+0da38bc8 Change search provider url
 
    * packages/apps/Jelly/
 00e64bf Automatic translation import
@@ -433,112 +492,4 @@ c3353fc5a8 Settings: Add simple maintainer string
    * system/extras/
 0a0b6aea mkuserimg_mke2fs.py: Package mke2fs.conf
 679748e6 verity: Update the build rules for verity tools.
-
-====================
-     05-16-2020
-====================
-
-
-   * bootable/recovery/
-0c20398b reovery: modify product soong variables
-
-   * build/make/
-33a1fb076 releasetools: Use du -b
-443516eeb Add mke2fs.conf to otatools
-75b3ce4cd Don't package mke2fs.conf in otatools.zip
-ff7c53405 Compute the needed shared libs for otatools.
-7c12b6867 Remove unused shared libs from otatools.
-70f3a5f79 Update the references to verity tools.
-
-   * frameworks/base/
-cfcf1cb8bed fixup! SystemUI: Allow translucent notifications background on lockscreen [1/3]
-b2063d86212 SystemUI: Allow translucent notifications background on lockscreen [1/3]
-9ca66ce8a34 Whitelist settings to use adb root permission
-d6e3813617e ADBRootService: Remove redundant permission check
-72b13823d4b ADBRootService: Deal with binder death
-e1cf76852ed Fix ADB root system API extension
-72d96d5f07c Expose the ADBRoot interface to priv-apps
-
-   * manifest/
-041df71 Merge changes from topic "updates" into q
-089015c Fetch lineage build-tools
-b7aa49c manifest: Switch to lineage fork of e2fsprogs
-82a4330 manifest: Use our forks of e/{cldr,icu} and s/timezone
-453c830 manifest: Sync vendor/qcom/opensource/vibrator
-3f764df manifest: Track additional Pixel 4{,XL} hardware repo
-e564861 manifest: Track lineage external/ppp
-71a5a52 manifest: Track lineage external/gptfdisk
-
-   * packages/apps/Blissify/
-f24edc2 Blissify: add Dasbhboard condition strings from settings
-
-   * packages/apps/Messaging/
-24bb01e Messaging: Fix sysconfig whitelist filename
-
-   * packages/apps/Settings/
-6fca535e8d Settings: notifications: move some preferences out of advanced
-ee3fe84c3b Revert "Add skip lock screen in Notification & security lock screen settings"
-82cef2eef7 Remove the "About phone" avatar
-3ec734d2d1 Animated Bliss Logo in About phone
-af64aa7519 Settings: Make Blissify Dashboard Icon Adaptive
-c6519bf34d Notification log: Increase historical notifications to 100
-e64c0760d3 Notification log improvements
-2dc983902c Expose the notification log
-96681c3e5e DarkMode Settings: Use List Preference rather ugly Drop Down
-adc8ff895c Settings: Adaptive Playback: allow choosing no timeout.
-281d61e55f Settings: Add overlay to disable smart charging
-cae7549167 Searchbar: Clean up code for avatar view
-af89c6dd8a SearchBar: Add avatar to search bar
-60790682b0 Settings: Switch to common build status prop
-c43b1bc33f Settings: Fix Device admin showing empty list
-e7ddea83ea Settings: dashboard suggestions play nice with dark theme
-c41da4c6b4 Settings: Remove these pixel gesture icons
-ec6f212468 [2/2] Settings: Introduce Adaptive Playback
-d333d4916c Settings: Merge extra strings in one file
-813ed605b3 [4/4] Port face unlock feature
-4fd422a582 Settings: Fix carkit can't get phonebook access permission by default.
-f0671fae21 Settings: Fix navigation handle length seekbar theme
-33c82dc4a1 Slices: use the same string for BT and Wifi master switch
-56df65feba Settings: Allow to set default refresh rate value [2/2]
-a062e0de32 Settings: allow for customizing the length of the navigation handle [2/2]
-3bdb7d3fa6 Settings: panels: Fix pair new device icon
-8ea6ccb9cb Settings: add pair new to BT panel slice
-d76bdf6d2e panels: Add Bluetooth panel
-4a4c986071 Revert "Settings: allow for customizing the length of the navigation handle [2/2]"
-5ff4d0e71b Settings: Avoid rendering hidden preferences
-005c3832d7 QS panels: fix data usage display on mobile panel
-6a106da352 QS panels: Improvements
-ad19b378e3 Settings: Elaborate footer note for smart charging
-0c9c4fe8a4 panels: Add Mobile Data panel
-7c49e3d3fc Settings: doze: custom packages have priority
-0e953068a1 Remove legal information from being indexable
-752e8cbbc6 Comment out Legal/Regulatory info
-91bd58d0fd Settings: reword gesture block ime option
-11b58d3360 [2/2] Settings: dont block IME space for back gesture
-043c97310b Settings: Always show last charged time
-2ebb687972 Running services fragment: clean up layout
-42407987c7 Settings: Disable Google Play system update check
-fe643b16df Settings: allow for customizing the length of the navigation handle [2/2]
-35bbec9c51 Settings: add optional back gesture vibration tick [2/2]
-4be9dbc9a2 [2/2] Settings: expose auto night mode sunset and sunriuse values on API
-9afc409366 Revert "Show Styles & Wallpaper in Settings"
-1a0e879caf Settings: Move aosp themeing to Blissify
-
-   * system/core/
-18315a6f1 init: modify product soong variables
-d68280db8 Make GetDeviceLockStatus() favor unlocked devices
-f0994b336 healthd: Add WARP charger type
-0fb8f77b0 Shut up camera and wcnss debug output
-6d88e1d2e Filter GalleryDatab*
-d59f499c1 Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
-161b049e6 init: ro.build.selinux should be 0
-c79d608f0 init: add several more keys to spoof
-a084cecdf init: workaround SafetyNet check
-85142fbb4 init: Weaken property override security for the init extension
-80c2c7e51 LockscreenCharging: squashed (2/3)
-20141e552 Add .gitreview
-
-   * vendor/bliss/
-03c568a8 lineage: Add flag for skipping EV_REL input in recovery
-c61824ca Build adb_root
 
