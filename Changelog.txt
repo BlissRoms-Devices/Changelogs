@@ -1,9 +1,21 @@
 ====================
+     06-01-2020
+====================
+
+
+   * manifest/
+cb30094 manifest: Track Email and UnifiedEmail from lineage
+
+   * vendor/bliss/
+9b4c64d8 config: Build Etar
+
+====================
      05-31-2020
 ====================
 
 
    * frameworks/base/
+c36360c0dcb TypeClock: fix padding after latest changes
 bf4060cf39d AlarmManagerService.setKernelTime: fix incorrect limit.
 b60eceb6e5c Check user unlocked before write to /data/system_ce/0/snapshots
 0c70790a884 SystemUI: Fix qs system info text in light theme
@@ -17,6 +29,9 @@ a46a416 Remove unused frameworks/opt/datetimepicker
 
    * packages/apps/Blissify/
 a85bf78 Blissify: set oneplus slate as default font [2/2]
+
+   * packages/apps/Recorder/
+8f08000 Recorder: Stop service after stopping casting
 
    * packages/apps/SettingsIntelligence/
 f9f40c3 update .gitreview
@@ -71,6 +86,9 @@ f9a7dd6f vendor: fix building adb root
    * build/soong/
 811968f3 soong: arch.go: add support for kryo300
 42e60b18 soong: use -mcpu=cortex-a55 for kryo300 and kryo385
+
+   * hardware/lineage/interfaces/
+ffb73f0 Initial audio amplifier HAL
 
 ====================
      05-28-2020
@@ -480,16 +498,4 @@ f732941 Blissify: Custom Text Clock Customizations [2/2]
 
    * packages/apps/Settings/
 c3353fc5a8 Settings: Add simple maintainer string
-
-====================
-     05-17-2020
-====================
-
-
-   * packages/apps/Blissify/
-07dde38 Statusbar Clock Customization [2/2]
-
-   * system/extras/
-0a0b6aea mkuserimg_mke2fs.py: Package mke2fs.conf
-679748e6 verity: Update the build rules for verity tools.
 
