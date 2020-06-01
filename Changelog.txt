@@ -1,10 +1,40 @@
 ====================
+     06-02-2020
+====================
+
+
+   * frameworks/base/
+4d33bfb8706 SystemUI: Fix NPE when custom clock is null
+675759fd59b SystemUI: Don't forcefully convert wallpaper to SRGB
+42209a99729 Screenshot: inline trigger with AOSP values
+d7089de6003 VolumeDialog: Tint slider and icon to gradient
+0361cc1d919 VolumeDialogImpl: Tint active volume bar with gradient
+2462a777037 base: Improve navigation bar hiding toggle
+b3ca7b09e65 Close file descriptor to avoid socket leak
+41ef3367872 SystemUI: Reset PUK StateMachine after PUK is unlocked
+8444c57918e SystemUI: there is unexpected SIM PIN input dialog.
+7dae3f5c5b6 Purge unused native memory before Zygote fork events
+2a3b2397a7b BGDexopt: Clean up ordering
+3dc19c010d3 Revert "bgdexopt: Let PM handler run between optimizations"
+19bdad2d6b7 RGB Accenter: add more attrs for color changes
+
+   * packages/apps/Snap/
+e5c1bf6d0 Snap: remove duplicate pause button
+a50c2496b CaptureUI: handle secure capture when reviewing pictures
+
+====================
      06-01-2020
 ====================
 
 
    * manifest/
 cb30094 manifest: Track Email and UnifiedEmail from lineage
+
+   * packages/apps/Eleven/
+c0c4647 Eleven: Use constant notification id
+
+   * packages/apps/ThemePicker/
+d5a0d67 ThemePicker: Fix preview tile in grid option picker
 
    * vendor/bliss/
 9b4c64d8 config: Build Etar
@@ -368,7 +398,6 @@ a2e9b40 Automatic translation import
 
    * packages/apps/Settings/
 888d3de70a Settings: force enable ime space for 2/3 button navbar
-79796503c8 Settings: Improve gesture navigation handle length [2/2]
 
    * packages/apps/Snap/
 31f7b4de4 Automatic translation import
@@ -393,6 +422,7 @@ ab45f095aec base: Add support to disable h265 on screenrecorder
 63e297b Blissify: reset values to default after switching from notch hide to normal
 
    * packages/apps/Settings/
+79796503c8 Settings: Improve gesture navigation handle length [2/2]
 f253456b9d Revert "Settings: Add hide notch support [2/2]"
 725e44c25a Settings: improve back gesture options dialog layout
 ee75c045e7 Settings: Make IME button space optional [2/2]
@@ -484,18 +514,4 @@ ab09899e vendor: notch-city: Add 3 mode display cutout handler
 3aa027c Messaging: disable auto dark theming on message bubble
 7f855cc Messaging: allow framework to do dark theming automatically
 924731e Messaging: bump target SDK version to 29
-
-====================
-     05-18-2020
-====================
-
-
-   * frameworks/base/
-1f38262884f Statusbar Clock Customization [1/2]
-
-   * packages/apps/Blissify/
-f732941 Blissify: Custom Text Clock Customizations [2/2]
-
-   * packages/apps/Settings/
-c3353fc5a8 Settings: Add simple maintainer string
 
