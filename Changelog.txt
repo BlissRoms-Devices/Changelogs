@@ -1,4 +1,18 @@
 ====================
+     06-03-2020
+====================
+
+
+   * frameworks/base/
+31d9a17e0e9 Merge changes from topic "brightness-slider" into q
+0cb14e56db8 SystemUI: Adapt quick qs brightness slider to Header image height
+3be794f6496 SystemUI: Add brightness buttons to quick qs brightness slider
+0c607b18ba8 Implement quick QS brightness slider [1/3]
+
+   * manifest/
+06e1737 manifest: Switch to lineage external/libtextclassifier fork
+
+====================
      06-02-2020
 ====================
 
@@ -17,6 +31,12 @@ b3ca7b09e65 Close file descriptor to avoid socket leak
 2a3b2397a7b BGDexopt: Clean up ordering
 3dc19c010d3 Revert "bgdexopt: Let PM handler run between optimizations"
 19bdad2d6b7 RGB Accenter: add more attrs for color changes
+
+   * lineage-sdk/
+5e732d27 Implement quick QS brightness slider [3/3]
+
+   * packages/apps/Blissify/
+ec0f9b3 Implement quick QS brightness slider [2/3]
 
    * packages/apps/Snap/
 e5c1bf6d0 Snap: remove duplicate pause button
@@ -119,6 +139,9 @@ f9a7dd6f vendor: fix building adb root
 
    * hardware/lineage/interfaces/
 ffb73f0 Initial audio amplifier HAL
+
+   * packages/apps/Dialer/
+92ee1fd47 incallui: use accent color for dialpad text
 
 ====================
      05-28-2020
@@ -398,6 +421,7 @@ a2e9b40 Automatic translation import
 
    * packages/apps/Settings/
 888d3de70a Settings: force enable ime space for 2/3 button navbar
+79796503c8 Settings: Improve gesture navigation handle length [2/2]
 
    * packages/apps/Snap/
 31f7b4de4 Automatic translation import
@@ -422,7 +446,6 @@ ab45f095aec base: Add support to disable h265 on screenrecorder
 63e297b Blissify: reset values to default after switching from notch hide to normal
 
    * packages/apps/Settings/
-79796503c8 Settings: Improve gesture navigation handle length [2/2]
 f253456b9d Revert "Settings: Add hide notch support [2/2]"
 725e44c25a Settings: improve back gesture options dialog layout
 ee75c045e7 Settings: Make IME button space optional [2/2]
@@ -498,20 +521,4 @@ ab09899e vendor: notch-city: Add 3 mode display cutout handler
 
    * vendor/themes/
 119a761 themes: nuke drag handle height
-
-====================
-     05-19-2020
-====================
-
-
-   * hardware/qcom-caf/common/
-3b586a8 Don't BUILD_WITHOUT_VENDOR
-
-   * hardware/qcom-caf/sm8150/audio/
-12480be3c a2dp: Add a null check before iterating over a2dp.adev->usecase_list
-
-   * packages/apps/Messaging/
-3aa027c Messaging: disable auto dark theming on message bubble
-7f855cc Messaging: allow framework to do dark theming automatically
-924731e Messaging: bump target SDK version to 29
 
