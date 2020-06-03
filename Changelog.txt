@@ -1,4 +1,21 @@
 ====================
+     06-04-2020
+====================
+
+
+   * frameworks/base/
+53cc8e831c9 TypeClock: add default text size to improve preview
+9060b0cd956 SystemUI: Clocks: Update thumbnails for sfuny and minimal
+10202843a08 TyepClockAlt: Allign owner info
+4c4d130775e TypeClockAlt: Add font and size changes
+5c22322b3a2 SystemUI: Add center style Typographic clock
+fe0450e059b TextClock: Fix NPE in TextClock
+bb697dfe7b6 MNMLBox Clock: Clean up hacky layouts
+0f0f64ff901 DividedLines Clock: Add proper preview layout
+aeedde0ef91 DividerLines Clock: Fix margin issue in layout
+eaf59252300 DividerLines Clock: Set 24-hr time format as well
+
+====================
      06-03-2020
 ====================
 
@@ -421,7 +438,6 @@ a2e9b40 Automatic translation import
 
    * packages/apps/Settings/
 888d3de70a Settings: force enable ime space for 2/3 button navbar
-79796503c8 Settings: Improve gesture navigation handle length [2/2]
 
    * packages/apps/Snap/
 31f7b4de4 Automatic translation import
@@ -446,6 +462,7 @@ ab45f095aec base: Add support to disable h265 on screenrecorder
 63e297b Blissify: reset values to default after switching from notch hide to normal
 
    * packages/apps/Settings/
+79796503c8 Settings: Improve gesture navigation handle length [2/2]
 f253456b9d Revert "Settings: Add hide notch support [2/2]"
 725e44c25a Settings: improve back gesture options dialog layout
 ee75c045e7 Settings: Make IME button space optional [2/2]
@@ -506,19 +523,4 @@ c699b350ce Settings: simplify gesture navbar toggle
 0673791559 Revert "Settings: Hide pill in full gestural nav mode [2/2]"
 09c1a411cd Revert "Settings: Move the hide pill toggle to gesture settings dialog"
 ff73c92c63 Revert "Revert "Add developer setting to set the default GPU renderer.""
-
-====================
-     05-20-2020
-====================
-
-
-   * packages/services/Telephony/
-d28ce97ab Extended suspend actions (2/3)
-c497cf4b9 Suspend Actions [2/3]
-
-   * vendor/bliss/
-ab09899e vendor: notch-city: Add 3 mode display cutout handler
-
-   * vendor/themes/
-119a761 themes: nuke drag handle height
 
