@@ -1,4 +1,9 @@
 ====================
+     06-05-2020
+====================
+
+
+====================
      06-04-2020
 ====================
 
@@ -438,6 +443,7 @@ a2e9b40 Automatic translation import
 
    * packages/apps/Settings/
 888d3de70a Settings: force enable ime space for 2/3 button navbar
+79796503c8 Settings: Improve gesture navigation handle length [2/2]
 
    * packages/apps/Snap/
 31f7b4de4 Automatic translation import
@@ -462,7 +468,6 @@ ab45f095aec base: Add support to disable h265 on screenrecorder
 63e297b Blissify: reset values to default after switching from notch hide to normal
 
    * packages/apps/Settings/
-79796503c8 Settings: Improve gesture navigation handle length [2/2]
 f253456b9d Revert "Settings: Add hide notch support [2/2]"
 725e44c25a Settings: improve back gesture options dialog layout
 ee75c045e7 Settings: Make IME button space optional [2/2]
@@ -501,26 +506,4 @@ f81a4600d0f Allow to hide navigation bar gesture completely [1/2]
 d4cc440 Blissify: cleanup suspend actions
 066b326 Blissify: Extended suspend actions (3/3)
 5187cbe Blissify: Suspend Actions [3/3]
-
-====================
-     05-21-2020
-====================
-
-
-   * frameworks/base/
-0a283c2e6eb BlissUtils: Add method to detect whether overlay is enabled
-6558d3b5eb7 SettingsLib: Allow Skia Vulkan to be used as HW renderer
-f8649c4e43f Revert "Revert "Add developer setting to set the default GPU renderer.""
-e0f9b0f741b RecordingService: Catch IllegalStateException
-be76d1178d8 SystemUI: Initialize proper visibility for notification icons container
-
-   * packages/apps/Blissify/
-9d97aee [HACK]: Remove text clock when a custom plugin clock is applied
-
-   * packages/apps/Settings/
-c699b350ce Settings: simplify gesture navbar toggle
-0715da9dfc Allow to hide navigation bar gesture completely [2/2]
-0673791559 Revert "Settings: Hide pill in full gestural nav mode [2/2]"
-09c1a411cd Revert "Settings: Move the hide pill toggle to gesture settings dialog"
-ff73c92c63 Revert "Revert "Add developer setting to set the default GPU renderer.""
 
