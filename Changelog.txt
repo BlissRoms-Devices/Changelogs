@@ -1,4 +1,9 @@
 ====================
+     06-06-2020
+====================
+
+
+====================
      06-05-2020
 ====================
 
@@ -444,6 +449,9 @@ a2e9b40 Automatic translation import
    * packages/apps/Settings/
 888d3de70a Settings: force enable ime space for 2/3 button navbar
 79796503c8 Settings: Improve gesture navigation handle length [2/2]
+f253456b9d Revert "Settings: Add hide notch support [2/2]"
+725e44c25a Settings: improve back gesture options dialog layout
+ee75c045e7 Settings: Make IME button space optional [2/2]
 
    * packages/apps/Snap/
 31f7b4de4 Automatic translation import
@@ -466,44 +474,4 @@ ab45f095aec base: Add support to disable h265 on screenrecorder
    * packages/apps/Blissify/
 7ae49bb Blissify: add a check when custom clock is null
 63e297b Blissify: reset values to default after switching from notch hide to normal
-
-   * packages/apps/Settings/
-f253456b9d Revert "Settings: Add hide notch support [2/2]"
-725e44c25a Settings: improve back gesture options dialog layout
-ee75c045e7 Settings: Make IME button space optional [2/2]
-
-====================
-     05-22-2020
-====================
-
-
-   * frameworks/base/
-491f2e9310f base: Extended suspend actions (1/3)
-01fd3409826 base: Suspend Actions [1/3]
-7a01465dc27 base: notch-city: Add 3 mode display cutout handler
-88918a81508 BlissUtils: update notch check logic
-ec0b38f11ef Revert "fwb: Add hide notch support [1/2]"
-b78829ce5f3 Fix NPE when resizing with transferring focus failed
-4c6a8444f91 Fix freeform window moving/resizing doesn't work
-a4b85185669 Revert "Freedom windows: fix drag [1/2]"
-e5e05fb9c08 fixup - Camera: Ignore torch status update for aux or compsite camera
-22da4787115 camera: Support exposing aux camera to apps
-095a83ed1f4 Camera: Cleanup aux camera exposing
-47058eb04e0 SystemUI: Check for custom clock plugin before applying text clock
-653237487c0 SystemUI: CustomTextClock Size and font
-2eaa5383d55 SystemUI: Custom Text Clock Customizations [1/2]
-6d4efbfa3f2 Lockscreen Clock Styles: Introduce Q style text clock [1/2]
-895971d3630 base: Make IME button space optional [1/2]
-5c75699f152 Revert "SystsmUI: gesture mode navbar nitpick"
-faee5d16741 Gesture nav toggle: show IME when needed and improve code
-f81a4600d0f Allow to hide navigation bar gesture completely [1/2]
-43e0c92fac3 Revert "base: Hide pill in full gestural nav mode [1/2]"
-
-   * packages/apps/Blissify/
-4c5178c Blissify: Add icon for slim recents
-6ee5b81 Blissify: Add 3 mode display cutout handler [3/3]
-46250dc Blissify: Hide ticker settings for notch devices
-d4cc440 Blissify: cleanup suspend actions
-066b326 Blissify: Extended suspend actions (3/3)
-5187cbe Blissify: Suspend Actions [3/3]
 
