@@ -1,10 +1,188 @@
 ====================
+     06-08-2020
+====================
+
+   * art/
+e6a5ae66be Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//art into HEAD
+
+   * build/make/
+2ccba5901 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//build into q
+
+   * build/soong/
+a0521bf2 Allow curl to be executed on soong build
+2fc527b3 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//build/soong into q
+
+   * frameworks/av/
+95eb8a863 CamcorderProfiles: Add 8KUHD camcorder profile
+2a54dd71d Camera: Add support for manual 3A.
+0af86454f camera: allow device to append camera parameters
+0493d03a1 libcameraservice: Don't pass NULL args on setCallbacks call
+fd4645056 audiopolicy: Fixes for internal audio recording
+308c8bd19 av: modify product soong variables
+95fecedbf GraphicBufferSource: ensure EOS buffer can be submitted
+5b285b0d7 libstagefright: Allow HFR-60 in HAL-3 recording
+163e1caa3 audio: add support for error handling of dsp SSR
+cfee08b68 aaudio: set primary flag for AAUDIO_PERFORMANCE_MODE_NONE
+f022949a7 Fix memory leak in MPEG2PSExtractor
+af819ac19 Fix native exception occurred when seeking mp4 file
+9d1cb689c Fix out of bounds access
+cdf3d520a validate width*height doesn't overflow in image file
+e989535ac Fix exception when delete an uninitialized object
+824325848 codec2: read fallback ION params from system properties
+d5e714b08 mTraits is used without been locked
+d7d7cb51b codec2: fallback to yuv420p color format thumbnail in C2
+c0da0d8e8 vorbisdec: support 192Khz sample rate for vorbis
+2728b5433 aacenc: handle and warn overlapping timestamps
+33b9616c4 cameraserver: Fix libcameraserver location for NO_CAMERA_SERVER
+6220d6f4c cameraserver: Fix libcameraserver location
+2b917f231 av: Allow providing camera server and service
+b4e8b7fbb [2/2] av: Remove restrictions for system audio record
+77f597e8b Camera: Skip stream size check for whitelisted apps.
+bebd141a1 ld.config: add libashmemd_client.so to platform shared libs
+25258cf1f av: camera: Allow disabling shutter sound for specific packages
+bb3875dd4 cameraservice: move client_package_name to data/misc
+c99781072 libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO
+
+   * frameworks/base/
+0420508c126 KeyguardClockSwitch: change default padding for text clock
+a1dda23f8f4 Screenshot: add option to disable long screenshot
+0011154c07b Optional screenshot type [1/2]
+0bf29f7ac00 Revert " base: Optional screenshot type [1/2]"
+669a88e0a76 StichImageUtility: allow taking screenshot on home screen
+e742d1c46ed SystemUI: Fix QS detail header padding
+6603960f124 DozeSensors: only use proximity sensor if supported
+23b7a87cba5 data: Update permissions whitelist for PermissionController
+3a9bfbbfcdc Use a concurrent hash map to access VolumeDialogControllerImpl's callbacks
+33edcc679e1 Add Accelerometer and Linear Acceleration sensors in blocking list
+683bcff4c7a Revert "Start process of next activity with top priority in advance"
+e5a53773e2d SystemUI: Make clock truly invisible
+645a535c2cd SystemUI: QQS brightness: get container padding directly
+066c1d30796 base: fix r37 merge derp
+
+   * frameworks/native/
+22f62fbc5 native: modify soong product variables
+499f3a7fd native: Screen Stabilization [2/2]
+
+   * frameworks/opt/telephony/
+3bcb8f508 add for community - community is not pleased
+
+   * hardware/interfaces/
+53af0413a Merge branch 'lineage-17.1' to q
+
+   * hardware/nxp/nfc/
+65536f1 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//hardware/nxp/nfc into q
+
+   * hardware/qcom/gps/
+d68c1ae Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//hardware/qcom/gps into q
+
+   * hardware/qcom/media/
+b92b27c Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//hardware/qcom/media into q
+
+   * manifest/
+e376615 Merge branch 'android-10.0.0_r37' of https://android.googlesource.com/platform//manifest into q
+
+   * packages/apps/Blissify/
+242a5fd Blissify: Add screenshot type option for Longshot [2/2]
+4241fe0 Buttons: Add a summary for layout inversion
+
+   * packages/apps/Bluetooth/
+418a4a0e Merge branch 'lineage-17.1' into q
+
+   * packages/apps/DocumentsUI/
+da958a2cb Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//packages/apps/DocumentsUI into q
+
+   * packages/apps/Launcher3/
+b5a118c8d Merge tag 'android-10.0.0_r37' into q
+
+   * packages/apps/Nfc/
+2a280b94 Merge branch 'lineage-17.1' into q
+
+   * packages/apps/Settings/
+4f8d9e43ab Merge tag 'android-10.0.0_r37' into q
+
+   * packages/providers/DownloadProvider/
+00f78279 Merge branch 'lineage-17.1' into q
+57b2144b Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD
+
+   * packages/providers/MediaProvider/
+ea7f0fc Merge branch 'lineage-17.1' into q
+
+   * packages/services/Telecomm/
+03a6322b Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//packages/services/Telecomm into q
+
+   * packages/services/Telephony/
+914ec8707 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//packages/services/Telephony into q
+
+   * system/bt/
+d354a4b7d Bluetooth: Support to know if there is High Def call
+
+   * system/core/
+e32c156e4 Allow to drop existing fd cache of cgroup path
+49cbc4725 init: modify product soong variables
+2d9d93a4d Make GetDeviceLockStatus() favor unlocked devices
+5ff9c7b2c healthd: Add WARP charger type
+5aaeb6fad Shut up camera and wcnss debug output
+acdbb0643 Filter GalleryDatab*
+b5c3c85e1 Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
+307656ddc init: ro.build.selinux should be 0
+a4f7e384a init: add several more keys to spoof
+ea4815e52 init: workaround SafetyNet check
+d19989146 init: Weaken property override security for the init extension
+7c3e32170 LockscreenCharging: squashed (2/3)
+d89f2b430 Add .gitreview
+
+   * system/extras/
+119b7aaa ext4_utils: disable secure discard globally
+ab709c77 Add in gitreview file
+
+   * system/sepolicy/
+5ccde317 sepolicy: allow system app to access sysfs_leds
+
+   * system/vold/
+af369dd Merge 'lineage-17.1' into q
+
+   * vendor/bliss/
+c1d18215 Export qcom UM hal root to soong
+ae353ca9 soong: Add flag for fod extension
+98c43e2f bliss: Bump to BlissRoms v12.8 Release
+
+====================
      06-07-2020
 ====================
 
 
    * external/chromium-webview/
 8a8cec3 Downgrade Chromium Webview to 81.0.4044.138
+
+   * frameworks/av/
+50f84dda7 Camera: Make originalDataSpace be const upon stream creation
+b0bd1c67b avc/hevc: Align 128 everywhere
+590ab1656 Fix android.media.cts.ImageReaderDecoderTest fail on MT6580    *
+90b9b46cb mediaswcodec: Set "default" as preferred service
+eb8b20132 Codec2Client: Add function to set preferred store
+
+   * frameworks/base/
+066246816e5 StatusBar: Fix setColorOverride on r39
+2989d296374 StatusBar: Check if getBackground is null too
+aa3f72dedd0 AssistManagerGoogle: Fix after r37 merge
+475db3cea59 Merge tag 'android-10.0.0_r37' into q
+
+   * hardware/interfaces/
+1c3f0f917 Add interface info in boot@1.0-service.rc
+
+   * system/core/
+f00d95d98 init.rc: disable kernel module autoloading
+
+   * system/sepolicy/
+99492ff2 Ignore the denial when system_other is erased
+bf981a39 Don't require seinfo for priv-apps
+e4d091b1 Allow reading dt fstab in boot control HAL.
+a0cd0720 Add sepolicy for IBootControl 1.0 and the default HAL.
+d5e4f486 global_macros: trim back various watch* permissions
+662275a1 update sepolicy for fs notification hooks
+
+   * system/vold/
+209a111 Expand virtio_block check to other virtual devices
 
 ====================
      06-06-2020
@@ -47,14 +225,26 @@ eaf59252300 DividerLines Clock: Set 24-hr time format as well
    * external/ppp/
 932c8ea Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
 
+   * frameworks/av/
+472ff18aa Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
    * frameworks/base/
 31d9a17e0e9 Merge changes from topic "brightness-slider" into q
 0cb14e56db8 SystemUI: Adapt quick qs brightness slider to Header image height
 3be794f6496 SystemUI: Add brightness buttons to quick qs brightness slider
 0c607b18ba8 Implement quick QS brightness slider [1/3]
 
+   * frameworks/native/
+9b6e5d54b Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
    * frameworks/opt/net/wifi/
 ef8b1a63b Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * frameworks/opt/telephony/
+837ce294c Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * hardware/interfaces/
+50186f106 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
 
    * hardware/knowles/athletico/sound_trigger_hal/
 7f994b2 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
@@ -64,6 +254,11 @@ bf445fa9 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 
    * manifest/
 06e1737 manifest: Switch to lineage external/libtextclassifier fork
+fea4547 Manifest for Android 10.0.0 Release 37 (QQ3A.200605.001)
+a3b2879 Manifest for android10-qpr3-release.
+
+   * packages/apps/Bluetooth/
+cf38327e Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
 
    * packages/apps/CarrierConfig/
 36d8dc1 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
@@ -71,8 +266,32 @@ bf445fa9 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
    * packages/apps/CertInstaller/
 8e202a2 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
 
+   * packages/apps/Nfc/
+4e01754d Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
    * packages/apps/StorageManager/
 15c9644 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * packages/providers/DownloadProvider/
+1035d2c8 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * packages/providers/MediaProvider/
+24b6e97 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * system/bt/
+f3cc53f68 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * system/core/
+ade5647d3 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * system/extras/
+7c822595 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * system/sepolicy/
+b4300eed Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * system/vold/
+5f01274 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
 
 ====================
      06-02-2020
@@ -274,6 +493,9 @@ b7d57120de0 SystemUI: Update Bluetooth battery level assets
 3ea5326ecca SystemUi: Cleanup bluetooth battery level commits
 2cf59ed4701 bluetooth: fix communication / icon after clean flash and first pairing
 
+   * frameworks/native/
+470dde656 surfaceflinger: Add support for extension lib
+
    * manifest/
 5ff9e18 manifest: track our fork of apps/Bluetooth
 
@@ -294,9 +516,6 @@ f416d395 headset: fix AT +XAPL messages reponse for devices that use APPLE proto
    * packages/apps/Messaging/
 dc669ad Messaging - Breathing missedcall/sms/voicemail [4/5]
 79312c3 Add .gitreview
-
-   * system/core/
-4458ee37e Allow to drop existing fd cache of cgroup path
 
 ====================
      05-26-2020
@@ -324,39 +543,8 @@ d02100c Add .gitreview
 472aa62 sepolicy: Unlabel aux camera whitelist prop
 11e1118 Sepolicy: add define for lksecapp vbmeta and dtbo
 
-   * frameworks/av/
-927502b89 CamcorderProfiles: Add 8KUHD camcorder profile
-77c3d4508 Camera: Add support for manual 3A.
-5d01f93a2 camera: allow device to append camera parameters
-7ca3704e0 libcameraservice: Don't pass NULL args on setCallbacks call
-58f764dfb audiopolicy: Fixes for internal audio recording
-e3c26d235 av: modify product soong variables
-5d3aa61e3 GraphicBufferSource: ensure EOS buffer can be submitted
-46c76fccf libstagefright: Allow HFR-60 in HAL-3 recording
-48902ad6f audio: add support for error handling of dsp SSR
-b808a2b4a aaudio: set primary flag for AAUDIO_PERFORMANCE_MODE_NONE
-3d22166d0 Fix memory leak in MPEG2PSExtractor
-4b716ef23 Fix native exception occurred when seeking mp4 file
-349d87675 Fix out of bounds access
-7f0ee8965 validate width*height doesn't overflow in image file
-58d5b5b30 Fix exception when delete an uninitialized object
-df7befeb4 codec2: read fallback ION params from system properties
-26e8d1589 mTraits is used without been locked
-d2766e2b0 codec2: fallback to yuv420p color format thumbnail in C2
-121a76d26 vorbisdec: support 192Khz sample rate for vorbis
-e28757c89 aacenc: handle and warn overlapping timestamps
-5cac78db1 cameraserver: Fix libcameraserver location for NO_CAMERA_SERVER
-ec443383b cameraserver: Fix libcameraserver location
-e76b99c4e av: Allow providing camera server and service
-d952f65fe [2/2] av: Remove restrictions for system audio record
-841b49e51 Camera: Skip stream size check for whitelisted apps.
-081a0b372 ld.config: add libashmemd_client.so to platform shared libs
-e2dd9d04f av: camera: Allow disabling shutter sound for specific packages
-bf1788278 cameraservice: move client_package_name to data/misc
-87f9a26a1 libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO
-
    * frameworks/native/
-5e6356c57 Revert "Freedom windows: fix drag [2/2]"
+69a8520c3 sf: Exclude VDS use of HWC on non-UM platforms
 
    * hardware/interfaces/
 f6ab11140 interfaces: modify soong product variables
@@ -398,13 +586,6 @@ ee06c7df Merge 'lineage-17.1' into q
    * packages/providers/MediaProvider/
 d1d446d Merge 'lineage-17.1' into q
 
-   * system/bt/
-78d9828da Bluetooth: Support to know if there is High Def call
-
-   * system/sepolicy/
-863fc01b Allow adb start/stop mdnsd via ctl.start/stop
-3fae4eba sepolicy: Relabel wifi. properties as wifi_prop
-
    * system/vold/
 c25cef2 vold: modify soong product variables
 
@@ -445,55 +626,4 @@ d07c5ef Messaging: Contact Colors
 a1d7de50 Fix style name DialogAlertDayNight
 f48a631d Add dark mode support for AlertDialog
 63a7284e Migrated Nfc to androidx
-
-====================
-     05-24-2020
-====================
-
-
-   * frameworks/base/
-70a8f54fdbd SystemUI: Prevent loop with display timeout
-9ad13431024 SystemUI: Improve custom text clock allignment code
-
-   * packages/apps/AudioFX/
-9e0dcdc Automatic translation import
-
-   * packages/apps/Blissify/
-c80fd9f Blissify: change clock style summary properly
-
-   * packages/apps/Bluetooth/
-837b47f2 Bluetooth string: removed id="sender" in bt_sm_2_1_
-3aea9ee5 translate="false" -> translatable="false"
-
-   * packages/apps/Contacts/
-681987983 Automatic translation import
-
-   * packages/apps/Eleven/
-5946f79 Automatic translation import
-
-   * packages/apps/Etar/
-dd179aa3 Fix export to SD card (#701)
-0da38bc8 Change search provider url
-
-   * packages/apps/Jelly/
-00e64bf Automatic translation import
-
-   * packages/apps/Recorder/
-a2e9b40 Automatic translation import
-
-   * packages/apps/Settings/
-888d3de70a Settings: force enable ime space for 2/3 button navbar
-79796503c8 Settings: Improve gesture navigation handle length [2/2]
-f253456b9d Revert "Settings: Add hide notch support [2/2]"
-725e44c25a Settings: improve back gesture options dialog layout
-ee75c045e7 Settings: Make IME button space optional [2/2]
-
-   * packages/apps/Snap/
-31f7b4de4 Automatic translation import
-
-   * packages/resources/devicesettings/
-fe24103 Automatic translation import
-
-   * vendor/qcom/opensource/fm-commonsys/
-11158ac Automatic translation import
 
