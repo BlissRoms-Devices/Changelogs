@@ -1,4 +1,12 @@
 ====================
+     06-09-2020
+====================
+
+
+   * packages/apps/Settings/
+7f1d40a39e Phone ringtone setting for Multi SIM device
+
+====================
      06-08-2020
 ====================
 
@@ -496,6 +504,9 @@ b7d57120de0 SystemUI: Update Bluetooth battery level assets
    * frameworks/native/
 470dde656 surfaceflinger: Add support for extension lib
 
+   * hardware/qcom-caf/msm8998/audio/
+61def04bc post_proc: include USB headset for BassBoost effect
+
    * manifest/
 5ff9e18 manifest: track our fork of apps/Bluetooth
 
@@ -592,38 +603,4 @@ c25cef2 vold: modify soong product variables
    * vendor/bliss/
 89550191 extract_utils: Fix vendor Android.bp creation with subdirectory
 f87f0972 BoardConfigQcom: Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES
-
-====================
-     05-25-2020
-====================
-
-
-   * external/bash/
-5f857b9 bashrc: Use full current working directory path for root as well
-
-   * packages/apps/Contacts/
-f4b3f273d Contacts: manually configure dark theme for list
-81ebd00f9 Contacts: allow framework to do dark theming automatically
-991dae2e2 AOSP/Contacts - Updated to sdkVersion 29.
-
-   * packages/apps/Etar/
-e52b0927 Etar: adaptive icon
-8a3e3cf6 Say hello to Android.bp and farewell to Android.mk
-5188ba3f Fix retrieving resource ids after --rename-manifest-package (#705)
-
-   * packages/apps/Messaging/
-a59d697 Import translations. DO NOT MERGE
-bdacda4 Rescheduling pending messages after outside window failure
-398ad51 Fix NPE on MultiConversationNotificationState
-e3485c1 Hide APN prefs if platform APIs are used
-2af21a4 Use ic_add_white for consistency instead
-f730ce2 Fix to show APN prefs correctly
-446e3a7 Fix NPE
-7e2d9a0 Handle delivered messages as completed messages
-d07c5ef Messaging: Contact Colors
-
-   * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
-a1d7de50 Fix style name DialogAlertDayNight
-f48a631d Add dark mode support for AlertDialog
-63a7284e Migrated Nfc to androidx
 
