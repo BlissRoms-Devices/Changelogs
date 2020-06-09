@@ -1,4 +1,17 @@
 ====================
+     06-10-2020
+====================
+
+
+   * frameworks/base/
+69b57389b73 SystemUI: Resolve faulty keyguard clock logs outputs
+597ed8dc9f4 [BACKPORT] Config of LTE signal strength default value remove SNR
+4b43b9ee44d SystemUI: Fix pink progress animation color in expanded Wi-Fi tile
+
+   * packages/apps/Dialer/
+9c9555a43 incallui: always strip alpha from primary color
+
+====================
      06-09-2020
 ====================
 
@@ -527,80 +540,4 @@ f416d395 headset: fix AT +XAPL messages reponse for devices that use APPLE proto
    * packages/apps/Messaging/
 dc669ad Messaging - Breathing missedcall/sms/voicemail [4/5]
 79312c3 Add .gitreview
-
-====================
-     05-26-2020
-====================
-
-
-   * bionic/
-e6418c875 android_getaddrinfo_proxy: fix memory leak on failure.
-
-   * device/lineage/sepolicy/
-0f25864 sepolicy: Adress apexd denial
-0fb680b sepolicy: Fix OTA on encrypted f2fs.
-f02daf9 bliss: common: add rules for RGB/HSL accentpicker & Gradient picker
-32fd51c Allow Snap cam access for gpu service
-2b6c40b sepolicy: Allow system_server to read and write to sysfs_battery_supply
-7e902f6 sepolicy: Smart Charging (3/4)
-c7d4696 sepolicy: Add sepolicy for Bliss OTA Updater
-6a31f3d sepolicy: Allow CPUInfo access to thermal sysfs
-d02100c Add .gitreview
-
-   * device/qcom/sepolicy/
-46d98a17 sepolicy: Unlabel aux camera whitelist prop
-
-   * device/qcom/sepolicy-legacy-um/
-472aa62 sepolicy: Unlabel aux camera whitelist prop
-11e1118 Sepolicy: add define for lksecapp vbmeta and dtbo
-
-   * frameworks/native/
-69a8520c3 sf: Exclude VDS use of HWC on non-UM platforms
-
-   * hardware/interfaces/
-f6ab11140 interfaces: modify soong product variables
-8f8c10672 Fix build errors.
-
-   * hardware/lineage/interfaces/
-18589a6 modify soong product variable
-
-   * manifest/
-0417260 manifest: Track more repos from lineage
-
-   * packages/apps/Contacts/
-ce619c7d4 Merge 'lineage-17.1' into q
-
-   * packages/apps/DeskClock/
-e5baf8f75 Merge 'lineage-17.1' into q
-
-   * packages/apps/Dialer/
-b0457caa5 Dialer: allow framework to do dark theming automatically
-5bd572ad5 Updated target SDK from 28 to 29.
-
-   * packages/apps/DocumentsUI/
-beff17bc2 Merge 'lineage-17.1' into q
-
-   * packages/apps/Etar/
-27cafb41 Etar: Modify about page
-f3d21700 Etar: Rename package to org.lineageos.etar
-547aeae3 Etar: Switch back to AOSP application name
-
-   * packages/apps/Nfc/
-ee06c7df Merge 'lineage-17.1' into q
-
-   * packages/apps/PermissionController/
-980a1e2d Merge 'lineage-17.1' into q
-
-   * packages/providers/DownloadProvider/
-9fce37eb Merge 'lineage-17.1' into q
-
-   * packages/providers/MediaProvider/
-d1d446d Merge 'lineage-17.1' into q
-
-   * system/vold/
-c25cef2 vold: modify soong product variables
-
-   * vendor/bliss/
-89550191 extract_utils: Fix vendor Android.bp creation with subdirectory
-f87f0972 BoardConfigQcom: Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES
 
