@@ -1,4 +1,12 @@
 ====================
+     06-11-2020
+====================
+
+
+   * frameworks/base/
+d8820929151 Revert "base: Improve navigation bar hiding toggle"
+
+====================
      06-10-2020
 ====================
 
@@ -493,51 +501,4 @@ ddb56ae8e1 translate="false" -> translatable="false"
 
    * vendor/themes/
 c5dd85a themes: SystemUI: increase system icons keyguard padding
-
-====================
-     05-27-2020
-====================
-
-
-   * external/skia/
-9b8c9c8fd1 Allow to rebind GL texture if AHB content has changed
-893e92ab24 restore _DXDY image shader on ARM
-
-   * frameworks/base/
-c6c5060ac99 TunerServiceImpl: Prevent Lineage keys from tuner reset
-c1d689514e2 TextureView rebind GL texture, if AHB content has changed
-c2e62ec7833 Start process of next activity with top priority in advance
-ab41c8f6fc6 Revert "cgroup follow for procs in the same cgroup.procs"
-febf291f856 Don't send interaction hint for unnecessary events
-9be16d7a187 Merge "bluetooth: fix communication / icon after clean flash and first pairing" into q
-b7d57120de0 SystemUI: Update Bluetooth battery level assets
-3ea5326ecca SystemUi: Cleanup bluetooth battery level commits
-2cf59ed4701 bluetooth: fix communication / icon after clean flash and first pairing
-
-   * frameworks/native/
-470dde656 surfaceflinger: Add support for extension lib
-
-   * hardware/qcom-caf/msm8998/audio/
-61def04bc post_proc: include USB headset for BassBoost effect
-
-   * manifest/
-5ff9e18 manifest: track our fork of apps/Bluetooth
-
-   * packages/apps/Bluetooth/
-dff4f5e4 Add .gitreview
-f416d395 headset: fix AT +XAPL messages reponse for devices that use APPLE protocol
-
-   * packages/apps/Dialer/
-234a9b9a6  Failed to show hold call when user click swap and merge simultaneously
-6a485855e AOSP/Dialer - Fix improperly formatted resource string in Dialer across many languages.
-0db9af4b7 Fix the issue that automatic mute state remains ON after adding VT call
-760ebfb5e Fix error case which session change request failed when pausing video
-070a52ba4 Fix for button flickering issue when video call screen rotates
-25ab29663 Fix to update peer dimensions when video screen resumes foreground
-0c1f107a8 Fix issue that the hold label is not shown during remote video holding
-51dcf6087 Fix preview image overlaps a call button during video call
-
-   * packages/apps/Messaging/
-dc669ad Messaging - Breathing missedcall/sms/voicemail [4/5]
-79312c3 Add .gitreview
 
