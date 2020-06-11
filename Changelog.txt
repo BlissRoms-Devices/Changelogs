@@ -3,18 +3,13 @@
 ====================
 
 
-   * frameworks/base/
-d8820929151 Revert "base: Improve navigation bar hiding toggle"
-
 ====================
      06-10-2020
 ====================
 
 
    * frameworks/base/
-69b57389b73 SystemUI: Resolve faulty keyguard clock logs outputs
-597ed8dc9f4 [BACKPORT] Config of LTE signal strength default value remove SNR
-4b43b9ee44d SystemUI: Fix pink progress animation color in expanded Wi-Fi tile
+d8820929151 Revert "base: Improve navigation bar hiding toggle"
 
    * packages/apps/Dialer/
 9c9555a43 incallui: always strip alpha from primary color
@@ -24,11 +19,41 @@ d8820929151 Revert "base: Improve navigation bar hiding toggle"
 ====================
 
 
+   * frameworks/base/
+69b57389b73 SystemUI: Resolve faulty keyguard clock logs outputs
+597ed8dc9f4 [BACKPORT] Config of LTE signal strength default value remove SNR
+4b43b9ee44d SystemUI: Fix pink progress animation color in expanded Wi-Fi tile
+
+====================
+     06-08-2020
+====================
+
+
+   * frameworks/base/
+0420508c126 KeyguardClockSwitch: change default padding for text clock
+a1dda23f8f4 Screenshot: add option to disable long screenshot
+0011154c07b Optional screenshot type [1/2]
+0bf29f7ac00 Revert " base: Optional screenshot type [1/2]"
+669a88e0a76 StichImageUtility: allow taking screenshot on home screen
+e742d1c46ed SystemUI: Fix QS detail header padding
+6603960f124 DozeSensors: only use proximity sensor if supported
+23b7a87cba5 data: Update permissions whitelist for PermissionController
+3a9bfbbfcdc Use a concurrent hash map to access VolumeDialogControllerImpl's callbacks
+33edcc679e1 Add Accelerometer and Linear Acceleration sensors in blocking list
+683bcff4c7a Revert "Start process of next activity with top priority in advance"
+e5a53773e2d SystemUI: Make clock truly invisible
+645a535c2cd SystemUI: QQS brightness: get container padding directly
+066c1d30796 base: fix r37 merge derp
+
+   * packages/apps/Blissify/
+242a5fd Blissify: Add screenshot type option for Longshot [2/2]
+4241fe0 Buttons: Add a summary for layout inversion
+
    * packages/apps/Settings/
 7f1d40a39e Phone ringtone setting for Multi SIM device
 
 ====================
-     06-08-2020
+     06-07-2020
 ====================
 
    * art/
@@ -40,6 +65,9 @@ e6a5ae66be Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/pl
    * build/soong/
 a0521bf2 Allow curl to be executed on soong build
 2fc527b3 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//build/soong into q
+
+   * external/chromium-webview/
+8a8cec3 Downgrade Chromium Webview to 81.0.4044.138
 
    * frameworks/av/
 95eb8a863 CamcorderProfiles: Add 8KUHD camcorder profile
@@ -71,22 +99,17 @@ bebd141a1 ld.config: add libashmemd_client.so to platform shared libs
 25258cf1f av: camera: Allow disabling shutter sound for specific packages
 bb3875dd4 cameraservice: move client_package_name to data/misc
 c99781072 libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO
+50f84dda7 Camera: Make originalDataSpace be const upon stream creation
+b0bd1c67b avc/hevc: Align 128 everywhere
+590ab1656 Fix android.media.cts.ImageReaderDecoderTest fail on MT6580    *
+90b9b46cb mediaswcodec: Set "default" as preferred service
+eb8b20132 Codec2Client: Add function to set preferred store
 
    * frameworks/base/
-0420508c126 KeyguardClockSwitch: change default padding for text clock
-a1dda23f8f4 Screenshot: add option to disable long screenshot
-0011154c07b Optional screenshot type [1/2]
-0bf29f7ac00 Revert " base: Optional screenshot type [1/2]"
-669a88e0a76 StichImageUtility: allow taking screenshot on home screen
-e742d1c46ed SystemUI: Fix QS detail header padding
-6603960f124 DozeSensors: only use proximity sensor if supported
-23b7a87cba5 data: Update permissions whitelist for PermissionController
-3a9bfbbfcdc Use a concurrent hash map to access VolumeDialogControllerImpl's callbacks
-33edcc679e1 Add Accelerometer and Linear Acceleration sensors in blocking list
-683bcff4c7a Revert "Start process of next activity with top priority in advance"
-e5a53773e2d SystemUI: Make clock truly invisible
-645a535c2cd SystemUI: QQS brightness: get container padding directly
-066c1d30796 base: fix r37 merge derp
+066246816e5 StatusBar: Fix setColorOverride on r39
+2989d296374 StatusBar: Check if getBackground is null too
+aa3f72dedd0 AssistManagerGoogle: Fix after r37 merge
+475db3cea59 Merge tag 'android-10.0.0_r37' into q
 
    * frameworks/native/
 22f62fbc5 native: modify soong product variables
@@ -97,6 +120,7 @@ e5a53773e2d SystemUI: Make clock truly invisible
 
    * hardware/interfaces/
 53af0413a Merge branch 'lineage-17.1' to q
+1c3f0f917 Add interface info in boot@1.0-service.rc
 
    * hardware/nxp/nfc/
 65536f1 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//hardware/nxp/nfc into q
@@ -109,10 +133,6 @@ b92b27c Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platf
 
    * manifest/
 e376615 Merge branch 'android-10.0.0_r37' of https://android.googlesource.com/platform//manifest into q
-
-   * packages/apps/Blissify/
-242a5fd Blissify: Add screenshot type option for Longshot [2/2]
-4241fe0 Buttons: Add a summary for layout inversion
 
    * packages/apps/Bluetooth/
 418a4a0e Merge branch 'lineage-17.1' into q
@@ -159,6 +179,7 @@ ea4815e52 init: workaround SafetyNet check
 d19989146 init: Weaken property override security for the init extension
 7c3e32170 LockscreenCharging: squashed (2/3)
 d89f2b430 Add .gitreview
+f00d95d98 init.rc: disable kernel module autoloading
 
    * system/extras/
 119b7aaa ext4_utils: disable secure discard globally
@@ -166,43 +187,6 @@ ab709c77 Add in gitreview file
 
    * system/sepolicy/
 5ccde317 sepolicy: allow system app to access sysfs_leds
-
-   * system/vold/
-af369dd Merge 'lineage-17.1' into q
-
-   * vendor/bliss/
-c1d18215 Export qcom UM hal root to soong
-ae353ca9 soong: Add flag for fod extension
-98c43e2f bliss: Bump to BlissRoms v12.8 Release
-
-====================
-     06-07-2020
-====================
-
-
-   * external/chromium-webview/
-8a8cec3 Downgrade Chromium Webview to 81.0.4044.138
-
-   * frameworks/av/
-50f84dda7 Camera: Make originalDataSpace be const upon stream creation
-b0bd1c67b avc/hevc: Align 128 everywhere
-590ab1656 Fix android.media.cts.ImageReaderDecoderTest fail on MT6580    *
-90b9b46cb mediaswcodec: Set "default" as preferred service
-eb8b20132 Codec2Client: Add function to set preferred store
-
-   * frameworks/base/
-066246816e5 StatusBar: Fix setColorOverride on r39
-2989d296374 StatusBar: Check if getBackground is null too
-aa3f72dedd0 AssistManagerGoogle: Fix after r37 merge
-475db3cea59 Merge tag 'android-10.0.0_r37' into q
-
-   * hardware/interfaces/
-1c3f0f917 Add interface info in boot@1.0-service.rc
-
-   * system/core/
-f00d95d98 init.rc: disable kernel module autoloading
-
-   * system/sepolicy/
 99492ff2 Ignore the denial when system_other is erased
 bf981a39 Don't require seinfo for priv-apps
 e4d091b1 Allow reading dt fstab in boot control HAL.
@@ -211,7 +195,13 @@ d5e4f486 global_macros: trim back various watch* permissions
 662275a1 update sepolicy for fs notification hooks
 
    * system/vold/
+af369dd Merge 'lineage-17.1' into q
 209a111 Expand virtio_block check to other virtual devices
+
+   * vendor/bliss/
+c1d18215 Export qcom UM hal root to soong
+ae353ca9 soong: Add flag for fod extension
+98c43e2f bliss: Bump to BlissRoms v12.8 Release
 
 ====================
      06-06-2020
@@ -234,14 +224,28 @@ d5e4f486 global_macros: trim back various watch* permissions
 10202843a08 TyepClockAlt: Allign owner info
 4c4d130775e TypeClockAlt: Add font and size changes
 5c22322b3a2 SystemUI: Add center style Typographic clock
+
+====================
+     06-03-2020
+====================
+
+
+   * frameworks/base/
 fe0450e059b TextClock: Fix NPE in TextClock
 bb697dfe7b6 MNMLBox Clock: Clean up hacky layouts
 0f0f64ff901 DividedLines Clock: Add proper preview layout
 aeedde0ef91 DividerLines Clock: Fix margin issue in layout
 eaf59252300 DividerLines Clock: Set 24-hr time format as well
+31d9a17e0e9 Merge changes from topic "brightness-slider" into q
+0cb14e56db8 SystemUI: Adapt quick qs brightness slider to Header image height
+3be794f6496 SystemUI: Add brightness buttons to quick qs brightness slider
+0c607b18ba8 Implement quick QS brightness slider [1/3]
+
+   * manifest/
+06e1737 manifest: Switch to lineage external/libtextclassifier fork
 
 ====================
-     06-03-2020
+     06-02-2020
 ====================
 
 
@@ -258,10 +262,12 @@ eaf59252300 DividerLines Clock: Set 24-hr time format as well
 472ff18aa Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
 
    * frameworks/base/
-31d9a17e0e9 Merge changes from topic "brightness-slider" into q
-0cb14e56db8 SystemUI: Adapt quick qs brightness slider to Header image height
-3be794f6496 SystemUI: Add brightness buttons to quick qs brightness slider
-0c607b18ba8 Implement quick QS brightness slider [1/3]
+4d33bfb8706 SystemUI: Fix NPE when custom clock is null
+675759fd59b SystemUI: Don't forcefully convert wallpaper to SRGB
+42209a99729 Screenshot: inline trigger with AOSP values
+d7089de6003 VolumeDialog: Tint slider and icon to gradient
+0361cc1d919 VolumeDialogImpl: Tint active volume bar with gradient
+2462a777037 base: Improve navigation bar hiding toggle
 
    * frameworks/native/
 9b6e5d54b Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
@@ -281,10 +287,15 @@ ef8b1a63b Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android
    * hardware/qcom/sdm845/display/
 bf445fa9 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
 
+   * lineage-sdk/
+5e732d27 Implement quick QS brightness slider [3/3]
+
    * manifest/
-06e1737 manifest: Switch to lineage external/libtextclassifier fork
 fea4547 Manifest for Android 10.0.0 Release 37 (QQ3A.200605.001)
 a3b2879 Manifest for android10-qpr3-release.
+
+   * packages/apps/Blissify/
+ec0f9b3 Implement quick QS brightness slider [2/3]
 
    * packages/apps/Bluetooth/
 cf38327e Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
@@ -297,6 +308,10 @@ cf38327e Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 
    * packages/apps/Nfc/
 4e01754d Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
+
+   * packages/apps/Snap/
+e5c1bf6d0 Snap: remove duplicate pause button
+a50c2496b CaptureUI: handle secure capture when reviewing pictures
 
    * packages/apps/StorageManager/
 15c9644 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
@@ -323,17 +338,11 @@ b4300eed Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 5f01274 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
 
 ====================
-     06-02-2020
+     06-01-2020
 ====================
 
 
    * frameworks/base/
-4d33bfb8706 SystemUI: Fix NPE when custom clock is null
-675759fd59b SystemUI: Don't forcefully convert wallpaper to SRGB
-42209a99729 Screenshot: inline trigger with AOSP values
-d7089de6003 VolumeDialog: Tint slider and icon to gradient
-0361cc1d919 VolumeDialogImpl: Tint active volume bar with gradient
-2462a777037 base: Improve navigation bar hiding toggle
 b3ca7b09e65 Close file descriptor to avoid socket leak
 41ef3367872 SystemUI: Reset PUK StateMachine after PUK is unlocked
 8444c57918e SystemUI: there is unexpected SIM PIN input dialog.
@@ -341,21 +350,6 @@ b3ca7b09e65 Close file descriptor to avoid socket leak
 2a3b2397a7b BGDexopt: Clean up ordering
 3dc19c010d3 Revert "bgdexopt: Let PM handler run between optimizations"
 19bdad2d6b7 RGB Accenter: add more attrs for color changes
-
-   * lineage-sdk/
-5e732d27 Implement quick QS brightness slider [3/3]
-
-   * packages/apps/Blissify/
-ec0f9b3 Implement quick QS brightness slider [2/3]
-
-   * packages/apps/Snap/
-e5c1bf6d0 Snap: remove duplicate pause button
-a50c2496b CaptureUI: handle secure capture when reviewing pictures
-
-====================
-     06-01-2020
-====================
-
 
    * manifest/
 cb30094 manifest: Track Email and UnifiedEmail from lineage
@@ -380,25 +374,12 @@ bf4060cf39d AlarmManagerService.setKernelTime: fix incorrect limit.
 b60eceb6e5c Check user unlocked before write to /data/system_ce/0/snapshots
 0c70790a884 SystemUI: Fix qs system info text in light theme
 394d45c8de6 QuickStatusBarHeader: minor code improvement
-faf691a1c62 SystemUI: set oneplus slate as default font [1/2]
-
-   * manifest/
-ca3f47b manifest: Track etar
-30841ce android: Move to our own fork of timezonepicker
-a46a416 Remove unused frameworks/opt/datetimepicker
 
    * packages/apps/Blissify/
 a85bf78 Blissify: set oneplus slate as default font [2/2]
 
    * packages/apps/Recorder/
 8f08000 Recorder: Stop service after stopping casting
-
-   * packages/apps/SettingsIntelligence/
-f9f40c3 update .gitreview
-f77833e Normalize dynamic search result in Japanese
-f5993b3 Scrolling search results and autorotate cause crash
-eb675ee Fix "null" string displaying in the breadcrumbs of search results.
-ef80771 Correct colors for icons in "Search settings" for dark theme
 
 ====================
      05-30-2020
@@ -413,10 +394,16 @@ ef80771 Correct colors for icons in "Search settings" for dark theme
 1a46e238 soong : add more tools to paths whitelist
 
    * frameworks/base/
+faf691a1c62 SystemUI: set oneplus slate as default font [1/2]
 2d7c4d86756 OneUI-like settings actionbar [1/3]
 ef08ce6c4f3 SystemUI: Do not convert application name to ISO-8859-15
 634c730d8e2 SystemUI: Blacklist MobileSignalController for tuner
 79f969994b0 Add rounded hexagon icon overlay
+
+   * manifest/
+ca3f47b manifest: Track etar
+30841ce android: Move to our own fork of timezonepicker
+a46a416 Remove unused frameworks/opt/datetimepicker
 
    * packages/apps/Blissify/
 5674fe0 OneUI-like settings actionbar [3/3]
@@ -434,6 +421,13 @@ b183954ff7 OneUI-like settings actionbar [2/3]
 27a26bdb82 Add ScrollView to gesture options dialog
 a22a7863cb Fix NPE if default supervisor is not defined
 8903022ca7 Settings: Battery: Redesign BatteryMeterView
+
+   * packages/apps/SettingsIntelligence/
+f9f40c3 update .gitreview
+f77833e Normalize dynamic search result in Japanese
+f5993b3 Scrolling search results and autorotate cause crash
+eb675ee Fix "null" string displaying in the breadcrumbs of search results.
+ef80771 Correct colors for icons in "Search settings" for dark theme
 
    * vendor/bliss/
 f9a7dd6f vendor: fix building adb root
@@ -461,14 +455,6 @@ ffb73f0 Initial audio amplifier HAL
    * frameworks/base/
 67a4d7af242 SystemUI: fix clocks visibility
 85b53494191 bluetooth: fixup! communication / icon after clean flash and first pairing
-f8437be1088 Fix other lights when backlight uses SurfaceController API
-ef18dbefae1 translate="false" -> translatable="false"
-e3a146c739b Add Light/Dark theme for bugreport warning dialog
-903f01e3b94 Fix bugreport warning dialog
-aea658048c3 Tuner: Remove most keys from blacklist
-
-   * manifest/
-d67f915 manifest: Track our external/skia
 
    * packages/apps/Blissify/
 d74424e DeviceUtils: Add helper methods to retrieve device's key capabilities
@@ -488,17 +474,4 @@ ac23ecc Messaging: use config_dialogCornerRadius for contacts popup
 df2429a Messaging: Adapt night mode for new changes
 c344378 Dark theme: Clean up
 4a9182b Messaging: add night mode
-
-   * packages/apps/Settings/
-7c0a543c5b Revert "Slices: use the same string for BT and Wifi master switch"
-bb133d11f8 Disable dashboards conditions and suggestions (3/3)
-f153ec96f7 Fixes ApnEditor not restoring previous UI
-e8ff675f29 Fix volume slider color is not correct
-ddb56ae8e1 translate="false" -> translatable="false"
-6d7c587d0f Automatic translation import
-29c1a1987a hardwareinfo: Hide hardware revision if empty
-34b0540930 Preserve icon for "manage space"
-
-   * vendor/themes/
-c5dd85a themes: SystemUI: increase system icons keyguard padding
 
