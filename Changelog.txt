@@ -1,7 +1,67 @@
 ====================
+     06-13-2020
+====================
+
+
+   * frameworks/base/
+6689adf9b57 ScreenshotTile: add option for long screenshot
+cb938e0e5f8 Improve Network Traffic [2/2]
+3b7fd2c0c08 Revert "Fix status bar for network traffic icon holder"
+554a6b7ca14 Avoid casting network traffic to StatusBarIconView to prevent crash
+
+   * packages/apps/Blissify/
+c2bb729 Correct spelling mistake
+
+   * packages/apps/Settings/
+5d7a2bc639 Bring back on/off toggle for physical SIMs
+
+====================
      06-12-2020
 ====================
 
+
+   * frameworks/base/
+86f34e74974 Add separate start/end padding dimens for QS Header
+66df65eda3e SystemUI: Remove hardcoded end padding quick_qs_status_icons
+8129969bfd0 Revert "Add cutout support in QSDetail"
+3828fecfee6 SystemUI: Long press Caffeine for infinite duration
+6558cdff4e5 SystemUI: Adapt screenshot sound to ringer modes
+a0d072579fc Revert "ScreenshotSound: Fix playing screenshot's sound when camera's sounds off."
+
+   * lineage-sdk/
+848798fe NetworkTraffic: Show both arrows when upload & download speed matches
+5f0857c2 NetworkTraffic: Convert upload & download mode to single line
+7244f689 Improve Network Traffic [1/2]
+fe98bee0 NetworkTraffic: Fix crashes with overlay changes
+
+   * packages/apps/Dialer/
+fd23ed1ac incallui: always strip alpha from primary color
+a5e4a196a incallui: use accent color for dialpad text
+a90bfd082 Dialer: expose dialer toolbar text colors
+3f0d04763 InCallUI: SmartMute
+e85edb854 Make proxi sensor smart-case friendly
+4a395cf46 Fix incorrect proximity sensor behaviour
+3d638307e Add back autoanswer option when bt or wired headset connected
+d4883c571 Add back proximity autoanswer feature
+3a9afe327 Disable answer false touch detection by default
+b9628230c Dialer auto proximity speakerphone [2/2]
+126be0705 Dialer: Add option to disable proximity sensor
+41ef65afc Add toggle for post call snackbar
+261c4841d Dialer: Make recording names sortable
+08797082f Fix Dialer memory leaks
+43b410f7c AospThemeImpl: fully white might NOT be uninitialized!
+5dd65578e Improve contatcts layout
+9d2152524 Add ability to set full screen photos for calls
+a570d2bd5 Dialer: use system round corner values for searchbox
+f7edcbb4c Dialer: Fix dark dialogs on light theme
+db8ad79f3 Dialer: Remove in call vibrate options already added
+d9b44fa1d Dialer: Dont change accent color for dark theme
+89750e4e4 Dialer: theme fixes
+55f69c8ca Dialer: welcome to night mode
+09ea9c049 Add autorecord feature
+368668a47 Dialer: Enable call recording for all
+6246964c9 Dialer - Breathing missedcall/sms/voicemail [2/5]
+04ce7d8de Add .gitreview
 
 ====================
      06-11-2020
@@ -20,9 +80,6 @@ d8820929151 Revert "base: Improve navigation bar hiding toggle"
 69b57389b73 SystemUI: Resolve faulty keyguard clock logs outputs
 597ed8dc9f4 [BACKPORT] Config of LTE signal strength default value remove SNR
 4b43b9ee44d SystemUI: Fix pink progress animation color in expanded Wi-Fi tile
-
-   * packages/apps/Dialer/
-9c9555a43 incallui: always strip alpha from primary color
 
 ====================
      06-09-2020
@@ -223,10 +280,16 @@ d5e4f486 global_macros: trim back various watch* permissions
 ====================
 
 
+   * packages/apps/Dialer/
+8392b6a03 Iterate old recordings properly when migrating call recording data.
+
 ====================
      06-05-2020
 ====================
 
+
+   * packages/apps/Dialer/
+05afe35d9 Refactor call recording to use MediaProvider.
 
 ====================
      06-04-2020
@@ -442,19 +505,4 @@ a22a7863cb Fix NPE if default supervisor is not defined
 
    * vendor/bliss/
 f9a7dd6f vendor: fix building adb root
-
-====================
-     05-29-2020
-====================
-
-
-   * build/soong/
-811968f3 soong: arch.go: add support for kryo300
-42e60b18 soong: use -mcpu=cortex-a55 for kryo300 and kryo385
-
-   * hardware/lineage/interfaces/
-ffb73f0 Initial audio amplifier HAL
-
-   * packages/apps/Dialer/
-92ee1fd47 incallui: use accent color for dialpad text
 
