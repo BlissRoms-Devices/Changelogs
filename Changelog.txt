@@ -1,4 +1,12 @@
 ====================
+     06-14-2020
+====================
+
+
+   * packages/apps/Jelly/
+4fab6ae Jelly: Sync color{Primary,PrimaryDark,Accent} with Recorder
+
+====================
      06-13-2020
 ====================
 
@@ -467,42 +475,4 @@ f77833e Normalize dynamic search result in Japanese
 f5993b3 Scrolling search results and autorotate cause crash
 eb675ee Fix "null" string displaying in the breadcrumbs of search results.
 ef80771 Correct colors for icons in "Search settings" for dark theme
-
-====================
-     05-30-2020
-====================
-
-
-   * build/soong/
-7a9e85bd configs.go : Allow bison, flex (#3)
-935ee9d2 soong: Whitelist perl usage
-27f2954f Allow the flock for kernel builds
-180293cc Define AArch32 soong variable
-1a46e238 soong : add more tools to paths whitelist
-
-   * frameworks/base/
-2d7c4d86756 OneUI-like settings actionbar [1/3]
-ef08ce6c4f3 SystemUI: Do not convert application name to ISO-8859-15
-634c730d8e2 SystemUI: Blacklist MobileSignalController for tuner
-79f969994b0 Add rounded hexagon icon overlay
-
-   * packages/apps/Blissify/
-5674fe0 OneUI-like settings actionbar [3/3]
-
-   * packages/apps/Etar/
-5673a7e6 Strike through title of canceled events in all views (#278)
-5d071c5a Add `status` field to `Event` class (#71 and #201)
-3db48aff Correct a typo
-
-   * packages/apps/Settings/
-677948147a Settings: Tweak some search dimens
-b12bd5d90b PanelLayout: use darker color for dark mode background & get rid of dividers
-8a5f915536 For now disable oneui actionbar for submenus
-b183954ff7 OneUI-like settings actionbar [2/3]
-27a26bdb82 Add ScrollView to gesture options dialog
-a22a7863cb Fix NPE if default supervisor is not defined
-8903022ca7 Settings: Battery: Redesign BatteryMeterView
-
-   * vendor/bliss/
-f9a7dd6f vendor: fix building adb root
 
