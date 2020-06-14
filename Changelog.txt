@@ -1,7 +1,49 @@
 ====================
+     06-15-2020
+====================
+
+
+   * frameworks/base/
+229c0f6db23 Automatic translation import
+254542a5f5e base: improve disabling longshot
+caf89940dd4 SystemUI: add back a missing call for getQuickQsPanel
+d59a5f9613b Network Traffic: remove statusbar animation
+b8f854ae072 Rework Network Traffic [2/3]
+cb435552318 TextView: Allow preventing requestLayout() calls
+4b7c4e441a1 SystemUI: Adapt new qs tint to gradient
+802b4c73538 QsLabel: make QsLabel Tint Optional [1/2]
+49ca89e29c8 Allow to show music heads up on new tracks [1/2]
+62a66de6670 Partial screenshot: block gestures and heads up when running
+
+   * frameworks/native/
+3a7638964 Add .gitreview
+3ab710a5b Add dalvik-heap device configs for 8/12/16 GiB devices
+
+   * lineage-sdk/
+81b94536 NetworkTraffic: Use correct way for leading 0
+95fd254b NetworkTraffic: Fix speed format for 10*KB
+4f00fcb9 Rework Network Traffic [1/3]
+
+   * packages/apps/Blissify/
+c462e85 Automatic translation import
+9aba546 Merge changes from topics "music-headsup", "network-traffic", "tile-label" into q
+b0ad3a3 Rework Network Traffic [3/3]
+6434f86 QsLabel: make QsLabel Tint Optional [2/2]
+a272ef9 Allow to show music heads up on new tracks [2/2]
+d720a49 Blissify: move screenshot type to buttons
+284457e Buttons: Rework key disabler related code
+
+   * packages/apps/Settings/
+b1568f4a6f Automatic translation import
+
+====================
      06-14-2020
 ====================
 
+
+   * frameworks/opt/telephony/
+c5ef741dd Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds
+b59223a78 Remove setIsoCountryProperty method along with partially dead code
 
    * packages/apps/Jelly/
 4fab6ae Jelly: Sync color{Primary,PrimaryDark,Accent} with Recorder
@@ -35,6 +77,9 @@ c2bb729 Correct spelling mistake
 3828fecfee6 SystemUI: Long press Caffeine for infinite duration
 6558cdff4e5 SystemUI: Adapt screenshot sound to ringer modes
 a0d072579fc Revert "ScreenshotSound: Fix playing screenshot's sound when camera's sounds off."
+
+   * frameworks/native/
+3ea83af71 surfaceflinger: change usageBits type to uint64_t
 
    * lineage-sdk/
 848798fe NetworkTraffic: Show both arrows when upload & download speed matches
@@ -444,35 +489,4 @@ d5a0d67 ThemePicker: Fix preview tile in grid option picker
 
    * vendor/bliss/
 9b4c64d8 config: Build Etar
-
-====================
-     05-31-2020
-====================
-
-
-   * frameworks/base/
-c36360c0dcb TypeClock: fix padding after latest changes
-bf4060cf39d AlarmManagerService.setKernelTime: fix incorrect limit.
-b60eceb6e5c Check user unlocked before write to /data/system_ce/0/snapshots
-0c70790a884 SystemUI: Fix qs system info text in light theme
-394d45c8de6 QuickStatusBarHeader: minor code improvement
-faf691a1c62 SystemUI: set oneplus slate as default font [1/2]
-
-   * manifest/
-ca3f47b manifest: Track etar
-30841ce android: Move to our own fork of timezonepicker
-a46a416 Remove unused frameworks/opt/datetimepicker
-
-   * packages/apps/Blissify/
-a85bf78 Blissify: set oneplus slate as default font [2/2]
-
-   * packages/apps/Recorder/
-8f08000 Recorder: Stop service after stopping casting
-
-   * packages/apps/SettingsIntelligence/
-f9f40c3 update .gitreview
-f77833e Normalize dynamic search result in Japanese
-f5993b3 Scrolling search results and autorotate cause crash
-eb675ee Fix "null" string displaying in the breadcrumbs of search results.
-ef80771 Correct colors for icons in "Search settings" for dark theme
 
