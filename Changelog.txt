@@ -1,4 +1,30 @@
 ====================
+     06-16-2020
+====================
+
+
+   * frameworks/base/
+0fa0843eba5 Qstile: make second line tint optional
+5410f9901a9 QSHeaderDataUsage: add icon and improve view
+d1213edb743 SystemUI: DataUsageDetailView: add ability to show daily data usage
+691ee1d6a16 QS header datausage: update view immediately after change
+6a793bc5258 QS header datausage: add ability to show daily/monthly data usage [1/2]
+049176bebad BlissUtils: add method to get today's passed time
+5b3818d061a SystemUI: QS Header data usage info: improve layout and view
+a47f2bbe718 SystemUI:QS Header data usage: Backup settings with proper validator
+1190bbeb967 Merge "SystemUI: add back qs tile expand indicator tint" into q
+2aba14812b3 SystemUI: add back qs tile expand indicator tint
+
+   * packages/apps/Blissify/
+ec5eee9 Merge "QS header datausage: add ability to show daily/monthly data usage [2/2]" into q
+a55947f Merge "Blissify: add dependency for qs label tint" into q
+72e4e59 QS header datausage: add ability to show daily/monthly data usage [2/2]
+d15435a Blissify: add dependency for qs label tint
+
+   * packages/apps/Recorder/
+ebd1ba0 Recorder: Prevent running into out of memory exceptions
+
+====================
      06-15-2020
 ====================
 
@@ -472,21 +498,4 @@ ec0f9b3 Implement quick QS brightness slider [2/3]
    * packages/apps/Snap/
 e5c1bf6d0 Snap: remove duplicate pause button
 a50c2496b CaptureUI: handle secure capture when reviewing pictures
-
-====================
-     06-01-2020
-====================
-
-
-   * manifest/
-cb30094 manifest: Track Email and UnifiedEmail from lineage
-
-   * packages/apps/Eleven/
-c0c4647 Eleven: Use constant notification id
-
-   * packages/apps/ThemePicker/
-d5a0d67 ThemePicker: Fix preview tile in grid option picker
-
-   * vendor/bliss/
-9b4c64d8 config: Build Etar
 
