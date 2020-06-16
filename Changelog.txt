@@ -1,4 +1,37 @@
 ====================
+     06-17-2020
+====================
+
+
+   * external/google/
+c1155d3 CustomActions: update takeScreenshot method
+
+   * frameworks/base/
+954abe4b172 SystemUI: extend quick qs slider position [1/3]
+7526af8cf25 Revert "SystemUI: Fix QS tiles clipping when too many icons in view"
+add72efe7cc Revert "telephony: URI cannot be created with negative subIds"
+
+   * packages/apps/Blissify/
+990d723 Merge "Blissify: extend qqs slider position [3/3]" into q
+
+   * packages/apps/Etar/
+179fc346 Add more darker colors
+9b7684c4 Make dark bg more darker
+796d5879 Remove about action
+a3aa57a4 Display hour 00 label if there is room for it.
+3a764c1c Don't mess with selected hour when scrolling
+865328ef Fix issue #457 and remove other bounces
+a30f2f8c Move input field for location under the guest field
+
+   * packages/apps/Messaging/
+613da26 Messaging: Require external legacy storage
+
+   * system/core/
+ea1fff150 Fine tune blkio setting to improve boot time
+bf07b62fc rootdir: init.rc: use default dirty writeout policy
+b9d8acd20 adbd: remove ifdefs guarding root/secure.
+
+====================
      06-16-2020
 ====================
 
@@ -15,9 +48,13 @@ a47f2bbe718 SystemUI:QS Header data usage: Backup settings with proper validator
 1190bbeb967 Merge "SystemUI: add back qs tile expand indicator tint" into q
 2aba14812b3 SystemUI: add back qs tile expand indicator tint
 
+   * lineage-sdk/
+695ec91a lineage-sdk: extend quick qs slider position [2/3]
+
    * packages/apps/Blissify/
 ec5eee9 Merge "QS header datausage: add ability to show daily/monthly data usage [2/2]" into q
 a55947f Merge "Blissify: add dependency for qs label tint" into q
+6880374 Blissify: extend qqs slider position [3/3]
 72e4e59 QS header datausage: add ability to show daily/monthly data usage [2/2]
 d15435a Blissify: add dependency for qs label tint
 
@@ -468,34 +505,4 @@ b4300eed Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 
    * system/vold/
 5f01274 Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37
-
-====================
-     06-02-2020
-====================
-
-
-   * frameworks/base/
-4d33bfb8706 SystemUI: Fix NPE when custom clock is null
-675759fd59b SystemUI: Don't forcefully convert wallpaper to SRGB
-42209a99729 Screenshot: inline trigger with AOSP values
-d7089de6003 VolumeDialog: Tint slider and icon to gradient
-0361cc1d919 VolumeDialogImpl: Tint active volume bar with gradient
-2462a777037 base: Improve navigation bar hiding toggle
-b3ca7b09e65 Close file descriptor to avoid socket leak
-41ef3367872 SystemUI: Reset PUK StateMachine after PUK is unlocked
-8444c57918e SystemUI: there is unexpected SIM PIN input dialog.
-7dae3f5c5b6 Purge unused native memory before Zygote fork events
-2a3b2397a7b BGDexopt: Clean up ordering
-3dc19c010d3 Revert "bgdexopt: Let PM handler run between optimizations"
-19bdad2d6b7 RGB Accenter: add more attrs for color changes
-
-   * lineage-sdk/
-5e732d27 Implement quick QS brightness slider [3/3]
-
-   * packages/apps/Blissify/
-ec0f9b3 Implement quick QS brightness slider [2/3]
-
-   * packages/apps/Snap/
-e5c1bf6d0 Snap: remove duplicate pause button
-a50c2496b CaptureUI: handle secure capture when reviewing pictures
 
