@@ -1,10 +1,21 @@
 ====================
+     06-19-2020
+====================
+
+
+   * frameworks/base/
+abe08c71954 SystemUI: Add QS tile to disable transition animations
+
+====================
      06-18-2020
 ====================
 
 
    * hardware/qcom/gps/
 8811231 msm8994: gps: Return the correct length of nmea sentence
+
+   * packages/apps/Jelly/
+63bb9f7 Jelly: Avoid unchecked cast warning
 
 ====================
      06-17-2020
@@ -414,21 +425,4 @@ d5e4f486 global_macros: trim back various watch* permissions
 
    * packages/apps/Dialer/
 05afe35d9 Refactor call recording to use MediaProvider.
-
-====================
-     06-04-2020
-====================
-
-
-   * frameworks/base/
-53cc8e831c9 TypeClock: add default text size to improve preview
-9060b0cd956 SystemUI: Clocks: Update thumbnails for sfuny and minimal
-10202843a08 TyepClockAlt: Allign owner info
-4c4d130775e TypeClockAlt: Add font and size changes
-5c22322b3a2 SystemUI: Add center style Typographic clock
-fe0450e059b TextClock: Fix NPE in TextClock
-bb697dfe7b6 MNMLBox Clock: Clean up hacky layouts
-0f0f64ff901 DividedLines Clock: Add proper preview layout
-aeedde0ef91 DividerLines Clock: Fix margin issue in layout
-eaf59252300 DividerLines Clock: Set 24-hr time format as well
 
