@@ -1,4 +1,14 @@
 ====================
+     06-20-2020
+====================
+
+
+   * frameworks/base/
+281a86179dc SystemUI: set proper tint for quick qs status icons
+98bec61a260 SystemUI: improve expanded header icons layout
+88dd5c173a7 SystemUI: Hide the security footer in quick qs panel
+
+====================
      06-19-2020
 ====================
 
@@ -417,12 +427,4 @@ d5e4f486 global_macros: trim back various watch* permissions
 
    * packages/apps/Dialer/
 8392b6a03 Iterate old recordings properly when migrating call recording data.
-
-====================
-     06-05-2020
-====================
-
-
-   * packages/apps/Dialer/
-05afe35d9 Refactor call recording to use MediaProvider.
 
