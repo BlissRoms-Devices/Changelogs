@@ -1,4 +1,23 @@
 ====================
+     06-21-2020
+====================
+
+
+   * frameworks/base/
+215939f7652 base: Swipe up on keyguard to use Face Unlock [1/2]
+b2c6325d1e3 TextClock: Make French strings more consistent
+63d1d329f90 SystemUI: Fix text clock translations
+7d7d3075e94 TextClock: Bring back the translations
+613127f84c3 SystemUI: no runtime padding for the top most qs status bar content
+
+   * vendor/bliss/
+fa8ffd05 roomservice: use revision tag instead of branch
+88540fa2 roomservice: account for removed    *s
+128ab0c9 roomservice: Blissify
+9371564d roomservice: support new manifest formats.
+e4e0a352 roomservice: revert previous roomservice implementation
+
+====================
      06-20-2020
 ====================
 
@@ -7,6 +26,9 @@
 281a86179dc SystemUI: set proper tint for quick qs status icons
 98bec61a260 SystemUI: improve expanded header icons layout
 88dd5c173a7 SystemUI: Hide the security footer in quick qs panel
+
+   * packages/apps/Settings/
+1326a12254 Settings: Swipe up on keyguard to use Face Unlock [2/2]
 
 ====================
      06-19-2020
@@ -419,12 +441,4 @@ d5e4f486 global_macros: trim back various watch* permissions
 
    * system/vold/
 209a111 Expand virtio_block check to other virtual devices
-
-====================
-     06-06-2020
-====================
-
-
-   * packages/apps/Dialer/
-8392b6a03 Iterate old recordings properly when migrating call recording data.
 
