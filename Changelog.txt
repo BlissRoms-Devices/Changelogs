@@ -1,4 +1,13 @@
 ====================
+     06-22-2020
+====================
+
+
+   * packages/apps/Blissify/
+4b56e55 FODIconPicker: fix derp
+6292942 homepage: follow system font
+
+====================
      06-21-2020
 ====================
 
@@ -403,42 +412,4 @@ af369dd Merge 'lineage-17.1' into q
 c1d18215 Export qcom UM hal root to soong
 ae353ca9 soong: Add flag for fod extension
 98c43e2f bliss: Bump to BlissRoms v12.8 Release
-
-====================
-     06-07-2020
-====================
-
-
-   * external/chromium-webview/
-8a8cec3 Downgrade Chromium Webview to 81.0.4044.138
-
-   * frameworks/av/
-50f84dda7 Camera: Make originalDataSpace be const upon stream creation
-b0bd1c67b avc/hevc: Align 128 everywhere
-590ab1656 Fix android.media.cts.ImageReaderDecoderTest fail on MT6580    *
-90b9b46cb mediaswcodec: Set "default" as preferred service
-eb8b20132 Codec2Client: Add function to set preferred store
-
-   * frameworks/base/
-066246816e5 StatusBar: Fix setColorOverride on r39
-2989d296374 StatusBar: Check if getBackground is null too
-aa3f72dedd0 AssistManagerGoogle: Fix after r37 merge
-475db3cea59 Merge tag 'android-10.0.0_r37' into q
-
-   * hardware/interfaces/
-1c3f0f917 Add interface info in boot@1.0-service.rc
-
-   * system/core/
-f00d95d98 init.rc: disable kernel module autoloading
-
-   * system/sepolicy/
-99492ff2 Ignore the denial when system_other is erased
-bf981a39 Don't require seinfo for priv-apps
-e4d091b1 Allow reading dt fstab in boot control HAL.
-a0cd0720 Add sepolicy for IBootControl 1.0 and the default HAL.
-d5e4f486 global_macros: trim back various watch* permissions
-662275a1 update sepolicy for fs notification hooks
-
-   * system/vold/
-209a111 Expand virtio_block check to other virtual devices
 
