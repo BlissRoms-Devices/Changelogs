@@ -1,7 +1,29 @@
 ====================
+     06-23-2020
+====================
+
+
+   * frameworks/base/
+afd44c03272 FODCircleView: add FOD invisible icon [1/2]
+
+   * packages/apps/Blissify/
+e041826 Blissify: add FOD invisible icon [2/2]
+
+====================
      06-22-2020
 ====================
 
+
+   * frameworks/base/
+b1169e62975 FODCircleView: Make FOD icon dimming optional
+acf4ac16ede FODCircleView: Dim FOD icon
+0156b430f4b FODCircleView: Improve position update
+df6a10e6c24 FODAnimation: Allow to set vertical position offset
+5575b980202 FODCircleView: Add partial wakelock on aod
+7562b232b0a FODCircleView: AOD content should move only in Y
+91ef7624abb FODCircleView: Add support for pressed fod layer
+d47db4854ad FODCircleView: invert default icon path and add #20000000 bg
+e8f197149ed cleanup fod
 
    * packages/apps/Blissify/
 4b56e55 FODIconPicker: fix derp
@@ -264,152 +286,4 @@ d8820929151 Revert "base: Improve navigation bar hiding toggle"
 
    * packages/apps/Settings/
 7f1d40a39e Phone ringtone setting for Multi SIM device
-
-====================
-     06-08-2020
-====================
-
-   * art/
-e6a5ae66be Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//art into HEAD
-
-   * build/make/
-2ccba5901 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//build into q
-
-   * build/soong/
-a0521bf2 Allow curl to be executed on soong build
-2fc527b3 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//build/soong into q
-
-   * frameworks/av/
-95eb8a863 CamcorderProfiles: Add 8KUHD camcorder profile
-2a54dd71d Camera: Add support for manual 3A.
-0af86454f camera: allow device to append camera parameters
-0493d03a1 libcameraservice: Don't pass NULL args on setCallbacks call
-fd4645056 audiopolicy: Fixes for internal audio recording
-308c8bd19 av: modify product soong variables
-95fecedbf GraphicBufferSource: ensure EOS buffer can be submitted
-5b285b0d7 libstagefright: Allow HFR-60 in HAL-3 recording
-163e1caa3 audio: add support for error handling of dsp SSR
-cfee08b68 aaudio: set primary flag for AAUDIO_PERFORMANCE_MODE_NONE
-f022949a7 Fix memory leak in MPEG2PSExtractor
-af819ac19 Fix native exception occurred when seeking mp4 file
-9d1cb689c Fix out of bounds access
-cdf3d520a validate width*height doesn't overflow in image file
-e989535ac Fix exception when delete an uninitialized object
-824325848 codec2: read fallback ION params from system properties
-d5e714b08 mTraits is used without been locked
-d7d7cb51b codec2: fallback to yuv420p color format thumbnail in C2
-c0da0d8e8 vorbisdec: support 192Khz sample rate for vorbis
-2728b5433 aacenc: handle and warn overlapping timestamps
-33b9616c4 cameraserver: Fix libcameraserver location for NO_CAMERA_SERVER
-6220d6f4c cameraserver: Fix libcameraserver location
-2b917f231 av: Allow providing camera server and service
-b4e8b7fbb [2/2] av: Remove restrictions for system audio record
-77f597e8b Camera: Skip stream size check for whitelisted apps.
-bebd141a1 ld.config: add libashmemd_client.so to platform shared libs
-25258cf1f av: camera: Allow disabling shutter sound for specific packages
-bb3875dd4 cameraservice: move client_package_name to data/misc
-c99781072 libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO
-
-   * frameworks/base/
-0420508c126 KeyguardClockSwitch: change default padding for text clock
-a1dda23f8f4 Screenshot: add option to disable long screenshot
-0011154c07b Optional screenshot type [1/2]
-0bf29f7ac00 Revert " base: Optional screenshot type [1/2]"
-669a88e0a76 StichImageUtility: allow taking screenshot on home screen
-e742d1c46ed SystemUI: Fix QS detail header padding
-6603960f124 DozeSensors: only use proximity sensor if supported
-23b7a87cba5 data: Update permissions whitelist for PermissionController
-3a9bfbbfcdc Use a concurrent hash map to access VolumeDialogControllerImpl's callbacks
-33edcc679e1 Add Accelerometer and Linear Acceleration sensors in blocking list
-683bcff4c7a Revert "Start process of next activity with top priority in advance"
-e5a53773e2d SystemUI: Make clock truly invisible
-645a535c2cd SystemUI: QQS brightness: get container padding directly
-066c1d30796 base: fix r37 merge derp
-
-   * frameworks/native/
-22f62fbc5 native: modify soong product variables
-499f3a7fd native: Screen Stabilization [2/2]
-
-   * frameworks/opt/telephony/
-3bcb8f508 add for community - community is not pleased
-
-   * hardware/interfaces/
-53af0413a Merge branch 'lineage-17.1' to q
-
-   * hardware/nxp/nfc/
-65536f1 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//hardware/nxp/nfc into q
-
-   * hardware/qcom/gps/
-d68c1ae Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//hardware/qcom/gps into q
-
-   * hardware/qcom/media/
-b92b27c Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//hardware/qcom/media into q
-
-   * manifest/
-e376615 Merge branch 'android-10.0.0_r37' of https://android.googlesource.com/platform//manifest into q
-
-   * packages/apps/Blissify/
-242a5fd Blissify: Add screenshot type option for Longshot [2/2]
-4241fe0 Buttons: Add a summary for layout inversion
-
-   * packages/apps/Bluetooth/
-418a4a0e Merge branch 'lineage-17.1' into q
-
-   * packages/apps/DocumentsUI/
-da958a2cb Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//packages/apps/DocumentsUI into q
-
-   * packages/apps/Launcher3/
-b5a118c8d Merge tag 'android-10.0.0_r37' into q
-
-   * packages/apps/Nfc/
-2a280b94 Merge branch 'lineage-17.1' into q
-
-   * packages/apps/Settings/
-4f8d9e43ab Merge tag 'android-10.0.0_r37' into q
-
-   * packages/providers/DownloadProvider/
-00f78279 Merge branch 'lineage-17.1' into q
-57b2144b Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD
-
-   * packages/providers/MediaProvider/
-ea7f0fc Merge branch 'lineage-17.1' into q
-
-   * packages/services/Telecomm/
-03a6322b Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//packages/services/Telecomm into q
-
-   * packages/services/Telephony/
-914ec8707 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform//packages/services/Telephony into q
-
-   * system/bt/
-d354a4b7d Bluetooth: Support to know if there is High Def call
-
-   * system/core/
-e32c156e4 Allow to drop existing fd cache of cgroup path
-49cbc4725 init: modify product soong variables
-2d9d93a4d Make GetDeviceLockStatus() favor unlocked devices
-5ff9c7b2c healthd: Add WARP charger type
-5aaeb6fad Shut up camera and wcnss debug output
-acdbb0643 Filter GalleryDatab*
-b5c3c85e1 Silence spammy logs from camera blobs (AEC_PORT and mm-camera)
-307656ddc init: ro.build.selinux should be 0
-a4f7e384a init: add several more keys to spoof
-ea4815e52 init: workaround SafetyNet check
-d19989146 init: Weaken property override security for the init extension
-7c3e32170 LockscreenCharging: squashed (2/3)
-d89f2b430 Add .gitreview
-
-   * system/extras/
-119b7aaa ext4_utils: disable secure discard globally
-ab709c77 Add in gitreview file
-
-   * system/sepolicy/
-5ccde317 sepolicy: allow system app to access sysfs_leds
-
-   * system/vold/
-af369dd Merge 'lineage-17.1' into q
-
-   * vendor/bliss/
-c1d18215 Export qcom UM hal root to soong
-ae353ca9 soong: Add flag for fod extension
-98c43e2f bliss: Bump to BlissRoms v12.8 Release
 
