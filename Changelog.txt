@@ -1,12 +1,23 @@
 ====================
+     06-24-2020
+====================
+
+
+   * packages/apps/DeskClock/
+ca1f18021 Merge branch 'lineage-17.1' into q
+
+====================
      06-23-2020
 ====================
 
 
    * frameworks/base/
+c08b86990aa The surface hang up when screen on and screen off
+7f342655f92 Revert "Add toggle to display battery in quick status bar [1/2]"
 afd44c03272 FODCircleView: add FOD invisible icon [1/2]
 
    * packages/apps/Blissify/
+d8727f8 Revert "Add toggle to display battery in quick status bar [2/2]"
 e041826 Blissify: add FOD invisible icon [2/2]
 
 ====================
@@ -140,6 +151,9 @@ a55947f Merge "Blissify: add dependency for qs label tint" into q
 72e4e59 QS header datausage: add ability to show daily/monthly data usage [2/2]
 d15435a Blissify: add dependency for qs label tint
 
+   * packages/apps/DeskClock/
+01c3369e7 DeskClock: Remove notification sound from firing and snoozing channels
+
    * packages/apps/Recorder/
 ebd1ba0 Recorder: Prevent running into out of memory exceptions
 
@@ -178,6 +192,10 @@ a272ef9 Allow to show music heads up on new tracks [2/2]
 d720a49 Blissify: move screenshot type to buttons
 284457e Buttons: Rework key disabler related code
 
+   * packages/apps/DeskClock/
+fbaedef9d DeskClock: Replace ViewPager with manual fragment handling
+26df7bf25 DeskClock: Fix german translation of "days"
+
    * packages/apps/Settings/
 b1568f4a6f Automatic translation import
 
@@ -207,6 +225,9 @@ cb938e0e5f8 Improve Network Traffic [2/2]
    * packages/apps/Blissify/
 c2bb729 Correct spelling mistake
 
+   * packages/apps/DeskClock/
+b6bca2fe3 DeskClock: Properly align settings
+
    * packages/apps/Settings/
 5d7a2bc639 Bring back on/off toggle for physical SIMs
 
@@ -231,6 +252,9 @@ a0d072579fc Revert "ScreenshotSound: Fix playing screenshot's sound when camera'
 5f0857c2 NetworkTraffic: Convert upload & download mode to single line
 7244f689 Improve Network Traffic [1/2]
 fe98bee0 NetworkTraffic: Fix crashes with overlay changes
+
+   * packages/apps/DeskClock/
+58f3edcde DeskClock: Move navigation bar to bottom
 
    * packages/apps/Dialer/
 fd23ed1ac incallui: always strip alpha from primary color
@@ -269,6 +293,11 @@ d9b44fa1d Dialer: Dont change accent color for dark theme
    * frameworks/base/
 d8820929151 Revert "base: Improve navigation bar hiding toggle"
 
+   * packages/apps/DeskClock/
+9026139e6 DeskClock: also apply disabled color to annotations
+6fcbe7e9f DeskClock: Come to the dark side...
+22b6cf2f8 DeskClock: Rework notification channel implementation
+
 ====================
      06-10-2020
 ====================
@@ -278,12 +307,4 @@ d8820929151 Revert "base: Improve navigation bar hiding toggle"
 69b57389b73 SystemUI: Resolve faulty keyguard clock logs outputs
 597ed8dc9f4 [BACKPORT] Config of LTE signal strength default value remove SNR
 4b43b9ee44d SystemUI: Fix pink progress animation color in expanded Wi-Fi tile
-
-====================
-     06-09-2020
-====================
-
-
-   * packages/apps/Settings/
-7f1d40a39e Phone ringtone setting for Multi SIM device
 
