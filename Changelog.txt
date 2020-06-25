@@ -1,4 +1,12 @@
 ====================
+     06-26-2020
+====================
+
+
+   * packages/apps/Settings/
+0dfbb1afa6 Settings: Switch to string overlay for maintainer string
+
+====================
      06-25-2020
 ====================
 
@@ -7,6 +15,7 @@
 b46e5de sepolicy: Move in pocket service sepolicy
 
    * frameworks/base/
+25ac7aa80dc QuickQSPanel: Force hide security footer
 29746130664 Clocks: add burn in protection for custom clocks
 78a1fac0d85 QSHeaderDataUsage: hide usage if device is not connected to internet
 8404e88b1a7 QSHeaderDataUsage: show Wi-Fi usage if device is connected to Wi-Fi
@@ -14,6 +23,9 @@ b46e5de sepolicy: Move in pocket service sepolicy
 
    * lineage-sdk/
 3f4abef2 NetworkTraffic: Add support for bits/sec [1/2]
+
+   * manifest/
+d7d32a3 manifest: Remove Coral device repos
 
    * packages/apps/Blissify/
 62c52ce Blissify: Add Pocket judge toggle
@@ -324,17 +336,4 @@ d9b44fa1d Dialer: Dont change accent color for dark theme
 368668a47 Dialer: Enable call recording for all
 6246964c9 Dialer - Breathing missedcall/sms/voicemail [2/5]
 04ce7d8de Add .gitreview
-
-====================
-     06-11-2020
-====================
-
-
-   * frameworks/base/
-d8820929151 Revert "base: Improve navigation bar hiding toggle"
-
-   * packages/apps/DeskClock/
-9026139e6 DeskClock: also apply disabled color to annotations
-6fcbe7e9f DeskClock: Come to the dark side...
-22b6cf2f8 DeskClock: Rework notification channel implementation
 
