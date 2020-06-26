@@ -1,4 +1,16 @@
 ====================
+     06-27-2020
+====================
+
+
+   * hardware/qcom-caf/msm8998/audio/
+9e2e494b3 hal: msm8974: Use stereo recording depending on camera orientation
+972bdcff0 hal: msm8974: Fix the wrong device for AUDIO_SOURCE_CAMCORDER
+
+   * packages/apps/Snap/
+c139411dd Snap: Report device orientation to Audio HAL
+
+====================
      06-26-2020
 ====================
 
@@ -71,6 +83,27 @@ afd44c03272 FODCircleView: add FOD invisible icon [1/2]
    * packages/apps/Blissify/
 d8727f8 Revert "Add toggle to display battery in quick status bar [2/2]"
 e041826 Blissify: add FOD invisible icon [2/2]
+
+   * packages/apps/Eleven/
+a9f1d80 Automatic translation import
+
+   * packages/apps/FMRadio/
+8ba2e5d Automatic translation import
+
+   * packages/apps/Jelly/
+3ef8872 Automatic translation import
+
+   * packages/apps/Recorder/
+ba6f369 Automatic translation import
+
+   * packages/apps/Snap/
+ffa05e54c Automatic translation import
+
+   * packages/resources/devicesettings/
+7a3adac Automatic translation import
+
+   * vendor/qcom/opensource/fm-commonsys/
+1f27002 Automatic translation import
 
 ====================
      06-22-2020
@@ -282,58 +315,4 @@ b6bca2fe3 DeskClock: Properly align settings
 
    * packages/apps/Settings/
 5d7a2bc639 Bring back on/off toggle for physical SIMs
-
-====================
-     06-12-2020
-====================
-
-
-   * frameworks/base/
-86f34e74974 Add separate start/end padding dimens for QS Header
-66df65eda3e SystemUI: Remove hardcoded end padding quick_qs_status_icons
-8129969bfd0 Revert "Add cutout support in QSDetail"
-3828fecfee6 SystemUI: Long press Caffeine for infinite duration
-6558cdff4e5 SystemUI: Adapt screenshot sound to ringer modes
-a0d072579fc Revert "ScreenshotSound: Fix playing screenshot's sound when camera's sounds off."
-
-   * frameworks/native/
-3ea83af71 surfaceflinger: change usageBits type to uint64_t
-
-   * lineage-sdk/
-848798fe NetworkTraffic: Show both arrows when upload & download speed matches
-5f0857c2 NetworkTraffic: Convert upload & download mode to single line
-7244f689 Improve Network Traffic [1/2]
-fe98bee0 NetworkTraffic: Fix crashes with overlay changes
-
-   * packages/apps/DeskClock/
-58f3edcde DeskClock: Move navigation bar to bottom
-
-   * packages/apps/Dialer/
-fd23ed1ac incallui: always strip alpha from primary color
-a5e4a196a incallui: use accent color for dialpad text
-a90bfd082 Dialer: expose dialer toolbar text colors
-3f0d04763 InCallUI: SmartMute
-e85edb854 Make proxi sensor smart-case friendly
-4a395cf46 Fix incorrect proximity sensor behaviour
-3d638307e Add back autoanswer option when bt or wired headset connected
-d4883c571 Add back proximity autoanswer feature
-3a9afe327 Disable answer false touch detection by default
-b9628230c Dialer auto proximity speakerphone [2/2]
-126be0705 Dialer: Add option to disable proximity sensor
-41ef65afc Add toggle for post call snackbar
-261c4841d Dialer: Make recording names sortable
-08797082f Fix Dialer memory leaks
-43b410f7c AospThemeImpl: fully white might NOT be uninitialized!
-5dd65578e Improve contatcts layout
-9d2152524 Add ability to set full screen photos for calls
-a570d2bd5 Dialer: use system round corner values for searchbox
-f7edcbb4c Dialer: Fix dark dialogs on light theme
-db8ad79f3 Dialer: Remove in call vibrate options already added
-d9b44fa1d Dialer: Dont change accent color for dark theme
-89750e4e4 Dialer: theme fixes
-55f69c8ca Dialer: welcome to night mode
-09ea9c049 Add autorecord feature
-368668a47 Dialer: Enable call recording for all
-6246964c9 Dialer - Breathing missedcall/sms/voicemail [2/5]
-04ce7d8de Add .gitreview
 
