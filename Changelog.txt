@@ -1,4 +1,104 @@
 ====================
+     06-28-2020
+====================
+
+
+   * frameworks/base/
+c5b013f0f3a QSTiles: Add 1 more styles [3/3]
+3dfce68be05 QsTile: add Cookie QS style [1/3]
+bb651aeeb09 Add InkDrop QS Tile Style [1/3]
+6bd9d7bc3ae QSTile: Add Squaremedo from BootLeggers [1/3]
+758de373033 Add more qs tiles style [1/3]
+c4b29478a28 Introduce QS tile style picker [1/3]
+09567ad44ff Switch Styles : telegram style [1/3]
+7499d77e4d5 base: Switch styles [1/3] Add back from Pie
+c459a21a6c6 Fix build errors
+1419dd3bcb5 Fix BLE transport discovery scan filter
+8ba2d50a566 BT: Relocate A2DP codec strings for translation
+2fc4f2de039 Enable codec change request when mode changes in aptX-adaptive
+12e7bf11010 Keep a null check before accessing the BluetoothA2dpWrapper APIs.
+85d2c12c0f2 Bluetooth: Fix for out of bound exception
+54214e88c1e BT Dev: Increase array size for codec selection in Dev Op
+12001bf6631 Keep the BluetoothHeadset finalize() method protected
+49dcf5ca770 Bluetooth: Fix for Global reference table overflow issue[1/2]
+bbb1278b624 BT: Add new intent to broadcast IOT device details
+f8b6df9b0c5 BT_Audio: Updated Check for TWS+ switch
+b51f006cb15 TWS_A2DP: Handle active device change between TWS+ earbuds
+699c79d342f audio: Add support for APTX TWSP audio codec
+082d706e397 audio: Add support for audio extended codecs
+255dae9c66a Use BluetoothUtils instead of Utils
+9ca9a6e7301 GAP: Handle the race condition cases in auto connect logic
+443f4056763 Obex: Squashed commit of the following
+90da177ce1f Add scan filter for Transport Discovery data
+5886f285800 Support CALLBACK_TYPE_SENSOR_ROUTING
+00cc28c590c Add support for Transport discovery AD type (1/2)
+c3bfd47a221 Bluetooth: TWSP: Support Battery Status information display
+457f11543cc GAP: Reset bondingInitiatedLocally flag(1/3)
+0913efdd51e Bluetooth-TWS: Disable outgoing connection to 2nd earbud
+13bc0184d0b Bluetooth-TWS: Disable outgoing connection for 2nd earbud.
+62961ed7d39 Bluetooth: Rename bluetooth property to support new P Treble rules
+4e18d61f38e Bluetooth: Unpair both earbuds on unpair.
+a49c07fb8ab Bluetooth: Add SDK API support for TWS feature (2)
+56bef0b9dc9 Revert the change: AudioService: remove dead BT code.
+1dc7d659a11 TWS-A2DP: Add TWS+ codec to DevUI support
+c942db03961 BT: Adding aptX-Adaptive codec entry to Framework
+aabe4abd5d8 Add BluetoothQualityReport class(1/2)
+6c0ebeda1ce base: cleanup bt a2dp commits
+c57ee6334d9 Revert "SystemUI: Fix persistent Settings icon mess"
+296f90f9e0e base: SystemUI: fix moving of qs brightness slider
+90755135cca QSPanel: fix brightness slider logic
+207fdaafb9f base: SystemUI: Kill brightness mirror
+cd37f0bc1c8 Automatic translation import
+
+   * manifest/
+74d0587 manifest: Track QTI BT repos from lineage
+
+   * packages/apps/Blissify/
+807a068 Blissify: Switch Styles : telegram style [2/3]
+6d1f1da Blissify: Switch styles [2/3]
+a564c7d Blissify: QSTiles: Add CircleOutline style [2/3]
+1c3459b Blissify: Add Cookie QS style [2/3]
+9de0402 Blissify: Add InkDrop QS Tile Style [2/3]
+20a86e4 Blissify: QSTile: Add Squaremedo from BootLeggers [2/3]
+a1de97d Blissify: Add more qs tiles styles [2/3]
+4deca9b Blissify: Introduce QS tile style picker [2/3]
+49186e0 Automatic translation import
+
+   * packages/apps/Bluetooth/
+16267133 Stub TWS related APIs
+55dc311d GAP: Reset bondingInitiatedLocally flag(2/3)
+33b18344 BT: API to update quiet mode status in Adapter service [1/3]
+22f7f4b4 Bluetooth: Enable Hybrid Audio from App
+48f2caf0 Add BLE Scan Phy parameter to scan API
+
+   * packages/apps/Contacts/
+4871280ae Automatic translation import
+
+   * packages/apps/Settings/
+8612ba8bc5 BT: Use translated a2dp codec strings
+946cb7523c codec support for DevUI am: f915bd9438
+0cc09655f2 BT Settings: Adding aptX Adaptive codec entry in Settings
+1a299ed003 Bluetooth-TWS: UI updates based on Filter matched
+231802a471 Bluetooth-TWS: UI updates based on profile connection.
+47b12353e1 Fix build error
+0f6ebf1f4d Bluetooth-TWS: Filter TWS devices
+b797bc5e8c Bluetooth: Create new catogory for earbuds
+6516a2f758 Automatic translation import
+7108b73ee2 Settings: Switch to string overlay for maintainer string
+
+   * vendor/themes/
+025cfb6 QsTileStyles: adapt for Android 10
+8815d24 QSTiles: Add one more styles [1/3]
+8aab323 vendor: add Cookie QS style [1/3]
+46bff45 Add Ink QS Tile Style [3/3]
+8e62429 QSTile: Add Squaremedo from BootLeggers [3/3]
+ba680c6 Add more qs tiles style [2/3]
+ac94c19 Introduce QS tile style picker [3/3]
+2a78ef3 Switch Styles : telegram style [3/3]
+039f65c Add Switch Styles [3/3]
+e7c34d6 Revert "themes: increase footer end padding"
+
+====================
      06-27-2020
 ====================
 
@@ -10,13 +110,21 @@
    * packages/apps/Snap/
 c139411dd Snap: Report device orientation to Audio HAL
 
+   * system/bt/
+d745359c2 GAP: Reset bondingInitiatedLocally flag(3/3)
+929174534 Bluetooth: Enable Hybrid Audio from stack
+ba9e68b30 Add scan filter for Transport Discovery data
+a288dd1a1 TWS-A2DP: Add TWS+ codec index
+605cc45b9 Bluetooth: Support to know if there is High Def call
+96f01e511 BT: API to update quiet mode status in Adapter service [3/3]
+66b4459ab BT: Adding APTX-Adaptive codec to BT HAL
+7e453face Add BLE Scan Phy parameter to scan API
+e614ae763 Bluetooth: Add SDK API support for TWS feature (1)
+
 ====================
      06-26-2020
 ====================
 
-
-   * packages/apps/Settings/
-0dfbb1afa6 Settings: Switch to string overlay for maintainer string
 
 ====================
      06-25-2020
@@ -295,24 +403,4 @@ b59223a78 Remove setIsoCountryProperty method along with partially dead code
 
    * packages/apps/Jelly/
 4fab6ae Jelly: Sync color{Primary,PrimaryDark,Accent} with Recorder
-
-====================
-     06-13-2020
-====================
-
-
-   * frameworks/base/
-6689adf9b57 ScreenshotTile: add option for long screenshot
-cb938e0e5f8 Improve Network Traffic [2/2]
-3b7fd2c0c08 Revert "Fix status bar for network traffic icon holder"
-554a6b7ca14 Avoid casting network traffic to StatusBarIconView to prevent crash
-
-   * packages/apps/Blissify/
-c2bb729 Correct spelling mistake
-
-   * packages/apps/DeskClock/
-b6bca2fe3 DeskClock: Properly align settings
-
-   * packages/apps/Settings/
-5d7a2bc639 Bring back on/off toggle for physical SIMs
 
