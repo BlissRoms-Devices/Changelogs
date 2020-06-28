@@ -1,4 +1,161 @@
 ====================
+     06-29-2020
+====================
+
+   * art/
+73638d1da0 Make the ART thread pool implementation use default-sized stacks on Bionic
+7bd003d161 ART: Transform Sub+Sub into Sub+Add to merge Shl
+ed3c4f4fe0 separate madvise calling from critical section
+7a1e4d570f ART: Add recognition of optimized HRems in BCE
+280f4bc15f ART: Simplify HRem to reuse existing HDiv
+f695d891f4 ART: Add classes having intrinsics to boot image
+28b08bd19e Add fast path for exception vreg copying.
+4ac989b2ac Stack maps: Refactor constructors.
+2e8235b990 Stack walk: Cache CodeInfo and StackMap for current PC.
+6fc39fc5d2 ART: Introduce stackmap with no DexRegInfo.
+91c0ab0eab ART: Encapsulate init-optimization fields
+46ffbc452f ART: Use bitset in dex file verifier
+1976e4b926 ART: Change unordered_set to HashSet
+70815ce609 ART: Cache type index validity
+edd08ec4bf Stack maps: Micro-optimize LoadBits
+545e5b58f7 Stack maps: Micro-optimize ReadInterleavedVarints
+5261d076d8 Revert^2 "Stack maps: Interleave consecutive varints."
+663534fdd6 Stack maps: Handle special cases using flags.
+eef5c135f2 Avoid coercing to key type in SafeMap
+6c700c80df Revert^2 "Improve ArraySet codegen."
+948a23670a ARM64: Combine LSR+ADD into ADD_shift for Int32 HDiv/HRem
+cb98606a99 ART: Optimize ADD/SUB+ADD_shift into ADDS/SUBS+CINC for HDiv/HRem
+4daf30e8f1 ARM64: Combine LSR+ASR into ASR for Int32 HDiv/HRem
+90368161cb ART: Refactor InstructionCodeGeneratorARM64::GenerateDivRemWithAnyConstant
+5cd8366aac Add default argument kIsInstrumented=true.
+3af4b66280 ART: Fix some types
+534ac93e9b Fix mterp assembly to use uxtw instead of lsl where needed.
+c7f7383738 jni: Fix templates for clang-r377782 update.
+12041f84f4 Fix incorrect narrowing type cast
+97d03a014c Add assembly support for -fsanitize=hwaddress tagged globals.
+f0d8565cd9 Make the $/# in front of constants optional
+f3af4a2989 Remove MIPS support from JNI/trampoline compiler.
+dae8531852 Move @CriticalNative arguments in registers.
+e67c6bf79f Move entry spills determination to JNI compiler.
+8499b54479 jni: Do not create a managed frame for @CriticalNative.
+8a7b0ba182 Reduce cache memory use of libdexfile.
+8ce537b5a8 dex2oat: Fix repeatedly preparing dex files for oat file
+1ac10fd5b2 Avoid dex2dex initialization if not compiling.
+3be68432aa Workaround w.r.t. an assertion failure in AOSP LLVM for a new SP
+48bcb07fef constify JNINativeMethod tables
+0df7b87b90 ART: ARM64: Improve FP IsInfinity intrinsic.
+40dc9f7173 Enable support of VecLoad/VecStore in LSE
+7d9cca702d Utilize partially used TLABs
+06469814ba ARM64: FP16 greater/less/greaterEquals/lessEquals intrinsics for ARMv8
+f5df2db0ac ARM64: FP16.rint() intrinsic for ARMv8
+05c848e7cd ARM64: FP16.ceil() intrinsic for ARMv8
+f4638f125b ARM64: FP16.floor() intrinsic for ARMv8
+2515b29bc5 ARM64: Pass simd half floating point feature to VIXL macroassembler.
+2160b1040b ARM: Remove unnecessary kCoreAlwaysSpillRegister.
+02d5a49cdf Remove ShadowFrame::HasReferenceArray()
+0e9edab6f6 ARM/ARM64: Use trampolines for slow-path entrypoint calls.
+ba63b5d49c ARM64: Improve BoundsCheck for constant inputs.
+c197450bb1 ART: ARM64: Optimize frame size for SIMD graphs.
+2d65a25462 ART: ARM64: Fix saved fpu stack offsets for SIMD.
+62ce574c71 ARM/ARM64: Improve frame entry/exit codegen.
+b682cb8580 Improve constant folding on logical and
+efbb23aedf ART: Preallocate offset map
+c742bf898c Fix intersecting live ranges created by instruction scheduler
+cbe2772fd0 ART: Refactor SchedulingGraph for consistency and clarity
+17ce85b725 Optimize stack maps: add fast path for no inline info.
+aad80ad62c Optimize stack map decoding.
+ac29db7472 ART: Improve VisitStringGetCharsNoCheck intrinsic for compressed strings, using SIMD
+9d3d76c83c Revert^2 "ARM64: toHalf() intrinsic for ARMv8"
+16cbdff20a ARM64: toFloat() intrinsics with ARMv8 FP16.
+25f5a640e8 ART: Optimize StringBuilder append pattern.
+8cf05d4241 ART: Mark StringBuilder.append()s as intrinsics.
+1d6decfdbe Allow disabling apex test module
+
+   * bionic/
+147016ec8 string: Add optimized memrchr
+4d5c2097d string: Improve strnlen performance
+862449123 libc: arm64: move macro for defining labels to bionic_asm_arm64.h
+e5384c54c string: Improve strrchr performance
+5d68028a1 string: Improve strchr performance
+399afdef5 libc: kryo specific memory routine
+f974df90c bionic: Support case-insensitive domain name hash
+f183f39ae Avoid recording backtrace if alloc-size is outside range of interest
+881000ccc benchmarks: add 16 and 32 bytes to common sizes
+8697767ef libc: arm64: optimize memcpy
+b5d9d2da6 Neon-optimized version of the GNU symbol calculation
+7d2c05fcf Restore handling of R_GENERIC_NONE relocations
+772affdd2 Create linker_log[_va_list] functions
+f56ac9995 Optimize GNU hash linking for large inputs
+ba4b68ea2 linker: stop relocating R_ARM_REL32
+4729db383 Factor out R_GENERIC_COPY
+d7ddbec8c Renumber arm64 TLS to match GNU values
+2b814fade Factor out R_GENERIC_ABSOLUTE
+f7b0faca3 Remove broken arm64 PREL/ABS relocations
+63d5941e8 linker: Speed up relocation with an 1-entry symbol cache
+9916836fc Staticlly allocate string buffers for realpath_fd()
+bbc2cb4aa Validate defined versions in prelink_image
+c5a6cef96 Prelink each library only once
+904ae584d Inline soinfo::get_tls
+68d1d5aed Track library name change.
+e1607a0d3 libm: track arm-optimized-routines changes.
+6bfc49495 libc: update symbol_ordering for new jemalloc
+85e9b0bef libc: arm64: add strcpy/stpcpy from arm-optimized-routines
+2aaedb222 libc: Set __bionic_asm_align to 64 for arm and arm64
+28eac6744 libc: arm64: add integer memcpy/memmove from arm-optimized-routines
+ecfed26c1 aarch64: Increase small and medium cases for memcpy
+4aa63cd9d Sync with upstream OpenBSD strstr().
+4798595da libm: add l(l)rint/l(l)round routines from musl
+547207364 linker: Speed up find_loaded_library_by_inode()
+34287077b libm: sync with upstream FreeBSD.
+d6b191d21 Use builtins for fma/fmax/fmin/nearbyint/rint/round/trunc on 32-bit ARM
+efa59d8e8 Revert "Revert "arm64: Use builtin for nearbyintf/nearbyint""
+0b2863fd6 libc: add optimized ARM64 strrchr from newlib
+f877f5c04 libc: import ARM strcmp from newlib
+9f7271b13 libc: arm: Optimise memchr for NEON-enabled processors
+db65842d7 linker: Move to bliss soong var
+
+   * external/arm-optimized-routines/
+1925b74 math: Improve comments, disable errno handling by default
+da2a463 math: Add more ulp tests
+59055d4 math: add vector pow
+
+   * frameworks/base/
+e788de31717 base: Add some more fonts
+
+   * libcore/
+9ff546265 Support convert string similar to FE87-9640 to UUID
+1e60d30c5 XML Pull Parser optimizations
+ba9580601 Preload zone rules in zygote hook
+39004e416 Speed up BigInteger gcd with one small argument
+4484ba7cb Use round to nearest with ties to nearest even in FP16.rint
+46309acc5 Mask result with qNaN if input to rint is NaN
+af59406dd Mask result with qNaN if input to ceil is NaN
+04bbbf265 Tests for Half.floor for NaN values
+87adee81e Add test cases for libcore FP16 APIs
+1331b0309 Replace comparison check for infinity with isNaN function call
+ba1d085d7 Fixed weird variable naming in FP16.java
+fbd7f5345 Mask result with qNaN if input to floor is NaN
+3b4aa41f5 Add test cases for libcore FP16 APIs
+d3bb7beeb Round to nearest even instead of to nearest 0.5 up
+f7ded6100 Correct the exponent value calculated when converting from float to half
+c5ce19279 Move Half implementations to libcore to allow ART optimizations
+
+   * manifest/
+fb16224 manifest: track more repos from bliss
+b7ff29c Merge "manifest: track livedisplay from lineage" into q
+
+   * packages/apps/Blissify/
+591ec03 Blissify: Add missing break statement
+c233b51 Blissify: add more fonts
+
+   * prebuilts/abi-dumps/vndk/
+d5f5400 vndk: remove libpng from ABI check target
+
+   * vendor/themes/
+732ab62 themes: add CircularStd font [2/2]
+9392e8b Add fonts for Clock and Carrier label customization
+
+====================
      06-28-2020
 ====================
 
@@ -51,6 +208,7 @@ c57ee6334d9 Revert "SystemUI: Fix persistent Settings icon mess"
 cd37f0bc1c8 Automatic translation import
 
    * manifest/
+2e66dd4 manifest: track livedisplay from lineage
 74d0587 manifest: Track QTI BT repos from lineage
 
    * packages/apps/Blissify/
@@ -391,16 +549,4 @@ fbaedef9d DeskClock: Replace ViewPager with manual fragment handling
 
    * packages/apps/Settings/
 b1568f4a6f Automatic translation import
-
-====================
-     06-14-2020
-====================
-
-
-   * frameworks/opt/telephony/
-c5ef741dd Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds
-b59223a78 Remove setIsoCountryProperty method along with partially dead code
-
-   * packages/apps/Jelly/
-4fab6ae Jelly: Sync color{Primary,PrimaryDark,Accent} with Recorder
 
