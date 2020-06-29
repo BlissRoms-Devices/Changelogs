@@ -1,4 +1,9 @@
 ====================
+     06-30-2020
+====================
+
+
+====================
      06-29-2020
 ====================
 
@@ -507,46 +512,4 @@ d15435a Blissify: add dependency for qs label tint
 
    * packages/apps/Recorder/
 ebd1ba0 Recorder: Prevent running into out of memory exceptions
-
-====================
-     06-15-2020
-====================
-
-
-   * frameworks/base/
-229c0f6db23 Automatic translation import
-254542a5f5e base: improve disabling longshot
-caf89940dd4 SystemUI: add back a missing call for getQuickQsPanel
-d59a5f9613b Network Traffic: remove statusbar animation
-b8f854ae072 Rework Network Traffic [2/3]
-cb435552318 TextView: Allow preventing requestLayout() calls
-4b7c4e441a1 SystemUI: Adapt new qs tint to gradient
-802b4c73538 QsLabel: make QsLabel Tint Optional [1/2]
-49ca89e29c8 Allow to show music heads up on new tracks [1/2]
-62a66de6670 Partial screenshot: block gestures and heads up when running
-
-   * frameworks/native/
-3a7638964 Add .gitreview
-3ab710a5b Add dalvik-heap device configs for 8/12/16 GiB devices
-
-   * lineage-sdk/
-81b94536 NetworkTraffic: Use correct way for leading 0
-95fd254b NetworkTraffic: Fix speed format for 10*KB
-4f00fcb9 Rework Network Traffic [1/3]
-
-   * packages/apps/Blissify/
-c462e85 Automatic translation import
-9aba546 Merge changes from topics "music-headsup", "network-traffic", "tile-label" into q
-b0ad3a3 Rework Network Traffic [3/3]
-6434f86 QsLabel: make QsLabel Tint Optional [2/2]
-a272ef9 Allow to show music heads up on new tracks [2/2]
-d720a49 Blissify: move screenshot type to buttons
-284457e Buttons: Rework key disabler related code
-
-   * packages/apps/DeskClock/
-fbaedef9d DeskClock: Replace ViewPager with manual fragment handling
-26df7bf25 DeskClock: Fix german translation of "days"
-
-   * packages/apps/Settings/
-b1568f4a6f Automatic translation import
 
