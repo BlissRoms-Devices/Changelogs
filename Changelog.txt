@@ -1,7 +1,57 @@
 ====================
+     07-01-2020
+====================
+
+
+   * frameworks/base/
+c6c6618aaf3 NetworkTraffic: Improvements and cleanup
+1d53b42d5d3 NetworkTraffic: Add support for bits/sec [1/2]
+25e8d8eb740 NetworkTraffic: Add back translated units
+4b0a68a09a3 NetworkTraffic: Move in main class from sdk
+6290e1ebe21 Rework variable refresh rate settings [1/2]
+ebdb2c886fa SystemUI: Use old padding values for VoLTE icon
+86195edd549 SystemUI: Add EMUI VoLTE icon [1/2]
+1d51d23a17b SystemUI: Turn off old style mobile signal in airplane mode
+0269d2804ec SystemUI: Add settings observer for old style mobile signal
+5f1c4d8eb0d SystemUI: status bar mobile indicator code reuse
+dad9ab88038 SystemUI: Override VoLTE icon with VoWiFi when available [1/2]
+4ed446b0e6f SystemUI: Add more VoWiFi icon styles [1/2]
+1f714945514 SystemUI: support VoWIFI icons
+4f70b41af6d MobileSignalController: Fix quick switching of VoLTE icon style
+b7ea0a667b3 Add option to select VoLTE icon [1/2]
+d5f889a450d Ability to toggle VoLTE icon in statusbar [1/2]
+6a5ca2022d5 Fix VOLTE icon color on Light statusbar
+0a8c6510fe4 SystemUI: Enhancement for volte icon
+b70ad00f7c3 SystemUI: Query IMS state after CapabilityCallback is regisered
+056954b7094 SystemUI: Fix HD icon missing
+38b8d23c076 Adapt to IMS registration changes.
+f0ec991782b SystemUI: Refactor the feature of volte icon
+67ff50a0972 SystemUI: Fix volte icon doesn't update in real time
+0c9376d0123 SystemUI: Add new configuration for displaying Volte icon
+573b382a889 cleanup volte commits
+
+   * lineage-sdk/
+c127c3ff NetworkTraffic: Good bye.
+
+   * packages/apps/Blissify/
+37e2f13 Blissify: Add caf HD volte icon
+9ebe93d Blissify: Add EMUI VoLTE icon [2/2]
+5e783ae Blissify: Override VoLTE icon with VoWiFi when available [2/2]
+8e30e12 Blissify: Add more VoWiFi icon styles [2/2]
+
+====================
      06-30-2020
 ====================
 
+
+   * frameworks/opt/telephony/
+db18cb743 Telephony: Fix crash while updating Operator Name
+
+   * packages/apps/Settings/
+0a9b1c77a1 Rework variable refresh rate settings [2/2]
+
+   * vendor/qcom/opensource/commonsys/system/bt/
+af7dfeee0 AVRCP: Ignore AVRCP version when registering absolute volume feature
 
 ====================
      06-29-2020
@@ -479,37 +529,4 @@ a30f2f8c Move input field for location under the guest field
 ea1fff150 Fine tune blkio setting to improve boot time
 bf07b62fc rootdir: init.rc: use default dirty writeout policy
 b9d8acd20 adbd: remove ifdefs guarding root/secure.
-
-====================
-     06-16-2020
-====================
-
-
-   * frameworks/base/
-0fa0843eba5 Qstile: make second line tint optional
-5410f9901a9 QSHeaderDataUsage: add icon and improve view
-d1213edb743 SystemUI: DataUsageDetailView: add ability to show daily data usage
-691ee1d6a16 QS header datausage: update view immediately after change
-6a793bc5258 QS header datausage: add ability to show daily/monthly data usage [1/2]
-049176bebad BlissUtils: add method to get today's passed time
-5b3818d061a SystemUI: QS Header data usage info: improve layout and view
-a47f2bbe718 SystemUI:QS Header data usage: Backup settings with proper validator
-1190bbeb967 Merge "SystemUI: add back qs tile expand indicator tint" into q
-2aba14812b3 SystemUI: add back qs tile expand indicator tint
-
-   * lineage-sdk/
-695ec91a lineage-sdk: extend quick qs slider position [2/3]
-
-   * packages/apps/Blissify/
-ec5eee9 Merge "QS header datausage: add ability to show daily/monthly data usage [2/2]" into q
-a55947f Merge "Blissify: add dependency for qs label tint" into q
-6880374 Blissify: extend qqs slider position [3/3]
-72e4e59 QS header datausage: add ability to show daily/monthly data usage [2/2]
-d15435a Blissify: add dependency for qs label tint
-
-   * packages/apps/DeskClock/
-01c3369e7 DeskClock: Remove notification sound from firing and snoozing channels
-
-   * packages/apps/Recorder/
-ebd1ba0 Recorder: Prevent running into out of memory exceptions
 
