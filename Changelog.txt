@@ -1,4 +1,23 @@
 ====================
+     07-03-2020
+====================
+
+
+   * frameworks/base/
+24de02c7c32 SystemUI: fix active color for qs tile styles
+ed1ef5725c7 base: Add squircle and teardrop style
+964ba715b71 base: Add 5 more styles for qs
+
+   * packages/apps/Blissify/
+113e5f7 Merge "Blissify: add more qs styles" into q
+
+   * vendor/themes/
+df58bba themes: fix recently added fonts
+19ebfa5 QsThemes: add config_useMaskForQs bool
+e97d0b1 Tiles: Add Squircle and Teardrop
+a5a2ba5 QSTiles: Add more styles
+
+====================
      07-02-2020
 ====================
 
@@ -263,6 +282,7 @@ b7ff29c Merge "manifest: track livedisplay from lineage" into q
    * packages/apps/Blissify/
 591ec03 Blissify: Add missing break statement
 c233b51 Blissify: add more fonts
+778e7e9 Blissify: add more qs styles
 
    * prebuilts/abi-dumps/vndk/
 d5f5400 vndk: remove libpng from ABI check target
@@ -546,15 +566,4 @@ e4e0a352 roomservice: revert previous roomservice implementation
 
    * frameworks/base/
 abe08c71954 SystemUI: Add QS tile to disable transition animations
-
-====================
-     06-18-2020
-====================
-
-
-   * hardware/qcom/gps/
-8811231 msm8994: gps: Return the correct length of nmea sentence
-
-   * packages/apps/Jelly/
-63bb9f7 Jelly: Avoid unchecked cast warning
 
