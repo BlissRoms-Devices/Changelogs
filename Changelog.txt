@@ -1,4 +1,9 @@
 ====================
+     07-04-2020
+====================
+
+
+====================
      07-03-2020
 ====================
 
@@ -486,6 +491,26 @@ afd44c03272 FODCircleView: add FOD invisible icon [1/2]
 d8727f8 Revert "Add toggle to display battery in quick status bar [2/2]"
 e041826 Blissify: add FOD invisible icon [2/2]
 
+====================
+     06-22-2020
+====================
+
+
+   * frameworks/base/
+b1169e62975 FODCircleView: Make FOD icon dimming optional
+acf4ac16ede FODCircleView: Dim FOD icon
+0156b430f4b FODCircleView: Improve position update
+df6a10e6c24 FODAnimation: Allow to set vertical position offset
+5575b980202 FODCircleView: Add partial wakelock on aod
+7562b232b0a FODCircleView: AOD content should move only in Y
+91ef7624abb FODCircleView: Add support for pressed fod layer
+d47db4854ad FODCircleView: invert default icon path and add #20000000 bg
+e8f197149ed cleanup fod
+
+   * packages/apps/Blissify/
+4b56e55 FODIconPicker: fix derp
+6292942 homepage: follow system font
+
    * packages/apps/Eleven/
 a9f1d80 Automatic translation import
 
@@ -506,26 +531,6 @@ ffa05e54c Automatic translation import
 
    * vendor/qcom/opensource/fm-commonsys/
 1f27002 Automatic translation import
-
-====================
-     06-22-2020
-====================
-
-
-   * frameworks/base/
-b1169e62975 FODCircleView: Make FOD icon dimming optional
-acf4ac16ede FODCircleView: Dim FOD icon
-0156b430f4b FODCircleView: Improve position update
-df6a10e6c24 FODAnimation: Allow to set vertical position offset
-5575b980202 FODCircleView: Add partial wakelock on aod
-7562b232b0a FODCircleView: AOD content should move only in Y
-91ef7624abb FODCircleView: Add support for pressed fod layer
-d47db4854ad FODCircleView: invert default icon path and add #20000000 bg
-e8f197149ed cleanup fod
-
-   * packages/apps/Blissify/
-4b56e55 FODIconPicker: fix derp
-6292942 homepage: follow system font
 
 ====================
      06-21-2020
@@ -558,12 +563,4 @@ e4e0a352 roomservice: revert previous roomservice implementation
 
    * packages/apps/Settings/
 1326a12254 Settings: Swipe up on keyguard to use Face Unlock [2/2]
-
-====================
-     06-19-2020
-====================
-
-
-   * frameworks/base/
-abe08c71954 SystemUI: Add QS tile to disable transition animations
 
