@@ -1,4 +1,9 @@
 ====================
+     07-05-2020
+====================
+
+
+====================
      07-04-2020
 ====================
 
@@ -550,17 +555,4 @@ fa8ffd05 roomservice: use revision tag instead of branch
 128ab0c9 roomservice: Blissify
 9371564d roomservice: support new manifest formats.
 e4e0a352 roomservice: revert previous roomservice implementation
-
-====================
-     06-20-2020
-====================
-
-
-   * frameworks/base/
-281a86179dc SystemUI: set proper tint for quick qs status icons
-98bec61a260 SystemUI: improve expanded header icons layout
-88dd5c173a7 SystemUI: Hide the security footer in quick qs panel
-
-   * packages/apps/Settings/
-1326a12254 Settings: Swipe up on keyguard to use Face Unlock [2/2]
 
