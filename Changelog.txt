@@ -1,4 +1,9 @@
 ====================
+     07-06-2020
+====================
+
+
+====================
      07-05-2020
 ====================
 
@@ -127,6 +132,10 @@ c127c3ff NetworkTraffic: Good bye.
      06-30-2020
 ====================
 
+
+   * frameworks/base/
+e9ad70feeb1 SystemUI: Recognizing FP animation effect fixes
+c2ec77b5f3e SystemUI: Add MIUI Aurora FOD animation [1/2]
 
    * frameworks/opt/telephony/
 db18cb743 Telephony: Fix crash while updating Operator Name
@@ -262,7 +271,6 @@ da2a463 math: Add more ulp tests
 59055d4 math: add vector pow
 
    * frameworks/base/
-e9ad70feeb1 SystemUI: Recognizing FP animation effect fixes
 c2ec77b5f3e SystemUI: Add MIUI Aurora FOD animation [1/2]
 2ae7a54e5d8 SystemUI: Add OP Energy FOD animation from OnePlus 8 Pro [1/2]
 e788de31717 base: Add some more fonts
@@ -496,26 +504,6 @@ afd44c03272 FODCircleView: add FOD invisible icon [1/2]
 d8727f8 Revert "Add toggle to display battery in quick status bar [2/2]"
 e041826 Blissify: add FOD invisible icon [2/2]
 
-====================
-     06-22-2020
-====================
-
-
-   * frameworks/base/
-b1169e62975 FODCircleView: Make FOD icon dimming optional
-acf4ac16ede FODCircleView: Dim FOD icon
-0156b430f4b FODCircleView: Improve position update
-df6a10e6c24 FODAnimation: Allow to set vertical position offset
-5575b980202 FODCircleView: Add partial wakelock on aod
-7562b232b0a FODCircleView: AOD content should move only in Y
-91ef7624abb FODCircleView: Add support for pressed fod layer
-d47db4854ad FODCircleView: invert default icon path and add #20000000 bg
-e8f197149ed cleanup fod
-
-   * packages/apps/Blissify/
-4b56e55 FODIconPicker: fix derp
-6292942 homepage: follow system font
-
    * packages/apps/Eleven/
 a9f1d80 Automatic translation import
 
@@ -538,21 +526,22 @@ ffa05e54c Automatic translation import
 1f27002 Automatic translation import
 
 ====================
-     06-21-2020
+     06-22-2020
 ====================
 
 
    * frameworks/base/
-215939f7652 base: Swipe up on keyguard to use Face Unlock [1/2]
-b2c6325d1e3 TextClock: Make French strings more consistent
-63d1d329f90 SystemUI: Fix text clock translations
-7d7d3075e94 TextClock: Bring back the translations
-613127f84c3 SystemUI: no runtime padding for the top most qs status bar content
+b1169e62975 FODCircleView: Make FOD icon dimming optional
+acf4ac16ede FODCircleView: Dim FOD icon
+0156b430f4b FODCircleView: Improve position update
+df6a10e6c24 FODAnimation: Allow to set vertical position offset
+5575b980202 FODCircleView: Add partial wakelock on aod
+7562b232b0a FODCircleView: AOD content should move only in Y
+91ef7624abb FODCircleView: Add support for pressed fod layer
+d47db4854ad FODCircleView: invert default icon path and add #20000000 bg
+e8f197149ed cleanup fod
 
-   * vendor/bliss/
-fa8ffd05 roomservice: use revision tag instead of branch
-88540fa2 roomservice: account for removed    *s
-128ab0c9 roomservice: Blissify
-9371564d roomservice: support new manifest formats.
-e4e0a352 roomservice: revert previous roomservice implementation
+   * packages/apps/Blissify/
+4b56e55 FODIconPicker: fix derp
+6292942 homepage: follow system font
 
