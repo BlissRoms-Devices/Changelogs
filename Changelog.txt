@@ -1,7 +1,80 @@
 ====================
+     07-08-2020
+====================
+
+
+   * build/make/
+93dd2fe9c Merge changes from topic "misc" into q
+b8bf3cc6e Merge tag 'android-10.0.0_r40' into q
+
+   * frameworks/base/
+06de89e50e5 Revert "Force Expanded Notifications [1/2]"
+a578b2b24fa SystemUI: Add more charging styles
+eaabf34bb1b Theme settings dashboard icons [1/3]
+
+   * frameworks/native/
+c84dc1674 Merge tag 'android-10.0.0_r40' into q
+
+   * hardware/qcom/audio/
+96cc06a Merge tag 'android-10.0.0_r40' into q
+
+   * manifest/
+3860923 manifest: Track libjpeg-turbo
+18823ed manifest: Track own zlib [2/2]
+8fb1125 manifest: Track own ndk abi-dumps [1/2]
+8af52fd Track our prebuilt r8
+48c55f4 Merge branch 'android-10.0.0_r40' into q
+
+   * packages/apps/Blissify/
+574f5a9 Revert "Force Expanded Notifications [2/2]"
+15f9942 Merge "Blissify: Add more charging styles" into q
+a80d199 Merge "Theme settings dashboard icons [3/3]" into q
+7fb3693 Blissify: Add more charging styles
+94ffb4f Theme settings dashboard icons [3/3]
+
+   * packages/apps/Settings/
+5b1dcf62b9 Settings: more layout improvements
+d3baa29760 Settings: Lottie Animations
+12103e3bdc Settings: Redesign PreferenceCategory
+e8c6ff96bd Settings: add bool to ignore icon space reserved
+53a61fb043 Settings: Categorise!
+eb077d05b5 Settings: Improve display settings layout
+e7a4e01f03 Settings: import airbnb-lottie
+
+   * packages/services/Telephony/
+3e8b00c9d Merge tag 'android-10.0.0_r40' into q
+
+   * prebuilts/abi-dumps/vndk/
+331ac46 vndk: remove libz.so from ABI check target
+
+   * vendor/bliss/
+6f9bef1f bliss: Bump to Bliss v12.9 Release
+
+====================
      07-07-2020
 ====================
 
+   * art/
+dc89ec960b ARM32: Combine LSR into ADD for Div by 2^n
+
+   * bionic/
+efbd5d575 Speed up seccomp with priority list.
+32a0a215b Remove global seccomp list.
+
+   * build/make/
+e362005a9 Remove passing -forceprocessing flag to R8
+7153b4818 proguard_flags: Remove -useuniqueclassmembernames
+
+   * build/soong/
+65430b3a Remove passing -forceprocessing flag to R8
+
+   * manifest/
+5383244 Manifest for Android 10.0.0 Release 40
+
+   * system/core/
+d43470fb3 Remove the global seccomp option.
+bbdf2603d fs_mgr: Allow remounts with Magisk installed
+310b0095a liblog: Always report as debuggable when building userdebug/eng
 
 ====================
      07-06-2020
@@ -13,10 +86,39 @@
 ====================
 
 
+   * external/arm-optimized-routines/
+d5dc5b6 Android.bp: Remove flags that are not supported on Q
+66e43f3 string: Optimize strlen
+4b256bb string: Fix overflow issue in strncmp-mte
+b79e60d string: Fix issue in strcmp-mte NUL check
+
+   * external/libpng/
+e8aa59ef0 libpng: optimize for speed on Arm platforms
+ce5cf7ec8 Revert "Add an __LLVM,__asm section for clang builds on ARM"
+
+   * packages/apps/Settings/
+c2507f1e86 Theme settings dashboard icons [2/3]
+
 ====================
      07-04-2020
 ====================
 
+
+   * external/libpng/
+232e9ca3c Squash merge libpng/libpng16
+d07bb0df6 [SQUASH] Merge libpng/libpng16
+
+   * external/zlib/
+a250480 Remove unrecognized property native_bridge_supported
+1517f08 Android.bp: enable unaligned memory access
+0d184e7 Revert "Add a libz_current static lib for NDK builds."
+d1da413 Revert "Remove libz_current hack."
+61a82b7 Revert "Revert^2 "libz provides stubs to Mainline modules.""
+dcb3f12 Revert "Make ramdisk_available."
+29e632f Revert "external/zlib is now where the NDK headers come from."
+
+   * prebuilts/abi-dumps/ndk/
+e449140 ndk: remove libz.so from ABI check target
 
 ====================
      07-03-2020
@@ -133,14 +235,13 @@ c127c3ff NetworkTraffic: Good bye.
 5e783ae Blissify: Override VoLTE icon with VoWiFi when available [2/2]
 8e30e12 Blissify: Add more VoWiFi icon styles [2/2]
 
+   * prebuilts/r8/
+c614606 Update r8 to 2.2.3-dev
+
 ====================
      06-30-2020
 ====================
 
-
-   * frameworks/base/
-e9ad70feeb1 SystemUI: Recognizing FP animation effect fixes
-c2ec77b5f3e SystemUI: Add MIUI Aurora FOD animation [1/2]
 
    * frameworks/opt/telephony/
 db18cb743 Telephony: Fix crash while updating Operator Name
@@ -270,12 +371,9 @@ f877f5c04 libc: import ARM strcmp from newlib
 9f7271b13 libc: arm: Optimise memchr for NEON-enabled processors
 db65842d7 linker: Move to bliss soong var
 
-   * external/arm-optimized-routines/
-1925b74 math: Improve comments, disable errno handling by default
-da2a463 math: Add more ulp tests
-59055d4 math: add vector pow
-
    * frameworks/base/
+e9ad70feeb1 SystemUI: Recognizing FP animation effect fixes
+c2ec77b5f3e SystemUI: Add MIUI Aurora FOD animation [1/2]
 2ae7a54e5d8 SystemUI: Add OP Energy FOD animation from OnePlus 8 Pro [1/2]
 e788de31717 base: Add some more fonts
 
@@ -305,9 +403,6 @@ b7ff29c Merge "manifest: track livedisplay from lineage" into q
 591ec03 Blissify: Add missing break statement
 c233b51 Blissify: add more fonts
 778e7e9 Blissify: add more qs styles
-
-   * prebuilts/abi-dumps/vndk/
-d5f5400 vndk: remove libpng from ABI check target
 
    * vendor/themes/
 732ab62 themes: add CircularStd font [2/2]
@@ -493,39 +588,4 @@ ba9452a60d7 Revert qs detail commits
 
    * packages/apps/DeskClock/
 ca1f18021 Merge branch 'lineage-17.1' into q
-
-====================
-     06-23-2020
-====================
-
-
-   * frameworks/base/
-c08b86990aa The surface hang up when screen on and screen off
-7f342655f92 Revert "Add toggle to display battery in quick status bar [1/2]"
-afd44c03272 FODCircleView: add FOD invisible icon [1/2]
-
-   * packages/apps/Blissify/
-d8727f8 Revert "Add toggle to display battery in quick status bar [2/2]"
-e041826 Blissify: add FOD invisible icon [2/2]
-
-   * packages/apps/Eleven/
-a9f1d80 Automatic translation import
-
-   * packages/apps/FMRadio/
-8ba2e5d Automatic translation import
-
-   * packages/apps/Jelly/
-3ef8872 Automatic translation import
-
-   * packages/apps/Recorder/
-ba6f369 Automatic translation import
-
-   * packages/apps/Snap/
-ffa05e54c Automatic translation import
-
-   * packages/resources/devicesettings/
-7a3adac Automatic translation import
-
-   * vendor/qcom/opensource/fm-commonsys/
-1f27002 Automatic translation import
 
