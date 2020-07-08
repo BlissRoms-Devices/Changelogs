@@ -1,4 +1,28 @@
 ====================
+     07-09-2020
+====================
+
+
+   * build/make/
+b3cd8c7b6 Display progress of system & vendor images when flashing
+80e85b861 Clean up ROM flash and add Bliss info
+543522622 core: binary: Allow modules to be built without clang
+ff93408e6 build: Erase package_cache upon flashing
+f0f6d22b1 build: make script look good in recovery xd
+7b2f7eb61 build: Remove some debugging props
+f3b898b46 no matter what build type we dont want to see anything but Build_ID
+
+   * frameworks/base/
+8703a1a906d base: Add config to disable vowifi icon style [1/2]
+
+   * hardware/qcom-caf/sdm845/display/
+42deb8b76 gralloc: Add option for unaligned YCrCb pixel format
+
+   * packages/apps/Blissify/
+112ce1d Blissify: remove vowifi icon for devices that dont support it
+dbf84d8 Blissify: Fix slim recents switch
+
+====================
      07-08-2020
 ====================
 
@@ -94,7 +118,6 @@ b79e60d string: Fix issue in strcmp-mte NUL check
 
    * external/libpng/
 e8aa59ef0 libpng: optimize for speed on Arm platforms
-ce5cf7ec8 Revert "Add an __LLVM,__asm section for clang builds on ARM"
 
    * packages/apps/Settings/
 c2507f1e86 Theme settings dashboard icons [2/3]
@@ -105,6 +128,7 @@ c2507f1e86 Theme settings dashboard icons [2/3]
 
 
    * external/libpng/
+ce5cf7ec8 Revert "Add an __LLVM,__asm section for clang builds on ARM"
 232e9ca3c Squash merge libpng/libpng16
 d07bb0df6 [SQUASH] Merge libpng/libpng16
 
@@ -245,9 +269,6 @@ c614606 Update r8 to 2.2.3-dev
 
    * frameworks/opt/telephony/
 db18cb743 Telephony: Fix crash while updating Operator Name
-
-   * packages/apps/Blissify/
-749d0cf Blissify: Add MIUI Aurora & Energy FOD animation [2/2]
 
    * packages/apps/Settings/
 0a9b1c77a1 Rework variable refresh rate settings [2/2]
@@ -400,6 +421,7 @@ fb16224 manifest: track more repos from bliss
 b7ff29c Merge "manifest: track livedisplay from lineage" into q
 
    * packages/apps/Blissify/
+749d0cf Blissify: Add MIUI Aurora & Energy FOD animation [2/2]
 591ec03 Blissify: Add missing break statement
 c233b51 Blissify: add more fonts
 778e7e9 Blissify: add more qs styles
@@ -562,30 +584,4 @@ d7d32a3 manifest: Remove Coral device repos
 62c52ce Blissify: Add Pocket judge toggle
 9c98619 NetworkTraffic: Add support for bits/sec [2/2]
 981c4f9 Blissify: add missing quick qs pulldown always
-
-====================
-     06-24-2020
-====================
-
-
-   * frameworks/base/
-be34275fb43 BlissUtils: Add method to check for both wifi and mobile  connections
-bbcd0c8da6c WifiManager: Add StaState API
-3d365da27e3 Disable long click for HW keys tile
-17dd8548aba Add HW Keys QS tile
-25b7c2e1584 Pocket lock improvements
-41bf50c531c pocket: Fix pocket lock view for display cutouts
-dcc329b3712 pocket: Adjust sleep timeout for pocket lock view to 10 secs
-93a979858c1 pocket: introduce pocket bridge
-d4997b8e6e6 PocketService: Adjust light sensor rate to 400ms
-57bdee4b1bb pocket: Add hardware acceleration and properly maintain SYSTEM_UI flags
-68e5e3f4570 policy: introduce pocket lock
-16bddaf6406 pocket: introduce pocket judge
-f9839cd4071 SystemUI: QS Details: Fix layout issues
-c573fbd32b0 SystemUI: Fix QS Detail Header
-ba9452a60d7 Revert qs detail commits
-6afdf0698f4 base: Fix NPE on some devices by checking for null client
-
-   * packages/apps/DeskClock/
-ca1f18021 Merge branch 'lineage-17.1' into q
 
