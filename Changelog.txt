@@ -1,7 +1,21 @@
 ====================
+     07-15-2020
+====================
+
+
+====================
      07-14-2020
 ====================
 
+
+   * packages/apps/Dialer/
+2d2deedea Dialer: Use a DayNight launch theme
+
+   * packages/apps/Messaging/
+5954fed Messaging: Use a DayNight launch theme
+
+   * vendor/bliss/
+1004bfd4 tasks: Do not include entire build path in MD5 file
 
 ====================
      07-13-2020
@@ -18,6 +32,13 @@ faef1679ca1 QSHeaderDataUsage: fix npe for wifi only devices
 bf1be26f318 Merge changes from topic "freeform-buttons" into q
 75dfb5c7840 Update back button graphics
 055965192c2 Add back button for freeform window
+
+====================
+     07-11-2020
+====================
+
+
+   * frameworks/base/
 bf8164f2433 Settings dashboard icons: Fix theme for external icons on 10 [1/2]
 089c3a34143 base: Use only 18px size icon for notification count
 bc3f997299f Show infinity for large notification counts
@@ -44,11 +65,20 @@ fc2abf44125 base: overlays: Add new icon shapes from Android R
 64f18f837ab Permissions: Stop auto-granting location to system browsers
 16727905026 SystemUI: Add VoLTE/VoWiFi icons from OOS 10
 
+   * manifest/
+99a25b9 manifest: Track opt/net/wifi from BlissRoms
+
+   * packages/apps/Blissify/
+077bbd0 Add a switch for notification counters [2/2]
+
    * packages/apps/Settings/
 ecc6350710 Settings dashboard icons: Fix theme for external icons on 10 [2/2]
 
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
+2ca8b3cbd Clean up duplicate uses-permission entries
+
 ====================
-     07-11-2020
+     07-10-2020
 ====================
 
 
@@ -59,7 +89,7 @@ d3d8c2421ea SystemUI: Call setOnlyAlertOnce(true) for PowerShare notification
 191f17c580b BLE: Fix NPE during start advertising
 
    * manifest/
-99a25b9 manifest: Track opt/net/wifi from BlissRoms
+f45b515 manifest: Sync sm8250 HALs from LOS
 
    * packages/apps/BlissUpdater/
 0f2ddcf BlissUpdater: Display Bliss Version single line
@@ -76,22 +106,6 @@ a81e3c8 BlissUpdater: Blissified Adaptive Icons
 3b1074d BlissUpdater: Prioritize A/B updates by default
 48e2d0f BlissUpdater: Remove unused method
 18d0152 Updater: Introduce option to choose sourceforge mirrors
-
-   * packages/apps/Blissify/
-077bbd0 Add a switch for notification counters [2/2]
-
-   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
-2ca8b3cbd Clean up duplicate uses-permission entries
-
-====================
-     07-10-2020
-====================
-
-
-   * manifest/
-f45b515 manifest: Sync sm8250 HALs from LOS
-
-   * packages/apps/BlissUpdater/
 c0c12f0 BlissUpdater: Remove download speed on UpdatesListAdapter
 e0599cf BlissUpdater: Correct cleanup notification action
 2b5abee BlissUpdater: Add little delay before sending broadcast
@@ -136,7 +150,29 @@ dbf84d8 Blissify: Fix slim recents switch
 
    * build/make/
 93dd2fe9c Merge changes from topic "misc" into q
+
+   * packages/apps/Settings/
+5b1dcf62b9 Settings: more layout improvements
+d3baa29760 Settings: Lottie Animations
+
+====================
+     07-07-2020
+====================
+
+   * art/
+dc89ec960b ARM32: Combine LSR into ADD for Div by 2^n
+
+   * bionic/
+efbd5d575 Speed up seccomp with priority list.
+32a0a215b Remove global seccomp list.
+
+   * build/make/
 b8bf3cc6e Merge tag 'android-10.0.0_r40' into q
+e362005a9 Remove passing -forceprocessing flag to R8
+7153b4818 proguard_flags: Remove -useuniqueclassmembernames
+
+   * build/soong/
+65430b3a Remove passing -forceprocessing flag to R8
 
    * frameworks/base/
 06de89e50e5 Revert "Force Expanded Notifications [1/2]"
@@ -155,6 +191,7 @@ c84dc1674 Merge tag 'android-10.0.0_r40' into q
 8fb1125 manifest: Track own ndk abi-dumps [1/2]
 8af52fd Track our prebuilt r8
 48c55f4 Merge branch 'android-10.0.0_r40' into q
+5383244 Manifest for Android 10.0.0 Release 40
 
    * packages/apps/Blissify/
 574f5a9 Revert "Force Expanded Notifications [2/2]"
@@ -164,8 +201,6 @@ a80d199 Merge "Theme settings dashboard icons [3/3]" into q
 94ffb4f Theme settings dashboard icons [3/3]
 
    * packages/apps/Settings/
-5b1dcf62b9 Settings: more layout improvements
-d3baa29760 Settings: Lottie Animations
 12103e3bdc Settings: Redesign PreferenceCategory
 e8c6ff96bd Settings: add bool to ignore icon space reserved
 53a61fb043 Settings: Categorise!
@@ -178,35 +213,14 @@ e7a4e01f03 Settings: import airbnb-lottie
    * prebuilts/abi-dumps/vndk/
 331ac46 vndk: remove libz.so from ABI check target
 
-   * vendor/bliss/
-848110f7 vendor: overlay: Set delay for screenshot chord to 0
-6f9bef1f bliss: Bump to Bliss v12.9 Release
-
-====================
-     07-07-2020
-====================
-
-   * art/
-dc89ec960b ARM32: Combine LSR into ADD for Div by 2^n
-
-   * bionic/
-efbd5d575 Speed up seccomp with priority list.
-32a0a215b Remove global seccomp list.
-
-   * build/make/
-e362005a9 Remove passing -forceprocessing flag to R8
-7153b4818 proguard_flags: Remove -useuniqueclassmembernames
-
-   * build/soong/
-65430b3a Remove passing -forceprocessing flag to R8
-
-   * manifest/
-5383244 Manifest for Android 10.0.0 Release 40
-
    * system/core/
 d43470fb3 Remove the global seccomp option.
 bbdf2603d fs_mgr: Allow remounts with Magisk installed
 310b0095a liblog: Always report as debuggable when building userdebug/eng
+
+   * vendor/bliss/
+848110f7 vendor: overlay: Set delay for screenshot chord to 0
+6f9bef1f bliss: Bump to Bliss v12.9 Release
 
 ====================
      07-06-2020
@@ -227,9 +241,6 @@ b79e60d string: Fix issue in strcmp-mte NUL check
    * external/libpng/
 e8aa59ef0 libpng: optimize for speed on Arm platforms
 
-   * packages/apps/Settings/
-c2507f1e86 Theme settings dashboard icons [2/3]
-
 ====================
      07-04-2020
 ====================
@@ -249,6 +260,9 @@ d1da413 Revert "Remove libz_current hack."
 dcb3f12 Revert "Make ramdisk_available."
 29e632f Revert "external/zlib is now where the NDK headers come from."
 
+   * packages/apps/Settings/
+c2507f1e86 Theme settings dashboard icons [2/3]
+
    * prebuilts/abi-dumps/ndk/
 e449140 ndk: remove libz.so from ABI check target
 
@@ -256,20 +270,6 @@ e449140 ndk: remove libz.so from ABI check target
      07-03-2020
 ====================
 
-
-   * frameworks/base/
-24de02c7c32 SystemUI: fix active color for qs tile styles
-ed1ef5725c7 base: Add squircle and teardrop style
-964ba715b71 base: Add 5 more styles for qs
-
-   * packages/apps/Blissify/
-113e5f7 Merge "Blissify: add more qs styles" into q
-
-   * vendor/themes/
-df58bba themes: fix recently added fonts
-19ebfa5 QsThemes: add config_useMaskForQs bool
-e97d0b1 Tiles: Add Squircle and Teardrop
-a5a2ba5 QSTiles: Add more styles
 
 ====================
      07-02-2020
@@ -294,13 +294,11 @@ e9cc1a2f0 Rewrite test data logic to make it faster
    * device/lineage/sepolicy/
 bbf39ee common: Move aux camera whitelist prop to vendor
 eff2116 lineage: sepolicy: Label legacy GNSS service
-311e035 sepolicy: Allow system_app, priv_app and platform_app to set theme_prop
-
-   * external/google/
-2a18adb google: Import ims-common
 
    * frameworks/base/
-dbf8ea8851f Merge changes I67f437bc,I5bf116d8,Ie918e197 into q
+24de02c7c32 SystemUI: fix active color for qs tile styles
+ed1ef5725c7 base: Add squircle and teardrop style
+964ba715b71 base: Add 5 more styles for qs
 
    * hardware/interfaces/
 571933a9d audio hal: add interface declaration for audio hal service
@@ -312,10 +310,7 @@ ab88bd1 gnss: Rename to legacy
 78018e4 interfaces: Import GNSS 1.0 HAL from hardware/interfaces
 
    * packages/apps/Blissify/
-03267c8 Merge "Blissify: Add MIUI Aurora & Energy FOD animation [2/2]" into q
-
-   * system/sepolicy/
-195c0aec Fix neverallows for spectrum policy (#6)
+113e5f7 Merge "Blissify: add more qs styles" into q
 
    * vendor/bliss/
 149d66a9 repopick: Fallback to name when    * path is empty
@@ -326,12 +321,25 @@ d8e94c4d qcom: Add atoll platform
 c9005601 config: Move default alarm/notification/ringtone sound props to /product
 96eeb6b4 Update Bulgarian dictionary
 
+   * vendor/themes/
+df58bba themes: fix recently added fonts
+19ebfa5 QsThemes: add config_useMaskForQs bool
+e97d0b1 Tiles: Add Squircle and Teardrop
+a5a2ba5 QSTiles: Add more styles
+
 ====================
      07-01-2020
 ====================
 
 
+   * device/lineage/sepolicy/
+311e035 sepolicy: Allow system_app, priv_app and platform_app to set theme_prop
+
+   * external/google/
+2a18adb google: Import ims-common
+
    * frameworks/base/
+dbf8ea8851f Merge changes I67f437bc,I5bf116d8,Ie918e197 into q
 c6c6618aaf3 NetworkTraffic: Improvements and cleanup
 1d53b42d5d3 NetworkTraffic: Add support for bits/sec [1/2]
 25e8d8eb740 NetworkTraffic: Add back translated units
@@ -349,19 +357,9 @@ dad9ab88038 SystemUI: Override VoLTE icon with VoWiFi when available [1/2]
 b7ea0a667b3 Add option to select VoLTE icon [1/2]
 d5f889a450d Ability to toggle VoLTE icon in statusbar [1/2]
 6a5ca2022d5 Fix VOLTE icon color on Light statusbar
-0a8c6510fe4 SystemUI: Enhancement for volte icon
-b70ad00f7c3 SystemUI: Query IMS state after CapabilityCallback is regisered
-056954b7094 SystemUI: Fix HD icon missing
-38b8d23c076 Adapt to IMS registration changes.
-f0ec991782b SystemUI: Refactor the feature of volte icon
-67ff50a0972 SystemUI: Fix volte icon doesn't update in real time
-0c9376d0123 SystemUI: Add new configuration for displaying Volte icon
-573b382a889 cleanup volte commits
-
-   * lineage-sdk/
-c127c3ff NetworkTraffic: Good bye.
 
    * packages/apps/Blissify/
+03267c8 Merge "Blissify: Add MIUI Aurora & Energy FOD animation [2/2]" into q
 37e2f13 Blissify: Add caf HD volte icon
 9ebe93d Blissify: Add EMUI VoLTE icon [2/2]
 5e783ae Blissify: Override VoLTE icon with VoWiFi when available [2/2]
@@ -370,17 +368,6 @@ c127c3ff NetworkTraffic: Good bye.
    * prebuilts/r8/
 c614606 Update r8 to 2.2.3-dev
 
-====================
-     06-30-2020
-====================
-
-
-   * frameworks/opt/telephony/
-db18cb743 Telephony: Fix crash while updating Operator Name
-
-   * packages/apps/Settings/
-0a9b1c77a1 Rework variable refresh rate settings [2/2]
-
-   * vendor/qcom/opensource/commonsys/system/bt/
-af7dfeee0 AVRCP: Ignore AVRCP version when registering absolute volume feature
+   * system/sepolicy/
+195c0aec Fix neverallows for spectrum policy (#6)
 
