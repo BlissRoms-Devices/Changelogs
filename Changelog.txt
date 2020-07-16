@@ -1,7 +1,21 @@
 ====================
+     07-16-2020
+====================
+
+
+   * hardware/qcom-caf/sdm845/display/
+95a2d7c71 gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
+
+   * packages/apps/Blissify/
+a32c5d0 Blissify: increase default rows for landscape
+
+====================
      07-15-2020
 ====================
 
+
+   * build/make/
+929f80319 core: Introduce build colors
 
 ====================
      07-14-2020
@@ -124,6 +138,20 @@ f939306 BlissUpdater: Update Gradle Deps
 ====================
 
 
+   * frameworks/base/
+8703a1a906d base: Add config to disable vowifi icon style [1/2]
+
+   * hardware/qcom-caf/sdm845/display/
+42deb8b76 gralloc: Add option for unaligned YCrCb pixel format
+
+   * packages/apps/Blissify/
+112ce1d Blissify: remove vowifi icon for devices that dont support it
+
+====================
+     07-08-2020
+====================
+
+
    * build/make/
 b3cd8c7b6 Display progress of system & vendor images when flashing
 80e85b861 Clean up ROM flash and add Bliss info
@@ -133,27 +161,8 @@ f0f6d22b1 build: make script look good in recovery xd
 7b2f7eb61 build: Remove some debugging props
 f3b898b46 no matter what build type we dont want to see anything but Build_ID
 
-   * frameworks/base/
-8703a1a906d base: Add config to disable vowifi icon style [1/2]
-
-   * hardware/qcom-caf/sdm845/display/
-42deb8b76 gralloc: Add option for unaligned YCrCb pixel format
-
    * packages/apps/Blissify/
-112ce1d Blissify: remove vowifi icon for devices that dont support it
 dbf84d8 Blissify: Fix slim recents switch
-
-====================
-     07-08-2020
-====================
-
-
-   * build/make/
-93dd2fe9c Merge changes from topic "misc" into q
-
-   * packages/apps/Settings/
-5b1dcf62b9 Settings: more layout improvements
-d3baa29760 Settings: Lottie Animations
 
 ====================
      07-07-2020
@@ -167,6 +176,7 @@ efbd5d575 Speed up seccomp with priority list.
 32a0a215b Remove global seccomp list.
 
    * build/make/
+93dd2fe9c Merge changes from topic "misc" into q
 b8bf3cc6e Merge tag 'android-10.0.0_r40' into q
 e362005a9 Remove passing -forceprocessing flag to R8
 7153b4818 proguard_flags: Remove -useuniqueclassmembernames
@@ -201,6 +211,8 @@ a80d199 Merge "Theme settings dashboard icons [3/3]" into q
 94ffb4f Theme settings dashboard icons [3/3]
 
    * packages/apps/Settings/
+5b1dcf62b9 Settings: more layout improvements
+d3baa29760 Settings: Lottie Animations
 12103e3bdc Settings: Redesign PreferenceCategory
 e8c6ff96bd Settings: add bool to ignore icon space reserved
 53a61fb043 Settings: Categorise!
@@ -326,48 +338,4 @@ df58bba themes: fix recently added fonts
 19ebfa5 QsThemes: add config_useMaskForQs bool
 e97d0b1 Tiles: Add Squircle and Teardrop
 a5a2ba5 QSTiles: Add more styles
-
-====================
-     07-01-2020
-====================
-
-
-   * device/lineage/sepolicy/
-311e035 sepolicy: Allow system_app, priv_app and platform_app to set theme_prop
-
-   * external/google/
-2a18adb google: Import ims-common
-
-   * frameworks/base/
-dbf8ea8851f Merge changes I67f437bc,I5bf116d8,Ie918e197 into q
-c6c6618aaf3 NetworkTraffic: Improvements and cleanup
-1d53b42d5d3 NetworkTraffic: Add support for bits/sec [1/2]
-25e8d8eb740 NetworkTraffic: Add back translated units
-4b0a68a09a3 NetworkTraffic: Move in main class from sdk
-6290e1ebe21 Rework variable refresh rate settings [1/2]
-ebdb2c886fa SystemUI: Use old padding values for VoLTE icon
-86195edd549 SystemUI: Add EMUI VoLTE icon [1/2]
-1d51d23a17b SystemUI: Turn off old style mobile signal in airplane mode
-0269d2804ec SystemUI: Add settings observer for old style mobile signal
-5f1c4d8eb0d SystemUI: status bar mobile indicator code reuse
-dad9ab88038 SystemUI: Override VoLTE icon with VoWiFi when available [1/2]
-4ed446b0e6f SystemUI: Add more VoWiFi icon styles [1/2]
-1f714945514 SystemUI: support VoWIFI icons
-4f70b41af6d MobileSignalController: Fix quick switching of VoLTE icon style
-b7ea0a667b3 Add option to select VoLTE icon [1/2]
-d5f889a450d Ability to toggle VoLTE icon in statusbar [1/2]
-6a5ca2022d5 Fix VOLTE icon color on Light statusbar
-
-   * packages/apps/Blissify/
-03267c8 Merge "Blissify: Add MIUI Aurora & Energy FOD animation [2/2]" into q
-37e2f13 Blissify: Add caf HD volte icon
-9ebe93d Blissify: Add EMUI VoLTE icon [2/2]
-5e783ae Blissify: Override VoLTE icon with VoWiFi when available [2/2]
-8e30e12 Blissify: Add more VoWiFi icon styles [2/2]
-
-   * prebuilts/r8/
-c614606 Update r8 to 2.2.3-dev
-
-   * system/sepolicy/
-195c0aec Fix neverallows for spectrum policy (#6)
 
