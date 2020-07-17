@@ -1,4 +1,12 @@
 ====================
+     07-17-2020
+====================
+
+
+   * packages/apps/Jelly/
+00e8737 Jelly: Fix find in page functionality
+
+====================
      07-16-2020
 ====================
 
@@ -282,60 +290,4 @@ e449140 ndk: remove libz.so from ABI check target
      07-03-2020
 ====================
 
-
-====================
-     07-02-2020
-====================
-
-
-   * build/make/
-14f209673 releasetools: support dynamic partitions for backuptool
-80b9e3161 releasetools: do not remove dynamic partitions in system-only builds
-4d37bfb98 Revert "releasetools: do not remove dynamic partitions in system-only builds"
-f5affc93a Refactor how MODULES-IN-* is defined
-b22b3f71d base_rules.mk optimizations
-a193458df Fix test suite data files issue.
-b77f9d9ff Export list of "installable" files to soong_ui
-0ff107ec3 Avoid adding VINTF manifest fragment more than once.
-204737f55 build: Disable backuptool on user instead of GMS builds
-e9cc1a2f0 Rewrite test data logic to make it faster
-8da64b1a0 More performance improvements
-439835c1f releasetools: Skip on empty care_map.
-17847788e releasetools: GetCareMap supports non-sparse image.
-
-   * device/lineage/sepolicy/
-bbf39ee common: Move aux camera whitelist prop to vendor
-eff2116 lineage: sepolicy: Label legacy GNSS service
-
-   * frameworks/base/
-24de02c7c32 SystemUI: fix active color for qs tile styles
-ed1ef5725c7 base: Add squircle and teardrop style
-964ba715b71 base: Add 5 more styles for qs
-
-   * hardware/interfaces/
-571933a9d audio hal: add interface declaration for audio hal service
-b0a628f42 gnss: properly terminate nmea-messages if they aren't already
-
-   * hardware/lineage/interfaces/
-2f3691e gnss-legacy: Bring back GLONASS
-ab88bd1 gnss: Rename to legacy
-78018e4 interfaces: Import GNSS 1.0 HAL from hardware/interfaces
-
-   * packages/apps/Blissify/
-113e5f7 Merge "Blissify: add more qs styles" into q
-
-   * vendor/bliss/
-149d66a9 repopick: Fallback to name when    * path is empty
-a00de112 Export CAF msm-4.14 audio headers
-616cb8b7 qcom: Add UM 4.19 platforms
-d8e94c4d qcom: Add atoll platform
-5fd8357e vendor: Clean up QCOM defs in single BoardConfig
-c9005601 config: Move default alarm/notification/ringtone sound props to /product
-96eeb6b4 Update Bulgarian dictionary
-
-   * vendor/themes/
-df58bba themes: fix recently added fonts
-19ebfa5 QsThemes: add config_useMaskForQs bool
-e97d0b1 Tiles: Add Squircle and Teardrop
-a5a2ba5 QSTiles: Add more styles
 
