@@ -1,7 +1,92 @@
 ====================
+     07-19-2020
+====================
+
+
+   * frameworks/base/
+f70d055e7bb KeyguardIndication: fix fc for certain devices on lockscreen charging info
+1199b574635 SystemUI: Add OnePlus Minimalism clock
+fae80728746 SystemUI: Add OnePlus Analog Clock Style
+c80c3406c8e SystemUI: Add OnePlus Roman analog clock
+2c0d42399ed SystemUI: Add Oneplus Minimal analog clock
+198d3f62080 SystemUI: Add OnePlus Numbers clock
+d4450b025bc SystemUI: improve analog clock layouts
+bbc281a95db SystemUI: increase size of analog clocks
+89927307ab8 Update dark material colors
+ad87113a7ca StitchImageUtility: Remove screenshot sound setting
+8569210153f ScreenStabilizationTile: Fix velocity amplitude format
+05f83d59326 Add switch to select SBC HD by default [1/3]
+eb4aedbcb5f BT: Always update service object in BluetoothDevice Class
+ec8a717c2b6 Bluetooth: Avoid reentrant lock in getService method
+f42b1cb1197 Add missing strings for SBC Dual Channel
+c3e35c701d3 A2DP codec priority [1/3]
+9fc2a063311 Add CHANNEL_MODE_DUAL_CHANNEL constant
+e78802a260f Allow SBC as HD audio codec in Bluetooth device configuration
+5080af74924 Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
+eb93f7413d8 EdgeLighting: Fix ghost view after pulsing
+4cbdd23c576 fix padding between signal icons - battery - percentage
+ca4786b76fd QSTileHost: add reloadAllTiles() public function
+e361ec20477 QSTileImpl: code improvements to new tint style
+0f8f8f56bec Allow to invert the icon color for active quicksettings icons [1/2].
+30606bcecef QsTileStyle: adapt for gradient & our tinting options
+9aed9994f58 QS Tile : fix the issue of icons disappearing
+2d8580820f4 QSTileBaseView: Make QS Tile Disco a bit more random
+bd5d84e08af disco dingo the qs [1/2]
+0d518569dcf Random Qs Tint: tint active QS Tiles with random colors [1/2]
+dd1ac039544 ColorUtils: Allow overriding Random seeds
+96d5582ecef base: Disco mode!
+249bb079dd6 ColorUtils: Make random color generation consistent
+831b211bb1b SystemUI: Update icon for Heads up tile.
+
+   * manifest/
+73fafb5 manifest: track more bt repos
+
+   * packages/apps/Bluetooth/
+7df2bcec Add switch to select SBC HD by default [2/3]
+80ef6737 Disable Dual channel for SBC by default
+07602074 A2DP codec priority [2/3]
+95ae52d1 Assume optional codecs are supported if were supported previously
+cce172f5 SBC Dual Channel (SBC HD Audio) support
+bb7ebdb8 Check Null-safeness when switching optional-codecs state
+
+   * packages/apps/Settings/
+1726b2ac12 Add switch to select SBC HD by default [3a/3]
+62e42897b9 Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
+59ad6f98ab A2DP codec priority [3a/3]
+
+   * system/bt/
+c8d32b2d1 Allow using alternative (higher) SBC HD bitrates with a property
+f9cc2e98e Explicit SBC Dual Channel (SBC HD) support
+170b53bc4 Increase maximum Bluetooth SBC codec bitrate for SBC HD
+
+   * vendor/qcom/opensource/commonsys/bluetooth_ext/
+c29c795 Fix compilation with SBC Dual Channel suport
+
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
+f146a47bd Add switch to select SBC HD by default [2/3]
+6954c8661 Disable Dual channel for SBC by default
+6e45bb304 A2DP codec priority [2/3]
+ede0bd22a Assume optional codecs are supported if were supported previously
+68a2f26c9 SBC Dual Channel (SBC HD Audio) support
+b10b25b8c Check Null-safeness when switching optional-codecs state
+
+   * vendor/qcom/opensource/commonsys/system/bt/
+1fb1872f1 Allow using alternative (higher) SBC HD bitrates with a property
+ffd594f96 Explicit SBC Dual Channel (SBC HD) support
+820c41196 Increase maximum Bluetooth SBC codec bitrate for SBC HD
+
+   * vendor/themes/
+fd03065 Allow to invert the icon color for active quicksettings icons [2/2].
+
+====================
      07-18-2020
 ====================
 
+
+   * packages/apps/Blissify/
+177fc2a QsLabel: random accent tint
+9647976 disco dingo the qs [2/2]
+f4041f5 Random Qs Tint: tint active QS Tiles with random colors [2/2]
 
    * packages/apps/Jelly/
 00e8737 Jelly: Fix find in page functionality
@@ -37,6 +122,8 @@ a32c5d0 Blissify: increase default rows for landscape
 5954fed Messaging: Use a DayNight launch theme
 
    * vendor/bliss/
+b0f59ace bliss: update GMS updater component disable list
+f3ecc0c0 Remove deprecated backup overlay
 1004bfd4 tasks: Do not include entire build path in MD5 file
 
 ====================
@@ -271,25 +358,4 @@ ce5cf7ec8 Revert "Add an __LLVM,__asm section for clang builds on ARM"
 
    * packages/apps/Settings/
 c2507f1e86 Theme settings dashboard icons [2/3]
-
-====================
-     07-04-2020
-====================
-
-
-   * external/libpng/
-232e9ca3c Squash merge libpng/libpng16
-d07bb0df6 [SQUASH] Merge libpng/libpng16
-
-   * external/zlib/
-a250480 Remove unrecognized property native_bridge_supported
-1517f08 Android.bp: enable unaligned memory access
-0d184e7 Revert "Add a libz_current static lib for NDK builds."
-d1da413 Revert "Remove libz_current hack."
-61a82b7 Revert "Revert^2 "libz provides stubs to Mainline modules.""
-dcb3f12 Revert "Make ramdisk_available."
-29e632f Revert "external/zlib is now where the NDK headers come from."
-
-   * prebuilts/abi-dumps/ndk/
-e449140 ndk: remove libz.so from ABI check target
 
