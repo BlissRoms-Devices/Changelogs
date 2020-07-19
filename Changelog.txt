@@ -1,4 +1,51 @@
 ====================
+     07-20-2020
+====================
+
+
+   * build/soong/
+5c0e5acd Re-allow relative paths for modules
+
+   * frameworks/base/
+e9bc7eab2cd Pulse: add automatic albumart color mode [2/3]
+a8c5e99cffb Allow to get theme accent color from context
+8179a48a103 Pulse navbar audio gfx visualizer for Android 10 [1/4]
+9d527fb5d0e QSHeader: Live data usage info
+9c0b08d0fda Partially Revert "QSHeaderDataUsage: hide usage if device is not connected to internet"
+89e7c78ea92 base: notch-city: Dejank immersive mode with QS panel
+ded7ff514b4 ScreenDecorations: Fix derp in calling updateCutoutMode
+9b23bc9d45e base: notch-city: Reduce QS header offset on immersive & hide modes [1/2]
+f210a0cc551 base: notch-city: Make it smarter with orientation [1/2]
+f840a746bd9 ScreenDecorations: Account notch-city for custom cutout
+dec781d7e8f ScreenDecorations: Simplify rounded size selection
+42e5004bef9 base: notch-city: Add 3 mode display cutout handler [1/3]
+947dfe75865 Add tunable to hide display cutout [1/2]
+eccf13c60c6 Revert "base: notch-city: Add 3 mode display cutout handler"
+917c2a35ab4 Add requiredSystemPropertyValue support in idmap2
+379320a34f2 Notification: Fix no icon shown for data limit notification
+0c4d4772326 core: ChooserActivity: fix android crash from null object
+b4e963c6857 Release SQLite page cache as much as it can
+9d581d5c800 SystemUI: Use regular global_actions_column layout for layout-sw600dp-land
+24bfe17a87f fw/b: Add support for per app network isolation
+
+   * manifest/
+1fbb9eb manifest: track pulse
+
+   * packages/apps/Blissify/
+43f1961 Accent presets: set summary and value properly
+9c2b287 Blissify: Pulse: Add automatic album art color mode [3/3]
+a4a96b4 Blissify: Pulse navbar audio gfx visualizer for Android 10 [3/4]
+43e2c4b notch-city: update 3 mode display cutout handler
+
+   * vendor/bliss/
+b4a0acd8 Merge changes from topic "notch-city" into q10
+db695151 vendor: notch-city: Reduce QS header offset on immersive & hide mode [2a/2]
+6009c82c vendor: notch-city: update 3 mode display cutout handler
+
+   * vendor/support/
+c8ffa7a Customseekbar: add missing PreferenceDataStore calls
+
+====================
      07-19-2020
 ====================
 
@@ -50,6 +97,7 @@ cce172f5 SBC Dual Channel (SBC HD Audio) support
 bb7ebdb8 Check Null-safeness when switching optional-codecs state
 
    * packages/apps/Settings/
+71d1bda631 Settings: Add support for per app network isolation
 1726b2ac12 Add switch to select SBC HD by default [3a/3]
 62e42897b9 Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
 59ad6f98ab A2DP codec priority [3a/3]
@@ -58,6 +106,9 @@ bb7ebdb8 Check Null-safeness when switching optional-codecs state
 c8d32b2d1 Allow using alternative (higher) SBC HD bitrates with a property
 f9cc2e98e Explicit SBC Dual Channel (SBC HD) support
 170b53bc4 Increase maximum Bluetooth SBC codec bitrate for SBC HD
+
+   * system/netd/
+4d400bd5 system/netd: Add support for per app network isolation
 
    * vendor/qcom/opensource/commonsys/bluetooth_ext/
 c29c795 Fix compilation with SBC Dual Channel suport
@@ -135,6 +186,9 @@ f3ecc0c0 Remove deprecated backup overlay
      07-13-2020
 ====================
 
+
+   * external/pulse/
+5fad6be Pulse: Add automatic album art color mode [2/3]
 
 ====================
      07-12-2020
@@ -340,22 +394,4 @@ bbdf2603d fs_mgr: Allow remounts with Magisk installed
      07-06-2020
 ====================
 
-
-====================
-     07-05-2020
-====================
-
-
-   * external/arm-optimized-routines/
-d5dc5b6 Android.bp: Remove flags that are not supported on Q
-66e43f3 string: Optimize strlen
-4b256bb string: Fix overflow issue in strncmp-mte
-b79e60d string: Fix issue in strcmp-mte NUL check
-
-   * external/libpng/
-e8aa59ef0 libpng: optimize for speed on Arm platforms
-ce5cf7ec8 Revert "Add an __LLVM,__asm section for clang builds on ARM"
-
-   * packages/apps/Settings/
-c2507f1e86 Theme settings dashboard icons [2/3]
 
