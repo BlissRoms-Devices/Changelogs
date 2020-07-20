@@ -1,4 +1,62 @@
 ====================
+     07-21-2020
+====================
+
+
+   * device/lineage/sepolicy/
+849906f common: Remove no longer needed uncrypt rule
+
+   * device/qcom/sepolicy-legacy-um/
+2f55f2f sepolicy: cnd: Fix wifi_prop neverallow for compatible props
+ec85061 sepolicy: cnd: Allow access to wifi_prop
+
+   * external/asus/stitchimage/
+01774ce Automatic translation import
+088d359 Automatic translation import
+03df377 Automatic translation import
+
+   * external/pulse/
+7401727 Pulse: Do not show when navbar is hidden
+
+   * frameworks/base/
+baba97eade8 Merge changes from topic "fullscreen-apps" into q
+60eaec58bc8 fixup! QSTileImpl: code improvements to new tint style
+5aaf633f84d fixup! QSPanel: fix brightness slider logic
+137bc49a0f9 SystemUI: Don't re add brightness slider if its already present
+bd1c95736b1 BlissUtils: Introduce method to detect if gesture navbar is used
+0857a94850b base: notch-city: Do not apply immersive rules to 180 rotation
+ee09baed797 Revert "Extended audio panel - fixes for unlinked notifications"
+eb6556867f3 SystemUI: VolumePanel: Version 1.1
+b17678c9950 Cutout force full screen: Remove fullscreen checks
+ae76ee794d1 base: [1/2] Implement cutout force full screen
+
+   * lineage-sdk/
+003172fd LineageSettingsService: prevent setting net.hostname to null
+
+   * packages/apps/Blissify/
+78714a1 Blissify: qs: reorder preferences
+2cc799c Blissify: unify statusbar options in one fragment
+
+   * packages/apps/Settings/
+09a40d8307 Cutout force fullscreen: Disable fast scroller
+592775ac6b Settings: [2/2] Implement cutout force full screen
+8cddaa9ae3 fixup! BasebandVersionPreferenceController: Trim baseband if needed
+cc13330b28 Settings: Fix fallback summary for power_button_instantly_locks preference
+
+   * system/core/
+1b4133d8d libcutils: change trace file error to verbose
+72048d6fa Boost init priority before main loop
+
+   * system/sepolicy/
+72a90e4f Uncrypt: Allow uncrypt to write on ota_package_file.
+f7aec2e6 Export missing audio volume properties
+
+   * vendor/themes/
+1de720d overlay: update Ethereal theme colors
+2be000b Overlay: Add Ethereal primary
+5016b99 GestureNav: Adjust size of the edge panel arrow
+
+====================
      07-20-2020
 ====================
 
@@ -44,6 +102,9 @@ db695151 vendor: notch-city: Reduce QS header offset on immersive & hide mode [2
 
    * vendor/support/
 c8ffa7a Customseekbar: add missing PreferenceDataStore calls
+
+   * vendor/themes/
+867176e update Switch styles [2/4]
 
 ====================
      07-19-2020
@@ -133,6 +194,9 @@ fd03065 Allow to invert the icon color for active quicksettings icons [2/2].
      07-18-2020
 ====================
 
+
+   * external/chromium-webview/
+f05c347 Upgrade Chromium Webview to 84.0.4147.89
 
    * packages/apps/Blissify/
 177fc2a QsLabel: random accent tint
@@ -389,9 +453,4 @@ e362005a9 Remove passing -forceprocessing flag to R8
 d43470fb3 Remove the global seccomp option.
 bbdf2603d fs_mgr: Allow remounts with Magisk installed
 310b0095a liblog: Always report as debuggable when building userdebug/eng
-
-====================
-     07-06-2020
-====================
-
 
