@@ -1,4 +1,13 @@
 ====================
+     07-22-2020
+====================
+
+
+   * packages/apps/Blissify/
+6fcee3a Blissify: qs: reorder preferences
+2ec53df Blissify: unify statusbar options in one fragment
+
+====================
      07-21-2020
 ====================
 
@@ -32,10 +41,6 @@ ae76ee794d1 base: [1/2] Implement cutout force full screen
 
    * lineage-sdk/
 003172fd LineageSettingsService: prevent setting net.hostname to null
-
-   * packages/apps/Blissify/
-78714a1 Blissify: qs: reorder preferences
-2cc799c Blissify: unify statusbar options in one fragment
 
    * packages/apps/Settings/
 09a40d8307 Cutout force fullscreen: Disable fast scroller
@@ -427,30 +432,4 @@ e7a4e01f03 Settings: import airbnb-lottie
    * vendor/bliss/
 848110f7 vendor: overlay: Set delay for screenshot chord to 0
 6f9bef1f bliss: Bump to Bliss v12.9 Release
-
-====================
-     07-07-2020
-====================
-
-   * art/
-dc89ec960b ARM32: Combine LSR into ADD for Div by 2^n
-
-   * bionic/
-efbd5d575 Speed up seccomp with priority list.
-32a0a215b Remove global seccomp list.
-
-   * build/make/
-e362005a9 Remove passing -forceprocessing flag to R8
-7153b4818 proguard_flags: Remove -useuniqueclassmembernames
-
-   * build/soong/
-65430b3a Remove passing -forceprocessing flag to R8
-
-   * manifest/
-5383244 Manifest for Android 10.0.0 Release 40
-
-   * system/core/
-d43470fb3 Remove the global seccomp option.
-bbdf2603d fs_mgr: Allow remounts with Magisk installed
-310b0095a liblog: Always report as debuggable when building userdebug/eng
 
