@@ -3,12 +3,81 @@
 ====================
 
 
+   * frameworks/base/
+9a6131cba02 Fix color mismatch of pointers
+a8b359a3a6e Automatic translation import
+99808a2dca7 SystemUI: add tuner switch to hide keyguard assistant handles
+3cac0514b34 Fix custom lockscreen shortcut icons being white
+432eb1ea73a Lockscreen bottom shortcuts fixes
+1e21541fe63 base: tuner: add a hide config to left and right shortcut
+a084a140812 Revert "SystemUI: Bring back lockscreen tuner (1/2)"
+ea110b0ccda base: wake from aod on unplug if we show on charging only
+ecf81fe91d1 FODCircleView: let's smoothly fade-out the view, before going to View.GONE
+8cd06a59933 FODCircleView: handle more visibility cases
+68c9c9ed66c SystemUI: use path specification for rounded corners
+408d85a1c23 Screenstabilization: Catch DeadObjectException
+69c015b4924 NetworkTraffic: Adjust spacing
+aa9eba65f03 FODCircleView: Reset view offset to (0,0) on BurnInTimer.cancel()
+75629371ba8 Refactor SoundEffectsHelper for asynchronous loading
+839f32bd7ce AudioService: factor out sound effects handling
+b43a9b9f8a9 Lockscreen timeout: Make timeout configurable
+dba4629f0f5 StatubarIconList: Fix Network traffic visibility on overlayChange()
+76a8b014f83 SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod
+31a1b17df01 Revert "SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod"
+
+   * frameworks/opt/telephony/
+a3012ed84 Telephony: Add option for using regular poll state for airplane mode
+
    * packages/apps/Blissify/
-6fcee3a Blissify: qs: reorder preferences
-2ec53df Blissify: unify statusbar options in one fragment
+b70e9a0 Automatic translation import
+133b8d0 Blissify: reset navbar layout to default when gestural mode is enabled
+e15558f Blissify: hide stock navbar settings if gestural mode is enabled
+
+   * packages/apps/Contacts/
+e5df8337a Automatic translation import
+
+   * packages/apps/Launcher3/
+50c01d751 Rebrand to Blissify Launcher
+6c99563cf Launcher3: fix imports
+5a12a5fd7 Revert "Launcher3: Use AICP icon in random messages"
+d9380e173 Revert "quickstep: replace stock empty recents drawable with ours"
+55dc039e8 Revert "Launcher3: quickstep: animate AICP again"
+
+   * packages/apps/Settings/
+48bc76ca7f Settings: Add About Phone Bliss lottie animation
+1eed09a2c6 Revert "Animated Bliss Logo in About phone"
+dddd6a5327 Automatic translation import
+
+   * vendor/bliss/
+db94f3d8 Merge "bliss: Bump to Bliss v12.10 Release" into q10
+faad6ce6 bliss: Bump to Bliss v12.10 Release
 
 ====================
      07-21-2020
+====================
+
+
+   * frameworks/base/
+0f96740f328 fixup! fixup! lockscreen: Add support for showing unlock screen directly
+d2104bffe6c Make USB-Debugging notification less important
+7f3f0447502 StatusBar: Add STATUS_BAR_CUSTOM_HEADER to TunerService
+a082bf704db base: Make transparent QS background user configurable
+34e5a2e91d4 SystemUI: Allow hiding Black Gradient behind QSPanel
+baba97eade8 Merge changes from topic "fullscreen-apps" into q
+60eaec58bc8 fixup! QSTileImpl: code improvements to new tint style
+5aaf633f84d fixup! QSPanel: fix brightness slider logic
+
+   * packages/apps/Blissify/
+f2a2af6 Blissify: Allow hiding Black Gradient behind QSPanel
+7e2cadb Add tunables for navbar layout customization [2/2]
+6fcee3a Blissify: qs: reorder preferences
+2ec53df Blissify: unify statusbar options in one fragment
+
+   * packages/apps/Settings/
+6e43dbfb41 Settings: Make lockscreen timeout configurable [2/2]
+
+====================
+     07-20-2020
 ====================
 
 
@@ -28,9 +97,6 @@ ec85061 sepolicy: cnd: Allow access to wifi_prop
 7401727 Pulse: Do not show when navbar is hidden
 
    * frameworks/base/
-baba97eade8 Merge changes from topic "fullscreen-apps" into q
-60eaec58bc8 fixup! QSTileImpl: code improvements to new tint style
-5aaf633f84d fixup! QSPanel: fix brightness slider logic
 137bc49a0f9 SystemUI: Don't re add brightness slider if its already present
 bd1c95736b1 BlissUtils: Introduce method to detect if gesture navbar is used
 0857a94850b base: notch-city: Do not apply immersive rules to 180 rotation
@@ -62,7 +128,7 @@ f7aec2e6 Export missing audio volume properties
 5016b99 GestureNav: Adjust size of the edge panel arrow
 
 ====================
-     07-20-2020
+     07-19-2020
 ====================
 
 
@@ -90,6 +156,7 @@ eccf13c60c6 Revert "base: notch-city: Add 3 mode display cutout handler"
 b4e963c6857 Release SQLite page cache as much as it can
 9d581d5c800 SystemUI: Use regular global_actions_column layout for layout-sw600dp-land
 24bfe17a87f fw/b: Add support for per app network isolation
+f70d055e7bb KeyguardIndication: fix fc for certain devices on lockscreen charging info
 
    * manifest/
 1fbb9eb manifest: track pulse
@@ -99,6 +166,10 @@ b4e963c6857 Release SQLite page cache as much as it can
 9c2b287 Blissify: Pulse: Add automatic album art color mode [3/3]
 a4a96b4 Blissify: Pulse navbar audio gfx visualizer for Android 10 [3/4]
 43e2c4b notch-city: update 3 mode display cutout handler
+
+   * packages/apps/Launcher3/
+8c29641ea Automatic AICP translation import
+2261bc122 Automatic AICP translation import
 
    * vendor/bliss/
 b4a0acd8 Merge changes from topic "notch-city" into q10
@@ -112,12 +183,11 @@ c8ffa7a Customseekbar: add missing PreferenceDataStore calls
 867176e update Switch styles [2/4]
 
 ====================
-     07-19-2020
+     07-18-2020
 ====================
 
 
    * frameworks/base/
-f70d055e7bb KeyguardIndication: fix fc for certain devices on lockscreen charging info
 1199b574635 SystemUI: Add OnePlus Minimalism clock
 fae80728746 SystemUI: Add OnePlus Analog Clock Style
 c80c3406c8e SystemUI: Add OnePlus Roman analog clock
@@ -196,7 +266,7 @@ ffd594f96 Explicit SBC Dual Channel (SBC HD) support
 fd03065 Allow to invert the icon color for active quicksettings icons [2/2].
 
 ====================
-     07-18-2020
+     07-17-2020
 ====================
 
 
@@ -212,7 +282,7 @@ f4041f5 Random Qs Tint: tint active QS Tiles with random colors [2/2]
 00e8737 Jelly: Fix find in page functionality
 
 ====================
-     07-17-2020
+     07-16-2020
 ====================
 
 
@@ -223,7 +293,7 @@ f4041f5 Random Qs Tint: tint active QS Tiles with random colors [2/2]
 a32c5d0 Blissify: increase default rows for landscape
 
 ====================
-     07-16-2020
+     07-15-2020
 ====================
 
 
@@ -231,12 +301,15 @@ a32c5d0 Blissify: increase default rows for landscape
 929f80319 core: Introduce build colors
 
 ====================
-     07-15-2020
+     07-14-2020
 ====================
 
 
    * packages/apps/Dialer/
 2d2deedea Dialer: Use a DayNight launch theme
+
+   * packages/apps/Launcher3/
+e05aa810b Allow recents rotation again
 
    * packages/apps/Messaging/
 5954fed Messaging: Use a DayNight launch theme
@@ -247,17 +320,15 @@ f3ecc0c0 Remove deprecated backup overlay
 1004bfd4 tasks: Do not include entire build path in MD5 file
 
 ====================
-     07-14-2020
-====================
-
-
-====================
      07-13-2020
 ====================
 
 
    * external/pulse/
 5fad6be Pulse: Add automatic album art color mode [2/3]
+
+   * packages/apps/Launcher3/
+558d796f4 2 button / swipe navigation: fix for config_navBarCanMove = false
 
 ====================
      07-12-2020
@@ -266,6 +337,13 @@ f3ecc0c0 Remove deprecated backup overlay
 
    * frameworks/base/
 faef1679ca1 QSHeaderDataUsage: fix npe for wifi only devices
+
+====================
+     07-11-2020
+====================
+
+
+   * frameworks/base/
 bf1be26f318 Merge changes from topic "freeform-buttons" into q
 75dfb5c7840 Update back button graphics
 055965192c2 Add back button for freeform window
@@ -298,8 +376,11 @@ fc2abf44125 base: overlays: Add new icon shapes from Android R
    * packages/apps/Settings/
 ecc6350710 Settings dashboard icons: Fix theme for external icons on 10 [2/2]
 
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
+2ca8b3cbd Clean up duplicate uses-permission entries
+
 ====================
-     07-11-2020
+     07-10-2020
 ====================
 
 
@@ -311,6 +392,7 @@ d3d8c2421ea SystemUI: Call setOnlyAlertOnce(true) for PowerShare notification
 
    * manifest/
 99a25b9 manifest: Track opt/net/wifi from BlissRoms
+f45b515 manifest: Sync sm8250 HALs from LOS
 
    * packages/apps/BlissUpdater/
 0f2ddcf BlissUpdater: Display Bliss Version single line
@@ -332,25 +414,6 @@ e0599cf BlissUpdater: Correct cleanup notification action
 2b5abee BlissUpdater: Add little delay before sending broadcast
 fb5fcc7 BlissUpdater: Add network speed into some parts
 cfa1a09 BlissUpdater: Refresh list when update get deleted
-
-   * packages/apps/Blissify/
-077bbd0 Add a switch for notification counters [2/2]
-
-   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
-2ca8b3cbd Clean up duplicate uses-permission entries
-
-====================
-     07-10-2020
-====================
-
-
-   * hardware/qcom-caf/sdm845/display/
-42deb8b76 gralloc: Add option for unaligned YCrCb pixel format
-
-   * manifest/
-f45b515 manifest: Sync sm8250 HALs from LOS
-
-   * packages/apps/BlissUpdater/
 f6f6e9d BlissUpdater: Remove URL Link in Update Blocked dialog box
 6c79948 BlissUpdater: Add changelog dialog
 688f8f4 BlissUpdater!
@@ -359,8 +422,25 @@ f6f6e9d BlissUpdater: Remove URL Link in Update Blocked dialog box
 6b031b7 Updater: Refactor for BlissRoms
 f939306 BlissUpdater: Update Gradle Deps
 
+   * packages/apps/Blissify/
+077bbd0 Add a switch for notification counters [2/2]
+
 ====================
      07-09-2020
+====================
+
+
+   * frameworks/base/
+8703a1a906d base: Add config to disable vowifi icon style [1/2]
+
+   * hardware/qcom-caf/sdm845/display/
+42deb8b76 gralloc: Add option for unaligned YCrCb pixel format
+
+   * packages/apps/Blissify/
+112ce1d Blissify: remove vowifi icon for devices that dont support it
+
+====================
+     07-08-2020
 ====================
 
 
@@ -373,63 +453,6 @@ f0f6d22b1 build: make script look good in recovery xd
 7b2f7eb61 build: Remove some debugging props
 f3b898b46 no matter what build type we dont want to see anything but Build_ID
 
-   * frameworks/base/
-8703a1a906d base: Add config to disable vowifi icon style [1/2]
-
    * packages/apps/Blissify/
-112ce1d Blissify: remove vowifi icon for devices that dont support it
 dbf84d8 Blissify: Fix slim recents switch
-
-====================
-     07-08-2020
-====================
-
-
-   * build/make/
-93dd2fe9c Merge changes from topic "misc" into q
-b8bf3cc6e Merge tag 'android-10.0.0_r40' into q
-
-   * frameworks/base/
-06de89e50e5 Revert "Force Expanded Notifications [1/2]"
-a578b2b24fa SystemUI: Add more charging styles
-eaabf34bb1b Theme settings dashboard icons [1/3]
-
-   * frameworks/native/
-c84dc1674 Merge tag 'android-10.0.0_r40' into q
-
-   * hardware/qcom/audio/
-96cc06a Merge tag 'android-10.0.0_r40' into q
-
-   * manifest/
-3860923 manifest: Track libjpeg-turbo
-18823ed manifest: Track own zlib [2/2]
-8fb1125 manifest: Track own ndk abi-dumps [1/2]
-8af52fd Track our prebuilt r8
-48c55f4 Merge branch 'android-10.0.0_r40' into q
-
-   * packages/apps/Blissify/
-574f5a9 Revert "Force Expanded Notifications [2/2]"
-15f9942 Merge "Blissify: Add more charging styles" into q
-a80d199 Merge "Theme settings dashboard icons [3/3]" into q
-7fb3693 Blissify: Add more charging styles
-94ffb4f Theme settings dashboard icons [3/3]
-
-   * packages/apps/Settings/
-5b1dcf62b9 Settings: more layout improvements
-d3baa29760 Settings: Lottie Animations
-12103e3bdc Settings: Redesign PreferenceCategory
-e8c6ff96bd Settings: add bool to ignore icon space reserved
-53a61fb043 Settings: Categorise!
-eb077d05b5 Settings: Improve display settings layout
-e7a4e01f03 Settings: import airbnb-lottie
-
-   * packages/services/Telephony/
-3e8b00c9d Merge tag 'android-10.0.0_r40' into q
-
-   * prebuilts/abi-dumps/vndk/
-331ac46 vndk: remove libz.so from ABI check target
-
-   * vendor/bliss/
-848110f7 vendor: overlay: Set delay for screenshot chord to 0
-6f9bef1f bliss: Bump to Bliss v12.9 Release
 
