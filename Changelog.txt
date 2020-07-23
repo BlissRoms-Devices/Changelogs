@@ -1,4 +1,18 @@
 ====================
+     07-24-2020
+====================
+
+
+   * packages/apps/CarrierConfig/
+0f4ac84 Fix voicemail for Bouygues Telecom France
+
+   * packages/apps/Launcher3/
+e7c1bc2e5 update wallpaper picker package
+
+   * vendor/themes/
+b7c5ff8 themes: increase padding between signal and battery area
+
+====================
      07-23-2020
 ====================
 
@@ -435,25 +449,4 @@ f6f6e9d BlissUpdater: Remove URL Link in Update Blocked dialog box
 29b61d0 BlissUpdater: Update buildtype and Version props
 6b031b7 Updater: Refactor for BlissRoms
 f939306 BlissUpdater: Update Gradle Deps
-
-====================
-     07-09-2020
-====================
-
-
-   * build/make/
-b3cd8c7b6 Display progress of system & vendor images when flashing
-80e85b861 Clean up ROM flash and add Bliss info
-543522622 core: binary: Allow modules to be built without clang
-ff93408e6 build: Erase package_cache upon flashing
-f0f6d22b1 build: make script look good in recovery xd
-7b2f7eb61 build: Remove some debugging props
-f3b898b46 no matter what build type we dont want to see anything but Build_ID
-
-   * frameworks/base/
-8703a1a906d base: Add config to disable vowifi icon style [1/2]
-
-   * packages/apps/Blissify/
-112ce1d Blissify: remove vowifi icon for devices that dont support it
-dbf84d8 Blissify: Fix slim recents switch
 
