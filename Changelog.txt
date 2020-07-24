@@ -1,4 +1,12 @@
 ====================
+     07-25-2020
+====================
+
+
+   * manifest/
+ab95b6a manifest: Remove external/google
+
+====================
      07-24-2020
 ====================
 
@@ -429,24 +437,4 @@ cfa1a09 BlissUpdater: Refresh list when update get deleted
 
    * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
 2ca8b3cbd Clean up duplicate uses-permission entries
-
-====================
-     07-10-2020
-====================
-
-
-   * hardware/qcom-caf/sdm845/display/
-42deb8b76 gralloc: Add option for unaligned YCrCb pixel format
-
-   * manifest/
-f45b515 manifest: Sync sm8250 HALs from LOS
-
-   * packages/apps/BlissUpdater/
-f6f6e9d BlissUpdater: Remove URL Link in Update Blocked dialog box
-6c79948 BlissUpdater: Add changelog dialog
-688f8f4 BlissUpdater!
-35ba82c BlissUpdater: Disable Bliss Version Checks
-29b61d0 BlissUpdater: Update buildtype and Version props
-6b031b7 Updater: Refactor for BlissRoms
-f939306 BlissUpdater: Update Gradle Deps
 
