@@ -1,4 +1,9 @@
 ====================
+     07-26-2020
+====================
+
+
+====================
      07-25-2020
 ====================
 
@@ -396,45 +401,4 @@ fc2abf44125 base: overlays: Add new icon shapes from Android R
 
    * packages/apps/Settings/
 ecc6350710 Settings dashboard icons: Fix theme for external icons on 10 [2/2]
-
-====================
-     07-11-2020
-====================
-
-
-   * frameworks/base/
-6f6bbc9b2b8 Fix typos related to sortSelectionIndices
-cece77aaa08 Fix app crash if the selection is from reverse direction.
-d3d8c2421ea SystemUI: Call setOnlyAlertOnce(true) for PowerShare notification
-191f17c580b BLE: Fix NPE during start advertising
-
-   * manifest/
-99a25b9 manifest: Track opt/net/wifi from BlissRoms
-
-   * packages/apps/BlissUpdater/
-0f2ddcf BlissUpdater: Display Bliss Version single line
-ff465d4 Updater: Theme actionbar text too
-2437f08 Updater: Use accent for actionbar items
-aedff1b Updater: Expose the lower background color
-a81e3c8 BlissUpdater: Blissified Adaptive Icons
-36ecd71 BlissUpdater: Always show preferences
-63f9480 Updater: Remove padding from button
-8918ffb Fix layout for Changelog button
-4b73d99 UpdatesActivity: Append device name to the header text
-838d2a6 UpdaterService: set installed notification to ongoing
-1b9738e BlissUpdater: Set changelog text with caps
-3b1074d BlissUpdater: Prioritize A/B updates by default
-48e2d0f BlissUpdater: Remove unused method
-18d0152 Updater: Introduce option to choose sourceforge mirrors
-c0c12f0 BlissUpdater: Remove download speed on UpdatesListAdapter
-e0599cf BlissUpdater: Correct cleanup notification action
-2b5abee BlissUpdater: Add little delay before sending broadcast
-fb5fcc7 BlissUpdater: Add network speed into some parts
-cfa1a09 BlissUpdater: Refresh list when update get deleted
-
-   * packages/apps/Blissify/
-077bbd0 Add a switch for notification counters [2/2]
-
-   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
-2ca8b3cbd Clean up duplicate uses-permission entries
 
