@@ -1,7 +1,18 @@
 ====================
+     07-27-2020
+====================
+
+
+   * frameworks/base/
+b8682fcec20 Revert "ScreenDecorations: Account notch-city for custom cutout"
+
+====================
      07-26-2020
 ====================
 
+
+   * frameworks/base/
+af920b31dee NotificationPanelView: Fix initial touch co-ordinates
 
 ====================
      07-25-2020
@@ -362,43 +373,4 @@ f3ecc0c0 Remove deprecated backup overlay
 
    * packages/apps/Launcher3/
 558d796f4 2 button / swipe navigation: fix for config_navBarCanMove = false
-
-====================
-     07-12-2020
-====================
-
-
-   * frameworks/base/
-faef1679ca1 QSHeaderDataUsage: fix npe for wifi only devices
-bf1be26f318 Merge changes from topic "freeform-buttons" into q
-75dfb5c7840 Update back button graphics
-055965192c2 Add back button for freeform window
-bf8164f2433 Settings dashboard icons: Fix theme for external icons on 10 [1/2]
-089c3a34143 base: Use only 18px size icon for notification count
-bc3f997299f Show infinity for large notification counts
-436b751c821 SystemUI: Forward-port notification counters [1/2]
-b4acaf41bf8 Set Assistant UID of the current user.
-5effc585acf Calm down attention service logspam
-99afda61a59 NetworkTraffic: Ensure icon visibility after overflow occurs
-583485460ce NetworkTraffic: Better workaround for RequestLayout() spam
-515de39aeb4 Zygote: enable zygote preforking (USAP pool) by default
-3952c4902b0 Adds Zygote policy flags to control how applications are launched
-93c0a39ac16 Start process of next activity with top priority in advance
-7ee751b3982 Teaches the ProcessCpuTracker about USAPs.
-d48b2663b3d Fixed an issue Zygote initialization.
-8fad54dc559 Improved timekeeping logic for USAP Pool refill mechanism.
-1cb157f7573 Resets the refill action/timing info after a pool fill event.
-88f8f30f8e4 Make the USAP Pool refill delay configurable.
-eac7dc4ccec Re-adds a trace point that was accidentally removed.
-ebe71e05958 Moved some thread priority changes.
-85f40f98745 Adjust Java Language thread priority in new processes.
-0582a5f4ace Adjusts the USAP pool refill mechanism.
-bf11bb5b0d8 Change USAP name to application name as soon as possible.
-1af990ef9e8 NetworkTraffic: Switch back to old drawable
-fc2abf44125 base: overlays: Add new icon shapes from Android R
-64f18f837ab Permissions: Stop auto-granting location to system browsers
-16727905026 SystemUI: Add VoLTE/VoWiFi icons from OOS 10
-
-   * packages/apps/Settings/
-ecc6350710 Settings dashboard icons: Fix theme for external icons on 10 [2/2]
 
