@@ -1,4 +1,9 @@
 ====================
+     07-28-2020
+====================
+
+
+====================
      07-27-2020
 ====================
 
@@ -362,15 +367,4 @@ f3ecc0c0 Remove deprecated backup overlay
      07-14-2020
 ====================
 
-
-====================
-     07-13-2020
-====================
-
-
-   * external/pulse/
-5fad6be Pulse: Add automatic album art color mode [2/3]
-
-   * packages/apps/Launcher3/
-558d796f4 2 button / swipe navigation: fix for config_navBarCanMove = false
 
