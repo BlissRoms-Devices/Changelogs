@@ -1,12 +1,77 @@
 ====================
+     07-30-2020
+====================
+
+   * art/
+6380b2b423 ARM: Optimize Div/Rem by positive const for non-negative dividends
+fc53c73ac8 ARM: Optimize Div/Rem by 2^n for non-negative dividends
+
+   * device/lineage/sepolicy/
+d7f013a sepolicy: Add wifi ext sepolicy rules
+
+   * external/libjpeg-turbo/
+69bedfe libjpeg-turbo: add config to disable merged upsample
+
+   * external/skia/
+babd9418c2 external/skia: Take Fast Jpeg Decoding Path
+
+   * frameworks/base/
+cbf90437726 Optimize AbsListView to reduce click operation latency
+4c5cef58c36 avoid duplicate doFrame calls.
+e0ad1f9d663 make ui touch optimization work normally.
+1904bfe759a add VSYNC scheduled flag and avoid two doFrame calls in one period
+99fec9cf8be core: touch response optimizations
+
+   * lineage-sdk/
+9a505876 lineage-sdk: Add device key action for partial screenshot [3/3]
+
+   * packages/apps/Blissify/
+8d2619f Add MaterialOcean System Theme [3/3]
+a22ee38 themes: bring back the Xtended Clear theme [3/3]
+acf82b2 Add DarkGrey System Theme [3/3]
+00c2d46 Themes: Add PitchBlack Theme [3/3]
+34994d7 Blissify: System Themes [2/2]
+
+   * packages/apps/LineageParts/
+65fd18e LineageParts: disable icon space reserved
+bf072df LineageParts: Redesign PreferenceCategory
+
+   * packages/apps/Settings/
+9eaa393806 BatteryHealth: Make it optional
+5d64dadebb BatteryHealth: show Charge Cycles Completed
+5ace30ff9b BatteryHealth: make resources overlayable
+7dcdc767e2 Settings: Add BatteryHealth section
+8939d3c1f7 Revert "Settings: Tweak some search dimens"
+
+   * vendor/bliss/
+b411997a vendor: Define isStatic argument on setupwizard overlay
+aee9175f vendor: Refactor setup wizard overlays
+77a63330 vendor: Enable and refactor SetupWizardOverlay
+e1187643 Revert "vendor: Remove SettingsIntelligence"
+2b001917 vendor: config: Include vendor/google/customization
+
+====================
      07-29-2020
 ====================
 
+
+   * device/qcom/sepolicy/
+743bfbe0 sepolicy: Include wifi-ext sepol
+
+   * device/qcom/sepolicy-legacy-um/
+8bebb7f sepolicy: Include wifi-ext sepol
+
+   * frameworks/native/
+7b0945d23 touch response optimizations
 
 ====================
      07-28-2020
 ====================
 
+
+   * vendor/themes/
+3e51cbe themes: remove duplicate dimen overlay
+0a01f74 themes: move in overlays from vendor/bliss
 
 ====================
      07-27-2020
@@ -14,7 +79,55 @@
 
 
    * frameworks/base/
+ab97b6eb6a5 base: Add Linotte font [1/2]
+151b52fd9e9 Add MaterialOcean System Theme [2/3]
+df1b35fc1cf base: Add partial screenshot device key action [1/3]
+6115ede80cd themes: bring back Clear theme [2/3]
+ac37b38e481 Add DarkGrey System Theme [2/3]
+aac00f53d19 Themes: Add PitchBlack Theme [1/3]
+fa27405c7ee Themes: Add moar themes [1/3]
+2d30dcb97ae Themes: Add Default Stock theme
+c3d0c609adc base: System Themes [1/2]
+42c883de7a4 base: Show or Hide manual rotation button [1/2]
+8cde6fb828a base: clipboard toast toggle [1/2]
+10436a3d888 base: iOS-like toast notification for clipboard access
 b8682fcec20 Revert "ScreenDecorations: Account notch-city for custom cutout"
+
+   * manifest/
+f9020c9 manifest: track system/apex and vendor google_customisation
+
+   * packages/apps/Blissify/
+774559b Themes: Add moar themes [3/3]
+ba1e99b Blissify: hide force show navbar preference in search
+cb01e29 Blissify: Show or Hide manual rotation button [2/2]
+609b9fa Add device key action for partial screenshot [2/3]
+
+   * system/apex/
+68700fd Disable the build of com.android.apex.cts.shim.v1_prebuilt
+
+   * vendor/bliss/
+cf268ce0 vendor: move overlays to vendor/themes [1/2]
+
+   * vendor/themes/
+ee67759 themes: Round system dialogs, buttons and progress bars
+6f9474f themes: Use round icons
+a6dda3c themes: Show swipe up gesture option
+9ffa4e0 themes: Enable smart battery
+57c41cb themes: Disable all caps text on buttons
+27a9fdf themes: Import PixelConfigOverlay* GoogleConfigOverlay GoogleWebViewOverlay for full GMS support
+5289275 themes: set Google Sans as default font.
+7870d6b themes: Don't enable aware lock/skip gestures
+5dee368 themes: Distinguish HSPA data icon from UMTS data icon, vibrate on icon animation
+f20857a Correctly remove carrier related overlays
+44caac1 themes: Import Telephony/Telecomm/SettingsProvider/SystemUI overlays
+6b0cc0e themes: Add missing Settings overlay for Wallpapers and styles
+76d081a themes: Import settings overlays from SettingsGoogle
+a6c32a2 themes: Import settings bools
+cd11463 themes: Import settings overlay
+2644af9 themes: Add Linotte font [2/2]
+35ea5f0 Add MaterialOcean System Theme [1/3]
+fce3bf1 themes: disable bliss clear primary overlay
+7f5a652 themes: Add default stock theme
 
 ====================
      07-26-2020
@@ -24,6 +137,9 @@ b8682fcec20 Revert "ScreenDecorations: Account notch-city for custom cutout"
    * frameworks/base/
 af920b31dee NotificationPanelView: Fix initial touch co-ordinates
 
+   * packages/apps/Settings/
+e2972ce587 Settings: Clipboard toast toggle [2/2]
+
 ====================
      07-25-2020
 ====================
@@ -31,6 +147,20 @@ af920b31dee NotificationPanelView: Fix initial touch co-ordinates
 
    * manifest/
 ab95b6a manifest: Remove external/google
+
+   * packages/apps/BlurView/
+f667213 BlurView: Fix Typo find: `packages/apps/BlurView/library/src/main/rs'
+d8ddae2 Increase downsampling
+02147ee BlurView: convert to Android.mk
+0250d12 fix build
+10b3f33 Increase default blur radius
+
+   * vendor/themes/
+55ba1a4 themes: bring back the Xtended Clear theme [1/3]
+7e07292 themes: add Settings exposures for new themes
+e3745b0 Add DarkGrey System Theme [1/3]
+e2f4166 Themes: Add PitchBlack Theme [2/3]
+6e169d6 Themes: Add moar themes [2/3]
 
 ====================
      07-24-2020
@@ -348,23 +478,4 @@ a32c5d0 Blissify: increase default rows for landscape
 
    * build/make/
 929f80319 core: Introduce build colors
-
-====================
-     07-15-2020
-====================
-
-
-   * packages/apps/Dialer/
-2d2deedea Dialer: Use a DayNight launch theme
-
-   * packages/apps/Launcher3/
-e05aa810b Allow recents rotation again
-
-   * packages/apps/Messaging/
-5954fed Messaging: Use a DayNight launch theme
-
-   * vendor/bliss/
-b0f59ace bliss: update GMS updater component disable list
-f3ecc0c0 Remove deprecated backup overlay
-1004bfd4 tasks: Do not include entire build path in MD5 file
 
