@@ -1,4 +1,33 @@
 ====================
+     07-31-2020
+====================
+
+
+   * hardware/lineage/livedisplay/
+ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
+b8ca32c livedisplay: sysfs: Modularize all components
+22462db livedisplay: sysfs: Refine interface registration
+8a01e72 livedisplay: sysfs: Miscellaneous clean-ups
+d0580f3 livedisplay: sysfs: Use POSIX api to check file access
+b1a97e0 livedisplay: sysfs: Move string literals to anonymous namespace
+8888a4b livedisplay: sysfs: Follow naming rules of Google C++ Style Guide
+44e1a1f livedisplay: sdm: Modularize all components
+5e27e56 livedisplay: sdm: Fix a mismatched data type
+4afd662 livedisplay: sdm: Miscellaneous clean-ups
+5c154dc livedisplay: sdm: Improve SendDppsCommand
+bb5ff4a livedisplay: sdm: Move constants and helpers to anonymous namespace
+b8a246a livedisplay: sdm: Move SDM feature version check to utils
+39b8735 livedisplay: sdm: Convert Utils class to namespace
+07e4ea4 livedisplay: sdm: Use default member initializers
+143150e livedisplay: sdm: Follow naming rules of Google C++ Style Guide
+9d5a9c9 livedisplay: sdm: Implement a sane callback to update default PA
+a15a1f3 livedisplay: sdm: Restart when any QDCM backend not ready
+7468c41 livedisplay: sdm: Use RAII semantics where possible
+
+   * vendor/themes/
+c08088f Don't allow gms access to DeviceConfig table
+
+====================
      07-30-2020
 ====================
 
@@ -8,6 +37,9 @@ fc53c73ac8 ARM: Optimize Div/Rem by 2^n for non-negative dividends
 
    * device/lineage/sepolicy/
 d7f013a sepolicy: Add wifi ext sepolicy rules
+
+   * device/qcom/sepolicy-legacy-um/
+b7f6c3b sepolicy: Unlabel vendor_wifi_version
 
    * external/libjpeg-turbo/
 69bedfe libjpeg-turbo: add config to disable merged upsample
@@ -470,12 +502,4 @@ f4041f5 Random Qs Tint: tint active QS Tiles with random colors [2/2]
 
    * packages/apps/Blissify/
 a32c5d0 Blissify: increase default rows for landscape
-
-====================
-     07-16-2020
-====================
-
-
-   * build/make/
-929f80319 core: Introduce build colors
 
