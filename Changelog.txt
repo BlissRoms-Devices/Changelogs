@@ -1,4 +1,35 @@
 ====================
+     08-01-2020
+====================
+
+
+   * packages/apps/Launcher3/
+325d8fc27 Launcher3: show Date instead of Now Playing
+9aa6eb45c Launcher3: Let's set spacing
+6bf4ef13d Launcher3: Add READ_FRAME_BUFFER permission
+44445dc5d Launcher3: Add needed priv app permissions
+2ad11f6ba Launcher3: Allow At a glance to be full uppercase
+f7e0a8e90 Launcher3: Let's change at a glance fonts
+a71fd912e Launcher3: bring back more double-tap actions
+52aa10220 Gestures: Add more actions to double-tap
+7823526cd Add Google search double tap option
+f86bf0b71 Launcher3: add gesture options
+
+   * packages/apps/LineageParts/
+c0f36dc LineageParts: Privacy: Add icon for Trust Category
+
+   * packages/apps/Settings/
+8a87653331 Settings: add icons for privacy settings
+c3f3c175c3 Settings: Add new face settings video
+fb51eaa89d Settings: Improve disabling icon space reserved for preferences
+589ca84e29 Settings: update some lottie animations
+
+   * packages/services/OmniJaws/
+c8160fe OmniJaws: Add privapp permissions xml
+b2b1821 OmniJaws: Update owm weather icons' sunset/sunrise dependency
+d26e896 OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly
+
+====================
      07-31-2020
 ====================
 
@@ -23,6 +54,104 @@ b8a246a livedisplay: sdm: Move SDM feature version check to utils
 9d5a9c9 livedisplay: sdm: Implement a sane callback to update default PA
 a15a1f3 livedisplay: sdm: Restart when any QDCM backend not ready
 7468c41 livedisplay: sdm: Use RAII semantics where possible
+
+   * packages/apps/Launcher3/
+511bcc724 Reimplement save scroll position feature
+e77cfe11f Add option to save scroll position in drawer
+d302423d5 Launcher3: check need for restart on resume
+7966b4e8a update wallpaper picker package
+d049464e0 Specify the component name to start the picker
+8b588f04b Specify the wallpaper picker package
+4585f235e Properly expose GridOptionsProvider
+723b5c3f4 Revert "Add developer options for grid change for Styles"
+7f500a19b Launcher3: Add more dates
+62be9b3ec add option to change date format for QuickSpace
+b1bae541e Revert "config: enable LAUNCHER3_PROMISE_APPS_IN_ALL_APPS"
+4f077370a Fixup uninstall shortcut factory
+9e53c3cf7 Launcher3: switch to PackageManagerHelper for Uninstall
+fe10ba153 Launcher3: Fix up widget theming
+07445ed2d Launcher3: appinfo_bottom_sheet: Tint Headline text with accent color.
+6755d73f9 Launcher3: Fix font family for App Info sheet
+bbc4d7a83 Launcher3: Do not attempt to show promise icon when info is null
+6ce427448 Launcher3: Fix IntentFilter leak in QuickEventsController
+ac9b0e12c Launcher3: Add MANAGE_ACTIVITY_STACKS permission
+f7b118bd5 Utilities: Use MODEL_EXECUTOR for needs restart code
+5064759ad Launcher3: Follow system color for dark style
+ed08f55da Launcher3: Add missing permission PACKAGE_USAGE_STATS
+c79e90505 Launcher3: Add permission to allow updating database
+b1dd720d9 Launcher3: disable promisse apps
+208c87c3a Launcher3: Use system fonts
+f5f05fd72 Launcher3: Follow system color for dark style
+ed234ab06 Add double tap to sleep gesture
+502e9a918 QSB: request round search bar
+3bb97e0f0 proguard: Also keep FixedScaleDrawable
+751bf1768 Launcher3: use bliss icon for welcome msg
+05be9e60f Rebrand to Blissify Launcher
+f55a130fc Launcher3: Add extra privapp permissions xml
+208b16594 Quickspace: Use system font
+1f9d8d96a Quickspace: Let's add a marquee
+7a5731744 Quickspace: Add contextual messages/greetings event
+26b336626 Quickspace: Enable Now Playing by default
+ad379705c Quickspace: Toggle the Now Playing status
+ee93426e1 Launcher3: The return of the Now Playing
+575ba34e8 Launcher3: Add alternate Quickspace layout
+e0ad59a42 Quickspace: refresh the views more frequently
+02cddc216 Launcher3: Let's bring back device introduction action
+6af219afe Launcher: Call mStateManager directly
+0743f8c9b SystemShortcut: Add uninstall option
+e800655d6 Launcher3: Allow to set a default icon pack
+6f2678746 quickstep: Always show all apps divider in prediciton view
+161a77b42 Add Quick events support in Quickspace
+0afcc2a24 Launcher3: Introduce Quickspace [squashed]
+10daa4697 Launcher3: Improve work banner layout at the bottom of the app drawer
+b472ec1c2 Launcher3: Change padding in work tab footer
+1a1c19c2c Launcher3: Do not check fast scroll movement to fix unresponsiveness
+679078edb AospLauncher: Clear all icon overrides when changing global icon pack
+5a4133444 AospLauncher: Bypass adaptive icon wrapping with icon pack icons
+4e99ed03c IconLoader: Add config hint to bypass adaptive icon wrapping
+15de0e1da Launcher3: Add Icon Pack Support from Shade Launcher
+3b992767b AospLauncher: Add AppInfo Bottom Sheet from Shade Launcher
+4c913fe78 Launcher3: Consider extra header content as visible elements
+d9cc75e4f Increase all apps top padding to avoid visual glitch in recents
+e0018cb9d Launcher3: enable grid control provider
+1c38556ff Launcher3: add a 6x6 grid device profile while we are here
+6253af166 Launcher3: correctly apply grid changes from grid control provider
+6118615cc Launcher3: remove extra space for hotseat
+512611522 Launcher3: allow to swipe down on recents view to clear all
+d7e2ad5a3 Launcher3: Use system fonts
+434070314 Launcher3: delet the shade
+0b05544f5 Launcher3: Fix back button on settings
+6d4a5c7ae Launcher3: Make shadespace toggleable
+2383d18a6 Replace Smartspace widget host view with Shade Space
+98acefd60 Launcher3: Extend notification listener with proxy
+bb9d91f17 Launcher3: Disable top/hotseat gradient
+cd6c23235 Use Google's strings for Google now panel
+64e9848d0 Launcher3: new icon for kill app option
+a819dbc3d New Recents: add kill action to app shortcuts popup
+bcbcd862e Launcher3: Rely on the internal theming isMainColorDark for dark gfeed
+ab18ac357 Decompiled feed lib with dark theme support
+d181986d8 Launcher3: Add updated Google Feed lib from Pixel 3 launcher
+eebd5af2c Launcher3: Allow swipe for google now to be optional
+b1719c45d Launcher3: Animate workspace when animating the Google now page
+d08a710ac Launcher3: Make sure service is connected before trying to unbind
+f2f885a21 Launcher3: Support google now tab
+ac63742c8 Launcher3: Import reversed google now lib
+38e027e51 Launcher3: Add permission to allow updating database
+a99e28c1d Elevate to 'core/platform' app'
+b0dd3cc58 Skip unneded package manager calls when checking QSB availability
+52d595ae3 Set a toggle to show Search bar on first screen
+8a5f71c9e Launcher3: Add restart action for toggling settings
+8022b27af Rearrange settings
+5b3b88fb9 Launcher3: Fix launcher preview rendering
+50bae392f Fix divide by zero
+112fa4247 Can't search out local app by Chinese
+af9ceeedb Fix pointer index out of range
+70b748410 Allow resizing any widget
+4c4f5d5c3 Add back button to Settings
+2f5ca9d4e Enable LAUNCHER3_PROMISE_APPS_IN_ALL_APPS
+f358b4ea6 Stability NullPointer issue
+947b60db3 No Calendarwidget 4x4 widget displayed
+16a87172e Launcher3: use common style for recents task menu divider
 
    * vendor/themes/
 c08088f Don't allow gms access to DeviceConfig table
@@ -64,6 +193,10 @@ acf82b2 Add DarkGrey System Theme [3/3]
 00c2d46 Themes: Add PitchBlack Theme [3/3]
 34994d7 Blissify: System Themes [2/2]
 
+   * packages/apps/Launcher3/
+366c06da0 Fix search bar incorrectly positioned after swiping up to home
+40c1ff8b9 Launcher3: Let's make the search bar on all apps round
+
    * packages/apps/LineageParts/
 65fd18e LineageParts: disable icon space reserved
 bf072df LineageParts: Redesign PreferenceCategory
@@ -74,6 +207,9 @@ bf072df LineageParts: Redesign PreferenceCategory
 5ace30ff9b BatteryHealth: make resources overlayable
 7dcdc767e2 Settings: Add BatteryHealth section
 8939d3c1f7 Revert "Settings: Tweak some search dimens"
+
+   * packages/services/OmniJaws/
+50d93e8 Revert "OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly"
 
    * vendor/bliss/
 b411997a vendor: Define isStatic argument on setupwizard overlay
@@ -202,9 +338,6 @@ e2f4166 Themes: Add PitchBlack Theme [2/3]
    * packages/apps/CarrierConfig/
 0f4ac84 Fix voicemail for Bouygues Telecom France
 
-   * packages/apps/Launcher3/
-e7c1bc2e5 update wallpaper picker package
-
    * vendor/themes/
 b7c5ff8 themes: increase padding between signal and battery area
 
@@ -245,14 +378,6 @@ e15558f Blissify: hide stock navbar settings if gestural mode is enabled
 
    * packages/apps/Contacts/
 e5df8337a Automatic translation import
-
-   * packages/apps/Launcher3/
-e460e9672 Launcher3: use bliss icon for welcome msg
-50c01d751 Rebrand to Blissify Launcher
-6c99563cf Launcher3: fix imports
-5a12a5fd7 Revert "Launcher3: Use AICP icon in random messages"
-d9380e173 Revert "quickstep: replace stock empty recents drawable with ours"
-55dc039e8 Revert "Launcher3: quickstep: animate AICP again"
 
    * packages/apps/Settings/
 48bc76ca7f Settings: Add About Phone Bliss lottie animation
@@ -377,10 +502,6 @@ b4e963c6857 Release SQLite page cache as much as it can
 a4a96b4 Blissify: Pulse navbar audio gfx visualizer for Android 10 [3/4]
 43e2c4b notch-city: update 3 mode display cutout handler
 
-   * packages/apps/Launcher3/
-8c29641ea Automatic AICP translation import
-2261bc122 Automatic AICP translation import
-
    * vendor/bliss/
 b4a0acd8 Merge changes from topic "notch-city" into q10
 db695151 vendor: notch-city: Reduce QS header offset on immersive & hide mode [2a/2]
@@ -491,15 +612,4 @@ f4041f5 Random Qs Tint: tint active QS Tiles with random colors [2/2]
 
    * packages/apps/Jelly/
 00e8737 Jelly: Fix find in page functionality
-
-====================
-     07-17-2020
-====================
-
-
-   * hardware/qcom-caf/sdm845/display/
-95a2d7c71 gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
-
-   * packages/apps/Blissify/
-a32c5d0 Blissify: increase default rows for landscape
 
