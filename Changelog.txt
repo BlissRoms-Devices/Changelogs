@@ -1,9 +1,56 @@
 ====================
+     08-02-2020
+====================
+
+
+   * frameworks/base/
+eaf0625cb77 globalactions: Disable emergency menu by default
+b7509520486 Qstile Styles : fix some inconsistencies
+044e323f231 Add isFaceAuthEnabledForUser checks in KeyguardLiftController
+6b2d4ffb966 Add synchronization for invokeForAllObservers call
+b599ee2c2cd Return null on failed insert due to permissions
+755d8c80599 Fixes crash/race condition when destroyActivity
+212c8b147c9 base: Remove keyguard delay completely
+c7856538233 API changes due to importing RI BigInteger
+8de97f5638e Send top-app's render thread tid to perf HAL
+a969b08d091 Remove unused / unimplemented CorePlatformAPI methods.
+85412db8194 Remove references to Dalvik logger.
+a946765cc5e trigger file removal when slice permission is removed
+1750e5fb0be Throw XmlParserException when client tag cannot be found when parsing slice permissions.
+224cf2a159a [viewcompiler] Switch to slicer DEX opcode definitions
+f12108361a8 PackageInstallerSession: Minor refactorings and cleanups
+5e87a0a6ab8 Simplifying callback calls in PackageInstallerSession
+fa6f64d6ad6 Fix PackageWatchdog::syncRequestsAsync and related code
+82bc3afcd61 framework/base: add parallel verifyV1
+e15a227be50 Perf: Boost UI thread during app launching
+ad9d5fa31d7 framework: add boost for package installation
+b15cc9788ed BoostFramework: New hintType for App Starting from BG.
+6d45ecf239e remove obsoleted cgroup follow option
+4d7546b5086 perf: Load performance lib from Zygote
+7cab226a28f perf: enable gesture fling boost by default
+d27b9209c74 [SQUASH] BoostFramework: To Enhance performance.
+ef63ee75ed3 Revert "Base: AM: create config to set Max Cached Processes"
+47b19963018 Add USSD codes over IMS feature
+4e008f87454 Telephony: IMS: Cache subscriber associated uri
+f36d674ad00 SystemUI: Fix SystemUI failed to go to doze issue
+803beae462c Use same NFC icon as that in QS tile
+
+   * packages/apps/Settings/
+dccb88764d Settings: set maintainer string as non-translatable
+
+   * vendor/themes/
+4b89458 themes: Show all main tiles by default
+
+====================
      08-01-2020
 ====================
 
 
+   * manifest/
+f404e68 manifest: track backgrounds and exactcalulator from los
+
    * packages/apps/Launcher3/
+9214f43c8 Gestures: restart on double tap pref
 325d8fc27 Launcher3: show Date instead of Now Playing
 9aa6eb45c Launcher3: Let's set spacing
 6bf4ef13d Launcher3: Add READ_FRAME_BUFFER permission
@@ -28,6 +75,15 @@ fb51eaa89d Settings: Improve disabling icon space reserved for preferences
 c8160fe OmniJaws: Add privapp permissions xml
 b2b1821 OmniJaws: Update owm weather icons' sunset/sunrise dependency
 d26e896 OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly
+
+   * vendor/bliss/
+9cd0e448 bliss: add email and exactcalculator for non-gapps builds
+83ff14fc vendor: cleanup berry style packages
+
+   * vendor/themes/
+baed70f themes: enable media picker for ringtones
+bd0b910 themes: set eleven as default music player
+98fc785 themes: set bliss dialer as default instead of google
 
 ====================
      07-31-2020
@@ -154,6 +210,8 @@ f358b4ea6 Stability NullPointer issue
 16a87172e Launcher3: use common style for recents task menu divider
 
    * vendor/themes/
+cbab649 themes: add bool to use accent color for qs themes [2/2]
+fe65177 themes: QsTile: cleanup unnecessary color n config files
 c08088f Don't allow gms access to DeviceConfig table
 
 ====================
@@ -177,6 +235,7 @@ b7f6c3b sepolicy: Unlabel vendor_wifi_version
 babd9418c2 external/skia: Take Fast Jpeg Decoding Path
 
    * frameworks/base/
+b5caab6da4c NetworkTraffic: Do not call updateViews() for screen off
 cbf90437726 Optimize AbsListView to reduce click operation latency
 4c5cef58c36 avoid duplicate doFrame calls.
 e0ad1f9d663 make ui touch optimization work normally.
@@ -212,6 +271,7 @@ bf072df LineageParts: Redesign PreferenceCategory
 50d93e8 Revert "OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly"
 
    * vendor/bliss/
+40e6bebd vendor: move omnijaws permissions to its repo
 b411997a vendor: Define isStatic argument on setupwizard overlay
 aee9175f vendor: Refactor setup wizard overlays
 77a63330 vendor: Enable and refactor SetupWizardOverlay
@@ -596,20 +656,4 @@ ffd594f96 Explicit SBC Dual Channel (SBC HD) support
 
    * vendor/themes/
 fd03065 Allow to invert the icon color for active quicksettings icons [2/2].
-
-====================
-     07-18-2020
-====================
-
-
-   * external/chromium-webview/
-f05c347 Upgrade Chromium Webview to 84.0.4147.89
-
-   * packages/apps/Blissify/
-177fc2a QsLabel: random accent tint
-9647976 disco dingo the qs [2/2]
-f4041f5 Random Qs Tint: tint active QS Tiles with random colors [2/2]
-
-   * packages/apps/Jelly/
-00e8737 Jelly: Fix find in page functionality
 
