@@ -1,4 +1,9 @@
 ====================
+     08-04-2020
+====================
+
+
+====================
      08-03-2020
 ====================
 
@@ -537,54 +542,4 @@ f7aec2e6 Export missing audio volume properties
 1de720d overlay: update Ethereal theme colors
 2be000b Overlay: Add Ethereal primary
 5016b99 GestureNav: Adjust size of the edge panel arrow
-
-====================
-     07-20-2020
-====================
-
-
-   * build/soong/
-5c0e5acd Re-allow relative paths for modules
-
-   * frameworks/base/
-e9bc7eab2cd Pulse: add automatic albumart color mode [2/3]
-a8c5e99cffb Allow to get theme accent color from context
-8179a48a103 Pulse navbar audio gfx visualizer for Android 10 [1/4]
-9d527fb5d0e QSHeader: Live data usage info
-9c0b08d0fda Partially Revert "QSHeaderDataUsage: hide usage if device is not connected to internet"
-89e7c78ea92 base: notch-city: Dejank immersive mode with QS panel
-ded7ff514b4 ScreenDecorations: Fix derp in calling updateCutoutMode
-9b23bc9d45e base: notch-city: Reduce QS header offset on immersive & hide modes [1/2]
-f210a0cc551 base: notch-city: Make it smarter with orientation [1/2]
-f840a746bd9 ScreenDecorations: Account notch-city for custom cutout
-dec781d7e8f ScreenDecorations: Simplify rounded size selection
-42e5004bef9 base: notch-city: Add 3 mode display cutout handler [1/3]
-947dfe75865 Add tunable to hide display cutout [1/2]
-eccf13c60c6 Revert "base: notch-city: Add 3 mode display cutout handler"
-917c2a35ab4 Add requiredSystemPropertyValue support in idmap2
-379320a34f2 Notification: Fix no icon shown for data limit notification
-0c4d4772326 core: ChooserActivity: fix android crash from null object
-b4e963c6857 Release SQLite page cache as much as it can
-9d581d5c800 SystemUI: Use regular global_actions_column layout for layout-sw600dp-land
-24bfe17a87f fw/b: Add support for per app network isolation
-
-   * manifest/
-1fbb9eb manifest: track pulse
-
-   * packages/apps/Blissify/
-43f1961 Accent presets: set summary and value properly
-9c2b287 Blissify: Pulse: Add automatic album art color mode [3/3]
-a4a96b4 Blissify: Pulse navbar audio gfx visualizer for Android 10 [3/4]
-43e2c4b notch-city: update 3 mode display cutout handler
-
-   * vendor/bliss/
-b4a0acd8 Merge changes from topic "notch-city" into q10
-db695151 vendor: notch-city: Reduce QS header offset on immersive & hide mode [2a/2]
-6009c82c vendor: notch-city: update 3 mode display cutout handler
-
-   * vendor/support/
-c8ffa7a Customseekbar: add missing PreferenceDataStore calls
-
-   * vendor/themes/
-867176e update Switch styles [2/4]
 
