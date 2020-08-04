@@ -1,7 +1,39 @@
 ====================
+     08-05-2020
+====================
+
+
+   * build/make/
+f2a8abb36 Merge tag 'android-10.0.0_r41' into q
+
+   * frameworks/av/
+e18a16e81 Merge tag 'android-10.0.0_r41' into q
+
+   * frameworks/base/
+99cf406a0db Merge tag 'android-10.0.0_r41' into q
+
+   * manifest/
+6bf3d21 Merge tag 'android-10.0.0_r41' into q
+
+   * packages/apps/Settings/
+72d3f360c9 Merge tag 'android-10.0.0_r41' into q
+
+   * packages/services/Telephony/
+e7f8ad1a2 Merge tag 'android-10.0.0_r41' into q
+
+====================
      08-04-2020
 ====================
 
+
+   * device/lineage/sepolicy/
+a3d4882 sepolicy: Add back rgb rules
+
+   * frameworks/base/
+a27460c544c Automatic translation import
+
+   * manifest/
+458a841 Manifest for Android 10.0.0 Release 41 (QQ3A.200805.001)
 
 ====================
      08-03-2020
@@ -488,58 +520,4 @@ f2a2af6 Blissify: Allow hiding Black Gradient behind QSPanel
 
    * packages/apps/Settings/
 6e43dbfb41 Settings: Make lockscreen timeout configurable [2/2]
-
-====================
-     07-21-2020
-====================
-
-
-   * device/lineage/sepolicy/
-849906f common: Remove no longer needed uncrypt rule
-
-   * device/qcom/sepolicy-legacy-um/
-2f55f2f sepolicy: cnd: Fix wifi_prop neverallow for compatible props
-ec85061 sepolicy: cnd: Allow access to wifi_prop
-
-   * external/asus/stitchimage/
-01774ce Automatic translation import
-088d359 Automatic translation import
-03df377 Automatic translation import
-
-   * external/pulse/
-7401727 Pulse: Do not show when navbar is hidden
-
-   * frameworks/base/
-baba97eade8 Merge changes from topic "fullscreen-apps" into q
-60eaec58bc8 fixup! QSTileImpl: code improvements to new tint style
-5aaf633f84d fixup! QSPanel: fix brightness slider logic
-137bc49a0f9 SystemUI: Don't re add brightness slider if its already present
-bd1c95736b1 BlissUtils: Introduce method to detect if gesture navbar is used
-0857a94850b base: notch-city: Do not apply immersive rules to 180 rotation
-ee09baed797 Revert "Extended audio panel - fixes for unlinked notifications"
-eb6556867f3 SystemUI: VolumePanel: Version 1.1
-b17678c9950 Cutout force full screen: Remove fullscreen checks
-ae76ee794d1 base: [1/2] Implement cutout force full screen
-
-   * lineage-sdk/
-003172fd LineageSettingsService: prevent setting net.hostname to null
-
-   * packages/apps/Settings/
-09a40d8307 Cutout force fullscreen: Disable fast scroller
-592775ac6b Settings: [2/2] Implement cutout force full screen
-8cddaa9ae3 fixup! BasebandVersionPreferenceController: Trim baseband if needed
-cc13330b28 Settings: Fix fallback summary for power_button_instantly_locks preference
-
-   * system/core/
-1b4133d8d libcutils: change trace file error to verbose
-72048d6fa Boost init priority before main loop
-
-   * system/sepolicy/
-72a90e4f Uncrypt: Allow uncrypt to write on ota_package_file.
-f7aec2e6 Export missing audio volume properties
-
-   * vendor/themes/
-1de720d overlay: update Ethereal theme colors
-2be000b Overlay: Add Ethereal primary
-5016b99 GestureNav: Adjust size of the edge panel arrow
 
