@@ -1,4 +1,20 @@
 ====================
+     08-06-2020
+====================
+
+
+   * frameworks/base/
+c4e5efdc41f Pixel navbar toggle [1/2]
+241b5f30ec9 QuickStep in Q needs setShelfHeight, remove the permissions check
+
+   * packages/apps/Blissify/
+b72723f Blissify: update volte icon strings
+57e01c5 Pixel Navbar animation toggle [2/2]
+
+   * vendor/themes/
+21b60e4 Revert "themes: enable media picker for ringtones"
+
+====================
      08-05-2020
 ====================
 
@@ -15,11 +31,21 @@ e18a16e81 Merge tag 'android-10.0.0_r41' into q
    * manifest/
 6bf3d21 Merge tag 'android-10.0.0_r41' into q
 
+   * packages/apps/Blissify/
+0b81c69 GVM chooser adjustment [2/2]
+
    * packages/apps/Settings/
 72d3f360c9 Merge tag 'android-10.0.0_r41' into q
 
    * packages/services/Telephony/
 e7f8ad1a2 Merge tag 'android-10.0.0_r41' into q
+
+   * vendor/themes/
+977aa19 Add GVM-URM-S overlay
+20f254c Edit some overlay gvm
+1f42a42 vendor: GVM chooser adjustment [1/2]
+6dfb7e3 squash: Fix color
+bafdd3b vendor: Merge GVM (URMM, URMVL, PGIOS) [2/2]
 
 ====================
      08-04-2020
@@ -499,25 +525,4 @@ dddd6a5327 Automatic translation import
    * vendor/bliss/
 db94f3d8 Merge "bliss: Bump to Bliss v12.10 Release" into q10
 faad6ce6 bliss: Bump to Bliss v12.10 Release
-
-====================
-     07-22-2020
-====================
-
-
-   * frameworks/base/
-0f96740f328 fixup! fixup! lockscreen: Add support for showing unlock screen directly
-d2104bffe6c Make USB-Debugging notification less important
-7f3f0447502 StatusBar: Add STATUS_BAR_CUSTOM_HEADER to TunerService
-a082bf704db base: Make transparent QS background user configurable
-34e5a2e91d4 SystemUI: Allow hiding Black Gradient behind QSPanel
-
-   * packages/apps/Blissify/
-f2a2af6 Blissify: Allow hiding Black Gradient behind QSPanel
-7e2cadb Add tunables for navbar layout customization [2/2]
-6fcee3a Blissify: qs: reorder preferences
-2ec53df Blissify: unify statusbar options in one fragment
-
-   * packages/apps/Settings/
-6e43dbfb41 Settings: Make lockscreen timeout configurable [2/2]
 
