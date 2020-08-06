@@ -1,4 +1,23 @@
 ====================
+     08-07-2020
+====================
+
+
+   * frameworks/base/
+f2bb4f85e15 SystemUI: add ability to change lockscreen clock colors/type [1/2]
+b92d535678c Welcome Back Lockscreen Item Colors [1/2]
+e7748d09000 Add Toggle for LockWeather Image [1/2]
+
+   * packages/apps/Blissify/
+8785d5e Blissify: disable weather colors when aosp weather is selected
+863ec70 Blissify: Add lockscreen clock color type
+0927cd7 Blissify: Welcome Back Lockscreen Item Colors [2/2]
+040da21 Blissify: hide pixel navigation animation on gestural mode
+
+   * packages/apps/Settings/
+a4d566b140 BatteryHealth: overlay showing charging cycles
+
+====================
      08-06-2020
 ====================
 
@@ -478,51 +497,4 @@ e2f4166 Themes: Add PitchBlack Theme [2/3]
 
    * vendor/themes/
 b7c5ff8 themes: increase padding between signal and battery area
-
-====================
-     07-23-2020
-====================
-
-
-   * frameworks/base/
-9a6131cba02 Fix color mismatch of pointers
-a8b359a3a6e Automatic translation import
-99808a2dca7 SystemUI: add tuner switch to hide keyguard assistant handles
-3cac0514b34 Fix custom lockscreen shortcut icons being white
-432eb1ea73a Lockscreen bottom shortcuts fixes
-1e21541fe63 base: tuner: add a hide config to left and right shortcut
-a084a140812 Revert "SystemUI: Bring back lockscreen tuner (1/2)"
-ea110b0ccda base: wake from aod on unplug if we show on charging only
-ecf81fe91d1 FODCircleView: let's smoothly fade-out the view, before going to View.GONE
-8cd06a59933 FODCircleView: handle more visibility cases
-68c9c9ed66c SystemUI: use path specification for rounded corners
-408d85a1c23 Screenstabilization: Catch DeadObjectException
-69c015b4924 NetworkTraffic: Adjust spacing
-aa9eba65f03 FODCircleView: Reset view offset to (0,0) on BurnInTimer.cancel()
-75629371ba8 Refactor SoundEffectsHelper for asynchronous loading
-839f32bd7ce AudioService: factor out sound effects handling
-b43a9b9f8a9 Lockscreen timeout: Make timeout configurable
-dba4629f0f5 StatubarIconList: Fix Network traffic visibility on overlayChange()
-76a8b014f83 SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod
-31a1b17df01 Revert "SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod"
-
-   * frameworks/opt/telephony/
-a3012ed84 Telephony: Add option for using regular poll state for airplane mode
-
-   * packages/apps/Blissify/
-b70e9a0 Automatic translation import
-133b8d0 Blissify: reset navbar layout to default when gestural mode is enabled
-e15558f Blissify: hide stock navbar settings if gestural mode is enabled
-
-   * packages/apps/Contacts/
-e5df8337a Automatic translation import
-
-   * packages/apps/Settings/
-48bc76ca7f Settings: Add About Phone Bliss lottie animation
-1eed09a2c6 Revert "Animated Bliss Logo in About phone"
-dddd6a5327 Automatic translation import
-
-   * vendor/bliss/
-db94f3d8 Merge "bliss: Bump to Bliss v12.10 Release" into q10
-faad6ce6 bliss: Bump to Bliss v12.10 Release
 
