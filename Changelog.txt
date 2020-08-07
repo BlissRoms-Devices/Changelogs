@@ -1,4 +1,13 @@
 ====================
+     08-08-2020
+====================
+
+
+   * frameworks/base/
+b0897f9e8e2 SystemUI: set tint off as default for new tint style [1/2]
+f2806c33fe7 SystemUI: update qs detail background color
+
+====================
      08-07-2020
 ====================
 
@@ -9,6 +18,7 @@ b92d535678c Welcome Back Lockscreen Item Colors [1/2]
 e7748d09000 Add Toggle for LockWeather Image [1/2]
 
    * packages/apps/Blissify/
+eca3d1c Blissify: set tint off as default for new tint style [2/2]
 8785d5e Blissify: disable weather colors when aosp weather is selected
 863ec70 Blissify: Add lockscreen clock color type
 0927cd7 Blissify: Welcome Back Lockscreen Item Colors [2/2]
@@ -486,15 +496,4 @@ d8ddae2 Increase downsampling
 e3745b0 Add DarkGrey System Theme [1/3]
 e2f4166 Themes: Add PitchBlack Theme [2/3]
 6e169d6 Themes: Add moar themes [2/3]
-
-====================
-     07-24-2020
-====================
-
-
-   * packages/apps/CarrierConfig/
-0f4ac84 Fix voicemail for Bouygues Telecom France
-
-   * vendor/themes/
-b7c5ff8 themes: increase padding between signal and battery area
 
