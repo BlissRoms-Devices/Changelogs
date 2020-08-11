@@ -1,4 +1,9 @@
 ====================
+     08-12-2020
+====================
+
+
+====================
      08-11-2020
 ====================
 
@@ -28,6 +33,8 @@ cadcf54776 Fix padding for panel layout its used for example by volume dialog no
 41cc281729 Settings: Avoid enforcing weird backgrounds
 73c1c34334 Settings: Change kernel preference behavior
 a4561c8e60 Settings: Show full proc/version information
+31914fe775 fixup! Settings: categorise battery settings
+00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
 
    * vendor/bliss/
 93f2b05f Revert "vendor/bliss: Kill all media files"
@@ -43,10 +50,6 @@ a4561c8e60 Settings: Show full proc/version information
    * frameworks/base/
 b0897f9e8e2 SystemUI: set tint off as default for new tint style [1/2]
 f2806c33fe7 SystemUI: update qs detail background color
-
-   * packages/apps/Settings/
-31914fe775 fixup! Settings: categorise battery settings
-00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
 
    * vendor/support/
 89e8aac support: ColorPicker: Hide buttons when the preference is disabled
@@ -449,13 +452,4 @@ e1187643 Revert "vendor: Remove SettingsIntelligence"
 
    * frameworks/native/
 7b0945d23 touch response optimizations
-
-====================
-     07-28-2020
-====================
-
-
-   * vendor/themes/
-3e51cbe themes: remove duplicate dimen overlay
-0a01f74 themes: move in overlays from vendor/bliss
 
