@@ -1,4 +1,9 @@
 ====================
+     08-11-2020
+====================
+
+
+====================
      08-10-2020
 ====================
 
@@ -23,8 +28,6 @@ cadcf54776 Fix padding for panel layout its used for example by volume dialog no
 41cc281729 Settings: Avoid enforcing weird backgrounds
 73c1c34334 Settings: Change kernel preference behavior
 a4561c8e60 Settings: Show full proc/version information
-31914fe775 fixup! Settings: categorise battery settings
-00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
 
    * vendor/bliss/
 93f2b05f Revert "vendor/bliss: Kill all media files"
@@ -40,6 +43,10 @@ a4561c8e60 Settings: Show full proc/version information
    * frameworks/base/
 b0897f9e8e2 SystemUI: set tint off as default for new tint style [1/2]
 f2806c33fe7 SystemUI: update qs detail background color
+
+   * packages/apps/Settings/
+31914fe775 fixup! Settings: categorise battery settings
+00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
 
    * vendor/support/
 89e8aac support: ColorPicker: Hide buttons when the preference is disabled
@@ -451,60 +458,4 @@ e1187643 Revert "vendor: Remove SettingsIntelligence"
    * vendor/themes/
 3e51cbe themes: remove duplicate dimen overlay
 0a01f74 themes: move in overlays from vendor/bliss
-
-====================
-     07-27-2020
-====================
-
-
-   * frameworks/base/
-ab97b6eb6a5 base: Add Linotte font [1/2]
-151b52fd9e9 Add MaterialOcean System Theme [2/3]
-df1b35fc1cf base: Add partial screenshot device key action [1/3]
-6115ede80cd themes: bring back Clear theme [2/3]
-ac37b38e481 Add DarkGrey System Theme [2/3]
-aac00f53d19 Themes: Add PitchBlack Theme [1/3]
-fa27405c7ee Themes: Add moar themes [1/3]
-2d30dcb97ae Themes: Add Default Stock theme
-c3d0c609adc base: System Themes [1/2]
-42c883de7a4 base: Show or Hide manual rotation button [1/2]
-8cde6fb828a base: clipboard toast toggle [1/2]
-10436a3d888 base: iOS-like toast notification for clipboard access
-b8682fcec20 Revert "ScreenDecorations: Account notch-city for custom cutout"
-
-   * manifest/
-f9020c9 manifest: track system/apex and vendor google_customisation
-
-   * packages/apps/Blissify/
-774559b Themes: Add moar themes [3/3]
-ba1e99b Blissify: hide force show navbar preference in search
-cb01e29 Blissify: Show or Hide manual rotation button [2/2]
-609b9fa Add device key action for partial screenshot [2/3]
-
-   * system/apex/
-68700fd Disable the build of com.android.apex.cts.shim.v1_prebuilt
-
-   * vendor/bliss/
-cf268ce0 vendor: move overlays to vendor/themes [1/2]
-
-   * vendor/themes/
-ee67759 themes: Round system dialogs, buttons and progress bars
-6f9474f themes: Use round icons
-a6dda3c themes: Show swipe up gesture option
-9ffa4e0 themes: Enable smart battery
-57c41cb themes: Disable all caps text on buttons
-27a9fdf themes: Import PixelConfigOverlay* GoogleConfigOverlay GoogleWebViewOverlay for full GMS support
-5289275 themes: set Google Sans as default font.
-7870d6b themes: Don't enable aware lock/skip gestures
-5dee368 themes: Distinguish HSPA data icon from UMTS data icon, vibrate on icon animation
-f20857a Correctly remove carrier related overlays
-44caac1 themes: Import Telephony/Telecomm/SettingsProvider/SystemUI overlays
-6b0cc0e themes: Add missing Settings overlay for Wallpapers and styles
-76d081a themes: Import settings overlays from SettingsGoogle
-a6c32a2 themes: Import settings bools
-cd11463 themes: Import settings overlay
-2644af9 themes: Add Linotte font [2/2]
-35ea5f0 Add MaterialOcean System Theme [1/3]
-fce3bf1 themes: disable bliss clear primary overlay
-7f5a652 themes: Add default stock theme
 
