@@ -1,4 +1,16 @@
 ====================
+     08-13-2020
+====================
+
+
+   * packages/apps/Blissify/
+929ee9c Blissify: Add OnePlus dashboard icons [2/2]
+
+   * packages/apps/Launcher3/
+8f4103bdf Quickspace: disable random messages by default
+a51a3dfd2 Add .gitreview
+
+====================
      08-12-2020
 ====================
 
@@ -21,6 +33,12 @@
 ====================
 
 
+   * frameworks/base/
+36ad41f07fd SystemUI: Fix Ticker layout
+8aec5d03bdf SystemUI: QS drag handle improvement
+f2fed86a623 fwb: allow changing navbar handle thickness [1/2]
+6b0189452b4 ClipboardService: keep track of which app pasted from which
+
    * hardware/qcom-caf/sm8250/display/
 4ab176b0e Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
 
@@ -28,6 +46,8 @@
 3bdb683 Blissify: Adapt some preferences for ColorPicker
 
    * packages/apps/Settings/
+82fb1eeea5 Settings: allow changing navbar handle thickness [2/2]
+2faa009e45 Settings: Add OnePlus dashboard icons [1/2]
 b097609241 search: Impliment external searching
 cadcf54776 Fix padding for panel layout its used for example by volume dialog now title is centered
 41cc281729 Settings: Avoid enforcing weird backgrounds
@@ -438,18 +458,4 @@ aee9175f vendor: Refactor setup wizard overlays
 77a63330 vendor: Enable and refactor SetupWizardOverlay
 e1187643 Revert "vendor: Remove SettingsIntelligence"
 2b001917 vendor: config: Include vendor/google/customization
-
-====================
-     07-29-2020
-====================
-
-
-   * device/qcom/sepolicy/
-743bfbe0 sepolicy: Include wifi-ext sepol
-
-   * device/qcom/sepolicy-legacy-um/
-8bebb7f sepolicy: Include wifi-ext sepol
-
-   * frameworks/native/
-7b0945d23 touch response optimizations
 
