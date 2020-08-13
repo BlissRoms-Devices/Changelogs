@@ -1,4 +1,9 @@
 ====================
+     08-14-2020
+====================
+
+
+====================
      08-13-2020
 ====================
 
@@ -394,68 +399,4 @@ f358b4ea6 Stability NullPointer issue
 cbab649 themes: add bool to use accent color for qs themes [2/2]
 fe65177 themes: QsTile: cleanup unnecessary color n config files
 c08088f Don't allow gms access to DeviceConfig table
-
-====================
-     07-30-2020
-====================
-
-   * art/
-6380b2b423 ARM: Optimize Div/Rem by positive const for non-negative dividends
-fc53c73ac8 ARM: Optimize Div/Rem by 2^n for non-negative dividends
-
-   * device/lineage/sepolicy/
-d7f013a sepolicy: Add wifi ext sepolicy rules
-
-   * device/qcom/sepolicy-legacy-um/
-b7f6c3b sepolicy: Unlabel vendor_wifi_version
-
-   * external/libjpeg-turbo/
-69bedfe libjpeg-turbo: add config to disable merged upsample
-
-   * external/skia/
-babd9418c2 external/skia: Take Fast Jpeg Decoding Path
-
-   * frameworks/base/
-b5caab6da4c NetworkTraffic: Do not call updateViews() for screen off
-cbf90437726 Optimize AbsListView to reduce click operation latency
-4c5cef58c36 avoid duplicate doFrame calls.
-e0ad1f9d663 make ui touch optimization work normally.
-1904bfe759a add VSYNC scheduled flag and avoid two doFrame calls in one period
-99fec9cf8be core: touch response optimizations
-
-   * lineage-sdk/
-9a505876 lineage-sdk: Add device key action for partial screenshot [3/3]
-
-   * packages/apps/Blissify/
-8d2619f Add MaterialOcean System Theme [3/3]
-a22ee38 themes: bring back the Xtended Clear theme [3/3]
-acf82b2 Add DarkGrey System Theme [3/3]
-00c2d46 Themes: Add PitchBlack Theme [3/3]
-34994d7 Blissify: System Themes [2/2]
-
-   * packages/apps/Launcher3/
-366c06da0 Fix search bar incorrectly positioned after swiping up to home
-40c1ff8b9 Launcher3: Let's make the search bar on all apps round
-
-   * packages/apps/LineageParts/
-65fd18e LineageParts: disable icon space reserved
-bf072df LineageParts: Redesign PreferenceCategory
-
-   * packages/apps/Settings/
-9eaa393806 BatteryHealth: Make it optional
-5d64dadebb BatteryHealth: show Charge Cycles Completed
-5ace30ff9b BatteryHealth: make resources overlayable
-7dcdc767e2 Settings: Add BatteryHealth section
-8939d3c1f7 Revert "Settings: Tweak some search dimens"
-
-   * packages/services/OmniJaws/
-50d93e8 Revert "OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly"
-
-   * vendor/bliss/
-40e6bebd vendor: move omnijaws permissions to its repo
-b411997a vendor: Define isStatic argument on setupwizard overlay
-aee9175f vendor: Refactor setup wizard overlays
-77a63330 vendor: Enable and refactor SetupWizardOverlay
-e1187643 Revert "vendor: Remove SettingsIntelligence"
-2b001917 vendor: config: Include vendor/google/customization
 
