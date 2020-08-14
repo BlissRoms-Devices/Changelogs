@@ -1,4 +1,9 @@
 ====================
+     08-15-2020
+====================
+
+
+====================
      08-14-2020
 ====================
 
@@ -59,7 +64,6 @@ cadcf54776 Fix padding for panel layout its used for example by volume dialog no
 73c1c34334 Settings: Change kernel preference behavior
 a4561c8e60 Settings: Show full proc/version information
 31914fe775 fixup! Settings: categorise battery settings
-00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
 
    * vendor/bliss/
 93f2b05f Revert "vendor/bliss: Kill all media files"
@@ -75,6 +79,9 @@ a4561c8e60 Settings: Show full proc/version information
    * frameworks/base/
 b0897f9e8e2 SystemUI: set tint off as default for new tint style [1/2]
 f2806c33fe7 SystemUI: update qs detail background color
+
+   * packages/apps/Settings/
+00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
 
    * vendor/support/
 89e8aac support: ColorPicker: Hide buttons when the preference is disabled
@@ -270,133 +277,4 @@ d26e896 OmniJaws: Use openweather api for sunset/sunrise and change weather icon
 baed70f themes: enable media picker for ringtones
 bd0b910 themes: set eleven as default music player
 98fc785 themes: set bliss dialer as default instead of google
-
-====================
-     07-31-2020
-====================
-
-
-   * hardware/lineage/livedisplay/
-ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
-b8ca32c livedisplay: sysfs: Modularize all components
-22462db livedisplay: sysfs: Refine interface registration
-8a01e72 livedisplay: sysfs: Miscellaneous clean-ups
-d0580f3 livedisplay: sysfs: Use POSIX api to check file access
-b1a97e0 livedisplay: sysfs: Move string literals to anonymous namespace
-8888a4b livedisplay: sysfs: Follow naming rules of Google C++ Style Guide
-44e1a1f livedisplay: sdm: Modularize all components
-5e27e56 livedisplay: sdm: Fix a mismatched data type
-4afd662 livedisplay: sdm: Miscellaneous clean-ups
-5c154dc livedisplay: sdm: Improve SendDppsCommand
-bb5ff4a livedisplay: sdm: Move constants and helpers to anonymous namespace
-b8a246a livedisplay: sdm: Move SDM feature version check to utils
-39b8735 livedisplay: sdm: Convert Utils class to namespace
-07e4ea4 livedisplay: sdm: Use default member initializers
-143150e livedisplay: sdm: Follow naming rules of Google C++ Style Guide
-9d5a9c9 livedisplay: sdm: Implement a sane callback to update default PA
-a15a1f3 livedisplay: sdm: Restart when any QDCM backend not ready
-7468c41 livedisplay: sdm: Use RAII semantics where possible
-
-   * packages/apps/Launcher3/
-511bcc724 Reimplement save scroll position feature
-e77cfe11f Add option to save scroll position in drawer
-d302423d5 Launcher3: check need for restart on resume
-7966b4e8a update wallpaper picker package
-d049464e0 Specify the component name to start the picker
-8b588f04b Specify the wallpaper picker package
-4585f235e Properly expose GridOptionsProvider
-723b5c3f4 Revert "Add developer options for grid change for Styles"
-7f500a19b Launcher3: Add more dates
-62be9b3ec add option to change date format for QuickSpace
-b1bae541e Revert "config: enable LAUNCHER3_PROMISE_APPS_IN_ALL_APPS"
-4f077370a Fixup uninstall shortcut factory
-9e53c3cf7 Launcher3: switch to PackageManagerHelper for Uninstall
-fe10ba153 Launcher3: Fix up widget theming
-07445ed2d Launcher3: appinfo_bottom_sheet: Tint Headline text with accent color.
-6755d73f9 Launcher3: Fix font family for App Info sheet
-bbc4d7a83 Launcher3: Do not attempt to show promise icon when info is null
-6ce427448 Launcher3: Fix IntentFilter leak in QuickEventsController
-ac9b0e12c Launcher3: Add MANAGE_ACTIVITY_STACKS permission
-f7b118bd5 Utilities: Use MODEL_EXECUTOR for needs restart code
-5064759ad Launcher3: Follow system color for dark style
-ed08f55da Launcher3: Add missing permission PACKAGE_USAGE_STATS
-c79e90505 Launcher3: Add permission to allow updating database
-b1dd720d9 Launcher3: disable promisse apps
-208c87c3a Launcher3: Use system fonts
-f5f05fd72 Launcher3: Follow system color for dark style
-ed234ab06 Add double tap to sleep gesture
-502e9a918 QSB: request round search bar
-3bb97e0f0 proguard: Also keep FixedScaleDrawable
-751bf1768 Launcher3: use bliss icon for welcome msg
-05be9e60f Rebrand to Blissify Launcher
-f55a130fc Launcher3: Add extra privapp permissions xml
-208b16594 Quickspace: Use system font
-1f9d8d96a Quickspace: Let's add a marquee
-7a5731744 Quickspace: Add contextual messages/greetings event
-26b336626 Quickspace: Enable Now Playing by default
-ad379705c Quickspace: Toggle the Now Playing status
-ee93426e1 Launcher3: The return of the Now Playing
-575ba34e8 Launcher3: Add alternate Quickspace layout
-e0ad59a42 Quickspace: refresh the views more frequently
-02cddc216 Launcher3: Let's bring back device introduction action
-6af219afe Launcher: Call mStateManager directly
-0743f8c9b SystemShortcut: Add uninstall option
-e800655d6 Launcher3: Allow to set a default icon pack
-6f2678746 quickstep: Always show all apps divider in prediciton view
-161a77b42 Add Quick events support in Quickspace
-0afcc2a24 Launcher3: Introduce Quickspace [squashed]
-10daa4697 Launcher3: Improve work banner layout at the bottom of the app drawer
-b472ec1c2 Launcher3: Change padding in work tab footer
-1a1c19c2c Launcher3: Do not check fast scroll movement to fix unresponsiveness
-679078edb AospLauncher: Clear all icon overrides when changing global icon pack
-5a4133444 AospLauncher: Bypass adaptive icon wrapping with icon pack icons
-4e99ed03c IconLoader: Add config hint to bypass adaptive icon wrapping
-15de0e1da Launcher3: Add Icon Pack Support from Shade Launcher
-3b992767b AospLauncher: Add AppInfo Bottom Sheet from Shade Launcher
-4c913fe78 Launcher3: Consider extra header content as visible elements
-d9cc75e4f Increase all apps top padding to avoid visual glitch in recents
-e0018cb9d Launcher3: enable grid control provider
-1c38556ff Launcher3: add a 6x6 grid device profile while we are here
-6253af166 Launcher3: correctly apply grid changes from grid control provider
-6118615cc Launcher3: remove extra space for hotseat
-512611522 Launcher3: allow to swipe down on recents view to clear all
-d7e2ad5a3 Launcher3: Use system fonts
-434070314 Launcher3: delet the shade
-0b05544f5 Launcher3: Fix back button on settings
-6d4a5c7ae Launcher3: Make shadespace toggleable
-2383d18a6 Replace Smartspace widget host view with Shade Space
-98acefd60 Launcher3: Extend notification listener with proxy
-bb9d91f17 Launcher3: Disable top/hotseat gradient
-cd6c23235 Use Google's strings for Google now panel
-64e9848d0 Launcher3: new icon for kill app option
-a819dbc3d New Recents: add kill action to app shortcuts popup
-bcbcd862e Launcher3: Rely on the internal theming isMainColorDark for dark gfeed
-ab18ac357 Decompiled feed lib with dark theme support
-d181986d8 Launcher3: Add updated Google Feed lib from Pixel 3 launcher
-eebd5af2c Launcher3: Allow swipe for google now to be optional
-b1719c45d Launcher3: Animate workspace when animating the Google now page
-d08a710ac Launcher3: Make sure service is connected before trying to unbind
-f2f885a21 Launcher3: Support google now tab
-ac63742c8 Launcher3: Import reversed google now lib
-38e027e51 Launcher3: Add permission to allow updating database
-a99e28c1d Elevate to 'core/platform' app'
-b0dd3cc58 Skip unneded package manager calls when checking QSB availability
-52d595ae3 Set a toggle to show Search bar on first screen
-8a5f71c9e Launcher3: Add restart action for toggling settings
-8022b27af Rearrange settings
-5b3b88fb9 Launcher3: Fix launcher preview rendering
-50bae392f Fix divide by zero
-112fa4247 Can't search out local app by Chinese
-af9ceeedb Fix pointer index out of range
-70b748410 Allow resizing any widget
-4c4f5d5c3 Add back button to Settings
-2f5ca9d4e Enable LAUNCHER3_PROMISE_APPS_IN_ALL_APPS
-f358b4ea6 Stability NullPointer issue
-947b60db3 No Calendarwidget 4x4 widget displayed
-16a87172e Launcher3: use common style for recents task menu divider
-
-   * vendor/themes/
-cbab649 themes: add bool to use accent color for qs themes [2/2]
-fe65177 themes: QsTile: cleanup unnecessary color n config files
-c08088f Don't allow gms access to DeviceConfig table
 
