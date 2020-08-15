@@ -1,7 +1,18 @@
 ====================
+     08-16-2020
+====================
+
+
+====================
      08-15-2020
 ====================
 
+
+   * hardware/qcom-caf/sm8150/display/
+c78f45e5 sdm: mark FOD pressed layer by setting a bit on ZPOS
+
+   * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
+1fa0d049 Avoid NFC continuous crash
 
 ====================
      08-14-2020
@@ -233,48 +244,4 @@ dccb88764d Settings: set maintainer string as non-translatable
 
    * vendor/themes/
 4b89458 themes: Show all main tiles by default
-
-====================
-     08-01-2020
-====================
-
-
-   * manifest/
-f404e68 manifest: track backgrounds and exactcalulator from los
-
-   * packages/apps/Launcher3/
-9214f43c8 Gestures: restart on double tap pref
-325d8fc27 Launcher3: show Date instead of Now Playing
-9aa6eb45c Launcher3: Let's set spacing
-6bf4ef13d Launcher3: Add READ_FRAME_BUFFER permission
-44445dc5d Launcher3: Add needed priv app permissions
-2ad11f6ba Launcher3: Allow At a glance to be full uppercase
-f7e0a8e90 Launcher3: Let's change at a glance fonts
-a71fd912e Launcher3: bring back more double-tap actions
-52aa10220 Gestures: Add more actions to double-tap
-7823526cd Add Google search double tap option
-f86bf0b71 Launcher3: add gesture options
-
-   * packages/apps/LineageParts/
-c0f36dc LineageParts: Privacy: Add icon for Trust Category
-
-   * packages/apps/Settings/
-8a87653331 Settings: add icons for privacy settings
-c3f3c175c3 Settings: Add new face settings video
-fb51eaa89d Settings: Improve disabling icon space reserved for preferences
-589ca84e29 Settings: update some lottie animations
-
-   * packages/services/OmniJaws/
-c8160fe OmniJaws: Add privapp permissions xml
-b2b1821 OmniJaws: Update owm weather icons' sunset/sunrise dependency
-d26e896 OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly
-
-   * vendor/bliss/
-9cd0e448 bliss: add email and exactcalculator for non-gapps builds
-83ff14fc vendor: cleanup berry style packages
-
-   * vendor/themes/
-baed70f themes: enable media picker for ringtones
-bd0b910 themes: set eleven as default music player
-98fc785 themes: set bliss dialer as default instead of google
 
