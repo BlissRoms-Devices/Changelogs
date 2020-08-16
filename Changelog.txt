@@ -1,4 +1,9 @@
 ====================
+     08-17-2020
+====================
+
+
+====================
      08-16-2020
 ====================
 
@@ -201,47 +206,4 @@ bba5f54b95 Settings: categorise battery settings
 
    * vendor/themes/
 6aa2ee2 partially revert "update Switch styles [2/4]"
-
-====================
-     08-02-2020
-====================
-
-
-   * frameworks/base/
-eaf0625cb77 globalactions: Disable emergency menu by default
-b7509520486 Qstile Styles : fix some inconsistencies
-044e323f231 Add isFaceAuthEnabledForUser checks in KeyguardLiftController
-6b2d4ffb966 Add synchronization for invokeForAllObservers call
-b599ee2c2cd Return null on failed insert due to permissions
-755d8c80599 Fixes crash/race condition when destroyActivity
-212c8b147c9 base: Remove keyguard delay completely
-c7856538233 API changes due to importing RI BigInteger
-8de97f5638e Send top-app's render thread tid to perf HAL
-a969b08d091 Remove unused / unimplemented CorePlatformAPI methods.
-85412db8194 Remove references to Dalvik logger.
-a946765cc5e trigger file removal when slice permission is removed
-1750e5fb0be Throw XmlParserException when client tag cannot be found when parsing slice permissions.
-224cf2a159a [viewcompiler] Switch to slicer DEX opcode definitions
-f12108361a8 PackageInstallerSession: Minor refactorings and cleanups
-5e87a0a6ab8 Simplifying callback calls in PackageInstallerSession
-fa6f64d6ad6 Fix PackageWatchdog::syncRequestsAsync and related code
-82bc3afcd61 framework/base: add parallel verifyV1
-e15a227be50 Perf: Boost UI thread during app launching
-ad9d5fa31d7 framework: add boost for package installation
-b15cc9788ed BoostFramework: New hintType for App Starting from BG.
-6d45ecf239e remove obsoleted cgroup follow option
-4d7546b5086 perf: Load performance lib from Zygote
-7cab226a28f perf: enable gesture fling boost by default
-d27b9209c74 [SQUASH] BoostFramework: To Enhance performance.
-ef63ee75ed3 Revert "Base: AM: create config to set Max Cached Processes"
-47b19963018 Add USSD codes over IMS feature
-4e008f87454 Telephony: IMS: Cache subscriber associated uri
-f36d674ad00 SystemUI: Fix SystemUI failed to go to doze issue
-803beae462c Use same NFC icon as that in QS tile
-
-   * packages/apps/Settings/
-dccb88764d Settings: set maintainer string as non-translatable
-
-   * vendor/themes/
-4b89458 themes: Show all main tiles by default
 
