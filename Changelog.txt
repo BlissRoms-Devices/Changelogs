@@ -1,4 +1,9 @@
 ====================
+     08-18-2020
+====================
+
+
+====================
      08-17-2020
 ====================
 
@@ -80,6 +85,7 @@ cadcf54776 Fix padding for panel layout its used for example by volume dialog no
 73c1c34334 Settings: Change kernel preference behavior
 a4561c8e60 Settings: Show full proc/version information
 31914fe775 fixup! Settings: categorise battery settings
+00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
 
    * vendor/bliss/
 93f2b05f Revert "vendor/bliss: Kill all media files"
@@ -95,9 +101,6 @@ a4561c8e60 Settings: Show full proc/version information
    * frameworks/base/
 b0897f9e8e2 SystemUI: set tint off as default for new tint style [1/2]
 f2806c33fe7 SystemUI: update qs detail background color
-
-   * packages/apps/Settings/
-00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
 
    * vendor/support/
 89e8aac support: ColorPicker: Hide buttons when the preference is disabled
@@ -191,19 +194,4 @@ a27460c544c Automatic translation import
 
    * manifest/
 458a841 Manifest for Android 10.0.0 Release 41 (QQ3A.200805.001)
-
-====================
-     08-03-2020
-====================
-
-
-   * packages/apps/Blissify/
-589a65a Blissify: update clock preferences as per clock style
-dfa601c Blissify: move clock options to a new screen
-
-   * packages/apps/Settings/
-bba5f54b95 Settings: categorise battery settings
-
-   * vendor/themes/
-6aa2ee2 partially revert "update Switch styles [2/4]"
 
