@@ -1,12 +1,93 @@
 ====================
+     08-19-2020
+====================
+
+
+   * frameworks/base/
+b39db58c96d [SQUASH]: Revert Boost and Optimizations
+691fd291489 base: Make vendor mismatch message optional
+a9a359751c5 Fix current formating on lockscreen for devices, that report directly in Ampere.
+0de28e0289e BatteryService: Add VOOC charging support
+e3e58c39560 BatteryService: Add support for oem fast charger detection
+0a81472b24b SystemUI: Add network_stack permission
+5165339b537 QSTileView: set qs tile label to default as well [1/2]
+b1d824e7b56 SystemUI: Move statusbar weather image to qspanel
+97f15f3befc Add more QS tile style [1/3]
+5e757cd6c64 Add JustIcons QS Tile style [1/3]
+38fd8a84734 SystemUI: Add OOS Compact  VoLTE & VoWifi icon [1/2]
+ea4a0c79ec2 core: Improve clipboard access strings
+30f2df76db5 Clipboard access toast: Improvements [1/2]
+775c214f2e0 Show the nearby chip for images and files too.
+59c5c15e487 services: LightsService: Mute an annoying error message.
+1b78ea5c08f NetworkTraffic: Various improvements
+b92c25509db Revert "ClipboardService: keep track of which app pasted from which"
+4fbd25bd6e8 SystemUI: improve persistent settings icon toggle [1/2]
+
+   * packages/apps/Blissify/
+1ae39ab Settings: categorise some more and organise
+b227427 Blissify: Move statusbar weather image to qspanel
+f01844b Blissify: declutter a few options
+ce87988 Blissify: set qs tile label to default [1/2]
+01887dc Add more QS tile style 2/3
+4d4f798 Add JustIcons QS Tile style [3/3]
+2409767 Blissify: Add OOS Compact  VoLTE & VoWifi icon [2/2]
+886fafe Blissify: Add toggle for qs clock size [2/2]
+a7c3392 Blissify: improve persistent settings icon toggle [2/2]
+
+   * packages/apps/Launcher3/
+96279436c Merge "Launcher3: remove duplicate uses-permission" into q
+a0f00685d Launcher3: remove duplicate uses-permission
+
+   * packages/apps/OmniStyle/
+e1269a6 OmniStyle: Add Naruto Headers
+9df946a Bring My Hero Academia Headers
+cbab404 Bring Kimetsu no Yaiba Headers
+475a5f8 Bring Shingeki no Kyojin Headers
+0e4bb61 Bring Hunter x Hunter Headers
+55929d5 One-piece (2/2)
+509a1a7 Bring in One-piece Anime pack (1/2)
+b0889d5 OmniStyle: Remove omni headers
+d5b582b OmniStyle: Remove translations
+d8c4962 OmniStyle: Remove wallpaper settings
+
+   * packages/apps/Settings/
+42311a092d Settings: Clipboard access toast: Improvements [2/2]
+e64556921a Settings: update lottie animations
+f529e821d9 Settings: Display 'VOOC charging' for VOOC charge in battery settings [2/2]
+
+   * vendor/themes/
+01641ab Revert "Revert "themes: enable media picker for ringtones""
+0d262dd Overlays: update material gray colors in dark theme
+34afe00 Add JustIcons QS Tile style [2/3]
+edee04a Add more QS tile style 3/3
+
+====================
      08-18-2020
 ====================
 
+
+   * build/make/
+c28cac481 [1/2] build: add OTA script do delete package cache
+
+   * frameworks/base/
+4a53ed3d7a8 SystemUI: improve quick statusbar header layout
+
+   * vendor/bliss/
+48d3c99b [2/2] vendor: add OTA script do delete package cache
+5634f25f vendor: bump to v12.11
 
 ====================
      08-17-2020
 ====================
 
+
+   * frameworks/base/
+0671ff3f585 Revert "Revert "Add toggle to display battery in quick status bar [1/2]""
+ea94c0ec748 QsFooter: move carrier group to qqs footer
+f718b8cebad SystemUI: Add some padding to qqs brightness slider
+eee0ee3e041 base: Add QS header styles [1/3]
+b72719ae865 SystemUI: revert statusbar background
+6f5669333cd Qs: Add toggle for qs clock size [1/2]
 
 ====================
      08-16-2020
@@ -21,6 +102,11 @@
    * hardware/qcom-caf/sm8150/display/
 c78f45e5 sdm: mark FOD pressed layer by setting a bit on ZPOS
 
+   * packages/apps/Blissify/
+33308ee Revert "Revert "Add toggle to display battery in quick status bar [2/2]""
+1aa9175 Revert "Blissify: Allow hiding Black Gradient behind QSPanel"
+76f740f Blissify: Add QS header styles [2/3]
+
    * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
 1fa0d049 Avoid NFC continuous crash
 
@@ -29,17 +115,47 @@ c78f45e5 sdm: mark FOD pressed layer by setting a bit on ZPOS
 ====================
 
 
+   * frameworks/base/
+82d8c1683a2 Revert "DO NOT MERGE Revert Privacy Indicators to P"
+9509cc22bf6 SystemUI: Add toggle for qs data usage location [1/2]
+
+   * vendor/themes/
+4088f01 Add QS header styles [3/3]
+
 ====================
      08-13-2020
 ====================
 
 
+   * frameworks/av/
+d041046b7 Allow graceful degradation of MediaProfile with broken configuration.
+
+   * frameworks/opt/telephony/
+d5accaa87 Failed to show hold call when user click swap and merge simultaneously
+
    * packages/apps/Blissify/
+8867434 Blissify: Add toggle for qs data usage location [2/2]
 929ee9c Blissify: Add OnePlus dashboard icons [2/2]
+
+   * packages/apps/Dialer/
+929d19224 Fix theme for PostCallActivity
+215a7e102 Dialer: Fix launch screen status bar color
 
    * packages/apps/Launcher3/
 8f4103bdf Quickspace: disable random messages by default
 a51a3dfd2 Add .gitreview
+
+   * packages/apps/Messaging/
+256b2a4 Messaging: fix launch screen status bar color
+
+   * vendor/bliss/
+1cb9476c repopick: Use empty metavar parameter to fix help's indentation
+d0a36cd3 repopick: Address PEP8 warnings regarding indentations and variable naming
+e75c1dd9 kernel: Bail-out if kernel config isn't set
+d3d0c178 kernel: Add support for module aliases
+8ce22dea kernel: Allow installing modules on vendor_overlay
+42bc9d03 prebuilt: Clean up lineage-system.rc
+1e16a0f7 repopick: Use upstream instead of revision to determine branch
 
 ====================
      08-12-2020
@@ -69,6 +185,9 @@ a51a3dfd2 Add .gitreview
 8aec5d03bdf SystemUI: QS drag handle improvement
 f2fed86a623 fwb: allow changing navbar handle thickness [1/2]
 6b0189452b4 ClipboardService: keep track of which app pasted from which
+
+   * frameworks/native/
+4d0ceaf28 Revert "touch response optimizations"
 
    * hardware/qcom-caf/sm8250/display/
 4ab176b0e Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
@@ -177,21 +296,4 @@ e7f8ad1a2 Merge tag 'android-10.0.0_r41' into q
 1f42a42 vendor: GVM chooser adjustment [1/2]
 6dfb7e3 squash: Fix color
 bafdd3b vendor: Merge GVM (URMM, URMVL, PGIOS) [2/2]
-
-====================
-     08-04-2020
-====================
-
-
-   * device/lineage/sepolicy/
-a3d4882 sepolicy: Add back rgb rules
-
-   * external/gptfdisk/
-27d8747 Merge tag 'android-10.0.0_r41' into staging/lineage-17.1_merge-android-10.0.0_r41
-
-   * frameworks/base/
-a27460c544c Automatic translation import
-
-   * manifest/
-458a841 Manifest for Android 10.0.0 Release 41 (QQ3A.200805.001)
 
