@@ -1,4 +1,21 @@
 ====================
+     08-20-2020
+====================
+
+
+   * frameworks/base/
+af486ed942d Automatic translation import
+
+   * packages/apps/Blissify/
+ebbcdc4 Automatic translation import
+
+   * packages/apps/Contacts/
+64ba32342 Automatic translation import
+
+   * packages/apps/Settings/
+fd1cc4d33b Automatic translation import
+
+====================
      08-19-2020
 ====================
 
@@ -66,14 +83,10 @@ edee04a Add more QS tile style 3/3
 ====================
 
 
-   * build/make/
-c28cac481 [1/2] build: add OTA script do delete package cache
-
    * frameworks/base/
 4a53ed3d7a8 SystemUI: improve quick statusbar header layout
 
    * vendor/bliss/
-48d3c99b [2/2] vendor: add OTA script do delete package cache
 5634f25f vendor: bump to v12.11
 
 ====================
@@ -263,37 +276,4 @@ b72723f Blissify: update volte icon strings
 
    * vendor/themes/
 21b60e4 Revert "themes: enable media picker for ringtones"
-
-====================
-     08-05-2020
-====================
-
-
-   * build/make/
-f2a8abb36 Merge tag 'android-10.0.0_r41' into q
-
-   * frameworks/av/
-e18a16e81 Merge tag 'android-10.0.0_r41' into q
-
-   * frameworks/base/
-99cf406a0db Merge tag 'android-10.0.0_r41' into q
-
-   * manifest/
-6bf3d21 Merge tag 'android-10.0.0_r41' into q
-
-   * packages/apps/Blissify/
-0b81c69 GVM chooser adjustment [2/2]
-
-   * packages/apps/Settings/
-72d3f360c9 Merge tag 'android-10.0.0_r41' into q
-
-   * packages/services/Telephony/
-e7f8ad1a2 Merge tag 'android-10.0.0_r41' into q
-
-   * vendor/themes/
-977aa19 Add GVM-URM-S overlay
-20f254c Edit some overlay gvm
-1f42a42 vendor: GVM chooser adjustment [1/2]
-6dfb7e3 squash: Fix color
-bafdd3b vendor: Merge GVM (URMM, URMVL, PGIOS) [2/2]
 
