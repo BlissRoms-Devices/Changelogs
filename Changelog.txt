@@ -1,10 +1,26 @@
 ====================
+     08-21-2020
+====================
+
+
+   * frameworks/base/
+4c63d288930 Merge "QSFooter: fix padding on carrier group" into q
+23576b90876 Merge changes I535c84a0,Ib46ccb50,I363fd750 into q
+607b0a87a14 QSFooter: fix padding on carrier group
+
+   * packages/apps/Settings/
+a5848c77d6 Merge "Revert "Settings: IS_DEBUGGABLE -> IS_ENG"" into q
+
+====================
      08-20-2020
 ====================
 
 
    * frameworks/base/
 af486ed942d Automatic translation import
+4b5ad169916 SystemUI: Add Smart Pixels tile
+f1214568bef webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
+9bd02e992c0 Revert "IS_DEBUGGABLE -> IS_ENG"
 
    * packages/apps/Blissify/
 ebbcdc4 Automatic translation import
@@ -14,6 +30,7 @@ ebbcdc4 Automatic translation import
 
    * packages/apps/Settings/
 fd1cc4d33b Automatic translation import
+8c6167f839 Revert "Settings: IS_DEBUGGABLE -> IS_ENG"
 
 ====================
      08-19-2020
@@ -260,20 +277,4 @@ eca3d1c Blissify: set tint off as default for new tint style [2/2]
 
    * packages/apps/Settings/
 a4d566b140 BatteryHealth: overlay showing charging cycles
-
-====================
-     08-06-2020
-====================
-
-
-   * frameworks/base/
-c4e5efdc41f Pixel navbar toggle [1/2]
-241b5f30ec9 QuickStep in Q needs setShelfHeight, remove the permissions check
-
-   * packages/apps/Blissify/
-b72723f Blissify: update volte icon strings
-57e01c5 Pixel Navbar animation toggle [2/2]
-
-   * vendor/themes/
-21b60e4 Revert "themes: enable media picker for ringtones"
 
