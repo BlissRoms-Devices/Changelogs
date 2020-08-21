@@ -1,4 +1,25 @@
 ====================
+     08-22-2020
+====================
+
+
+   * frameworks/base/
+120785fb72c SystemUI: Align omni weather as per the clock style
+
+   * packages/apps/Launcher3/
+ceac48fa9 fixup! Quickspace: disable random messages by default
+
+   * vendor/bliss/
+bf19fe8e vendor: apns-conf: Add Hits APN
+b81ef70c vendor: Drop verity tool
+dfddddc9 kernel: Set full path to DTC
+f63d816b kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg
+60908d37 vendor: apns-conf: Drop proxy for Movistar
+
+   * vendor/themes/
+7c59b69 Revert "overlay: Enable Visual Voicemail for Verizon devices"
+
+====================
      08-21-2020
 ====================
 
@@ -257,24 +278,4 @@ f2806c33fe7 SystemUI: update qs detail background color
 7da40fa support: ColorPicker: Add attrs to show/hide reset and preview icons
 a2233c4 support: ColorPicker: Cleanup code
 9a91cb7 support: ColorPicker: Allow to use it with only xml calls
-
-====================
-     08-07-2020
-====================
-
-
-   * frameworks/base/
-f2bb4f85e15 SystemUI: add ability to change lockscreen clock colors/type [1/2]
-b92d535678c Welcome Back Lockscreen Item Colors [1/2]
-e7748d09000 Add Toggle for LockWeather Image [1/2]
-
-   * packages/apps/Blissify/
-eca3d1c Blissify: set tint off as default for new tint style [2/2]
-8785d5e Blissify: disable weather colors when aosp weather is selected
-863ec70 Blissify: Add lockscreen clock color type
-0927cd7 Blissify: Welcome Back Lockscreen Item Colors [2/2]
-040da21 Blissify: hide pixel navigation animation on gestural mode
-
-   * packages/apps/Settings/
-a4d566b140 BatteryHealth: overlay showing charging cycles
 
