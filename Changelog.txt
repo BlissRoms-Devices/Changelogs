@@ -1,4 +1,16 @@
 ====================
+     08-23-2020
+====================
+
+
+   * packages/apps/BlissUpdater/
+004ad62 BlissUpdater: Update API Endpoint
+
+   * vendor/bliss/
+fe69c662 Revert "kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg"
+6b3f6747 Revert "kernel: Set full path to DTC"
+
+====================
      08-22-2020
 ====================
 
@@ -262,20 +274,4 @@ a4561c8e60 Settings: Show full proc/version information
 
    * vendor/themes/
 87759d8 themes: Settings: remove legacy suggestion overlay
-
-====================
-     08-08-2020
-====================
-
-
-   * frameworks/base/
-b0897f9e8e2 SystemUI: set tint off as default for new tint style [1/2]
-f2806c33fe7 SystemUI: update qs detail background color
-
-   * vendor/support/
-89e8aac support: ColorPicker: Hide buttons when the preference is disabled
-14cc32d support: ColorPicker: Disable dividers by default
-7da40fa support: ColorPicker: Add attrs to show/hide reset and preview icons
-a2233c4 support: ColorPicker: Cleanup code
-9a91cb7 support: ColorPicker: Allow to use it with only xml calls
 
