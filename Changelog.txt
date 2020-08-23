@@ -1,4 +1,9 @@
 ====================
+     08-24-2020
+====================
+
+
+====================
      08-23-2020
 ====================
 
@@ -237,41 +242,4 @@ d3d0c178 kernel: Add support for module aliases
 
    * manifest/
 8832e74 manifest: track sony hw timekeep from los
-
-====================
-     08-09-2020
-====================
-
-
-   * frameworks/base/
-36ad41f07fd SystemUI: Fix Ticker layout
-8aec5d03bdf SystemUI: QS drag handle improvement
-f2fed86a623 fwb: allow changing navbar handle thickness [1/2]
-6b0189452b4 ClipboardService: keep track of which app pasted from which
-
-   * frameworks/native/
-4d0ceaf28 Revert "touch response optimizations"
-
-   * hardware/qcom-caf/sm8250/display/
-4ab176b0e Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
-
-   * packages/apps/Blissify/
-3bdb683 Blissify: Adapt some preferences for ColorPicker
-
-   * packages/apps/Settings/
-82fb1eeea5 Settings: allow changing navbar handle thickness [2/2]
-2faa009e45 Settings: Add OnePlus dashboard icons [1/2]
-b097609241 search: Impliment external searching
-cadcf54776 Fix padding for panel layout its used for example by volume dialog now title is centered
-41cc281729 Settings: Avoid enforcing weird backgrounds
-73c1c34334 Settings: Change kernel preference behavior
-a4561c8e60 Settings: Show full proc/version information
-31914fe775 fixup! Settings: categorise battery settings
-00ffec8f5e fixup! BatteryHealth: overlay showing charging cycles
-
-   * vendor/bliss/
-93f2b05f Revert "vendor/bliss: Kill all media files"
-
-   * vendor/themes/
-87759d8 themes: Settings: remove legacy suggestion overlay
 
