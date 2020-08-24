@@ -1,4 +1,16 @@
 ====================
+     08-25-2020
+====================
+
+
+   * frameworks/base/
+07ef90d19d8 Revert "base: Tune some dimens to make icon spacing on SB equal"
+39f1ab89a1c Skip screen on animation when wake and unlock via biometrics
+
+   * packages/apps/Blissify/
+309bd97 Blissify: some fod improvements
+
+====================
      08-24-2020
 ====================
 
@@ -234,12 +246,4 @@ d3d0c178 kernel: Add support for module aliases
      08-11-2020
 ====================
 
-
-====================
-     08-10-2020
-====================
-
-
-   * manifest/
-8832e74 manifest: track sony hw timekeep from los
 
