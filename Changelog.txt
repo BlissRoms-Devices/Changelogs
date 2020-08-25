@@ -1,4 +1,29 @@
 ====================
+     08-26-2020
+====================
+
+
+   * frameworks/base/
+660fa78f89d Revert "Skip screen on animation when wake and unlock via biometrics"
+2a5b1a54aa1 Don't crash if there is IR HAL is not declared
+217f4d4af0e wm: Passing a new ArraySet instance to avoid crash
+63376ff747a Extend the watchdog timeout of main thread
+b7e6201fc63 DragSurface: destroy surfacecontrol in view site
+a69babd40cf FloatingToolbar must end animation immediately when parent window gone
+cdff39bb042 InputWrapper: Opt out early if session == null
+a29afa671b0 Prevent deadlock when going out of idle state
+9c49a6dff95 Avoid needless Integer.valueOf() object allocation.
+785f1e6bf0c SystemUI: fix notification overlap with PIN screen
+039903f0992 Don't request render in GLSurfaceView.GLThread ctr
+d54ba249d66 Revert "Screen off animations [1/2]"
+171ef0e5ee5 SystemUI: add toggle for carrier group visibility [1/2]
+
+   * packages/apps/Blissify/
+084330e Revert "Blissify: Screen Off Animation [2/2]"
+61daf0b Blissify: add toggle for carrier group visibility [2/2]
+2535447 Blissify: some fod improvements
+
+====================
      08-25-2020
 ====================
 
@@ -6,9 +31,6 @@
    * frameworks/base/
 07ef90d19d8 Revert "base: Tune some dimens to make icon spacing on SB equal"
 39f1ab89a1c Skip screen on animation when wake and unlock via biometrics
-
-   * packages/apps/Blissify/
-309bd97 Blissify: some fod improvements
 
 ====================
      08-24-2020
@@ -239,11 +261,6 @@ d3d0c178 kernel: Add support for module aliases
 
 ====================
      08-12-2020
-====================
-
-
-====================
-     08-11-2020
 ====================
 
 
