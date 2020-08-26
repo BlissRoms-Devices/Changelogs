@@ -1,7 +1,38 @@
 ====================
+     08-27-2020
+====================
+
+
+====================
      08-26-2020
 ====================
 
+
+   * bionic/
+af0effa49 string: Optimize strlen
+0bf6c24e8 Switch to musl memmem (via OpenBSD).
+c0081d3b8 Sync with upstream OpenBSD.
+0a252168b Take a bunch of trivial patches from upstream OpenBSD.
+0f39cb6e4 Clean up some obsolete OpenBSD portability cruft.
+b5efade88 Update upstream OpenBSD gdtoa.
+e08a09ee3 Sync with upstream NetBSD.
+
+   * external/arm-optimized-routines/
+d50dd2e v20.08 release
+3d6e329 string: Benchmark unaligned memmove
+6674fe1 string: Improve backwards memmove performance
+05972d4 string: Fix CVE-2020-6096 for arm memcpy
+7e2177d string: Add strlen benchmark
+
+   * external/libjpeg-turbo/
+aaed50e Implement RGB->YCbCr using Arm NEON intrinsics
+8683f0e Update libjpeg-turbo to v2.0.5
+5d77f9e Add Arm NEON implementation of h2v2_downsample
+f558794 Add Arm NEON implementation of h2v1_downsample
+
+   * external/skia/
+4e63a5b65b Issue- >Skia tiled bitmap rendering is too slow when tilemodeX is not same as tileModeY.
+08db043adb remove NEON matrix procs
 
    * frameworks/base/
 660fa78f89d Revert "Skip screen on animation when wake and unlock via biometrics"
@@ -258,9 +289,4 @@ d3d0c178 kernel: Add support for module aliases
 8ce22dea kernel: Allow installing modules on vendor_overlay
 42bc9d03 prebuilt: Clean up lineage-system.rc
 1e16a0f7 repopick: Use upstream instead of revision to determine branch
-
-====================
-     08-12-2020
-====================
-
 
