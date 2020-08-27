@@ -1,4 +1,9 @@
 ====================
+     08-28-2020
+====================
+
+
+====================
      08-27-2020
 ====================
 
@@ -254,39 +259,4 @@ c78f45e5 sdm: mark FOD pressed layer by setting a bit on ZPOS
 
    * vendor/themes/
 4088f01 Add QS header styles [3/3]
-
-====================
-     08-13-2020
-====================
-
-
-   * frameworks/av/
-d041046b7 Allow graceful degradation of MediaProfile with broken configuration.
-
-   * frameworks/opt/telephony/
-d5accaa87 Failed to show hold call when user click swap and merge simultaneously
-
-   * packages/apps/Blissify/
-8867434 Blissify: Add toggle for qs data usage location [2/2]
-929ee9c Blissify: Add OnePlus dashboard icons [2/2]
-
-   * packages/apps/Dialer/
-929d19224 Fix theme for PostCallActivity
-215a7e102 Dialer: Fix launch screen status bar color
-
-   * packages/apps/Launcher3/
-8f4103bdf Quickspace: disable random messages by default
-a51a3dfd2 Add .gitreview
-
-   * packages/apps/Messaging/
-256b2a4 Messaging: fix launch screen status bar color
-
-   * vendor/bliss/
-1cb9476c repopick: Use empty metavar parameter to fix help's indentation
-d0a36cd3 repopick: Address PEP8 warnings regarding indentations and variable naming
-e75c1dd9 kernel: Bail-out if kernel config isn't set
-d3d0c178 kernel: Add support for module aliases
-8ce22dea kernel: Allow installing modules on vendor_overlay
-42bc9d03 prebuilt: Clean up lineage-system.rc
-1e16a0f7 repopick: Use upstream instead of revision to determine branch
 
