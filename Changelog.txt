@@ -1,4 +1,9 @@
 ====================
+     08-29-2020
+====================
+
+
+====================
      08-28-2020
 ====================
 
@@ -247,16 +252,4 @@ c78f45e5 sdm: mark FOD pressed layer by setting a bit on ZPOS
 
    * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
 1fa0d049 Avoid NFC continuous crash
-
-====================
-     08-14-2020
-====================
-
-
-   * frameworks/base/
-82d8c1683a2 Revert "DO NOT MERGE Revert Privacy Indicators to P"
-9509cc22bf6 SystemUI: Add toggle for qs data usage location [1/2]
-
-   * vendor/themes/
-4088f01 Add QS header styles [3/3]
 
