@@ -1,12 +1,126 @@
 ====================
+     08-30-2020
+====================
+
+
+   * bionic/
+58decb041 libc: arm64: fix wmemmove
+
+   * frameworks/base/
+accb00dea06 core: set asus longshot as default [1/2]
+d3a2899cae9 VolumePluginManager: Fix fc for stock panel
+ec69bbc0b98 fwb: Optimise how plugins are applied
+b0395907fd1 base: VolumePluginManager: Add default constructor
+0c15cce410a fwb: Implement VolumePluginManager
+eabde392f6e fwb: Allow using plugins even on production
+6ae89bd2901 SystemUI: cleanup battery tile
+
+   * frameworks/native/
+ee55e18b1 sf: Fix issue with dequeueBuffer when multiple display present
+8d8729592 binder: fix inconsistent-missing-override warning
+759af9768 Remove heap allocations from Parcel::enforceInterface
+fe6df86c1 Enable context virtualization only for GL
+10104b306 Flush BC_FREE_BUFFER and ref ops from non-looper threads
+8fed918b2 binder: Bp: clear DRs in onLastStrongRef
+7ed9bf609 libs: Fix FD comparisons in binder
+567fa46a8 ui: Fix array out of bound
+340f73bb1 Reland "binder: Parcel avoid too small initial allocation"
+5bb3fefe8 Reorder when ImageManager thread starts
+
+   * packages/apps/Blissify/
+4623690 Blissify: move dark mode from settings
+3d41b70 Buttons: Rearrange and categorise some options
+309d3a5 Blissify: set default screenshot to longshot
+
+   * packages/apps/Launcher3/
+a5c3b81a0 Launcher3: update recent tasks header style
+
+   * packages/apps/Settings/
+05ba304b1b Settings: move dark mode to blissify [1/2]
+
+   * prebuilts/abi-dumps/vndk/
+21627ef vndk: remove libprocessgroup from ABI check target
+
+====================
      08-29-2020
 ====================
 
+
+   * external/pulse/
+5d82ca0 ColorContoller: Fix getting default accent color
+2cdaa98 Add pulse to doze mode [1/2]
+83e3ade Solid render: apply alpha on lockscreen too and possibly improve performances
+8157e51 Pulse: Clean up redundant audio session id
+650fa20 Pulse: Consolidate functions and fix NPE
+6db9e0a Pulse: Fix FC and improve performance [1/2]
+0cb1117 Pulse: Extend NavBar Pulse to LockScreen [2/3]
+bcc217e Revert "Pulse: Do not show when navbar is hidden"
+
+   * frameworks/base/
+eabfeaddb8c Extend Pulse to Ambient Screen [1/3]
+6cb40d4ea48 Make ringer button in volume panel optional [1/2]
+f31c9041407 fixup! SystemUI: add toggle for carrier group visibility [1/2]
+1a613b761e3 VolumeDialog: Align media card vertically to vol dialog
+0f498176e13 base: Add option to center "R style" notification headers [1/2]
+82c9713b56f Fix a race conditon in `incident`.
+58858877e49 FODCircleView: Allow to overlay default pressed icon state [1/2]
+61d32c74871 [1/2] base: custom config to force custom doze brightness
+81129bf57e8 lockscreen shortcuts: Remove default ones
+d21cb68f714 MediaCard: fix fc during incognito chrome session
+f12345321c1 Add MusicCard in VolumePanel [1/2]
+4452363f24a QsBgNew : Make it toggleable for new gradient QS [1/2]
+375335fd185 OverlayIconshapes: Don't modify corner radii
+1bf8dafd52c QSBHeader: Clicking data usage takesdata usage settings
+20e956baf4c Added policy based firewall in the security tab.
+08bd9c9378a base: Pulse: Fix FC and improve performance [2/2]
+b32ae39375f base: Extend NavBar Pulse to LockScreen [1/3]
+dd06f83b598 base: cleanup visualizer
+bbee2aeb4ee PocketJudge: allow register vendor pocket sensor
+d3cb5b1ca9f SystemUI: Block face authentication when device is in pocket mode
+
+   * manifest/
+f9445c6 manifest: Track plugins
+
+   * packages/apps/Blissify/
+6941451 Blissify: Add stock volume panel style
+455135a Blissify: POSP Vol panel styles
+7d0fd56 Extend Pulse to Ambient Screen [2/2].
+ff6b35f Make ringer button in volume panel optional [2/2]
+db928d4 Extend NavBar Pulse to LockScreen [3/3]
+47921f9 Blissify: cleanup visualiser
+3500761 Blissify: Add option to center "R style" notification headers [2/2]
+831ce70 Blissify: Use overlay for default value of pressed fod icon [2/2]
+
+   * packages/apps/Plugins/
+f5c8bc7 Plugins: Adapt to our settings [2/4]
+
+   * packages/apps/Settings/
+14eef25c7f Settings: Add setting for clamp min auto screen brightness [2/2]
+
+   * vendor/bliss/
+c67a3b6b packages: include plugin packages if present
 
 ====================
      08-28-2020
 ====================
 
+
+   * frameworks/base/
+fee894e2fba base: Add setting for clamp min auto screen brightness [1/2]
+f31377ea9d7 base: Add DiracSound and MiSound to current api
+9d47bd23807 base: add and fix @hide javadocs
+50be08d3d95 base: Add support for DiracSound FX
+d35311bc40a base: Add support for MiSound FX
+1f5554b33d8 PackageInstaller: Fix crash when uninstalling apps with fragile data
+eb84b262d3e Revert "UninstallAlertDialogFragment: Catch IllegalArgumentException"
+
+   * packages/apps/Blissify/
+21e3ad5 Add MusicCard in VolumePanel [2/2]
+85a14f8 QsBgNew : Make it toggleable for new gradient QS [2/2]
+c736c8b Blissify: add back all keyboard IME features back (2/2)
+
+   * packages/apps/CustomDoze/
+ddbef83 CustomDoze: Custom config to force custom doze brightness [2/2]
 
 ====================
      08-27-2020
@@ -236,20 +350,4 @@ b72719ae865 SystemUI: revert statusbar background
      08-16-2020
 ====================
 
-
-====================
-     08-15-2020
-====================
-
-
-   * hardware/qcom-caf/sm8150/display/
-c78f45e5 sdm: mark FOD pressed layer by setting a bit on ZPOS
-
-   * packages/apps/Blissify/
-33308ee Revert "Revert "Add toggle to display battery in quick status bar [2/2]""
-1aa9175 Revert "Blissify: Allow hiding Black Gradient behind QSPanel"
-76f740f Blissify: Add QS header styles [2/3]
-
-   * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
-1fa0d049 Avoid NFC continuous crash
 
