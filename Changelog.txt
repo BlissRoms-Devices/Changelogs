@@ -1,4 +1,9 @@
 ====================
+     09-01-2020
+====================
+
+
+====================
      08-31-2020
 ====================
 
@@ -337,17 +342,4 @@ edee04a Add more QS tile style 3/3
 
    * vendor/bliss/
 5634f25f vendor: bump to v12.11
-
-====================
-     08-17-2020
-====================
-
-
-   * frameworks/base/
-0671ff3f585 Revert "Revert "Add toggle to display battery in quick status bar [1/2]""
-ea94c0ec748 QsFooter: move carrier group to qqs footer
-f718b8cebad SystemUI: Add some padding to qqs brightness slider
-eee0ee3e041 base: Add QS header styles [1/3]
-b72719ae865 SystemUI: revert statusbar background
-6f5669333cd Qs: Add toggle for qs clock size [1/2]
 
