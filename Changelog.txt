@@ -1,4 +1,9 @@
 ====================
+     09-02-2020
+====================
+
+
+====================
      09-01-2020
 ====================
 
@@ -331,15 +336,4 @@ f529e821d9 Settings: Display 'VOOC charging' for VOOC charge in battery settings
 0d262dd Overlays: update material gray colors in dark theme
 34afe00 Add JustIcons QS Tile style [2/3]
 edee04a Add more QS tile style 3/3
-
-====================
-     08-18-2020
-====================
-
-
-   * frameworks/base/
-4a53ed3d7a8 SystemUI: improve quick statusbar header layout
-
-   * vendor/bliss/
-5634f25f vendor: bump to v12.11
 
