@@ -1,4 +1,9 @@
 ====================
+     09-04-2020
+====================
+
+
+====================
      09-03-2020
 ====================
 
@@ -257,25 +262,4 @@ f63d816b kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg
 
    * packages/apps/Settings/
 a5848c77d6 Merge "Revert "Settings: IS_DEBUGGABLE -> IS_ENG"" into q
-
-====================
-     08-20-2020
-====================
-
-
-   * frameworks/base/
-af486ed942d Automatic translation import
-4b5ad169916 SystemUI: Add Smart Pixels tile
-f1214568bef webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
-9bd02e992c0 Revert "IS_DEBUGGABLE -> IS_ENG"
-
-   * packages/apps/Blissify/
-ebbcdc4 Automatic translation import
-
-   * packages/apps/Contacts/
-64ba32342 Automatic translation import
-
-   * packages/apps/Settings/
-fd1cc4d33b Automatic translation import
-8c6167f839 Revert "Settings: IS_DEBUGGABLE -> IS_ENG"
 
