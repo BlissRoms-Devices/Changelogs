@@ -1,4 +1,25 @@
 ====================
+     09-05-2020
+====================
+
+
+   * vendor/qcom/opensource/commonsys/bluetooth_ext/
+13e1f76 Fix compilation with SBC Dual Channel suport
+
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
+3c7d1f9ea Add switch to select SBC HD by default [2/3]
+6ce027cf7 Disable Dual channel for SBC by default
+12dfbdcba A2DP codec priority [2/3]
+b694f50de Assume optional codecs are supported if were supported previously
+4390d530b SBC Dual Channel (SBC HD Audio) support
+97da6d242 Check Null-safeness when switching optional-codecs state
+
+   * vendor/qcom/opensource/commonsys/system/bt/
+4bb643bf4 Allow using alternative (higher) SBC HD bitrates with a property
+dc220e5f5 Explicit SBC Dual Channel (SBC HD) support
+25b74ce0e Increase maximum Bluetooth SBC codec bitrate for SBC HD
+
+====================
      09-04-2020
 ====================
 
@@ -217,6 +238,23 @@ d54ba249d66 Revert "Screen off animations [1/2]"
 ====================
 
 
+   * vendor/qcom/opensource/commonsys/bluetooth_ext/
+d72ceb0 btconfigstore: Get rid of additional android.hidl.base@1.0
+
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
+493133269 Clean up duplicate uses-permission entries
+436169a9d BT: Prefer LDAC over aptX family
+1f546029d Bluetooth string: removed id="sender" in bt_sm_2_1_
+0b1f2f006 translate="false" -> translatable="false"
+5fbb333bb Remove intent filter without any action
+cbe994ba7 Delete unused common.android.emailcommon package.
+d8bde878d Fix null pointer exception on AvrcpTargetService
+c174a8b7e Bluetooth: Remove unused string resources
+4558de736 Rebrand to BluetoothQti
+
+   * vendor/qcom/opensource/commonsys/system/bt/
+8c63b64ba bt: Rename QTI stack config to avoid conflict w/ AOSP one
+
 ====================
      08-23-2020
 ====================
@@ -249,17 +287,4 @@ f63d816b kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg
 
    * vendor/themes/
 7c59b69 Revert "overlay: Enable Visual Voicemail for Verizon devices"
-
-====================
-     08-21-2020
-====================
-
-
-   * frameworks/base/
-4c63d288930 Merge "QSFooter: fix padding on carrier group" into q
-23576b90876 Merge changes I535c84a0,Ib46ccb50,I363fd750 into q
-607b0a87a14 QSFooter: fix padding on carrier group
-
-   * packages/apps/Settings/
-a5848c77d6 Merge "Revert "Settings: IS_DEBUGGABLE -> IS_ENG"" into q
 
