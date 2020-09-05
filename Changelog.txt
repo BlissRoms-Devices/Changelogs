@@ -1,4 +1,9 @@
 ====================
+     09-06-2020
+====================
+
+
+====================
      09-05-2020
 ====================
 
@@ -266,25 +271,4 @@ c174a8b7e Bluetooth: Remove unused string resources
    * vendor/bliss/
 fe69c662 Revert "kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg"
 6b3f6747 Revert "kernel: Set full path to DTC"
-
-====================
-     08-22-2020
-====================
-
-
-   * frameworks/base/
-120785fb72c SystemUI: Align omni weather as per the clock style
-
-   * packages/apps/Launcher3/
-ceac48fa9 fixup! Quickspace: disable random messages by default
-
-   * vendor/bliss/
-bf19fe8e vendor: apns-conf: Add Hits APN
-b81ef70c vendor: Drop verity tool
-dfddddc9 kernel: Set full path to DTC
-f63d816b kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg
-60908d37 vendor: apns-conf: Drop proxy for Movistar
-
-   * vendor/themes/
-7c59b69 Revert "overlay: Enable Visual Voicemail for Verizon devices"
 
