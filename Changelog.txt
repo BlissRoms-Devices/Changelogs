@@ -1,4 +1,9 @@
 ====================
+     09-07-2020
+====================
+
+
+====================
      09-06-2020
 ====================
 
@@ -259,16 +264,4 @@ c174a8b7e Bluetooth: Remove unused string resources
 
    * vendor/qcom/opensource/commonsys/system/bt/
 8c63b64ba bt: Rename QTI stack config to avoid conflict w/ AOSP one
-
-====================
-     08-23-2020
-====================
-
-
-   * packages/apps/BlissUpdater/
-004ad62 BlissUpdater: Update API Endpoint
-
-   * vendor/bliss/
-fe69c662 Revert "kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg"
-6b3f6747 Revert "kernel: Set full path to DTC"
 
