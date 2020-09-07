@@ -1,4 +1,9 @@
 ====================
+     09-08-2020
+====================
+
+
+====================
      09-07-2020
 ====================
 
@@ -242,26 +247,4 @@ d54ba249d66 Revert "Screen off animations [1/2]"
    * frameworks/base/
 07ef90d19d8 Revert "base: Tune some dimens to make icon spacing on SB equal"
 39f1ab89a1c Skip screen on animation when wake and unlock via biometrics
-
-====================
-     08-24-2020
-====================
-
-
-   * vendor/qcom/opensource/commonsys/bluetooth_ext/
-d72ceb0 btconfigstore: Get rid of additional android.hidl.base@1.0
-
-   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
-493133269 Clean up duplicate uses-permission entries
-436169a9d BT: Prefer LDAC over aptX family
-1f546029d Bluetooth string: removed id="sender" in bt_sm_2_1_
-0b1f2f006 translate="false" -> translatable="false"
-5fbb333bb Remove intent filter without any action
-cbe994ba7 Delete unused common.android.emailcommon package.
-d8bde878d Fix null pointer exception on AvrcpTargetService
-c174a8b7e Bluetooth: Remove unused string resources
-4558de736 Rebrand to BluetoothQti
-
-   * vendor/qcom/opensource/commonsys/system/bt/
-8c63b64ba bt: Rename QTI stack config to avoid conflict w/ AOSP one
 
