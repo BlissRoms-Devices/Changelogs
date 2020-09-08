@@ -1,7 +1,15 @@
 ====================
+     09-09-2020
+====================
+
+
+====================
      09-08-2020
 ====================
 
+
+   * hardware/sony/timekeep/
+858c544 timekeep: Make sure we have a /data before mucking with /data
 
 ====================
      09-07-2020
@@ -238,13 +246,4 @@ d54ba249d66 Revert "Screen off animations [1/2]"
 084330e Revert "Blissify: Screen Off Animation [2/2]"
 61daf0b Blissify: add toggle for carrier group visibility [2/2]
 2535447 Blissify: some fod improvements
-
-====================
-     08-25-2020
-====================
-
-
-   * frameworks/base/
-07ef90d19d8 Revert "base: Tune some dimens to make icon spacing on SB equal"
-39f1ab89a1c Skip screen on animation when wake and unlock via biometrics
 
