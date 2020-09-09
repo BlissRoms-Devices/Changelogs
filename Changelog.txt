@@ -1,4 +1,12 @@
 ====================
+     09-10-2020
+====================
+
+
+   * external/chromium-webview/
+cd830a4 Update Chromium Webview to 85.0.4183.101
+
+====================
      09-09-2020
 ====================
 
@@ -195,55 +203,4 @@ ddbef83 CustomDoze: Custom config to force custom doze brightness [2/2]
      08-27-2020
 ====================
 
-
-====================
-     08-26-2020
-====================
-
-
-   * bionic/
-af0effa49 string: Optimize strlen
-0bf6c24e8 Switch to musl memmem (via OpenBSD).
-c0081d3b8 Sync with upstream OpenBSD.
-0a252168b Take a bunch of trivial patches from upstream OpenBSD.
-0f39cb6e4 Clean up some obsolete OpenBSD portability cruft.
-b5efade88 Update upstream OpenBSD gdtoa.
-e08a09ee3 Sync with upstream NetBSD.
-
-   * external/arm-optimized-routines/
-d50dd2e v20.08 release
-3d6e329 string: Benchmark unaligned memmove
-6674fe1 string: Improve backwards memmove performance
-05972d4 string: Fix CVE-2020-6096 for arm memcpy
-7e2177d string: Add strlen benchmark
-
-   * external/libjpeg-turbo/
-aaed50e Implement RGB->YCbCr using Arm NEON intrinsics
-8683f0e Update libjpeg-turbo to v2.0.5
-5d77f9e Add Arm NEON implementation of h2v2_downsample
-f558794 Add Arm NEON implementation of h2v1_downsample
-
-   * external/skia/
-4e63a5b65b Issue- >Skia tiled bitmap rendering is too slow when tilemodeX is not same as tileModeY.
-08db043adb remove NEON matrix procs
-
-   * frameworks/base/
-660fa78f89d Revert "Skip screen on animation when wake and unlock via biometrics"
-2a5b1a54aa1 Don't crash if there is IR HAL is not declared
-217f4d4af0e wm: Passing a new ArraySet instance to avoid crash
-63376ff747a Extend the watchdog timeout of main thread
-b7e6201fc63 DragSurface: destroy surfacecontrol in view site
-a69babd40cf FloatingToolbar must end animation immediately when parent window gone
-cdff39bb042 InputWrapper: Opt out early if session == null
-a29afa671b0 Prevent deadlock when going out of idle state
-9c49a6dff95 Avoid needless Integer.valueOf() object allocation.
-785f1e6bf0c SystemUI: fix notification overlap with PIN screen
-039903f0992 Don't request render in GLSurfaceView.GLThread ctr
-d54ba249d66 Revert "Screen off animations [1/2]"
-171ef0e5ee5 SystemUI: add toggle for carrier group visibility [1/2]
-
-   * packages/apps/Blissify/
-084330e Revert "Blissify: Screen Off Animation [2/2]"
-61daf0b Blissify: add toggle for carrier group visibility [2/2]
-2535447 Blissify: some fod improvements
 
