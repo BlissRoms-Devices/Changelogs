@@ -1,4 +1,9 @@
 ====================
+     09-11-2020
+====================
+
+
+====================
      09-10-2020
 ====================
 
@@ -198,9 +203,4 @@ c736c8b Blissify: add back all keyboard IME features back (2/2)
 
    * packages/apps/CustomDoze/
 ddbef83 CustomDoze: Custom config to force custom doze brightness [2/2]
-
-====================
-     08-27-2020
-====================
-
 
