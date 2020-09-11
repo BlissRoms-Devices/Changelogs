@@ -1,4 +1,9 @@
 ====================
+     09-12-2020
+====================
+
+
+====================
      09-11-2020
 ====================
 
@@ -181,26 +186,4 @@ f5c8bc7 Plugins: Adapt to our settings [2/4]
 
    * vendor/bliss/
 c67a3b6b packages: include plugin packages if present
-
-====================
-     08-28-2020
-====================
-
-
-   * frameworks/base/
-fee894e2fba base: Add setting for clamp min auto screen brightness [1/2]
-f31377ea9d7 base: Add DiracSound and MiSound to current api
-9d47bd23807 base: add and fix @hide javadocs
-50be08d3d95 base: Add support for DiracSound FX
-d35311bc40a base: Add support for MiSound FX
-1f5554b33d8 PackageInstaller: Fix crash when uninstalling apps with fragile data
-eb84b262d3e Revert "UninstallAlertDialogFragment: Catch IllegalArgumentException"
-
-   * packages/apps/Blissify/
-21e3ad5 Add MusicCard in VolumePanel [2/2]
-85a14f8 QsBgNew : Make it toggleable for new gradient QS [2/2]
-c736c8b Blissify: add back all keyboard IME features back (2/2)
-
-   * packages/apps/CustomDoze/
-ddbef83 CustomDoze: Custom config to force custom doze brightness [2/2]
 
