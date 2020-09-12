@@ -1,4 +1,24 @@
 ====================
+     09-13-2020
+====================
+
+
+   * packages/apps/Eleven/
+5937b1e Automatic translation import
+
+   * packages/apps/Jelly/
+cc8a1e9 Automatic translation import
+
+   * packages/apps/Recorder/
+767fd3b Automatic translation import
+
+   * packages/apps/Snap/
+972ac9872 Automatic translation import
+
+   * packages/resources/devicesettings/
+ce90d23 Automatic translation import
+
+====================
      09-12-2020
 ====================
 
@@ -127,63 +147,4 @@ a5c3b81a0 Launcher3: update recent tasks header style
 
    * prebuilts/abi-dumps/vndk/
 21627ef vndk: remove libprocessgroup from ABI check target
-
-====================
-     08-29-2020
-====================
-
-
-   * external/pulse/
-5d82ca0 ColorContoller: Fix getting default accent color
-2cdaa98 Add pulse to doze mode [1/2]
-83e3ade Solid render: apply alpha on lockscreen too and possibly improve performances
-8157e51 Pulse: Clean up redundant audio session id
-650fa20 Pulse: Consolidate functions and fix NPE
-6db9e0a Pulse: Fix FC and improve performance [1/2]
-0cb1117 Pulse: Extend NavBar Pulse to LockScreen [2/3]
-bcc217e Revert "Pulse: Do not show when navbar is hidden"
-
-   * frameworks/base/
-eabfeaddb8c Extend Pulse to Ambient Screen [1/3]
-6cb40d4ea48 Make ringer button in volume panel optional [1/2]
-f31c9041407 fixup! SystemUI: add toggle for carrier group visibility [1/2]
-1a613b761e3 VolumeDialog: Align media card vertically to vol dialog
-0f498176e13 base: Add option to center "R style" notification headers [1/2]
-82c9713b56f Fix a race conditon in `incident`.
-58858877e49 FODCircleView: Allow to overlay default pressed icon state [1/2]
-61d32c74871 [1/2] base: custom config to force custom doze brightness
-81129bf57e8 lockscreen shortcuts: Remove default ones
-d21cb68f714 MediaCard: fix fc during incognito chrome session
-f12345321c1 Add MusicCard in VolumePanel [1/2]
-4452363f24a QsBgNew : Make it toggleable for new gradient QS [1/2]
-375335fd185 OverlayIconshapes: Don't modify corner radii
-1bf8dafd52c QSBHeader: Clicking data usage takesdata usage settings
-20e956baf4c Added policy based firewall in the security tab.
-08bd9c9378a base: Pulse: Fix FC and improve performance [2/2]
-b32ae39375f base: Extend NavBar Pulse to LockScreen [1/3]
-dd06f83b598 base: cleanup visualizer
-bbee2aeb4ee PocketJudge: allow register vendor pocket sensor
-d3cb5b1ca9f SystemUI: Block face authentication when device is in pocket mode
-
-   * manifest/
-f9445c6 manifest: Track plugins
-
-   * packages/apps/Blissify/
-6941451 Blissify: Add stock volume panel style
-455135a Blissify: POSP Vol panel styles
-7d0fd56 Extend Pulse to Ambient Screen [2/2].
-ff6b35f Make ringer button in volume panel optional [2/2]
-db928d4 Extend NavBar Pulse to LockScreen [3/3]
-47921f9 Blissify: cleanup visualiser
-3500761 Blissify: Add option to center "R style" notification headers [2/2]
-831ce70 Blissify: Use overlay for default value of pressed fod icon [2/2]
-
-   * packages/apps/Plugins/
-f5c8bc7 Plugins: Adapt to our settings [2/4]
-
-   * packages/apps/Settings/
-14eef25c7f Settings: Add setting for clamp min auto screen brightness [2/2]
-
-   * vendor/bliss/
-c67a3b6b packages: include plugin packages if present
 
