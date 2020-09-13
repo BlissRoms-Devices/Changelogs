@@ -1,4 +1,9 @@
 ====================
+     09-14-2020
+====================
+
+
+====================
      09-13-2020
 ====================
 
@@ -104,47 +109,4 @@ dc220e5f5 Explicit SBC Dual Channel (SBC HD) support
      08-31-2020
 ====================
 
-
-====================
-     08-30-2020
-====================
-
-
-   * bionic/
-58decb041 libc: arm64: fix wmemmove
-
-   * frameworks/base/
-accb00dea06 core: set asus longshot as default [1/2]
-d3a2899cae9 VolumePluginManager: Fix fc for stock panel
-ec69bbc0b98 fwb: Optimise how plugins are applied
-b0395907fd1 base: VolumePluginManager: Add default constructor
-0c15cce410a fwb: Implement VolumePluginManager
-eabde392f6e fwb: Allow using plugins even on production
-6ae89bd2901 SystemUI: cleanup battery tile
-
-   * frameworks/native/
-ee55e18b1 sf: Fix issue with dequeueBuffer when multiple display present
-8d8729592 binder: fix inconsistent-missing-override warning
-759af9768 Remove heap allocations from Parcel::enforceInterface
-fe6df86c1 Enable context virtualization only for GL
-10104b306 Flush BC_FREE_BUFFER and ref ops from non-looper threads
-8fed918b2 binder: Bp: clear DRs in onLastStrongRef
-7ed9bf609 libs: Fix FD comparisons in binder
-567fa46a8 ui: Fix array out of bound
-340f73bb1 Reland "binder: Parcel avoid too small initial allocation"
-5bb3fefe8 Reorder when ImageManager thread starts
-
-   * packages/apps/Blissify/
-4623690 Blissify: move dark mode from settings
-3d41b70 Buttons: Rearrange and categorise some options
-309d3a5 Blissify: set default screenshot to longshot
-
-   * packages/apps/Launcher3/
-a5c3b81a0 Launcher3: update recent tasks header style
-
-   * packages/apps/Settings/
-05ba304b1b Settings: move dark mode to blissify [1/2]
-
-   * prebuilts/abi-dumps/vndk/
-21627ef vndk: remove libprocessgroup from ABI check target
 
