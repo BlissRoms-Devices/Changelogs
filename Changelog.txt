@@ -1,12 +1,52 @@
 ====================
+     09-15-2020
+====================
+
+
+   * frameworks/base/
+ca44b22f300 Fix CDM.requestNotificationAccess() in profile.
+e7f8278b781 QsFooter: Fix invisible settings button whe enabled only in Expanded
+d5243fa4c72 PocketLock: fix flickering on animations
+b9c5a8c5c88 [BugFix][Fingerprint]fix client was canceled by service by mistake
+c95b4e83bbf SystemUI: Option to use linear scale in BrightnessController
+b67814ef221 Merge tag 'android-10.0.0_r46' into q
+
+   * packages/apps/Bluetooth/
+a7d7b99a Merge tag 'android-10.0.0_r46' into q
+
+   * packages/apps/Contacts/
+3d6b0d4fd Merge tag 'android-10.0.0_r46' into q
+
+   * packages/apps/Settings/
+12d2c3db92 Merge tag 'android-10.0.0_r46' into q
+
+   * packages/services/Telephony/
+3d196b4c0 Merge tag 'android-10.0.0_r46' into q
+
+   * system/sepolicy/
+e93594c4 Merge tag 'android-10.0.0_r46' into q
+
+   * vendor/bliss/
+a497845b version: Bump to Bliss v12.12 Release
+
+====================
      09-14-2020
 ====================
 
+
+   * build/make/
+9e4a46933 Bump Security String to 2020-09-05
 
 ====================
      09-13-2020
 ====================
 
+
+   * frameworks/native/
+017860349 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform//frameworks/native into HEAD
+
+   * frameworks/opt/telephony/
+7eb1b2662 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform//frameworks/opt/telephony into HEAD
 
    * packages/apps/Eleven/
 5937b1e Automatic translation import
@@ -22,6 +62,9 @@ cc8a1e9 Automatic translation import
 
    * packages/resources/devicesettings/
 ce90d23 Automatic translation import
+
+   * system/bt/
+4b914bfcf Merge tag 'android-10.0.0_r46' into q
 
 ====================
      09-12-2020
@@ -40,6 +83,9 @@ ce90d23 Automatic translation import
 
    * external/chromium-webview/
 cd830a4 Update Chromium Webview to 85.0.4183.101
+
+   * frameworks/opt/net/wifi/
+692be063d Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46
 
 ====================
      09-09-2020
@@ -102,11 +148,6 @@ dc220e5f5 Explicit SBC Dual Channel (SBC HD) support
 
 ====================
      09-01-2020
-====================
-
-
-====================
-     08-31-2020
 ====================
 
 
