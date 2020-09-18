@@ -1,4 +1,9 @@
 ====================
+     09-19-2020
+====================
+
+
+====================
      09-18-2020
 ====================
 
@@ -145,9 +150,4 @@ b694f50de Assume optional codecs are supported if were supported previously
 4bb643bf4 Allow using alternative (higher) SBC HD bitrates with a property
 dc220e5f5 Explicit SBC Dual Channel (SBC HD) support
 25b74ce0e Increase maximum Bluetooth SBC codec bitrate for SBC HD
-
-====================
-     09-04-2020
-====================
-
 
