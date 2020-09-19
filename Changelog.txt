@@ -1,4 +1,9 @@
 ====================
+     09-20-2020
+====================
+
+
+====================
      09-19-2020
 ====================
 
@@ -129,25 +134,4 @@ cd830a4 Update Chromium Webview to 85.0.4183.101
      09-06-2020
 ====================
 
-
-====================
-     09-05-2020
-====================
-
-
-   * vendor/qcom/opensource/commonsys/bluetooth_ext/
-13e1f76 Fix compilation with SBC Dual Channel suport
-
-   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
-3c7d1f9ea Add switch to select SBC HD by default [2/3]
-6ce027cf7 Disable Dual channel for SBC by default
-12dfbdcba A2DP codec priority [2/3]
-b694f50de Assume optional codecs are supported if were supported previously
-4390d530b SBC Dual Channel (SBC HD Audio) support
-97da6d242 Check Null-safeness when switching optional-codecs state
-
-   * vendor/qcom/opensource/commonsys/system/bt/
-4bb643bf4 Allow using alternative (higher) SBC HD bitrates with a property
-dc220e5f5 Explicit SBC Dual Channel (SBC HD) support
-25b74ce0e Increase maximum Bluetooth SBC codec bitrate for SBC HD
 
