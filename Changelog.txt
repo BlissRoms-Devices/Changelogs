@@ -1,4 +1,9 @@
 ====================
+     09-22-2020
+====================
+
+
+====================
      09-21-2020
 ====================
 
@@ -147,9 +152,4 @@ cd830a4 Update Chromium Webview to 85.0.4183.101
 
    * hardware/sony/timekeep/
 858c544 timekeep: Make sure we have a /data before mucking with /data
-
-====================
-     09-07-2020
-====================
-
 
