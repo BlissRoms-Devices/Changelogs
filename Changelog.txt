@@ -1,4 +1,12 @@
 ====================
+     09-25-2020
+====================
+
+
+   * hardware/qcom-caf/msm8960/display/
+41b6123 Revert "Don't force GPU composite for older devices"
+
+====================
      09-24-2020
 ====================
 
@@ -138,15 +146,4 @@ ce90d23 Automatic translation import
      09-11-2020
 ====================
 
-
-====================
-     09-10-2020
-====================
-
-
-   * external/chromium-webview/
-cd830a4 Update Chromium Webview to 85.0.4183.101
-
-   * frameworks/opt/net/wifi/
-692be063d Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46
 
