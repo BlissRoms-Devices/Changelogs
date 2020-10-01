@@ -1,4 +1,25 @@
 ====================
+     10-02-2020
+====================
+
+
+   * packages/apps/AudioFX/
+887ee80 Automatic translation import
+
+   * packages/apps/CertInstaller/
+af3289a Automatic translation import
+
+   * packages/apps/Email/
+66c6d3f38 Automatic translation import
+
+   * packages/apps/ExactCalculator/
+f23a2c2 Automatic translation import
+
+   * packages/apps/Settings/
+88ed81b30e Settings: Gestures: Add option to cycle through ringer modes [2/2]
+9ec2e701e1 Settings: Introduce Applock [2/2]
+
+====================
      10-01-2020
 ====================
 
@@ -41,8 +62,6 @@ dc4b6ef6c7a BiometricService: Avoid null pointer exception
 e95beb5a81d VolumePanel: Fix glitchy ringer and notif bar when switching modes
 
    * packages/apps/Settings/
-7e665c155d Settings: Gestures: Add option to cycle through ringer modes [2/2]
-f1eb2b6cbd Settings: Introduce Applock [2/2]
 6a65ab17cf Remove useless png and add vector drawable
 9689d34cbc Remove "storage type" preference from Settings
 85516ae1bd Settings: Account more 5G network modes
@@ -153,11 +172,6 @@ b251c45f apns: add italian ho. mobile mcc/mnc
 
 ====================
      09-18-2020
-====================
-
-
-====================
-     09-17-2020
 ====================
 
 
