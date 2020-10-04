@@ -1,4 +1,9 @@
 ====================
+     10-05-2020
+====================
+
+
+====================
      10-04-2020
 ====================
 
@@ -166,9 +171,4 @@ dc12887 Automatic translation import
 
    * packages/resources/devicesettings/
 23ba1a9 Automatic translation import
-
-====================
-     09-20-2020
-====================
-
 
