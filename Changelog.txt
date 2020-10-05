@@ -1,4 +1,12 @@
 ====================
+     10-06-2020
+====================
+
+
+   * device/lineage/sepolicy/
+2e49c1d selinux: Introduce Applock [3/3]
+
+====================
      10-05-2020
 ====================
 
@@ -148,27 +156,4 @@ cfd9e4ed7 hal: Support the audio amplifier hook
      09-22-2020
 ====================
 
-
-====================
-     09-21-2020
-====================
-
-
-   * packages/apps/AudioFX/
-f694fbf Automatic translation import
-
-   * packages/apps/Jelly/
-4a7621e Automatic translation import
-
-   * packages/apps/Recorder/
-dc12887 Automatic translation import
-
-   * packages/apps/Snap/
-910787fa5 Automatic translation import
-
-   * packages/providers/ContactsProvider/
-4a7b2237 Automatic translation import
-
-   * packages/resources/devicesettings/
-23ba1a9 Automatic translation import
 
