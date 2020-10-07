@@ -1,7 +1,47 @@
 ====================
+     10-08-2020
+====================
+
+
+   * build/make/
+12802f13f Makefile: Generate changelog
+
+====================
      10-07-2020
 ====================
 
+
+   * build/make/
+21763d1ee build: make script look good in recovery xd
+dcd5a42da core: Introduce build colors
+63b66304c envsetup: add function to detect shell
+00c229f9d Remove ro.kernel.android.checkjni
+199262318 build: Remove some debugging props
+7966ade93 no matter what build type we dont want to see anything but Build_ID
+1c3b8123c build: Erase package_cache upon flashing To avoid the resources bug when dirty flashing
+a83578842 NFC: Disable build for AOSP NFC
+92464e083 check_boot_jars: Add IFAA Manager to whitelist
+a2ce5e5fa check_boot_jars: Add CAF IMS to whitelist
+0bfa7c15c Add LineageOS additions to boot jars whitelist
+4b7bfff92 build: Make sure we're building our secondary resource package as dependency.
+589662c6f build/target: Include Lineage platform jar in system server.
+1f1758197 build_image: Allow disabling custom inode count calculation
+94cbd10c9 releasetools: do not remove dynamic partitions in system-only builds
+b726fe1e6 backuptool: do not unmap dynamic partition after finished
+ac3d4a3ba releasetools: support dynamic partitions for backuptool
+2951d5dc6 releasetools: Move system mount handling to backuptool
+72374657a releasetools: squash backuptool support
+1e5d961a9 releasetools: Use the first entry of a mount point when reading fstab
+86422703f Edify: Add abort message for bootloader asserts
+5b10e7c5b ota: Disable downgrade check
+0d11b09d2 build: ota: Support for install tools in /tmp/install
+bfc1bbc2f releasetools: ota_from_target_files: add FullOTA_PostValidate
+de2a59283 build: Add support for device tree in boot.img
+6ed7873ad Add BOARD_CUSTOM_BOOTIMG_MK support
+9ce2c2d74 Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES
+7464e5121 Allow setting the recovery density separately from the aapt config
+e57693654 build: Separate commands in recovery foreach loops
+d24366861 build: recovery: Support adding device-specific items
 
 ====================
      10-06-2020
@@ -15,6 +55,9 @@
      10-05-2020
 ====================
 
+
+   * build/make/
+54068cd48 build: Move default AOSP Apps to vendor
 
 ====================
      10-04-2020
@@ -30,6 +73,9 @@
      10-02-2020
 ====================
 
+
+   * hardware/qcom-caf/msm8916/display/
+2facb060e Gralloc: Validate buffer parameters during importBuffer call
 
    * packages/apps/AudioFX/
 887ee80 Automatic translation import
@@ -111,6 +157,12 @@ ecb9c585 Update APNs for O2 Germany & E-Plus
 ====================
 
 
+   * build/make/
+59743ff0f Don't include recovery in otapackages
+467ccd4c2 Use 0 compression when creating the target_files package
+e387f8464 build: get rid of the sparse expand stuff
+68b9a2e68 envsetup: Automatically set CCACHE_EXEC to the system's ccache
+
    * hardware/qcom-caf/msm8974/display/
 d5ea07279 copybit: Export c2d header
 
@@ -134,10 +186,39 @@ cfd9e4ed7 hal: Support the audio amplifier hook
 ====================
 
 
+   * build/make/
+589631cd0 product: Remove some aosp apps
+
 ====================
      09-26-2020
 ====================
 
+
+   * build/make/
+58eaedd22 Squashed revert of BOARD_EXT4_SHARE_DUP_BLOCKS enablement
+61f9a0464 build: Include Bliss specific properties in build.prop
+077a23c7c Allow a device to generically define its own headers
+732784ac2 releasetools: Use du -b
+5547f7052 Make PRODUCT_BUILD_PROP_OVERRIDES bit more powerful
+29e6d65af Don't make recovery patch for devices with prebuilt vendor
+f7b8bd7fa Allow override of device asserts, including multi-device support.
+03975387c Move recovery-from-boot.p from /system to /vendor
+ddacb3260 Sync modules required by releasetools
+ff80724bc Build required modules from default
+75b926b87 add support for overriding build.prop settings.
+9cd7838dc product: Exclude AOSP apn list on Bliss build
+d0595bb76 Add extra variables to _readonly_late_variables
+730a39bcc soong: include Bliss soong_config
+b4d0a59fa Add roomservice
+e696a5b87 build: Add Bliss build support
+d4b5b1408 Source bliss specific envsetup
+fe744ed38 envsetup: export ANDROID_BUILD_TOP earlier
+b6db1c39d build: Automatically replace old-style kernel header includes with new header lib
+88ee9a869 build: Ensure /system unmounted at install start
+691d44054 All operating systems are beautiful
+a00c2a9a7 build: Include vendor/extra/BoardConfigExtra.mk if available
+cd5b1d59e Remove empty new-space in dynamic_partition_list and super_$(group)_partition_list
+a6a49e6a8 Refactor how MODULES-IN-* is defined
 
 ====================
      09-25-2020
@@ -149,11 +230,6 @@ cfd9e4ed7 hal: Support the audio amplifier hook
 
 ====================
      09-24-2020
-====================
-
-
-====================
-     09-23-2020
 ====================
 
 
