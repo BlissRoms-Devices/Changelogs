@@ -1,4 +1,9 @@
 ====================
+     10-12-2020
+====================
+
+
+====================
      10-11-2020
 ====================
 
@@ -151,9 +156,4 @@ f4c68e8e1 mm-video: remove hevc sw decoder files
    * hardware/qcom-caf/sm8150/audio/
 6a9c3b063 audio_amplifier: Add new hook for setting amp feedback
 cfd9e4ed7 hal: Support the audio amplifier hook
-
-====================
-     09-27-2020
-====================
-
 
