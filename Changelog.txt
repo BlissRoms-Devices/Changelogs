@@ -1,4 +1,9 @@
 ====================
+     10-15-2020
+====================
+
+
+====================
      10-14-2020
 ====================
 
@@ -98,49 +103,4 @@ a7f8258 Navbar: Introduce navbar styles [3/3]
 
    * vendor/themes/
 7550ea3 Navbar: Introduce navbar styles [2/3]
-
-====================
-     09-30-2020
-====================
-
-
-   * frameworks/base/
-9c337584911 core: Move context-aware Bluetooth airplane mode string for translations
-48331b28b18 WiredAccessoryManager: support for multiple display ports
-fcf9976e2ee audio: update WiredAccessoryManager to use ExtconUEventObserver based on events available
-7136171507e WiredAccessoryManager: Support for multiple extconn devices
-6d7a5d12c8f WiredAccessoryManager: update extcon file paths
-fd9180552bb WiredAccessoryManager: Add support for DisplayPort Audio
-d5b161998c6 base: Improve Biometric dialog layout for App lock
-2fac8ed5cc9 base: Add option to cycle through ringer modes [1/2]
-1e6968a52dd BiometricPrompt: Force portrait orientation if we have FOD
-e1991d4b987 base: Introduce Applock [1/2]
-90f642df1fa SystemUI: Hide non-system overlays when biometric prompt is showing
-3c2801b53ac SystemUI: BiometricDialogView: Fix missing package manager member
-e0a3f62defc SystemUI: BiometricPrompt: Adjust layout if FOD is present
-3c5a8fe137a base: Use 2 modalities concurrently in BiometricPrompt if available
-c0dbc371f88 TextClock: Update Italian translations some more
-58fc8471114 SystemUI: BiometricPrompt: Call onDialogAnimatedIn when we are showing the dialog without animation
-b19357398ad TextClock: Update Italian translations
-6df90b99e06 TwilightService: Fix typo
-dc4b6ef6c7a BiometricService: Avoid null pointer exception
-6d04c663ddd TwilightService: Use temporary TwilightState when location is not available
-e95beb5a81d VolumePanel: Fix glitchy ringer and notif bar when switching modes
-
-   * packages/apps/Settings/
-6a65ab17cf Remove useless png and add vector drawable
-9689d34cbc Remove "storage type" preference from Settings
-85516ae1bd Settings: Account more 5G network modes
-8f7a9c1444 Add NR network type to "Global" mode preference
-
-   * vendor/bliss/
-125d059e apns: Enable IPV6 for China Telecom
-a04b65ce apns: Enable IPV6 for China Unicom
-7b0c8372 apns: Enable IPV6 for China Mobile
-ecb9c585 Update APNs for O2 Germany & E-Plus
-255f21cb extract_utils: Fix system_ext framework blueprint generation.
-87a9a3bf extract_utils: Add support for system_ext
-
-   * vendor/themes/
-13106e5 Override config for platform number verification
 
