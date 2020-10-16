@@ -1,4 +1,9 @@
 ====================
+     10-17-2020
+====================
+
+
+====================
      10-16-2020
 ====================
 
@@ -70,28 +75,4 @@
      10-03-2020
 ====================
 
-
-====================
-     10-02-2020
-====================
-
-
-   * hardware/qcom-caf/msm8916/display/
-2facb060e Gralloc: Validate buffer parameters during importBuffer call
-
-   * packages/apps/AudioFX/
-887ee80 Automatic translation import
-
-   * packages/apps/CertInstaller/
-af3289a Automatic translation import
-
-   * packages/apps/Email/
-66c6d3f38 Automatic translation import
-
-   * packages/apps/ExactCalculator/
-f23a2c2 Automatic translation import
-
-   * packages/apps/Settings/
-88ed81b30e Settings: Gestures: Add option to cycle through ringer modes [2/2]
-9ec2e701e1 Settings: Introduce Applock [2/2]
 
