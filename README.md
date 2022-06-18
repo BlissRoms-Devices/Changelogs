@@ -1,0 +1,57 @@
+# BlissRoms Arcadia All Version Changelogs
+
+### Arcadia v15.6 (19.06.2022)
+- Merged June Security Patch
+- QuickTap Feature
+- QS Footer customizations
+- Google Sound search tile
+- Privacy indicator fixes
+- Toggle for camera/mic privacy indicator
+- Clock auto-hiding
+- Statusbar Logo customization
+- One shot auto-brightness
+- Wifi timeout feature
+- Bluetooth timeout feature
+- UDFPS Icons and Animations
+- User selectable UDFPS Icons
+- UDFPS pressed color
+- Always on display scheduling
+- Auto AOD Service customizations
+- Hiding Notification headers
+- Three finger gesture improvements
+- Reticker Feature
+- Media notification background customizations
+- Lockscreen album art filter
+- Data saver icon
+- Lockscreen media artwork blur level
+- Navbar styles customizations
+- Bluetooth battery level toggle
+- Pulse customizations
+- Edge lighting customizations
+- Ambient Edge Pulse style
+- Ambient Pulse light customizations
+- Brighness slider customizations
+- Pixel specific customizations
+- Lockscreen charging improvements
+- Monet customizations
+- Add support for displaying Volte icon
+- Volte icon toggle
+- VoWifi Icons customization
+- Custom vibration patterns
+- SystemUI Improvements
+- Screen off FOD
+- App Hiding from Launcher
+- Battery charge warning 
+- Hide statusbar clock on lockscreen
+- OOS Style notifications clearall button
+- Faceunlock animations
+- Show daily data usage in QS footer
+- MAC Address firewall
+- LS Clock customizations
+- Optional IME Button space
+- Allow to hide arrow for back gesture
+- VPN Tile
+- Fixed Blissify icon alignment
+- Updated default wallpaper (Thanks to RogerT)
+- Settings Optimizations
+- Misc improvements and bug fixes
